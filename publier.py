@@ -22,20 +22,44 @@ def git(*a, check=True, capture=False):
                           stdout=subprocess.PIPE if capture else None, stderr=subprocess.STDOUT if capture else None)
 
 
+# Copie du dépôt GitHub Filodie/Web-site (clonée par GitHub Desktop) : on y recopie le site puis on l’envoie
+CLONE = os.path.expanduser("~/Documents/GitHub/Web-site")
+
+
+def envoyer_clone(msg):
+    def g(*a, capture=False):
+        return subprocess.run(["git", *a], cwd=CLONE, text=True, check=not capture,
+                              stdout=subprocess.PIPE if capture else None, stderr=subprocess.STDOUT if capture else None)
+    g("pull", "-q", "--no-rebase", "--no-edit", "origin", "main")
+    subprocess.run(["rsync", "-a", "--exclude", ".git", "--exclude", ".DS_Store", "--exclude", "__pycache__",
+                    "--exclude", "*.pyc", HERE + "/", CLONE + "/"], check=True)
+    g("add", "-A")
+    if not g("status", "--porcelain", capture=True).stdout.strip():
+        print("GitHub est déjà à jour.")
+        return
+    g("commit", "-q", "-m", msg)
+    r = g("push", "-q", "origin", "main", capture=True)
+    if r.returncode:
+        print("\nL’envoi vers GitHub a échoué :\n" + r.stdout)
+        sys.exit(1)
+    print("Envoyé sur GitHub (Filodie/Web-site). filodie.ca sera à jour dans environ une minute.")
+
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     build = [sys.executable, os.path.join(HERE, "build_site.py")] + (["--catalogue"] if "--catalogue" in sys.argv else [])
     subprocess.run(build, cwd=HERE, check=True)
 
-    git("add", "-A")
-    if not git("status", "--porcelain", capture=True).stdout.strip():
-        print("Aucun changement : le site en ligne est déjà à jour.")
-        return
     msg = args[0] if args else f"Mise à jour du site – {datetime.now():%Y-%m-%d %H:%M}"
-    git("commit", "-q", "-m", msg)
-    print("Changements enregistrés :", msg)
+    git("add", "-A")
+    if git("status", "--porcelain", capture=True).stdout.strip():
+        git("commit", "-q", "-m", msg)
+        print("Changements enregistrés :", msg)
 
     if not git("remote", capture=True).stdout.strip():
+        if os.path.isdir(os.path.join(CLONE, ".git")):
+            envoyer_clone(msg)
+            return
         print("\nPas encore relié à GitHub : les changements sont enregistrés sur l’ordinateur seulement.\n"
               "Dans VS Code, ouvrez « Contrôle de code source » et cliquez sur « Publier la branche ».")
         return
