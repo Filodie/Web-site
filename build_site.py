@@ -21,6 +21,13 @@ OUT_FR = os.path.join(ROOT, "Filodie – Outils T.E.S.")
 OUT_EN = os.path.join(ROOT, "Filodie – Tools for Special Education (English)")
 SRC = os.path.join(OUT_FR, "_source")
 PUB = os.path.join(HERE, "public")
+LOGO = os.path.join(ROOT, "Logo Filodie")
+# Fil à 5 perles du logo (mêmes unités que _source/filodie_logo.py), affiché sous le mot « filodie »
+BEADS = ('<svg viewBox="33 106 236 48" aria-hidden="true"><path d="M40 130C67 110 67 110 95 130S122 150 150 130'
+         'S177 110 205 130S232 150 260 130" fill="none" stroke="#D9734E" stroke-width="3.2" stroke-linecap="round"/>'
+         + "".join(f'<circle cx="{x}" cy="{y}" r="7" fill="{c}"/>' for x, y, c in [
+             (67, 115, "#1F3B4D"), (123, 145, "#D9734E"), (178, 115, "#6F9A81"), (233, 145, "#E3B04B"),
+             (260, 130, "#D98FA0")]) + "</svg>")
 CAT = os.path.join(HERE, "produits.json")
 sys.path.insert(0, SRC)
 
@@ -34,9 +41,15 @@ def tr(s):
     return EN.get(s, s)
 
 
+def en(i, k):
+    """Texte anglais d'un produit : champ <k>_en s'il existe (textes calculés), sinon le dictionnaire."""
+    return i.get(k + "_en") or tr(i[k])
+
+
 # Prix à l'unité (dollars canadiens). Les lots ont leur prix fixé plus bas, dans catalogue().
-PRIX = {"trousse": 5.00, "edition": 2.00, "cahier": 2.00, "livre": 15.00, "bottin": 0.0,
-        "lot_cahiers": 20.00, "lot_collection": 20.00, "lot_specialisees": 30.00, "lot_tout": 60.00, "mega": 99.00}
+# Chaque produit est bilingue (PDF français + anglais dans le même achat).
+PRIX = {"trousse": 7.00, "edition": 3.00, "cahier": 3.00, "livre": 19.00, "bottin": 0.0,
+        "lot_cahiers": 25.00, "lot_collection": 25.00, "lot_specialisees": 39.00, "lot_tout": 75.00, "mega": 129.00}
 
 
 # --------------------------------------------------------------------------- catalogue
@@ -50,7 +63,7 @@ def catalogue():
     items = []
 
     def add(**k):
-        k.setdefault("prix", PRIX[k["type"]])
+        k.setdefault("prix", 0.0 if "decouverte" in k["id"] else PRIX[k["type"]])   # trousse découverte : gratuite
         k.setdefault("payhip", "")
         k.setdefault("payhip_en", "")
         items.append(k)
@@ -101,28 +114,35 @@ def catalogue():
         v = g.split("/")[-1]
         add(id="lot-" + re.sub(r"\W+", "-", v.lower()).strip("-"), type="lot_collection", groupe="Lots",
             titre=f"Collection Filodie : {v.split('– ')[-1]}", sous=f"{len(its)} trousses",
-            desc="Toutes les trousses du volet « " + v.split("– ")[-1] + " ».", fichiers=[], contient=[i["id"] for i in its])
+            desc="Toutes les trousses du volet « " + v.split("– ")[-1] + " ».", fichiers=[], contient=[i["id"] for i in its],
+            titre_en=f"Filodie Collection: {tr(v).split('– ')[-1]}", sous_en=f"{len(its)} toolkits",
+            desc_en=f"All the toolkits in the “{tr(v).split('– ')[-1]}” section.")
     sp = [i["id"] for i in items if i["groupe"] == "Trousses spécialisées"]
     add(id="lot-specialisees", type="lot_specialisees", groupe="Lots", titre="Les 16 trousses spécialisées",
         sous="Âges et troubles", desc="Petite enfance, secondaire, adultes, aînés, TSA, TDAH, DI, langage, comportement, "
                                       "crise, suicide, dépendances et plus.", fichiers=[], contient=sp)
     tous = [i["id"] for i in items if i["type"] == "cahier"]
     add(id="lot-tous-les-cahiers", type="lot_tout", groupe="Lots", titre="Tous les cahiers visuels",
-        sous=f"{len(tous)} cahiers · 5 séries", prix=60.00,
+        sous=f"{len(tous)} cahiers · 5 séries", prix=75.00, sous_en=f"{len(tous)} workbooks · 5 series",
         desc="Les cahiers TSA, TDAH, habiletés sociales, DI et comportement, en couleur et à colorier.",
         fichiers=[], contient=tous)
     tt = [i["id"] for i in items if i["type"] in ("trousse", "edition")]
+    ntr = sum(1 for i in items if i["type"] == "trousse")
+    ncol = sum(1 for i in items if i["type"] == "trousse" and i["fichiers"][0].startswith("Collection Filodie/"))
+    ned = sum(1 for i in items if i["type"] == "edition")
     add(id="lot-toutes-les-trousses", type="lot_tout", groupe="Lots", titre="Toutes les trousses",
-        sous=f"{len(tt)} trousses et éditions", prix=60.00,
-        desc="La trousse principale, les 16 trousses spécialisées, les 78 trousses de la Collection et les 5 éditions.",
+        sous=f"{len(tt)} trousses et éditions", prix=75.00, sous_en=f"{len(tt)} toolkits and editions",
+        desc=f"La trousse principale, les {len(sp)} trousses spécialisées, les {ncol} trousses de la Collection et les {ned} éditions.",
+        desc_en=f"The main toolkit, the {len(sp)} specialized toolkits, the {ncol} Collection toolkits and the {ned} editions.",
         fichiers=[], contient=tt)
     add(id="lot-mega", type="mega", groupe="Lots", titre="Tout Filodie", sous="Toute la collection",
-        desc="Les 95 trousses, les éditions, les 179 cahiers visuels, le Grand livre clinique et le bottin régional.",
+        desc=f"Les {ntr} trousses, les éditions, les {len(tous)} cahiers visuels, le Grand livre clinique et le bottin régional.",
+        desc_en=f"All {ntr} toolkits, the editions, the {len(tous)} visual workbooks, the Clinical Handbook and the regional directory.",
         fichiers=[], contient=[i["id"] for i in items if not i["type"].startswith("lot") and i["type"] != "mega"])
-    # lots de collection : environ 2 $ par trousse, arrondi à 5 $
+    # lots de collection : environ 2,50 $ par trousse, arrondi à 5 $, entre 25 $ et 30 $
     for i in items:
         if i["type"] == "lot_collection":
-            i["prix"] = float(max(10, 5 * round(len(i["contient"]) * 2 / 5)))
+            i["prix"] = float(min(30, max(25, 5 * round(len(i["contient"]) * 2.5 / 5))))
     # valeur à l'unité, pour afficher l'économie
     px = {i["id"]: i["prix"] for i in items}
     for i in items:
@@ -143,7 +163,9 @@ def catalogue():
 # --------------------------------------------------------------------------- images
 def en_path(rel):
     import filodie_i18n as i
-    return i.path_en(os.path.join(OUT_FR, rel))
+    parts = rel.split("/")
+    out = [tr(p) for p in parts[:-1]] + [tr(os.path.splitext(parts[-1])[0]) + os.path.splitext(parts[-1])[1]]
+    return os.path.join(i.EN_ROOT, *out)
 
 
 def vignette(pdf, out, w=420):
@@ -196,7 +218,7 @@ L = {
                 ("Ancré au Québec", "Vocabulaire du réseau (PI, PPH, DPJ, LIP), ressources vérifiées dans chaque région."),
                 ("Prêt à utiliser", "PDF remplissables à l’écran ou imprimables, versions à colorier en noir et blanc."),
                 ("Livraison immédiate", "Vos fichiers sont téléchargeables dès le paiement, et le lien vous est aussi envoyé par courriel.")],
-        "shop_t": "Boutique", "shop_p": "Cahiers à 2 $, trousses à 5 $, et des lots jusqu’à 90 % moins chers. Prix en dollars canadiens, téléchargement immédiat après le paiement.",
+        "shop_t": "Boutique", "shop_p": "Chaque achat inclut la version française et la version anglaise. Cahiers à 3 $, trousses à 7 $, et des lots jusqu’à 90 % moins chers. Prix en dollars canadiens, téléchargement immédiat après le paiement.",
         "search": "Rechercher un outil…", "all": "Tout",
         "types": {"trousse": "Trousses", "edition": "Éditions", "cahier": "Cahiers visuels", "livre": "Grand livre",
                   "bottin": "Bottin", "lot": "Lots"},
@@ -234,7 +256,7 @@ L = {
                 ("Rooted in Québec", "Network vocabulary (IEP, HDM-DCP, DYP, Education Act) and verified resources in every region."),
                 ("Ready to use", "PDFs fillable on screen or printable, with black-and-white colouring versions."),
                 ("Instant delivery", "Your files can be downloaded right after payment, and the link is also emailed to you.")],
-        "shop_t": "Shop", "shop_p": "Workbooks at $2, toolkits at $5, and bundles up to 90% off. Prices in Canadian dollars, instant download after payment.",
+        "shop_t": "Shop", "shop_p": "Every purchase includes both the English and French versions. Workbooks at $3, toolkits at $7, and bundles up to 90% off. Prices in Canadian dollars, instant download after payment.",
         "search": "Search for a tool…", "all": "All",
         "types": {"trousse": "Toolkits", "edition": "Editions", "cahier": "Visual workbooks", "livre": "Handbook",
                   "bottin": "Directory", "lot": "Bundles"},
@@ -263,6 +285,27 @@ THREAD = ('<svg class="thread" viewBox="0 0 600 90" preserveAspectRatio="none" a
           'stroke-width="2.4" stroke-linecap="round"/></svg>')
 
 
+PROMO = os.path.join(HERE, "promo.json")
+
+
+def promo_html(lang):
+    """Bannière du code promo (promo.json). Elle se cache seule avant « debut » et après « fin »."""
+    if not os.path.exists(PROMO):
+        return ""
+    p = json.load(open(PROMO, encoding="utf-8"))
+    if not p.get("actif") or not p.get("code"):
+        return ""
+    msg = html.escape(p.get("message_" + lang) or "")
+    code = html.escape(p["code"])
+    copier, copie = ("Copier", "Copié !") if lang == "fr" else ("Copy", "Copied!")
+    return (f'<div class="promo" id="promo" data-debut="{p.get("debut", "")}" data-fin="{p.get("fin", "")}">'
+            f'<span>{msg}</span> <code>{code}</code> '
+            f'<button type="button" onclick="navigator.clipboard.writeText(\'{code}\');this.textContent=\'{copie}\'">{copier}</button></div>'
+            '<script>(function(){var b=document.getElementById("promo"),d=new Date(),'
+            'j=d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");'
+            'if((b.dataset.debut&&j<b.dataset.debut)||(b.dataset.fin&&j>b.dataset.fin))b.remove();})();</script>\n')
+
+
 def page(lang, name, title, body, desc="", scripts=""):
     t = L[lang]
     b = t["base"]
@@ -279,12 +322,15 @@ def page(lang, name, title, body, desc="", scripts=""):
 <meta name="description" content="{html.escape(desc or t['hero_p'])}">
 <link rel="alternate" hreflang="{L[t['other']]['lang']}" href="{other_href}">
 <link rel="icon" href="{b}favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Filodie · {t['tag']}">
+<meta property="og:image" content="https://filodie.ca/og-image.png">
 <link rel="stylesheet" href="{b}style.css">
 </head>
 <body>
-<header class="top">
+{promo_html(lang)}<header class="top">
   <div class="wrap bar">
-    <a class="logo" href="index.html">filodie<span class="knot" aria-hidden="true"></span></a>
+    <a class="logo" href="index.html" aria-label="Filodie">filodie{BEADS}</a>
     <button class="menu" aria-expanded="false" aria-controls="nav">☰</button>
     <nav id="nav">{nav}<a class="lang" href="{other_href}" hreflang="{L[t['other']]['lang']}">{t['other_label']}</a></nav>
   </div>
@@ -294,7 +340,7 @@ def page(lang, name, title, body, desc="", scripts=""):
 </main>
 <footer class="foot">
   <div class="wrap">
-    <p class="logo small">filodie</p>
+    <p class="logo small">filodie{BEADS}</p>
     <p>{t['tag']}</p>
     <p class="legal">{legal}</p>
     <p class="note">{t['footer_note']}</p>
@@ -350,9 +396,9 @@ def shop(lang, items):
         g = i["groupe"]
         data.append({
             "id": i["id"], "t": typ, "g": tr(g) if lang == "en" else g,
-            "n": tr(i["titre"]) if lang == "en" else i["titre"],
-            "s": tr(i["sous"]) if lang == "en" else i["sous"],
-            "d": tr(i["desc"]) if lang == "en" else i["desc"],
+            "n": en(i, "titre") if lang == "en" else i["titre"],
+            "s": en(i, "sous") if lang == "en" else i["sous"],
+            "d": en(i, "desc") if lang == "en" else i["desc"],
             "p": i["prix"], "k": i["payhip_en"] if lang == "en" else i["payhip"],
             "img": f"{t['base']}img/{img_lang}/{img}.jpg", "c": i.get("code", ""), "v": i.get("valeur", 0),
         })
@@ -540,11 +586,14 @@ h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.15}
 h1{font-size:clamp(2rem,5vw,3.4rem);margin:.2em 0}h2{font-size:1.9rem;margin:1.6em 0 .6em}h3{font-size:1.15rem;margin:.6em 0 .3em}
 em{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--terra)}
 .lead{font-size:1.15rem;color:var(--gray);max-width:720px}.muted{color:var(--gray)}
+.promo{background:var(--terra);color:#fff;text-align:center;padding:9px 16px;font-weight:700;font-size:.95rem;line-height:1.5}
+.promo code{background:#fff;color:#1F3B4D;padding:2px 9px;border-radius:6px;font:800 .95rem/1.4 ui-monospace,monospace;letter-spacing:.04em}
+.promo button{margin-left:6px;background:transparent;color:#fff;border:1.5px solid #fff;border-radius:20px;padding:1px 11px;font:700 .85rem Nunito,sans-serif;cursor:pointer}
 .top{position:sticky;top:0;z-index:10;background:var(--cream);border-bottom:1px solid var(--sand)}
 .bar{display:flex;align-items:center;justify-content:space-between;height:64px}
-.logo{font-family:Fraunces,serif;font-weight:800;font-size:1.7rem;color:var(--ink);text-decoration:none;position:relative}
-.logo.small{font-size:1.3rem;margin:0}
-.knot{display:inline-block;width:18px;height:12px;margin-left:3px;border-bottom:2px solid var(--terra);border-radius:0 0 12px 0}
+.logo{display:inline-flex;flex-direction:column;align-items:center;font-family:Fraunces,serif;font-weight:600;font-size:1.7rem;line-height:1;color:var(--ink);text-decoration:none}
+.logo svg{display:block;width:4em;height:.82em;margin:.1em -.3em 0}
+.logo.small{font-size:1.3rem;margin:0 0 6px}
 nav{display:flex;gap:18px;align-items:center}nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:.95rem}
 nav a[aria-current]{color:var(--terra)}nav .lang{border:1.5px solid var(--ink);border-radius:20px;padding:2px 10px}
 .menu{display:none;background:none;border:0;font-size:1.6rem;color:var(--ink)}
@@ -584,15 +633,21 @@ details{font-size:.9rem;margin:6px 0}summary{cursor:pointer;color:var(--terra);f
 """
 
 FAVICON = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#F8F2E9"/>'
-           '<text x="14" y="46" font-family="Georgia,serif" font-weight="800" font-size="40" fill="#1F3B4D">f</text>'
-           '<path d="M30 44 C40 46 44 40 46 32 S40 22 38 30 S48 44 58 40" fill="none" stroke="#D9734E" stroke-width="3.5" '
-           'stroke-linecap="round"/></svg>')
+           '<text x="32" y="36" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="36" fill="#1F3B4D">f</text>'
+           '<path d="M6 50C12 44 12 44 18 50S24 56 30 50S36 44 42 50S48 56 56 50" fill="none" stroke="#D9734E" stroke-width="2.5" '
+           'stroke-linecap="round"/>' + "".join(f'<circle cx="{x}" cy="{y}" r="4" fill="{c}"/>' for x, y, c in [
+               (12, 46, "#1F3B4D"), (24, 54, "#D9734E"), (36, 46, "#6F9A81"), (48, 54, "#E3B04B"), (56, 50, "#D98FA0")])
+           + '</svg>')
 
 
 def build():
     if "--catalogue" in sys.argv or "--prix" in sys.argv or not os.path.exists(CAT):
         catalogue()
     items = json.load(open(CAT, encoding="utf-8"))
+    for lang in ("fr", "en"):                         # chiffres de la page d’accueil, toujours à jour
+        st = L[lang]["stats"]
+        st[0] = (str(sum(1 for i in items if i["type"] == "trousse")), st[0][1])
+        st[1] = (str(sum(1 for i in items if i["type"] == "cahier")), st[1][1])
     os.makedirs(os.path.join(PUB, "en"), exist_ok=True)
     fd = os.path.join(PUB, "fonts")
     os.makedirs(fd, exist_ok=True)
@@ -601,6 +656,9 @@ def build():
         shutil.copy(os.path.join(SRC, "fonts", f), fd)
     open(os.path.join(PUB, "style.css"), "w").write(CSS)
     open(os.path.join(PUB, "favicon.svg"), "w").write(FAVICON)
+    og = os.path.join(LOGO, "Filodie_couverture_facebook_1640x624.png")   # aperçu des partages Facebook
+    if os.path.exists(og):
+        shutil.copy(og, os.path.join(PUB, "og-image.png"))
     images(items)
     for lang, d in (("fr", PUB), ("en", os.path.join(PUB, "en"))):
         open(os.path.join(d, "index.html"), "w").write(home(lang))

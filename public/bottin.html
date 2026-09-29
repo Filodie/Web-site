@@ -7,12 +7,15 @@
 <meta name="description" content="Des trousses, des cahiers visuels et un grand livre clinique conçus au Québec pour les T.E.S., les enseignantes, les éducatrices et les familles. Imprimables, remplissables à l’écran, avec les ressources de votre région.">
 <link rel="alternate" hreflang="en-CA" href="en/directory.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Filodie · Outils cliniques pour T.E.S.">
+<meta property="og:image" content="https://filodie.ca/og-image.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
   <div class="wrap bar">
-    <a class="logo" href="index.html">filodie<span class="knot" aria-hidden="true"></span></a>
+    <a class="logo" href="index.html" aria-label="Filodie">filodie<svg viewBox="33 106 236 48" aria-hidden="true"><path d="M40 130C67 110 67 110 95 130S122 150 150 130S177 110 205 130S232 150 260 130" fill="none" stroke="#D9734E" stroke-width="3.2" stroke-linecap="round"/><circle cx="67" cy="115" r="7" fill="#1F3B4D"/><circle cx="123" cy="145" r="7" fill="#D9734E"/><circle cx="178" cy="115" r="7" fill="#6F9A81"/><circle cx="233" cy="145" r="7" fill="#E3B04B"/><circle cx="260" cy="130" r="7" fill="#D98FA0"/></svg></a>
     <button class="menu" aria-expanded="false" aria-controls="nav">☰</button>
     <nav id="nav"><a href="index.html">Accueil</a><a href="boutique.html">Boutique</a><a href="bottin.html" aria-current=page>Bottin gratuit</a><a href="a-propos.html">À propos</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a class="lang" href="en/directory.html" hreflang="en-CA">EN</a></nav>
   </div>
@@ -20,13 +23,13 @@
 <main>
 
 <section class="wrap split">
-  <div><h1>Bottin régional gratuit</h1><p class="lead">Les ressources des 17 régions du Québec, classées par problématique : signalement à la DPJ, centres de crise, CLSC, associations en autisme et en TDAH, déficience intellectuelle, proches aidants, violence et dépendances. Coordonnées vérifiées sur les sites officiels.</p><p><span class="btn off">Bientôt disponible</span></p></div>
+  <div><h1>Bottin régional gratuit</h1><p class="lead">Les ressources des 17 régions du Québec, classées par problématique : signalement à la DPJ, centres de crise, CLSC, associations en autisme et en TDAH, déficience intellectuelle, proches aidants, violence et dépendances. Coordonnées vérifiées sur les sites officiels.</p><p><a class="btn payhip-buy-button" data-theme="none" data-product="Unb2z" href="https://payhip.com/b/Unb2z">Recevoir le bottin gratuitement</a></p></div>
   <img class="shadow" src="img/fr/bottin-regional.jpg" alt="">
 </section>
 </main>
 <footer class="foot">
   <div class="wrap">
-    <p class="logo small">filodie</p>
+    <p class="logo small">filodie<svg viewBox="33 106 236 48" aria-hidden="true"><path d="M40 130C67 110 67 110 95 130S122 150 150 130S177 110 205 130S232 150 260 130" fill="none" stroke="#D9734E" stroke-width="3.2" stroke-linecap="round"/><circle cx="67" cy="115" r="7" fill="#1F3B4D"/><circle cx="123" cy="145" r="7" fill="#D9734E"/><circle cx="178" cy="115" r="7" fill="#6F9A81"/><circle cx="233" cy="145" r="7" fill="#E3B04B"/><circle cx="260" cy="130" r="7" fill="#D98FA0"/></svg></p>
     <p>Outils cliniques pour T.E.S.</p>
     <p class="legal"><a href="licence.html">Licence d’utilisation</a> · <a href="conditions.html">Conditions de vente</a> · <a href="confidentialite.html">Confidentialité</a></p>
     <p class="note">Les outils Filodie soutiennent l’intervention; ils ne remplacent ni l’évaluation d’une personne professionnelle qualifiée ni le jugement clinique.</p>
@@ -37,6 +40,6 @@
 document.querySelector('.menu').addEventListener('click',e=>{const n=document.getElementById('nav');
 const o=n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',o)});
 </script>
-
+<script src="https://payhip.com/payhip.js"></script>
 </body>
 </html>
