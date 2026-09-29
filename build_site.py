@@ -177,6 +177,25 @@ def vignette(pdf, out, w=420):
     pix.save(out, jpg_quality=82) if out.endswith(".jpg") else pix.save(out)
 
 
+def apercu(pdf, out, n, marque, w=640):
+    """Page n du PDF en image, avec un filigrane « APERÇU » en diagonale (le produit vendu n’en a pas)."""
+    if os.path.exists(out) and os.path.getmtime(out) > os.path.getmtime(pdf):
+        return
+    from PIL import Image, ImageDraw, ImageFont
+    pg = fitz.open(pdf)[n]
+    pix = pg.get_pixmap(matrix=fitz.Matrix(w / pg.rect.width, w / pg.rect.width))
+    im = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+    font = ImageFont.truetype(os.path.join(SRC, "fonts", "NunitoSans-800.ttf"), w // 11)
+    txt = f"{marque} · filodie.ca"
+    x0, y0, x1, y1 = font.getbbox(txt)
+    calque = Image.new("RGBA", (x1 + 40, y1 + 40), (0, 0, 0, 0))
+    ImageDraw.Draw(calque).text((20, 20 - y0), txt, font=font, fill=(217, 115, 78, 70))
+    calque = calque.rotate(32, expand=True)
+    for fy in (0.22, 0.62):
+        im.paste(calque, ((im.width - calque.width) // 2, int(im.height * fy) - calque.height // 2), calque)
+    im.save(out, quality=72, optimize=True)
+
+
 def images(items):
     for lang in ("fr", "en"):
         os.makedirs(os.path.join(PUB, "img", lang), exist_ok=True)
@@ -190,9 +209,30 @@ def images(items):
         en = en_path(rel)
         if os.path.exists(en):
             vignette(en, os.path.join(PUB, "img", "en", i["id"] + ".jpg"))
+    for lang in ("fr", "en"):                         # aperçus : 2 pages de chaque outil
+        os.makedirs(os.path.join(PUB, "img", lang, "apercu"), exist_ok=True)
+    for i in items:
+        if not i["fichiers"]:
+            continue
+        rel = i["fichiers"][0]
+        for lang, pdf in (("fr", os.path.join(OUT_FR, rel)), ("en", en_path(rel))):
+            if not os.path.exists(pdf):
+                continue
+            nb = fitz.open(pdf).page_count
+            pages = [k for k in (1, 2) if k < nb] or [0]
+            noms = []
+            for k in pages:
+                nom = f"{i['id']}-{k + 1}"
+                apercu(pdf, os.path.join(PUB, "img", lang, "apercu", nom + ".jpg"), k,
+                       "APERÇU" if lang == "fr" else "PREVIEW")
+                noms.append(nom)
+            i["pv_" + lang] = noms
+    par_id = {i["id"]: i for i in items}
     for i in items:
         if i.get("contient"):
             i["img"] = i["contient"][0]
+            for lang in ("fr", "en"):                 # lots : première page d’aperçu des premiers produits
+                i["pv_" + lang] = [par_id[c]["pv_" + lang][0] for c in i["contient"][:3] if par_id[c].get("pv_" + lang)]
 
 
 # --------------------------------------------------------------------------- textes du site
@@ -223,7 +263,8 @@ L = {
         "search": "Rechercher un outil…", "all": "Tout",
         "types": {"trousse": "Trousses", "edition": "Éditions", "cahier": "Cahiers visuels", "livre": "Grand livre",
                   "bottin": "Bottin", "lot": "Lots"},
-        "buy": "Acheter", "soon": "Bientôt disponible", "free": "Gratuit", "get": "Obtenir", "details": "Détails",
+        "buy": "Acheter", "soon": "Bientôt disponible", "free": "Gratuit", "get": "Obtenir", "details": "Détails", "preview": "Aperçu", "close": "Fermer",
+        "pvnote": "Quelques pages du produit. Le filigrane « aperçu » n’apparaît pas dans les fichiers achetés.",
         "count": "produits", "value": "Valeur à l’unité", "save": "économie",
         "bottin_t": "Bottin régional gratuit",
         "bottin_p": "Les ressources des 17 régions du Québec, classées par problématique : signalement à la DPJ, centres de crise, "
@@ -261,7 +302,8 @@ L = {
         "search": "Search for a tool…", "all": "All",
         "types": {"trousse": "Toolkits", "edition": "Editions", "cahier": "Visual workbooks", "livre": "Handbook",
                   "bottin": "Directory", "lot": "Bundles"},
-        "buy": "Buy", "soon": "Coming soon", "free": "Free", "get": "Get it", "details": "Details",
+        "buy": "Buy", "soon": "Coming soon", "free": "Free", "get": "Get it", "details": "Details", "preview": "Preview", "close": "Close",
+        "pvnote": "A few pages from the product. The “preview” watermark does not appear in the files you buy.",
         "count": "products", "value": "Value if bought separately", "save": "savings",
         "bottin_t": "Free regional directory",
         "bottin_p": "Resources for all 17 regions of Québec, sorted by issue: youth protection (DYP) reporting, crisis centres, "
@@ -407,10 +449,12 @@ def shop(lang, items):
             "s": en(i, "sous") if lang == "en" else i["sous"],
             "d": en(i, "desc") if lang == "en" else i["desc"],
             "p": i["prix"], "k": i["payhip_en"] if lang == "en" else i["payhip"],
-            "img": f"{t['base']}img/{img_lang}/{img}.jpg{iv(img_lang, img)}", "c": i.get("code", ""), "v": i.get("valeur", 0),
+            "img": f"{t['base']}img/{img_lang}/{img}.jpg{iv(img_lang, img)}",
+            "a": [f"{t['base']}img/{pl}/apercu/{a}.jpg{iv(pl, 'apercu/' + a)}"
+                  for pl in ([lang] if i.get("pv_" + lang) else ["fr"]) for a in i.get("pv_" + pl, [])], "c": i.get("code", ""), "v": i.get("valeur", 0),
         })
     chips = "".join(f'<button data-t="{k}">{v}</button>' for k, v in t["types"].items())
-    labels = json.dumps({k: t[k] for k in ("buy", "soon", "free", "get", "details", "count", "value", "save")}, ensure_ascii=False)
+    labels = json.dumps({k: t[k] for k in ("buy", "soon", "free", "get", "details", "count", "value", "save", "preview", "close", "pvnote")}, ensure_ascii=False)
     body = f"""
 <section class="wrap shop">
   <h1>{t['shop_t']}</h1>
@@ -422,7 +466,9 @@ def shop(lang, items):
   </div>
   <p id="n" class="muted"></p>
   <div id="list" class="products"></div>
-</section>"""
+</section>
+<dialog id="pv" class="pv"><div class="pvh"><h3 id="pvt"></h3><button class="pvx" aria-label="{t['close']}">×</button></div>
+<p class="note" id="pvn"></p><div id="pvi" class="pvi"></div><div class="buy" id="pvb"></div></dialog>"""
     js = f"""<script>
 const P={json.dumps(data, ensure_ascii=False)};
 const T={labels};
@@ -432,11 +478,12 @@ const list=document.getElementById('list'), sel=document.getElementById('g');
 function esc(s){{return s.replace(/[&<>"]/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]))}}
 function groups(){{const gs=[...new Set(P.filter(p=>!type||p.t===type).map(p=>p.g))];
  sel.innerHTML='<option value="">{t['all']}</option>'+gs.map(g=>'<option>'+esc(g)+'</option>').join('');sel.value=grp}}
+function buybtn(p){{return p.k?'<a class="btn payhip-buy-button" data-theme="none" data-product="'+p.k+'" href="https://payhip.com/b/'+p.k+'">'+(p.p?T.buy:T.get)+'</a>'
+   :'<span class="btn off">'+T.soon+'</span>'}}
 function card(p){{
- const price=p.p?fmt.format(p.p):T.free;
- const btn=p.k?'<a class="btn payhip-buy-button" data-theme="none" data-product="'+p.k+'" href="https://payhip.com/b/'+p.k+'">'+(p.p?T.buy:T.get)+'</a>'
-   :'<span class="btn off">'+T.soon+'</span>';
- return '<article class="card prod"><img src="'+p.img+'" alt="" loading="lazy"><div class="pb"><p class="grp">'+esc(p.g)+(p.c?' · '+p.c:'')+'</p><h3>'+esc(p.n)+'</h3><p class="sub">'+esc(p.s)+'</p>'
+ const price=p.p?fmt.format(p.p):T.free, btn=buybtn(p);
+ const im='<img src="'+p.img+'" alt="" loading="lazy">';
+ return '<article class="card prod">'+(p.a.length?'<button class="pvb" data-pv="'+P.indexOf(p)+'" aria-label="'+T.preview+' : '+esc(p.n)+'">'+im+'<span class="pvl">'+T.preview+'</span></button>':im)+'<div class="pb"><p class="grp">'+esc(p.g)+(p.c?' · '+p.c:'')+'</p><h3>'+esc(p.n)+'</h3><p class="sub">'+esc(p.s)+'</p>'
   +(p.v>p.p?'<p class="save">'+T.value+' : <s>'+fmt.format(p.v)+'</s> · '+T.save+' '+Math.round(100-100*p.p/p.v)+' %</p>':'')
   +'<details><summary>'+T.details+'</summary><p>'+esc(p.d)+'</p></details><div class="buy"><strong>'+price+'</strong>'+btn+'</div></div></article>'}}
 function draw(){{const w=q.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');
@@ -445,6 +492,13 @@ function draw(){{const w=q.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u0
  if(window.Payhip&&Payhip.Buttons)try{{Payhip.Buttons.init()}}catch(e){{}}}}
 document.querySelectorAll('.chips button').forEach(b=>{{if(b.dataset.t===type){{document.querySelector('.chips .on').classList.remove('on');b.classList.add('on')}}
  b.onclick=()=>{{document.querySelector('.chips .on').classList.remove('on');b.classList.add('on');type=b.dataset.t;grp='';history.replaceState(null,'',type?'#'+type:location.pathname);groups();draw()}}}});
+const dlg=document.getElementById('pv');
+list.addEventListener('click',e=>{{const b=e.target.closest('[data-pv]');if(!b)return;const p=P[+b.dataset.pv];
+ document.getElementById('pvt').textContent=p.n;document.getElementById('pvn').textContent=T.pvnote;
+ document.getElementById('pvi').innerHTML=p.a.map(u=>'<img src="'+u+'" alt="">').join('');
+ document.getElementById('pvb').innerHTML='<strong>'+(p.p?fmt.format(p.p):T.free)+'</strong>'+buybtn(p);
+ dlg.showModal();if(window.Payhip&&Payhip.Buttons)try{{Payhip.Buttons.init()}}catch(e){{}}}});
+dlg.querySelector('.pvx').onclick=()=>dlg.close();dlg.addEventListener('click',e=>{{if(e.target===dlg)dlg.close()}});
 sel.onchange=()=>{{grp=sel.value;draw()}};document.getElementById('q').oninput=e=>{{q=e.target.value;draw()}};
 groups();draw();
 </script>"""
@@ -627,6 +681,13 @@ nav a[aria-current]{color:var(--terra)}nav .lang{border:1.5px solid var(--ink);b
 .products{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px;margin-bottom:60px}
 @media (max-width:560px){.products{grid-template-columns:1fr 1fr;gap:10px}.pb{padding:8px 9px}.prod h3{font-size:.95rem}.buy{flex-direction:column;align-items:flex-start;gap:6px}}
 .prod{display:flex;flex-direction:column}.prod img{aspect-ratio:612/792;object-fit:cover;border-bottom:1px solid var(--sand)}
+.pvb{position:relative;display:block;padding:0;border:0;background:none;cursor:zoom-in;width:100%}.pvb img{display:block;width:100%}
+.pvl{position:absolute;right:10px;bottom:12px;background:var(--ink);color:#fff;font-weight:800;font-size:.8rem;padding:4px 12px;border-radius:20px;opacity:.9}
+.pvb:hover .pvl,.pvb:focus-visible .pvl{background:var(--terra);opacity:1}
+.pv{border:0;border-radius:18px;padding:18px 20px;max-width:min(760px,94vw);width:100%;max-height:92vh;background:var(--card);color:var(--ink)}
+.pv::backdrop{background:rgba(20,30,40,.6)}.pvh{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.pvh h3{margin:0}
+.pvx{font-size:1.8rem;line-height:1;background:none;border:0;cursor:pointer;color:var(--ink)}
+.pvi{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin:10px 0}.pvi img{width:100%;border:1px solid var(--sand);border-radius:8px}
 .pb{padding:12px 14px;display:flex;flex-direction:column;flex:1}.grp{margin:0;color:var(--sage);font-weight:800;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em}
 .prod h3{font-size:1.05rem}.sub{margin:0;color:var(--gray);font-size:.9rem}
 .save{margin:6px 0 0;font-size:.82rem;font-weight:800;color:var(--sage)}
