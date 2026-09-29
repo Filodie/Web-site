@@ -263,7 +263,7 @@ L = {
         "search": "Rechercher un outil…", "all": "Tout",
         "types": {"trousse": "Trousses", "edition": "Éditions", "cahier": "Cahiers visuels", "livre": "Grand livre",
                   "bottin": "Bottin", "lot": "Lots"},
-        "buy": "Acheter", "soon": "Bientôt disponible", "free": "Gratuit", "get": "Obtenir", "details": "Détails", "preview": "Aperçu", "close": "Fermer",
+        "buy": "Acheter", "soon": "Bientôt disponible", "free": "Gratuit", "get": "Obtenir", "details": "Détails", "cahier_nb": " · Couleur + version noir et blanc à colorier", "preview": "Aperçu", "close": "Fermer",
         "pvnote": "Quelques pages du produit. Le filigrane « aperçu » n’apparaît pas dans les fichiers achetés.",
         "count": "produits", "value": "Valeur à l’unité", "save": "économie",
         "bottin_t": "Bottin régional gratuit",
@@ -302,7 +302,7 @@ L = {
         "search": "Search for a tool…", "all": "All",
         "types": {"trousse": "Toolkits", "edition": "Editions", "cahier": "Visual workbooks", "livre": "Handbook",
                   "bottin": "Directory", "lot": "Bundles"},
-        "buy": "Buy", "soon": "Coming soon", "free": "Free", "get": "Get it", "details": "Details", "preview": "Preview", "close": "Close",
+        "buy": "Buy", "soon": "Coming soon", "free": "Free", "get": "Get it", "details": "Details", "cahier_nb": " · Colour + black-and-white colouring version", "preview": "Preview", "close": "Close",
         "pvnote": "A few pages from the product. The “preview” watermark does not appear in the files you buy.",
         "count": "products", "value": "Value if bought separately", "save": "savings",
         "bottin_t": "Free regional directory",
@@ -446,7 +446,8 @@ def shop(lang, items):
         data.append({
             "id": i["id"], "t": typ, "g": tr(g) if lang == "en" else g,
             "n": en(i, "titre") if lang == "en" else i["titre"],
-            "s": en(i, "sous") if lang == "en" else i["sous"],
+            "s": (en(i, "sous") if lang == "en" else i["sous"])
+                 + (t["cahier_nb"] if i["type"] == "cahier" else ""),
             "d": en(i, "desc") if lang == "en" else i["desc"],
             "p": i["prix"], "k": i["payhip_en"] if lang == "en" else i["payhip"],
             "img": f"{t['base']}img/{img_lang}/{img}.jpg{iv(img_lang, img)}",
