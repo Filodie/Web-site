@@ -7,6 +7,7 @@
 Pour activer un bouton « Acheter » : collez l'identifiant Payhip (ex. « aB3dE ») dans produits.json,
 champ "payhip" (français) ou "payhip_en" (anglais), puis relancez ce script."""
 import html
+import hashlib
 import json
 import os
 import re
@@ -357,12 +358,18 @@ const o=n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',
 """
 
 
+def iv(lang, img):
+    """« ?v=… » : empreinte de la vignette, pour que les navigateurs rechargent l’image quand elle change."""
+    f = os.path.join(PUB, "img", lang, img + ".jpg")
+    return "?v=" + hashlib.md5(open(f, "rb").read()).hexdigest()[:8] if os.path.exists(f) else ""
+
+
 def home(lang):
     t = L[lang]
     shop = "boutique.html" if lang == "fr" else "shop.html"
     bot = "bottin.html" if lang == "fr" else "directory.html"
     stats = "".join(f"<div><strong>{n}</strong><span>{l}</span></div>" for n, l in t["stats"])
-    cols = "".join(f'<a class="card col" href="{h}"><img src="{t["base"]}img/{lang}/{img}.jpg" alt="" loading="lazy">'
+    cols = "".join(f'<a class="card col" href="{h}"><img src="{t["base"]}img/{lang}/{img}.jpg{iv(lang, img)}" alt="" loading="lazy">'
                    f'<h3>{a}</h3><p>{d}</p></a>'
                    for (a, d, h), img in zip(t["cols"], ["trousse-principale", "cahier-vtsa-01", "grand-livre", "bottin-regional"]))
     why = "".join(f"<div><h3>{a}</h3><p>{d}</p></div>" for a, d in t["why"])
@@ -400,7 +407,7 @@ def shop(lang, items):
             "s": en(i, "sous") if lang == "en" else i["sous"],
             "d": en(i, "desc") if lang == "en" else i["desc"],
             "p": i["prix"], "k": i["payhip_en"] if lang == "en" else i["payhip"],
-            "img": f"{t['base']}img/{img_lang}/{img}.jpg", "c": i.get("code", ""), "v": i.get("valeur", 0),
+            "img": f"{t['base']}img/{img_lang}/{img}.jpg{iv(img_lang, img)}", "c": i.get("code", ""), "v": i.get("valeur", 0),
         })
     chips = "".join(f'<button data-t="{k}">{v}</button>' for k, v in t["types"].items())
     labels = json.dumps({k: t[k] for k in ("buy", "soon", "free", "get", "details", "count", "value", "save")}, ensure_ascii=False)
@@ -454,6 +461,7 @@ def bottin(lang, items):
     btn = (f'<a class="btn payhip-buy-button" data-theme="none" data-product="{k}" href="https://payhip.com/b/{k}">{t["bottin_btn"]}</a>'
            if k else f'<span class="btn off">{t["soon"]}</span>')
     img = f'{t["base"]}img/{lang if os.path.exists(os.path.join(PUB, "img", lang, "bottin-regional.jpg")) else "fr"}/bottin-regional.jpg'
+    img += iv(img.split("/")[-2], "bottin-regional")
     body = f"""
 <section class="wrap split">
   <div><h1>{t['bottin_t']}</h1><p class="lead">{t['bottin_p']}</p><p>{btn}</p></div>
