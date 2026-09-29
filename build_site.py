@@ -510,11 +510,11 @@ CONTENT = {
 <h2>Can my school pay with a purchase order?</h2><p>Yes, write to us for a quote and an invoice in the organization’s name.</p>"""),
     ("fr", "contact.html"): ("Contact", """
 <p class="lead">Une question, une licence d’équipe, une correction à signaler dans une ressource ?</p>
-<p>Écrivez à <a href="mailto:bonjour@filodie.ca">bonjour@filodie.ca</a>. Réponse en 2 jours ouvrables.</p>
+<p>Écrivez à <a href="mailto:melodie@filodie.ca">melodie@filodie.ca</a>. Réponse en 2 jours ouvrables.</p>
 <p class="muted">Pour une situation urgente, composez le 9-1-1 ou le 811 option 2 (Info-Social). Filodie n’offre pas de service d’intervention.</p>"""),
     ("en", "contact.html"): ("Contact", """
 <p class="lead">A question, a team licence, a resource that needs updating?</p>
-<p>Write to <a href="mailto:bonjour@filodie.ca">bonjour@filodie.ca</a>. We reply within 2 business days.</p>
+<p>Write to <a href="mailto:melodie@filodie.ca">melodie@filodie.ca</a>. We reply within 2 business days.</p>
 <p class="muted">In an emergency, call 9-1-1 or 811 option 2 (Info-Social). Filodie does not provide intervention services.</p>"""),
     ("fr", "licence.html"): ("Licence d’utilisation", """
 <h2>Licence individuelle (incluse avec chaque achat)</h2>
@@ -541,14 +541,14 @@ CONTENT = {
 <h2>Team licence</h2><p>For a school, daycare, organization or team: the files may be placed on the organization’s internal network. Price: 3 times the individual price, for up to 25 staff members.</p>
 <p class="muted">Illustrations: Fluent Emoji © Microsoft, MIT licence. Fonts: Fraunces, Nunito Sans, Caveat (SIL Open Font License).</p>"""),
     ("fr", "conditions.html"): ("Conditions de vente", """
-<p><strong>Entreprise :</strong> Filodie, entreprise individuelle immatriculée au Québec (NEQ : <em>[à compléter]</em>). Courriel : bonjour@filodie.ca.</p>
+<p><strong>Entreprise :</strong> Filodie, entreprise individuelle immatriculée au Québec (NEQ : <em>[à compléter]</em>). Courriel : melodie@filodie.ca.</p>
 <h2>Produits et prix</h2><p>Les produits sont des fichiers numériques (PDF). Les prix sont affichés en dollars canadiens et correspondent au prix total à payer. <em>[Si vous êtes inscrite à la TPS et à la TVQ : les taxes applicables sont ajoutées et détaillées avant le paiement.]</em></p>
 <h2>Paiement et livraison</h2><p>Le paiement est traité de façon sécurisée par Payhip, Stripe ou PayPal; Filodie n’a jamais accès à vos données de carte. La livraison est immédiate : une page de téléchargement s’ouvre après le paiement et un courriel de confirmation contenant le lien vous est envoyé.</p>
 <h2>Remboursements</h2><p>Comme un fichier numérique ne peut pas être retourné, les achats ne sont pas remboursables pour un simple changement d’idée. Si un fichier est défectueux, illisible ou ne correspond pas à sa description, écrivez-nous dans les 14 jours : nous le corrigeons, le remplaçons ou vous remboursons. Ces conditions n’enlèvent aucun des droits prévus par la Loi sur la protection du consommateur.</p>
 <h2>Utilisation</h2><p>L’achat donne droit à la <a href="licence.html">licence individuelle</a>. Les outils soutiennent l’intervention et ne remplacent ni l’évaluation d’une personne professionnelle qualifiée ni le jugement clinique. Les coordonnées des ressources sont vérifiées à la date indiquée et peuvent changer.</p>
 <h2>Droit applicable</h2><p>Ces conditions sont régies par les lois du Québec et du Canada.</p>"""),
     ("en", "terms.html"): ("Terms of sale", """
-<p><strong>Business:</strong> Filodie, sole proprietorship registered in Québec (NEQ: <em>[to complete]</em>). Email: bonjour@filodie.ca.</p>
+<p><strong>Business:</strong> Filodie, sole proprietorship registered in Québec (NEQ: <em>[to complete]</em>). Email: melodie@filodie.ca.</p>
 <h2>Products and prices</h2><p>Products are digital files (PDF). Prices are shown in Canadian dollars and are the total amount payable. <em>[If registered for GST/QST: applicable taxes are added and itemized before payment.]</em></p>
 <h2>Payment and delivery</h2><p>Payment is processed securely by Payhip, Stripe or PayPal; Filodie never has access to your card details. Delivery is instant: a download page opens after payment and a confirmation email with the link is sent to you.</p>
 <h2>Refunds</h2><p>Because a digital file cannot be returned, purchases are not refundable for a simple change of mind. If a file is defective, unreadable or does not match its description, write to us within 14 days: we will fix it, replace it or refund you. These terms do not limit any rights under Québec’s Consumer Protection Act.</p>
@@ -556,7 +556,7 @@ CONTENT = {
 <h2>Governing law</h2><p>These terms are governed by the laws of Québec and Canada.</p>"""),
     ("fr", "confidentialite.html"): ("Politique de confidentialité", """
 <p>Dernière mise à jour : 28 septembre 2026.</p>
-<h2>Responsable de la protection des renseignements personnels</h2><p>Mélodie <em>[nom de famille]</em>, propriétaire de Filodie · bonjour@filodie.ca</p>
+<h2>Responsable de la protection des renseignements personnels</h2><p>Mélodie <em>[nom de famille]</em>, propriétaire de Filodie · melodie@filodie.ca</p>
 <h2>Renseignements recueillis</h2><ul><li>Lors d’un achat : nom, adresse courriel, pays ou province (pour les taxes) et historique d’achat, recueillis par Payhip.</li>
 <li>Si vous vous abonnez à l’infolettre : adresse courriel et prénom, avec votre consentement explicite.</li>
 <li>Si vous nous écrivez : le contenu de votre message.</li></ul>
@@ -564,10 +564,10 @@ CONTENT = {
 <h2>Communication à des tiers</h2><p>Payhip (plateforme de vente), Stripe et PayPal (paiements) et, s’il y a lieu, le service d’infolettre traitent certains renseignements pour notre compte. Ces entreprises peuvent conserver des données à l’extérieur du Québec; nous les avons choisies pour leurs mesures de sécurité reconnues.</p>
 <h2>Témoins (cookies)</h2><p>Le site filodie.ca ne dépose aucun témoin de suivi ni de publicité. Les pages de paiement Payhip utilisent des témoins nécessaires à la transaction.</p>
 <h2>Conservation</h2><p>Les renseignements d’achat sont conservés 6 ans (obligations fiscales), puis détruits. Vous pouvez vous désabonner de l’infolettre en tout temps.</p>
-<h2>Vos droits</h2><p>Vous pouvez demander l’accès à vos renseignements, leur rectification ou leur suppression en écrivant à bonjour@filodie.ca. Vous pouvez aussi porter plainte à la Commission d’accès à l’information du Québec.</p>"""),
+<h2>Vos droits</h2><p>Vous pouvez demander l’accès à vos renseignements, leur rectification ou leur suppression en écrivant à melodie@filodie.ca. Vous pouvez aussi porter plainte à la Commission d’accès à l’information du Québec.</p>"""),
     ("en", "privacy.html"): ("Privacy policy", """
 <p>Last updated: September 28, 2026.</p>
-<h2>Person in charge of personal information</h2><p>Mélodie <em>[last name]</em>, owner of Filodie · bonjour@filodie.ca</p>
+<h2>Person in charge of personal information</h2><p>Mélodie <em>[last name]</em>, owner of Filodie · melodie@filodie.ca</p>
 <h2>Information collected</h2><ul><li>When you buy: name, email address, country or province (for taxes) and purchase history, collected by Payhip.</li>
 <li>If you subscribe to the newsletter: email address and first name, with your express consent.</li>
 <li>If you write to us: the content of your message.</li></ul>
@@ -575,7 +575,7 @@ CONTENT = {
 <h2>Service providers</h2><p>Payhip (sales platform), Stripe and PayPal (payments) and, if applicable, the newsletter service process some information on our behalf. These companies may store data outside Québec; they were chosen for their recognized security measures.</p>
 <h2>Cookies</h2><p>The filodie.ca website does not set any tracking or advertising cookies. Payhip checkout pages use cookies required for the transaction.</p>
 <h2>Retention</h2><p>Purchase information is kept for 6 years (tax obligations), then destroyed. You may unsubscribe from the newsletter at any time.</p>
-<h2>Your rights</h2><p>You may request access to, correction or deletion of your information by writing to bonjour@filodie.ca. You may also file a complaint with the Commission d’accès à l’information du Québec.</p>"""),
+<h2>Your rights</h2><p>You may request access to, correction or deletion of your information by writing to melodie@filodie.ca. You may also file a complaint with the Commission d’accès à l’information du Québec.</p>"""),
 }
 
 CSS = """@font-face{font-family:Fraunces;src:url(fonts/Fraunces-600.ttf);font-weight:600;font-display:swap}
