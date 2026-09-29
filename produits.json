@@ -1,0 +1,5383 @@
+[
+ {
+  "id": "trousse-principale",
+  "type": "trousse",
+  "groupe": "Trousses essentielles",
+  "titre": "Trousse Filodie : Tenir le fil",
+  "sous": "12 outils de l’observation à l’intervention",
+  "desc": "Douze outils sobres, précis et reliés entre eux. Chaque fiche indique son étape du fil, renvoie à la suivante et se termine par un repère clinique. Imprimables ou remplissables à l’écran.",
+  "fichiers": [
+   "Trousse_Filodie_Outils_TES_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-petite_enfance_0-5_ans",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "Petite enfance 0-5 ans",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les T.E.S. et les éducatrices en CPE, garderie et service de garde : repérer, comprendre et accompagner les tout-petits, main dans la main avec leur famille.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Petite_enfance_0-5_ans_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-secondaire_12-17_ans",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "Élèves du secondaire",
+  "sous": "10 outils",
+  "desc": "Dix outils pour le secondaire : engagement, organisation, stress, relations, sécurité et passage à la vie adulte. Conçus pour être remplis avec l’élève, pas à sa place.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Secondaire_12-17_ans_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-adultes",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "Adultes",
+  "sous": "10 outils",
+  "desc": "Dix outils pour la réadaptation, la santé mentale, les dépendances, l’hébergement et le communautaire. Le vocabulaire respecte l’autodétermination de la personne.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Adultes_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-aines",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "Aînés",
+  "sous": "10 outils",
+  "desc": "Dix outils pour le soutien à domicile, les RPA et les CHSLD : histoire de vie, besoins compromis, approches non pharmacologiques des SCPD et soutien aux proches aidants.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Aines_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-tdah",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "TDA-H – Attention et fonctions exécutives",
+  "sous": "10 outils",
+  "desc": "Dix outils pour observer l’attention, comprendre les fonctions exécutives et installer des structures qui aident au « point de performance », là où la tâche se fait.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_TDAH_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-troubles_apprentissage",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "Troubles d’apprentissage",
+  "sous": "10 outils",
+  "desc": "Dyslexie, dysorthographie, dyscalculie : observer les erreurs, choisir les bonnes mesures d’aide, entraîner les outils technologiques et protéger l’estime de soi.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Troubles_apprentissage_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-tsa",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "TSA – Trouble du spectre de l’autisme",
+  "sous": "10 outils",
+  "desc": "Dix outils : profil sensoriel, communication, surcharge, structure visuelle, scénarios sociaux, intérêts et changements, pensés avec la personne autiste.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_TSA_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-trouble_du_langage",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "Trouble développemental du langage",
+  "sous": "10 outils",
+  "desc": "Dix outils pour soutenir la compréhension et l’expression au quotidien, en complément et en lien avec le suivi en orthophonie.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Trouble_du_langage_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-troubles_du_comportement",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "Troubles du comportement",
+  "sous": "10 outils",
+  "desc": "Dix outils fondés sur le soutien au comportement positif : analyse fonctionnelle, prévention, enseignement, réparation et cohérence d’équipe.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Troubles_du_comportement_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-dyspraxie_tdc",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "Dyspraxie – TDC",
+  "sous": "10 outils",
+  "desc": "Dix outils pour observer la motricité, mesurer le coût de l’écrit, adapter, organiser et soutenir l’autonomie, en lien avec le suivi en ergothérapie.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Dyspraxie_TDC_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-deficience_intellectuelle",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "Déficience intellectuelle",
+  "sous": "10 outils",
+  "desc": "Dix outils pour évaluer les habiletés adaptatives, enseigner par étapes, soutenir la communication, la sécurité et l’autodétermination, de l’enfance à la vie adulte.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Deficience_intellectuelle_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-gestion_de_crise",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "Gestion de crise",
+  "sous": "10 outils",
+  "desc": "Dix outils pour tout le cycle de la crise : signes précurseurs, désescalade, sécurité, rapport, retour avec la personne et soutien de l’équipe. À utiliser avec le protocole de votre milieu.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Gestion_de_crise_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-prevention_du_suicide",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "Prévention du suicide",
+  "sous": "10 outils",
+  "desc": "Dix outils pour repérer, demander, protéger et accompagner, y compris auprès des personnes ayant une DI ou un TSA. À utiliser selon votre formation et le protocole de votre milieu.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Prevention_du_suicide_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-dependances",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "Dépendances",
+  "sous": "10 outils",
+  "desc": "Dix outils pour explorer la consommation sans jugement, soutenir le changement, réduire les risques et prévenir la rechute, avec des fiches accessibles pour les personnes ayant une DI ou un TSA.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Dependances_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-violence_sexuelle",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "Violence sexuelle",
+  "sous": "10 outils",
+  "desc": "Dix outils pour repérer, recevoir un dévoilement, signaler, protéger, prévenir et soutenir, avec une approche sensible au trauma et des fiches accessibles pour les personnes ayant une DI ou un TSA.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Violence_sexuelle_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-fondements_theoriques",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "Fondements théoriques",
+  "sous": "10 outils",
+  "desc": "Dix outils pour appliquer les modèles au quotidien : pyramide de Maslow, toupie de Gendreau, schèmes relationnels, opérations professionnelles, PPH, modèle écologique, stades de changement, autodétermination.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Fondements_theoriques_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-habiletes_sociales",
+  "type": "trousse",
+  "groupe": "Habiletés et comportement",
+  "titre": "Habiletés sociales",
+  "sous": "10 outils",
+  "desc": "Dix outils pour observer, enseigner et généraliser les habiletés sociales : entrer en relation, jouer, partager, lire les indices sociaux et réparer.",
+  "fichiers": [
+   "Collection Filodie/1 – Habiletés et comportement/Trousse_Filodie_Habiletes_sociales_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-communication_et_cooperation",
+  "type": "trousse",
+  "groupe": "Habiletés et comportement",
+  "titre": "Communication et coopération",
+  "sous": "10 outils",
+  "desc": "Dix outils pour enseigner l’écoute, le message « je », les rôles en équipe, la gestion des désaccords et l’autoévaluation de la participation.",
+  "fichiers": [
+   "Collection Filodie/1 – Habiletés et comportement/Trousse_Filodie_Communication_et_cooperation_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-emotions_et_empathie",
+  "type": "trousse",
+  "groupe": "Habiletés et comportement",
+  "titre": "Émotions et empathie",
+  "sous": "10 outils",
+  "desc": "Dix outils pour reconnaître, nommer et réguler ses émotions, et pour développer l’empathie, avec des cartes et des outils visuels prêts à utiliser.",
+  "fichiers": [
+   "Collection Filodie/1 – Habiletés et comportement/Trousse_Filodie_Emotions_et_empathie_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-impulsivite",
+  "type": "trousse",
+  "groupe": "Habiletés et comportement",
+  "titre": "Impulsivité",
+  "sous": "10 outils",
+  "desc": "Dix outils pour comprendre les gestes impulsifs, enseigner l’arrêt, pratiquer l’attente par le jeu et réparer après coup.",
+  "fichiers": [
+   "Collection Filodie/1 – Habiletés et comportement/Trousse_Filodie_Impulsivite_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-routines_et_organisation_scolaire",
+  "type": "trousse",
+  "groupe": "Habiletés et comportement",
+  "titre": "Routines et organisation scolaire",
+  "sous": "10 outils",
+  "desc": "Dix outils pour enseigner les routines d’arrivée et de départ, l’agenda, l’organisation du bureau, l’horaire et le suivi des travaux.",
+  "fichiers": [
+   "Collection Filodie/1 – Habiletés et comportement/Trousse_Filodie_Routines_et_organisation_scolaire_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-soutien_langagier_primaire",
+  "type": "trousse",
+  "groupe": "Habiletés et comportement",
+  "titre": "Soutien langagier au primaire",
+  "sous": "10 outils",
+  "desc": "Dix outils pour soutenir la compréhension des consignes, le vocabulaire, les questions, la phrase, le récit et la conscience phonologique en classe.",
+  "fichiers": [
+   "Collection Filodie/1 – Habiletés et comportement/Trousse_Filodie_Soutien_langagier_primaire_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-soutien_langagier_secondaire",
+  "type": "trousse",
+  "groupe": "Habiletés et comportement",
+  "titre": "Soutien langagier au secondaire",
+  "sous": "10 outils",
+  "desc": "Dix outils pour le vocabulaire disciplinaire, les consignes d’examen, la lecture de textes informatifs, l’exposé oral et le langage implicite.",
+  "fichiers": [
+   "Collection Filodie/1 – Habiletés et comportement/Trousse_Filodie_Soutien_langagier_secondaire_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-dims",
+  "type": "trousse",
+  "groupe": "Habiletés et comportement",
+  "titre": "DIMS – Déficience intellectuelle moyenne à sévère",
+  "sous": "10 outils",
+  "desc": "Dix outils visuels pour la communication, l’horaire, les choix, les soins personnels et la stimulation, pensés pour les classes et milieux DIMS.",
+  "fichiers": [
+   "Collection Filodie/1 – Habiletés et comportement/Trousse_Filodie_DIMS_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-hpi",
+  "type": "trousse",
+  "groupe": "Habiletés et comportement",
+  "titre": "HPI – Haut potentiel intellectuel",
+  "sous": "10 outils",
+  "desc": "Dix outils pour reconnaître le haut potentiel, accompagner le perfectionnisme, l’intensité et l’ennui, et planifier l’enrichissement.",
+  "fichiers": [
+   "Collection Filodie/1 – Habiletés et comportement/Trousse_Filodie_HPI_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-syndrome_gilles_de_la_tourette",
+  "type": "trousse",
+  "groupe": "Habiletés et comportement",
+  "titre": "Syndrome de Gilles de la Tourette",
+  "sous": "10 outils",
+  "desc": "Dix outils pour observer les tics, comprendre ce qui les influence, aménager la classe, informer le groupe et soutenir l’estime de soi.",
+  "fichiers": [
+   "Collection Filodie/1 – Habiletés et comportement/Trousse_Filodie_Syndrome_Gilles_de_la_Tourette_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-protection_de_la_jeunesse",
+  "type": "trousse",
+  "groupe": "Clientèles et interventions",
+  "titre": "Protection de la jeunesse (DPJ)",
+  "sous": "10 outils",
+  "desc": "Dix outils pour signaler, observer les contacts parent-enfant, suivre l’enfant en milieu substitut, garder le fil de son histoire et collaborer avec l’équipe de la DPJ.",
+  "fichiers": [
+   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Protection_de_la_jeunesse_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-violence_conjugale",
+  "type": "trousse",
+  "groupe": "Clientèles et interventions",
+  "titre": "Violence conjugale",
+  "sous": "10 outils",
+  "desc": "Dix outils pour repérer la violence conjugale, soutenir la personne victime, bâtir un scénario de protection et accompagner les enfants exposés.",
+  "fichiers": [
+   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Violence_conjugale_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-auteurs_de_violence",
+  "type": "trousse",
+  "groupe": "Clientèles et interventions",
+  "titre": "Hommes ayant des comportements violents",
+  "sous": "10 outils",
+  "desc": "Dix outils pour accompagner les hommes (et toute personne) ayant des comportements violents : responsabilisation, signaux d’escalade, retrait, communication et prévention de la récidive. La sécurité des victimes d’abord.",
+  "fichiers": [
+   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Auteurs_de_violence_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-evaluation_globale_du_jeune",
+  "type": "trousse",
+  "groupe": "Clientèles et interventions",
+  "titre": "Évaluation globale du jeune",
+  "sous": "10 outils",
+  "desc": "Dix outils pour dresser un portrait complet : santé, famille, école, relations, émotions, comportements, consommation, forces, risques et priorités.",
+  "fichiers": [
+   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Evaluation_globale_du_jeune_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-observation_des_comportements",
+  "type": "trousse",
+  "groupe": "Clientèles et interventions",
+  "titre": "Observation des comportements",
+  "sous": "10 outils",
+  "desc": "Dix grilles pour choisir la bonne méthode d’observation : fréquence, durée, latence, intervalles, intensité, ABC, carte de dispersion et accord entre observateurs.",
+  "fichiers": [
+   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Observation_des_comportements_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-gestion_de_classe",
+  "type": "trousse",
+  "groupe": "Clientèles et interventions",
+  "titre": "Gestion de classe",
+  "sous": "10 outils",
+  "desc": "Dix outils pour aménager la classe, enseigner les règles et les routines, renforcer collectivement et répondre de façon graduée aux comportements.",
+  "fichiers": [
+   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Gestion_de_classe_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-renforcement_r05",
+  "type": "trousse",
+  "groupe": "Clientèles et interventions",
+  "titre": "Renforcement positif 0-5 ans",
+  "sous": "10 outils",
+  "desc": "Dix outils simples et visuels pour les tout-petits : autocollants, étoiles, chemins à colorier et éloges précis.",
+  "fichiers": [
+   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Renforcement_R05_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-renforcement_r610",
+  "type": "trousse",
+  "groupe": "Clientèles et interventions",
+  "titre": "Renforcement positif 6-10 ans",
+  "sous": "10 outils",
+  "desc": "Dix outils pour le primaire : points, cartes de défis, menus de récompenses, billets et éloges précis.",
+  "fichiers": [
+   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Renforcement_R610_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-renforcement_r1115",
+  "type": "trousse",
+  "groupe": "Clientèles et interventions",
+  "titre": "Renforcement positif 11-15 ans",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les préadolescents et adolescents : objectifs choisis, privilèges négociés, autoévaluation et reconnaissance discrète.",
+  "fichiers": [
+   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Renforcement_R1115_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-adultes_autistes",
+  "type": "trousse",
+  "groupe": "Clientèles et interventions",
+  "titre": "Adultes autistes",
+  "sous": "10 outils",
+  "desc": "Dix outils pour accompagner les adultes autistes : profil sensoriel adulte, énergie sociale, emploi, vie autonome, relations, santé et autodétermination.",
+  "fichiers": [
+   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Adultes_autistes_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-tts",
+  "type": "trousse",
+  "groupe": "Professions",
+  "titre": "Techniques de travail social (T.T.S.)",
+  "sous": "10 outils",
+  "desc": "Dix outils pour l’accueil psychosocial, l’évaluation des besoins, le réseau de soutien, les démarches, la référence et le suivi.",
+  "fichiers": [
+   "Collection Filodie/3 – Professions/Trousse_Filodie_TTS_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-service_de_garde_scolaire",
+  "type": "trousse",
+  "groupe": "Professions",
+  "titre": "Éducatrices en service de garde scolaire",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les éducatrices et éducateurs en service de garde : accueil, jeux, conflits, transitions, observation et communication avec l’école et les familles.",
+  "fichiers": [
+   "Collection Filodie/3 – Professions/Trousse_Filodie_Service_de_garde_scolaire_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-educatrices_cpe",
+  "type": "trousse",
+  "groupe": "Professions",
+  "titre": "Éducatrices en CPE",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les éducatrices en CPE : observation, programme éducatif, jeu, routines, intervention démocratique, dossier éducatif et collaboration avec les familles.",
+  "fichiers": [
+   "Collection Filodie/3 – Professions/Trousse_Filodie_Educatrices_CPE_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-direction_garderie",
+  "type": "trousse",
+  "groupe": "Professions",
+  "titre": "Direction de garderie et de CPE",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les directions : accueil du personnel, supervision, rencontres d’équipe, gestion des situations difficiles, communication aux familles et qualité éducative.",
+  "fichiers": [
+   "Collection Filodie/3 – Professions/Trousse_Filodie_Direction_garderie_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-chsld_tes_pab",
+  "type": "trousse",
+  "groupe": "Professions",
+  "titre": "T.E.S. et PAB en CHSLD",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les T.E.S. et les préposé·e·s aux bénéficiaires en CHSLD : histoire de vie, SCPD, soins apaisants, activités, communication et transmission.",
+  "fichiers": [
+   "Collection Filodie/3 – Professions/Trousse_Filodie_CHSLD_TES_PAB_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-travail_de_rue",
+  "type": "trousse",
+  "groupe": "Professions",
+  "titre": "Travail de rue",
+  "sous": "10 outils",
+  "desc": "Dix outils pour le travail de rue et de milieu : présence, création du lien, réduction des méfaits, crise, référence et journal de terrain.",
+  "fichiers": [
+   "Collection Filodie/3 – Professions/Trousse_Filodie_Travail_de_rue_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-tes_communautaire",
+  "type": "trousse",
+  "groupe": "Professions",
+  "titre": "T.E.S. en milieu communautaire",
+  "sous": "10 outils",
+  "desc": "Dix outils pour le milieu communautaire : accueil, groupes, animation, bénévoles, projets, partenariats et reddition de comptes.",
+  "fichiers": [
+   "Collection Filodie/3 – Professions/Trousse_Filodie_TES_communautaire_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-orthopedagogie",
+  "type": "trousse",
+  "groupe": "Professions",
+  "titre": "Outils pour l’orthopédagogie",
+  "sous": "10 outils",
+  "desc": "Dix outils pour soutenir l’intervention orthopédagogique : observation, analyse d’erreurs, stratégies, enseignement explicite, suivi et collaboration.",
+  "fichiers": [
+   "Collection Filodie/3 – Professions/Trousse_Filodie_Orthopedagogie_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-orthophonie",
+  "type": "trousse",
+  "groupe": "Professions",
+  "titre": "Outils pour l’orthophonie",
+  "sous": "10 outils",
+  "desc": "Dix outils pour soutenir le suivi en orthophonie : cahier de liaison, généralisation, jeux de langage, stimulation en milieu de vie et collaboration avec les familles.",
+  "fichiers": [
+   "Collection Filodie/3 – Professions/Trousse_Filodie_Orthophonie_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-travail_social",
+  "type": "trousse",
+  "groupe": "Professions",
+  "titre": "Outils pour le travail social",
+  "sous": "10 outils",
+  "desc": "Dix outils pour soutenir la pratique en travail social : génogramme, écocarte, évaluation du fonctionnement social, plan, médiation, référence et note.",
+  "fichiers": [
+   "Collection Filodie/3 – Professions/Trousse_Filodie_Travail_social_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-criminologie",
+  "type": "trousse",
+  "groupe": "Professions et pratique",
+  "titre": "Outils pour la criminologie",
+  "sous": "10 outils",
+  "desc": "Dix outils fondés sur le modèle risque-besoins-réceptivité : facteurs criminogènes, analyse du délit, motivation, conditions, plan de réinsertion et prévention de la récidive.",
+  "fichiers": [
+   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Criminologie_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-psychoeducation",
+  "type": "trousse",
+  "groupe": "Professions et pratique",
+  "titre": "Outils pour la psychoéducation",
+  "sous": "10 outils",
+  "desc": "Dix outils pour la pratique psychoéducative : observation participante, évaluation, utilisation du vécu partagé, structure d’ensemble et évaluation post-situationnelle.",
+  "fichiers": [
+   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Psychoeducation_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-soins_infirmiers",
+  "type": "trousse",
+  "groupe": "Professions et pratique",
+  "titre": "Outils pour les soins infirmiers",
+  "sous": "10 outils",
+  "desc": "Dix outils pour adapter les soins aux personnes ayant une DI, un TSA ou des difficultés de communication : préparation, douleur, consentement, sensorialité et enseignement.",
+  "fichiers": [
+   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Soins_infirmiers_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-zootherapie",
+  "type": "trousse",
+  "groupe": "Professions et pratique",
+  "titre": "Zoothérapie et intervention assistée par l’animal",
+  "sous": "10 outils",
+  "desc": "Dix outils pour planifier et encadrer une intervention assistée par l’animal : sécurité, consentement, bien-être de l’animal, objectifs, séances et observation.",
+  "fichiers": [
+   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Zootherapie_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-parents",
+  "type": "trousse",
+  "groupe": "Professions et pratique",
+  "titre": "Outils pour les parents",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les familles : routines, crises à la maison, temps de qualité, devoirs, écrans, sommeil, fratrie, collaboration avec l’école et prendre soin de soi.",
+  "fichiers": [
+   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Parents_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-peh",
+  "type": "trousse",
+  "groupe": "Professions et pratique",
+  "titre": "Préposé·e aux élèves handicapés (PEH)",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les PEH et accompagnant·e·s : routine de soins, alimentation, hygiène, déplacements, communication, journal de bord et collaboration avec l’équipe.",
+  "fichiers": [
+   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_PEH_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-pratique_privee",
+  "type": "trousse",
+  "groupe": "Professions et pratique",
+  "titre": "Démarrer une pratique privée",
+  "sous": "10 outils",
+  "desc": "Dix outils pour lancer et gérer une pratique privée : démarches, offre de services, contrat, consentement, dossiers, confidentialité, facturation et suivi.",
+  "fichiers": [
+   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Pratique_privee_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-formation_tsa",
+  "type": "trousse",
+  "groupe": "Professions et pratique",
+  "titre": "Formation clé en main : Mieux comprendre le TSA",
+  "sous": "10 outils",
+  "desc": "Une formation prête à animer pour sensibiliser une équipe au trouble du spectre de l’autisme : contenus clés, étude de cas, jeu de rôle, quiz et attestation.",
+  "fichiers": [
+   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Formation_TSA_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-formation_comportements_defis",
+  "type": "trousse",
+  "groupe": "Professions et pratique",
+  "titre": "Formation clé en main : Intervenir auprès des comportements-défis",
+  "sous": "10 outils",
+  "desc": "Une formation prête à animer pour outiller une équipe face aux comportements-défis : fonction, prévention, enseignement du remplacement, cycle de la crise, étude de cas et attestation.",
+  "fichiers": [
+   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Formation_comportements_defis_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-pack_rentree_tes_primaire",
+  "type": "trousse",
+  "groupe": "Professions et pratique",
+  "titre": "Pack rentrée T.E.S. primaire",
+  "sous": "10 outils",
+  "desc": "Dix outils pour réussir la rentrée comme T.E.S. au primaire : présentation, liste des élèves, horaire, rencontres, collaboration avec les enseignants et les familles.",
+  "fichiers": [
+   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Pack_rentree_TES_primaire_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-ateliers_emotions",
+  "type": "trousse",
+  "groupe": "Jeux et activités",
+  "titre": "Ateliers à animer : les émotions",
+  "sous": "10 outils",
+  "desc": "Dix ateliers de 30 à 45 minutes, prêts à animer en classe ou en petit groupe, pour découvrir, nommer et apprivoiser les émotions.",
+  "fichiers": [
+   "Collection Filodie/5 – Jeux et activités/Trousse_Filodie_Ateliers_emotions_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-jeux_a_imprimer",
+  "type": "trousse",
+  "groupe": "Jeux et activités",
+  "titre": "Jeux à imprimer, découper et plastifier",
+  "sous": "10 outils",
+  "desc": "Dix jeux à imprimer sur carton, découper et plastifier : mémoire des émotions, bingo, dominos, cartes de situations, dés d’activités et plus.",
+  "fichiers": [
+   "Collection Filodie/5 – Jeux et activités/Trousse_Filodie_Jeux_a_imprimer_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-pictogrammes",
+  "type": "trousse",
+  "groupe": "Jeux et activités",
+  "titre": "Pictogrammes",
+  "sous": "10 outils",
+  "desc": "Dix planches de pictogrammes prêts à découper : école, maison, repas, soins, émotions, besoins, activités, consignes, météo et moments de la journée.",
+  "fichiers": [
+   "Collection Filodie/5 – Jeux et activités/Trousse_Filodie_Pictogrammes_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-motricite_fine",
+  "type": "trousse",
+  "groupe": "Jeux et activités",
+  "titre": "Motricité fine",
+  "sous": "10 outils",
+  "desc": "Dix fiches pour exercer la motricité fine : tracés, découpage, pince, coloriage, pâte à modeler, laçage et suivi des progrès.",
+  "fichiers": [
+   "Collection Filodie/5 – Jeux et activités/Trousse_Filodie_Motricite_fine_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-parcours_moteur",
+  "type": "trousse",
+  "groupe": "Jeux et activités",
+  "titre": "Parcours moteur",
+  "sous": "10 outils",
+  "desc": "Dix fiches pour créer des parcours moteurs : cartes de stations, défis, pauses actives, planification et suivi des habiletés motrices globales.",
+  "fichiers": [
+   "Collection Filodie/5 – Jeux et activités/Trousse_Filodie_Parcours_moteur_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-guide_accompagnement_tes",
+  "type": "trousse",
+  "groupe": "Jeux et activités",
+  "titre": "Guide d’accompagnement pour T.E.S.",
+  "sous": "10 outils",
+  "desc": "Dix fiches-guides pour bien exercer le rôle de T.E.S. : mandat, éthique, confidentialité, plan d’intervention, relation d’aide, crise, communication et développement professionnel.",
+  "fichiers": [
+   "Collection Filodie/5 – Jeux et activités/Trousse_Filodie_Guide_accompagnement_TES_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-histoires_sociales",
+  "type": "trousse",
+  "groupe": "Jeux et activités",
+  "titre": "Histoires sociales illustrées",
+  "sous": "10 outils",
+  "desc": "Dix courtes histoires sociales entièrement rédigées et illustrées pour les situations du quotidien : suppléant, récréation, dentiste, coupe de cheveux, sortie et plus.",
+  "fichiers": [
+   "Collection Filodie/5 – Jeux et activités/Trousse_Filodie_Histoires_sociales_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-cahier_a_colorier",
+  "type": "trousse",
+  "groupe": "Jeux et activités",
+  "titre": "Cahier à colorier",
+  "sous": "10 outils",
+  "desc": "Dix pages à colorier illustrées : émotions, animaux, saisons, métiers et objets du quotidien, avec un mot à apprendre sur chaque page.",
+  "fichiers": [
+   "Collection Filodie/5 – Jeux et activités/Trousse_Filodie_Cahier_a_colorier_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-cahier_videos",
+  "type": "trousse",
+  "groupe": "Jeux et activités",
+  "titre": "Cahier d’accompagnement de vidéos",
+  "sous": "10 outils",
+  "desc": "Dix fiches pour accompagner le visionnement d’une vidéo éducative : avant, pendant et après, avec des activités de compréhension, d’émotions et de réinvestissement.",
+  "fichiers": [
+   "Collection Filodie/5 – Jeux et activités/Trousse_Filodie_Cahier_videos_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-trousse_decouverte",
+  "type": "trousse",
+  "groupe": "Jeux et activités",
+  "titre": "Trousse découverte gratuite",
+  "sous": "10 outils",
+  "desc": "Un échantillon gratuit des outils Filodie à partager : observation, émotions, horaire visuel, renforcement, retour au calme et communication. Idéal pour faire connaître la collection.",
+  "fichiers": [
+   "Collection Filodie/5 – Jeux et activités/Trousse_Filodie_Trousse_decouverte_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-theme_sirenes_sous_la_mer",
+  "type": "trousse",
+  "groupe": "Cahiers thématiques",
+  "titre": "Cahier thématique : Sous la mer",
+  "sous": "10 outils",
+  "desc": "Dix activités sur le thème « Sous la mer » : vocabulaire, coloriage, mémoire, tracés, histoire, émotions, renforcement, bingo et dessin. Des apprentissages déguisés en jeu.",
+  "fichiers": [
+   "Collection Filodie/6 – Cahiers thématiques/Trousse_Filodie_Theme_sirenes_sous_la_mer_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-theme_animaux_jungle",
+  "type": "trousse",
+  "groupe": "Cahiers thématiques",
+  "titre": "Cahier thématique : Animaux de la jungle",
+  "sous": "10 outils",
+  "desc": "Dix activités sur le thème « Animaux de la jungle » : vocabulaire, coloriage, mémoire, tracés, histoire, émotions, renforcement, bingo et dessin. Des apprentissages déguisés en jeu.",
+  "fichiers": [
+   "Collection Filodie/6 – Cahiers thématiques/Trousse_Filodie_Theme_animaux_jungle_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-theme_flamants_roses",
+  "type": "trousse",
+  "groupe": "Cahiers thématiques",
+  "titre": "Cahier thématique : Flamants roses",
+  "sous": "10 outils",
+  "desc": "Dix activités sur le thème « Flamants roses » : vocabulaire, coloriage, mémoire, tracés, histoire, émotions, renforcement, bingo et dessin. Des apprentissages déguisés en jeu.",
+  "fichiers": [
+   "Collection Filodie/6 – Cahiers thématiques/Trousse_Filodie_Theme_flamants_roses_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-theme_gobelins",
+  "type": "trousse",
+  "groupe": "Cahiers thématiques",
+  "titre": "Cahier thématique : Gobelins et créatures",
+  "sous": "10 outils",
+  "desc": "Dix activités sur le thème « Gobelins et créatures » : vocabulaire, coloriage, mémoire, tracés, histoire, émotions, renforcement, bingo et dessin. Des apprentissages déguisés en jeu.",
+  "fichiers": [
+   "Collection Filodie/6 – Cahiers thématiques/Trousse_Filodie_Theme_gobelins_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-theme_sorcieres",
+  "type": "trousse",
+  "groupe": "Cahiers thématiques",
+  "titre": "Cahier thématique : Sorcières et magie",
+  "sous": "10 outils",
+  "desc": "Dix activités sur le thème « Sorcières et magie » : vocabulaire, coloriage, mémoire, tracés, histoire, émotions, renforcement, bingo et dessin. Des apprentissages déguisés en jeu.",
+  "fichiers": [
+   "Collection Filodie/6 – Cahiers thématiques/Trousse_Filodie_Theme_sorcieres_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-theme_trains",
+  "type": "trousse",
+  "groupe": "Cahiers thématiques",
+  "titre": "Cahier thématique : Les trains",
+  "sous": "10 outils",
+  "desc": "Dix activités sur le thème « Les trains » : vocabulaire, coloriage, mémoire, tracés, histoire, émotions, renforcement, bingo et dessin. Des apprentissages déguisés en jeu.",
+  "fichiers": [
+   "Collection Filodie/6 – Cahiers thématiques/Trousse_Filodie_Theme_trains_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-theme_princesses",
+  "type": "trousse",
+  "groupe": "Cahiers thématiques",
+  "titre": "Cahier thématique : Princesses et chevaliers",
+  "sous": "10 outils",
+  "desc": "Dix activités sur le thème « Princesses et chevaliers » : vocabulaire, coloriage, mémoire, tracés, histoire, émotions, renforcement, bingo et dessin. Des apprentissages déguisés en jeu.",
+  "fichiers": [
+   "Collection Filodie/6 – Cahiers thématiques/Trousse_Filodie_Theme_princesses_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-theme_pommes",
+  "type": "trousse",
+  "groupe": "Cahiers thématiques",
+  "titre": "Cahier thématique : Les pommes",
+  "sous": "10 outils",
+  "desc": "Dix activités sur le thème « Les pommes » : vocabulaire, coloriage, mémoire, tracés, histoire, émotions, renforcement, bingo et dessin. Des apprentissages déguisés en jeu.",
+  "fichiers": [
+   "Collection Filodie/6 – Cahiers thématiques/Trousse_Filodie_Theme_pommes_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-theme_halloween",
+  "type": "trousse",
+  "groupe": "Cahiers thématiques",
+  "titre": "Cahier thématique : Halloween",
+  "sous": "10 outils",
+  "desc": "Dix activités sur le thème « Halloween » : vocabulaire, coloriage, mémoire, tracés, histoire, émotions, renforcement, bingo et dessin. Des apprentissages déguisés en jeu.",
+  "fichiers": [
+   "Collection Filodie/6 – Cahiers thématiques/Trousse_Filodie_Theme_halloween_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-theme_hiver",
+  "type": "trousse",
+  "groupe": "Cahiers thématiques",
+  "titre": "Cahier thématique : L’hiver",
+  "sous": "10 outils",
+  "desc": "Dix activités sur le thème « L’hiver » : vocabulaire, coloriage, mémoire, tracés, histoire, émotions, renforcement, bingo et dessin. Des apprentissages déguisés en jeu.",
+  "fichiers": [
+   "Collection Filodie/6 – Cahiers thématiques/Trousse_Filodie_Theme_hiver_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-francais_1re_annee",
+  "type": "trousse",
+  "groupe": "Scolaire",
+  "titre": "Français 1re année",
+  "sous": "10 outils",
+  "desc": "Dix fiches pour la 1re année : sons, syllabes, mots fréquents, lecture, phrase, écriture et dictée.",
+  "fichiers": [
+   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Francais_1re_annee_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-francais_2e_annee",
+  "type": "trousse",
+  "groupe": "Scolaire",
+  "titre": "Français 2e année",
+  "sous": "10 outils",
+  "desc": "Dix fiches pour la 2e année : sons complexes, genre et nombre, déterminants, phrase négative, ordre alphabétique, lecture, écriture et dictée.",
+  "fichiers": [
+   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Francais_2e_annee_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-francais_3e_annee",
+  "type": "trousse",
+  "groupe": "Scolaire",
+  "titre": "Français 3e année",
+  "sous": "10 outils",
+  "desc": "Dix fiches pour la 3e année : classes de mots, accords dans le groupe du nom, présent et futur, homophones, ponctuation, dictionnaire, lecture et écriture.",
+  "fichiers": [
+   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Francais_3e_annee_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-francais_4e_annee",
+  "type": "trousse",
+  "groupe": "Scolaire",
+  "titre": "Français 4e année",
+  "sous": "10 outils",
+  "desc": "Dix fiches pour la 4e année : imparfait, passé composé, homophones, groupes de la phrase, pronoms, famille de mots, lecture, écriture et dictée.",
+  "fichiers": [
+   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Francais_4e_annee_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-francais_5e_annee",
+  "type": "trousse",
+  "groupe": "Scolaire",
+  "titre": "Français 5e année",
+  "sous": "10 outils",
+  "desc": "Dix fiches pour la 5e année : accord sujet-verbe, participe passé avec être, conditionnel, types et formes de phrases, lecture, texte d’opinion et dictée.",
+  "fichiers": [
+   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Francais_5e_annee_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-francais_6e_annee",
+  "type": "trousse",
+  "groupe": "Scolaire",
+  "titre": "Français 6e année",
+  "sous": "10 outils",
+  "desc": "Dix fiches pour la 6e année : subjonctif, passé simple, subordonnée relative, discours rapporté, homophones, coordination, lecture inférentielle, texte d’opinion et dictée.",
+  "fichiers": [
+   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Francais_6e_annee_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-mathematiques_5e_annee",
+  "type": "trousse",
+  "groupe": "Scolaire",
+  "titre": "Mathématiques 5e année",
+  "sous": "10 outils",
+  "desc": "Dix fiches pour la 5e année : grands nombres, fractions, nombres décimaux, opérations, géométrie, mesure, statistique, probabilités et résolution de problèmes.",
+  "fichiers": [
+   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Mathematiques_5e_annee_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-enseignants_secondaire",
+  "type": "trousse",
+  "groupe": "Scolaire",
+  "titre": "Enseignants du secondaire",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les enseignants du secondaire : planification, gestion de classe, différenciation, évaluation, rétroaction, élèves à besoins particuliers et communication avec les familles.",
+  "fichiers": [
+   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Enseignants_secondaire_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-deuil_et_separation",
+  "type": "trousse",
+  "groupe": "Thèmes complémentaires",
+  "titre": "Deuil et séparation",
+  "sous": "10 outils",
+  "desc": "Dix outils pour accompagner un enfant ou un adolescent qui vit un deuil ou la séparation de ses parents : comprendre, exprimer, se souvenir et retrouver des repères.",
+  "fichiers": [
+   "Collection Filodie/8 – Thèmes complémentaires/Trousse_Filodie_Deuil_et_separation_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-estime_de_soi",
+  "type": "trousse",
+  "groupe": "Thèmes complémentaires",
+  "titre": "Estime de soi",
+  "sous": "10 outils",
+  "desc": "Dix outils pour développer l’estime de soi : forces, réussites, discours intérieur, compétences, appartenance et fierté.",
+  "fichiers": [
+   "Collection Filodie/8 – Thèmes complémentaires/Trousse_Filodie_Estime_de_soi_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-approche_sensible_au_trauma",
+  "type": "trousse",
+  "groupe": "Thèmes complémentaires",
+  "titre": "Approche sensible au trauma",
+  "sous": "10 outils",
+  "desc": "Dix outils pour intégrer l’approche sensible au trauma : comprendre, sécuriser, prévoir les déclencheurs, réguler, offrir du pouvoir et prendre soin de l’équipe.",
+  "fichiers": [
+   "Collection Filodie/8 – Thèmes complémentaires/Trousse_Filodie_Approche_sensible_au_trauma_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-sexualite_adaptee",
+  "type": "trousse",
+  "groupe": "Thèmes complémentaires",
+  "titre": "Sexualité et relations saines (DI et TSA)",
+  "sous": "10 outils",
+  "desc": "Dix outils visuels et concrets pour l’éducation à la sexualité adaptée : corps, intimité, puberté, consentement, relations, sécurité en ligne et limites.",
+  "fichiers": [
+   "Collection Filodie/8 – Thèmes complémentaires/Trousse_Filodie_Sexualite_adaptee_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-ecrans_et_cyberdependance",
+  "type": "trousse",
+  "groupe": "Thèmes complémentaires",
+  "titre": "Les écrans",
+  "sous": "10 outils",
+  "desc": "Dix outils pour observer l’usage des écrans, établir des règles, prévenir la cyberdépendance et retrouver un équilibre en famille et à l’école.",
+  "fichiers": [
+   "Collection Filodie/8 – Thèmes complémentaires/Trousse_Filodie_Ecrans_et_cyberdependance_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-sommeil",
+  "type": "trousse",
+  "groupe": "Thèmes complémentaires",
+  "titre": "Le sommeil",
+  "sous": "10 outils",
+  "desc": "Dix outils pour observer le sommeil, bâtir une routine du soir, apaiser les peurs nocturnes et comprendre le lien entre sommeil, humeur et apprentissage.",
+  "fichiers": [
+   "Collection Filodie/8 – Thèmes complémentaires/Trousse_Filodie_Sommeil_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-troubles_alimentaires",
+  "type": "trousse",
+  "groupe": "Thèmes complémentaires",
+  "titre": "Troubles alimentaires : repérer et soutenir",
+  "sous": "10 outils",
+  "desc": "Dix outils pour repérer les signes d’un trouble alimentaire, en parler avec respect, soutenir le jeune et collaborer avec les professionnels. Le T.E.S. repère et oriente ; il ne traite pas.",
+  "fichiers": [
+   "Collection Filodie/8 – Thèmes complémentaires/Trousse_Filodie_Troubles_alimentaires_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-nouveaux_arrivants",
+  "type": "trousse",
+  "groupe": "Thèmes complémentaires",
+  "titre": "Élèves nouveaux arrivants",
+  "sous": "10 outils",
+  "desc": "Dix outils pour accueillir les élèves nouvellement arrivés et leur famille : profil, langue, repères scolaires, pictogrammes, amitiés et collaboration avec la famille.",
+  "fichiers": [
+   "Collection Filodie/8 – Thèmes complémentaires/Trousse_Filodie_Nouveaux_arrivants_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-autosoins_intervenants",
+  "type": "trousse",
+  "groupe": "Thèmes complémentaires",
+  "titre": "Prendre soin de soi comme intervenant·e",
+  "sous": "10 outils",
+  "desc": "Dix outils pour prévenir l’épuisement et la fatigue de compassion : repérer les signaux, poser des limites, se recharger, débreffer et s’appuyer sur l’équipe.",
+  "fichiers": [
+   "Collection Filodie/8 – Thèmes complémentaires/Trousse_Filodie_Autosoins_intervenants_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-supervision_stagiaires",
+  "type": "trousse",
+  "groupe": "Thèmes complémentaires",
+  "titre": "Supervision de stagiaires",
+  "sous": "10 outils",
+  "desc": "Dix outils pour accueillir et superviser un·e stagiaire en éducation spécialisée : accueil, objectifs, observation, rétroaction, évaluation formative et bilan.",
+  "fichiers": [
+   "Collection Filodie/8 – Thèmes complémentaires/Trousse_Filodie_Supervision_stagiaires_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "edition-edition_ados",
+  "type": "edition",
+  "groupe": "Éditions complémentaires",
+  "titre": "Édition Ados",
+  "sous": "3 fiches",
+  "desc": "Trois fiches repensées pour les 12 à 17 ans : plus d’autonomie, plus de choix, aucun ton enfantin. À utiliser avec la trousse principale.",
+  "fichiers": [
+   "Éditions complémentaires/Filodie_Edition_Ados_2026.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "edition-edition_famille",
+  "type": "edition",
+  "groupe": "Éditions complémentaires",
+  "titre": "Édition Famille",
+  "sous": "2 fiches",
+  "desc": "Deux fiches à remettre aux parents pour que l’information circule aussi de la maison vers l’école.",
+  "fichiers": [
+   "Éditions complémentaires/Filodie_Edition_Famille_2026.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "edition-edition_transitions",
+  "type": "edition",
+  "groupe": "Éditions complémentaires",
+  "titre": "Édition Transitions",
+  "sous": "3 fiches",
+  "desc": "Des transitions quotidiennes aux grands passages : observer, préparer l’élève, planifier avec l’équipe.",
+  "fichiers": [
+   "Éditions complémentaires/Filodie_Edition_Transitions_2026.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "edition-edition_intimidation",
+  "type": "edition",
+  "groupe": "Éditions complémentaires",
+  "titre": "Édition Intimidation",
+  "sous": "3 fiches",
+  "desc": "Consigner les faits, distinguer le conflit de l’intimidation, recueillir la parole de l’élève et assurer un suivi daté. S’utilise avec le plan de lutte de votre milieu.",
+  "fichiers": [
+   "Éditions complémentaires/Filodie_Edition_Intimidation_2026.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "edition-edition_anxiete",
+  "type": "edition",
+  "groupe": "Éditions complémentaires",
+  "titre": "Édition Anxiété",
+  "sous": "3 fiches",
+  "desc": "Observer ce qui entretient l’anxiété, aider l’élève à comprendre son alarme, puis l’affronter graduellement.",
+  "fichiers": [
+   "Éditions complémentaires/Filodie_Edition_Anxiete_2026.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-01",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Je dis ce dont j'ai besoin",
+  "sous": "6-12 ans",
+  "desc": "Reconnaître un besoin et le demander avec mes mots, un geste ou une image.",
+  "code": "VTSA-01",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-01_Je_dis_ce_dont_j_ai_besoin.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-01_Je_dis_ce_dont_j_ai_besoin_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-02",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Quand ça change, je m'adapte",
+  "sous": "6-12 ans",
+  "desc": "Comprendre les changements et trouver ce qui m'aide à les traverser.",
+  "code": "VTSA-02",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-02_Quand_ça_change_je_m_adapte.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-02_Quand_ça_change_je_m_adapte_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-03",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Après la tempête, je me répare",
+  "sous": "6-12 ans",
+  "desc": "Ce que je fais après une crise pour retrouver mon calme et reprendre ma journée.",
+  "code": "VTSA-03",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-03_Après_la_tempête_je_me_répare.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-03_Après_la_tempête_je_me_répare_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-04",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "J'attends sans stress",
+  "sous": "4-10 ans",
+  "desc": "Des trucs concrets pour que l'attente soit plus facile.",
+  "code": "VTSA-04",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-04_J_attends_sans_stress.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-04_J_attends_sans_stress_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-05",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Quand ça ne marche pas comme je veux",
+  "sous": "6-12 ans",
+  "desc": "Apprivoiser la frustration et trouver une solution.",
+  "code": "VTSA-05",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-05_Quand_ça_ne_marche_pas_comme_je_veux.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-05_Quand_ça_ne_marche_pas_comme_je_veux_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-06",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Je vais aux toilettes",
+  "sous": "3-8 ans",
+  "desc": "Les étapes pour aller aux toilettes de façon autonome.",
+  "code": "VTSA-06",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-06_Je_vais_aux_toilettes.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-06_Je_vais_aux_toilettes_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-07",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Mon mode d'emploi",
+  "sous": "8-17 ans",
+  "desc": "Ce qui m'aide chaque jour, à présenter aux adultes qui m'accompagnent.",
+  "code": "VTSA-07",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-07_Mon_mode_d_emploi.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-07_Mon_mode_d_emploi_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-08",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Les règles cachées",
+  "sous": "8-14 ans",
+  "desc": "Ces règles que personne n'explique, mais que tout le monde suit.",
+  "code": "VTSA-08",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-08_Les_règles_cachées.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-08_Les_règles_cachées_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-09",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Mes sens et mon comportement",
+  "sous": "6-12 ans",
+  "desc": "Comprendre pourquoi je bouge, je me bouche les oreilles ou je cherche certaines sensations.",
+  "code": "VTSA-09",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-09_Mes_sens_et_mon_comportement.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-09_Mes_sens_et_mon_comportement_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-10",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Quand une pensée tourne en boucle",
+  "sous": "9-17 ans",
+  "desc": "Des trucs pour sortir d'une pensée qui revient sans arrêt.",
+  "code": "VTSA-10",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-10_Quand_une_pensée_tourne_en_boucle.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-10_Quand_une_pensée_tourne_en_boucle_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-11",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Mon cerveau autiste et moi",
+  "sous": "8-14 ans",
+  "desc": "Comprendre mon autisme, mes forces et mes défis.",
+  "code": "VTSA-11",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-11_Mon_cerveau_autiste_et_moi.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-11_Mon_cerveau_autiste_et_moi_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-12",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Me faire un ami et le garder",
+  "sous": "7-14 ans",
+  "desc": "Les étapes pour commencer une amitié et la faire durer.",
+  "code": "VTSA-12",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-12_Me_faire_un_ami_et_le_garder.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-12_Me_faire_un_ami_et_le_garder_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-13",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Mon cerveau élastique",
+  "sous": "6-12 ans",
+  "desc": "Devenir plus flexible quand les choses ne se passent pas comme prévu.",
+  "code": "VTSA-13",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-13_Mon_cerveau_élastique.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-13_Mon_cerveau_élastique_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-14",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Oui, non ou je choisis",
+  "sous": "4-10 ans",
+  "desc": "Apprendre à dire oui, à dire non poliment et à faire un choix.",
+  "code": "VTSA-14",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-14_Oui_non_ou_je_choisis.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-14_Oui_non_ou_je_choisis_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-15",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Mon matin en images",
+  "sous": "4-12 ans",
+  "desc": "Ma routine du matin, étape par étape, pour partir sans stress.",
+  "code": "VTSA-15",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-15_Mon_matin_en_images.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-15_Mon_matin_en_images_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-16",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Je me protège de l'intimidation",
+  "sous": "7-14 ans",
+  "desc": "Reconnaître l'intimidation, dire non et aller chercher de l'aide.",
+  "code": "VTSA-16",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-16_Je_me_protège_de_l_intimidation.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-16_Je_me_protège_de_l_intimidation_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-17",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Mon coin calme sur mesure",
+  "sous": "4-12 ans",
+  "desc": "Créer un espace apaisant qui me ressemble.",
+  "code": "VTSA-17",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-17_Mon_coin_calme_sur_mesure.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-17_Mon_coin_calme_sur_mesure_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-18",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "J'aide à la maison",
+  "sous": "5-14 ans",
+  "desc": "Participer aux tâches de la maison, une petite étape à la fois.",
+  "code": "VTSA-18",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-18_J_aide_à_la_maison.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-18_J_aide_à_la_maison_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-19",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Oups, un malentendu !",
+  "sous": "7-14 ans",
+  "desc": "Comprendre ce qui s'est passé et réparer quand on s'est mal compris.",
+  "code": "VTSA-19",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-19_Oups_un_malentendu.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-19_Oups_un_malentendu_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-20",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Je m'habille étape par étape",
+  "sous": "3-10 ans",
+  "desc": "L'ordre des vêtements, du matin jusqu'aux bottes d'hiver.",
+  "code": "VTSA-20",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-20_Je_m_habille_étape_par_étape.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-20_Je_m_habille_étape_par_étape_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-21",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Mes forces et mes défis",
+  "sous": "7-14 ans",
+  "desc": "Ce qui est facile pour moi, ce qui est difficile, et ce qui m'aide.",
+  "code": "VTSA-21",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-21_Mes_forces_et_mes_défis.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-21_Mes_forces_et_mes_défis_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-22",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Les expressions et les consignes",
+  "sous": "8-14 ans",
+  "desc": "Comprendre ce que les gens veulent vraiment dire.",
+  "code": "VTSA-22",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-22_Les_expressions_et_les_consignes.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-22_Les_expressions_et_les_consignes_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-23",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Mon profil sensoriel",
+  "sous": "6-14 ans",
+  "desc": "Découvrir ce que mes sens aiment et n'aiment pas.",
+  "code": "VTSA-23",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-23_Mon_profil_sensoriel.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-23_Mon_profil_sensoriel_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-24",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Mon soir en images",
+  "sous": "4-12 ans",
+  "desc": "Ma routine du soir pour bien dormir.",
+  "code": "VTSA-24",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-24_Mon_soir_en_images.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-24_Mon_soir_en_images_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-25",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Les repas plus calmes",
+  "sous": "4-12 ans",
+  "desc": "Des repères pour que le moment du repas soit plus agréable.",
+  "code": "VTSA-25",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-25_Les_repas_plus_calmes.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-25_Les_repas_plus_calmes_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-26",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Je communique avec des images",
+  "sous": "3-12 ans",
+  "desc": "Mes pictogrammes pour dire ce que je veux, ce que je ressens et ce dont j'ai besoin.",
+  "code": "VTSA-26",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-26_Je_communique_avec_des_images.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-26_Je_communique_avec_des_images_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-27",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "D'une activité à l'autre",
+  "sous": "4-12 ans",
+  "desc": "Passer plus facilement d'une activité à une autre.",
+  "code": "VTSA-27",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-27_D_une_activité_à_l_autre.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-27_D_une_activité_à_l_autre_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-28",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Ma trousse de retour au calme",
+  "sous": "5-14 ans",
+  "desc": "Mes outils préférés pour retrouver mon calme.",
+  "code": "VTSA-28",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-28_Ma_trousse_de_retour_au_calme.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-28_Ma_trousse_de_retour_au_calme_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-29",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Ma journée d'école en douceur",
+  "sous": "6-12 ans",
+  "desc": "Mes repères pour vivre la journée d'école avec moins de stress.",
+  "code": "VTSA-29",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-29_Ma_journée_d_école_en_douceur.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-29_Ma_journée_d_école_en_douceur_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-30",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Je prends soin de mon corps",
+  "sous": "6-14 ans",
+  "desc": "Les gestes d'hygiène de tous les jours.",
+  "code": "VTSA-30",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-30_Je_prends_soin_de_mon_corps.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-30_Je_prends_soin_de_mon_corps_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-31",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Je grandis : l'adolescence",
+  "sous": "10-14 ans",
+  "desc": "Les changements du corps et de la vie qui s'en viennent.",
+  "code": "VTSA-31",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-31_Je_grandis_l_adolescence.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-31_Je_grandis_l_adolescence_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-32",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Le plan B, c'est correct",
+  "sous": "6-12 ans",
+  "desc": "Quand le plan change à la dernière minute.",
+  "code": "VTSA-32",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-32_Le_plan_B_c_est_correct.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-32_Le_plan_B_c_est_correct_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-33",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Quand les bruits sont trop forts",
+  "sous": "4-12 ans",
+  "desc": "Me protéger des bruits qui me dérangent.",
+  "code": "VTSA-33",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-33_Quand_les_bruits_sont_trop_forts.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-33_Quand_les_bruits_sont_trop_forts_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtsa-34",
+  "type": "cahier",
+  "groupe": "Cahiers TSA",
+  "titre": "Mon corps me parle",
+  "sous": "6-12 ans",
+  "desc": "Reconnaître les signaux de mon corps avant que l'émotion déborde.",
+  "code": "VTSA-34",
+  "fichiers": [
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-34_Mon_corps_me_parle.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-34_Mon_corps_me_parle_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-01",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Mon cerveau turbo",
+  "sous": "7-13 ans",
+  "desc": "Comprendre mon TDAH, mes forces et ce qui m'aide.",
+  "code": "VTDAH-01",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-01_Mon_cerveau_turbo.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-01_Mon_cerveau_turbo_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-02",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Je freine avant d'agir",
+  "sous": "6-12 ans",
+  "desc": "Des trucs pour contrôler mes gestes impulsifs.",
+  "code": "VTDAH-02",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-02_Je_freine_avant_d_agir.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-02_Je_freine_avant_d_agir_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-03",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Chacun son tour",
+  "sous": "4-10 ans",
+  "desc": "Apprendre à attendre son tour dans les jeux et en classe.",
+  "code": "VTDAH-03",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-03_Chacun_son_tour.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-03_Chacun_son_tour_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-04",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Je me lance !",
+  "sous": "7-14 ans",
+  "desc": "Commencer une tâche difficile, même quand je n'en ai pas envie.",
+  "code": "VTDAH-04",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-04_Je_me_lance.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-04_Je_me_lance_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-05",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Les consignes en petits morceaux",
+  "sous": "6-12 ans",
+  "desc": "Comprendre et suivre une consigne longue.",
+  "code": "VTDAH-05",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-05_Les_consignes_en_petits_morceaux.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-05_Les_consignes_en_petits_morceaux_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-06",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Ma colère, je la dompte",
+  "sous": "6-12 ans",
+  "desc": "Reconnaître ma colère et l'exprimer sans blesser.",
+  "code": "VTDAH-06",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-06_Ma_colère_je_la_dompte.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-06_Ma_colère_je_la_dompte_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-07",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Je choisis mes mots",
+  "sous": "7-13 ans",
+  "desc": "Parler sans blesser, même quand je suis fâché ou excité.",
+  "code": "VTDAH-07",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-07_Je_choisis_mes_mots.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-07_Je_choisis_mes_mots_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-08",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Ma patience grandit",
+  "sous": "5-11 ans",
+  "desc": "Des jeux et des trucs pour devenir plus patient.",
+  "code": "VTDAH-08",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-08_Ma_patience_grandit.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-08_Ma_patience_grandit_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-09",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Mon attention, je l'entraîne",
+  "sous": "6-12 ans",
+  "desc": "Des exercices et des trucs pour rester concentré.",
+  "code": "VTDAH-09",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-09_Mon_attention_je_l_entraîne.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-09_Mon_attention_je_l_entraîne_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-10",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Le temps, je l'apprivoise",
+  "sous": "8-14 ans",
+  "desc": "Voir le temps passer et mieux gérer mon horaire.",
+  "code": "VTDAH-10",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-10_Le_temps_je_l_apprivoise.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-10_Le_temps_je_l_apprivoise_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-11",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Mon sac est prêt",
+  "sous": "6-12 ans",
+  "desc": "Préparer mon matériel scolaire sans rien oublier.",
+  "code": "VTDAH-11",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-11_Mon_sac_est_prêt.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-11_Mon_sac_est_prêt_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-12",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Stop, je pense, j'agis",
+  "sous": "7-13 ans",
+  "desc": "Réfléchir avant d'agir pour faire de meilleurs choix.",
+  "code": "VTDAH-12",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-12_Stop_je_pense_j_agis.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-12_Stop_je_pense_j_agis_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-13",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Je règle un conflit",
+  "sous": "6-12 ans",
+  "desc": "Des étapes pour régler un désaccord avec un ami.",
+  "code": "VTDAH-13",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-13_Je_règle_un_conflit.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-13_Je_règle_un_conflit_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-14",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "J'ai fait une erreur : je répare",
+  "sous": "6-12 ans",
+  "desc": "Réparer mes gestes et mes erreurs.",
+  "code": "VTDAH-14",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-14_J_ai_fait_une_erreur_je_répare.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-14_J_ai_fait_une_erreur_je_répare_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-15",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "J'écoute et je suis la consigne",
+  "sous": "5-11 ans",
+  "desc": "Écouter, comprendre et faire ce qui est demandé.",
+  "code": "VTDAH-15",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-15_J_écoute_et_je_suis_la_consigne.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-15_J_écoute_et_je_suis_la_consigne_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-16",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Frustré, mais capable",
+  "sous": "7-13 ans",
+  "desc": "Gérer la frustration quand c'est difficile ou injuste.",
+  "code": "VTDAH-16",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-16_Frustré_mais_capable.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-16_Frustré_mais_capable_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-17",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Mon soir sans course",
+  "sous": "6-12 ans",
+  "desc": "Une routine du soir claire pour un cerveau turbo.",
+  "code": "VTDAH-17",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-17_Mon_soir_sans_course.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-17_Mon_soir_sans_course_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-18",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Mes pauses qui rechargent",
+  "sous": "5-12 ans",
+  "desc": "Des pauses sensorielles pour retrouver mon énergie juste bien.",
+  "code": "VTDAH-18",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-18_Mes_pauses_qui_rechargent.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-18_Mes_pauses_qui_rechargent_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-19",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Ma motivation en marche",
+  "sous": "8-14 ans",
+  "desc": "Trouver ce qui me donne envie de faire mes tâches.",
+  "code": "VTDAH-19",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-19_Ma_motivation_en_marche.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-19_Ma_motivation_en_marche_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-20",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Mes grosses émotions",
+  "sous": "6-12 ans",
+  "desc": "Reconnaître mes émotions intenses et les traverser.",
+  "code": "VTDAH-20",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-20_Mes_grosses_émotions.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-20_Mes_grosses_émotions_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-21",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Je m'organise à l'école",
+  "sous": "7-13 ans",
+  "desc": "Mon bureau, mon agenda et mes travaux bien en ordre.",
+  "code": "VTDAH-21",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-21_Je_m_organise_à_l_école.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-21_Je_m_organise_à_l_école_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-22",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Une étape à la fois",
+  "sous": "6-12 ans",
+  "desc": "Réaliser une tâche en suivant mes étapes.",
+  "code": "VTDAH-22",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-22_Une_étape_à_la_fois.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-22_Une_étape_à_la_fois_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-23",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Mes super forces",
+  "sous": "6-13 ans",
+  "desc": "Découvrir et utiliser mes forces.",
+  "code": "VTDAH-23",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-23_Mes_super_forces.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-23_Mes_super_forces_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-24",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Mon matin sans course",
+  "sous": "6-12 ans",
+  "desc": "Partir à l'heure sans stress, étape par étape.",
+  "code": "VTDAH-24",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-24_Mon_matin_sans_course.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-24_Mon_matin_sans_course_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-25",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Je bouge sans déranger",
+  "sous": "6-12 ans",
+  "desc": "Des façons de bouger en classe tout en respectant les autres.",
+  "code": "VTDAH-25",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-25_Je_bouge_sans_déranger.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-25_Je_bouge_sans_déranger_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-26",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Des amis pour jouer",
+  "sous": "6-12 ans",
+  "desc": "Me faire des amis et bien jouer avec eux.",
+  "code": "VTDAH-26",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-26_Des_amis_pour_jouer.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-26_Des_amis_pour_jouer_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-27",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Mes devoirs, mon plan",
+  "sous": "7-14 ans",
+  "desc": "Planifier mes devoirs et mes leçons sans me décourager.",
+  "code": "VTDAH-27",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-27_Mes_devoirs_mon_plan.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-27_Mes_devoirs_mon_plan_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-28",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Je vois venir la tempête",
+  "sous": "6-12 ans",
+  "desc": "Reconnaître les signes avant la désorganisation et agir tôt.",
+  "code": "VTDAH-28",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-28_Je_vois_venir_la_tempête.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-28_Je_vois_venir_la_tempête_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-29",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Tout a sa place",
+  "sous": "6-12 ans",
+  "desc": "Ranger mon bureau et mon sac facilement.",
+  "code": "VTDAH-29",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-29_Tout_a_sa_place.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-29_Tout_a_sa_place_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-30",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Ma bouche attend mon cerveau",
+  "sous": "6-12 ans",
+  "desc": "Réfléchir avant de parler et ne pas couper la parole.",
+  "code": "VTDAH-30",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-30_Ma_bouche_attend_mon_cerveau.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-30_Ma_bouche_attend_mon_cerveau_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-31",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Ma bulle, ta bulle",
+  "sous": "5-12 ans",
+  "desc": "Respecter l'espace personnel des autres et le mien.",
+  "code": "VTDAH-31",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-31_Ma_bulle_ta_bulle.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-31_Ma_bulle_ta_bulle_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-32",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Jusqu'au bout !",
+  "sous": "6-12 ans",
+  "desc": "Terminer ce que je commence.",
+  "code": "VTDAH-32",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-32_Jusqu_au_bout.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-32_Jusqu_au_bout_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vtdah-33",
+  "type": "cahier",
+  "groupe": "Cahiers TDAH",
+  "titre": "Mes pauses qui bougent",
+  "sous": "5-12 ans",
+  "desc": "Des mouvements rapides pour recharger mon corps et mon cerveau.",
+  "code": "VTDAH-33",
+  "fichiers": [
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-33_Mes_pauses_qui_bougent.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-33_Mes_pauses_qui_bougent_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-01",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Mon inquiétude, je l'apprivoise",
+  "sous": "6-12 ans",
+  "desc": "Comprendre l'anxiété et utiliser mes trucs pour me rassurer.",
+  "code": "VSOC-01",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-01_Mon_inquiétude_je_l_apprivoise.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-01_Mon_inquiétude_je_l_apprivoise_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-02",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Mes lunettes de concentration",
+  "sous": "6-12 ans",
+  "desc": "Rester attentif en classe grâce à des trucs simples.",
+  "code": "VSOC-02",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-02_Mes_lunettes_de_concentration.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-02_Mes_lunettes_de_concentration_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-03",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Je fais seul, je suis fier",
+  "sous": "5-12 ans",
+  "desc": "Devenir plus autonome au quotidien.",
+  "code": "VSOC-03",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-03_Je_fais_seul_je_suis_fier.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-03_Je_fais_seul_je_suis_fier_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-04",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Qu'est-ce qu'il veut dire ?",
+  "sous": "7-13 ans",
+  "desc": "Comprendre les intentions et les émotions des autres.",
+  "code": "VSOC-04",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-04_Qu_est-ce_qu_il_veut_dire.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-04_Qu_est-ce_qu_il_veut_dire_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-05",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Mon corps, mon choix",
+  "sous": "5-12 ans",
+  "desc": "Comprendre le consentement : demander, écouter et respecter.",
+  "code": "VSOC-05",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-05_Mon_corps_mon_choix.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-05_Mon_corps_mon_choix_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-06",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Les fêtes sans surprise",
+  "sous": "5-12 ans",
+  "desc": "Me préparer aux fêtes et aux événements spéciaux.",
+  "code": "VSOC-06",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-06_Les_fêtes_sans_surprise.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-06_Les_fêtes_sans_surprise_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-07",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Les blagues et l'humour",
+  "sous": "7-13 ans",
+  "desc": "Comprendre les blagues et savoir quand rire.",
+  "code": "VSOC-07",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-07_Les_blagues_et_l_humour.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-07_Les_blagues_et_l_humour_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-08",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Oh ! Un imprévu",
+  "sous": "5-12 ans",
+  "desc": "Réagir calmement quand quelque chose d'inattendu arrive.",
+  "code": "VSOC-08",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-08_Oh_Un_imprévu.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-08_Oh_Un_imprévu_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-09",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Tous différents, tous ensemble",
+  "sous": "5-12 ans",
+  "desc": "Accepter les différences et inclure tout le monde.",
+  "code": "VSOC-09",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-09_Tous_différents_tous_ensemble.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-09_Tous_différents_tous_ensemble_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-10",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Les mots magiques",
+  "sous": "4-10 ans",
+  "desc": "La politesse au quotidien.",
+  "code": "VSOC-10",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-10_Les_mots_magiques.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-10_Les_mots_magiques_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-11",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : l'amitié",
+  "sous": "5-12 ans",
+  "desc": "Des histoires pour apprendre à devenir un bon ami.",
+  "code": "VSOC-11",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-11_Histoires_sociales_l_amitié.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-11_Histoires_sociales_l_amitié_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-12",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : dans la communauté",
+  "sous": "5-12 ans",
+  "desc": "Bien agir à l'épicerie, à la bibliothèque, au restaurant…",
+  "code": "VSOC-12",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-12_Histoires_sociales_dans_la_communauté.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-12_Histoires_sociales_dans_la_communauté_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-13",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : la conversation",
+  "sous": "5-12 ans",
+  "desc": "Commencer, continuer et terminer une conversation.",
+  "code": "VSOC-13",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-13_Histoires_sociales_la_conversation.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-13_Histoires_sociales_la_conversation_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-14",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : quand je dis non",
+  "sous": "5-12 ans",
+  "desc": "Exprimer mon désaccord sans m'opposer à tout.",
+  "code": "VSOC-14",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-14_Histoires_sociales_quand_je_dis_non.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-14_Histoires_sociales_quand_je_dis_non_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-15",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : je crois en moi",
+  "sous": "5-12 ans",
+  "desc": "Développer ma confiance en moi.",
+  "code": "VSOC-15",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-15_Histoires_sociales_je_crois_en_moi.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-15_Histoires_sociales_je_crois_en_moi_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-16",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : le dîner à l'école",
+  "sous": "5-12 ans",
+  "desc": "Bien vivre le dîner et les collations.",
+  "code": "VSOC-16",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-16_Histoires_sociales_le_dîner_à_l_école.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-16_Histoires_sociales_le_dîner_à_l_école_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-17",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : mes émotions",
+  "sous": "5-12 ans",
+  "desc": "Reconnaître et exprimer ce que je ressens.",
+  "code": "VSOC-17",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-17_Histoires_sociales_mes_émotions.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-17_Histoires_sociales_mes_émotions_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-18",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : ma colère",
+  "sous": "5-12 ans",
+  "desc": "Gérer ma colère avec des gestes permis.",
+  "code": "VSOC-18",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-18_Histoires_sociales_ma_colère.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-18_Histoires_sociales_ma_colère_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-19",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : j'attends avant d'agir",
+  "sous": "5-12 ans",
+  "desc": "Contrôler mes gestes impulsifs au quotidien.",
+  "code": "VSOC-19",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-19_Histoires_sociales_j_attends_avant_d_agir.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-19_Histoires_sociales_j_attends_avant_d_agir_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-20",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : jouer ensemble",
+  "sous": "5-12 ans",
+  "desc": "Partager, suivre les règles et bien jouer avec les autres.",
+  "code": "VSOC-20",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-20_Histoires_sociales_jouer_ensemble.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-20_Histoires_sociales_jouer_ensemble_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-21",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : la récréation",
+  "sous": "5-12 ans",
+  "desc": "Bien vivre la récré : jouer, demander, régler un problème.",
+  "code": "VSOC-21",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-21_Histoires_sociales_la_récréation.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-21_Histoires_sociales_la_récréation_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-22",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : les règles de la classe",
+  "sous": "5-12 ans",
+  "desc": "Comprendre et suivre les règles de la classe.",
+  "code": "VSOC-22",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-22_Histoires_sociales_les_règles_de_la_classe.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-22_Histoires_sociales_les_règles_de_la_classe_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-23",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : une nouvelle personne",
+  "sous": "5-12 ans",
+  "desc": "Quand il y a un remplaçant ou quelqu'un de nouveau.",
+  "code": "VSOC-23",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-23_Histoires_sociales_une_nouvelle_personne.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-23_Histoires_sociales_une_nouvelle_personne_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-24",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : les limites des autres",
+  "sous": "5-12 ans",
+  "desc": "Respecter les limites et le « non » des autres.",
+  "code": "VSOC-24",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-24_Histoires_sociales_les_limites_des_autres.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-24_Histoires_sociales_les_limites_des_autres_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-25",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : je retrouve mon calme",
+  "sous": "5-12 ans",
+  "desc": "Des histoires pour apprendre à me calmer.",
+  "code": "VSOC-25",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-25_Histoires_sociales_je_retrouve_mon_calme.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-25_Histoires_sociales_je_retrouve_mon_calme_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-26",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : ma journée à l'école",
+  "sous": "5-12 ans",
+  "desc": "Les routines de l'école, de l'arrivée au départ.",
+  "code": "VSOC-26",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-26_Histoires_sociales_ma_journée_à_l_école.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-26_Histoires_sociales_ma_journée_à_l_école_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-27",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Histoires sociales : en famille",
+  "sous": "5-12 ans",
+  "desc": "Vivre en harmonie à la maison.",
+  "code": "VSOC-27",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-27_Histoires_sociales_en_famille.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-27_Histoires_sociales_en_famille_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-28",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Je reste en sécurité",
+  "sous": "5-12 ans",
+  "desc": "Les règles de sécurité à la maison, dehors et avec les autres.",
+  "code": "VSOC-28",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-28_Je_reste_en_sécurité.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-28_Je_reste_en_sécurité_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-29",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "La sortie de classe",
+  "sous": "5-12 ans",
+  "desc": "Me préparer à une sortie scolaire.",
+  "code": "VSOC-29",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-29_La_sortie_de_classe.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-29_La_sortie_de_classe_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-30",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Sport et activités en groupe",
+  "sous": "6-14 ans",
+  "desc": "Participer à un sport ou à une activité parascolaire.",
+  "code": "VSOC-30",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-30_Sport_et_activités_en_groupe.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-30_Sport_et_activités_en_groupe_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-31",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Une nouvelle école, une nouvelle année",
+  "sous": "5-14 ans",
+  "desc": "Me préparer à la rentrée ou à un changement d'école.",
+  "code": "VSOC-31",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-31_Une_nouvelle_école_une_nouvelle_année.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-31_Une_nouvelle_école_une_nouvelle_année_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vsoc-32",
+  "type": "cahier",
+  "groupe": "Cahiers Habiletés sociales",
+  "titre": "Écrans et Internet en sécurité",
+  "sous": "8-14 ans",
+  "desc": "Utiliser les écrans de façon sécuritaire et équilibrée.",
+  "code": "VSOC-32",
+  "fichiers": [
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-32_Écrans_et_Internet_en_sécurité.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-32_Écrans_et_Internet_en_sécurité_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-01",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je prends soin de mon hygiène",
+  "sous": "Ados et adultes",
+  "desc": "Les gestes pour être propre et me sentir bien.",
+  "code": "VDI-01",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-01_Je_prends_soin_de_mon_hygiène.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-01_Je_prends_soin_de_mon_hygiène_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-02",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je suis mon horaire",
+  "sous": "Ados et adultes",
+  "desc": "Comprendre et respecter mon horaire de la journée.",
+  "code": "VDI-02",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-02_Je_suis_mon_horaire.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-02_Je_suis_mon_horaire_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-03",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je connais mes informations",
+  "sous": "Ados et adultes",
+  "desc": "Mon nom, mon adresse, mon téléphone : les dire et les montrer.",
+  "code": "VDI-03",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-03_Je_connais_mes_informations.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-03_Je_connais_mes_informations_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-04",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je suis un bon travailleur",
+  "sous": "Ados et adultes",
+  "desc": "Les habiletés pour réussir à mon travail ou à mon stage.",
+  "code": "VDI-04",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-04_Je_suis_un_bon_travailleur.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-04_Je_suis_un_bon_travailleur_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-05",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je prends soin de ma santé",
+  "sous": "Ados et adultes",
+  "desc": "Bien manger, bouger, dormir et savoir quand consulter.",
+  "code": "VDI-05",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-05_Je_prends_soin_de_ma_santé.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-05_Je_prends_soin_de_ma_santé_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-06",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je prends l'autobus",
+  "sous": "Ados et adultes",
+  "desc": "Les étapes pour utiliser le transport en commun.",
+  "code": "VDI-06",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-06_Je_prends_l_autobus.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-06_Je_prends_l_autobus_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-07",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je fais mon lit",
+  "sous": "Ados et adultes",
+  "desc": "Faire mon lit étape par étape.",
+  "code": "VDI-07",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-07_Je_fais_mon_lit.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-07_Je_fais_mon_lit_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-08",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je m'habille seul",
+  "sous": "Ados et adultes",
+  "desc": "M'habiller dans le bon ordre, du matin au soir.",
+  "code": "VDI-08",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-08_Je_m_habille_seul.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-08_Je_m_habille_seul_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-09",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je paie à la caisse",
+  "sous": "Ados et adultes",
+  "desc": "Faire un achat et payer seul.",
+  "code": "VDI-09",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-09_Je_paie_à_la_caisse.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-09_Je_paie_à_la_caisse_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-10",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je prends ma douche",
+  "sous": "Ados et adultes",
+  "desc": "Prendre ma douche seul et en sécurité.",
+  "code": "VDI-10",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-10_Je_prends_ma_douche.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-10_Je_prends_ma_douche_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-11",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "La cuisine en sécurité",
+  "sous": "Ados et adultes",
+  "desc": "Utiliser les appareils de cuisine prudemment.",
+  "code": "VDI-11",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-11_La_cuisine_en_sécurité.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-11_La_cuisine_en_sécurité_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-12",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je m'habille selon la météo",
+  "sous": "Ados et adultes",
+  "desc": "Choisir des vêtements adaptés au temps qu'il fait.",
+  "code": "VDI-12",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-12_Je_m_habille_selon_la_météo.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-12_Je_m_habille_selon_la_météo_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-13",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je dis clairement ce que je veux",
+  "sous": "Ados et adultes",
+  "desc": "Communiquer mes besoins et mes choix.",
+  "code": "VDI-13",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-13_Je_dis_clairement_ce_que_je_veux.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-13_Je_dis_clairement_ce_que_je_veux_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-14",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je prends mes médicaments",
+  "sous": "Ados et adultes",
+  "desc": "Prendre mes médicaments au bon moment et en sécurité.",
+  "code": "VDI-14",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-14_Je_prends_mes_médicaments.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-14_Je_prends_mes_médicaments_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-15",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je découvre le monde du travail",
+  "sous": "Ados et adultes",
+  "desc": "Explorer les métiers et mes intérêts.",
+  "code": "VDI-15",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-15_Je_découvre_le_monde_du_travail.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-15_Je_découvre_le_monde_du_travail_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-16",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je demande de l'aide au bon moment",
+  "sous": "Ados et adultes",
+  "desc": "Savoir quand et à qui demander de l'aide.",
+  "code": "VDI-16",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-16_Je_demande_de_l_aide_au_bon_moment.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-16_Je_demande_de_l_aide_au_bon_moment_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-17",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "L'heure et le temps",
+  "sous": "Ados et adultes",
+  "desc": "Lire l'heure et comprendre la durée.",
+  "code": "VDI-17",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-17_L_heure_et_le_temps.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-17_L_heure_et_le_temps_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-18",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Bonjour, merci, au revoir",
+  "sous": "Ados et adultes",
+  "desc": "Les habiletés sociales de tous les jours.",
+  "code": "VDI-18",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-18_Bonjour_merci_au_revoir.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-18_Bonjour_merci_au_revoir_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-19",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Mon autonomie au quotidien",
+  "sous": "Ados et adultes",
+  "desc": "Ce que je fais seul et mes prochains défis.",
+  "code": "VDI-19",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-19_Mon_autonomie_au_quotidien.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-19_Mon_autonomie_au_quotidien_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-20",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je fais l'épicerie",
+  "sous": "Ados et adultes",
+  "desc": "Faire mes achats à l'épicerie, étape par étape.",
+  "code": "VDI-20",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-20_Je_fais_l_épicerie.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-20_Je_fais_l_épicerie_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-21",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je fais mes choix",
+  "sous": "Ados et adultes",
+  "desc": "Faire des choix et prendre des décisions pour moi.",
+  "code": "VDI-21",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-21_Je_fais_mes_choix.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-21_Je_fais_mes_choix_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-22",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Ma chambre en ordre",
+  "sous": "Ados et adultes",
+  "desc": "Garder mon espace propre et organisé.",
+  "code": "VDI-22",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-22_Ma_chambre_en_ordre.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-22_Ma_chambre_en_ordre_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-23",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Mon petit budget",
+  "sous": "Ados et adultes",
+  "desc": "Gérer mon argent pour la semaine.",
+  "code": "VDI-23",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-23_Mon_petit_budget.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-23_Mon_petit_budget_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-24",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je lave mes vêtements",
+  "sous": "Ados et adultes",
+  "desc": "Faire mon lavage de A à Z.",
+  "code": "VDI-24",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-24_Je_lave_mes_vêtements.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-24_Je_lave_mes_vêtements_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-25",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je marche en sécurité",
+  "sous": "Ados et adultes",
+  "desc": "Me déplacer à pied en sécurité dans mon quartier.",
+  "code": "VDI-25",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-25_Je_marche_en_sécurité.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-25_Je_marche_en_sécurité_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-26",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je fais le ménage",
+  "sous": "Ados et adultes",
+  "desc": "Participer aux tâches ménagères.",
+  "code": "VDI-26",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-26_Je_fais_le_ménage.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-26_Je_fais_le_ménage_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-27",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je prépare ma liste d'épicerie",
+  "sous": "Ados et adultes",
+  "desc": "Planifier mes achats avant d'aller à l'épicerie.",
+  "code": "VDI-27",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-27_Je_prépare_ma_liste_d_épicerie.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-27_Je_prépare_ma_liste_d_épicerie_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-28",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je brosse mes dents",
+  "sous": "Ados et adultes",
+  "desc": "Brosser mes dents correctement, matin et soir.",
+  "code": "VDI-28",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-28_Je_brosse_mes_dents.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-28_Je_brosse_mes_dents_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-29",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je prépare un repas simple",
+  "sous": "Ados et adultes",
+  "desc": "Cuisiner un repas en suivant une recette en images.",
+  "code": "VDI-29",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-29_Je_prépare_un_repas_simple.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-29_Je_prépare_un_repas_simple_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-30",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je prépare ma collation",
+  "sous": "Ados et adultes",
+  "desc": "Préparer une collation santé.",
+  "code": "VDI-30",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-30_Je_prépare_ma_collation.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-30_Je_prépare_ma_collation_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-31",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "En cas d'urgence",
+  "sous": "Ados et adultes",
+  "desc": "Savoir quoi faire en situation d'urgence.",
+  "code": "VDI-31",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-31_En_cas_d_urgence.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-31_En_cas_d_urgence_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-32",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Je reconnais l'argent",
+  "sous": "Ados et adultes",
+  "desc": "Reconnaître les pièces et les billets canadiens.",
+  "code": "VDI-32",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-32_Je_reconnais_l_argent.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-32_Je_reconnais_l_argent_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-33",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Les lieux de mon quartier",
+  "sous": "Ados et adultes",
+  "desc": "Reconnaître les endroits importants et savoir à quoi ils servent.",
+  "code": "VDI-33",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-33_Les_lieux_de_mon_quartier.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-33_Les_lieux_de_mon_quartier_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-34",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Mes personnes de confiance",
+  "sous": "Ados et adultes",
+  "desc": "Savoir à qui je peux faire confiance et qui appeler.",
+  "code": "VDI-34",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-34_Mes_personnes_de_confiance.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-34_Mes_personnes_de_confiance_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-35",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Mes besoins essentiels",
+  "sous": "Ados et adultes",
+  "desc": "Reconnaître mes besoins pour être bien.",
+  "code": "VDI-35",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-35_Mes_besoins_essentiels.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-35_Mes_besoins_essentiels_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-36",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Ma bulle et la bulle des autres",
+  "sous": "Ados et adultes",
+  "desc": "Respecter mon espace personnel et celui des autres.",
+  "code": "VDI-36",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-36_Ma_bulle_et_la_bulle_des_autres.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-36_Ma_bulle_et_la_bulle_des_autres_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-37",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Ma routine du matin",
+  "sous": "Ados et adultes",
+  "desc": "Me préparer le matin, étape par étape.",
+  "code": "VDI-37",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-37_Ma_routine_du_matin.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-37_Ma_routine_du_matin_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-38",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Ma routine du soir",
+  "sous": "Ados et adultes",
+  "desc": "Me préparer pour la nuit.",
+  "code": "VDI-38",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-38_Ma_routine_du_soir.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-38_Ma_routine_du_soir_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vdi-39",
+  "type": "cahier",
+  "groupe": "Cahiers Déficience intellectuelle",
+  "titre": "Mon grand plan d'autonomie",
+  "sous": "Ados et adultes",
+  "desc": "Faire le bilan de mon autonomie et choisir mes objectifs.",
+  "code": "VDI-39",
+  "fichiers": [
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-39_Mon_grand_plan_d_autonomie.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-39_Mon_grand_plan_d_autonomie_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-01",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "L'iceberg de mon comportement",
+  "sous": "7-14 ans",
+  "desc": "Ce qu'on voit, et ce qui se cache en dessous.",
+  "code": "VCOMP-01",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-01_L_iceberg_de_mon_comportement.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-01_L_iceberg_de_mon_comportement_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-02",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Quand j'ai envie de me sauver",
+  "sous": "6-14 ans",
+  "desc": "Comprendre la fuite et trouver d'autres solutions.",
+  "code": "VCOMP-02",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-02_Quand_j_ai_envie_de_me_sauver.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-02_Quand_j_ai_envie_de_me_sauver_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-03",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Quand je dis non à tout",
+  "sous": "5-12 ans",
+  "desc": "Comprendre mon opposition et trouver d'autres façons.",
+  "code": "VCOMP-03",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-03_Quand_je_dis_non_à_tout.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-03_Quand_je_dis_non_à_tout_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-04",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "J'ai besoin qu'on me remarque",
+  "sous": "5-12 ans",
+  "desc": "Obtenir de l'attention de façon positive.",
+  "code": "VCOMP-04",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-04_J_ai_besoin_qu_on_me_remarque.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-04_J_ai_besoin_qu_on_me_remarque_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-05",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Quand l'école me fait peur",
+  "sous": "7-15 ans",
+  "desc": "Comprendre le refus scolaire et retourner à l'école pas à pas.",
+  "code": "VCOMP-05",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-05_Quand_l_école_me_fait_peur.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-05_Quand_l_école_me_fait_peur_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-06",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Gagner ou perdre, je reste beau joueur",
+  "sous": "5-12 ans",
+  "desc": "Accepter de perdre et bien gagner.",
+  "code": "VCOMP-06",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-06_Gagner_ou_perdre_je_reste_beau_joueur.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-06_Gagner_ou_perdre_je_reste_beau_joueur_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-07",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "J'écoute pour bien comprendre",
+  "sous": "5-12 ans",
+  "desc": "Écouter avec mes yeux, mes oreilles et mon cœur.",
+  "code": "VCOMP-07",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-07_J_écoute_pour_bien_comprendre.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-07_J_écoute_pour_bien_comprendre_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-08",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Je dis ce que je ressens, calmement",
+  "sous": "6-12 ans",
+  "desc": "Exprimer mes émotions avec des mots.",
+  "code": "VCOMP-08",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-08_Je_dis_ce_que_je_ressens_calmement.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-08_Je_dis_ce_que_je_ressens_calmement_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-09",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "J'offre mon aide",
+  "sous": "5-12 ans",
+  "desc": "Aider les autres avec respect.",
+  "code": "VCOMP-09",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-09_J_offre_mon_aide.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-09_J_offre_mon_aide_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-10",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Mes mains restent calmes",
+  "sous": "5-12 ans",
+  "desc": "Contrôler mes gestes impulsifs.",
+  "code": "VCOMP-10",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-10_Mes_mains_restent_calmes.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-10_Mes_mains_restent_calmes_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-11",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Travailler en équipe",
+  "sous": "7-13 ans",
+  "desc": "Coopérer pour réussir ensemble.",
+  "code": "VCOMP-11",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-11_Travailler_en_équipe.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-11_Travailler_en_équipe_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-12",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Je demande de l'aide avant d'exploser",
+  "sous": "6-13 ans",
+  "desc": "Reconnaître le moment de demander de l'aide.",
+  "code": "VCOMP-12",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-12_Je_demande_de_l_aide_avant_d_exploser.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-12_Je_demande_de_l_aide_avant_d_exploser_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-13",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Je suis le pilote de mon corps",
+  "sous": "6-13 ans",
+  "desc": "Développer mon autocontrôle.",
+  "code": "VCOMP-13",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-13_Je_suis_le_pilote_de_mon_corps.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-13_Je_suis_le_pilote_de_mon_corps_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-14",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Je dis non poliment",
+  "sous": "5-12 ans",
+  "desc": "Refuser avec respect.",
+  "code": "VCOMP-14",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-14_Je_dis_non_poliment.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-14_Je_dis_non_poliment_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-15",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Je fais des choix sécuritaires",
+  "sous": "7-15 ans",
+  "desc": "Penser à ma sécurité avant d'agir.",
+  "code": "VCOMP-15",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-15_Je_fais_des_choix_sécuritaires.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-15_Je_fais_des_choix_sécuritaires_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-16",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "On trouve un compromis",
+  "sous": "6-13 ans",
+  "desc": "Chacun fait un bout de chemin.",
+  "code": "VCOMP-16",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-16_On_trouve_un_compromis.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-16_On_trouve_un_compromis_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-17",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Quand on me laisse de côté",
+  "sous": "7-14 ans",
+  "desc": "Vivre l'exclusion et trouver des solutions.",
+  "code": "VCOMP-17",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-17_Quand_on_me_laisse_de_côté.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-17_Quand_on_me_laisse_de_côté_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-18",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Je fais une demande claire",
+  "sous": "5-12 ans",
+  "desc": "Demander ce que je veux de façon claire et polie.",
+  "code": "VCOMP-18",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-18_Je_fais_une_demande_claire.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-18_Je_fais_une_demande_claire_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-19",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "On n'est pas d'accord, et c'est correct",
+  "sous": "7-14 ans",
+  "desc": "Gérer un désaccord sans se chicaner.",
+  "code": "VCOMP-19",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-19_On_n_est_pas_d_accord_et_c_est_correct.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-19_On_n_est_pas_d_accord_et_c_est_correct_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-20",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Je me présente",
+  "sous": "6-14 ans",
+  "desc": "Me présenter avec confiance.",
+  "code": "VCOMP-20",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-20_Je_me_présente.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-20_Je_me_présente_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-21",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Je partage et je prête",
+  "sous": "4-10 ans",
+  "desc": "Partager mes choses et mes jeux.",
+  "code": "VCOMP-21",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-21_Je_partage_et_je_prête.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-21_Je_partage_et_je_prête_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-22",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Je participe",
+  "sous": "5-12 ans",
+  "desc": "Participer aux activités même quand je n'en ai pas envie.",
+  "code": "VCOMP-22",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-22_Je_participe.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-22_Je_participe_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-23",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Quand on me dit non",
+  "sous": "4-12 ans",
+  "desc": "Accepter un refus.",
+  "code": "VCOMP-23",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-23_Quand_on_me_dit_non.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-23_Quand_on_me_dit_non_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-24",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Ma colère sans frapper",
+  "sous": "5-12 ans",
+  "desc": "Exprimer ma colère sans faire mal.",
+  "code": "VCOMP-24",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-24_Ma_colère_sans_frapper.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-24_Ma_colère_sans_frapper_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-25",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Je suis un témoin qui aide",
+  "sous": "7-14 ans",
+  "desc": "Agir quand je vois de l'intimidation.",
+  "code": "VCOMP-25",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-25_Je_suis_un_témoin_qui_aide.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-25_Je_suis_un_témoin_qui_aide_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-26",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Je protège mon corps et celui des autres",
+  "sous": "5-12 ans",
+  "desc": "Des gestes respectueux et sécuritaires.",
+  "code": "VCOMP-26",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-26_Je_protège_mon_corps_et_celui_des_autres.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-26_Je_protège_mon_corps_et_celui_des_autres_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-27",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Je remplace les cris par des mots",
+  "sous": "4-12 ans",
+  "desc": "Utiliser ma voix pour dire, pas pour crier.",
+  "code": "VCOMP-27",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-27_Je_remplace_les_cris_par_des_mots.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-27_Je_remplace_les_cris_par_des_mots_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-28",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Je salue et je commence à jouer",
+  "sous": "4-10 ans",
+  "desc": "Entrer en relation avec les autres.",
+  "code": "VCOMP-28",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-28_Je_salue_et_je_commence_à_jouer.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-28_Je_salue_et_je_commence_à_jouer_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-29",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Je suis un bon ami",
+  "sous": "5-12 ans",
+  "desc": "Les qualités d'un bon ami.",
+  "code": "VCOMP-29",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-29_Je_suis_un_bon_ami.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-29_Je_suis_un_bon_ami_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-30",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Mes déclencheurs",
+  "sous": "7-15 ans",
+  "desc": "Découvrir ce qui déclenche mes comportements difficiles.",
+  "code": "VCOMP-30",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-30_Mes_déclencheurs.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-30_Mes_déclencheurs_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-31",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Mon plan de retour au calme",
+  "sous": "6-15 ans",
+  "desc": "Mon plan personnalisé, étape par étape.",
+  "code": "VCOMP-31",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-31_Mon_plan_de_retour_au_calme.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-31_Mon_plan_de_retour_au_calme_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-32",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Mon thermomètre de tension",
+  "sous": "6-15 ans",
+  "desc": "Mesurer ma tension et agir au bon moment.",
+  "code": "VCOMP-32",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-32_Mon_thermomètre_de_tension.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-32_Mon_thermomètre_de_tension_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-33",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Quand j'ai envie de me faire mal",
+  "sous": "12-17 ans",
+  "desc": "Comprendre et trouver d'autres façons de soulager ma douleur.",
+  "code": "VCOMP-33",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-33_Quand_j_ai_envie_de_me_faire_mal.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-33_Quand_j_ai_envie_de_me_faire_mal_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-34",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Parent : comprendre les comportements difficiles",
+  "sous": "Parents et intervenants",
+  "desc": "Un guide illustré pour accompagner mon enfant au quotidien.",
+  "code": "VCOMP-34",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-34_Parent_comprendre_les_comportements_difficiles.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-34_Parent_comprendre_les_comportements_difficiles_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-35",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Mon plan de prévention et d'intervention",
+  "sous": "Parents et intervenants",
+  "desc": "Un plan individualisé pour prévenir et gérer les comportements défis.",
+  "code": "VCOMP-35",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-35_Mon_plan_de_prévention_et_d_intervention.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-35_Mon_plan_de_prévention_et_d_intervention_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-36",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Guide : les comportements défis",
+  "sous": "Parents et intervenants",
+  "desc": "Repères illustrés pour intervenir auprès d'une personne qui présente des comportements défis.",
+  "code": "VCOMP-36",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-36_Guide_les_comportements_défis.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-36_Guide_les_comportements_défis_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-37",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Observer en milieu de garde",
+  "sous": "Parents et intervenants",
+  "desc": "Une trousse d'observation illustrée pour les éducatrices et les T.E.S. en service de garde.",
+  "code": "VCOMP-37",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-37_Observer_en_milieu_de_garde.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-37_Observer_en_milieu_de_garde_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-38",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Observer en milieu scolaire",
+  "sous": "Parents et intervenants",
+  "desc": "Une trousse d'observation illustrée pour la classe et le service de garde scolaire.",
+  "code": "VCOMP-38",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-38_Observer_en_milieu_scolaire.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-38_Observer_en_milieu_scolaire_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-39",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Prévenir l'agressivité",
+  "sous": "Parents et intervenants",
+  "desc": "Repères illustrés pour prévenir et désamorcer les comportements agressifs.",
+  "code": "VCOMP-39",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-39_Prévenir_l_agressivité.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-39_Prévenir_l_agressivité_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-40",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Sortir du bras de fer",
+  "sous": "Parents et intervenants",
+  "desc": "Éviter le rapport de force avec un enfant ou un ado opposant.",
+  "code": "VCOMP-40",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-40_Sortir_du_bras_de_fer.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-40_Sortir_du_bras_de_fer_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "cahier-vcomp-41",
+  "type": "cahier",
+  "groupe": "Cahiers Comportement",
+  "titre": "Demander de l'aide, c'est une force",
+  "sous": "8-12 ans",
+  "desc": "Savoir quand, à qui et comment demander de l'aide.",
+  "code": "VCOMP-41",
+  "fichiers": [
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-41_Demander_de_l_aide_c_est_une_force.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-41_Demander_de_l_aide_c_est_une_force_NB.pdf"
+  ],
+  "prix": 2.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "grand-livre",
+  "type": "livre",
+  "groupe": "Grand livre clinique",
+  "titre": "Grand livre clinique T.E.S.",
+  "sous": "143 fiches · 9 parties",
+  "desc": "Les connaissances essentielles de la pratique en éducation spécialisée, en fiches visuelles avec une zone « Mon application clinique ». Version couleur et version noir et blanc.",
+  "fichiers": [
+   "Grand livre clinique Filodie/Grand_livre_clinique_TES_Filodie.pdf",
+   "Grand livre clinique Filodie/Grand_livre_clinique_TES_Filodie_NB_impression.pdf"
+  ],
+  "prix": 15.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "bottin-regional",
+  "type": "bottin",
+  "groupe": "Bottin régional",
+  "titre": "Bottin régional : 17 régions du Québec",
+  "sous": "Gratuit",
+  "desc": "DPJ, centres de crise, CLSC, autisme, TDAH, déficience intellectuelle, proches, violence et dépendances, région par région, avec les lignes provinciales classées par problématique.",
+  "fichiers": [
+   "Bottin régional Filodie/Bottin_regional_Filodie_17_regions.pdf"
+  ],
+  "prix": 0.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "lot-cahiers-tsa",
+  "type": "lot_cahiers",
+  "groupe": "Lots",
+  "titre": "Série complète : cahiers TSA",
+  "sous": "34 cahiers visuels",
+  "desc": "Les 34 cahiers visuels de la série TSA, en couleur et à colorier.",
+  "fichiers": [],
+  "contient": [
+   "cahier-vtsa-01",
+   "cahier-vtsa-02",
+   "cahier-vtsa-03",
+   "cahier-vtsa-04",
+   "cahier-vtsa-05",
+   "cahier-vtsa-06",
+   "cahier-vtsa-07",
+   "cahier-vtsa-08",
+   "cahier-vtsa-09",
+   "cahier-vtsa-10",
+   "cahier-vtsa-11",
+   "cahier-vtsa-12",
+   "cahier-vtsa-13",
+   "cahier-vtsa-14",
+   "cahier-vtsa-15",
+   "cahier-vtsa-16",
+   "cahier-vtsa-17",
+   "cahier-vtsa-18",
+   "cahier-vtsa-19",
+   "cahier-vtsa-20",
+   "cahier-vtsa-21",
+   "cahier-vtsa-22",
+   "cahier-vtsa-23",
+   "cahier-vtsa-24",
+   "cahier-vtsa-25",
+   "cahier-vtsa-26",
+   "cahier-vtsa-27",
+   "cahier-vtsa-28",
+   "cahier-vtsa-29",
+   "cahier-vtsa-30",
+   "cahier-vtsa-31",
+   "cahier-vtsa-32",
+   "cahier-vtsa-33",
+   "cahier-vtsa-34"
+  ],
+  "prix": 20.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 68.0
+ },
+ {
+  "id": "lot-cahiers-tdah",
+  "type": "lot_cahiers",
+  "groupe": "Lots",
+  "titre": "Série complète : cahiers TDAH",
+  "sous": "33 cahiers visuels",
+  "desc": "Les 33 cahiers visuels de la série TDAH, en couleur et à colorier.",
+  "fichiers": [],
+  "contient": [
+   "cahier-vtdah-01",
+   "cahier-vtdah-02",
+   "cahier-vtdah-03",
+   "cahier-vtdah-04",
+   "cahier-vtdah-05",
+   "cahier-vtdah-06",
+   "cahier-vtdah-07",
+   "cahier-vtdah-08",
+   "cahier-vtdah-09",
+   "cahier-vtdah-10",
+   "cahier-vtdah-11",
+   "cahier-vtdah-12",
+   "cahier-vtdah-13",
+   "cahier-vtdah-14",
+   "cahier-vtdah-15",
+   "cahier-vtdah-16",
+   "cahier-vtdah-17",
+   "cahier-vtdah-18",
+   "cahier-vtdah-19",
+   "cahier-vtdah-20",
+   "cahier-vtdah-21",
+   "cahier-vtdah-22",
+   "cahier-vtdah-23",
+   "cahier-vtdah-24",
+   "cahier-vtdah-25",
+   "cahier-vtdah-26",
+   "cahier-vtdah-27",
+   "cahier-vtdah-28",
+   "cahier-vtdah-29",
+   "cahier-vtdah-30",
+   "cahier-vtdah-31",
+   "cahier-vtdah-32",
+   "cahier-vtdah-33"
+  ],
+  "prix": 20.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 66.0
+ },
+ {
+  "id": "lot-cahiers-habiletés-sociales",
+  "type": "lot_cahiers",
+  "groupe": "Lots",
+  "titre": "Série complète : cahiers Habiletés sociales",
+  "sous": "32 cahiers visuels",
+  "desc": "Les 32 cahiers visuels de la série Habiletés sociales, en couleur et à colorier.",
+  "fichiers": [],
+  "contient": [
+   "cahier-vsoc-01",
+   "cahier-vsoc-02",
+   "cahier-vsoc-03",
+   "cahier-vsoc-04",
+   "cahier-vsoc-05",
+   "cahier-vsoc-06",
+   "cahier-vsoc-07",
+   "cahier-vsoc-08",
+   "cahier-vsoc-09",
+   "cahier-vsoc-10",
+   "cahier-vsoc-11",
+   "cahier-vsoc-12",
+   "cahier-vsoc-13",
+   "cahier-vsoc-14",
+   "cahier-vsoc-15",
+   "cahier-vsoc-16",
+   "cahier-vsoc-17",
+   "cahier-vsoc-18",
+   "cahier-vsoc-19",
+   "cahier-vsoc-20",
+   "cahier-vsoc-21",
+   "cahier-vsoc-22",
+   "cahier-vsoc-23",
+   "cahier-vsoc-24",
+   "cahier-vsoc-25",
+   "cahier-vsoc-26",
+   "cahier-vsoc-27",
+   "cahier-vsoc-28",
+   "cahier-vsoc-29",
+   "cahier-vsoc-30",
+   "cahier-vsoc-31",
+   "cahier-vsoc-32"
+  ],
+  "prix": 20.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 64.0
+ },
+ {
+  "id": "lot-cahiers-déficience-intellectuelle",
+  "type": "lot_cahiers",
+  "groupe": "Lots",
+  "titre": "Série complète : cahiers Déficience intellectuelle",
+  "sous": "39 cahiers visuels",
+  "desc": "Les 39 cahiers visuels de la série Déficience intellectuelle, en couleur et à colorier.",
+  "fichiers": [],
+  "contient": [
+   "cahier-vdi-01",
+   "cahier-vdi-02",
+   "cahier-vdi-03",
+   "cahier-vdi-04",
+   "cahier-vdi-05",
+   "cahier-vdi-06",
+   "cahier-vdi-07",
+   "cahier-vdi-08",
+   "cahier-vdi-09",
+   "cahier-vdi-10",
+   "cahier-vdi-11",
+   "cahier-vdi-12",
+   "cahier-vdi-13",
+   "cahier-vdi-14",
+   "cahier-vdi-15",
+   "cahier-vdi-16",
+   "cahier-vdi-17",
+   "cahier-vdi-18",
+   "cahier-vdi-19",
+   "cahier-vdi-20",
+   "cahier-vdi-21",
+   "cahier-vdi-22",
+   "cahier-vdi-23",
+   "cahier-vdi-24",
+   "cahier-vdi-25",
+   "cahier-vdi-26",
+   "cahier-vdi-27",
+   "cahier-vdi-28",
+   "cahier-vdi-29",
+   "cahier-vdi-30",
+   "cahier-vdi-31",
+   "cahier-vdi-32",
+   "cahier-vdi-33",
+   "cahier-vdi-34",
+   "cahier-vdi-35",
+   "cahier-vdi-36",
+   "cahier-vdi-37",
+   "cahier-vdi-38",
+   "cahier-vdi-39"
+  ],
+  "prix": 20.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 78.0
+ },
+ {
+  "id": "lot-cahiers-comportement",
+  "type": "lot_cahiers",
+  "groupe": "Lots",
+  "titre": "Série complète : cahiers Comportement",
+  "sous": "41 cahiers visuels",
+  "desc": "Les 41 cahiers visuels de la série Comportement, en couleur et à colorier.",
+  "fichiers": [],
+  "contient": [
+   "cahier-vcomp-01",
+   "cahier-vcomp-02",
+   "cahier-vcomp-03",
+   "cahier-vcomp-04",
+   "cahier-vcomp-05",
+   "cahier-vcomp-06",
+   "cahier-vcomp-07",
+   "cahier-vcomp-08",
+   "cahier-vcomp-09",
+   "cahier-vcomp-10",
+   "cahier-vcomp-11",
+   "cahier-vcomp-12",
+   "cahier-vcomp-13",
+   "cahier-vcomp-14",
+   "cahier-vcomp-15",
+   "cahier-vcomp-16",
+   "cahier-vcomp-17",
+   "cahier-vcomp-18",
+   "cahier-vcomp-19",
+   "cahier-vcomp-20",
+   "cahier-vcomp-21",
+   "cahier-vcomp-22",
+   "cahier-vcomp-23",
+   "cahier-vcomp-24",
+   "cahier-vcomp-25",
+   "cahier-vcomp-26",
+   "cahier-vcomp-27",
+   "cahier-vcomp-28",
+   "cahier-vcomp-29",
+   "cahier-vcomp-30",
+   "cahier-vcomp-31",
+   "cahier-vcomp-32",
+   "cahier-vcomp-33",
+   "cahier-vcomp-34",
+   "cahier-vcomp-35",
+   "cahier-vcomp-36",
+   "cahier-vcomp-37",
+   "cahier-vcomp-38",
+   "cahier-vcomp-39",
+   "cahier-vcomp-40",
+   "cahier-vcomp-41"
+  ],
+  "prix": 20.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 82.0
+ },
+ {
+  "id": "lot-1-habiletés-et-comportement",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Habiletés et comportement",
+  "sous": "10 trousses",
+  "desc": "Toutes les trousses du volet « Habiletés et comportement ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-habiletes_sociales",
+   "trousse-communication_et_cooperation",
+   "trousse-emotions_et_empathie",
+   "trousse-impulsivite",
+   "trousse-routines_et_organisation_scolaire",
+   "trousse-soutien_langagier_primaire",
+   "trousse-soutien_langagier_secondaire",
+   "trousse-dims",
+   "trousse-hpi",
+   "trousse-syndrome_gilles_de_la_tourette"
+  ],
+  "prix": 20.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 50.0
+ },
+ {
+  "id": "lot-2-clientèles-et-interventions",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Clientèles et interventions",
+  "sous": "10 trousses",
+  "desc": "Toutes les trousses du volet « Clientèles et interventions ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-protection_de_la_jeunesse",
+   "trousse-violence_conjugale",
+   "trousse-auteurs_de_violence",
+   "trousse-evaluation_globale_du_jeune",
+   "trousse-observation_des_comportements",
+   "trousse-gestion_de_classe",
+   "trousse-renforcement_r05",
+   "trousse-renforcement_r610",
+   "trousse-renforcement_r1115",
+   "trousse-adultes_autistes"
+  ],
+  "prix": 20.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 50.0
+ },
+ {
+  "id": "lot-3-professions",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Professions",
+  "sous": "10 trousses",
+  "desc": "Toutes les trousses du volet « Professions ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-tts",
+   "trousse-service_de_garde_scolaire",
+   "trousse-educatrices_cpe",
+   "trousse-direction_garderie",
+   "trousse-chsld_tes_pab",
+   "trousse-travail_de_rue",
+   "trousse-tes_communautaire",
+   "trousse-orthopedagogie",
+   "trousse-orthophonie",
+   "trousse-travail_social"
+  ],
+  "prix": 20.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 50.0
+ },
+ {
+  "id": "lot-4-professions-et-pratique",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Professions et pratique",
+  "sous": "10 trousses",
+  "desc": "Toutes les trousses du volet « Professions et pratique ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-criminologie",
+   "trousse-psychoeducation",
+   "trousse-soins_infirmiers",
+   "trousse-zootherapie",
+   "trousse-parents",
+   "trousse-peh",
+   "trousse-pratique_privee",
+   "trousse-formation_tsa",
+   "trousse-formation_comportements_defis",
+   "trousse-pack_rentree_tes_primaire"
+  ],
+  "prix": 20.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 50.0
+ },
+ {
+  "id": "lot-5-jeux-et-activités",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Jeux et activités",
+  "sous": "10 trousses",
+  "desc": "Toutes les trousses du volet « Jeux et activités ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-ateliers_emotions",
+   "trousse-jeux_a_imprimer",
+   "trousse-pictogrammes",
+   "trousse-motricite_fine",
+   "trousse-parcours_moteur",
+   "trousse-guide_accompagnement_tes",
+   "trousse-histoires_sociales",
+   "trousse-cahier_a_colorier",
+   "trousse-cahier_videos",
+   "trousse-trousse_decouverte"
+  ],
+  "prix": 20.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 50.0
+ },
+ {
+  "id": "lot-6-cahiers-thématiques",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Cahiers thématiques",
+  "sous": "10 trousses",
+  "desc": "Toutes les trousses du volet « Cahiers thématiques ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-theme_sirenes_sous_la_mer",
+   "trousse-theme_animaux_jungle",
+   "trousse-theme_flamants_roses",
+   "trousse-theme_gobelins",
+   "trousse-theme_sorcieres",
+   "trousse-theme_trains",
+   "trousse-theme_princesses",
+   "trousse-theme_pommes",
+   "trousse-theme_halloween",
+   "trousse-theme_hiver"
+  ],
+  "prix": 20.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 50.0
+ },
+ {
+  "id": "lot-7-scolaire",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Scolaire",
+  "sous": "8 trousses",
+  "desc": "Toutes les trousses du volet « Scolaire ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-francais_1re_annee",
+   "trousse-francais_2e_annee",
+   "trousse-francais_3e_annee",
+   "trousse-francais_4e_annee",
+   "trousse-francais_5e_annee",
+   "trousse-francais_6e_annee",
+   "trousse-mathematiques_5e_annee",
+   "trousse-enseignants_secondaire"
+  ],
+  "prix": 15.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 40.0
+ },
+ {
+  "id": "lot-8-thèmes-complémentaires",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Thèmes complémentaires",
+  "sous": "10 trousses",
+  "desc": "Toutes les trousses du volet « Thèmes complémentaires ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-deuil_et_separation",
+   "trousse-estime_de_soi",
+   "trousse-approche_sensible_au_trauma",
+   "trousse-sexualite_adaptee",
+   "trousse-ecrans_et_cyberdependance",
+   "trousse-sommeil",
+   "trousse-troubles_alimentaires",
+   "trousse-nouveaux_arrivants",
+   "trousse-autosoins_intervenants",
+   "trousse-supervision_stagiaires"
+  ],
+  "prix": 20.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 50.0
+ },
+ {
+  "id": "lot-specialisees",
+  "type": "lot_specialisees",
+  "groupe": "Lots",
+  "titre": "Les 16 trousses spécialisées",
+  "sous": "Âges et troubles",
+  "desc": "Petite enfance, secondaire, adultes, aînés, TSA, TDAH, DI, langage, comportement, crise, suicide, dépendances et plus.",
+  "fichiers": [],
+  "contient": [
+   "trousse-petite_enfance_0-5_ans",
+   "trousse-secondaire_12-17_ans",
+   "trousse-adultes",
+   "trousse-aines",
+   "trousse-tdah",
+   "trousse-troubles_apprentissage",
+   "trousse-tsa",
+   "trousse-trouble_du_langage",
+   "trousse-troubles_du_comportement",
+   "trousse-dyspraxie_tdc",
+   "trousse-deficience_intellectuelle",
+   "trousse-gestion_de_crise",
+   "trousse-prevention_du_suicide",
+   "trousse-dependances",
+   "trousse-violence_sexuelle",
+   "trousse-fondements_theoriques"
+  ],
+  "prix": 30.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 80.0
+ },
+ {
+  "id": "lot-tous-les-cahiers",
+  "type": "lot_tout",
+  "groupe": "Lots",
+  "titre": "Tous les cahiers visuels",
+  "sous": "179 cahiers · 5 séries",
+  "prix": 60.0,
+  "desc": "Les cahiers TSA, TDAH, habiletés sociales, DI et comportement, en couleur et à colorier.",
+  "fichiers": [],
+  "contient": [
+   "cahier-vtsa-01",
+   "cahier-vtsa-02",
+   "cahier-vtsa-03",
+   "cahier-vtsa-04",
+   "cahier-vtsa-05",
+   "cahier-vtsa-06",
+   "cahier-vtsa-07",
+   "cahier-vtsa-08",
+   "cahier-vtsa-09",
+   "cahier-vtsa-10",
+   "cahier-vtsa-11",
+   "cahier-vtsa-12",
+   "cahier-vtsa-13",
+   "cahier-vtsa-14",
+   "cahier-vtsa-15",
+   "cahier-vtsa-16",
+   "cahier-vtsa-17",
+   "cahier-vtsa-18",
+   "cahier-vtsa-19",
+   "cahier-vtsa-20",
+   "cahier-vtsa-21",
+   "cahier-vtsa-22",
+   "cahier-vtsa-23",
+   "cahier-vtsa-24",
+   "cahier-vtsa-25",
+   "cahier-vtsa-26",
+   "cahier-vtsa-27",
+   "cahier-vtsa-28",
+   "cahier-vtsa-29",
+   "cahier-vtsa-30",
+   "cahier-vtsa-31",
+   "cahier-vtsa-32",
+   "cahier-vtsa-33",
+   "cahier-vtsa-34",
+   "cahier-vtdah-01",
+   "cahier-vtdah-02",
+   "cahier-vtdah-03",
+   "cahier-vtdah-04",
+   "cahier-vtdah-05",
+   "cahier-vtdah-06",
+   "cahier-vtdah-07",
+   "cahier-vtdah-08",
+   "cahier-vtdah-09",
+   "cahier-vtdah-10",
+   "cahier-vtdah-11",
+   "cahier-vtdah-12",
+   "cahier-vtdah-13",
+   "cahier-vtdah-14",
+   "cahier-vtdah-15",
+   "cahier-vtdah-16",
+   "cahier-vtdah-17",
+   "cahier-vtdah-18",
+   "cahier-vtdah-19",
+   "cahier-vtdah-20",
+   "cahier-vtdah-21",
+   "cahier-vtdah-22",
+   "cahier-vtdah-23",
+   "cahier-vtdah-24",
+   "cahier-vtdah-25",
+   "cahier-vtdah-26",
+   "cahier-vtdah-27",
+   "cahier-vtdah-28",
+   "cahier-vtdah-29",
+   "cahier-vtdah-30",
+   "cahier-vtdah-31",
+   "cahier-vtdah-32",
+   "cahier-vtdah-33",
+   "cahier-vsoc-01",
+   "cahier-vsoc-02",
+   "cahier-vsoc-03",
+   "cahier-vsoc-04",
+   "cahier-vsoc-05",
+   "cahier-vsoc-06",
+   "cahier-vsoc-07",
+   "cahier-vsoc-08",
+   "cahier-vsoc-09",
+   "cahier-vsoc-10",
+   "cahier-vsoc-11",
+   "cahier-vsoc-12",
+   "cahier-vsoc-13",
+   "cahier-vsoc-14",
+   "cahier-vsoc-15",
+   "cahier-vsoc-16",
+   "cahier-vsoc-17",
+   "cahier-vsoc-18",
+   "cahier-vsoc-19",
+   "cahier-vsoc-20",
+   "cahier-vsoc-21",
+   "cahier-vsoc-22",
+   "cahier-vsoc-23",
+   "cahier-vsoc-24",
+   "cahier-vsoc-25",
+   "cahier-vsoc-26",
+   "cahier-vsoc-27",
+   "cahier-vsoc-28",
+   "cahier-vsoc-29",
+   "cahier-vsoc-30",
+   "cahier-vsoc-31",
+   "cahier-vsoc-32",
+   "cahier-vdi-01",
+   "cahier-vdi-02",
+   "cahier-vdi-03",
+   "cahier-vdi-04",
+   "cahier-vdi-05",
+   "cahier-vdi-06",
+   "cahier-vdi-07",
+   "cahier-vdi-08",
+   "cahier-vdi-09",
+   "cahier-vdi-10",
+   "cahier-vdi-11",
+   "cahier-vdi-12",
+   "cahier-vdi-13",
+   "cahier-vdi-14",
+   "cahier-vdi-15",
+   "cahier-vdi-16",
+   "cahier-vdi-17",
+   "cahier-vdi-18",
+   "cahier-vdi-19",
+   "cahier-vdi-20",
+   "cahier-vdi-21",
+   "cahier-vdi-22",
+   "cahier-vdi-23",
+   "cahier-vdi-24",
+   "cahier-vdi-25",
+   "cahier-vdi-26",
+   "cahier-vdi-27",
+   "cahier-vdi-28",
+   "cahier-vdi-29",
+   "cahier-vdi-30",
+   "cahier-vdi-31",
+   "cahier-vdi-32",
+   "cahier-vdi-33",
+   "cahier-vdi-34",
+   "cahier-vdi-35",
+   "cahier-vdi-36",
+   "cahier-vdi-37",
+   "cahier-vdi-38",
+   "cahier-vdi-39",
+   "cahier-vcomp-01",
+   "cahier-vcomp-02",
+   "cahier-vcomp-03",
+   "cahier-vcomp-04",
+   "cahier-vcomp-05",
+   "cahier-vcomp-06",
+   "cahier-vcomp-07",
+   "cahier-vcomp-08",
+   "cahier-vcomp-09",
+   "cahier-vcomp-10",
+   "cahier-vcomp-11",
+   "cahier-vcomp-12",
+   "cahier-vcomp-13",
+   "cahier-vcomp-14",
+   "cahier-vcomp-15",
+   "cahier-vcomp-16",
+   "cahier-vcomp-17",
+   "cahier-vcomp-18",
+   "cahier-vcomp-19",
+   "cahier-vcomp-20",
+   "cahier-vcomp-21",
+   "cahier-vcomp-22",
+   "cahier-vcomp-23",
+   "cahier-vcomp-24",
+   "cahier-vcomp-25",
+   "cahier-vcomp-26",
+   "cahier-vcomp-27",
+   "cahier-vcomp-28",
+   "cahier-vcomp-29",
+   "cahier-vcomp-30",
+   "cahier-vcomp-31",
+   "cahier-vcomp-32",
+   "cahier-vcomp-33",
+   "cahier-vcomp-34",
+   "cahier-vcomp-35",
+   "cahier-vcomp-36",
+   "cahier-vcomp-37",
+   "cahier-vcomp-38",
+   "cahier-vcomp-39",
+   "cahier-vcomp-40",
+   "cahier-vcomp-41"
+  ],
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 358.0
+ },
+ {
+  "id": "lot-toutes-les-trousses",
+  "type": "lot_tout",
+  "groupe": "Lots",
+  "titre": "Toutes les trousses",
+  "sous": "100 trousses et éditions",
+  "prix": 60.0,
+  "desc": "La trousse principale, les 16 trousses spécialisées, les 78 trousses de la Collection et les 5 éditions.",
+  "fichiers": [],
+  "contient": [
+   "trousse-principale",
+   "trousse-petite_enfance_0-5_ans",
+   "trousse-secondaire_12-17_ans",
+   "trousse-adultes",
+   "trousse-aines",
+   "trousse-tdah",
+   "trousse-troubles_apprentissage",
+   "trousse-tsa",
+   "trousse-trouble_du_langage",
+   "trousse-troubles_du_comportement",
+   "trousse-dyspraxie_tdc",
+   "trousse-deficience_intellectuelle",
+   "trousse-gestion_de_crise",
+   "trousse-prevention_du_suicide",
+   "trousse-dependances",
+   "trousse-violence_sexuelle",
+   "trousse-fondements_theoriques",
+   "trousse-habiletes_sociales",
+   "trousse-communication_et_cooperation",
+   "trousse-emotions_et_empathie",
+   "trousse-impulsivite",
+   "trousse-routines_et_organisation_scolaire",
+   "trousse-soutien_langagier_primaire",
+   "trousse-soutien_langagier_secondaire",
+   "trousse-dims",
+   "trousse-hpi",
+   "trousse-syndrome_gilles_de_la_tourette",
+   "trousse-protection_de_la_jeunesse",
+   "trousse-violence_conjugale",
+   "trousse-auteurs_de_violence",
+   "trousse-evaluation_globale_du_jeune",
+   "trousse-observation_des_comportements",
+   "trousse-gestion_de_classe",
+   "trousse-renforcement_r05",
+   "trousse-renforcement_r610",
+   "trousse-renforcement_r1115",
+   "trousse-adultes_autistes",
+   "trousse-tts",
+   "trousse-service_de_garde_scolaire",
+   "trousse-educatrices_cpe",
+   "trousse-direction_garderie",
+   "trousse-chsld_tes_pab",
+   "trousse-travail_de_rue",
+   "trousse-tes_communautaire",
+   "trousse-orthopedagogie",
+   "trousse-orthophonie",
+   "trousse-travail_social",
+   "trousse-criminologie",
+   "trousse-psychoeducation",
+   "trousse-soins_infirmiers",
+   "trousse-zootherapie",
+   "trousse-parents",
+   "trousse-peh",
+   "trousse-pratique_privee",
+   "trousse-formation_tsa",
+   "trousse-formation_comportements_defis",
+   "trousse-pack_rentree_tes_primaire",
+   "trousse-ateliers_emotions",
+   "trousse-jeux_a_imprimer",
+   "trousse-pictogrammes",
+   "trousse-motricite_fine",
+   "trousse-parcours_moteur",
+   "trousse-guide_accompagnement_tes",
+   "trousse-histoires_sociales",
+   "trousse-cahier_a_colorier",
+   "trousse-cahier_videos",
+   "trousse-trousse_decouverte",
+   "trousse-theme_sirenes_sous_la_mer",
+   "trousse-theme_animaux_jungle",
+   "trousse-theme_flamants_roses",
+   "trousse-theme_gobelins",
+   "trousse-theme_sorcieres",
+   "trousse-theme_trains",
+   "trousse-theme_princesses",
+   "trousse-theme_pommes",
+   "trousse-theme_halloween",
+   "trousse-theme_hiver",
+   "trousse-francais_1re_annee",
+   "trousse-francais_2e_annee",
+   "trousse-francais_3e_annee",
+   "trousse-francais_4e_annee",
+   "trousse-francais_5e_annee",
+   "trousse-francais_6e_annee",
+   "trousse-mathematiques_5e_annee",
+   "trousse-enseignants_secondaire",
+   "trousse-deuil_et_separation",
+   "trousse-estime_de_soi",
+   "trousse-approche_sensible_au_trauma",
+   "trousse-sexualite_adaptee",
+   "trousse-ecrans_et_cyberdependance",
+   "trousse-sommeil",
+   "trousse-troubles_alimentaires",
+   "trousse-nouveaux_arrivants",
+   "trousse-autosoins_intervenants",
+   "trousse-supervision_stagiaires",
+   "edition-edition_ados",
+   "edition-edition_famille",
+   "edition-edition_transitions",
+   "edition-edition_intimidation",
+   "edition-edition_anxiete"
+  ],
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 485.0
+ },
+ {
+  "id": "lot-mega",
+  "type": "mega",
+  "groupe": "Lots",
+  "titre": "Tout Filodie",
+  "sous": "Toute la collection",
+  "desc": "Les 95 trousses, les éditions, les 179 cahiers visuels, le Grand livre clinique et le bottin régional.",
+  "fichiers": [],
+  "contient": [
+   "trousse-principale",
+   "trousse-petite_enfance_0-5_ans",
+   "trousse-secondaire_12-17_ans",
+   "trousse-adultes",
+   "trousse-aines",
+   "trousse-tdah",
+   "trousse-troubles_apprentissage",
+   "trousse-tsa",
+   "trousse-trouble_du_langage",
+   "trousse-troubles_du_comportement",
+   "trousse-dyspraxie_tdc",
+   "trousse-deficience_intellectuelle",
+   "trousse-gestion_de_crise",
+   "trousse-prevention_du_suicide",
+   "trousse-dependances",
+   "trousse-violence_sexuelle",
+   "trousse-fondements_theoriques",
+   "trousse-habiletes_sociales",
+   "trousse-communication_et_cooperation",
+   "trousse-emotions_et_empathie",
+   "trousse-impulsivite",
+   "trousse-routines_et_organisation_scolaire",
+   "trousse-soutien_langagier_primaire",
+   "trousse-soutien_langagier_secondaire",
+   "trousse-dims",
+   "trousse-hpi",
+   "trousse-syndrome_gilles_de_la_tourette",
+   "trousse-protection_de_la_jeunesse",
+   "trousse-violence_conjugale",
+   "trousse-auteurs_de_violence",
+   "trousse-evaluation_globale_du_jeune",
+   "trousse-observation_des_comportements",
+   "trousse-gestion_de_classe",
+   "trousse-renforcement_r05",
+   "trousse-renforcement_r610",
+   "trousse-renforcement_r1115",
+   "trousse-adultes_autistes",
+   "trousse-tts",
+   "trousse-service_de_garde_scolaire",
+   "trousse-educatrices_cpe",
+   "trousse-direction_garderie",
+   "trousse-chsld_tes_pab",
+   "trousse-travail_de_rue",
+   "trousse-tes_communautaire",
+   "trousse-orthopedagogie",
+   "trousse-orthophonie",
+   "trousse-travail_social",
+   "trousse-criminologie",
+   "trousse-psychoeducation",
+   "trousse-soins_infirmiers",
+   "trousse-zootherapie",
+   "trousse-parents",
+   "trousse-peh",
+   "trousse-pratique_privee",
+   "trousse-formation_tsa",
+   "trousse-formation_comportements_defis",
+   "trousse-pack_rentree_tes_primaire",
+   "trousse-ateliers_emotions",
+   "trousse-jeux_a_imprimer",
+   "trousse-pictogrammes",
+   "trousse-motricite_fine",
+   "trousse-parcours_moteur",
+   "trousse-guide_accompagnement_tes",
+   "trousse-histoires_sociales",
+   "trousse-cahier_a_colorier",
+   "trousse-cahier_videos",
+   "trousse-trousse_decouverte",
+   "trousse-theme_sirenes_sous_la_mer",
+   "trousse-theme_animaux_jungle",
+   "trousse-theme_flamants_roses",
+   "trousse-theme_gobelins",
+   "trousse-theme_sorcieres",
+   "trousse-theme_trains",
+   "trousse-theme_princesses",
+   "trousse-theme_pommes",
+   "trousse-theme_halloween",
+   "trousse-theme_hiver",
+   "trousse-francais_1re_annee",
+   "trousse-francais_2e_annee",
+   "trousse-francais_3e_annee",
+   "trousse-francais_4e_annee",
+   "trousse-francais_5e_annee",
+   "trousse-francais_6e_annee",
+   "trousse-mathematiques_5e_annee",
+   "trousse-enseignants_secondaire",
+   "trousse-deuil_et_separation",
+   "trousse-estime_de_soi",
+   "trousse-approche_sensible_au_trauma",
+   "trousse-sexualite_adaptee",
+   "trousse-ecrans_et_cyberdependance",
+   "trousse-sommeil",
+   "trousse-troubles_alimentaires",
+   "trousse-nouveaux_arrivants",
+   "trousse-autosoins_intervenants",
+   "trousse-supervision_stagiaires",
+   "edition-edition_ados",
+   "edition-edition_famille",
+   "edition-edition_transitions",
+   "edition-edition_intimidation",
+   "edition-edition_anxiete",
+   "cahier-vtsa-01",
+   "cahier-vtsa-02",
+   "cahier-vtsa-03",
+   "cahier-vtsa-04",
+   "cahier-vtsa-05",
+   "cahier-vtsa-06",
+   "cahier-vtsa-07",
+   "cahier-vtsa-08",
+   "cahier-vtsa-09",
+   "cahier-vtsa-10",
+   "cahier-vtsa-11",
+   "cahier-vtsa-12",
+   "cahier-vtsa-13",
+   "cahier-vtsa-14",
+   "cahier-vtsa-15",
+   "cahier-vtsa-16",
+   "cahier-vtsa-17",
+   "cahier-vtsa-18",
+   "cahier-vtsa-19",
+   "cahier-vtsa-20",
+   "cahier-vtsa-21",
+   "cahier-vtsa-22",
+   "cahier-vtsa-23",
+   "cahier-vtsa-24",
+   "cahier-vtsa-25",
+   "cahier-vtsa-26",
+   "cahier-vtsa-27",
+   "cahier-vtsa-28",
+   "cahier-vtsa-29",
+   "cahier-vtsa-30",
+   "cahier-vtsa-31",
+   "cahier-vtsa-32",
+   "cahier-vtsa-33",
+   "cahier-vtsa-34",
+   "cahier-vtdah-01",
+   "cahier-vtdah-02",
+   "cahier-vtdah-03",
+   "cahier-vtdah-04",
+   "cahier-vtdah-05",
+   "cahier-vtdah-06",
+   "cahier-vtdah-07",
+   "cahier-vtdah-08",
+   "cahier-vtdah-09",
+   "cahier-vtdah-10",
+   "cahier-vtdah-11",
+   "cahier-vtdah-12",
+   "cahier-vtdah-13",
+   "cahier-vtdah-14",
+   "cahier-vtdah-15",
+   "cahier-vtdah-16",
+   "cahier-vtdah-17",
+   "cahier-vtdah-18",
+   "cahier-vtdah-19",
+   "cahier-vtdah-20",
+   "cahier-vtdah-21",
+   "cahier-vtdah-22",
+   "cahier-vtdah-23",
+   "cahier-vtdah-24",
+   "cahier-vtdah-25",
+   "cahier-vtdah-26",
+   "cahier-vtdah-27",
+   "cahier-vtdah-28",
+   "cahier-vtdah-29",
+   "cahier-vtdah-30",
+   "cahier-vtdah-31",
+   "cahier-vtdah-32",
+   "cahier-vtdah-33",
+   "cahier-vsoc-01",
+   "cahier-vsoc-02",
+   "cahier-vsoc-03",
+   "cahier-vsoc-04",
+   "cahier-vsoc-05",
+   "cahier-vsoc-06",
+   "cahier-vsoc-07",
+   "cahier-vsoc-08",
+   "cahier-vsoc-09",
+   "cahier-vsoc-10",
+   "cahier-vsoc-11",
+   "cahier-vsoc-12",
+   "cahier-vsoc-13",
+   "cahier-vsoc-14",
+   "cahier-vsoc-15",
+   "cahier-vsoc-16",
+   "cahier-vsoc-17",
+   "cahier-vsoc-18",
+   "cahier-vsoc-19",
+   "cahier-vsoc-20",
+   "cahier-vsoc-21",
+   "cahier-vsoc-22",
+   "cahier-vsoc-23",
+   "cahier-vsoc-24",
+   "cahier-vsoc-25",
+   "cahier-vsoc-26",
+   "cahier-vsoc-27",
+   "cahier-vsoc-28",
+   "cahier-vsoc-29",
+   "cahier-vsoc-30",
+   "cahier-vsoc-31",
+   "cahier-vsoc-32",
+   "cahier-vdi-01",
+   "cahier-vdi-02",
+   "cahier-vdi-03",
+   "cahier-vdi-04",
+   "cahier-vdi-05",
+   "cahier-vdi-06",
+   "cahier-vdi-07",
+   "cahier-vdi-08",
+   "cahier-vdi-09",
+   "cahier-vdi-10",
+   "cahier-vdi-11",
+   "cahier-vdi-12",
+   "cahier-vdi-13",
+   "cahier-vdi-14",
+   "cahier-vdi-15",
+   "cahier-vdi-16",
+   "cahier-vdi-17",
+   "cahier-vdi-18",
+   "cahier-vdi-19",
+   "cahier-vdi-20",
+   "cahier-vdi-21",
+   "cahier-vdi-22",
+   "cahier-vdi-23",
+   "cahier-vdi-24",
+   "cahier-vdi-25",
+   "cahier-vdi-26",
+   "cahier-vdi-27",
+   "cahier-vdi-28",
+   "cahier-vdi-29",
+   "cahier-vdi-30",
+   "cahier-vdi-31",
+   "cahier-vdi-32",
+   "cahier-vdi-33",
+   "cahier-vdi-34",
+   "cahier-vdi-35",
+   "cahier-vdi-36",
+   "cahier-vdi-37",
+   "cahier-vdi-38",
+   "cahier-vdi-39",
+   "cahier-vcomp-01",
+   "cahier-vcomp-02",
+   "cahier-vcomp-03",
+   "cahier-vcomp-04",
+   "cahier-vcomp-05",
+   "cahier-vcomp-06",
+   "cahier-vcomp-07",
+   "cahier-vcomp-08",
+   "cahier-vcomp-09",
+   "cahier-vcomp-10",
+   "cahier-vcomp-11",
+   "cahier-vcomp-12",
+   "cahier-vcomp-13",
+   "cahier-vcomp-14",
+   "cahier-vcomp-15",
+   "cahier-vcomp-16",
+   "cahier-vcomp-17",
+   "cahier-vcomp-18",
+   "cahier-vcomp-19",
+   "cahier-vcomp-20",
+   "cahier-vcomp-21",
+   "cahier-vcomp-22",
+   "cahier-vcomp-23",
+   "cahier-vcomp-24",
+   "cahier-vcomp-25",
+   "cahier-vcomp-26",
+   "cahier-vcomp-27",
+   "cahier-vcomp-28",
+   "cahier-vcomp-29",
+   "cahier-vcomp-30",
+   "cahier-vcomp-31",
+   "cahier-vcomp-32",
+   "cahier-vcomp-33",
+   "cahier-vcomp-34",
+   "cahier-vcomp-35",
+   "cahier-vcomp-36",
+   "cahier-vcomp-37",
+   "cahier-vcomp-38",
+   "cahier-vcomp-39",
+   "cahier-vcomp-40",
+   "cahier-vcomp-41",
+   "grand-livre",
+   "bottin-regional"
+  ],
+  "prix": 99.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 858.0
+ }
+]
