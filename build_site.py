@@ -38,6 +38,10 @@ for fn in sorted(os.listdir(os.path.join(SRC, "i18n"))) if os.path.isdir(os.path
         EN.update(json.load(open(os.path.join(SRC, "i18n", fn), encoding="utf-8")))
 
 
+# Identifiants conservés quand un volet est renommé (le code Payhip est rattaché à l’identifiant).
+ID_STABLE = {"lot-10-boîte-à-outils-en-psychoéducation": "lot-10-boîte-à-outils-du-psychoéducateur"}
+
+
 def tr(s):
     return EN.get(s, s)
 
@@ -142,7 +146,9 @@ def catalogue():
     for g in sorted({t["dossier"] for t in ft.LOTS}):
         its = [i for i in items if i["type"] == "trousse" and i["fichiers"][0].startswith(g + "/")]
         v = g.split("/")[-1]
-        add(id="lot-" + re.sub(r"\W+", "-", v.lower()).strip("-"), type="lot_collection", groupe="Lots",
+        lid = "lot-" + re.sub(r"\W+", "-", v.lower()).strip("-")
+        lid = ID_STABLE.get(lid, lid)          # volet renommé : on garde l’identifiant (et le code Payhip)
+        add(id=lid, type="lot_collection", groupe="Lots",
             titre=f"Collection Filodie : {v.split('– ')[-1]}", sous=f"{len(its)} trousses",
             desc="Toutes les trousses du volet « " + v.split("– ")[-1] + " ».", fichiers=[], contient=[i["id"] for i in its],
             titre_en=f"Filodie Collection: {tr(v).split('– ')[-1]}", sous_en=f"{len(its)} toolkits",

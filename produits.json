@@ -380,12 +380,12 @@
  {
   "id": "trousse-psychoeducation_evaluation",
   "type": "trousse",
-  "groupe": "Boîte à outils du psychoéducateur",
+  "groupe": "Boîte à outils en psychoéducation",
   "titre": "Psychoéducation : évaluation approfondie",
   "sous": "10 outils",
   "desc": "Dix outils pour conduire une évaluation psychoéducative rigoureuse : entrevue initiale, histoire développementale, observation par intervalles, analyse fonctionnelle, écosystème, facteurs de risque et de protection, triangulation des sources et conclusion professionnelle.",
   "fichiers": [
-   "Collection Filodie/10 – Boîte à outils du psychoéducateur/Trousse_Filodie_Psychoeducation_evaluation_2026.pdf"
+   "Collection Filodie/10 – Boîte à outils en psychoéducation/Trousse_Filodie_Psychoeducation_evaluation_2026.pdf"
   ],
   "prix": 7.0,
   "payhip": "DrSmX",
@@ -394,12 +394,12 @@
  {
   "id": "trousse-psychoeducation_planification",
   "type": "trousse",
-  "groupe": "Boîte à outils du psychoéducateur",
+  "groupe": "Boîte à outils en psychoéducation",
   "titre": "Psychoéducation : planification",
   "sous": "10 outils",
   "desc": "Dix outils pour passer de l’évaluation au plan : du besoin à l’objectif, vérification SMART, choix des moyens, plan de soutien au comportement, plan de sécurité, ligne de base, généralisation, entente avec la famille, transition et révision du plan.",
   "fichiers": [
-   "Collection Filodie/10 – Boîte à outils du psychoéducateur/Trousse_Filodie_Psychoeducation_planification_2026.pdf"
+   "Collection Filodie/10 – Boîte à outils en psychoéducation/Trousse_Filodie_Psychoeducation_planification_2026.pdf"
   ],
   "prix": 7.0,
   "payhip": "3UCy9",
@@ -408,12 +408,12 @@
  {
   "id": "trousse-psychoeducation_accompagnement",
   "type": "trousse",
-  "groupe": "Boîte à outils du psychoéducateur",
+  "groupe": "Boîte à outils en psychoéducation",
   "titre": "Psychoéducation : accompagnement",
   "sous": "10 outils",
   "desc": "Dix outils pour intervenir au quotidien : balance décisionnelle, importance et confiance, résolution de problèmes en collaboration, séance d’habiletés, système de renforcement, réparation après une crise, pratique parentale, dynamique de groupe, validation des émotions et journal de bord.",
   "fichiers": [
-   "Collection Filodie/10 – Boîte à outils du psychoéducateur/Trousse_Filodie_Psychoeducation_accompagnement_2026.pdf"
+   "Collection Filodie/10 – Boîte à outils en psychoéducation/Trousse_Filodie_Psychoeducation_accompagnement_2026.pdf"
   ],
   "prix": 7.0,
   "payhip": "DYxlh",
@@ -422,12 +422,12 @@
  {
   "id": "trousse-psychoeducation_pratique",
   "type": "trousse",
-  "groupe": "Boîte à outils du psychoéducateur",
+  "groupe": "Boîte à outils en psychoéducation",
   "titre": "Psychoéducation : mesure et pratique",
   "sous": "10 outils",
   "desc": "Dix outils pour la rigueur professionnelle : analyse visuelle des données, alliance de travail, gabarits de rapport d’évaluation et de fin de suivi, consentement et confidentialité, présentation de cas, délibération éthique, supervision, charge de cas et plan de développement professionnel.",
   "fichiers": [
-   "Collection Filodie/10 – Boîte à outils du psychoéducateur/Trousse_Filodie_Psychoeducation_pratique_2026.pdf"
+   "Collection Filodie/10 – Boîte à outils en psychoéducation/Trousse_Filodie_Psychoeducation_pratique_2026.pdf"
   ],
   "prix": 7.0,
   "payhip": "5uxFK",
@@ -591,7 +591,7 @@
   "id": "trousse-evaluation_globale_du_jeune",
   "type": "trousse",
   "groupe": "Clientèles et interventions",
-  "titre": "Évaluation globale du jeune",
+  "titre": "Évaluation globale des jeunes",
   "sous": "10 outils",
   "desc": "Dix outils pour dresser un portrait complet : santé, famille, école, relations, émotions, comportements, consommation, forces, risques et priorités.",
   "fichiers": [
@@ -703,7 +703,7 @@
   "id": "trousse-service_de_garde_scolaire",
   "type": "trousse",
   "groupe": "Professions",
-  "titre": "Éducatrices en service de garde scolaire",
+  "titre": "Personnel éducateur en service de garde scolaire",
   "sous": "10 outils",
   "desc": "Dix outils pour les éducatrices et éducateurs en service de garde : accueil, jeux, conflits, transitions, observation et communication avec l’école et les familles.",
   "fichiers": [
@@ -717,7 +717,7 @@
   "id": "trousse-educatrices_cpe",
   "type": "trousse",
   "groupe": "Professions",
-  "titre": "Éducatrices en CPE",
+  "titre": "Personnel éducateur en CPE",
   "sous": "10 outils",
   "desc": "Dix outils pour les éducatrices et éducateurs en CPE : observation, programme éducatif, jeu, routines, intervention démocratique, dossier éducatif et collaboration avec les familles.",
   "fichiers": [
@@ -899,7 +899,7 @@
   "id": "trousse-peh",
   "type": "trousse",
   "groupe": "Professions et pratique",
-  "titre": "Préposé·e aux élèves handicapés (PEH)",
+  "titre": "Préposées et préposés aux élèves handicapés (PEH)",
   "sous": "10 outils",
   "desc": "Dix outils pour les PEH et le personnel accompagnateur : routine de soins, alimentation, hygiène, déplacements, communication, journal de bord et collaboration avec l’équipe.",
   "fichiers": [
@@ -1347,7 +1347,7 @@
   "id": "trousse-enseignants_secondaire",
   "type": "trousse",
   "groupe": "Scolaire",
-  "titre": "Enseignants du secondaire",
+  "titre": "Personnel enseignant du secondaire",
   "sous": "10 outils",
   "desc": "Dix outils pour les enseignantes et enseignants du secondaire : planification, gestion de classe, différenciation, évaluation, rétroaction, élèves à besoins particuliers et communication avec les familles.",
   "fichiers": [
@@ -1473,7 +1473,7 @@
   "id": "trousse-autosoins_intervenants",
   "type": "trousse",
   "groupe": "Thèmes complémentaires",
-  "titre": "Prendre soin de soi comme intervenant·e",
+  "titre": "Prendre soin de soi quand on intervient",
   "sous": "10 outils",
   "desc": "Dix outils pour prévenir l’épuisement et la fatigue de compassion : repérer les signaux, poser des limites, se recharger, débreffer et s’appuyer sur l’équipe.",
   "fichiers": [
@@ -1501,9 +1501,9 @@
   "id": "trousse-enseignants_primaire",
   "type": "trousse",
   "groupe": "Équipe-école et réseau",
-  "titre": "Enseignants du primaire",
+  "titre": "Personnel enseignant du primaire",
   "sous": "10 outils",
-  "desc": "Dix outils pour les titulaires du primaire : portrait de classe, routines, différenciation, observation, plan d’intervention, communication avec les familles et collaboration avec la T.E.S.",
+  "desc": "Dix outils pour les titulaires du primaire : portrait de classe, routines, différenciation, observation, plan d’intervention, communication avec les familles et collaboration avec la ou le T.E.S.",
   "fichiers": [
    "Collection Filodie/9 – Équipe-école et réseau/Trousse_Filodie_Enseignants_primaire_2026.pdf"
   ],
@@ -1515,7 +1515,7 @@
   "id": "trousse-adaptation_scolaire",
   "type": "trousse",
   "groupe": "Équipe-école et réseau",
-  "titre": "Enseignants en adaptation scolaire",
+  "titre": "Personnel enseignant en adaptation scolaire",
   "sous": "10 outils",
   "desc": "Dix outils pour les classes spécialisées et le soutien en adaptation scolaire : profil de l’élève, objectifs individualisés, horaire, travail en îlots, suivi des comportements et collaboration avec l’équipe.",
   "fichiers": [
@@ -1915,13 +1915,13 @@
   "id": "cahier-vtsa-12",
   "type": "cahier",
   "groupe": "Cahiers TSA",
-  "titre": "Me faire un ami et le garder",
+  "titre": "Créer une amitié et la garder",
   "sous": "7-14 ans",
   "desc": "Les étapes pour commencer une amitié et la faire durer.",
   "code": "VTSA-12",
   "fichiers": [
-   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-12_Me_faire_un_ami_et_le_garder.pdf",
-   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-12_Me_faire_un_ami_et_le_garder_NB.pdf"
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-12_Créer_une_amitié_et_la_garder.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-12_Créer_une_amitié_et_la_garder_NB.pdf"
   ],
   "prix": 3.0,
   "payhip": "dwYGN",
@@ -2315,13 +2315,13 @@
   "id": "cahier-vtdah-03",
   "type": "cahier",
   "groupe": "Cahiers TDAH",
-  "titre": "Chacun son tour",
+  "titre": "À tour de rôle",
   "sous": "4-10 ans",
   "desc": "Apprendre à attendre son tour dans les jeux et en classe.",
   "code": "VTDAH-03",
   "fichiers": [
-   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-03_Chacun_son_tour.pdf",
-   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-03_Chacun_son_tour_NB.pdf"
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-03_À_tour_de_rôle.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-03_À_tour_de_rôle_NB.pdf"
   ],
   "prix": 3.0,
   "payhip": "17tJ9",
@@ -2683,13 +2683,13 @@
   "id": "cahier-vtdah-26",
   "type": "cahier",
   "groupe": "Cahiers TDAH",
-  "titre": "Des amis pour jouer",
+  "titre": "Jouer ensemble et créer des amitiés",
   "sous": "6-12 ans",
   "desc": "Me faire des amies et des amis, et bien jouer ensemble.",
   "code": "VTDAH-26",
   "fichiers": [
-   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-26_Des_amis_pour_jouer.pdf",
-   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-26_Des_amis_pour_jouer_NB.pdf"
+   "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-26_Jouer_ensemble_et_créer_des_amitiés.pdf",
+   "Cahiers visuels Filodie/2 – TDAH/À colorier (noir et blanc)/Filodie_VTDAH-26_Jouer_ensemble_et_créer_des_amitiés_NB.pdf"
   ],
   "prix": 3.0,
   "payhip": "9O3AS",
@@ -2843,13 +2843,13 @@
   "id": "cahier-vsoc-03",
   "type": "cahier",
   "groupe": "Cahiers Habiletés sociales",
-  "titre": "Je fais seul, je suis fier",
+  "titre": "Je le fais par moi-même !",
   "sous": "5-12 ans",
   "desc": "Devenir plus autonome au quotidien.",
   "code": "VSOC-03",
   "fichiers": [
-   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-03_Je_fais_seul_je_suis_fier.pdf",
-   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-03_Je_fais_seul_je_suis_fier_NB.pdf"
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-03_Je_le_fais_par_moi-même.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-03_Je_le_fais_par_moi-même_NB.pdf"
   ],
   "prix": 3.0,
   "payhip": "l6XT2",
@@ -2859,13 +2859,13 @@
   "id": "cahier-vsoc-04",
   "type": "cahier",
   "groupe": "Cahiers Habiletés sociales",
-  "titre": "Qu'est-ce qu'il veut dire ?",
+  "titre": "Qu'est-ce que ça veut dire ?",
   "sous": "7-13 ans",
   "desc": "Comprendre les intentions et les émotions des autres.",
   "code": "VSOC-04",
   "fichiers": [
-   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-04_Qu_est-ce_qu_il_veut_dire.pdf",
-   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-04_Qu_est-ce_qu_il_veut_dire_NB.pdf"
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-04_Qu_est-ce_que_ça_veut_dire.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-04_Qu_est-ce_que_ça_veut_dire_NB.pdf"
   ],
   "prix": 3.0,
   "payhip": "MnN12",
@@ -2939,13 +2939,13 @@
   "id": "cahier-vsoc-09",
   "type": "cahier",
   "groupe": "Cahiers Habiletés sociales",
-  "titre": "Tous différents, tous ensemble",
+  "titre": "Nos différences, notre force",
   "sous": "5-12 ans",
   "desc": "Accepter les différences et inclure tout le monde.",
   "code": "VSOC-09",
   "fichiers": [
-   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-09_Tous_différents_tous_ensemble.pdf",
-   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-09_Tous_différents_tous_ensemble_NB.pdf"
+   "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-09_Nos_différences_notre_force.pdf",
+   "Cahiers visuels Filodie/3 – Habiletés sociales/À colorier (noir et blanc)/Filodie_VSOC-09_Nos_différences_notre_force_NB.pdf"
   ],
   "prix": 3.0,
   "payhip": "3Y5lK",
@@ -3371,13 +3371,13 @@
   "id": "cahier-vdi-04",
   "type": "cahier",
   "groupe": "Cahiers Déficience intellectuelle",
-  "titre": "Je suis un bon travailleur",
+  "titre": "Je fais du bon travail",
   "sous": "Ados et adultes",
   "desc": "Les habiletés pour réussir à mon travail ou à mon stage.",
   "code": "VDI-04",
   "fichiers": [
-   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-04_Je_suis_un_bon_travailleur.pdf",
-   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-04_Je_suis_un_bon_travailleur_NB.pdf"
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-04_Je_fais_du_bon_travail.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-04_Je_fais_du_bon_travail_NB.pdf"
   ],
   "prix": 3.0,
   "payhip": "LCYMI",
@@ -3435,13 +3435,13 @@
   "id": "cahier-vdi-08",
   "type": "cahier",
   "groupe": "Cahiers Déficience intellectuelle",
-  "titre": "Je m'habille seul",
+  "titre": "Je m'habille par moi-même",
   "sous": "Ados et adultes",
   "desc": "M'habiller dans le bon ordre, du matin au soir.",
   "code": "VDI-08",
   "fichiers": [
-   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-08_Je_m_habille_seul.pdf",
-   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-08_Je_m_habille_seul_NB.pdf"
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-08_Je_m_habille_par_moi-même.pdf",
+   "Cahiers visuels Filodie/4 – Déficience intellectuelle/À colorier (noir et blanc)/Filodie_VDI-08_Je_m_habille_par_moi-même_NB.pdf"
   ],
   "prix": 3.0,
   "payhip": "dm1Hn",
@@ -4395,13 +4395,13 @@
   "id": "cahier-vcomp-29",
   "type": "cahier",
   "groupe": "Cahiers Comportement",
-  "titre": "Je suis un bon ami",
+  "titre": "Je cultive l'amitié",
   "sous": "5-12 ans",
   "desc": "Les qualités d'une bonne amie ou d'un bon ami.",
   "code": "VCOMP-29",
   "fichiers": [
-   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-29_Je_suis_un_bon_ami.pdf",
-   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-29_Je_suis_un_bon_ami_NB.pdf"
+   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-29_Je_cultive_l_amitié.pdf",
+   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-29_Je_cultive_l_amitié_NB.pdf"
   ],
   "prix": 3.0,
   "payhip": "Gecvp",
@@ -4640,7 +4640,7 @@
   "titre": "Affiches : Habiletés sociales et conflits",
   "titre_en": "Posters: Social Skills and Conflict",
   "sous": "7 affiches pour vivre ensemble",
-  "desc": "Résoudre un conflit en 5 perles, être un bon ami, écouter pour vrai, faire une demande claire, réagir comme témoin d'intimidation.",
+  "desc": "Résoudre un conflit en 5 perles, cultiver l'amitié, écouter pour vrai, faire une demande claire, réagir comme témoin d'intimidation.",
   "code": "AFF-C",
   "fichiers": [
    "Affiches murales Filodie/Couleur/Filodie_AFF-C_Habiletés_sociales_et_conflits.pdf",
@@ -4999,14 +4999,14 @@
   "id": "gratuit-mois-2704",
   "type": "gratuit",
   "groupe": "Outil gratuit du mois",
-  "titre": "Tous différents, tous ensemble",
+  "titre": "Nos différences, notre force",
   "sous": "4 routines pour le Mois de l'autisme",
-  "desc": "Accueillir un ami différent, mon coin calme en classe, quand il y a un changement, quand le bruit est trop fort. Outil gratuit du mois d'avril 2027.",
+  "desc": "Accueillir la différence, mon coin calme en classe, quand il y a un changement, quand le bruit est trop fort. Outil gratuit du mois d'avril 2027.",
   "code": "MOIS-2704",
   "futur": true,
   "fichiers": [
-   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2704_Tous_différents_tous_ensemble.pdf",
-   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2704_Tous_différents_tous_ensemble_NB.pdf"
+   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2704_Nos_différences_notre_force.pdf",
+   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2704_Nos_différences_notre_force_NB.pdf"
   ],
   "prix": 0.0,
   "payhip": "e2giZ",
@@ -5067,14 +5067,14 @@
   "id": "gratuit-mois-2708",
   "type": "gratuit",
   "groupe": "Outil gratuit du mois",
-  "titre": "Prêt pour la rentrée",
+  "titre": "Tout est prêt pour la rentrée",
   "sous": "4 routines pour préparer septembre",
   "desc": "Préparer mes effets scolaires, retrouver l'heure du dodo, visiter ma nouvelle école, ma première journée. Outil gratuit du mois d'août 2027.",
   "code": "MOIS-2708",
   "futur": true,
   "fichiers": [
-   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2708_Prêt_pour_la_rentrée.pdf",
-   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2708_Prêt_pour_la_rentrée_NB.pdf"
+   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2708_Tout_est_prêt_pour_la_rentrée.pdf",
+   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2708_Tout_est_prêt_pour_la_rentrée_NB.pdf"
   ],
   "prix": 0.0,
   "payhip": "puoUg",
@@ -5412,9 +5412,9 @@
   "id": "lot-10-boîte-à-outils-du-psychoéducateur",
   "type": "lot_collection",
   "groupe": "Lots",
-  "titre": "Collection Filodie : Boîte à outils du psychoéducateur",
+  "titre": "Collection Filodie : Boîte à outils en psychoéducation",
   "sous": "4 trousses",
-  "desc": "Toutes les trousses du volet « Boîte à outils du psychoéducateur ».",
+  "desc": "Toutes les trousses du volet « Boîte à outils en psychoéducation ».",
   "fichiers": [],
   "contient": [
    "trousse-psychoeducation_evaluation",
@@ -5422,9 +5422,9 @@
    "trousse-psychoeducation_accompagnement",
    "trousse-psychoeducation_pratique"
   ],
-  "titre_en": "Filodie Collection: Psychoeducator's Toolbox",
+  "titre_en": "Filodie Collection: Psychoeducation Toolbox",
   "sous_en": "4 toolkits",
-  "desc_en": "All the toolkits in the “Psychoeducator's Toolbox” section.",
+  "desc_en": "All the toolkits in the “Psychoeducation Toolbox” section.",
   "prix": 20.0,
   "payhip": "sbC0H",
   "payhip_en": "sbC0H",
