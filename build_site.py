@@ -194,6 +194,16 @@ def catalogue():
     add(id="lot-specialisees", type="lot_specialisees", groupe="Lots", titre="Les 16 trousses spécialisées",
         sous="Âges et troubles", desc="Petite enfance, secondaire, adultes, aînés, TSA, TDAH, DI, langage, comportement, "
                                       "crise, suicide, dépendances et plus.", fichiers=[], contient=sp)
+    et = [i["id"] for i in items if i["groupe"] == "Études et stages en T.E.S."]
+    if et:
+        add(id="lot-etudes-tes", type="lot_tout", groupe="Lots", titre="Trousse de l’étudiante et de l’étudiant en T.E.S.",
+            titre_en="SCC Student Kit", sous=f"{len(et)} outils pour les études et les stages", prix=20.00,
+            sous_en=f"{len(et)} tools for studies and internships",
+            desc="Analyse de groupe, modèle du PPH, notes évolutives, journal de stage, activité éducative, plan "
+                 "d’intervention, écoute, éthique, étude de cas, réseau de ressources et premier emploi.",
+            desc_en="Group analysis, the HDM-DCP model, progress notes, internship journal, educational activity, "
+                    "intervention plan, listening, ethics, case study, resource network and first job.",
+            fichiers=[], contient=et)
     tous = [i["id"] for i in items if i["type"] == "cahier"]
     add(id="lot-tous-les-cahiers", type="lot_tout", groupe="Lots", titre="Tous les cahiers visuels",
         sous=f"{len(tous)} cahiers · 5 séries", prix=75.00, sous_en=f"{len(tous)} workbooks · 5 series",
