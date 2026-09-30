@@ -19,7 +19,7 @@
   "groupe": "Trousses spécialisées",
   "titre": "Petite enfance 0-5 ans",
   "sous": "10 outils",
-  "desc": "Dix outils pour les T.E.S. et les éducatrices en CPE, garderie et service de garde : repérer, comprendre et accompagner les tout-petits, main dans la main avec leur famille.",
+  "desc": "Dix outils pour les T.E.S. et le personnel éducateur en CPE, garderie et service de garde : repérer, comprendre et accompagner les tout-petits, main dans la main avec leur famille.",
   "fichiers": [
    "Trousses spécialisées/Trousse_Filodie_Petite_enfance_0-5_ans_2026.pdf"
   ],
@@ -495,7 +495,7 @@
   "groupe": "Traverser l’épreuve",
   "titre": "Grossesse à l’adolescence : mes options",
   "sous": "10 outils",
-  "desc": "Dix outils neutres et bienveillants pour une adolescente enceinte (et son partenaire) qui se demande quoi faire : premières étapes, mes droits, les trois options, mes valeurs, en parler, préparer une rencontre, prendre soin de moi, contraception et soutien de l’intervenant·e.",
+  "desc": "Dix outils neutres et bienveillants pour une adolescente enceinte (et son partenaire) qui se demande quoi faire : premières étapes, mes droits, les trois options, mes valeurs, en parler, préparer une rencontre, prendre soin de moi, contraception et soutien de la personne intervenante.",
   "fichiers": [
    "Collection Filodie/12 – Traverser l’épreuve/Trousse_Filodie_Grossesse_adolescence_2026.pdf"
   ],
@@ -663,7 +663,7 @@
   "groupe": "Clientèles et interventions",
   "titre": "Renforcement positif 11-15 ans",
   "sous": "10 outils",
-  "desc": "Dix outils pour les préadolescents et adolescents : objectifs choisis, privilèges négociés, autoévaluation et reconnaissance discrète.",
+  "desc": "Dix outils pour les jeunes, de la préadolescence à l’adolescence : objectifs choisis, privilèges négociés, autoévaluation et reconnaissance discrète.",
   "fichiers": [
    "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Renforcement_R1115_2026.pdf"
   ],
@@ -719,7 +719,7 @@
   "groupe": "Professions",
   "titre": "Éducatrices en CPE",
   "sous": "10 outils",
-  "desc": "Dix outils pour les éducatrices en CPE : observation, programme éducatif, jeu, routines, intervention démocratique, dossier éducatif et collaboration avec les familles.",
+  "desc": "Dix outils pour les éducatrices et éducateurs en CPE : observation, programme éducatif, jeu, routines, intervention démocratique, dossier éducatif et collaboration avec les familles.",
   "fichiers": [
    "Collection Filodie/3 – Professions/Trousse_Filodie_Educatrices_CPE_2026.pdf"
   ],
@@ -957,7 +957,7 @@
   "groupe": "Professions et pratique",
   "titre": "Pack rentrée T.E.S. primaire",
   "sous": "10 outils",
-  "desc": "Dix outils pour réussir la rentrée comme T.E.S. au primaire : présentation, liste des élèves, horaire, rencontres, collaboration avec les enseignants et les familles.",
+  "desc": "Dix outils pour réussir la rentrée comme T.E.S. au primaire : présentation, liste des élèves, horaire, rencontres, collaboration avec le personnel enseignant et les familles.",
   "fichiers": [
    "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Pack_rentree_TES_primaire_2026.pdf"
   ],
@@ -1349,7 +1349,7 @@
   "groupe": "Scolaire",
   "titre": "Enseignants du secondaire",
   "sous": "10 outils",
-  "desc": "Dix outils pour les enseignants du secondaire : planification, gestion de classe, différenciation, évaluation, rétroaction, élèves à besoins particuliers et communication avec les familles.",
+  "desc": "Dix outils pour les enseignantes et enseignants du secondaire : planification, gestion de classe, différenciation, évaluation, rétroaction, élèves à besoins particuliers et communication avec les familles.",
   "fichiers": [
    "Collection Filodie/7 – Scolaire/Trousse_Filodie_Enseignants_secondaire_2026.pdf"
   ],
@@ -1363,7 +1363,7 @@
   "groupe": "Thèmes complémentaires",
   "titre": "Deuil et séparation",
   "sous": "10 outils",
-  "desc": "Dix outils pour accompagner un enfant ou un adolescent qui vit un deuil ou la séparation de ses parents : comprendre, exprimer, se souvenir et retrouver des repères.",
+  "desc": "Dix outils pour accompagner les enfants et les ados qui vivent un deuil ou la séparation de leurs parents : comprendre, exprimer, se souvenir et retrouver des repères.",
   "fichiers": [
    "Collection Filodie/8 – Thèmes complémentaires/Trousse_Filodie_Deuil_et_separation_2026.pdf"
   ],
@@ -1573,7 +1573,7 @@
   "groupe": "Équipe-école et réseau",
   "titre": "Psychoéducation en milieu scolaire",
   "sous": "10 outils",
-  "desc": "Dix outils pour les psychoéducatrices et psychoéducateurs à l’école : demande de service, évaluation du fonctionnement, observation dans le vécu partagé, plan, animation de groupe, soutien à l’enseignant·e et suivi.",
+  "desc": "Dix outils pour les psychoéducatrices et psychoéducateurs à l’école : demande de service, évaluation du fonctionnement, observation dans le vécu partagé, plan, animation de groupe, soutien au personnel enseignant et suivi.",
   "fichiers": [
    "Collection Filodie/9 – Équipe-école et réseau/Trousse_Filodie_Psychoeducation_scolaire_2026.pdf"
   ],
@@ -1629,7 +1629,7 @@
   "groupe": "Équipe-école et réseau",
   "titre": "Éducation physique inclusive",
   "sous": "10 outils",
-  "desc": "Dix outils pour les enseignant·e·s en éducation physique et les intervenant·e·s en loisir : profil moteur, adaptations, consignes visuelles, gestion du gymnase, esprit sportif et participation de tous les élèves.",
+  "desc": "Dix outils pour le personnel enseignant en éducation physique et les intervenantes et intervenants en loisir : profil moteur, adaptations, consignes visuelles, gestion du gymnase, esprit sportif et participation de chaque élève.",
   "fichiers": [
    "Collection Filodie/9 – Équipe-école et réseau/Trousse_Filodie_Education_physique_inclusive_2026.pdf"
   ],
@@ -1657,7 +1657,7 @@
   "groupe": "Équipe-école et réseau",
   "titre": "Intégration socioprofessionnelle",
   "sous": "10 outils",
-  "desc": "Dix outils pour les intervenant·e·s en employabilité, en plateau de travail et en stage : profil d’employabilité, habiletés de travail, analyse de poste, soutien en emploi, relation avec l’employeur et maintien en emploi.",
+  "desc": "Dix outils pour les intervenantes et intervenants en employabilité, en plateau de travail et en stage : profil d’employabilité, habiletés de travail, analyse de poste, soutien en emploi, relation avec l’employeur et maintien en emploi.",
   "fichiers": [
    "Collection Filodie/9 – Équipe-école et réseau/Trousse_Filodie_Integration_socioprofessionnelle_2026.pdf"
   ],
@@ -2477,7 +2477,7 @@
   "groupe": "Cahiers TDAH",
   "titre": "Je règle un conflit",
   "sous": "6-12 ans",
-  "desc": "Des étapes pour régler un désaccord avec un ami.",
+  "desc": "Des étapes pour régler un désaccord avec une amie ou un ami.",
   "code": "VTDAH-13",
   "fichiers": [
    "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-13_Je_règle_un_conflit.pdf",
@@ -2685,7 +2685,7 @@
   "groupe": "Cahiers TDAH",
   "titre": "Des amis pour jouer",
   "sous": "6-12 ans",
-  "desc": "Me faire des amis et bien jouer avec eux.",
+  "desc": "Me faire des amies et des amis, et bien jouer ensemble.",
   "code": "VTDAH-26",
   "fichiers": [
    "Cahiers visuels Filodie/2 – TDAH/Couleur/Filodie_VTDAH-26_Des_amis_pour_jouer.pdf",
@@ -2973,7 +2973,7 @@
   "groupe": "Cahiers Habiletés sociales",
   "titre": "Histoires sociales : l'amitié",
   "sous": "5-12 ans",
-  "desc": "Des histoires pour apprendre à devenir un bon ami.",
+  "desc": "Des histoires pour apprendre à être une bonne amie ou un bon ami.",
   "code": "VSOC-11",
   "fichiers": [
    "Cahiers visuels Filodie/3 – Habiletés sociales/Couleur/Filodie_VSOC-11_Histoires_sociales_l_amitié.pdf",
@@ -3453,7 +3453,7 @@
   "groupe": "Cahiers Déficience intellectuelle",
   "titre": "Je paie à la caisse",
   "sous": "Ados et adultes",
-  "desc": "Faire un achat et payer seul.",
+  "desc": "Faire un achat et payer de façon autonome.",
   "code": "VDI-09",
   "fichiers": [
    "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-09_Je_paie_à_la_caisse.pdf",
@@ -3469,7 +3469,7 @@
   "groupe": "Cahiers Déficience intellectuelle",
   "titre": "Je prends ma douche",
   "sous": "Ados et adultes",
-  "desc": "Prendre ma douche seul et en sécurité.",
+  "desc": "Prendre ma douche de façon autonome et en sécurité.",
   "code": "VDI-10",
   "fichiers": [
    "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-10_Je_prends_ma_douche.pdf",
@@ -3613,7 +3613,7 @@
   "groupe": "Cahiers Déficience intellectuelle",
   "titre": "Mon autonomie au quotidien",
   "sous": "Ados et adultes",
-  "desc": "Ce que je fais seul et mes prochains défis.",
+  "desc": "Ce que je fais par moi-même et mes prochains défis.",
   "code": "VDI-19",
   "fichiers": [
    "Cahiers visuels Filodie/4 – Déficience intellectuelle/Couleur/Filodie_VDI-19_Mon_autonomie_au_quotidien.pdf",
@@ -4397,7 +4397,7 @@
   "groupe": "Cahiers Comportement",
   "titre": "Je suis un bon ami",
   "sous": "5-12 ans",
-  "desc": "Les qualités d'un bon ami.",
+  "desc": "Les qualités d'une bonne amie ou d'un bon ami.",
   "code": "VCOMP-29",
   "fichiers": [
    "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-29_Je_suis_un_bon_ami.pdf",
@@ -4476,7 +4476,7 @@
   "type": "cahier",
   "groupe": "Cahiers Comportement",
   "titre": "Parent : comprendre les comportements difficiles",
-  "sous": "Parents et intervenants",
+  "sous": "Parents et personnes intervenantes",
   "desc": "Un guide illustré pour accompagner mon enfant au quotidien.",
   "code": "VCOMP-34",
   "fichiers": [
@@ -4492,7 +4492,7 @@
   "type": "cahier",
   "groupe": "Cahiers Comportement",
   "titre": "Mon plan de prévention et d'intervention",
-  "sous": "Parents et intervenants",
+  "sous": "Parents et personnes intervenantes",
   "desc": "Un plan individualisé pour prévenir et gérer les comportements défis.",
   "code": "VCOMP-35",
   "fichiers": [
@@ -4508,7 +4508,7 @@
   "type": "cahier",
   "groupe": "Cahiers Comportement",
   "titre": "Guide : les comportements défis",
-  "sous": "Parents et intervenants",
+  "sous": "Parents et personnes intervenantes",
   "desc": "Repères illustrés pour intervenir auprès d'une personne qui présente des comportements défis.",
   "code": "VCOMP-36",
   "fichiers": [
@@ -4524,8 +4524,8 @@
   "type": "cahier",
   "groupe": "Cahiers Comportement",
   "titre": "Observer en milieu de garde",
-  "sous": "Parents et intervenants",
-  "desc": "Une trousse d'observation illustrée pour les éducatrices et les T.E.S. en service de garde.",
+  "sous": "Parents et personnes intervenantes",
+  "desc": "Une trousse d'observation illustrée pour le personnel éducateur et les T.E.S. en service de garde.",
   "code": "VCOMP-37",
   "fichiers": [
    "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-37_Observer_en_milieu_de_garde.pdf",
@@ -4540,7 +4540,7 @@
   "type": "cahier",
   "groupe": "Cahiers Comportement",
   "titre": "Observer en milieu scolaire",
-  "sous": "Parents et intervenants",
+  "sous": "Parents et personnes intervenantes",
   "desc": "Une trousse d'observation illustrée pour la classe et le service de garde scolaire.",
   "code": "VCOMP-38",
   "fichiers": [
@@ -4556,7 +4556,7 @@
   "type": "cahier",
   "groupe": "Cahiers Comportement",
   "titre": "Prévenir l'agressivité",
-  "sous": "Parents et intervenants",
+  "sous": "Parents et personnes intervenantes",
   "desc": "Repères illustrés pour prévenir et désamorcer les comportements agressifs.",
   "code": "VCOMP-39",
   "fichiers": [
@@ -4572,8 +4572,8 @@
   "type": "cahier",
   "groupe": "Cahiers Comportement",
   "titre": "Sortir du bras de fer",
-  "sous": "Parents et intervenants",
-  "desc": "Éviter le rapport de force avec un enfant ou un ado opposant.",
+  "sous": "Parents et personnes intervenantes",
+  "desc": "Éviter le rapport de force avec un enfant ou un ado qui s’oppose.",
   "code": "VCOMP-40",
   "fichiers": [
    "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-40_Sortir_du_bras_de_fer.pdf",
@@ -4850,7 +4850,7 @@
   "type": "routines",
   "groupe": "Routines visuelles maison",
   "titre": "Routines des devoirs et de l'organisation",
-  "sous": "5 routines pour s'organiser seul",
+  "sous": "5 routines pour s'organiser de façon autonome",
   "desc": "Les devoirs, préparer son sac, ranger sa chambre, le temps d'écran, préparer ses vêtements.",
   "code": "RTN-D",
   "fichiers": [

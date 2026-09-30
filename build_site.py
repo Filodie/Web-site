@@ -315,7 +315,7 @@ L = {
         "hero_k": "Outils cliniques · éducation spécialisée",
         "hero_1": "Tenir le fil,", "hero_2": "de l’observation à l’intervention.",
         "hero_p": "Des trousses, des cahiers visuels et un grand livre clinique conçus au Québec pour les T.E.S., "
-                  "les enseignantes, les éducatrices et les familles. Imprimables, remplissables à l’écran, "
+                  "le personnel enseignant, le personnel éducateur et les familles. Imprimables, remplissables à l’écran, "
                   "avec les ressources de votre région.",
         "cta1": "Voir la boutique", "cta2": "Télécharger le bottin gratuit",
         "stats": [("95", "trousses thématiques"), ("179", "cahiers visuels"), ("143", "fiches du Grand livre"), ("17", "régions couvertes")],
@@ -341,7 +341,7 @@ L = {
         "count": "produits", "value": "Valeur à l’unité", "save": "économie",
         "bottin_t": "Bottin régional gratuit",
         "bottin_p": "Les ressources des 17 régions du Québec, classées par problématique : signalement à la DPJ, centres de crise, "
-                    "CLSC, associations en autisme et en TDAH, déficience intellectuelle, proches aidants, violence et dépendances. "
+                    "CLSC, associations en autisme et en TDAH, déficience intellectuelle, personnes proches aidantes, violence et dépendances. "
                     "Coordonnées vérifiées sur les sites officiels.",
         "bottin_btn": "Recevoir le bottin gratuitement",
         "footer_legal": [("licence.html", "Licence d’utilisation"), ("conditions.html", "Conditions de vente"),
@@ -657,7 +657,7 @@ CONTENT = {
 <p class="lead">Filodie, c’est l’idée qu’une bonne intervention tient à un fil : celui qui relie l’observation, la compréhension, le plan, le soutien et la communication.</p>
 <p>Je m’appelle Mélodie. Je suis maman de quatre filles, et c’est d’abord à la maison que j’ai appris qu’un enfant avance mieux quand on lui montre le chemin, une étape à la fois.</p>
 <p>Je suis étudiante en Techniques d’éducation spécialisée, je détiens un certificat en travail social et je poursuis un baccalauréat multidisciplinaire, avec un certificat en psychologie du développement humain et un certificat en dépendances. Ce parcours me permet de regarder chaque situation sous plusieurs angles : le développement, la famille, le réseau et l’intervention au quotidien.</p>
-<p>J’ai créé Filodie pour offrir aux intervenantes, aux enseignants et aux parents les outils que j’aurais voulu avoir sous la main : clairs, beaux, rigoureux et vraiment utilisables avec les personnes que l’on accompagne.</p>
+<p>J’ai créé Filodie pour offrir aux intervenantes et intervenants, au personnel enseignant et aux parents les outils que j’aurais voulu avoir sous la main : clairs, beaux, rigoureux et vraiment utilisables avec les personnes que l’on accompagne.</p>
 <h2>Mon parcours</h2>
 <ul><li>Maman de quatre filles</li><li>Étudiante en Techniques d’éducation spécialisée</li><li>Certificat en travail social</li>
 <li>Baccalauréat multidisciplinaire en cours : certificat en psychologie du développement humain et certificat en dépendances</li></ul>
@@ -680,10 +680,32 @@ CONTENT = {
     ("fr", "services.html"): ("Services", """
 <p class="lead">Au-delà de la boutique, Filodie crée des outils conçus pour votre équipe ou votre famille, entièrement par courriel.</p>
 <h2>Outils sur mesure</h2>
-<p>Un jeune, une classe ou un milieu a besoin d’un outil qui n’existe pas encore ? Je le crée pour vous : routine visuelle avec les photos de votre milieu, plan de crise, histoire sociale, tableau de motivation, grille d’observation adaptée à votre clientèle. Chaque outil est livré en PDF remplissable, avec la signature Filodie et les sources qui l’appuient.</p>
+<p>Un enfant, une classe ou un milieu a besoin d’un outil qui n’existe pas encore ? Je le crée pour vous : routine visuelle avec les photos de votre milieu, plan de crise, histoire sociale, tableau de motivation, grille d’observation adaptée à votre clientèle. Chaque outil est livré en PDF remplissable, avec la signature Filodie et les sources qui l’appuient.</p>
 <ul><li>Vous décrivez le besoin par courriel (aucune information nominative sur la personne n’est nécessaire).</li><li>Je vous envoie une proposition et un prix avant de commencer.</li><li>Une ronde de corrections est incluse.</li></ul>
-<h2>Licence d’équipe</h2>
-<p>Pour déposer les fichiers sur le réseau interne d’une école, d’un CPE ou d’un organisme : 3 fois le prix individuel, jusqu’à 25 intervenantes et intervenants. Une facture au nom de l’établissement est fournie.</p>
+<h2 id="licence-equipe">Licence d’équipe</h2>
+<p>Un achat sur la boutique donne une <a href="licence.html">licence individuelle</a> : les fichiers sont réservés à la personne qui les achète. Si plusieurs membres d’un même milieu veulent utiliser le même outil, la licence d’équipe évite que chaque personne l’achète séparément.</p>
+<h3>Ce que la licence d’équipe permet</h3>
+<ul><li>Déposer les fichiers sur le réseau interne de l’établissement (disque partagé, intranet, Teams ou Google Drive réservés au personnel).</li>
+<li>Les utiliser, les imprimer et les photocopier pour jusqu’à 25 membres du personnel d’un même établissement : intervenantes et intervenants, T.E.S., personnel enseignant, personnel éducateur, direction.</li>
+<li>Recevoir une facture au nom de l’établissement, pratique pour un bon de commande ou un remboursement de dépenses.</li></ul>
+<p>Comme pour la licence individuelle, il est interdit de revendre les fichiers ou de les rendre accessibles à l’extérieur de l’établissement (site Web public, réseaux sociaux, autres écoles ou organismes).</p>
+<h3>Pourquoi 3 fois le prix individuel ?</h3>
+<p>Le prix d’une licence d’équipe correspond à 3 licences individuelles, même si jusqu’à 25 personnes peuvent utiliser les fichiers. Ce choix repose sur trois raisons :</p>
+<ul><li><strong>Une économie importante pour votre milieu.</strong> Acheter l’outil pour 25 personnes coûterait 25 fois le prix. Avec la licence d’équipe, vous payez 3 fois le prix, soit une économie de 88 %.</li>
+<li><strong>Un prix juste pour le travail de création.</strong> Un fichier partagé dans toute une équipe remplace plusieurs ventes. Le multiplicateur de 3 reconnaît cette utilisation élargie tout en restant abordable pour les budgets des écoles, des CPE et des organismes.</li>
+<li><strong>Un calcul simple et transparent.</strong> Pas de grille compliquée : vous connaissez le prix à l’avance, peu importe le nombre de personnes, jusqu’à 25.</li></ul>
+<h3>Exemples de prix</h3>
+<table class="tbl"><thead><tr><th>Produit</th><th>Licence individuelle</th><th>Licence d’équipe (× 3)</th></tr></thead><tbody>
+<tr><td>Une trousse</td><td>7 $</td><td>21 $</td></tr>
+<tr><td>Un cahier visuel</td><td>3 $</td><td>9 $</td></tr>
+<tr><td>Une collection de trousses</td><td>25 $</td><td>75 $</td></tr>
+<tr><td>Toutes les trousses</td><td>75 $</td><td>225 $</td></tr>
+<tr><td>Tout Filodie</td><td>129 $</td><td>387 $</td></tr></tbody></table>
+<p class="muted">Le prix de référence est le prix courant affiché dans la boutique. Pour plus de 25 personnes ou pour plusieurs établissements (par exemple un centre de services scolaire), écrivez-moi pour une soumission.</p>
+<h3>Comment commander</h3>
+<ol><li>Écrivez à <a href="mailto:melodie@filodie.ca?subject=Licence%20d%E2%80%99%C3%A9quipe">melodie@filodie.ca</a> en indiquant les produits voulus, le nom et l’adresse de l’établissement, ainsi que la personne-ressource.</li>
+<li>Vous recevez une facture en PDF, payable par virement Interac ou par chèque.</li>
+<li>Dès la réception du paiement, vous recevez les fichiers par courriel, avec la facture marquée « payée ».</li></ol>
 <p><a class="btn" href="mailto:melodie@filodie.ca?subject=Demande%20de%20service%20Filodie">Écrire à Mélodie</a></p>
 """),
     ("en", "services.html"): ("Services", """
@@ -691,14 +713,36 @@ CONTENT = {
 <h2>Custom tools</h2>
 <p>Does a child, a class or a setting need a tool that does not exist yet? I will create it for you: a visual routine with photos of your setting, a crisis plan, a social story, a motivation chart, an observation grid adapted to your clients. Every tool comes as a fillable PDF, with the Filodie signature and the sources behind it.</p>
 <ul><li>Describe the need by email (no identifying information about the person is needed).</li><li>I send you a proposal and a price before starting.</li><li>One round of revisions is included.</li></ul>
-<h2>Team licence</h2>
-<p>To share the files on the internal network of a school, daycare or organization: 3 times the individual price, for up to 25 staff members. An invoice in the organization’s name is provided.</p>
+<h2 id="team-licence">Team licence</h2>
+<p>A purchase in the shop comes with an <a href="licence.html">individual licence</a>: the files are for the buyer only. When several people in the same setting want to use the same tool, the team licence saves each of them from buying it separately.</p>
+<h3>What the team licence allows</h3>
+<ul><li>Placing the files on the organization’s internal network (shared drive, intranet, Teams or Google Drive restricted to staff).</li>
+<li>Using, printing and photocopying them for up to 25 staff members of the same organization: counsellors, teachers, educators, management.</li>
+<li>Receiving an invoice in the organization’s name, handy for a purchase order or an expense claim.</li></ul>
+<p>As with the individual licence, the files may not be resold or made available outside the organization (public website, social media, other schools or organizations).</p>
+<h3>Why 3 times the individual price?</h3>
+<p>A team licence costs the same as 3 individual licences, even though up to 25 people may use the files. There are three reasons for this:</p>
+<ul><li><strong>Big savings for your setting.</strong> Buying the tool for 25 people would cost 25 times the price. With the team licence you pay 3 times the price, an 88% saving.</li>
+<li><strong>A fair price for the creative work.</strong> A file shared across a team replaces several sales. The ×3 multiplier reflects this wider use while staying affordable for school, daycare and community budgets.</li>
+<li><strong>A simple, transparent calculation.</strong> No complicated grid: you know the price in advance, whatever the number of people, up to 25.</li></ul>
+<h3>Price examples</h3>
+<table class="tbl"><thead><tr><th>Product</th><th>Individual licence</th><th>Team licence (× 3)</th></tr></thead><tbody>
+<tr><td>One toolkit</td><td>$7</td><td>$21</td></tr>
+<tr><td>One visual workbook</td><td>$3</td><td>$9</td></tr>
+<tr><td>A toolkit collection</td><td>$25</td><td>$75</td></tr>
+<tr><td>All toolkits</td><td>$75</td><td>$225</td></tr>
+<tr><td>All of Filodie</td><td>$129</td><td>$387</td></tr></tbody></table>
+<p class="muted">The reference price is the current price shown in the shop. For more than 25 people or several organizations (for example a school service centre), email me for a quote.</p>
+<h3>How to order</h3>
+<ol><li>Email <a href="mailto:melodie@filodie.ca?subject=Team%20licence">melodie@filodie.ca</a> with the products you want, the organization’s name and address, and a contact person.</li>
+<li>You receive a PDF invoice, payable by Interac e-Transfer or cheque.</li>
+<li>As soon as payment is received, you get the files by email, along with the invoice marked “paid”.</li></ol>
 <p><a class="btn" href="mailto:melodie@filodie.ca?subject=Filodie%20service%20request">Email Mélodie</a></p>
 """),
     ("fr", "faq.html"): ("Questions fréquentes", """
 <h2>Comment je reçois mes outils ?</h2><p>Dès le paiement, une page de téléchargement s’ouvre et un courriel contenant le lien vous est envoyé. Vous pouvez télécharger vos fichiers plusieurs fois.</p>
 <h2>Les PDF sont-ils remplissables ?</h2><p>Oui : la plupart des fiches se remplissent à l’écran (Adobe Acrobat Reader, Aperçu sur Mac, navigateur) et s’impriment en format lettre.</p>
-<h2>Puis-je imprimer plusieurs copies ?</h2><p>Oui, autant de copies que nécessaire pour vos propres interventions. Le partage des fichiers avec des collègues est interdit : une licence d’équipe est offerte pour les écoles et les organismes.</p>
+<h2>Puis-je imprimer plusieurs copies ?</h2><p>Oui, autant de copies que nécessaire pour vos propres interventions. Le partage des fichiers avec des collègues est interdit : une <a href="services.html#licence-equipe">licence d’équipe</a> est offerte pour les écoles, les CPE et les organismes.</p>
 <h2>Pourquoi mon courriel apparaît-il sur les pages ?</h2><p>Chaque PDF est personnalisé au nom de l’acheteuse ou de l’acheteur. Cela protège le travail de création et permet de garder les prix accessibles.</p>
 <h2>Les ressources de ma région sont-elles incluses ?</h2><p>Chaque trousse contient une page des 17 régions (DPJ, crise, autisme). Le bottin régional complet est gratuit.</p>
 <h2>Existe-t-il des versions en anglais ?</h2><p>Oui, chaque outil a une version anglaise (bouton EN en haut de la page).</p>
@@ -707,7 +751,7 @@ CONTENT = {
     ("en", "faq.html"): ("Frequently asked questions", """
 <h2>How do I receive my tools?</h2><p>Right after payment, a download page opens and an email with the link is sent to you. You can download your files several times.</p>
 <h2>Are the PDFs fillable?</h2><p>Yes: most sheets can be filled in on screen (Adobe Acrobat Reader, Preview on Mac, browser) and printed on letter paper.</p>
-<h2>Can I print several copies?</h2><p>Yes, as many copies as you need for your own interventions. Sharing the files with colleagues is not allowed: a team licence is available for schools and organizations.</p>
+<h2>Can I print several copies?</h2><p>Yes, as many copies as you need for your own interventions. Sharing the files with colleagues is not allowed: a <a href="services.html#team-licence">team licence</a> is available for schools, daycares and organizations.</p>
 <h2>Why does my email appear on the pages?</h2><p>Each PDF is personalized with the buyer’s details. This protects the creative work and keeps prices affordable.</p>
 <h2>Are resources for my region included?</h2><p>Every toolkit includes a page covering all 17 regions (youth protection, crisis, autism). The complete regional directory is free.</p>
 <h2>Are the tools available in French?</h2><p>Yes, every tool has a French version (FR button at the top of the page).</p>
@@ -731,7 +775,7 @@ CONTENT = {
 <li>Déposer les fichiers sur un site, un réseau social, un disque partagé ou une plateforme accessible à d’autres.</li>
 <li>Revendre, modifier pour revendre ou intégrer les outils à un produit commercial.</li>
 <li>Retirer les mentions de droits d’auteur ou le tatouage de l’acheteuse ou de l’acheteur.</li></ul>
-<h2>Licence d’équipe</h2><p>Pour une école, un CPE, un service de garde, un organisme ou une équipe : les fichiers peuvent être déposés sur le réseau interne de l’établissement. Tarif : 3 fois le prix individuel, jusqu’à 25 intervenantes et intervenants.</p>
+<h2>Licence d’équipe</h2><p>Pour une école, un CPE, un service de garde, un organisme ou une équipe : les fichiers peuvent être déposés sur le réseau interne de l’établissement. Tarif : 3 fois le prix individuel, pour jusqu’à 25 membres du personnel. <a href="services.html#licence-equipe">Détails, exemples de prix et commande</a>.</p>
 <p class="muted">Illustrations : Fluent Emoji © Microsoft, sous licence MIT. Polices : Fraunces, Nunito Sans, Caveat (SIL Open Font License).</p>"""),
     ("en", "licence.html"): ("Licence", """
 <h2>Individual licence (included with every purchase)</h2>
@@ -743,7 +787,7 @@ CONTENT = {
 <li>Uploading the files to a website, social network, shared drive or any platform others can access.</li>
 <li>Reselling, modifying for resale or including the tools in a commercial product.</li>
 <li>Removing copyright notices or the buyer’s watermark.</li></ul>
-<h2>Team licence</h2><p>For a school, daycare, organization or team: the files may be placed on the organization’s internal network. Price: 3 times the individual price, for up to 25 staff members.</p>
+<h2>Team licence</h2><p>For a school, daycare, organization or team: the files may be placed on the organization’s internal network. Price: 3 times the individual price, for up to 25 staff members. <a href="services.html#team-licence">Details, price examples and ordering</a>.</p>
 <p class="muted">Illustrations: Fluent Emoji © Microsoft, MIT licence. Fonts: Fraunces, Nunito Sans, Caveat (SIL Open Font License).</p>"""),
     ("fr", "conditions.html"): ("Conditions de vente", """
 <p><strong>Entreprise :</strong> Filodie, entreprise individuelle immatriculée au Québec (NEQ : 2282614819). Courriel : melodie@filodie.ca.</p>
@@ -849,6 +893,7 @@ details{font-size:.9rem;margin:6px 0}summary{cursor:pointer;color:var(--terra);f
 @media (max-width:760px){.split{grid-template-columns:1fr}}
 .shadow{border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.15)}
 .prose{max-width:780px;padding-bottom:60px}.prose h2{font-size:1.4rem}
+.prose h3{font-size:1.1rem;margin-top:1.4em}.tbl{width:100%;border-collapse:collapse;margin:1em 0;font-size:.95rem}.tbl th,.tbl td{padding:8px 10px;text-align:left;border-bottom:1px solid rgba(127,127,127,.25)}.tbl th{font-weight:800}.tbl td:not(:first-child),.tbl th:not(:first-child){text-align:right;white-space:nowrap}
 .foot{background:var(--cream);border-top:1px solid var(--sand);padding:30px 0;font-size:.9rem;color:var(--gray)}
 .foot .legal a{color:var(--ink)}.note{font-size:.8rem}
 """
