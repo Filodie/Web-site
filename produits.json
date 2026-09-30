@@ -462,6 +462,90 @@
   "payhip_en": "Dr7ao"
  },
  {
+  "id": "trousse-violence_conjugale_victimes",
+  "type": "trousse",
+  "groupe": "Traverser l’épreuve",
+  "titre": "Violence conjugale : reprendre le pouvoir",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les personnes qui vivent de la violence conjugale et pour celles qui les accompagnent : reconnaître le contrôle, repérer le danger, plan de sécurité, sécurité numérique, préparer un départ, démarches juridiques, après la séparation, estime de soi, enfants et soutien d’un proche.",
+  "fichiers": [
+   "Collection Filodie/12 – Traverser l’épreuve/Trousse_Filodie_Violence_conjugale_victimes_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "miUr0",
+  "payhip_en": "miUr0"
+ },
+ {
+  "id": "trousse-agression_sexuelle_victimes",
+  "type": "trousse",
+  "groupe": "Traverser l’épreuve",
+  "titre": "Agression sexuelle : se reconstruire",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les personnes qui ont vécu une agression sexuelle, récente ou ancienne : mes options après une agression, ce n’est pas ma faute, réactions normales, ancrage, sommeil, confiance, dire à un proche, porter plainte ou non, retour à l’école ou au travail et mon réseau.",
+  "fichiers": [
+   "Collection Filodie/12 – Traverser l’épreuve/Trousse_Filodie_Agression_sexuelle_victimes_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "FS8b6",
+  "payhip_en": "FS8b6"
+ },
+ {
+  "id": "trousse-grossesse_adolescence",
+  "type": "trousse",
+  "groupe": "Traverser l’épreuve",
+  "titre": "Grossesse à l’adolescence : mes options",
+  "sous": "10 outils",
+  "desc": "Dix outils neutres et bienveillants pour une adolescente enceinte (et son partenaire) qui se demande quoi faire : premières étapes, mes droits, les trois options, mes valeurs, en parler, préparer une rencontre, prendre soin de moi, contraception et soutien de l’intervenant·e.",
+  "fichiers": [
+   "Collection Filodie/12 – Traverser l’épreuve/Trousse_Filodie_Grossesse_adolescence_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "Uk8Wu",
+  "payhip_en": "Uk8Wu"
+ },
+ {
+  "id": "trousse-jeu_excessif",
+  "type": "trousse",
+  "groupe": "Traverser l’épreuve",
+  "titre": "Jeu excessif : reprendre le contrôle",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les personnes qui jouent trop (loterie, casino, paris sportifs, jeux en ligne, coffres à butin) et leurs proches : faire le point, calendrier de jeu, argent, pensées pièges, déclencheurs, auto-exclusion, protéger mes finances, plan contre l’envie, jeunes et jeux vidéo, aider un proche.",
+  "fichiers": [
+   "Collection Filodie/12 – Traverser l’épreuve/Trousse_Filodie_Jeu_excessif_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "nwY9P",
+  "payhip_en": "nwY9P"
+ },
+ {
+  "id": "trousse-alcool_faire_le_point",
+  "type": "trousse",
+  "groupe": "Traverser l’épreuve",
+  "titre": "Alcool : faire le point",
+  "sous": "10 outils",
+  "desc": "Dix outils pour réfléchir à sa consommation d’alcool et la changer : le verre standard, les repères canadiens, mon journal, mes raisons, mon objectif, les situations à risque, refuser un verre, le sevrage, les jeunes et la fête, et le soutien d’un proche.",
+  "fichiers": [
+   "Collection Filodie/12 – Traverser l’épreuve/Trousse_Filodie_Alcool_faire_le_point_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "jIOxK",
+  "payhip_en": "jIOxK"
+ },
+ {
+  "id": "trousse-drogues_reduire_les_mefaits",
+  "type": "trousse",
+  "groupe": "Traverser l’épreuve",
+  "titre": "Drogues : s’informer, réduire les méfaits",
+  "sous": "10 outils",
+  "desc": "Dix outils sur les drogues pour les jeunes, les adultes et les proches : mythes et réalités, cannabis à moindre risque, mélanges dangereux, opioïdes et naloxone, soirées plus sûres, santé mentale, conduite, mon rapport aux substances, demander de l’aide et parler à un ado.",
+  "fichiers": [
+   "Collection Filodie/12 – Traverser l’épreuve/Trousse_Filodie_Drogues_reduire_les_mefaits_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "134lZ",
+  "payhip_en": "134lZ"
+ },
+ {
   "id": "trousse-protection_de_la_jeunesse",
   "type": "trousse",
   "groupe": "Clientèles et interventions",
@@ -5163,6 +5247,30 @@
   "valeur": 14.0
  },
  {
+  "id": "lot-12-traverser-l-épreuve",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Traverser l’épreuve",
+  "sous": "6 trousses",
+  "desc": "Toutes les trousses du volet « Traverser l’épreuve ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-violence_conjugale_victimes",
+   "trousse-agression_sexuelle_victimes",
+   "trousse-grossesse_adolescence",
+   "trousse-jeu_excessif",
+   "trousse-alcool_faire_le_point",
+   "trousse-drogues_reduire_les_mefaits"
+  ],
+  "titre_en": "Filodie Collection: Getting Through Hard Times",
+  "sous_en": "6 toolkits",
+  "desc_en": "All the toolkits in the “Getting Through Hard Times” section.",
+  "prix": 25.0,
+  "payhip": "q8xs4",
+  "payhip_en": "q8xs4",
+  "valeur": 42.0
+ },
+ {
   "id": "lot-2-clientèles-et-interventions",
   "type": "lot_collection",
   "groupe": "Lots",
@@ -5689,11 +5797,11 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses",
-  "sous": "118 trousses et éditions",
+  "sous": "124 trousses et éditions",
   "prix": 75.0,
-  "sous_en": "118 toolkits and editions",
-  "desc": "La trousse principale, les 16 trousses spécialisées, les 96 trousses de la Collection et les 5 éditions.",
-  "desc_en": "The main toolkit, the 16 specialized toolkits, the 96 Collection toolkits and the 5 editions.",
+  "sous_en": "124 toolkits and editions",
+  "desc": "La trousse principale, les 16 trousses spécialisées, les 102 trousses de la Collection et les 5 éditions.",
+  "desc_en": "The main toolkit, the 16 specialized toolkits, the 102 Collection toolkits and the 5 editions.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -5729,6 +5837,12 @@
    "trousse-psychoeducation_pratique",
    "trousse-enseigner_aux_adultes",
    "trousse-fga_fp_reussite",
+   "trousse-violence_conjugale_victimes",
+   "trousse-agression_sexuelle_victimes",
+   "trousse-grossesse_adolescence",
+   "trousse-jeu_excessif",
+   "trousse-alcool_faire_le_point",
+   "trousse-drogues_reduire_les_mefaits",
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
    "trousse-auteurs_de_violence",
@@ -5817,7 +5931,7 @@
   ],
   "payhip": "leD7m",
   "payhip_en": "leD7m",
-  "valeur": 799.0
+  "valeur": 841.0
  },
  {
   "id": "lot-mega",
@@ -5825,8 +5939,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie",
   "sous": "Toute la collection",
-  "desc": "Les 113 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
-  "desc_en": "All 113 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
+  "desc": "Les 119 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
+  "desc_en": "All 119 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -5862,6 +5976,12 @@
    "trousse-psychoeducation_pratique",
    "trousse-enseigner_aux_adultes",
    "trousse-fga_fp_reussite",
+   "trousse-violence_conjugale_victimes",
+   "trousse-agression_sexuelle_victimes",
+   "trousse-grossesse_adolescence",
+   "trousse-jeu_excessif",
+   "trousse-alcool_faire_le_point",
+   "trousse-drogues_reduire_les_mefaits",
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
    "trousse-auteurs_de_violence",
@@ -6150,6 +6270,6 @@
   "prix": 129.0,
   "payhip": "UScCI",
   "payhip_en": "UScCI",
-  "valeur": 1457.0
+  "valeur": 1499.0
  }
 ]
