@@ -51,7 +51,7 @@ def en(i, k):
 # Chaque produit est bilingue (PDF français + anglais dans le même achat).
 PRIX = {"trousse": 7.00, "edition": 3.00, "cahier": 3.00, "livre": 19.00, "bottin": 0.0,
         "lot_cahiers": 25.00, "lot_collection": 25.00, "lot_specialisees": 39.00, "lot_tout": 75.00, "mega": 129.00,
-        "affiches": 5.00, "lot_affiches": 19.00}
+        "affiches": 5.00, "lot_affiches": 19.00, "jeux": 7.00, "lot_jeux": 29.00}
 
 
 # --------------------------------------------------------------------------- catalogue
@@ -63,6 +63,7 @@ def catalogue():
     from filodie_editions import EDITIONS
     from filodie_visuel import load, SERIES, fname
     from filodie_affiches import load as load_affiches, fichier as fichier_affiches
+    from filodie_jeux import load as load_jeux, fichier as fichier_jeux
     items = []
 
     def add(**k):
@@ -99,6 +100,11 @@ def catalogue():
         add(id="affiches-" + pq.code.lower(), type="affiches", groupe="Affiches murales", titre="Affiches : " + pq.titre,
             titre_en="Posters: " + tr(pq.titre), sous=pq.sous, desc=pq.desc, code=pq.code,
             fichiers=[f"Affiches murales Filodie/Couleur/{f}.pdf", f"Affiches murales Filodie/Noir et blanc/{f}_NB.pdf"])
+    for pq in load_jeux():
+        f = fichier_jeux(pq)
+        add(id="jeux-" + pq.code.lower(), type="jeux", groupe="Jeux et cartes", titre=pq.titre,
+            sous=pq.sous, desc=pq.desc, code=pq.code,
+            fichiers=[f"Jeux et cartes Filodie/Couleur/{f}.pdf", f"Jeux et cartes Filodie/Noir et blanc/{f}_NB.pdf"])
     add(id="grand-livre", type="livre", groupe="Grand livre clinique", titre="Grand livre clinique T.E.S.",
         sous="143 fiches · 9 parties",
         desc="Les connaissances essentielles de la pratique en éducation spécialisée, en fiches visuelles avec une zone "
@@ -133,6 +139,16 @@ def catalogue():
             desc="Régulation, émotions, habiletés sociales, vie de classe, routines et messages-repères, en couleur et en noir et blanc.",
             desc_en="Regulation, feelings, social skills, classroom life, routines and anchor messages, in colour and black and white.",
             fichiers=[], contient=aff)
+    jx = [i["id"] for i in items if i["type"] == "jeux"]
+    if jx:
+        njx = sum(len(pq.jeux) for pq in load_jeux())
+        add(id="lot-jeux", type="lot_jeux", groupe="Lots", titre="Tous les jeux et cartes", titre_en="All the Games and Cards",
+            sous=f"{njx} jeux · {len(jx)} paquets", sous_en=f"{njx} games · {len(jx)} packs",
+            desc="Émotions, amitié, calme, résolution de problèmes, forces et connaissance de soi : cartes, bingos, "
+                 "mémoires, dominos et jeux de parcours, en couleur et en noir et blanc.",
+            desc_en="Feelings, friendship, calm, problem solving, strengths and self-knowledge: cards, bingos, memory "
+                    "games, dominoes and board games, in colour and black and white.",
+            fichiers=[], contient=jx)
     sp = [i["id"] for i in items if i["groupe"] == "Trousses spécialisées"]
     add(id="lot-specialisees", type="lot_specialisees", groupe="Lots", titre="Les 16 trousses spécialisées",
         sous="Âges et troubles", desc="Petite enfance, secondaire, adultes, aînés, TSA, TDAH, DI, langage, comportement, "
@@ -152,9 +168,9 @@ def catalogue():
         desc_en=f"The main toolkit, the {len(sp)} specialized toolkits, the {ncol} Collection toolkits and the {ned} editions.",
         fichiers=[], contient=tt)
     add(id="lot-mega", type="mega", groupe="Lots", titre="Tout Filodie", sous="Toute la collection",
-        desc=f"Les {ntr} trousses, les éditions, les {len(tous)} cahiers visuels, les affiches murales, le Grand livre clinique "
+        desc=f"Les {ntr} trousses, les éditions, les {len(tous)} cahiers visuels, les affiches murales, les jeux, le Grand livre clinique "
              "et le bottin régional.",
-        desc_en=f"All {ntr} toolkits, the editions, the {len(tous)} visual workbooks, the wall posters, the Clinical Handbook "
+        desc_en=f"All {ntr} toolkits, the editions, the {len(tous)} visual workbooks, the wall posters, the games, the Clinical Handbook "
                 "and the regional directory.",
         fichiers=[], contient=[i["id"] for i in items if not i["type"].startswith("lot") and i["type"] != "mega"])
     # lots de collection : environ 2,50 $ par trousse, arrondi à 5 $, entre 25 $ et 30 $
@@ -278,10 +294,11 @@ L = {
                 ("Livraison immédiate", "Vos fichiers sont téléchargeables dès le paiement, et le lien vous est aussi envoyé par courriel.")],
         "shop_t": "Boutique", "shop_p": "Chaque achat inclut la version française et la version anglaise. Cahiers à 3 $, trousses à 7 $, et des lots jusqu’à 90 % moins chers. Prix en dollars canadiens, téléchargement immédiat après le paiement.",
         "search": "Rechercher un outil…", "all": "Tout",
-        "types": {"trousse": "Trousses", "edition": "Éditions", "cahier": "Cahiers visuels", "affiches": "Affiches", "livre": "Grand livre",
+        "types": {"trousse": "Trousses", "edition": "Éditions", "cahier": "Cahiers visuels", "affiches": "Affiches", "jeux": "Jeux", "livre": "Grand livre",
                   "bottin": "Bottin", "lot": "Lots"},
         "buy": "Acheter", "soon": "Bientôt disponible", "free": "Gratuit", "get": "Obtenir", "details": "Détails", "cahier_nb": " · Couleur + version noir et blanc à colorier",
-        "aff_nb": " · Couleur + noir et blanc · lettre et 11 × 17", "preview": "Aperçu", "close": "Fermer",
+        "aff_nb": " · Couleur + noir et blanc · lettre et 11 × 17",
+        "jeux_nb": " · Règles, cartes et plateaux · couleur + noir et blanc", "preview": "Aperçu", "close": "Fermer",
         "pvnote": "Quelques pages du produit. Le filigrane « aperçu » n’apparaît pas dans les fichiers achetés.",
         "count": "produits", "value": "Valeur à l’unité", "save": "économie",
         "bottin_t": "Bottin régional gratuit",
@@ -318,10 +335,11 @@ L = {
                 ("Instant delivery", "Your files can be downloaded right after payment, and the link is also emailed to you.")],
         "shop_t": "Shop", "shop_p": "Every purchase includes both the English and French versions. Workbooks at $3, toolkits at $7, and bundles up to 90% off. Prices in Canadian dollars, instant download after payment.",
         "search": "Search for a tool…", "all": "All",
-        "types": {"trousse": "Toolkits", "edition": "Editions", "cahier": "Visual workbooks", "affiches": "Posters", "livre": "Handbook",
+        "types": {"trousse": "Toolkits", "edition": "Editions", "cahier": "Visual workbooks", "affiches": "Posters", "jeux": "Games", "livre": "Handbook",
                   "bottin": "Directory", "lot": "Bundles"},
         "buy": "Buy", "soon": "Coming soon", "free": "Free", "get": "Get it", "details": "Details", "cahier_nb": " · Colour + black-and-white colouring version",
-        "aff_nb": " · Colour + black and white · letter and 11 × 17", "preview": "Preview", "close": "Close",
+        "aff_nb": " · Colour + black and white · letter and 11 × 17",
+        "jeux_nb": " · Rules, cards and boards · colour + black and white", "preview": "Preview", "close": "Close",
         "pvnote": "A few pages from the product. The “preview” watermark does not appear in the files you buy.",
         "count": "products", "value": "Value if bought separately", "save": "savings",
         "bottin_t": "Free regional directory",
@@ -466,7 +484,8 @@ def shop(lang, items):
             "id": i["id"], "t": typ, "g": tr(g) if lang == "en" else g,
             "n": en(i, "titre") if lang == "en" else i["titre"],
             "s": (en(i, "sous") if lang == "en" else i["sous"])
-                 + (t["cahier_nb"] if i["type"] == "cahier" else t["aff_nb"] if i["type"] == "affiches" else ""),
+                 + (t["cahier_nb"] if i["type"] == "cahier" else t["aff_nb"] if i["type"] == "affiches"
+                    else t["jeux_nb"] if i["type"] == "jeux" else ""),
             "d": en(i, "desc") if lang == "en" else i["desc"],
             "p": i["prix"], "k": i["payhip_en"] if lang == "en" else i["payhip"],
             "img": f"{t['base']}img/{img_lang}/{img}.jpg{iv(img_lang, img)}",

@@ -4534,6 +4534,102 @@
   "payhip_en": "WfoBT"
  },
  {
+  "id": "jeux-jeu-a",
+  "type": "jeux",
+  "groupe": "Jeux et cartes",
+  "titre": "Jeux des émotions",
+  "sous": "4 jeux pour reconnaître, nommer et raconter ses émotions",
+  "desc": "Mime des émotions, cartes « Raconte une fois où… », bingo des émotions et jeu de parcours.",
+  "code": "JEU-A",
+  "fichiers": [
+   "Jeux et cartes Filodie/Couleur/Filodie_JEU-A_Jeux_des_émotions.pdf",
+   "Jeux et cartes Filodie/Noir et blanc/Filodie_JEU-A_Jeux_des_émotions_NB.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "BEbad",
+  "payhip_en": "BEbad"
+ },
+ {
+  "id": "jeux-jeu-b",
+  "type": "jeux",
+  "groupe": "Jeux et cartes",
+  "titre": "Jeux de l'amitié",
+  "sous": "4 jeux pour pratiquer les habiletés sociales",
+  "desc": "Défis amitié, cartes « Que ferais-tu si… », dominos des bons gestes et jeu de parcours.",
+  "code": "JEU-B",
+  "fichiers": [
+   "Jeux et cartes Filodie/Couleur/Filodie_JEU-B_Jeux_de_l_amitié.pdf",
+   "Jeux et cartes Filodie/Noir et blanc/Filodie_JEU-B_Jeux_de_l_amitié_NB.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "o9BqR",
+  "payhip_en": "o9BqR"
+ },
+ {
+  "id": "jeux-jeu-c",
+  "type": "jeux",
+  "groupe": "Jeux et cartes",
+  "titre": "Jeux du calme",
+  "sous": "4 jeux pour pratiquer la régulation en s'amusant",
+  "desc": "Pige ton outil, missions calmes, mémoire du corps et jeu de parcours du calme.",
+  "code": "JEU-C",
+  "fichiers": [
+   "Jeux et cartes Filodie/Couleur/Filodie_JEU-C_Jeux_du_calme.pdf",
+   "Jeux et cartes Filodie/Noir et blanc/Filodie_JEU-C_Jeux_du_calme_NB.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "7JfbZ",
+  "payhip_en": "7JfbZ"
+ },
+ {
+  "id": "jeux-jeu-d",
+  "type": "jeux",
+  "groupe": "Jeux et cartes",
+  "titre": "Jeux pour résoudre des problèmes",
+  "sous": "4 jeux pour chercher des solutions",
+  "desc": "Trouve 3 solutions, petit ou gros problème, dominos « si… alors… » et jeu de parcours.",
+  "code": "JEU-D",
+  "fichiers": [
+   "Jeux et cartes Filodie/Couleur/Filodie_JEU-D_Jeux_pour_résoudre_des_problèmes.pdf",
+   "Jeux et cartes Filodie/Noir et blanc/Filodie_JEU-D_Jeux_pour_résoudre_des_problèmes_NB.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "6HF8R",
+  "payhip_en": "6HF8R"
+ },
+ {
+  "id": "jeux-jeu-e",
+  "type": "jeux",
+  "groupe": "Jeux et cartes",
+  "titre": "Jeux des forces",
+  "sous": "4 jeux pour découvrir ses forces et celles des autres",
+  "desc": "Cartes des forces, bingo des forces, cartes « Je remarque que tu… » et jeu de parcours des fiertés.",
+  "code": "JEU-E",
+  "fichiers": [
+   "Jeux et cartes Filodie/Couleur/Filodie_JEU-E_Jeux_des_forces.pdf",
+   "Jeux et cartes Filodie/Noir et blanc/Filodie_JEU-E_Jeux_des_forces_NB.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "oPNYg",
+  "payhip_en": "oPNYg"
+ },
+ {
+  "id": "jeux-jeu-f",
+  "type": "jeux",
+  "groupe": "Jeux et cartes",
+  "titre": "Jeux pour se connaître",
+  "sous": "4 jeux pour converser et créer des liens",
+  "desc": "Questions pour se connaître, « Tu préfères… », mémoire des intérêts et jeu de parcours.",
+  "code": "JEU-F",
+  "fichiers": [
+   "Jeux et cartes Filodie/Couleur/Filodie_JEU-F_Jeux_pour_se_connaître.pdf",
+   "Jeux et cartes Filodie/Noir et blanc/Filodie_JEU-F_Jeux_pour_se_connaître_NB.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "BtgQX",
+  "payhip_en": "BtgQX"
+ },
+ {
   "id": "grand-livre",
   "type": "livre",
   "groupe": "Grand livre clinique",
@@ -5093,6 +5189,30 @@
   "valeur": 30.0
  },
  {
+  "id": "lot-jeux",
+  "type": "lot_jeux",
+  "groupe": "Lots",
+  "titre": "Tous les jeux et cartes",
+  "titre_en": "All the Games and Cards",
+  "sous": "24 jeux · 6 paquets",
+  "sous_en": "24 games · 6 packs",
+  "desc": "Émotions, amitié, calme, résolution de problèmes, forces et connaissance de soi : cartes, bingos, mémoires, dominos et jeux de parcours, en couleur et en noir et blanc.",
+  "desc_en": "Feelings, friendship, calm, problem solving, strengths and self-knowledge: cards, bingos, memory games, dominoes and board games, in colour and black and white.",
+  "fichiers": [],
+  "contient": [
+   "jeux-jeu-a",
+   "jeux-jeu-b",
+   "jeux-jeu-c",
+   "jeux-jeu-d",
+   "jeux-jeu-e",
+   "jeux-jeu-f"
+  ],
+  "prix": 29.0,
+  "payhip": "LTMdQ",
+  "payhip_en": "LTMdQ",
+  "valeur": 42.0
+ },
+ {
   "id": "lot-specialisees",
   "type": "lot_specialisees",
   "groupe": "Lots",
@@ -5453,8 +5573,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie",
   "sous": "Toute la collection",
-  "desc": "Les 107 trousses, les éditions, les 179 cahiers visuels, les affiches murales, le Grand livre clinique et le bottin régional.",
-  "desc_en": "All 107 toolkits, the editions, the 179 visual workbooks, the wall posters, the Clinical Handbook and the regional directory.",
+  "desc": "Les 107 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, le Grand livre clinique et le bottin régional.",
+  "desc_en": "All 107 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the Clinical Handbook and the regional directory.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -5754,12 +5874,18 @@
    "affiches-aff-d",
    "affiches-aff-e",
    "affiches-aff-f",
+   "jeux-jeu-a",
+   "jeux-jeu-b",
+   "jeux-jeu-c",
+   "jeux-jeu-d",
+   "jeux-jeu-e",
+   "jeux-jeu-f",
    "grand-livre",
    "bottin-regional"
   ],
   "prix": 129.0,
   "payhip": "UScCI",
   "payhip_en": "UScCI",
-  "valeur": 1343.0
+  "valeur": 1385.0
  }
 ]
