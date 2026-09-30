@@ -4910,6 +4910,22 @@
   "payhip_en": "Sz7wI"
  },
  {
+  "id": "gratuit-mois-2611",
+  "type": "gratuit",
+  "groupe": "Outil gratuit du mois",
+  "titre": "Quand il fait noir tôt",
+  "sous": "4 routines pour traverser novembre en douceur",
+  "desc": "Revenir de l'école à la noirceur, garder mon énergie, une soirée calme, préparer le lendemain. Outil gratuit du mois de novembre 2026.",
+  "code": "MOIS-2611",
+  "fichiers": [
+   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2611_Quand_il_fait_noir_tôt.pdf",
+   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2611_Quand_il_fait_noir_tôt_NB.pdf"
+  ],
+  "prix": 0.0,
+  "payhip": "Tc9sY",
+  "payhip_en": "Tc9sY"
+ },
+ {
   "id": "grand-livre",
   "type": "livre",
   "groupe": "Grand livre clinique",

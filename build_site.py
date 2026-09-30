@@ -502,7 +502,13 @@ def home(lang):
 def gratuits(lang):
     """Section « Commencer gratuitement » : trousse découverte, outil du mois, bottin (aimant à courriels)."""
     items = {i["id"]: i for i in json.load(open(CAT, encoding="utf-8"))}
-    mois = sorted((i for i in items.values() if i["type"] == "gratuit"), key=lambda i: i["id"])
+    from datetime import date as _d
+    t = _d.today()                                     # MOIS-AAMM : l’outil du mois courant, sinon celui du mois
+    now = t.strftime("%y%m")                           # suivant, sinon le plus récent déjà passé
+    nxt = (_d(t.year + 1, 1, 1) if t.month == 12 else _d(t.year, t.month + 1, 1)).strftime("%y%m")
+    tous = [i for i in items.values() if i["type"] == "gratuit"]
+    mois = ([i for i in tous if i.get("code", "")[-4:] == now] or [i for i in tous if i.get("code", "")[-4:] == nxt]
+            or sorted((i for i in tous if i.get("code", "")[-4:] < now), key=lambda i: i["id"]))
     ids = ["trousse-trousse_decouverte"] + ([mois[-1]["id"]] if mois else []) + ["bottin-regional"]
     fr = lang == "fr"
     etiq = {"trousse-trousse_decouverte": "Trousse découverte" if fr else "Starter toolkit",
@@ -643,23 +649,19 @@ CONTENT = {
 <ul><li>Original, reviewed and dated content.</li><li>Resources verified at the source and updated every year.</li>
 <li>Tools that respect the dignity and self-determination of every person.</li></ul>"""),
     ("fr", "services.html"): ("Services", """
-<p class="lead">Au-delà de la boutique, Filodie accompagne les équipes et les familles avec des outils conçus pour elles.</p>
+<p class="lead">Au-delà de la boutique, Filodie crée des outils conçus pour votre équipe ou votre famille, entièrement par courriel.</p>
 <h2>Outils sur mesure</h2>
 <p>Un jeune, une classe ou un milieu a besoin d’un outil qui n’existe pas encore ? Je le crée pour vous : routine visuelle avec les photos de votre milieu, plan de crise, histoire sociale, tableau de motivation, grille d’observation adaptée à votre clientèle. Chaque outil est livré en PDF remplissable, avec la signature Filodie et les sources qui l’appuient.</p>
 <ul><li>Vous décrivez le besoin par courriel (aucune information nominative sur la personne n’est nécessaire).</li><li>Je vous envoie une proposition et un prix avant de commencer.</li><li>Une ronde de corrections est incluse.</li></ul>
-<h2>Ateliers et formations</h2>
-<p>Des ateliers pratiques d’une à trois heures, en personne ou à distance, pour les équipes-écoles, CPE, organismes et stagiaires : observer et comprendre un comportement, bâtir un plan d’intervention qui tient la route, soutenir la régulation émotionnelle, utiliser les supports visuels. Chaque participant repart avec les outils Filodie utilisés pendant l’atelier.</p>
 <h2>Licence d’équipe</h2>
 <p>Pour déposer les fichiers sur le réseau interne d’une école, d’un CPE ou d’un organisme : 3 fois le prix individuel, jusqu’à 25 intervenantes et intervenants. Une facture au nom de l’établissement est fournie.</p>
 <p><a class="btn" href="mailto:melodie@filodie.ca?subject=Demande%20de%20service%20Filodie">Écrire à Mélodie</a></p>
 """),
     ("en", "services.html"): ("Services", """
-<p class="lead">Beyond the shop, Filodie supports teams and families with tools designed for them.</p>
+<p class="lead">Beyond the shop, Filodie creates tools designed for your team or family, entirely by email.</p>
 <h2>Custom tools</h2>
 <p>Does a child, a class or a setting need a tool that does not exist yet? I will create it for you: a visual routine with photos of your setting, a crisis plan, a social story, a motivation chart, an observation grid adapted to your clients. Every tool comes as a fillable PDF, with the Filodie signature and the sources behind it.</p>
 <ul><li>Describe the need by email (no identifying information about the person is needed).</li><li>I send you a proposal and a price before starting.</li><li>One round of revisions is included.</li></ul>
-<h2>Workshops and training</h2>
-<p>Hands-on workshops of one to three hours, in person or online, for school teams, daycares, organizations and interns: observing and understanding behaviour, building an intervention plan that holds up, supporting emotional regulation, using visual supports. Every participant leaves with the Filodie tools used during the workshop.</p>
 <h2>Team licence</h2>
 <p>To share the files on the internal network of a school, daycare or organization: 3 times the individual price, for up to 25 staff members. An invoice in the organization’s name is provided.</p>
 <p><a class="btn" href="mailto:melodie@filodie.ca?subject=Filodie%20service%20request">Email Mélodie</a></p>
