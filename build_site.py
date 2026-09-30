@@ -199,10 +199,12 @@ def catalogue():
         add(id="lot-etudes-tes", type="lot_tout", groupe="Lots", titre="Trousse de l’étudiante et de l’étudiant en T.E.S.",
             titre_en="SCC Student Kit", sous=f"{len(et)} outils pour les études et les stages", prix=20.00,
             sous_en=f"{len(et)} tools for studies and internships",
-            desc="Analyse de groupe, modèle du PPH, notes évolutives, journal de stage, activité éducative, plan "
-                 "d’intervention, écoute, éthique, étude de cas, réseau de ressources et premier emploi.",
-            desc_en="Group analysis, the HDM-DCP model, progress notes, internship journal, educational activity, "
-                    "intervention plan, listening, ethics, case study, resource network and first job.",
+            desc="Tous les outils Filodie pour les études et les stages en T.E.S. : analyse de groupe, PPH, notes "
+                 "évolutives, journal de stage, plan d’intervention, écoute, éthique, familles, équipe, diversité, "
+                 "méthodes d’étude et plus.",
+            desc_en="All the Filodie tools for SCC studies and internships: group analysis, HDM-DCP, progress notes, "
+                    "internship journal, intervention plan, listening, ethics, families, teamwork, diversity, study "
+                    "methods and more.",
             fichiers=[], contient=et)
     tous = [i["id"] for i in items if i["type"] == "cahier"]
     add(id="lot-tous-les-cahiers", type="lot_tout", groupe="Lots", titre="Tous les cahiers visuels",

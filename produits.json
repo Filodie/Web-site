@@ -476,6 +476,76 @@
   "payhip_en": "qGjVR"
  },
  {
+  "id": "trousse-equipe_interdisciplinaire",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Travailler en équipe interdisciplinaire",
+  "sous": "6 outils",
+  "desc": "Six fiches pour trouver sa place dans une équipe : rôles des professions, communication en réunion, présentation d’une situation, désaccords constructifs, cohérence des interventions et bilan de sa collaboration.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Equipe_interdisciplinaire_2026.pdf"
+  ],
+  "payhip": "vJtop",
+  "payhip_en": "vJtop"
+ },
+ {
+  "id": "trousse-collaborer_familles",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Collaborer avec les familles",
+  "sous": "6 outils",
+  "desc": "Six fiches pour bâtir une relation de partenariat avec les familles : premier contact, écoute des préoccupations, message difficile, rencontre de parents, communication au quotidien et situations délicates.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Collaborer_familles_2026.pdf"
+  ],
+  "payhip": "edYGJ",
+  "payhip_en": "edYGJ"
+ },
+ {
+  "id": "trousse-etudier_efficacement",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Étudier efficacement",
+  "sous": "6 outils",
+  "desc": "Six fiches pour étudier avec les méthodes les plus efficaces : planification de la session, pratique de rappel, étude espacée, fiches de révision, préparation aux examens et bilan après l’examen.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Etudier_efficacement_2026.pdf"
+  ],
+  "payhip": "8xB5w",
+  "payhip_en": "8xB5w"
+ },
+ {
+  "id": "trousse-diversite",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Intervenir en contexte de diversité",
+  "sous": "6 outils",
+  "desc": "Six fiches pour développer une posture interculturelle : prendre conscience de ses repères, découvrir ceux de l’autre, repérer les chocs culturels, communiquer malgré la langue, adapter l’intervention et faire son bilan.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Diversite_2026.pdf"
+  ],
+  "payhip": "LnBmO",
+  "payhip_en": "LnBmO"
+ },
+ {
+  "id": "trousse-debut_stage",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Bien commencer mon stage",
+  "sous": "6 outils",
+  "desc": "Six fiches pour réussir son intégration en stage : préparation avant d’arriver, découverte du milieu, connaissance de la clientèle, entente avec la personne superviseure, premiers contacts et bilan de la première semaine.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Debut_stage_2026.pdf"
+  ],
+  "payhip": "aUf4V",
+  "payhip_en": "aUf4V"
+ },
+ {
   "id": "trousse-habiletes_sociales",
   "type": "trousse",
   "groupe": "Habiletés et comportement",
@@ -6045,11 +6115,11 @@
   "groupe": "Lots",
   "titre": "Trousse de l’étudiante et de l’étudiant en T.E.S.",
   "titre_en": "SCC Student Kit",
-  "sous": "11 outils pour les études et les stages",
+  "sous": "16 outils pour les études et les stages",
   "prix": 20.0,
-  "sous_en": "11 tools for studies and internships",
-  "desc": "Analyse de groupe, modèle du PPH, notes évolutives, journal de stage, activité éducative, plan d’intervention, écoute, éthique, étude de cas, réseau de ressources et premier emploi.",
-  "desc_en": "Group analysis, the HDM-DCP model, progress notes, internship journal, educational activity, intervention plan, listening, ethics, case study, resource network and first job.",
+  "sous_en": "16 tools for studies and internships",
+  "desc": "Tous les outils Filodie pour les études et les stages en T.E.S. : analyse de groupe, PPH, notes évolutives, journal de stage, plan d’intervention, écoute, éthique, familles, équipe, diversité, méthodes d’étude et plus.",
+  "desc_en": "All the Filodie tools for SCC studies and internships: group analysis, HDM-DCP, progress notes, internship journal, intervention plan, listening, ethics, families, teamwork, diversity, study methods and more.",
   "fichiers": [],
   "contient": [
    "trousse-analyser_groupe",
@@ -6062,11 +6132,16 @@
    "trousse-ethique_stage",
    "trousse-etude_de_cas",
    "trousse-reseau_ressources",
-   "trousse-premier_emploi"
+   "trousse-premier_emploi",
+   "trousse-equipe_interdisciplinaire",
+   "trousse-collaborer_familles",
+   "trousse-etudier_efficacement",
+   "trousse-diversite",
+   "trousse-debut_stage"
   ],
   "payhip": "s3APf",
   "payhip_en": "s3APf",
-  "valeur": 33.0
+  "valeur": 48.0
  },
  {
   "id": "lot-tous-les-cahiers",
@@ -6268,9 +6343,9 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses",
-  "sous": "141 trousses et éditions",
+  "sous": "146 trousses et éditions",
   "prix": 75.0,
-  "sous_en": "141 toolkits and editions",
+  "sous_en": "146 toolkits and editions",
   "desc": "La trousse principale, les 16 trousses spécialisées, les 102 trousses de la Collection et les 5 éditions.",
   "desc_en": "The main toolkit, the 16 specialized toolkits, the 102 Collection toolkits and the 5 editions.",
   "fichiers": [],
@@ -6309,6 +6384,11 @@
    "trousse-etude_de_cas",
    "trousse-reseau_ressources",
    "trousse-premier_emploi",
+   "trousse-equipe_interdisciplinaire",
+   "trousse-collaborer_familles",
+   "trousse-etudier_efficacement",
+   "trousse-diversite",
+   "trousse-debut_stage",
    "trousse-habiletes_sociales",
    "trousse-communication_et_cooperation",
    "trousse-emotions_et_empathie",
@@ -6419,7 +6499,7 @@
   ],
   "payhip": "leD7m",
   "payhip_en": "leD7m",
-  "valeur": 892.0
+  "valeur": 907.0
  },
  {
   "id": "lot-mega",
@@ -6427,8 +6507,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie",
   "sous": "Toute la collection",
-  "desc": "Les 136 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
-  "desc_en": "All 136 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
+  "desc": "Les 141 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
+  "desc_en": "All 141 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -6465,6 +6545,11 @@
    "trousse-etude_de_cas",
    "trousse-reseau_ressources",
    "trousse-premier_emploi",
+   "trousse-equipe_interdisciplinaire",
+   "trousse-collaborer_familles",
+   "trousse-etudier_efficacement",
+   "trousse-diversite",
+   "trousse-debut_stage",
    "trousse-habiletes_sociales",
    "trousse-communication_et_cooperation",
    "trousse-emotions_et_empathie",
@@ -6775,6 +6860,6 @@
   "prix": 129.0,
   "payhip": "UScCI",
   "payhip_en": "UScCI",
-  "valeur": 1550.0
+  "valeur": 1565.0
  }
 ]
