@@ -861,6 +861,12 @@ def build():
     if os.path.exists(og):
         shutil.copy(og, os.path.join(PUB, "og-image.png"))
     images(items)
+    lg = os.path.join(LOGO, "Filodie_logo_couleur_fond_creme.png")      # logo des infolettres (MailerLite)
+    if os.path.exists(lg):
+        from PIL import Image
+        im = Image.open(lg).convert("RGB")
+        im.resize((480, int(im.height * 480 / im.width)), Image.LANCZOS).save(os.path.join(PUB, "img", "courriel-logo.png"),
+                                                                              optimize=True)
     for lang, d in (("fr", PUB), ("en", os.path.join(PUB, "en"))):
         open(os.path.join(d, "index.html"), "w").write(home(lang))
         open(os.path.join(d, "boutique.html" if lang == "fr" else "shop.html"), "w").write(shop(lang, items))
