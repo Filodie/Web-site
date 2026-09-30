@@ -378,6 +378,90 @@
   "payhip_en": "Tc6yE"
  },
  {
+  "id": "trousse-psychoeducation_evaluation",
+  "type": "trousse",
+  "groupe": "Boîte à outils du psychoéducateur",
+  "titre": "Psychoéducation : évaluation approfondie",
+  "sous": "10 outils",
+  "desc": "Dix outils pour conduire une évaluation psychoéducative rigoureuse : entrevue initiale, histoire développementale, observation par intervalles, analyse fonctionnelle, écosystème, facteurs de risque et de protection, triangulation des sources et conclusion professionnelle.",
+  "fichiers": [
+   "Collection Filodie/10 – Boîte à outils du psychoéducateur/Trousse_Filodie_Psychoeducation_evaluation_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "DrSmX",
+  "payhip_en": "DrSmX"
+ },
+ {
+  "id": "trousse-psychoeducation_planification",
+  "type": "trousse",
+  "groupe": "Boîte à outils du psychoéducateur",
+  "titre": "Psychoéducation : planification",
+  "sous": "10 outils",
+  "desc": "Dix outils pour passer de l’évaluation au plan : du besoin à l’objectif, vérification SMART, choix des moyens, plan de soutien au comportement, plan de sécurité, ligne de base, généralisation, entente avec la famille, transition et révision du plan.",
+  "fichiers": [
+   "Collection Filodie/10 – Boîte à outils du psychoéducateur/Trousse_Filodie_Psychoeducation_planification_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "3UCy9",
+  "payhip_en": "3UCy9"
+ },
+ {
+  "id": "trousse-psychoeducation_accompagnement",
+  "type": "trousse",
+  "groupe": "Boîte à outils du psychoéducateur",
+  "titre": "Psychoéducation : accompagnement",
+  "sous": "10 outils",
+  "desc": "Dix outils pour intervenir au quotidien : balance décisionnelle, importance et confiance, résolution de problèmes en collaboration, séance d’habiletés, système de renforcement, réparation après une crise, pratique parentale, dynamique de groupe, validation des émotions et journal de bord.",
+  "fichiers": [
+   "Collection Filodie/10 – Boîte à outils du psychoéducateur/Trousse_Filodie_Psychoeducation_accompagnement_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "DYxlh",
+  "payhip_en": "DYxlh"
+ },
+ {
+  "id": "trousse-psychoeducation_pratique",
+  "type": "trousse",
+  "groupe": "Boîte à outils du psychoéducateur",
+  "titre": "Psychoéducation : mesure et pratique",
+  "sous": "10 outils",
+  "desc": "Dix outils pour la rigueur professionnelle : analyse visuelle des données, alliance de travail, gabarits de rapport d’évaluation et de fin de suivi, consentement et confidentialité, présentation de cas, délibération éthique, supervision, charge de cas et plan de développement professionnel.",
+  "fichiers": [
+   "Collection Filodie/10 – Boîte à outils du psychoéducateur/Trousse_Filodie_Psychoeducation_pratique_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "5uxFK",
+  "payhip_en": "5uxFK"
+ },
+ {
+  "id": "trousse-enseigner_aux_adultes",
+  "type": "trousse",
+  "groupe": "Enseignement aux adultes",
+  "titre": "Enseigner aux adultes",
+  "sous": "10 outils",
+  "desc": "Dix outils pour enseigner ou former des adultes : portrait du groupe, contrat d’apprentissage, planification d’une séance selon le cycle expérientiel, activation des acquis, enseignement explicite, différenciation, rétroaction, évaluation formative, motivation et pratique réflexive.",
+  "fichiers": [
+   "Collection Filodie/11 – Enseignement aux adultes/Trousse_Filodie_Enseigner_aux_adultes_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "sJhHP",
+  "payhip_en": "sJhHP"
+ },
+ {
+  "id": "trousse-fga_fp_reussite",
+  "type": "trousse",
+  "groupe": "Enseignement aux adultes",
+  "titre": "FGA et FP : accompagner la réussite",
+  "sous": "10 outils",
+  "desc": "Dix outils pour accompagner les adultes en formation générale et professionnelle : accueil et bilan de retour aux études, plan de formation, conciliation études-travail-famille, stratégies d’étude, anxiété d’examen, persévérance, soutien aux difficultés, stages et transition vers l’emploi.",
+  "fichiers": [
+   "Collection Filodie/11 – Enseignement aux adultes/Trousse_Filodie_FGA_FP_reussite_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "Dr7ao",
+  "payhip_en": "Dr7ao"
+ },
+ {
   "id": "trousse-protection_de_la_jeunesse",
   "type": "trousse",
   "groupe": "Clientèles et interventions",
@@ -5037,6 +5121,48 @@
   "valeur": 70.0
  },
  {
+  "id": "lot-10-boîte-à-outils-du-psychoéducateur",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Boîte à outils du psychoéducateur",
+  "sous": "4 trousses",
+  "desc": "Toutes les trousses du volet « Boîte à outils du psychoéducateur ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-psychoeducation_evaluation",
+   "trousse-psychoeducation_planification",
+   "trousse-psychoeducation_accompagnement",
+   "trousse-psychoeducation_pratique"
+  ],
+  "titre_en": "Filodie Collection: Psychoeducator's Toolbox",
+  "sous_en": "4 toolkits",
+  "desc_en": "All the toolkits in the “Psychoeducator's Toolbox” section.",
+  "prix": 20.0,
+  "payhip": "sbC0H",
+  "payhip_en": "sbC0H",
+  "valeur": 28.0
+ },
+ {
+  "id": "lot-11-enseignement-aux-adultes",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Enseignement aux adultes",
+  "sous": "2 trousses",
+  "desc": "Toutes les trousses du volet « Enseignement aux adultes ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-enseigner_aux_adultes",
+   "trousse-fga_fp_reussite"
+  ],
+  "titre_en": "Filodie Collection: Teaching Adults",
+  "sous_en": "2 toolkits",
+  "desc_en": "All the toolkits in the “Teaching Adults” section.",
+  "prix": 10.0,
+  "payhip": "0zgDS",
+  "payhip_en": "0zgDS",
+  "valeur": 14.0
+ },
+ {
   "id": "lot-2-clientèles-et-interventions",
   "type": "lot_collection",
   "groupe": "Lots",
@@ -5563,11 +5689,11 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses",
-  "sous": "112 trousses et éditions",
+  "sous": "118 trousses et éditions",
   "prix": 75.0,
-  "sous_en": "112 toolkits and editions",
-  "desc": "La trousse principale, les 16 trousses spécialisées, les 90 trousses de la Collection et les 5 éditions.",
-  "desc_en": "The main toolkit, the 16 specialized toolkits, the 90 Collection toolkits and the 5 editions.",
+  "sous_en": "118 toolkits and editions",
+  "desc": "La trousse principale, les 16 trousses spécialisées, les 96 trousses de la Collection et les 5 éditions.",
+  "desc_en": "The main toolkit, the 16 specialized toolkits, the 96 Collection toolkits and the 5 editions.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -5597,6 +5723,12 @@
    "trousse-dims",
    "trousse-hpi",
    "trousse-syndrome_gilles_de_la_tourette",
+   "trousse-psychoeducation_evaluation",
+   "trousse-psychoeducation_planification",
+   "trousse-psychoeducation_accompagnement",
+   "trousse-psychoeducation_pratique",
+   "trousse-enseigner_aux_adultes",
+   "trousse-fga_fp_reussite",
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
    "trousse-auteurs_de_violence",
@@ -5685,7 +5817,7 @@
   ],
   "payhip": "leD7m",
   "payhip_en": "leD7m",
-  "valeur": 757.0
+  "valeur": 799.0
  },
  {
   "id": "lot-mega",
@@ -5693,8 +5825,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie",
   "sous": "Toute la collection",
-  "desc": "Les 107 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
-  "desc_en": "All 107 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
+  "desc": "Les 113 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
+  "desc_en": "All 113 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -5724,6 +5856,12 @@
    "trousse-dims",
    "trousse-hpi",
    "trousse-syndrome_gilles_de_la_tourette",
+   "trousse-psychoeducation_evaluation",
+   "trousse-psychoeducation_planification",
+   "trousse-psychoeducation_accompagnement",
+   "trousse-psychoeducation_pratique",
+   "trousse-enseigner_aux_adultes",
+   "trousse-fga_fp_reussite",
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
    "trousse-auteurs_de_violence",
@@ -6012,6 +6150,6 @@
   "prix": 129.0,
   "payhip": "UScCI",
   "payhip_en": "UScCI",
-  "valeur": 1415.0
+  "valeur": 1457.0
  }
 ]

@@ -192,9 +192,12 @@ def catalogue():
                 "and the regional directory.",
         fichiers=[], contient=[i["id"] for i in items if not i["type"].startswith("lot") and i["type"] != "mega"])
     # lots de collection : environ 2,50 $ par trousse, arrondi à 5 $, entre 25 $ et 30 $
+    # (petites collections de moins de 6 trousses : environ 30 % de rabais sur le prix à l'unité)
     for i in items:
         if i["type"] == "lot_collection":
-            i["prix"] = float(min(30, max(25, 5 * round(len(i["contient"]) * 2.5 / 5))))
+            n = len(i["contient"])
+            i["prix"] = float(min(30, max(25, 5 * round(n * 2.5 / 5)))) if n >= 6 else \
+                float(max(10, round(n * PRIX["trousse"] * 0.7)))
     # valeur à l'unité, pour afficher l'économie
     px = {i["id"]: i["prix"] for i in items}
     for i in items:
