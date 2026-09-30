@@ -402,7 +402,8 @@ L = {
 # pages équivalentes (bouton de langue)
 PAIRS = {"index.html": "index.html", "boutique.html": "shop.html", "bottin.html": "directory.html",
          "a-propos.html": "about.html", "faq.html": "faq.html", "contact.html": "contact.html", "services.html": "services.html",
-         "licence.html": "licence.html", "conditions.html": "terms.html", "confidentialite.html": "privacy.html"}
+         "licence.html": "licence.html", "conditions.html": "terms.html", "confidentialite.html": "privacy.html",
+         "coloriage.html": "colouring.html"}
 PAIRS_EN = {v: k for k, v in PAIRS.items()}
 
 THREAD = ('<svg class="thread" viewBox="0 0 600 90" preserveAspectRatio="none" aria-hidden="true"><path d="M-10 60 '
@@ -554,7 +555,11 @@ def gratuits(lang):
     abo_p = ("Inscrivez-vous à l’infolettre : un outil Filodie gratuit et les nouveautés, une fois par mois. Désabonnement "
              "en un clic." if fr else "Join the newsletter: a free Filodie tool and what’s new, once a month. Unsubscribe "
              "in one click.")
-    return (f'<section class="wrap"><h2>{h2}</h2><p class="lead">{sous}</p><div class="grid4">{cards}</div></section>'
+    colo = ("Nouveau : 4 cahiers à colorier gratuits, à télécharger sans inscription" if fr else
+            "New: 4 free colouring books, download with no sign-up")
+    lien = "coloriage.html" if fr else "colouring.html"
+    return (f'<section class="wrap"><h2>{h2}</h2><p class="lead">{sous}</p><div class="grid4">{cards}</div>'
+            f'<p style="margin-top:18px"><a class="btn" href="{lien}">🖍 {colo}</a></p></section>'
             f'<section class="band"><div class="wrap abo"><div><h2>{abo_t}</h2><p class="lead">{abo_p}</p></div>'
             f'<div class="ml-embedded" data-form="C80x4w"></div></div></section>')
 
@@ -912,6 +917,51 @@ FAVICON = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect wi
            + '</svg>')
 
 
+COLO = os.path.join(SRC, "..", "Cahiers à colorier gratuits Filodie")
+
+
+def coloriage(lang):
+    """Page des cahiers à colorier gratuits : téléchargement direct (FR et EN), sans inscription."""
+    import glob as _g
+    import fitz
+    fr = lang == "fr"
+    od = os.path.join(PUB, "pdf", "colorier"); os.makedirs(od, exist_ok=True)
+    idir = os.path.join(PUB, "img", "colorier"); os.makedirs(idir, exist_ok=True)
+    cartes = ""
+    for pf in sorted(_g.glob(os.path.join(COLO, "Français", "*.pdf"))):
+        code = os.path.basename(pf).split("_")[1]
+        pe = (_g.glob(os.path.join(COLO, "English", f"Filodie_{code}_*.pdf")) or [None])[0]
+        for p in (pf, pe):
+            if p: shutil.copy(p, od)
+        src = pf if fr else (pe or pf)
+        d = fitz.open(src)
+        img = os.path.join(idir, f"{code}_{lang}.jpg")
+        d[0].get_pixmap(dpi=60).save(img)
+        titre = d.metadata.get("title", "").replace("Filodie – ", "")
+        dl = lambda p, t: f'<a class="btn" href="{L[lang]["base"]}pdf/colorier/{os.path.basename(p)}" download>{t}</a>' if p else ""
+        b1 = dl(pf, "Télécharger (français)" if fr else "Download (French)")
+        b2 = dl(pe, "Télécharger (anglais)" if fr else "Download (English)")
+        cartes += (f'<div class="card col"><img src="{L[lang]["base"]}img/colorier/{code}_{lang}.jpg" alt="" loading="lazy">'
+                   f'<h3>{html.escape(titre)}</h3><p class="muted" style="padding:0 16px">'
+                   f'{"6 pages · PDF à imprimer" if fr else "6 pages · printable PDF"}</p>'
+                   f'<p style="padding:0 16px 16px;display:flex;gap:8px;flex-wrap:wrap">{(b1 + b2) if fr else (b2 + b1)}</p></div>')
+    h1 = "Cahiers à colorier gratuits" if fr else "Free colouring books"
+    lead = ("Des cahiers de 6 pages pour parler des émotions, du calme, de la gentillesse et des forces, en coloriant. "
+            "Chaque page propose une question pour en discuter ensemble et un repère pour l’adulte. Téléchargement "
+            "direct, sans inscription, à imprimer pour la maison ou la classe." if fr else
+            "Six-page books to talk about feelings, calm, kindness and strengths while colouring. Each page has a "
+            "question to discuss together and a tip for the adult. Direct download, no sign-up, free to print for "
+            "home or classroom.")
+    abo_t = "Recevez l’outil gratuit chaque mois" if fr else "Get the free tool every month"
+    abo_p = ("Un outil Filodie gratuit et les nouveautés, une fois par mois." if fr else
+             "A free Filodie tool and what’s new, once a month.")
+    body = (f'<section class="wrap"><h1>{h1}</h1><p class="lead">{lead}</p><div class="grid4">{cartes}</div>'
+            f'<p class="muted">{"Illustrations : Fluent Emoji © Microsoft, licence MIT, redessinées en traits à colorier." if fr else "Illustrations: Fluent Emoji © Microsoft, MIT licence, redrawn as colouring outlines."}</p></section>'
+            f'<section class="band"><div class="wrap abo"><div><h2>{abo_t}</h2><p class="lead">{abo_p}</p></div>'
+            f'<div class="ml-embedded" data-form="C80x4w"></div></div></section>')
+    return page(lang, "coloriage.html" if fr else "colouring.html", h1, body)
+
+
 def build():
     if "--catalogue" in sys.argv or "--prix" in sys.argv or not os.path.exists(CAT):
         catalogue()
@@ -942,6 +992,7 @@ def build():
         open(os.path.join(d, "index.html"), "w").write(home(lang))
         open(os.path.join(d, "boutique.html" if lang == "fr" else "shop.html"), "w").write(shop(lang, items))
         open(os.path.join(d, "bottin.html" if lang == "fr" else "directory.html"), "w").write(bottin(lang, items))
+        open(os.path.join(d, "coloriage.html" if lang == "fr" else "colouring.html"), "w").write(coloriage(lang))
     open(os.path.join(PUB, "404.html"), "w").write(page("fr", "index.html", "Page introuvable",
         '<section class="wrap prose"><h1>Page introuvable</h1><p class="lead">Cette page n’existe pas ou a été déplacée. '
         '· This page does not exist.</p><p><a class="btn" href="/">Accueil · Home</a></p></section>').replace('href="index.html"', 'href="/index.html"'))
