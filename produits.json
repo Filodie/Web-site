@@ -4432,6 +4432,108 @@
   "payhip_en": "ejbAY"
  },
  {
+  "id": "affiches-aff-a",
+  "type": "affiches",
+  "groupe": "Affiches murales",
+  "titre": "Affiches : Se calmer et se réguler",
+  "titre_en": "Posters: Calming and Self-Regulation",
+  "sous": "8 affiches pour le coin calme et la classe",
+  "desc": "Échelle d'intensité à 5 perles, stratégies de calme, respiration guidée par le fil, signaux du corps, mode d'emploi du coin calme.",
+  "code": "AFF-A",
+  "fichiers": [
+   "Affiches murales Filodie/Couleur/Filodie_AFF-A_Se_calmer_et_se_réguler.pdf",
+   "Affiches murales Filodie/Noir et blanc/Filodie_AFF-A_Se_calmer_et_se_réguler_NB.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "X0TFH",
+  "payhip_en": "X0TFH"
+ },
+ {
+  "id": "affiches-aff-b",
+  "type": "affiches",
+  "groupe": "Affiches murales",
+  "titre": "Affiches : Nommer ses émotions",
+  "titre_en": "Posters: Naming Feelings",
+  "sous": "7 affiches pour mettre des mots sur ce qu'on ressent",
+  "desc": "Émotions de base, message de chaque émotion, degrés de la colère et de l'inquiétude, vocabulaire enrichi.",
+  "code": "AFF-B",
+  "fichiers": [
+   "Affiches murales Filodie/Couleur/Filodie_AFF-B_Nommer_ses_émotions.pdf",
+   "Affiches murales Filodie/Noir et blanc/Filodie_AFF-B_Nommer_ses_émotions_NB.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "lY7Zm",
+  "payhip_en": "lY7Zm"
+ },
+ {
+  "id": "affiches-aff-c",
+  "type": "affiches",
+  "groupe": "Affiches murales",
+  "titre": "Affiches : Habiletés sociales et conflits",
+  "titre_en": "Posters: Social Skills and Conflict",
+  "sous": "7 affiches pour vivre ensemble",
+  "desc": "Résoudre un conflit en 5 perles, être un bon ami, écouter pour vrai, faire une demande claire, réagir comme témoin d'intimidation.",
+  "code": "AFF-C",
+  "fichiers": [
+   "Affiches murales Filodie/Couleur/Filodie_AFF-C_Habiletés_sociales_et_conflits.pdf",
+   "Affiches murales Filodie/Noir et blanc/Filodie_AFF-C_Habiletés_sociales_et_conflits_NB.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "JrQbt",
+  "payhip_en": "JrQbt"
+ },
+ {
+  "id": "affiches-aff-d",
+  "type": "affiches",
+  "groupe": "Affiches murales",
+  "titre": "Affiches : Vie de classe",
+  "titre_en": "Posters: Classroom Life",
+  "sous": "7 affiches pour une classe qui roule",
+  "desc": "Règles formulées positivement, volume de la voix, que faire quand je suis bloqué, prêt à apprendre, rôles en équipe, pauses actives.",
+  "code": "AFF-D",
+  "fichiers": [
+   "Affiches murales Filodie/Couleur/Filodie_AFF-D_Vie_de_classe.pdf",
+   "Affiches murales Filodie/Noir et blanc/Filodie_AFF-D_Vie_de_classe_NB.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "UBi9r",
+  "payhip_en": "UBi9r"
+ },
+ {
+  "id": "affiches-aff-e",
+  "type": "affiches",
+  "groupe": "Affiches murales",
+  "titre": "Affiches : Routines et organisation",
+  "titre_en": "Posters: Routines and Organization",
+  "sous": "6 affiches pour des journées prévisibles",
+  "desc": "Routine d'arrivée, routine de départ, transitions, « d'abord / ensuite », planifier une tâche, bureau prêt.",
+  "code": "AFF-E",
+  "fichiers": [
+   "Affiches murales Filodie/Couleur/Filodie_AFF-E_Routines_et_organisation.pdf",
+   "Affiches murales Filodie/Noir et blanc/Filodie_AFF-E_Routines_et_organisation_NB.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "OkUIK",
+  "payhip_en": "OkUIK"
+ },
+ {
+  "id": "affiches-aff-f",
+  "type": "affiches",
+  "groupe": "Affiches murales",
+  "titre": "Affiches : Messages qui font du bien",
+  "titre_en": "Posters: Messages That Feel Good",
+  "sous": "5 affiches-repères à garder sous les yeux",
+  "desc": "Phrases-repères pour la persévérance, la demande d'aide, l'appartenance, la bienveillance envers soi.",
+  "code": "AFF-F",
+  "fichiers": [
+   "Affiches murales Filodie/Couleur/Filodie_AFF-F_Messages_qui_font_du_bien.pdf",
+   "Affiches murales Filodie/Noir et blanc/Filodie_AFF-F_Messages_qui_font_du_bien_NB.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "WfoBT",
+  "payhip_en": "WfoBT"
+ },
+ {
   "id": "grand-livre",
   "type": "livre",
   "groupe": "Grand livre clinique",
@@ -4967,6 +5069,30 @@
   "valeur": 84.0
  },
  {
+  "id": "lot-affiches",
+  "type": "lot_affiches",
+  "groupe": "Lots",
+  "titre": "Toutes les affiches murales",
+  "titre_en": "All the Wall Posters",
+  "sous": "40 affiches · 6 paquets",
+  "sous_en": "40 posters · 6 packs",
+  "desc": "Régulation, émotions, habiletés sociales, vie de classe, routines et messages-repères, en couleur et en noir et blanc.",
+  "desc_en": "Regulation, feelings, social skills, classroom life, routines and anchor messages, in colour and black and white.",
+  "fichiers": [],
+  "contient": [
+   "affiches-aff-a",
+   "affiches-aff-b",
+   "affiches-aff-c",
+   "affiches-aff-d",
+   "affiches-aff-e",
+   "affiches-aff-f"
+  ],
+  "prix": 19.0,
+  "payhip": "RpOik",
+  "payhip_en": "RpOik",
+  "valeur": 30.0
+ },
+ {
   "id": "lot-specialisees",
   "type": "lot_specialisees",
   "groupe": "Lots",
@@ -5327,8 +5453,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie",
   "sous": "Toute la collection",
-  "desc": "Les 107 trousses, les éditions, les 179 cahiers visuels, le Grand livre clinique et le bottin régional.",
-  "desc_en": "All 107 toolkits, the editions, the 179 visual workbooks, the Clinical Handbook and the regional directory.",
+  "desc": "Les 107 trousses, les éditions, les 179 cahiers visuels, les affiches murales, le Grand livre clinique et le bottin régional.",
+  "desc_en": "All 107 toolkits, the editions, the 179 visual workbooks, the wall posters, the Clinical Handbook and the regional directory.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -5622,12 +5748,18 @@
    "cahier-vcomp-39",
    "cahier-vcomp-40",
    "cahier-vcomp-41",
+   "affiches-aff-a",
+   "affiches-aff-b",
+   "affiches-aff-c",
+   "affiches-aff-d",
+   "affiches-aff-e",
+   "affiches-aff-f",
    "grand-livre",
    "bottin-regional"
   ],
   "prix": 129.0,
   "payhip": "UScCI",
   "payhip_en": "UScCI",
-  "valeur": 1313.0
+  "valeur": 1343.0
  }
 ]
