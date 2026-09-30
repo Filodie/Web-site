@@ -238,6 +238,20 @@
   "payhip_en": "3XhbF"
  },
  {
+  "id": "trousse-choix_eclaire",
+  "type": "trousse",
+  "groupe": "Outils d’intervention",
+  "titre": "Faire un choix éclairé",
+  "sous": "4 outils",
+  "desc": "Quatre fiches pour prendre une décision importante sans se précipiter : clarifier le choix, explorer plusieurs options, peser les gains et les pertes, vérifier ce qui compte pour soi, puis passer à l’action avec un plan B.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Choix_eclaire_2026.pdf"
+  ],
+  "payhip": "HyBcz",
+  "payhip_en": "HyBcz"
+ },
+ {
   "id": "trousse-habiletes_sociales",
   "type": "trousse",
   "groupe": "Habiletés et comportement",
@@ -6001,9 +6015,9 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses",
-  "sous": "124 trousses et éditions",
+  "sous": "125 trousses et éditions",
   "prix": 75.0,
-  "sous_en": "124 toolkits and editions",
+  "sous_en": "125 toolkits and editions",
   "desc": "La trousse principale, les 16 trousses spécialisées, les 102 trousses de la Collection et les 5 éditions.",
   "desc_en": "The main toolkit, the 16 specialized toolkits, the 102 Collection toolkits and the 5 editions.",
   "fichiers": [],
@@ -6025,6 +6039,7 @@
    "trousse-dependances",
    "trousse-violence_sexuelle",
    "trousse-fondements_theoriques",
+   "trousse-choix_eclaire",
    "trousse-habiletes_sociales",
    "trousse-communication_et_cooperation",
    "trousse-emotions_et_empathie",
@@ -6135,7 +6150,7 @@
   ],
   "payhip": "leD7m",
   "payhip_en": "leD7m",
-  "valeur": 841.0
+  "valeur": 844.0
  },
  {
   "id": "lot-mega",
@@ -6143,8 +6158,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie",
   "sous": "Toute la collection",
-  "desc": "Les 119 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
-  "desc_en": "All 119 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
+  "desc": "Les 120 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
+  "desc_en": "All 120 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -6164,6 +6179,7 @@
    "trousse-dependances",
    "trousse-violence_sexuelle",
    "trousse-fondements_theoriques",
+   "trousse-choix_eclaire",
    "trousse-habiletes_sociales",
    "trousse-communication_et_cooperation",
    "trousse-emotions_et_empathie",
@@ -6474,6 +6490,6 @@
   "prix": 129.0,
   "payhip": "UScCI",
   "payhip_en": "UScCI",
-  "valeur": 1499.0
+  "valeur": 1502.0
  }
 ]

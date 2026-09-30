@@ -88,6 +88,11 @@ def catalogue():
         add(id="trousse-" + t["fichier"].lower(), type="trousse", groupe="Trousses spécialisées", titre=t["nom"],
             sous=f"{len(t['fiches'])} outils", desc=t["desc"],
             fichiers=[f"Trousses spécialisées/Trousse_Filodie_{t['fichier']}_2026.pdf"])
+    from outil_choix_eclaire import CHOIX                 # outils d’intervention vendus à l’unité, hors collection
+    for t in [CHOIX]:
+        add(id="trousse-" + t["fichier"].lower(), type="trousse", groupe="Outils d’intervention", titre=t["nom"],
+            sous=f"{len(t['fiches'])} outils", desc=t["desc"], prix=3.0,
+            fichiers=[f"{t['dossier']}/Trousse_Filodie_{t['fichier']}_2026.pdf"])
     for t in ft.LOTS:
         add(id="trousse-" + t["fichier"].lower(), type="trousse", groupe=t["dossier"].split("/")[-1].split("– ")[-1],
             titre=t["nom"], sous=f"{len(t['fiches'])} outils", desc=t["desc"],
