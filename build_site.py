@@ -437,6 +437,9 @@ def page(lang, name, title, body, desc="", scripts=""):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>(function(w,d,e,u,f,l,n){{w[f]=w[f]||function(){{(w[f].q=w[f].q||[]).push(arguments);}},l=d.createElement(e),l.async=1,l.src=u,
+n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);}})(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+ml('account', '2673065');</script>
 <title>{html.escape(title) + " · Filodie" if title != "Filodie" else "Filodie · " + t["tag"]}</title>
 <meta name="description" content="{html.escape(desc or t['hero_p'])}">
 <link rel="alternate" hreflang="{L[t['other']]['lang']}" href="{other_href}">
@@ -541,7 +544,13 @@ def gratuits(lang):
             "de chaque mois et les nouveautés." if fr else
             "Three free tools, in French and English. Tick the box at checkout to get each month’s free tool and "
             "what’s new.")
-    return f'<section class="wrap"><h2>{h2}</h2><p class="lead">{sous}</p><div class="grid4">{cards}</div></section>'
+    abo_t = "Recevez l’outil gratuit chaque mois" if fr else "Get the free tool every month"
+    abo_p = ("Inscrivez-vous à l’infolettre : un outil Filodie gratuit et les nouveautés, une fois par mois. Désabonnement "
+             "en un clic." if fr else "Join the newsletter: a free Filodie tool and what’s new, once a month. Unsubscribe "
+             "in one click.")
+    return (f'<section class="wrap"><h2>{h2}</h2><p class="lead">{sous}</p><div class="grid4">{cards}</div></section>'
+            f'<section class="band"><div class="wrap abo"><div><h2>{abo_t}</h2><p class="lead">{abo_p}</p></div>'
+            f'<div class="ml-embedded" data-form="C80x4w"></div></div></section>')
 
 
 def shop(lang, items):
@@ -747,7 +756,7 @@ CONTENT = {
 <li>Si vous vous abonnez à l’infolettre : adresse courriel et prénom, avec votre consentement explicite.</li>
 <li>Si vous nous écrivez : le contenu de votre message.</li></ul>
 <h2>Pourquoi</h2><p>Pour livrer vos fichiers, émettre vos reçus, répondre à vos questions et, si vous y consentez, vous envoyer l’infolettre. Vos renseignements ne sont jamais vendus.</p>
-<h2>Communication à des tiers</h2><p>Payhip (plateforme de vente), Stripe et PayPal (paiements) et, s’il y a lieu, le service d’infolettre traitent certains renseignements pour notre compte. Ces entreprises peuvent conserver des données à l’extérieur du Québec; nous les avons choisies pour leurs mesures de sécurité reconnues.</p>
+<h2>Communication à des tiers</h2><p>Payhip (plateforme de vente), Stripe et PayPal (paiements) et MailerLite (infolettre) traitent certains renseignements pour notre compte. Ces entreprises peuvent conserver des données à l’extérieur du Québec; nous les avons choisies pour leurs mesures de sécurité reconnues.</p>
 <h2>Témoins (cookies)</h2><p>Le site filodie.ca ne dépose aucun témoin de suivi ni de publicité. Les pages de paiement Payhip utilisent des témoins nécessaires à la transaction.</p>
 <h2>Conservation</h2><p>Les renseignements d’achat sont conservés 6 ans (obligations fiscales), puis détruits. Vous pouvez vous désabonner de l’infolettre en tout temps.</p>
 <h2>Vos droits</h2><p>Vous pouvez demander l’accès à vos renseignements, leur rectification ou leur suppression en écrivant à melodie@filodie.ca. Vous pouvez aussi porter plainte à la Commission d’accès à l’information du Québec.</p>"""),
@@ -802,6 +811,7 @@ nav a[aria-current]{color:var(--terra)}nav .lang{border:1.5px solid var(--ink);b
 .stats div{background:var(--card);border-radius:14px;padding:14px}.stats strong{display:block;font-family:Fraunces,serif;font-size:2rem;color:var(--terra)}
 @media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
 .grid4{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.abo{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}@media(max-width:760px){.abo{grid-template-columns:1fr}}
 .card{background:var(--card);border:1px solid var(--sand);border-radius:16px;overflow:hidden;color:var(--ink);text-decoration:none}
 .card.col img{aspect-ratio:17/13;object-fit:cover;object-position:top}.card.col h3,.card.col p{padding:0 16px}.card.col p{color:var(--gray);font-size:.95rem}
 .band{background:var(--cream);padding:10px 0 40px;margin-top:40px}.why div{background:var(--card);border-radius:14px;padding:6px 18px}
