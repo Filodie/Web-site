@@ -252,6 +252,76 @@
   "payhip_en": "HyBcz"
  },
  {
+  "id": "trousse-objectif",
+  "type": "trousse",
+  "groupe": "Outils d’intervention",
+  "titre": "Atteindre mon objectif",
+  "sous": "4 outils",
+  "desc": "Quatre fiches pour transformer une envie en objectif réaliste : le formuler clairement, prévoir les obstacles avec des plans « si… alors… », le découper en petites marches et suivre ses progrès pendant un mois.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Objectif_2026.pdf"
+  ],
+  "payhip": "9UNlK",
+  "payhip_en": "9UNlK"
+ },
+ {
+  "id": "trousse-procrastination",
+  "type": "trousse",
+  "groupe": "Outils d’intervention",
+  "titre": "Arrêter de remettre à plus tard",
+  "sous": "4 outils",
+  "desc": "Quatre fiches pour comprendre pourquoi on repousse une tâche et s’y mettre enfin : repérer l’émotion qui se cache derrière, trouver une première action de cinq minutes, travailler par blocs courts et se parler avec bienveillance.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Procrastination_2026.pdf"
+  ],
+  "payhip": "qDVOH",
+  "payhip_en": "qDVOH"
+ },
+ {
+  "id": "trousse-conflit",
+  "type": "trousse",
+  "groupe": "Outils d’intervention",
+  "titre": "Régler un conflit sans briser le lien",
+  "sous": "4 outils",
+  "desc": "Quatre fiches pour traverser un conflit avec une personne importante : faire le point à tête reposée, comprendre le point de vue de l’autre, choisir sa façon de réagir et préparer une discussion respectueuse.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Conflit_2026.pdf"
+  ],
+  "payhip": "qoGWy",
+  "payhip_en": "qoGWy"
+ },
+ {
+  "id": "trousse-demander_aide",
+  "type": "trousse",
+  "groupe": "Outils d’intervention",
+  "titre": "Oser demander de l’aide",
+  "sous": "4 outils",
+  "desc": "Quatre fiches pour franchir le pas quand quelque chose pèse : reconnaître les signes, nommer ce qui retient, repérer les personnes et les services vers qui se tourner, puis préparer ses mots.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Demander_aide_2026.pdf"
+  ],
+  "payhip": "KghtD",
+  "payhip_en": "KghtD"
+ },
+ {
+  "id": "trousse-budget",
+  "type": "trousse",
+  "groupe": "Outils d’intervention",
+  "titre": "Mon premier budget",
+  "sous": "4 outils",
+  "desc": "Quatre fiches pour apprivoiser la gestion de son argent : faire le portrait de ses revenus et de ses dépenses, distinguer besoins et envies, bâtir un plan mensuel avec un peu d’épargne et suivre son budget semaine après semaine.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Budget_2026.pdf"
+  ],
+  "payhip": "5M8Wh",
+  "payhip_en": "5M8Wh"
+ },
+ {
   "id": "trousse-habiletes_sociales",
   "type": "trousse",
   "groupe": "Habiletés et comportement",
@@ -6015,9 +6085,9 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses",
-  "sous": "125 trousses et éditions",
+  "sous": "130 trousses et éditions",
   "prix": 75.0,
-  "sous_en": "125 toolkits and editions",
+  "sous_en": "130 toolkits and editions",
   "desc": "La trousse principale, les 16 trousses spécialisées, les 102 trousses de la Collection et les 5 éditions.",
   "desc_en": "The main toolkit, the 16 specialized toolkits, the 102 Collection toolkits and the 5 editions.",
   "fichiers": [],
@@ -6040,6 +6110,11 @@
    "trousse-violence_sexuelle",
    "trousse-fondements_theoriques",
    "trousse-choix_eclaire",
+   "trousse-objectif",
+   "trousse-procrastination",
+   "trousse-conflit",
+   "trousse-demander_aide",
+   "trousse-budget",
    "trousse-habiletes_sociales",
    "trousse-communication_et_cooperation",
    "trousse-emotions_et_empathie",
@@ -6150,7 +6225,7 @@
   ],
   "payhip": "leD7m",
   "payhip_en": "leD7m",
-  "valeur": 844.0
+  "valeur": 859.0
  },
  {
   "id": "lot-mega",
@@ -6158,8 +6233,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie",
   "sous": "Toute la collection",
-  "desc": "Les 120 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
-  "desc_en": "All 120 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
+  "desc": "Les 125 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
+  "desc_en": "All 125 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -6180,6 +6255,11 @@
    "trousse-violence_sexuelle",
    "trousse-fondements_theoriques",
    "trousse-choix_eclaire",
+   "trousse-objectif",
+   "trousse-procrastination",
+   "trousse-conflit",
+   "trousse-demander_aide",
+   "trousse-budget",
    "trousse-habiletes_sociales",
    "trousse-communication_et_cooperation",
    "trousse-emotions_et_empathie",
@@ -6490,6 +6570,6 @@
   "prix": 129.0,
   "payhip": "UScCI",
   "payhip_en": "UScCI",
-  "valeur": 1502.0
+  "valeur": 1517.0
  }
 ]
