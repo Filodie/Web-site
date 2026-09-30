@@ -325,6 +325,14 @@ def images(items):
     for i in items:
         if i.get("contient"):
             i["img"] = i["contient"][0]
+            for lang in ("fr", "en"):                 # couverture propre au lot, si elle existe
+                c = os.path.join(HERE, "couvertures_lots", f"{i['id']}_{lang}.jpg")
+                if os.path.exists(c):
+                    from PIL import Image as _Im
+                    _c = _Im.open(c)
+                    _c.resize((420, round(420 * _c.height / _c.width)), _Im.LANCZOS).save(
+                        os.path.join(PUB, "img", lang, i["id"] + ".jpg"), quality=82)
+                    i["img"] = i["id"]
             for lang in ("fr", "en"):                 # lots : première page d’aperçu des premiers produits
                 i["pv_" + lang] = [par_id[c]["pv_" + lang][0] for c in i["contient"][:3] if par_id[c].get("pv_" + lang)]
 
