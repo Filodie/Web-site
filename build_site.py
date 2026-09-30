@@ -113,10 +113,13 @@ def catalogue():
         add(id="routines-" + pq.code.lower(), type="routines", groupe="Routines visuelles maison", titre=pq.titre,
             sous=pq.sous, desc=pq.desc, code=pq.code,
             fichiers=[f"Routines visuelles Filodie/Couleur/{f}.pdf", f"Routines visuelles Filodie/Noir et blanc/{f}_NB.pdf"])
+    from datetime import date as _d
+    _t = _d.today()
+    _nxt = (_d(_t.year + 1, 1, 1) if _t.month == 12 else _d(_t.year, _t.month + 1, 1)).strftime("%y%m")
     for pq in load_gratuit():
-        f = fichier_gratuit(pq)
+        f = fichier_gratuit(pq)                        # outils des mois futurs : cachés sur le site (futur=True)
         add(id="gratuit-" + pq.code.lower(), type="gratuit", groupe="Outil gratuit du mois", titre=pq.titre,
-            sous=pq.sous, desc=pq.desc, code=pq.code,
+            sous=pq.sous, desc=pq.desc, code=pq.code, futur=pq.code[-4:] > _nxt,
             fichiers=[f"Outils gratuits Filodie/Couleur/{f}.pdf", f"Outils gratuits Filodie/Noir et blanc/{f}_NB.pdf"])
     add(id="grand-livre", type="livre", groupe="Grand livre clinique", titre="Grand livre clinique T.E.S.",
         sous="143 fiches · 9 parties",
@@ -217,6 +220,13 @@ def catalogue():
             if o:
                 for k in (("payhip", "payhip_en") if "--prix" in sys.argv else ("prix", "payhip", "payhip_en")):
                     i[k] = o.get(k, i[k])
+    fiches = os.path.join(os.path.dirname(HERE), "Payhip – fiches", "fiches.csv")   # filet : codes notés dans fiches.csv
+    if os.path.exists(fiches):
+        import csv
+        codes = {r["id"]: r["code_payhip"] for r in csv.DictReader(open(fiches, encoding="utf-8-sig")) if r.get("code_payhip")}
+        for i in items:
+            if not i["payhip"] and codes.get(i["id"]):
+                i["payhip"] = i["payhip_en"] = codes[i["id"]]
     json.dump(items, open(CAT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(len(items), "produits dans produits.json")
 
@@ -834,7 +844,7 @@ FAVICON = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect wi
 def build():
     if "--catalogue" in sys.argv or "--prix" in sys.argv or not os.path.exists(CAT):
         catalogue()
-    items = json.load(open(CAT, encoding="utf-8"))
+    items = [i for i in json.load(open(CAT, encoding="utf-8")) if not i.get("futur")]
     for lang in ("fr", "en"):                         # chiffres de la page d’accueil, toujours à jour
         st = L[lang]["stats"]
         st[0] = (str(sum(1 for i in items if i["type"] == "trousse")), st[0][1])

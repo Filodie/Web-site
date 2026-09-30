@@ -4901,6 +4901,7 @@
   "sous": "4 routines pour une soirée qui se passe bien",
   "desc": "Se préparer, la tournée des bonbons, quand c'est trop pour moi, le retour à la maison. Outil gratuit du mois d'octobre 2026.",
   "code": "MOIS-2610",
+  "futur": false,
   "fichiers": [
    "Outils gratuits Filodie/Couleur/Filodie_MOIS-2610_Halloween_tout_en_douceur.pdf",
    "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2610_Halloween_tout_en_douceur_NB.pdf"
@@ -4917,6 +4918,7 @@
   "sous": "4 routines pour traverser novembre en douceur",
   "desc": "Revenir de l'école à la noirceur, garder mon énergie, une soirée calme, préparer le lendemain. Outil gratuit du mois de novembre 2026.",
   "code": "MOIS-2611",
+  "futur": true,
   "fichiers": [
    "Outils gratuits Filodie/Couleur/Filodie_MOIS-2611_Quand_il_fait_noir_tôt.pdf",
    "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2611_Quand_il_fait_noir_tôt_NB.pdf"
@@ -4924,6 +4926,176 @@
   "prix": 0.0,
   "payhip": "Tc9sY",
   "payhip_en": "Tc9sY"
+ },
+ {
+  "id": "gratuit-mois-2612",
+  "type": "gratuit",
+  "groupe": "Outil gratuit du mois",
+  "titre": "Les fêtes en douceur",
+  "sous": "4 routines pour des vacances de Noël plus sereines",
+  "desc": "Quand la routine change, une visite chez la famille, déballer un cadeau, revenir au calme. Outil gratuit du mois de décembre 2026.",
+  "code": "MOIS-2612",
+  "futur": true,
+  "fichiers": [
+   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2612_Les_fêtes_en_douceur.pdf",
+   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2612_Les_fêtes_en_douceur_NB.pdf"
+  ],
+  "prix": 0.0,
+  "payhip": "5ZenH",
+  "payhip_en": "5ZenH"
+ },
+ {
+  "id": "gratuit-mois-2701",
+  "type": "gratuit",
+  "groupe": "Outil gratuit du mois",
+  "titre": "Une nouvelle année, un nouveau fil",
+  "sous": "4 routines pour bien commencer janvier",
+  "desc": "Retour à l'école après les fêtes, mon objectif de l'année, jouer dehors l'hiver, mes petites victoires. Outil gratuit du mois de janvier 2027.",
+  "code": "MOIS-2701",
+  "futur": true,
+  "fichiers": [
+   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2701_Une_nouvelle_année_un_nouveau_fil.pdf",
+   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2701_Une_nouvelle_année_un_nouveau_fil_NB.pdf"
+  ],
+  "prix": 0.0,
+  "payhip": "X1qmJ",
+  "payhip_en": "X1qmJ"
+ },
+ {
+  "id": "gratuit-mois-2702",
+  "type": "gratuit",
+  "groupe": "Outil gratuit du mois",
+  "titre": "Prendre soin de moi et des autres",
+  "sous": "4 routines pour le mois de la bienveillance",
+  "desc": "Quand ça ne va pas, ma boîte à bien-être, aider un ami qui a de la peine, être gentil. Outil gratuit du mois de février 2027 (Semaine de prévention du suicide et Saint-Valentin).",
+  "code": "MOIS-2702",
+  "futur": true,
+  "fichiers": [
+   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2702_Prendre_soin_de_moi_et_des_autres.pdf",
+   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2702_Prendre_soin_de_moi_et_des_autres_NB.pdf"
+  ],
+  "prix": 0.0,
+  "payhip": "dYjM9",
+  "payhip_en": "dYjM9"
+ },
+ {
+  "id": "gratuit-mois-2703",
+  "type": "gratuit",
+  "groupe": "Outil gratuit du mois",
+  "titre": "Une relâche qui a du rythme",
+  "sous": "4 routines pour la semaine de relâche",
+  "desc": "Ma journée de relâche, une sortie, les écrans en congé, retour à l'école. Outil gratuit du mois de mars 2027.",
+  "code": "MOIS-2703",
+  "futur": true,
+  "fichiers": [
+   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2703_Une_relâche_qui_a_du_rythme.pdf",
+   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2703_Une_relâche_qui_a_du_rythme_NB.pdf"
+  ],
+  "prix": 0.0,
+  "payhip": "1tiUT",
+  "payhip_en": "1tiUT"
+ },
+ {
+  "id": "gratuit-mois-2704",
+  "type": "gratuit",
+  "groupe": "Outil gratuit du mois",
+  "titre": "Tous différents, tous ensemble",
+  "sous": "4 routines pour le Mois de l'autisme",
+  "desc": "Accueillir un ami différent, mon coin calme en classe, quand il y a un changement, quand le bruit est trop fort. Outil gratuit du mois d'avril 2027.",
+  "code": "MOIS-2704",
+  "futur": true,
+  "fichiers": [
+   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2704_Tous_différents_tous_ensemble.pdf",
+   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2704_Tous_différents_tous_ensemble_NB.pdf"
+  ],
+  "prix": 0.0,
+  "payhip": "e2giZ",
+  "payhip_en": "e2giZ"
+ },
+ {
+  "id": "gratuit-mois-2705",
+  "type": "gratuit",
+  "groupe": "Outil gratuit du mois",
+  "titre": "Dehors au printemps",
+  "sous": "4 routines pour profiter du beau temps",
+  "desc": "Faire du vélo en sécurité, planter une graine, m'habiller selon la météo, ranger mes choses d'hiver. Outil gratuit du mois de mai 2027.",
+  "code": "MOIS-2705",
+  "futur": true,
+  "fichiers": [
+   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2705_Dehors_au_printemps.pdf",
+   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2705_Dehors_au_printemps_NB.pdf"
+  ],
+  "prix": 0.0,
+  "payhip": "Jd42H",
+  "payhip_en": "Jd42H"
+ },
+ {
+  "id": "gratuit-mois-2706",
+  "type": "gratuit",
+  "groupe": "Outil gratuit du mois",
+  "titre": "Au revoir, l'année scolaire",
+  "sous": "4 routines pour bien terminer juin",
+  "desc": "Dire au revoir, vider mon pupitre, mes souvenirs de l'année, me préparer à l'été. Outil gratuit du mois de juin 2027.",
+  "code": "MOIS-2706",
+  "futur": true,
+  "fichiers": [
+   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2706_Au_revoir_l_année_scolaire.pdf",
+   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2706_Au_revoir_l_année_scolaire_NB.pdf"
+  ],
+  "prix": 0.0,
+  "payhip": "4yQR5",
+  "payhip_en": "4yQR5"
+ },
+ {
+  "id": "gratuit-mois-2707",
+  "type": "gratuit",
+  "groupe": "Outil gratuit du mois",
+  "titre": "Un été qui a du rythme",
+  "sous": "4 routines pour les vacances d'été",
+  "desc": "Ma journée d'été, me protéger du soleil, la baignade en sécurité, le camp de jour. Outil gratuit du mois de juillet 2027.",
+  "code": "MOIS-2707",
+  "futur": true,
+  "fichiers": [
+   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2707_Un_été_qui_a_du_rythme.pdf",
+   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2707_Un_été_qui_a_du_rythme_NB.pdf"
+  ],
+  "prix": 0.0,
+  "payhip": "ogiVZ",
+  "payhip_en": "ogiVZ"
+ },
+ {
+  "id": "gratuit-mois-2708",
+  "type": "gratuit",
+  "groupe": "Outil gratuit du mois",
+  "titre": "Prêt pour la rentrée",
+  "sous": "4 routines pour préparer septembre",
+  "desc": "Préparer mes effets scolaires, retrouver l'heure du dodo, visiter ma nouvelle école, ma première journée. Outil gratuit du mois d'août 2027.",
+  "code": "MOIS-2708",
+  "futur": true,
+  "fichiers": [
+   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2708_Prêt_pour_la_rentrée.pdf",
+   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2708_Prêt_pour_la_rentrée_NB.pdf"
+  ],
+  "prix": 0.0,
+  "payhip": "puoUg",
+  "payhip_en": "puoUg"
+ },
+ {
+  "id": "gratuit-mois-2709",
+  "type": "gratuit",
+  "groupe": "Outil gratuit du mois",
+  "titre": "Mes émotions de la rentrée",
+  "sous": "4 routines pour les premières semaines d'école",
+  "desc": "Quand je m'ennuie de la maison, me faire un nouvel ami, demander de l'aide en classe, raconter ma journée. Outil gratuit du mois de septembre 2027.",
+  "code": "MOIS-2709",
+  "futur": true,
+  "fichiers": [
+   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2709_Mes_émotions_de_la_rentrée.pdf",
+   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2709_Mes_émotions_de_la_rentrée_NB.pdf"
+  ],
+  "prix": 0.0,
+  "payhip": "4oMdO",
+  "payhip_en": "4oMdO"
  },
  {
   "id": "grand-livre",
