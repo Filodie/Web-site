@@ -406,6 +406,76 @@
   "payhip_en": "hV5lt"
  },
  {
+  "id": "trousse-ecoute_active",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Écouter pour aider",
+  "sous": "6 outils",
+  "desc": "Six fiches pour développer les habiletés de base de la relation d’aide : attitudes d’accueil, questions ouvertes, reformulation et reflet, résumé, pièges à éviter, puis autoévaluation d’un entretien.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Ecoute_active_2026.pdf"
+  ],
+  "payhip": "LRQdH",
+  "payhip_en": "LRQdH"
+ },
+ {
+  "id": "trousse-ethique_stage",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Éthique et limites en stage",
+  "sous": "6 outils",
+  "desc": "Six fiches pour réfléchir à l’éthique en stage : valeurs professionnelles, limites de la relation, confidentialité, réseaux sociaux, analyse d’un dilemme en étapes et situations à discuter en supervision.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Ethique_stage_2026.pdf"
+  ],
+  "payhip": "NZEUQ",
+  "payhip_en": "NZEUQ"
+ },
+ {
+  "id": "trousse-etude_de_cas",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Présenter une étude de cas",
+  "sous": "6 outils",
+  "desc": "Six fiches pour structurer une étude de cas en T.E.S. : collecte d’information, portrait de la personne, analyse des besoins, hypothèses, pistes d’intervention, puis préparation de la présentation orale ou écrite.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Etude_de_cas_2026.pdf"
+  ],
+  "payhip": "LMorY",
+  "payhip_en": "LMorY"
+ },
+ {
+  "id": "trousse-reseau_ressources",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Mon réseau de ressources",
+  "sous": "6 outils",
+  "desc": "Six fiches pour connaître et utiliser le réseau d’aide : carte des ressources de sa région, services publics, organismes communautaires, lignes d’écoute, démarche pour diriger une personne et suivi après la référence.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Reseau_ressources_2026.pdf"
+  ],
+  "payhip": "BO7DJ",
+  "payhip_en": "BO7DJ"
+ },
+ {
+  "id": "trousse-premier_emploi",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Décrocher mon premier emploi en T.E.S.",
+  "sous": "6 outils",
+  "desc": "Six fiches pour passer des études au marché du travail : bilan de compétences, portfolio, curriculum vitæ adapté, préparation à l’entrevue avec des mises en situation, questions à poser et plan de recherche d’emploi.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Premier_emploi_2026.pdf"
+  ],
+  "payhip": "qGjVR",
+  "payhip_en": "qGjVR"
+ },
+ {
   "id": "trousse-habiletes_sociales",
   "type": "trousse",
   "groupe": "Habiletés et comportement",
@@ -6169,9 +6239,9 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses",
-  "sous": "136 trousses et éditions",
+  "sous": "141 trousses et éditions",
   "prix": 75.0,
-  "sous_en": "136 toolkits and editions",
+  "sous_en": "141 toolkits and editions",
   "desc": "La trousse principale, les 16 trousses spécialisées, les 102 trousses de la Collection et les 5 éditions.",
   "desc_en": "The main toolkit, the 16 specialized toolkits, the 102 Collection toolkits and the 5 editions.",
   "fichiers": [],
@@ -6205,6 +6275,11 @@
    "trousse-journal_stage",
    "trousse-activite_educative",
    "trousse-plan_intervention",
+   "trousse-ecoute_active",
+   "trousse-ethique_stage",
+   "trousse-etude_de_cas",
+   "trousse-reseau_ressources",
+   "trousse-premier_emploi",
    "trousse-habiletes_sociales",
    "trousse-communication_et_cooperation",
    "trousse-emotions_et_empathie",
@@ -6315,7 +6390,7 @@
   ],
   "payhip": "leD7m",
   "payhip_en": "leD7m",
-  "valeur": 877.0
+  "valeur": 892.0
  },
  {
   "id": "lot-mega",
@@ -6323,8 +6398,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie",
   "sous": "Toute la collection",
-  "desc": "Les 131 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
-  "desc_en": "All 131 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
+  "desc": "Les 136 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
+  "desc_en": "All 136 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -6356,6 +6431,11 @@
    "trousse-journal_stage",
    "trousse-activite_educative",
    "trousse-plan_intervention",
+   "trousse-ecoute_active",
+   "trousse-ethique_stage",
+   "trousse-etude_de_cas",
+   "trousse-reseau_ressources",
+   "trousse-premier_emploi",
    "trousse-habiletes_sociales",
    "trousse-communication_et_cooperation",
    "trousse-emotions_et_empathie",
@@ -6666,6 +6746,6 @@
   "prix": 129.0,
   "payhip": "UScCI",
   "payhip_en": "UScCI",
-  "valeur": 1535.0
+  "valeur": 1550.0
  }
 ]
