@@ -761,7 +761,7 @@ CONTENT = {
 <h2>Governing law</h2><p>These terms are governed by the laws of Québec and Canada.</p>"""),
     ("fr", "confidentialite.html"): ("Politique de confidentialité", """
 <p>Dernière mise à jour : 28 septembre 2026.</p>
-<h2>Responsable de la protection des renseignements personnels</h2><p>Mélodie <em>[nom de famille]</em>, propriétaire de Filodie · melodie@filodie.ca</p>
+<h2>Responsable de la protection des renseignements personnels</h2><p>Mélodie, propriétaire de Filodie · melodie@filodie.ca</p>
 <h2>Renseignements recueillis</h2><ul><li>Lors d’un achat : nom, adresse courriel, pays ou province (pour les taxes) et historique d’achat, recueillis par Payhip.</li>
 <li>Si vous vous abonnez à l’infolettre : adresse courriel et prénom, avec votre consentement explicite.</li>
 <li>Si vous nous écrivez : le contenu de votre message.</li></ul>
@@ -772,7 +772,7 @@ CONTENT = {
 <h2>Vos droits</h2><p>Vous pouvez demander l’accès à vos renseignements, leur rectification ou leur suppression en écrivant à melodie@filodie.ca. Vous pouvez aussi porter plainte à la Commission d’accès à l’information du Québec.</p>"""),
     ("en", "privacy.html"): ("Privacy policy", """
 <p>Last updated: September 28, 2026.</p>
-<h2>Person in charge of personal information</h2><p>Mélodie <em>[last name]</em>, owner of Filodie · melodie@filodie.ca</p>
+<h2>Person in charge of personal information</h2><p>Mélodie, owner of Filodie · melodie@filodie.ca</p>
 <h2>Information collected</h2><ul><li>When you buy: name, email address, country or province (for taxes) and purchase history, collected by Payhip.</li>
 <li>If you subscribe to the newsletter: email address and first name, with your express consent.</li>
 <li>If you write to us: the content of your message.</li></ul>
