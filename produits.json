@@ -4630,6 +4630,102 @@
   "payhip_en": "BtgQX"
  },
  {
+  "id": "routines-rtn-a",
+  "type": "routines",
+  "groupe": "Routines visuelles maison",
+  "titre": "Routines du matin",
+  "sous": "5 routines pour des matins plus calmes",
+  "desc": "Se lever et s'habiller, déjeuner, hygiène du matin, prêt à partir, matin de fin de semaine.",
+  "code": "RTN-A",
+  "fichiers": [
+   "Routines visuelles Filodie/Couleur/Filodie_RTN-A_Routines_du_matin.pdf",
+   "Routines visuelles Filodie/Noir et blanc/Filodie_RTN-A_Routines_du_matin_NB.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "rbvxE",
+  "payhip_en": "rbvxE"
+ },
+ {
+  "id": "routines-rtn-b",
+  "type": "routines",
+  "groupe": "Routines visuelles maison",
+  "titre": "Routines du soir et du dodo",
+  "sous": "5 routines pour des soirées apaisées",
+  "desc": "Retour à la maison, le bain, brosser ses dents, préparer la chambre, routine du dodo.",
+  "code": "RTN-B",
+  "fichiers": [
+   "Routines visuelles Filodie/Couleur/Filodie_RTN-B_Routines_du_soir_et_du_dodo.pdf",
+   "Routines visuelles Filodie/Noir et blanc/Filodie_RTN-B_Routines_du_soir_et_du_dodo_NB.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "DSBrd",
+  "payhip_en": "DSBrd"
+ },
+ {
+  "id": "routines-rtn-c",
+  "type": "routines",
+  "groupe": "Routines visuelles maison",
+  "titre": "Routines des repas et de l'hygiène",
+  "sous": "5 routines du quotidien",
+  "desc": "Se laver les mains, mettre la table, pendant le repas, après le repas, aller à la toilette.",
+  "code": "RTN-C",
+  "fichiers": [
+   "Routines visuelles Filodie/Couleur/Filodie_RTN-C_Routines_des_repas_et_de_l_hygiène.pdf",
+   "Routines visuelles Filodie/Noir et blanc/Filodie_RTN-C_Routines_des_repas_et_de_l_hygiène_NB.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "YpFv6",
+  "payhip_en": "YpFv6"
+ },
+ {
+  "id": "routines-rtn-d",
+  "type": "routines",
+  "groupe": "Routines visuelles maison",
+  "titre": "Routines des devoirs et de l'organisation",
+  "sous": "5 routines pour s'organiser seul",
+  "desc": "Les devoirs, préparer son sac, ranger sa chambre, le temps d'écran, préparer ses vêtements.",
+  "code": "RTN-D",
+  "fichiers": [
+   "Routines visuelles Filodie/Couleur/Filodie_RTN-D_Routines_des_devoirs_et_de_l_organisation.pdf",
+   "Routines visuelles Filodie/Noir et blanc/Filodie_RTN-D_Routines_des_devoirs_et_de_l_organisation_NB.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "CTrlD",
+  "payhip_en": "CTrlD"
+ },
+ {
+  "id": "routines-rtn-e",
+  "type": "routines",
+  "groupe": "Routines visuelles maison",
+  "titre": "Routines des sorties et des transitions",
+  "sous": "5 routines pour mieux vivre les changements",
+  "desc": "S'habiller pour l'hiver, l'épicerie, un rendez-vous, un trajet en auto, quitter le parc.",
+  "code": "RTN-E",
+  "fichiers": [
+   "Routines visuelles Filodie/Couleur/Filodie_RTN-E_Routines_des_sorties_et_des_transitions.pdf",
+   "Routines visuelles Filodie/Noir et blanc/Filodie_RTN-E_Routines_des_sorties_et_des_transitions_NB.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "Geym2",
+  "payhip_en": "Geym2"
+ },
+ {
+  "id": "routines-rtn-f",
+  "type": "routines",
+  "groupe": "Routines visuelles maison",
+  "titre": "Routines d'autonomie à la maison",
+  "sous": "5 routines pour grandir en responsabilités",
+  "desc": "Préparer sa collation, faire son lit, nourrir son animal, s'occuper de son linge, se calmer à la maison.",
+  "code": "RTN-F",
+  "fichiers": [
+   "Routines visuelles Filodie/Couleur/Filodie_RTN-F_Routines_d_autonomie_à_la_maison.pdf",
+   "Routines visuelles Filodie/Noir et blanc/Filodie_RTN-F_Routines_d_autonomie_à_la_maison_NB.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "d6yrs",
+  "payhip_en": "d6yrs"
+ },
+ {
   "id": "grand-livre",
   "type": "livre",
   "groupe": "Grand livre clinique",
@@ -5213,6 +5309,30 @@
   "valeur": 42.0
  },
  {
+  "id": "lot-routines",
+  "type": "lot_routines",
+  "groupe": "Lots",
+  "titre": "Toutes les routines visuelles maison",
+  "titre_en": "All the Home Visual Routines",
+  "sous": "30 routines · 6 paquets",
+  "sous_en": "30 routines · 6 packs",
+  "desc": "Matin, soir et dodo, repas et hygiène, devoirs, sorties et autonomie : chaque routine en séquence illustrée et en tableau de motivation, avec un guide pour les parents, en couleur et en noir et blanc.",
+  "desc_en": "Morning, evening and bedtime, meals and hygiene, homework, outings and independence: each routine as an illustrated sequence and a motivation chart, with a parent guide, in colour and black and white.",
+  "fichiers": [],
+  "contient": [
+   "routines-rtn-a",
+   "routines-rtn-b",
+   "routines-rtn-c",
+   "routines-rtn-d",
+   "routines-rtn-e",
+   "routines-rtn-f"
+  ],
+  "prix": 19.0,
+  "payhip": "EG732",
+  "payhip_en": "EG732",
+  "valeur": 30.0
+ },
+ {
   "id": "lot-specialisees",
   "type": "lot_specialisees",
   "groupe": "Lots",
@@ -5573,8 +5693,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie",
   "sous": "Toute la collection",
-  "desc": "Les 107 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, le Grand livre clinique et le bottin régional.",
-  "desc_en": "All 107 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the Clinical Handbook and the regional directory.",
+  "desc": "Les 107 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
+  "desc_en": "All 107 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -5880,12 +6000,18 @@
    "jeux-jeu-d",
    "jeux-jeu-e",
    "jeux-jeu-f",
+   "routines-rtn-a",
+   "routines-rtn-b",
+   "routines-rtn-c",
+   "routines-rtn-d",
+   "routines-rtn-e",
+   "routines-rtn-f",
    "grand-livre",
    "bottin-regional"
   ],
   "prix": 129.0,
   "payhip": "UScCI",
   "payhip_en": "UScCI",
-  "valeur": 1385.0
+  "valeur": 1415.0
  }
 ]
