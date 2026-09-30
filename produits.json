@@ -4894,6 +4894,22 @@
   "payhip_en": "d6yrs"
  },
  {
+  "id": "gratuit-mois-2610",
+  "type": "gratuit",
+  "groupe": "Outil gratuit du mois",
+  "titre": "Halloween tout en douceur",
+  "sous": "4 routines pour une soirée qui se passe bien",
+  "desc": "Se préparer, la tournée des bonbons, quand c'est trop pour moi, le retour à la maison. Outil gratuit du mois d'octobre 2026.",
+  "code": "MOIS-2610",
+  "fichiers": [
+   "Outils gratuits Filodie/Couleur/Filodie_MOIS-2610_Halloween_tout_en_douceur.pdf",
+   "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2610_Halloween_tout_en_douceur_NB.pdf"
+  ],
+  "prix": 0.0,
+  "payhip": "Sz7wI",
+  "payhip_en": "Sz7wI"
+ },
+ {
   "id": "grand-livre",
   "type": "livre",
   "groupe": "Grand livre clinique",

@@ -52,7 +52,7 @@ def en(i, k):
 PRIX = {"trousse": 7.00, "edition": 3.00, "cahier": 3.00, "livre": 19.00, "bottin": 0.0,
         "lot_cahiers": 25.00, "lot_collection": 25.00, "lot_specialisees": 39.00, "lot_tout": 75.00, "mega": 129.00,
         "affiches": 5.00, "lot_affiches": 19.00, "jeux": 7.00, "lot_jeux": 29.00,
-        "routines": 5.00, "lot_routines": 19.00}
+        "routines": 5.00, "lot_routines": 19.00, "gratuit": 0.00}
 
 
 # --------------------------------------------------------------------------- catalogue
@@ -66,6 +66,7 @@ def catalogue():
     from filodie_affiches import load as load_affiches, fichier as fichier_affiches
     from filodie_jeux import load as load_jeux, fichier as fichier_jeux
     from filodie_routines import load as load_routines, fichier as fichier_routines
+    from outil_du_mois import load as load_gratuit, fichier as fichier_gratuit
     items = []
 
     def add(**k):
@@ -112,6 +113,11 @@ def catalogue():
         add(id="routines-" + pq.code.lower(), type="routines", groupe="Routines visuelles maison", titre=pq.titre,
             sous=pq.sous, desc=pq.desc, code=pq.code,
             fichiers=[f"Routines visuelles Filodie/Couleur/{f}.pdf", f"Routines visuelles Filodie/Noir et blanc/{f}_NB.pdf"])
+    for pq in load_gratuit():
+        f = fichier_gratuit(pq)
+        add(id="gratuit-" + pq.code.lower(), type="gratuit", groupe="Outil gratuit du mois", titre=pq.titre,
+            sous=pq.sous, desc=pq.desc, code=pq.code,
+            fichiers=[f"Outils gratuits Filodie/Couleur/{f}.pdf", f"Outils gratuits Filodie/Noir et blanc/{f}_NB.pdf"])
     add(id="grand-livre", type="livre", groupe="Grand livre clinique", titre="Grand livre clinique T.E.S.",
         sous="143 fiches · 9 parties",
         desc="Les connaissances essentielles de la pratique en éducation spécialisée, en fiches visuelles avec une zone "
@@ -190,7 +196,7 @@ def catalogue():
              "et le bottin régional.",
         desc_en=f"All {ntr} toolkits, the editions, the {len(tous)} visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook "
                 "and the regional directory.",
-        fichiers=[], contient=[i["id"] for i in items if not i["type"].startswith("lot") and i["type"] != "mega"])
+        fichiers=[], contient=[i["id"] for i in items if not i["type"].startswith("lot") and i["type"] not in ("mega", "gratuit")])
     # lots de collection : environ 2,50 $ par trousse, arrondi à 5 $, entre 25 $ et 30 $
     # (petites collections de moins de 6 trousses : environ 30 % de rabais sur le prix à l'unité)
     for i in items:
@@ -295,7 +301,7 @@ L = {
         "lang": "fr-CA", "other": "en", "other_label": "EN", "base": "",
         "tag": "Outils cliniques pour T.E.S.",
         "nav": [("index.html", "Accueil"), ("boutique.html", "Boutique"), ("bottin.html", "Bottin gratuit"),
-                ("a-propos.html", "À propos"), ("faq.html", "FAQ"), ("contact.html", "Contact")],
+                ("services.html", "Services"), ("a-propos.html", "À propos"), ("faq.html", "FAQ"), ("contact.html", "Contact")],
         "hero_k": "Outils cliniques · éducation spécialisée",
         "hero_1": "Tenir le fil,", "hero_2": "de l’observation à l’intervention.",
         "hero_p": "Des trousses, des cahiers visuels et un grand livre clinique conçus au Québec pour les T.E.S., "
@@ -315,7 +321,7 @@ L = {
                 ("Livraison immédiate", "Vos fichiers sont téléchargeables dès le paiement, et le lien vous est aussi envoyé par courriel.")],
         "shop_t": "Boutique", "shop_p": "Chaque achat inclut la version française et la version anglaise. Cahiers à 3 $, trousses à 7 $, et des lots jusqu’à 90 % moins chers. Prix en dollars canadiens, téléchargement immédiat après le paiement.",
         "search": "Rechercher un outil…", "all": "Tout",
-        "types": {"trousse": "Trousses", "edition": "Éditions", "cahier": "Cahiers visuels", "affiches": "Affiches", "jeux": "Jeux", "routines": "Routines", "livre": "Grand livre",
+        "types": {"trousse": "Trousses", "edition": "Éditions", "cahier": "Cahiers visuels", "affiches": "Affiches", "jeux": "Jeux", "routines": "Routines", "gratuit": "Gratuit", "livre": "Grand livre",
                   "bottin": "Bottin", "lot": "Lots"},
         "buy": "Acheter", "soon": "Bientôt disponible", "free": "Gratuit", "get": "Obtenir", "details": "Détails", "cahier_nb": " · Couleur + version noir et blanc à colorier",
         "aff_nb": " · Couleur + noir et blanc · lettre et 11 × 17",
@@ -338,7 +344,7 @@ L = {
         "lang": "en-CA", "other": "fr", "other_label": "FR", "base": "../",
         "tag": "Clinical tools for special care counsellors",
         "nav": [("index.html", "Home"), ("shop.html", "Shop"), ("directory.html", "Free directory"),
-                ("about.html", "About"), ("faq.html", "FAQ"), ("contact.html", "Contact")],
+                ("services.html", "Services"), ("about.html", "About"), ("faq.html", "FAQ"), ("contact.html", "Contact")],
         "hero_k": "Clinical tools · special care counselling",
         "hero_1": "Hold the thread,", "hero_2": "from observation to intervention.",
         "hero_p": "Toolkits, visual workbooks and a clinical handbook made in Québec for special care counsellors, "
@@ -357,7 +363,7 @@ L = {
                 ("Instant delivery", "Your files can be downloaded right after payment, and the link is also emailed to you.")],
         "shop_t": "Shop", "shop_p": "Every purchase includes both the English and French versions. Workbooks at $3, toolkits at $7, and bundles up to 90% off. Prices in Canadian dollars, instant download after payment.",
         "search": "Search for a tool…", "all": "All",
-        "types": {"trousse": "Toolkits", "edition": "Editions", "cahier": "Visual workbooks", "affiches": "Posters", "jeux": "Games", "routines": "Routines", "livre": "Handbook",
+        "types": {"trousse": "Toolkits", "edition": "Editions", "cahier": "Visual workbooks", "affiches": "Posters", "jeux": "Games", "routines": "Routines", "gratuit": "Free", "livre": "Handbook",
                   "bottin": "Directory", "lot": "Bundles"},
         "buy": "Buy", "soon": "Coming soon", "free": "Free", "get": "Get it", "details": "Details", "cahier_nb": " · Colour + black-and-white colouring version",
         "aff_nb": " · Colour + black and white · letter and 11 × 17",
@@ -379,7 +385,7 @@ L = {
 
 # pages équivalentes (bouton de langue)
 PAIRS = {"index.html": "index.html", "boutique.html": "shop.html", "bottin.html": "directory.html",
-         "a-propos.html": "about.html", "faq.html": "faq.html", "contact.html": "contact.html",
+         "a-propos.html": "about.html", "faq.html": "faq.html", "contact.html": "contact.html", "services.html": "services.html",
          "licence.html": "licence.html", "conditions.html": "terms.html", "confidentialite.html": "privacy.html"}
 PAIRS_EN = {v: k for k, v in PAIRS.items()}
 
@@ -486,10 +492,40 @@ def home(lang):
     <div class="stats">{stats}</div>
   </div>
 </section>
+{gratuits(lang)}
 <section class="wrap"><h2>{t['col_t']}</h2><div class="grid4">{cols}</div></section>
 <section class="band"><div class="wrap"><h2>{t['why_t']}</h2><div class="grid4 why">{why}</div></div></section>
 """
-    return page(lang, "index.html", "Filodie", body)
+    return page(lang, "index.html", "Filodie", body, scripts='<script src="https://payhip.com/payhip.js"></script>')
+
+
+def gratuits(lang):
+    """Section « Commencer gratuitement » : trousse découverte, outil du mois, bottin (aimant à courriels)."""
+    items = {i["id"]: i for i in json.load(open(CAT, encoding="utf-8"))}
+    mois = sorted((i for i in items.values() if i["type"] == "gratuit"), key=lambda i: i["id"])
+    ids = ["trousse-trousse_decouverte"] + ([mois[-1]["id"]] if mois else []) + ["bottin-regional"]
+    fr = lang == "fr"
+    etiq = {"trousse-trousse_decouverte": "Trousse découverte" if fr else "Starter toolkit",
+            "bottin-regional": "Bottin des 17 régions" if fr else "17-region directory"}
+    cards = ""
+    for k in ids:
+        i = items.get(k)
+        if not i:
+            continue
+        code = i["payhip_en"] if not fr else i["payhip"]
+        titre = i["titre"] if fr else en(i, "titre")
+        lab = etiq.get(k) or ("Outil gratuit du mois" if fr else "Free tool of the month")
+        btn = (f'<a class="btn payhip-buy-button" data-theme="none" data-product="{code}" href="https://payhip.com/b/{code}">'
+               f'{"Recevoir gratuitement" if fr else "Get it free"}</a>') if code else ""
+        cards += (f'<div class="card col"><img src="{L[lang]["base"]}img/{lang}/{k}.jpg{iv(lang, k)}" alt="" loading="lazy">'
+                  f'<p class="kicker" style="padding:0 16px;margin:12px 0 0">{lab}</p><h3>{html.escape(titre)}</h3>'
+                  f'<p style="padding-bottom:16px">{btn}</p></div>')
+    h2 = "Commencer gratuitement" if fr else "Start for free"
+    sous = ("Trois outils offerts, en français et en anglais. Cochez la case au paiement pour recevoir l’outil gratuit "
+            "de chaque mois et les nouveautés." if fr else
+            "Three free tools, in French and English. Tick the box at checkout to get each month’s free tool and "
+            "what’s new.")
+    return f'<section class="wrap"><h2>{h2}</h2><p class="lead">{sous}</p><div class="grid4">{cards}</div></section>'
 
 
 def shop(lang, items):
@@ -508,7 +544,7 @@ def shop(lang, items):
             "n": en(i, "titre") if lang == "en" else i["titre"],
             "s": (en(i, "sous") if lang == "en" else i["sous"])
                  + (t["cahier_nb"] if i["type"] == "cahier" else t["aff_nb"] if i["type"] == "affiches"
-                    else t["jeux_nb"] if i["type"] == "jeux" else t["rtn_nb"] if i["type"] == "routines" else ""),
+                    else t["jeux_nb"] if i["type"] == "jeux" else t["rtn_nb"] if i["type"] in ("routines", "gratuit") else ""),
             "d": en(i, "desc") if lang == "en" else i["desc"],
             "p": i["prix"], "k": i["payhip_en"] if lang == "en" else i["payhip"],
             "img": f"{t['base']}img/{img_lang}/{img}.jpg{iv(img_lang, img)}",
@@ -606,6 +642,28 @@ CONTENT = {
 <h2>My commitments</h2>
 <ul><li>Original, reviewed and dated content.</li><li>Resources verified at the source and updated every year.</li>
 <li>Tools that respect the dignity and self-determination of every person.</li></ul>"""),
+    ("fr", "services.html"): ("Services", """
+<p class="lead">Au-delà de la boutique, Filodie accompagne les équipes et les familles avec des outils conçus pour elles.</p>
+<h2>Outils sur mesure</h2>
+<p>Un jeune, une classe ou un milieu a besoin d’un outil qui n’existe pas encore ? Je le crée pour vous : routine visuelle avec les photos de votre milieu, plan de crise, histoire sociale, tableau de motivation, grille d’observation adaptée à votre clientèle. Chaque outil est livré en PDF remplissable, avec la signature Filodie et les sources qui l’appuient.</p>
+<ul><li>Vous décrivez le besoin par courriel (aucune information nominative sur la personne n’est nécessaire).</li><li>Je vous envoie une proposition et un prix avant de commencer.</li><li>Une ronde de corrections est incluse.</li></ul>
+<h2>Ateliers et formations</h2>
+<p>Des ateliers pratiques d’une à trois heures, en personne ou à distance, pour les équipes-écoles, CPE, organismes et stagiaires : observer et comprendre un comportement, bâtir un plan d’intervention qui tient la route, soutenir la régulation émotionnelle, utiliser les supports visuels. Chaque participant repart avec les outils Filodie utilisés pendant l’atelier.</p>
+<h2>Licence d’équipe</h2>
+<p>Pour déposer les fichiers sur le réseau interne d’une école, d’un CPE ou d’un organisme : 3 fois le prix individuel, jusqu’à 25 intervenantes et intervenants. Une facture au nom de l’établissement est fournie.</p>
+<p><a class="btn" href="mailto:melodie@filodie.ca?subject=Demande%20de%20service%20Filodie">Écrire à Mélodie</a></p>
+"""),
+    ("en", "services.html"): ("Services", """
+<p class="lead">Beyond the shop, Filodie supports teams and families with tools designed for them.</p>
+<h2>Custom tools</h2>
+<p>Does a child, a class or a setting need a tool that does not exist yet? I will create it for you: a visual routine with photos of your setting, a crisis plan, a social story, a motivation chart, an observation grid adapted to your clients. Every tool comes as a fillable PDF, with the Filodie signature and the sources behind it.</p>
+<ul><li>Describe the need by email (no identifying information about the person is needed).</li><li>I send you a proposal and a price before starting.</li><li>One round of revisions is included.</li></ul>
+<h2>Workshops and training</h2>
+<p>Hands-on workshops of one to three hours, in person or online, for school teams, daycares, organizations and interns: observing and understanding behaviour, building an intervention plan that holds up, supporting emotional regulation, using visual supports. Every participant leaves with the Filodie tools used during the workshop.</p>
+<h2>Team licence</h2>
+<p>To share the files on the internal network of a school, daycare or organization: 3 times the individual price, for up to 25 staff members. An invoice in the organization’s name is provided.</p>
+<p><a class="btn" href="mailto:melodie@filodie.ca?subject=Filodie%20service%20request">Email Mélodie</a></p>
+"""),
     ("fr", "faq.html"): ("Questions fréquentes", """
 <h2>Comment je reçois mes outils ?</h2><p>Dès le paiement, une page de téléchargement s’ouvre et un courriel contenant le lien vous est envoyé. Vous pouvez télécharger vos fichiers plusieurs fois.</p>
 <h2>Les PDF sont-ils remplissables ?</h2><p>Oui : la plupart des fiches se remplissent à l’écran (Adobe Acrobat Reader, Aperçu sur Mac, navigateur) et s’impriment en format lettre.</p>
