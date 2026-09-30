@@ -702,7 +702,7 @@ CONTENT = {
 <h2>Pourquoi mon courriel apparaît-il sur les pages ?</h2><p>Chaque PDF est personnalisé au nom de l’acheteuse ou de l’acheteur. Cela protège le travail de création et permet de garder les prix accessibles.</p>
 <h2>Les ressources de ma région sont-elles incluses ?</h2><p>Chaque trousse contient une page des 17 régions (DPJ, crise, autisme). Le bottin régional complet est gratuit.</p>
 <h2>Existe-t-il des versions en anglais ?</h2><p>Oui, chaque outil a une version anglaise (bouton EN en haut de la page).</p>
-<h2>Puis-je être remboursée ?</h2><p>Si un fichier est défectueux ou ne correspond pas à sa description, écrivez-nous dans les 14 jours : nous le corrigeons ou nous vous remboursons. Voir les <a href="conditions.html">conditions de vente</a>.</p>
+<h2>Et si un fichier pose problème ?</h2><p>Les produits numériques ne sont pas remboursables. Si un fichier est défectueux ou ne correspond pas à sa description, écrivez-nous : nous le corrigeons ou le remplaçons rapidement. Voir les <a href="conditions.html">conditions de vente</a>.</p>
 <h2>Mon école peut-elle payer par bon de commande ?</h2><p>Oui, écrivez-nous pour une soumission et une facture au nom de l’établissement.</p>"""),
     ("en", "faq.html"): ("Frequently asked questions", """
 <h2>How do I receive my tools?</h2><p>Right after payment, a download page opens and an email with the link is sent to you. You can download your files several times.</p>
@@ -711,7 +711,7 @@ CONTENT = {
 <h2>Why does my email appear on the pages?</h2><p>Each PDF is personalized with the buyer’s details. This protects the creative work and keeps prices affordable.</p>
 <h2>Are resources for my region included?</h2><p>Every toolkit includes a page covering all 17 regions (youth protection, crisis, autism). The complete regional directory is free.</p>
 <h2>Are the tools available in French?</h2><p>Yes, every tool has a French version (FR button at the top of the page).</p>
-<h2>Can I get a refund?</h2><p>If a file is defective or does not match its description, write to us within 14 days: we will fix it or refund you. See the <a href="terms.html">terms of sale</a>.</p>
+<h2>What if a file has a problem?</h2><p>Digital products are non-refundable. If a file is defective or does not match its description, write to us: we will quickly fix or replace it. See the <a href="terms.html">terms of sale</a>.</p>
 <h2>Can my school pay with a purchase order?</h2><p>Yes, write to us for a quote and an invoice in the organization’s name.</p>"""),
     ("fr", "contact.html"): ("Contact", """
 <p class="lead">Une question, une licence d’équipe, une correction à signaler dans une ressource ?</p>
@@ -749,14 +749,14 @@ CONTENT = {
 <p><strong>Entreprise :</strong> Filodie, entreprise individuelle immatriculée au Québec (NEQ : 2282614819). Courriel : melodie@filodie.ca.</p>
 <h2>Produits et prix</h2><p>Les produits sont des fichiers numériques (PDF). Les prix sont affichés en dollars canadiens et correspondent au prix total à payer. Filodie n’est pas inscrite aux fichiers de la TPS et de la TVQ (petit fournisseur). Toutefois, Payhip agit comme plateforme de vente et peut percevoir lui-même la taxe de vente applicable selon votre lieu de résidence (par exemple la TPS/TVH au Canada ou la TVA en Europe) ; le cas échéant, elle est affichée clairement avant le paiement.</p>
 <h2>Paiement et livraison</h2><p>Le paiement est traité de façon sécurisée par Payhip, Stripe ou PayPal; Filodie n’a jamais accès à vos données de carte. La livraison est immédiate : une page de téléchargement s’ouvre après le paiement et un courriel de confirmation contenant le lien vous est envoyé.</p>
-<h2>Remboursements</h2><p>Comme un fichier numérique ne peut pas être retourné, les achats ne sont pas remboursables pour un simple changement d’idée. Si un fichier est défectueux, illisible ou ne correspond pas à sa description, écrivez-nous dans les 14 jours : nous le corrigeons, le remplaçons ou vous remboursons. Ces conditions n’enlèvent aucun des droits prévus par la Loi sur la protection du consommateur.</p>
+<h2>Aucun remboursement</h2><p>Comme un fichier numérique ne peut pas être retourné, les achats ne sont pas remboursables. Si un fichier est défectueux, illisible ou ne correspond pas à sa description, écrivez-nous à melodie@filodie.ca : nous le corrigeons ou le remplaçons sans frais. Ces conditions n’enlèvent aucun des droits prévus par la Loi sur la protection du consommateur.</p>
 <h2>Utilisation</h2><p>L’achat donne droit à la <a href="licence.html">licence individuelle</a>. Les outils soutiennent l’intervention et ne remplacent ni l’évaluation d’une personne professionnelle qualifiée ni le jugement clinique. Les coordonnées des ressources sont vérifiées à la date indiquée et peuvent changer.</p>
 <h2>Droit applicable</h2><p>Ces conditions sont régies par les lois du Québec et du Canada.</p>"""),
     ("en", "terms.html"): ("Terms of sale", """
 <p><strong>Business:</strong> Filodie, sole proprietorship registered in Québec (NEQ: 2282614819). Email: melodie@filodie.ca.</p>
 <h2>Products and prices</h2><p>Products are digital files (PDF). Prices are shown in Canadian dollars and are the total amount payable. Filodie is not registered for GST/QST (small supplier). However, Payhip acts as a marketplace facilitator and may itself collect the applicable sales tax based on where you live (for example GST/HST in Canada or VAT in Europe); if so, it is clearly shown before payment.</p>
 <h2>Payment and delivery</h2><p>Payment is processed securely by Payhip, Stripe or PayPal; Filodie never has access to your card details. Delivery is instant: a download page opens after payment and a confirmation email with the link is sent to you.</p>
-<h2>Refunds</h2><p>Because a digital file cannot be returned, purchases are not refundable for a simple change of mind. If a file is defective, unreadable or does not match its description, write to us within 14 days: we will fix it, replace it or refund you. These terms do not limit any rights under Québec’s Consumer Protection Act.</p>
+<h2>No refunds</h2><p>Because a digital file cannot be returned, purchases are non-refundable. If a file is defective, unreadable or does not match its description, write to us at melodie@filodie.ca: we will fix or replace it at no charge. These terms do not limit any rights under Québec’s Consumer Protection Act.</p>
 <h2>Use</h2><p>Each purchase includes the <a href="licence.html">individual licence</a>. The tools support intervention and do not replace an assessment by a qualified professional or clinical judgment. Resource contact details are verified on the date shown and may change.</p>
 <h2>Governing law</h2><p>These terms are governed by the laws of Québec and Canada.</p>"""),
     ("fr", "confidentialite.html"): ("Politique de confidentialité", """
