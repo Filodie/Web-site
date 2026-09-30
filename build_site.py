@@ -90,8 +90,10 @@ def catalogue():
             fichiers=[f"Trousses spécialisées/Trousse_Filodie_{t['fichier']}_2026.pdf"])
     from outil_choix_eclaire import CHOIX                 # outils d’intervention vendus à l’unité, hors collection
     from outils_3dollars import OUTILS
-    for t in [CHOIX] + OUTILS:
-        add(id="trousse-" + t["fichier"].lower(), type="trousse", groupe="Outils d’intervention", titre=t["nom"],
+    from outils_etudes import OUTILS as ETUDES, GROUPE_SITE
+    for t in [CHOIX] + OUTILS + ETUDES:
+        add(id="trousse-" + t["fichier"].lower(), type="trousse",
+            groupe=GROUPE_SITE if t in ETUDES else "Outils d’intervention", titre=t["nom"],
             sous=f"{len(t['fiches'])} outils", desc=t["desc"], prix=3.0,
             fichiers=[f"{t['dossier']}/Trousse_Filodie_{t['fichier']}_2026.pdf"])
     for t in ft.LOTS:

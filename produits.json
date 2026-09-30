@@ -322,6 +322,90 @@
   "payhip_en": "5M8Wh"
  },
  {
+  "id": "trousse-analyser_groupe",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Analyser un groupe",
+  "sous": "9 outils",
+  "desc": "Neuf fiches pour décrire un groupe avec rigueur : origine, structure, durée et composition, faits et hypothèses, dynamique et rôles, besoins et objectif d’intervention, une mise en situation avec réponses, puis un portrait de groupe prêt à remettre.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Analyser_groupe_2026.pdf"
+  ],
+  "payhip": "3mTYg",
+  "payhip_en": "3mTYg"
+ },
+ {
+  "id": "trousse-modele_pph",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Utiliser le modèle du PPH",
+  "sous": "9 outils",
+  "desc": "Neuf fiches pour appliquer le Modèle de développement humain – Processus de production du handicap (MDH-PPH) : facteurs identitaires, systèmes organiques, aptitudes, environnement micro, méso et macro, habitudes de vie, interaction dans le temps, plan d’action, étude de cas et synthèse.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Modele_PPH_2026.pdf"
+  ],
+  "payhip": "ADW9Z",
+  "payhip_en": "ADW9Z"
+ },
+ {
+  "id": "trousse-note_evolutive",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Rédiger une note évolutive",
+  "sous": "6 outils",
+  "desc": "Six fiches pour apprendre à rédiger des notes au dossier objectives et utiles : distinguer faits et interprétations, choisir les bons mots, structurer la note, s’exercer sur des exemples, puis relire avant de signer.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Note_evolutive_2026.pdf"
+  ],
+  "payhip": "a0A2i",
+  "payhip_en": "a0A2i"
+ },
+ {
+  "id": "trousse-journal_stage",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Mon journal de stage réflexif",
+  "sous": "6 outils",
+  "desc": "Six fiches pour tenir un journal de stage qui fait vraiment progresser : objectifs de stage, retour sur une situation marquante, émotions et valeurs, rétroaction de la personne superviseure, bilan de mi-stage et bilan final.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Journal_stage_2026.pdf"
+  ],
+  "payhip": "CHa8s",
+  "payhip_en": "CHa8s"
+ },
+ {
+  "id": "trousse-activite_educative",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Planifier une activité éducative",
+  "sous": "6 outils",
+  "desc": "Six fiches pour préparer, animer et évaluer une activité éducative en stage : besoins et objectif, déroulement minuté, matériel et aménagement, animation et imprévus, puis évaluation de l’activité et de son animation.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Activite_educative_2026.pdf"
+  ],
+  "payhip": "HY9Gj",
+  "payhip_en": "HY9Gj"
+ },
+ {
+  "id": "trousse-plan_intervention",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Bâtir un plan d’intervention",
+  "sous": "6 outils",
+  "desc": "Six fiches pour comprendre et rédiger un plan d’intervention : forces et besoins, priorités, objectifs observables, moyens et responsabilités, participation de la personne et de sa famille, puis révision du plan.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Plan_intervention_2026.pdf"
+  ],
+  "payhip": "hV5lt",
+  "payhip_en": "hV5lt"
+ },
+ {
   "id": "trousse-habiletes_sociales",
   "type": "trousse",
   "groupe": "Habiletés et comportement",
@@ -6085,9 +6169,9 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses",
-  "sous": "130 trousses et éditions",
+  "sous": "136 trousses et éditions",
   "prix": 75.0,
-  "sous_en": "130 toolkits and editions",
+  "sous_en": "136 toolkits and editions",
   "desc": "La trousse principale, les 16 trousses spécialisées, les 102 trousses de la Collection et les 5 éditions.",
   "desc_en": "The main toolkit, the 16 specialized toolkits, the 102 Collection toolkits and the 5 editions.",
   "fichiers": [],
@@ -6115,6 +6199,12 @@
    "trousse-conflit",
    "trousse-demander_aide",
    "trousse-budget",
+   "trousse-analyser_groupe",
+   "trousse-modele_pph",
+   "trousse-note_evolutive",
+   "trousse-journal_stage",
+   "trousse-activite_educative",
+   "trousse-plan_intervention",
    "trousse-habiletes_sociales",
    "trousse-communication_et_cooperation",
    "trousse-emotions_et_empathie",
@@ -6225,7 +6315,7 @@
   ],
   "payhip": "leD7m",
   "payhip_en": "leD7m",
-  "valeur": 859.0
+  "valeur": 877.0
  },
  {
   "id": "lot-mega",
@@ -6233,8 +6323,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie",
   "sous": "Toute la collection",
-  "desc": "Les 125 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
-  "desc_en": "All 125 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
+  "desc": "Les 131 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
+  "desc_en": "All 131 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -6260,6 +6350,12 @@
    "trousse-conflit",
    "trousse-demander_aide",
    "trousse-budget",
+   "trousse-analyser_groupe",
+   "trousse-modele_pph",
+   "trousse-note_evolutive",
+   "trousse-journal_stage",
+   "trousse-activite_educative",
+   "trousse-plan_intervention",
    "trousse-habiletes_sociales",
    "trousse-communication_et_cooperation",
    "trousse-emotions_et_empathie",
@@ -6570,6 +6666,6 @@
   "prix": 129.0,
   "payhip": "UScCI",
   "payhip_en": "UScCI",
-  "valeur": 1517.0
+  "valeur": 1535.0
  }
 ]
