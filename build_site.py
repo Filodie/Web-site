@@ -655,14 +655,24 @@ def textpage(lang, name, title, content):
 CONTENT = {
     ("fr", "a-propos.html"): ("À propos", """
 <p class="lead">Filodie, c’est l’idée qu’une bonne intervention tient à un fil : celui qui relie l’observation, la compréhension, le plan, le soutien et la communication.</p>
-<p>Je m’appelle Mélodie. Je suis étudiante en Techniques d’éducation spécialisée et je crée les outils dont j’avais besoin en stage : clairs, beaux, rigoureux et vraiment utilisables avec les personnes que l’on accompagne. <em>[À personnaliser : ton parcours, tes stages, ce qui t’anime.]</em></p>
+<p>Je m’appelle Mélodie. Je suis maman de quatre filles, et c’est d’abord à la maison que j’ai appris qu’un enfant avance mieux quand on lui montre le chemin, une étape à la fois.</p>
+<p>Je suis étudiante en Techniques d’éducation spécialisée, je détiens un certificat en travail social et je poursuis un baccalauréat multidisciplinaire, avec un certificat en psychologie du développement humain et un certificat en dépendances. Ce parcours me permet de regarder chaque situation sous plusieurs angles : le développement, la famille, le réseau et l’intervention au quotidien.</p>
+<p>J’ai créé Filodie pour offrir aux intervenantes, aux enseignants et aux parents les outils que j’aurais voulu avoir sous la main : clairs, beaux, rigoureux et vraiment utilisables avec les personnes que l’on accompagne.</p>
+<h2>Mon parcours</h2>
+<ul><li>Maman de quatre filles</li><li>Étudiante en Techniques d’éducation spécialisée</li><li>Certificat en travail social</li>
+<li>Baccalauréat multidisciplinaire en cours : certificat en psychologie du développement humain et certificat en dépendances</li></ul>
 <p>Chaque outil est conçu au Québec, avec le vocabulaire du réseau et des ressources vérifiées dans les 17 régions. Les versions anglaises s’adressent aux milieux anglophones et bilingues.</p>
 <h2>Mes engagements</h2>
 <ul><li>Des contenus originaux, révisés et datés.</li><li>Des ressources vérifiées à la source et mises à jour chaque année.</li>
 <li>Des outils respectueux de la dignité et de l’autodétermination des personnes.</li></ul>"""),
     ("en", "about.html"): ("About", """
 <p class="lead">Filodie is built on one idea: good intervention holds together like a thread, linking observation, understanding, planning, support and communication.</p>
-<p>My name is Mélodie. I am a special care counselling student, and I create the tools I needed during my internships: clear, attractive, rigorous and truly usable with the people we support. <em>[To personalize: your background, internships, what drives you.]</em></p>
+<p>My name is Mélodie. I am the mother of four daughters, and it was at home that I first learned that children move forward best when you show them the way, one step at a time.</p>
+<p>I am a special care counselling student, I hold a certificate in social work, and I am completing a multidisciplinary bachelor’s degree with a certificate in human developmental psychology and a certificate in addictions. This path lets me look at every situation from several angles: development, family, services and day-to-day intervention.</p>
+<p>I created Filodie to give counsellors, teachers and parents the tools I wished I had on hand: clear, attractive, rigorous and truly usable with the people we support.</p>
+<h2>My background</h2>
+<ul><li>Mother of four daughters</li><li>Special care counselling student</li><li>Certificate in social work</li>
+<li>Multidisciplinary bachelor’s degree in progress: certificates in human developmental psychology and in addictions</li></ul>
 <p>Every tool is designed in Québec, with the vocabulary of the health and education networks and resources verified in all 17 regions. French versions of every tool are also available.</p>
 <h2>My commitments</h2>
 <ul><li>Original, reviewed and dated content.</li><li>Resources verified at the source and updated every year.</li>
