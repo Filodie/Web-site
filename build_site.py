@@ -767,7 +767,7 @@ CONTENT = {
 <li>If you subscribe to the newsletter: email address and first name, with your express consent.</li>
 <li>If you write to us: the content of your message.</li></ul>
 <h2>Why</h2><p>To deliver your files, issue receipts, answer your questions and, if you consent, send the newsletter. Your information is never sold.</p>
-<h2>Service providers</h2><p>Payhip (sales platform), Stripe and PayPal (payments) and, if applicable, the newsletter service process some information on our behalf. These companies may store data outside Québec; they were chosen for their recognized security measures.</p>
+<h2>Service providers</h2><p>Payhip (sales platform), Stripe and PayPal (payments) and MailerLite (newsletter) process some information on our behalf. These companies may store data outside Québec; they were chosen for their recognized security measures.</p>
 <h2>Cookies</h2><p>The filodie.ca website does not set any tracking or advertising cookies. Payhip checkout pages use cookies required for the transaction.</p>
 <h2>Retention</h2><p>Purchase information is kept for 6 years (tax obligations), then destroyed. You may unsubscribe from the newsletter at any time.</p>
 <h2>Your rights</h2><p>You may request access to, correction or deletion of your information by writing to melodie@filodie.ca. You may also file a complaint with the Commission d’accès à l’information du Québec.</p>"""),
