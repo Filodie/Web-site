@@ -59,6 +59,8 @@ PRIX = {"trousse": 7.00, "edition": 3.00, "cahier": 3.00, "livre": 19.00, "botti
         "routines": 5.00, "lot_routines": 19.00, "gratuit": 0.00}
 
 
+ECH_ID = "trousse-decouverte_etudiant_tes"          # échantillon étudiant gratuit (hors lots)
+
 # --------------------------------------------------------------------------- catalogue
 def catalogue():
     from contenu_ages import AGES
@@ -90,11 +92,12 @@ def catalogue():
             fichiers=[f"Trousses spécialisées/Trousse_Filodie_{t['fichier']}_2026.pdf"])
     from outil_choix_eclaire import CHOIX                 # outils d’intervention vendus à l’unité, hors collection
     from outils_3dollars import OUTILS
-    from outils_etudes import OUTILS as ETUDES, GROUPE_SITE
-    for t in [CHOIX] + OUTILS + ETUDES:
+    from outils_etudes import OUTILS as ETUDES, GROUPE_SITE, ECHANTILLON
+    for t in [CHOIX] + OUTILS + ETUDES + [ECHANTILLON]:
         add(id="trousse-" + t["fichier"].lower(), type="trousse",
-            groupe=GROUPE_SITE if t in ETUDES else "Outils d’intervention", titre=t["nom"],
-            sous=f"{len(t['fiches'])} outils", desc=t["desc"], prix=3.0,
+            groupe=GROUPE_SITE if t in ETUDES + [ECHANTILLON] else "Outils d’intervention", titre=t["nom"],
+            sous="4 fiches gratuites" if t is ECHANTILLON else f"{len(t['fiches'])} outils", desc=t["desc"],
+            prix=0.0 if t is ECHANTILLON else 3.0,
             fichiers=[f"{t['dossier']}/Trousse_Filodie_{t['fichier']}_2026.pdf"])
     for t in ft.LOTS:
         add(id="trousse-" + t["fichier"].lower(), type="trousse", groupe=t["dossier"].split("/")[-1].split("– ")[-1],
@@ -194,7 +197,7 @@ def catalogue():
     add(id="lot-specialisees", type="lot_specialisees", groupe="Lots", titre="Les 16 trousses spécialisées",
         sous="Âges et troubles", desc="Petite enfance, secondaire, adultes, aînés, TSA, TDAH, DI, langage, comportement, "
                                       "crise, suicide, dépendances et plus.", fichiers=[], contient=sp)
-    et = [i["id"] for i in items if i["groupe"] == "Études et stages en T.E.S."]
+    et = [i["id"] for i in items if i["groupe"] == "Études et stages en T.E.S." and i["prix"] > 0]
     if et:
         add(id="lot-etudes-tes", type="lot_tout", groupe="Lots", titre="Trousse de l’étudiante et de l’étudiant en T.E.S.",
             titre_en="SCC Student Kit", sous=f"{len(et)} outils pour les études et les stages", prix=20.00,
@@ -211,7 +214,7 @@ def catalogue():
         sous=f"{len(tous)} cahiers · 5 séries", prix=75.00, sous_en=f"{len(tous)} workbooks · 5 series",
         desc="Les cahiers TSA, TDAH, habiletés sociales, DI et comportement, en couleur et à colorier.",
         fichiers=[], contient=tous)
-    tt = [i["id"] for i in items if i["type"] in ("trousse", "edition")]
+    tt = [i["id"] for i in items if i["type"] in ("trousse", "edition") and i["id"] != ECH_ID]
     ntr = sum(1 for i in items if i["type"] == "trousse")
     ncol = sum(1 for i in items if i["type"] == "trousse" and i["fichiers"][0].startswith("Collection Filodie/"))
     ned = sum(1 for i in items if i["type"] == "edition")
@@ -225,7 +228,8 @@ def catalogue():
              "et le bottin régional.",
         desc_en=f"All {ntr} toolkits, the editions, the {len(tous)} visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook "
                 "and the regional directory.",
-        fichiers=[], contient=[i["id"] for i in items if not i["type"].startswith("lot") and i["type"] not in ("mega", "gratuit")])
+        fichiers=[], contient=[i["id"] for i in items if not i["type"].startswith("lot") and i["type"] not in ("mega", "gratuit")
+                                                                 and i["id"] != ECH_ID])
     # lots de collection : environ 2,50 $ par trousse, arrondi à 5 $, entre 25 $ et 30 $
     # (petites collections de moins de 6 trousses : environ 30 % de rabais sur le prix à l'unité)
     for i in items:
@@ -557,9 +561,10 @@ def gratuits(lang):
     tous = [i for i in items.values() if i["type"] == "gratuit"]
     mois = ([i for i in tous if i.get("code", "")[-4:] == now] or [i for i in tous if i.get("code", "")[-4:] == nxt]
             or sorted((i for i in tous if i.get("code", "")[-4:] < now), key=lambda i: i["id"]))
-    ids = ["trousse-trousse_decouverte"] + ([mois[-1]["id"]] if mois else []) + ["bottin-regional"]
+    ids = ["trousse-trousse_decouverte", ECH_ID] + ([mois[-1]["id"]] if mois else []) + ["bottin-regional"]
     fr = lang == "fr"
     etiq = {"trousse-trousse_decouverte": "Trousse découverte" if fr else "Starter toolkit",
+            ECH_ID: "Pour les étudiantes et étudiants" if fr else "For SCC students",
             "bottin-regional": "Bottin des 17 régions" if fr else "17-region directory"}
     cards = ""
     for k in ids:
@@ -575,9 +580,9 @@ def gratuits(lang):
                   f'<p class="kicker" style="padding:0 16px;margin:12px 0 0">{lab}</p><h3>{html.escape(titre)}</h3>'
                   f'<p style="padding-bottom:16px">{btn}</p></div>')
     h2 = "Commencer gratuitement" if fr else "Start for free"
-    sous = ("Trois outils offerts, en français et en anglais. Cochez la case au paiement pour recevoir l’outil gratuit "
+    sous = ("Quatre outils offerts, en français et en anglais. Cochez la case au paiement pour recevoir l’outil gratuit "
             "de chaque mois et les nouveautés." if fr else
-            "Three free tools, in French and English. Tick the box at checkout to get each month’s free tool and "
+            "Four free tools, in French and English. Tick the box at checkout to get each month’s free tool and "
             "what’s new.")
     abo_t = "Recevez l’outil gratuit chaque mois" if fr else "Get the free tool every month"
     abo_p = ("Inscrivez-vous à l’infolettre : un outil Filodie gratuit et les nouveautés, une fois par mois. Désabonnement "

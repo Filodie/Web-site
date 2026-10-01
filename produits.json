@@ -546,6 +546,20 @@
   "payhip_en": "aUf4V"
  },
  {
+  "id": "trousse-decouverte_etudiant_tes",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Échantillon gratuit : études et stages en T.E.S.",
+  "sous": "4 fiches gratuites",
+  "desc": "Quatre fiches gratuites tirées des outils Filodie pour les études et les stages en T.E.S. : préparer son arrivée en stage, distinguer faits et interprétations, se tester pour apprendre et revenir sur une situation marquante. Avec la liste des 16 outils de la trousse étudiante.",
+  "prix": 0.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Decouverte_etudiant_TES_2026.pdf"
+  ],
+  "payhip": "nqspl",
+  "payhip_en": "nqspl"
+ },
+ {
   "id": "trousse-habiletes_sociales",
   "type": "trousse",
   "groupe": "Habiletés et comportement",
@@ -6507,8 +6521,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie",
   "sous": "Toute la collection",
-  "desc": "Les 141 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
-  "desc_en": "All 141 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
+  "desc": "Les 142 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
+  "desc_en": "All 142 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
