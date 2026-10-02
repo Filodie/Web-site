@@ -405,7 +405,7 @@ L = {
                     "CLSC, associations en autisme et en TDAH, déficience intellectuelle, personnes proches aidantes, violence et dépendances. "
                     "Coordonnées vérifiées sur les sites officiels.",
         "bottin_btn": "Recevoir le bottin gratuitement",
-        "footer_legal": [("licence.html", "Licence d’utilisation"), ("conditions.html", "Conditions de vente"),
+        "footer_legal": [("avis.html", "Donner mon avis"), ("licence.html", "Licence d’utilisation"), ("conditions.html", "Conditions de vente"),
                          ("confidentialite.html", "Confidentialité")],
         "footer_note": "Les outils Filodie soutiennent l’intervention; ils ne remplacent ni l’évaluation d’une personne "
                        "professionnelle qualifiée ni le jugement clinique.",
@@ -448,7 +448,7 @@ L = {
                     "CLSCs, autism and ADHD associations, intellectual disability, caregivers, violence and addictions. "
                     "Contact details verified on official websites.",
         "bottin_btn": "Get the directory for free",
-        "footer_legal": [("licence.html", "Licence"), ("terms.html", "Terms of sale"), ("privacy.html", "Privacy")],
+        "footer_legal": [("review.html", "Share your feedback"), ("licence.html", "Licence"), ("terms.html", "Terms of sale"), ("privacy.html", "Privacy")],
         "footer_note": "Filodie tools support intervention; they do not replace an assessment by a qualified professional "
                        "or clinical judgment.",
         "rights": "© 2026 Filodie. All rights reserved.",
@@ -459,7 +459,7 @@ L = {
 PAIRS = {"index.html": "index.html", "boutique.html": "shop.html", "bottin.html": "directory.html",
          "a-propos.html": "about.html", "faq.html": "faq.html", "contact.html": "contact.html", "services.html": "services.html",
          "licence.html": "licence.html", "conditions.html": "terms.html", "confidentialite.html": "privacy.html",
-         "coloriage.html": "colouring.html"}
+         "coloriage.html": "colouring.html", "avis.html": "review.html"}
 PAIRS_EN = {v: k for k, v in PAIRS.items()}
 
 THREAD = ('<svg class="thread" viewBox="0 0 600 90" preserveAspectRatio="none" aria-hidden="true"><path d="M-10 60 '
@@ -569,10 +569,32 @@ def home(lang):
   </div>
 </section>
 {gratuits(lang)}
+{temoignages(lang)}
 <section class="wrap"><h2>{t['col_t']}</h2><div class="grid4">{cols}</div></section>
 <section class="band"><div class="wrap"><h2>{t['why_t']}</h2><div class="grid4 why">{why}</div></div></section>
 """
     return page(lang, "index.html", "Filodie", body, scripts='<script src="https://payhip.com/payhip.js"></script>')
+
+
+TEMO = os.path.join(HERE, "temoignages.json")
+def temoignages(lang):
+    """Témoignages réels seulement (temoignages.json, consentement écrit reçu). Sans témoignage : une invitation à donner son avis."""
+    fr = lang == "fr"
+    liste = [x for x in (json.load(open(TEMO, encoding="utf-8")) if os.path.exists(TEMO) else []) if x.get("consentement")]
+    avis = "avis.html" if fr else "review.html"
+    inv = (f'<p style="margin-top:18px"><a class="btn ghost" href="{avis}">'
+           f'{"Vous utilisez un outil Filodie ? Donnez votre avis" if fr else "Using a Filodie tool? Share your feedback"}</a></p>')
+    if not liste:
+        return f'<section class="wrap" style="text-align:center">{inv}</section>'
+    cartes = ""
+    for x in liste[:6]:
+        txt = x.get("texte_fr" if fr else "texte_en") or x.get("texte_fr") or x.get("texte_en")
+        role = x.get("role_fr" if fr else "role_en") or ""
+        cartes += (f'<figure class="card temo"><blockquote>« {html.escape(txt)} »</blockquote>'
+                   f'<figcaption><strong>{html.escape(x["prenom"])}</strong>{" · " + html.escape(role) if role else ""}'
+                   f'</figcaption></figure>')
+    return (f'<section class="wrap"><h2>{"Témoignages" if fr else "Testimonials"}</h2>'
+            f'<div class="grid3">{cartes}</div>{inv}</section>')
 
 
 def gratuits(lang):
@@ -827,6 +849,24 @@ CONTENT = {
 <h2>Are the tools available in French?</h2><p>Yes, every tool has a French version (FR button at the top of the page).</p>
 <h2>What if a file has a problem?</h2><p>Digital products are non-refundable. If a file is defective or does not match its description, write to us: we will quickly fix or replace it. See the <a href="terms.html">terms of sale</a>.</p>
 <h2>Can my school pay with a purchase order?</h2><p>Yes, write to us for a quote and an invoice in the organization’s name.</p>"""),
+    ("fr", "avis.html"): ("Donner mon avis", """
+<p class="lead">Vous avez utilisé un outil Filodie avec un enfant, une classe, un groupe ou en stage ? Votre avis m’aide à améliorer les outils et aide d’autres personnes à choisir.</p>
+<h2>Comment faire</h2>
+<p>Écrivez-moi en quelques lignes : quel outil, dans quel contexte, et ce qu’il a changé (ou ce qui manquait).</p>
+<p><a class="btn" href="mailto:melodie@filodie.ca?subject=Mon%20avis%20sur%20Filodie&amp;body=Outil%20utilis%C3%A9%20%3A%0AContexte%20(classe%2C%20CPE%2C%20maison%2C%20stage%2C%20etc.)%20%3A%0ACe%20que%20l%E2%80%99outil%20a%20chang%C3%A9%20%3A%0ACe%20qui%20manquait%20%3A%0A%0APublication%20(r%C3%A9pondez%20oui%20ou%20non)%20%3A%20j%E2%80%99accepte%20que%20Filodie%20publie%20cet%20avis%20sur%20filodie.ca%20et%20ses%20r%C3%A9seaux%20sociaux%2C%20avec%20mon%20pr%C3%A9nom%20et%20mon%20r%C3%B4le.%0APr%C3%A9nom%20%3A%0AR%C3%B4le%20(ex.%20T.E.S.%2C%20enseignante%2C%20parent)%20%3A%0A">Écrire mon avis</a></p>
+<h2>Ce qui sera publié</h2>
+<ul><li>Seulement si vous répondez « oui » à la question de publication.</li><li>Votre prénom et votre rôle, jamais votre nom de famille ni votre milieu de travail.</li>
+<li>Votre texte tel quel, ou raccourci avec votre accord.</li><li>Vous pouvez demander le retrait de votre avis en tout temps.</li></ul>
+<p class="muted">Pour protéger la confidentialité, ne nommez aucun enfant ni aucune personne accompagnée, et ne donnez aucun détail qui permettrait de la reconnaître.</p>"""),
+    ("en", "review.html"): ("Share your feedback", """
+<p class="lead">Have you used a Filodie tool with a child, a class, a group or during an internship? Your feedback helps me improve the tools and helps others choose.</p>
+<h2>How</h2>
+<p>Write me a few lines: which tool, in what setting, and what it changed (or what was missing).</p>
+<p><a class="btn" href="mailto:melodie@filodie.ca?subject=My%20feedback%20on%20Filodie&amp;body=Tool%20used%3A%0ASetting%20(class%2C%20daycare%2C%20home%2C%20internship%2C%20etc.)%3A%0AWhat%20the%20tool%20changed%3A%0AWhat%20was%20missing%3A%0A%0APublication%20(answer%20yes%20or%20no)%3A%20I%20agree%20that%20Filodie%20may%20publish%20this%20feedback%20on%20filodie.ca%20and%20its%20social%20media%2C%20with%20my%20first%20name%20and%20role.%0AFirst%20name%3A%0ARole%20(e.g.%20SCC%2C%20teacher%2C%20parent)%3A%0A">Write my feedback</a></p>
+<h2>What will be published</h2>
+<ul><li>Only if you answer “yes” to the publication question.</li><li>Your first name and role, never your last name or workplace.</li>
+<li>Your text as written, or shortened with your agreement.</li><li>You can ask for your feedback to be removed at any time.</li></ul>
+<p class="muted">To protect confidentiality, do not name any child or person you support, and do not give details that could identify them.</p>"""),
     ("fr", "contact.html"): ("Contact", """
 <p class="lead">Une question, une licence d’équipe, une correction à signaler dans une ressource ?</p>
 <p>Écrivez à <a href="mailto:melodie@filodie.ca">melodie@filodie.ca</a>. Réponse en 2 jours ouvrables.</p>
@@ -935,6 +975,7 @@ nav a[aria-current]{color:var(--terra)}nav .lang{border:1.5px solid var(--ink);b
 .stats div{background:var(--card);border-radius:14px;padding:14px}.stats strong{display:block;font-family:Fraunces,serif;font-size:2rem;color:var(--terra)}
 @media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
 .grid4{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}@media(max-width:860px){.grid3{grid-template-columns:1fr}}.temo{margin:0;padding:22px}.temo blockquote{margin:0 0 12px;font-style:italic;line-height:1.6}.temo figcaption{font-size:.92rem;color:#6F9A81}
 .abo{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}@media(max-width:760px){.abo{grid-template-columns:1fr}}
 .card{background:var(--card);border:1px solid var(--sand);border-radius:16px;overflow:hidden;color:var(--ink);text-decoration:none}
 .card.col img{aspect-ratio:17/13;object-fit:cover;object-position:top}.card.col h3,.card.col p{padding:0 16px}.card.col p{color:var(--gray);font-size:.95rem}
