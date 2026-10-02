@@ -60,6 +60,7 @@ PRIX = {"trousse": 7.00, "edition": 3.00, "cahier": 3.00, "livre": 19.00, "botti
 
 
 ECH_ID = "trousse-decouverte_etudiant_tes"          # échantillon étudiant gratuit (hors lots)
+DET_ID = "detective-dde"                            # cahier de détective découverte gratuit (hors lots)
 
 # --------------------------------------------------------------------------- catalogue
 def catalogue():
@@ -128,13 +129,17 @@ def catalogue():
         add(id="routines-" + pq.code.lower(), type="routines", groupe="Routines visuelles maison", titre=pq.titre,
             sous=pq.sous, desc=pq.desc, code=pq.code,
             fichiers=[f"Routines visuelles Filodie/Couleur/{f}.pdf", f"Routines visuelles Filodie/Noir et blanc/{f}_NB.pdf"])
-    from contenu_detective import CAHIERS as DETECTIVE, GROUPE_SITE as GROUPE_DET, DOSSIER as DOSSIER_DET
+    from contenu_detective import CAHIERS as DETECTIVE, GROUPE_SITE as GROUPE_DET, DOSSIER as DOSSIER_DET, DECOUVERTE
     from cahiers_detective import nom_fichier as fichier_det
     for t in DETECTIVE:
         add(id="detective-" + t["code"].lower(), type="detective", groupe=GROUPE_DET, titre=t["nom"],
             sous=f"{len(t['indices'])} indices · {t['age']}", sous_en=f"{len(t['indices'])} clues · {tr(t['age'])}",
             desc=t["desc"], code=t["code"], pv_pages=[3 + (1 if t.get("extra") else 0), 5 + (1 if t.get("extra") else 0)],
             fichiers=[f"{DOSSIER_DET}/{fichier_det(t)}.pdf"])
+    add(id=DET_ID, type="detective", groupe=GROUPE_DET, titre=DECOUVERTE["nom"], prix=0.0,
+        sous=f"Gratuit · 3 enquêtes · {DECOUVERTE['age']}", sous_en=f"Free · 3 clues · {tr(DECOUVERTE['age'])}",
+        desc=DECOUVERTE["desc"], code=DECOUVERTE["code"], pv_pages=[3, 4],
+        fichiers=[f"{DOSSIER_DET}/{fichier_det(DECOUVERTE)}.pdf"])
     from datetime import date as _d
     _t = _d.today()
     _nxt = (_d(_t.year + 1, 1, 1) if _t.month == 12 else _d(_t.year, _t.month + 1, 1)).strftime("%y%m")
@@ -200,7 +205,7 @@ def catalogue():
             desc_en="Morning, evening and bedtime, meals and hygiene, homework, outings and independence: each routine as an "
                     "illustrated sequence and a motivation chart, with a parent guide, in colour and black and white.",
             fichiers=[], contient=rt)
-    dt = [i["id"] for i in items if i["type"] == "detective"]
+    dt = [i["id"] for i in items if i["type"] == "detective" and i["prix"] > 0]
     if dt:
         add(id="lot-detective", type="lot_detective", groupe="Lots", titre="Tous les cahiers de détective",
             titre_en="All the Detective Notebooks",
@@ -246,7 +251,7 @@ def catalogue():
         desc_en=f"All {ntr} toolkits, the editions, the {len(tous)} visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook "
                 "and the regional directory.",
         fichiers=[], contient=[i["id"] for i in items if not i["type"].startswith("lot") and i["type"] not in ("mega", "gratuit")
-                                                                 and i["id"] != ECH_ID])
+                                                                 and i["id"] not in (ECH_ID, DET_ID)])
     # lots de collection : environ 2,50 $ par trousse, arrondi à 5 $, entre 25 $ et 30 $
     # (petites collections de moins de 6 trousses : environ 30 % de rabais sur le prix à l'unité)
     for i in items:
@@ -580,9 +585,10 @@ def gratuits(lang):
     tous = [i for i in items.values() if i["type"] == "gratuit"]
     mois = ([i for i in tous if i.get("code", "")[-4:] == now] or [i for i in tous if i.get("code", "")[-4:] == nxt]
             or sorted((i for i in tous if i.get("code", "")[-4:] < now), key=lambda i: i["id"]))
-    ids = ["trousse-trousse_decouverte", ECH_ID] + ([mois[-1]["id"]] if mois else []) + ["bottin-regional"]
+    ids = [DET_ID, "trousse-trousse_decouverte", ECH_ID] + ([mois[-1]["id"]] if mois else []) + ["bottin-regional"]
     fr = lang == "fr"
-    etiq = {"trousse-trousse_decouverte": "Trousse découverte" if fr else "Starter toolkit",
+    etiq = {DET_ID: "Nouveau · cahier de détective" if fr else "New · detective notebook",
+            "trousse-trousse_decouverte": "Trousse découverte" if fr else "Starter toolkit",
             ECH_ID: "Pour les étudiantes et étudiants" if fr else "For SCC students",
             "bottin-regional": "Bottin des 17 régions" if fr else "17-region directory"}
     cards = ""
@@ -599,9 +605,9 @@ def gratuits(lang):
                   f'<p class="kicker" style="padding:0 16px;margin:12px 0 0">{lab}</p><h3>{html.escape(titre)}</h3>'
                   f'<p style="padding-bottom:16px">{btn}</p></div>')
     h2 = "Commencer gratuitement" if fr else "Start for free"
-    sous = ("Quatre outils offerts, en français et en anglais. Cochez la case au paiement pour recevoir l’outil gratuit "
+    sous = ("Cinq outils offerts, en français et en anglais. Cochez la case au paiement pour recevoir l’outil gratuit "
             "de chaque mois et les nouveautés." if fr else
-            "Four free tools, in French and English. Tick the box at checkout to get each month’s free tool and "
+            "Five free tools, in French and English. Tick the box at checkout to get each month’s free tool and "
             "what’s new.")
     abo_t = "Recevez l’outil gratuit chaque mois" if fr else "Get the free tool every month"
     abo_p = ("Inscrivez-vous à l’infolettre : un outil Filodie gratuit et les nouveautés, une fois par mois. Désabonnement "

@@ -5396,6 +5396,26 @@
   "payhip_en": "9Y7Xu"
  },
  {
+  "id": "detective-dde",
+  "type": "detective",
+  "groupe": "Cahiers de détective",
+  "titre": "Cahier de détective découverte",
+  "prix": 0.0,
+  "sous": "Gratuit · 3 enquêtes · 6 à 12 ans",
+  "sous_en": "Free · 3 clues · Ages 6 to 12",
+  "desc": "Le cahier de détective gratuit pour essayer l’approche Filodie : l’adulte pose les questions et note les indices, l’enfant reste la personne experte de sa propre vie. Trois enquêtes tirées de la collection (émotions, forces, inquiétudes), avec guide pour l’adulte, tableau des indices, rapport d’enquête, certificat et cartes-réponses.",
+  "code": "DDE",
+  "pv_pages": [
+   3,
+   4
+  ],
+  "fichiers": [
+   "Cahiers de détective Filodie/Cahier_detective_Decouverte_2026.pdf"
+  ],
+  "payhip": "IeL3K",
+  "payhip_en": "IeL3K"
+ },
+ {
   "id": "gratuit-mois-2610",
   "type": "gratuit",
   "groupe": "Outil gratuit du mois",
