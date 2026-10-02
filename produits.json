@@ -5216,6 +5216,186 @@
   "payhip_en": "d6yrs"
  },
  {
+  "id": "detective-dem",
+  "type": "detective",
+  "groupe": "Cahiers de détective",
+  "titre": "Enquête sur mes émotions",
+  "sous": "6 indices · 6 à 12 ans",
+  "sous_en": "6 clues · Ages 6 to 12",
+  "desc": "Un cahier de détective où l’adulte pose les questions et note les indices : la météo du jour, les traces des émotions dans le corps, une scène récente racontée pas à pas, le thermomètre, les messages que portent les émotions et la trousse de calme de l’enfant. Avec guide pour l’adulte, cartes-réponses et certificat.",
+  "code": "DEM",
+  "pv_pages": [
+   3,
+   5
+  ],
+  "fichiers": [
+   "Cahiers de détective Filodie/Cahier_detective_Emotions_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "sLuQF",
+  "payhip_en": "sLuQF"
+ },
+ {
+  "id": "detective-dfo",
+  "type": "detective",
+  "groupe": "Cahiers de détective",
+  "titre": "Enquête sur mes forces",
+  "sous": "6 indices · 6 à 12 ans",
+  "sous_en": "6 clues · Ages 6 to 12",
+  "desc": "Un cahier de détective pour nourrir l’estime de soi : les preuves de réussite, les qualités sous la loupe, les témoins qui voient l’enfant briller, les jours plus difficiles, les super-pouvoirs cachés et un plan pour utiliser ses forces. Avec guide pour l’adulte, cartes-réponses et certificat.",
+  "code": "DFO",
+  "pv_pages": [
+   3,
+   5
+  ],
+  "fichiers": [
+   "Cahiers de détective Filodie/Cahier_detective_Forces_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "I9jQ0",
+  "payhip_en": "I9jQ0"
+ },
+ {
+  "id": "detective-din",
+  "type": "detective",
+  "groupe": "Cahiers de détective",
+  "titre": "Enquête sur mes inquiétudes",
+  "sous": "6 indices · 6 à 12 ans",
+  "sous_en": "6 clues · Ages 6 to 12",
+  "desc": "Un cahier de détective pour les enfants qui vivent de l’anxiété : le portrait de l’inquiétude, ce qu’elle chuchote et ce qu’elle fait au corps, l’évitement, la vérification des pensées, les moments de courage et une échelle de petits pas. Avec guide pour l’adulte, cartes-réponses et certificat.",
+  "code": "DIN",
+  "pv_pages": [
+   3,
+   5
+  ],
+  "fichiers": [
+   "Cahiers de détective Filodie/Cahier_detective_Inquietudes_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "9tIg5",
+  "payhip_en": "9tIg5"
+ },
+ {
+  "id": "detective-dco",
+  "type": "detective",
+  "groupe": "Cahiers de détective",
+  "titre": "Enquête sur ma colère",
+  "sous": "6 indices · 6 à 12 ans",
+  "sous_en": "6 clues · Ages 6 to 12",
+  "desc": "Un cahier de détective sur la colère : les indices d’alerte dans le corps, les déclencheurs, l’émotion cachée en dessous, le problème à résoudre à deux, la réparation après la tempête et un plan pour garder le contrôle. Avec guide pour l’adulte, cartes-réponses et certificat.",
+  "code": "DCO",
+  "pv_pages": [
+   3,
+   5
+  ],
+  "fichiers": [
+   "Cahiers de détective Filodie/Cahier_detective_Colere_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "5RzVg",
+  "payhip_en": "5RzVg"
+ },
+ {
+  "id": "detective-dam",
+  "type": "detective",
+  "groupe": "Cahiers de détective",
+  "titre": "Enquête sur mes amitiés",
+  "sous": "6 indices · 6 à 12 ans",
+  "sous_en": "6 clues · Ages 6 to 12",
+  "desc": "Un cahier de détective sur les relations : la carte des amitiés, ce qu’est une vraie amitié, les conflits, les moments à l’écart (avec dépistage de l’intimidation), les habiletés pour créer des amitiés et une mission amitié. Avec guide pour l’adulte, cartes-réponses et certificat.",
+  "code": "DAM",
+  "pv_pages": [
+   3,
+   5
+  ],
+  "fichiers": [
+   "Cahiers de détective Filodie/Cahier_detective_Amities_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "NsH8K",
+  "payhip_en": "NsH8K"
+ },
+ {
+  "id": "detective-dcb",
+  "type": "detective",
+  "groupe": "Cahiers de détective",
+  "titre": "Enquête sur mon corps et mes besoins",
+  "sous": "6 indices · 6 à 12 ans",
+  "sous_en": "6 clues · Ages 6 to 12",
+  "desc": "Un cahier de détective sur les signaux internes : faim, soif, fatigue, sommeil, sens (bruits, textures, lumières), batterie d’énergie, bouger et manger, et un plan pour prendre soin de soi. Utile en TSA, en TDAH et pour tous les enfants. Avec guide pour l’adulte, cartes-réponses et certificat.",
+  "code": "DCB",
+  "pv_pages": [
+   3,
+   5
+  ],
+  "fichiers": [
+   "Cahiers de détective Filodie/Cahier_detective_Corps_et_besoins_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "Jr0X2",
+  "payhip_en": "Jr0X2"
+ },
+ {
+  "id": "detective-dfa",
+  "type": "detective",
+  "groupe": "Cahiers de détective",
+  "titre": "Enquête sur ma famille et mes repères",
+  "sous": "6 indices · 6 à 12 ans",
+  "sous_en": "6 clues · Ages 6 to 12",
+  "desc": "Un cahier de détective sur le milieu de vie : les personnes importantes, une journée type, les traditions familiales, les changements (déménagement, séparation, naissance, deuil), la place de l’enfant et ses repères rassurants. Avec guide pour l’adulte, cartes-réponses et certificat.",
+  "code": "DFA",
+  "pv_pages": [
+   3,
+   5
+  ],
+  "fichiers": [
+   "Cahiers de détective Filodie/Cahier_detective_Famille_et_reperes_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "80pDC",
+  "payhip_en": "80pDC"
+ },
+ {
+  "id": "detective-dre",
+  "type": "detective",
+  "groupe": "Cahiers de détective",
+  "titre": "Enquête sur mes rêves et mes envies",
+  "sous": "6 indices · 6 à 12 ans",
+  "sous_en": "6 clues · Ages 6 to 12",
+  "desc": "Un cahier de détective pour nourrir l’espoir et la motivation : les passions, ce qui compte vraiment, le moi du futur, un rêve à la loupe, les obstacles possibles et un premier pas concret. Avec guide pour l’adulte, cartes-réponses et certificat.",
+  "code": "DRE",
+  "pv_pages": [
+   3,
+   5
+  ],
+  "fichiers": [
+   "Cahiers de détective Filodie/Cahier_detective_Reves_et_envies_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "v178O",
+  "payhip_en": "v178O"
+ },
+ {
+  "id": "detective-dnu",
+  "type": "detective",
+  "groupe": "Cahiers de détective",
+  "titre": "Enquête sur ma vie en ligne",
+  "sous": "8 indices · 9 à 14 ans",
+  "sous_en": "8 clues · Ages 9 to 14",
+  "desc": "Un cahier de détective de prévention : le portrait numérique de l’enfant, ses émotions en ligne, les traces et la vie privée, les inconnus et les demandes suspectes (leurre, sextorsion), la cyberintimidation, le vrai et le faux, l’équilibre et un plan de sécurité. Avec repères pour l’adulte, cartes-réponses et certificat.",
+  "code": "DNU",
+  "pv_pages": [
+   4,
+   6
+  ],
+  "fichiers": [
+   "Cahiers de détective Filodie/Cahier_detective_Vie_en_ligne_2026.pdf"
+  ],
+  "prix": 5.0,
+  "payhip": "9Y7Xu",
+  "payhip_en": "9Y7Xu"
+ },
+ {
   "id": "gratuit-mois-2610",
   "type": "gratuit",
   "groupe": "Outil gratuit du mois",
@@ -5240,7 +5420,7 @@
   "sous": "4 routines pour traverser novembre en douceur",
   "desc": "Revenir de l'école à la noirceur, garder mon énergie, une soirée calme, préparer le lendemain. Outil gratuit du mois de novembre 2026.",
   "code": "MOIS-2611",
-  "futur": true,
+  "futur": false,
   "fichiers": [
    "Outils gratuits Filodie/Couleur/Filodie_MOIS-2611_Quand_il_fait_noir_tôt.pdf",
    "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2611_Quand_il_fait_noir_tôt_NB.pdf"
@@ -6093,6 +6273,33 @@
   "valeur": 30.0
  },
  {
+  "id": "lot-detective",
+  "type": "lot_detective",
+  "groupe": "Lots",
+  "titre": "Tous les cahiers de détective",
+  "titre_en": "All the Detective Notebooks",
+  "sous": "9 cahiers d’introspection",
+  "sous_en": "9 self-reflection notebooks",
+  "desc": "Émotions, forces, inquiétudes, colère, amitiés, corps et besoins, famille, rêves et vie en ligne : l’adulte pose les questions et note les indices, l’enfant reste la personne experte de sa propre vie.",
+  "desc_en": "Feelings, strengths, worries, anger, friendships, body and needs, family, dreams and online life: the adult asks the questions and records the clues, the child remains the expert on their own life.",
+  "fichiers": [],
+  "contient": [
+   "detective-dem",
+   "detective-dfo",
+   "detective-din",
+   "detective-dco",
+   "detective-dam",
+   "detective-dcb",
+   "detective-dfa",
+   "detective-dre",
+   "detective-dnu"
+  ],
+  "prix": 25.0,
+  "payhip": "Ab1vr",
+  "payhip_en": "Ab1vr",
+  "valeur": 45.0
+ },
+ {
   "id": "lot-specialisees",
   "type": "lot_specialisees",
   "groupe": "Lots",
@@ -6521,8 +6728,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie",
   "sous": "Toute la collection",
-  "desc": "Les 142 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, le Grand livre clinique et le bottin régional.",
-  "desc_en": "All 142 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the Clinical Handbook and the regional directory.",
+  "desc": "Les 142 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional.",
+  "desc_en": "All 142 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -6868,12 +7075,21 @@
    "routines-rtn-d",
    "routines-rtn-e",
    "routines-rtn-f",
+   "detective-dem",
+   "detective-dfo",
+   "detective-din",
+   "detective-dco",
+   "detective-dam",
+   "detective-dcb",
+   "detective-dfa",
+   "detective-dre",
+   "detective-dnu",
    "grand-livre",
    "bottin-regional"
   ],
   "prix": 129.0,
   "payhip": "UScCI",
   "payhip_en": "UScCI",
-  "valeur": 1565.0
+  "valeur": 1610.0
  }
 ]
