@@ -578,6 +578,7 @@ def home(lang):
 
 
 TEMO = os.path.join(HERE, "temoignages.json")
+AVIS = os.path.join(HERE, "avis_payhip.json")   # notes Payhip (étoiles seulement, jamais de nom ni de courriel)
 def temoignages(lang):
     """Témoignages réels seulement (temoignages.json, consentement écrit reçu). Sans témoignage : une invitation à donner son avis."""
     fr = lang == "fr"
@@ -585,8 +586,17 @@ def temoignages(lang):
     avis = "avis.html" if fr else "review.html"
     inv = (f'<p style="margin-top:18px"><a class="btn ghost" href="{avis}">'
            f'{"Vous utilisez un outil Filodie ? Donnez votre avis" if fr else "Using a Filodie tool? Share your feedback"}</a></p>')
+    notes = json.load(open(AVIS, encoding="utf-8")) if os.path.exists(AVIS) else []
+    bandeau = ""
+    if notes:
+        moy = sum(n["etoiles"] for n in notes) / len(notes)
+        outils = ", ".join(html.escape(n["outil_fr" if fr else "outil_en"]) for n in notes)
+        bandeau = (f'<p class="notes"><span class="etoiles" aria-hidden="true">{"★" * round(moy)}{"☆" * (5 - round(moy))}</span> '
+                   f'<strong>{(f"{moy:.1f}".rstrip("0").rstrip(".")).replace(".", "," if fr else ".")}/5</strong> · '
+                   f'{len(notes)} {("avis vérifiés sur Payhip" if len(notes) > 1 else "avis vérifié sur Payhip") if fr else ("verified Payhip reviews" if len(notes) > 1 else "verified Payhip review")}'
+                   f'<br><small>{"Outils évalués :" if fr else "Rated tools:"} {outils}</small></p>')
     if not liste:
-        return f'<section class="wrap" style="text-align:center">{inv}</section>'
+        return f'<section class="wrap" style="text-align:center">{bandeau}{inv}</section>'
     cartes = ""
     for x in liste[:6]:
         txt = x.get("texte_fr" if fr else "texte_en") or x.get("texte_fr") or x.get("texte_en")
@@ -595,7 +605,7 @@ def temoignages(lang):
                    f'<figcaption><strong>{html.escape(x["prenom"])}</strong>{" · " + html.escape(role) if role else ""}'
                    f'</figcaption></figure>')
     return (f'<section class="wrap"><h2>{"Témoignages" if fr else "Testimonials"}</h2>'
-            f'<div class="grid3">{cartes}</div>{inv}</section>')
+            f'{bandeau}<div class="grid3">{cartes}</div>{inv}</section>')
 
 
 def gratuits(lang):
@@ -976,7 +986,7 @@ nav a[aria-current]{color:var(--terra)}nav .lang{border:1.5px solid var(--ink);b
 .stats div{background:var(--card);border-radius:14px;padding:14px}.stats strong{display:block;font-family:Fraunces,serif;font-size:2rem;color:var(--terra)}
 @media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
 .grid4{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}@media(max-width:860px){.grid3{grid-template-columns:1fr}}.temo{margin:0;padding:22px}.temo blockquote{margin:0 0 12px;font-style:italic;line-height:1.6}.temo figcaption{font-size:.92rem;color:#6F9A81}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}@media(max-width:860px){.grid3{grid-template-columns:1fr}}.temo{margin:0;padding:22px}.temo blockquote{margin:0 0 12px;font-style:italic;line-height:1.6}.temo figcaption{font-size:.92rem;color:#6F9A81}.notes{font-size:1.05rem;line-height:1.7}.notes .etoiles{color:#E8A93B;font-size:1.3rem;letter-spacing:2px}.notes small{color:#6F9A81}
 .abo{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}@media(max-width:760px){.abo{grid-template-columns:1fr}}
 .card{background:var(--card);border:1px solid var(--sand);border-radius:16px;overflow:hidden;color:var(--ink);text-decoration:none}
 .card.col img{aspect-ratio:17/13;object-fit:cover;object-position:top}.card.col h3,.card.col p{padding:0 16px}.card.col p{color:var(--gray);font-size:.95rem}
