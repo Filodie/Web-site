@@ -67,15 +67,15 @@ function groups(){const gs=[...new Set(P.filter(p=>!type||p.t===type).map(p=>p.g
  sel.innerHTML='<option value="">Tout</option>'+gs.map(g=>'<option>'+esc(g)+'</option>').join('');sel.value=grp}
 function buybtn(p){return p.k?'<a class="btn payhip-buy-button" data-theme="none" data-product="'+p.k+'" href="https://payhip.com/b/'+p.k+'">'+(p.p?T.buy:T.get)+'</a>'
    :'<span class="btn off">'+T.soon+'</span>'}
-function card(p){
+function card(p,i){
  const price=p.p?fmt.format(p.p):T.free, btn=buybtn(p);
- const im='<img src="'+p.img+'" alt="" loading="lazy">';
+ const im='<img src="'+p.img+'" alt="" width="420" height="544" '+(i<4?'fetchpriority="high"':'loading="lazy"')+' decoding="async">';
  return '<article class="card prod">'+(p.a.length?'<button class="pvb" data-pv="'+P.indexOf(p)+'" aria-label="'+T.preview+' : '+esc(p.n)+'">'+im+'<span class="pvl">'+T.preview+'</span></button>':im)+'<div class="pb"><p class="grp">'+esc(p.g)+(p.c?' · '+p.c:'')+'</p><h3>'+esc(p.n)+'</h3><p class="sub">'+esc(p.s)+'</p>'
   +(p.v>p.p?'<p class="save">'+T.value+' : <s>'+fmt.format(p.v)+'</s> · '+T.save+' '+Math.round(100-100*p.p/p.v)+' %</p>':'')
   +'<details><summary>'+T.details+'</summary><p>'+esc(p.d)+'</p></details><div class="buy"><strong>'+price+'</strong>'+btn+'</div></div></article>'}
 function draw(){const w=q.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
  const r=P.filter(p=>(!type||p.t===type)&&(!grp||p.g===grp)&&(!w||(p.n+' '+p.s+' '+p.d+' '+p.g+' '+p.c).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').includes(w)));
- document.getElementById('n').textContent=r.length+' '+T.count;list.innerHTML=r.map(card).join('');
+ document.getElementById('n').textContent=r.length+' '+T.count;list.innerHTML=r.map((p,i)=>card(p,i)).join('');
  if(window.Payhip&&Payhip.Buttons)try{Payhip.Buttons.init()}catch(e){}}
 document.querySelectorAll('.chips button').forEach(b=>{if(b.dataset.t===type){document.querySelector('.chips .on').classList.remove('on');b.classList.add('on')}
  b.onclick=()=>{document.querySelector('.chips .on').classList.remove('on');b.classList.add('on');type=b.dataset.t;grp='';history.replaceState(null,'',type?'#'+type:location.pathname);groups();draw()}});

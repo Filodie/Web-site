@@ -790,15 +790,15 @@ function groups(){{const gs=[...new Set(P.filter(p=>!type||p.t===type).map(p=>p.
  sel.innerHTML='<option value="">{t['all']}</option>'+gs.map(g=>'<option>'+esc(g)+'</option>').join('');sel.value=grp}}
 function buybtn(p){{return p.k?'<a class="btn payhip-buy-button" data-theme="none" data-product="'+p.k+'" href="https://payhip.com/b/'+p.k+'">'+(p.p?T.buy:T.get)+'</a>'
    :'<span class="btn off">'+T.soon+'</span>'}}
-function card(p){{
+function card(p,i){{
  const price=p.p?fmt.format(p.p):T.free, btn=buybtn(p);
- const im='<img src="'+p.img+'" alt="" loading="lazy">';
+ const im='<img src="'+p.img+'" alt="" width="420" height="544" '+(i<4?'fetchpriority="high"':'loading="lazy"')+' decoding="async">';
  return '<article class="card prod">'+(p.a.length?'<button class="pvb" data-pv="'+P.indexOf(p)+'" aria-label="'+T.preview+' : '+esc(p.n)+'">'+im+'<span class="pvl">'+T.preview+'</span></button>':im)+'<div class="pb"><p class="grp">'+esc(p.g)+(p.c?' · '+p.c:'')+'</p><h3>'+esc(p.n)+'</h3><p class="sub">'+esc(p.s)+'</p>'
   +(p.v>p.p?'<p class="save">'+T.value+' : <s>'+fmt.format(p.v)+'</s> · '+T.save+' '+Math.round(100-100*p.p/p.v)+' %</p>':'')
   +'<details><summary>'+T.details+'</summary><p>'+esc(p.d)+'</p></details><div class="buy"><strong>'+price+'</strong>'+btn+'</div></div></article>'}}
 function draw(){{const w=q.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');
  const r=P.filter(p=>(!type||p.t===type)&&(!grp||p.g===grp)&&(!w||(p.n+' '+p.s+' '+p.d+' '+p.g+' '+p.c).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').includes(w)));
- document.getElementById('n').textContent=r.length+' '+T.count;list.innerHTML=r.map(card).join('');
+ document.getElementById('n').textContent=r.length+' '+T.count;list.innerHTML=r.map((p,i)=>card(p,i)).join('');
  if(window.Payhip&&Payhip.Buttons)try{{Payhip.Buttons.init()}}catch(e){{}}}}
 document.querySelectorAll('.chips button').forEach(b=>{{if(b.dataset.t===type){{document.querySelector('.chips .on').classList.remove('on');b.classList.add('on')}}
  b.onclick=()=>{{document.querySelector('.chips .on').classList.remove('on');b.classList.add('on');type=b.dataset.t;grp='';history.replaceState(null,'',type?'#'+type:location.pathname);groups();draw()}}}});
@@ -829,7 +829,7 @@ def bottin(lang, items):
     body = f"""
 <section class="wrap split">
   <div><h1>{t['bottin_t']}</h1><p class="lead">{t['bottin_p']}</p><p>{btn}</p></div>
-  <img class="shadow" src="{img}" alt="">
+  <img class="shadow" src="{img}" alt="" fetchpriority="high">
 </section>"""
     js = '<script src="https://payhip.com/payhip.js"></script>' if k else ""
     return page(lang, "bottin.html" if lang == "fr" else "directory.html", t["bottin_t"], body, scripts=js)
@@ -1060,7 +1060,7 @@ nav{display:flex;gap:18px;align-items:center}nav a{color:var(--ink);text-decorat
 nav a[aria-current]{color:var(--terra)}nav .lang{border:1.5px solid var(--ink);border-radius:20px;padding:2px 10px}
 .menu{display:none;background:none;border:0;font-size:1.6rem;color:var(--ink)}
 @media (max-width:820px){.menu{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--cream);flex-direction:column;padding:16px;border-bottom:1px solid var(--sand)}nav.open{display:flex}}
-.hero{background:var(--cream);padding:40px 0 56px;position:relative;overflow:hidden}
+.hero{background:var(--cream);padding:40px 0 56px;position:relative;overflow:hidden}@media(max-width:640px){.hero{padding:22px 0 34px}.hero .ctas{margin-top:14px}}
 .thread{position:absolute;left:0;right:0;top:0;width:100%;height:90px;color:var(--terra);opacity:.9}
 .kicker{margin-top:60px;color:var(--sage);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem}
 .btn{display:inline-block;background:var(--terra);color:#fff!important;text-decoration:none;font-weight:800;padding:11px 20px;border-radius:30px;border:2px solid var(--terra)}
@@ -1082,7 +1082,7 @@ nav a[aria-current]{color:var(--terra)}nav .lang{border:1.5px solid var(--ink);b
 .chips button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .products{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px;margin-bottom:60px}
 @media (max-width:560px){.products{grid-template-columns:1fr 1fr;gap:10px}.pb{padding:8px 9px}.prod h3{font-size:.95rem}.buy{flex-direction:column;align-items:flex-start;gap:6px}}
-.prod{display:flex;flex-direction:column}.prod img{aspect-ratio:612/792;object-fit:cover;border-bottom:1px solid var(--sand)}
+.prod{display:flex;flex-direction:column}.prod img{width:100%;height:auto;aspect-ratio:612/792;object-fit:cover;border-bottom:1px solid var(--sand)}
 .pvb{position:relative;display:block;padding:0;border:0;background:none;cursor:zoom-in;width:100%}.pvb img{display:block;width:100%}
 .pvl{position:absolute;right:10px;bottom:12px;background:var(--ink);color:#fff;font-weight:800;font-size:.8rem;padding:4px 12px;border-radius:20px;opacity:.9}
 .pvb:hover .pvl,.pvb:focus-visible .pvl{background:var(--terra);opacity:1}

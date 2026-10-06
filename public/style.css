@@ -26,7 +26,7 @@ nav{display:flex;gap:18px;align-items:center}nav a{color:var(--ink);text-decorat
 nav a[aria-current]{color:var(--terra)}nav .lang{border:1.5px solid var(--ink);border-radius:20px;padding:2px 10px}
 .menu{display:none;background:none;border:0;font-size:1.6rem;color:var(--ink)}
 @media (max-width:820px){.menu{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--cream);flex-direction:column;padding:16px;border-bottom:1px solid var(--sand)}nav.open{display:flex}}
-.hero{background:var(--cream);padding:40px 0 56px;position:relative;overflow:hidden}
+.hero{background:var(--cream);padding:40px 0 56px;position:relative;overflow:hidden}@media(max-width:640px){.hero{padding:22px 0 34px}.hero .ctas{margin-top:14px}}
 .thread{position:absolute;left:0;right:0;top:0;width:100%;height:90px;color:var(--terra);opacity:.9}
 .kicker{margin-top:60px;color:var(--sage);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem}
 .btn{display:inline-block;background:var(--terra);color:#fff!important;text-decoration:none;font-weight:800;padding:11px 20px;border-radius:30px;border:2px solid var(--terra)}
@@ -48,7 +48,7 @@ nav a[aria-current]{color:var(--terra)}nav .lang{border:1.5px solid var(--ink);b
 .chips button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .products{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px;margin-bottom:60px}
 @media (max-width:560px){.products{grid-template-columns:1fr 1fr;gap:10px}.pb{padding:8px 9px}.prod h3{font-size:.95rem}.buy{flex-direction:column;align-items:flex-start;gap:6px}}
-.prod{display:flex;flex-direction:column}.prod img{aspect-ratio:612/792;object-fit:cover;border-bottom:1px solid var(--sand)}
+.prod{display:flex;flex-direction:column}.prod img{width:100%;height:auto;aspect-ratio:612/792;object-fit:cover;border-bottom:1px solid var(--sand)}
 .pvb{position:relative;display:block;padding:0;border:0;background:none;cursor:zoom-in;width:100%}.pvb img{display:block;width:100%}
 .pvl{position:absolute;right:10px;bottom:12px;background:var(--ink);color:#fff;font-weight:800;font-size:.8rem;padding:4px 12px;border-radius:20px;opacity:.9}
 .pvb:hover .pvl,.pvb:focus-visible .pvl{background:var(--terra);opacity:1}
