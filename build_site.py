@@ -1166,7 +1166,25 @@ def build():
     for (lang, name), (title, content) in CONTENT.items():
         d = PUB if lang == "fr" else os.path.join(PUB, "en")
         open(os.path.join(d, name), "w").write(textpage(lang, name, title, content))
+    sitemap()
+    # Vérification Google Search Console (ne pas supprimer, sinon la propriété n'est plus vérifiée)
+    open(os.path.join(PUB, "google3a91a12fa8ae27d7b.html"), "w").write("google-site-verification: google3a91a12fa8ae27d7b.html")
     print("Site prêt :", PUB)
+
+
+def sitemap():
+    """sitemap.xml (pour Google Search Console) : toutes les pages HTML publiques, sauf 404."""
+    from datetime import date as _d
+    urls = []
+    for rac, _, fics in os.walk(PUB):
+        for f in sorted(fics):
+            if f.endswith(".html") and f != "404.html" and not f.startswith("google"):
+                rel = os.path.relpath(os.path.join(rac, f), PUB).replace(os.sep, "/")
+                urls.append("https://filodie.ca/" + ("" if rel == "index.html" else rel.replace("/index.html", "/")))
+    corps = "".join(f"<url><loc>{u}</loc><lastmod>{_d.today().isoformat()}</lastmod></url>" for u in sorted(urls))
+    open(os.path.join(PUB, "sitemap.xml"), "w", encoding="utf-8").write(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+        + corps + "</urlset>\n")
 
 
 if __name__ == "__main__":
