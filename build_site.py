@@ -16,6 +16,8 @@ import sys
 
 import fitz
 
+from conseils import ARTICLES
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 OUT_FR = os.path.join(ROOT, "Filodie – Outils T.E.S.")
@@ -370,7 +372,7 @@ L = {
     "fr": {
         "lang": "fr-CA", "other": "en", "other_label": "EN", "base": "",
         "tag": "Outils cliniques pour T.E.S.",
-        "nav": [("index.html", "Accueil"), ("boutique.html", "Boutique"), ("bottin.html", "Bottin gratuit"),
+        "nav": [("index.html", "Accueil"), ("boutique.html", "Boutique"), ("bottin.html", "Bottin gratuit"), ("conseils.html", "Conseils"),
                 ("services.html", "Services"), ("a-propos.html", "À propos"), ("faq.html", "FAQ"), ("contact.html", "Contact")],
         "hero_k": "Outils cliniques · éducation spécialisée",
         "hero_1": "Tenir le fil,", "hero_2": "de l’observation à l’intervention.",
@@ -414,7 +416,7 @@ L = {
     "en": {
         "lang": "en-CA", "other": "fr", "other_label": "FR", "base": "../",
         "tag": "Clinical tools for special care counsellors",
-        "nav": [("index.html", "Home"), ("shop.html", "Shop"), ("directory.html", "Free directory"),
+        "nav": [("index.html", "Home"), ("shop.html", "Shop"), ("directory.html", "Free directory"), ("tips.html", "Tips"),
                 ("services.html", "Services"), ("about.html", "About"), ("faq.html", "FAQ"), ("contact.html", "Contact")],
         "hero_k": "Clinical tools · special care counselling",
         "hero_1": "Hold the thread,", "hero_2": "from observation to intervention.",
@@ -460,6 +462,8 @@ PAIRS = {"index.html": "index.html", "boutique.html": "shop.html", "bottin.html"
          "a-propos.html": "about.html", "faq.html": "faq.html", "contact.html": "contact.html", "services.html": "services.html",
          "licence.html": "licence.html", "conditions.html": "terms.html", "confidentialite.html": "privacy.html",
          "coloriage.html": "colouring.html", "avis.html": "review.html"}
+PAIRS["conseils.html"] = "tips.html"
+PAIRS.update({a["fr"]: a["en"] for a in ARTICLES})
 PAIRS_EN = {v: k for k, v in PAIRS.items()}
 
 THREAD = ('<svg class="thread" viewBox="0 0 600 90" preserveAspectRatio="none" aria-hidden="true"><path d="M-10 60 '
@@ -835,6 +839,62 @@ def bottin(lang, items):
     return page(lang, "bottin.html" if lang == "fr" else "directory.html", t["bottin_t"], body, scripts=js)
 
 
+def _date(d, fr):
+    a, m, j = d.split("-")
+    mois = (["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre",
+             "décembre"] if fr else ["January", "February", "March", "April", "May", "June", "July", "August", "September",
+                                     "October", "November", "December"])[int(m) - 1]
+    return f"{int(j)} {mois} {a}" if fr else f"{mois} {int(j)}, {a}"
+
+
+def carte_produit(lang, i):
+    """Carte produit (image, titre, prix, bouton Payhip) pour les articles Conseils."""
+    fr = lang == "fr"
+    code = i["payhip"] if fr else (i.get("payhip_en") or i["payhip"])
+    titre = i["titre"] if fr else en(i, "titre")
+    sous = i.get("sous", "") if fr else en(i, "sous")
+    p = i.get("prix") or 0
+    prix = ((f"{p:.2f}".replace(".00", "").replace(".", ",") + " $") if fr else ("$" + f"{p:.2f}".replace(".00", ""))) \
+        if p else ("Gratuit" if fr else "Free")
+    btn = ("Acheter" if fr else "Buy now") if p else ("Télécharger" if fr else "Get it free")
+    return (f'<div class="card col vedette"><img src="{L[lang]["base"]}img/{lang}/{i["id"]}.jpg{iv(lang, i["id"])}" alt="" loading="lazy">'
+            f'<h3>{html.escape(titre)}</h3><p>{html.escape(sous)}</p><p class="vprix">{prix}</p>'
+            f'<p style="padding-bottom:16px"><a class="btn payhip-buy-button" data-theme="none" data-product="{code}" '
+            f'href="https://payhip.com/b/{code}">{btn}</a></p></div>')
+
+
+def article(lang, a, items):
+    fr = lang == "fr"
+    titre = a["titre_fr" if fr else "titre_en"]
+    cartes = "".join(carte_produit(lang, items[k]) for k in a["produits"] if k in items)
+    meta = f'{_date(a["date"], fr)} · {a["minutes"]} {"min de lecture" if fr else "min read"} · {"Par Mélodie Fréchette, Filodie" if fr else "By Mélodie Fréchette, Filodie"}'
+    retour = f'<a href="{"conseils.html" if fr else "tips.html"}">← {"Tous les conseils" if fr else "All tips"}</a>'
+    outils = "Des outils pour aller plus loin" if fr else "Tools to go further"
+    body = (f'<article class="wrap prose"><p class="muted">{retour}</p><h1>{html.escape(titre)}</h1>'
+            f'<p class="art-meta">{meta}</p>{a["corps_fr" if fr else "corps_en"]}</article>'
+            f'<section class="band"><div class="wrap"><h2>{outils}</h2><div class="grid3">{cartes}</div>'
+            f'<p style="margin-top:18px"><a class="btn ghost" href="{"boutique.html" if fr else "shop.html"}">'
+            f'{"Voir toute la boutique" if fr else "See the whole shop"} →</a></p></div></section>')
+    return page(lang, a["fr" if fr else "en"], titre, body, desc=a["desc_fr" if fr else "desc_en"],
+                scripts='<script src="https://payhip.com/payhip.js"></script>')
+
+
+def conseils_index(lang, items):
+    fr = lang == "fr"
+    h1 = "Conseils" if fr else "Tips"
+    lead = ("Des repères concrets pour accompagner les enfants et les jeunes au quotidien, à la maison, en classe ou "
+            "en intervention." if fr else "Practical guidance for supporting children and youth every day, at home, "
+            "in the classroom or in intervention work.")
+    cartes = ""
+    for a in sorted(ARTICLES, key=lambda x: x["date"], reverse=True):
+        k = a["produits"][0]
+        cartes += (f'<a class="card col" href="{a["fr" if fr else "en"]}"><img src="{L[lang]["base"]}img/{lang}/{k}.jpg{iv(lang, k)}" alt="" loading="lazy">'
+                   f'<h3>{html.escape(a["titre_fr" if fr else "titre_en"])}</h3><p>{html.escape(a["desc_fr" if fr else "desc_en"])}</p>'
+                   f'<p class="muted" style="padding:0 16px 16px">{a["minutes"]} {"min de lecture" if fr else "min read"}</p></a>')
+    body = f'<section class="wrap"><h1>{h1}</h1><p class="lead">{lead}</p><div class="grid3">{cartes}</div></section>'
+    return page(lang, "conseils.html" if fr else "tips.html", h1, body, desc=lead)
+
+
 def textpage(lang, name, title, content):
     return page(lang, name, title, f'<section class="wrap prose"><h1>{title}</h1>{content}</section>')
 
@@ -1098,7 +1158,7 @@ details{font-size:.9rem;margin:6px 0}summary{cursor:pointer;color:var(--terra);f
 .split{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;padding:40px 20px 70px}
 @media (max-width:760px){.split{grid-template-columns:1fr}}
 .shadow{border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.15)}
-.prose{max-width:780px;padding-bottom:60px}.prose h2{font-size:1.4rem}
+.prose{max-width:780px;padding-bottom:60px}.art-meta{color:#6F9A81;font-size:.92rem;margin-top:-.4em}.prose li{margin:.45em 0;line-height:1.6}.astuce{background:var(--cream);border-left:4px solid #D9734E;padding:14px 18px;border-radius:8px;margin:1.6em 0}.astuce p{margin:.4em 0 0}.prose h2{font-size:1.4rem}
 .prose h3{font-size:1.1rem;margin-top:1.4em}.tbl{width:100%;border-collapse:collapse;margin:1em 0;font-size:.95rem}.tbl th,.tbl td{padding:8px 10px;text-align:left;border-bottom:1px solid rgba(127,127,127,.25)}.tbl th{font-weight:800}.tbl td:not(:first-child),.tbl th:not(:first-child){text-align:right;white-space:nowrap}
 .foot{background:var(--cream);border-top:1px solid var(--sand);padding:30px 0;font-size:.9rem;color:var(--gray)}
 .foot .legal a{color:var(--ink)}.note{font-size:.8rem}
@@ -1188,6 +1248,10 @@ def build():
         open(os.path.join(d, "boutique.html" if lang == "fr" else "shop.html"), "w").write(shop(lang, items))
         open(os.path.join(d, "bottin.html" if lang == "fr" else "directory.html"), "w").write(bottin(lang, items))
         open(os.path.join(d, "coloriage.html" if lang == "fr" else "colouring.html"), "w").write(coloriage(lang))
+        tous = {i["id"]: i for i in items}
+        open(os.path.join(d, "conseils.html" if lang == "fr" else "tips.html"), "w").write(conseils_index(lang, tous))
+        for a in ARTICLES:
+            open(os.path.join(d, a[lang]), "w").write(article(lang, a, tous))
     open(os.path.join(PUB, "404.html"), "w").write(page("fr", "index.html", "Page introuvable",
         '<section class="wrap prose"><h1>Page introuvable</h1><p class="lead">Cette page n’existe pas ou a été déplacée. '
         '· This page does not exist.</p><p><a class="btn" href="/">Accueil · Home</a></p></section>').replace('href="index.html"', 'href="/index.html"'))
