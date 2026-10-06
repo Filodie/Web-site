@@ -1,10 +1,10 @@
 {
  "actif": true,
- "code": "LANCEMENT15",
- "rabais_fr": "15 %",
- "rabais_en": "15%",
+ "code": "PREMIERS40",
+ "rabais_fr": "40 %",
+ "rabais_en": "40%",
  "debut": "",
- "fin": "2026-10-04",
- "message_fr": "Lancement : 15 % de rabais sur toute la boutique jusqu’au dimanche 4 octobre avec le code",
- "message_en": "Launch sale: 15% off the whole shop until Sunday, October 4 with code"
+ "fin": "2026-10-19",
+ "message_fr": "Offre de lancement : 40 % de rabais sur toute la boutique pour les 10 premières commandes, jusqu’au lundi 19 octobre, avec le code",
+ "message_en": "Launch offer: 40% off the whole shop for the first 10 orders, until Monday, October 19, with code"
 }

@@ -22,3 +22,13 @@ Ajoute un bloc dans `temoignages.json`, puis lance `python3 publier.py --catalog
 - `consentement: true` est obligatoire, sinon le témoignage n'apparaît pas.
 - Jamais de nom de famille, de milieu de travail ni de détail sur un enfant.
 - Les 6 premiers s'affichent sur l'accueil (FR et EN).
+
+# Ajouter une note Payhip (étoiles seulement)
+
+Quand un avis Payhip n'a pas de texte, ajoute une ligne dans `avis_payhip.json` (jamais de nom ni de courriel) :
+
+```json
+{"outil_fr": "Nom de l'outil", "outil_en": "Tool name", "etoiles": 5, "date": "2026-10-05"}
+```
+
+La moyenne et le nombre d'avis s'affichent sur l'accueil (FR et EN). Puis `python3 publier.py --catalogue "Nouvel avis"`.
