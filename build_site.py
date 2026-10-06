@@ -605,6 +605,32 @@ def vedettes(lang):
             f'<p style="margin-top:18px"><a class="btn ghost" href="{shop}">{tout} →</a></p></section>{js}')
 
 
+
+def equipes(lang):
+    """Bloc « Pour les écoles, CPE et organismes » : met en avant la licence d’équipe (services.html#licence-equipe)."""
+    fr = lang == "fr"
+    if fr:
+        h2, lead = "Pour les écoles, les CPE et les organismes", ("Toute votre équipe utilise les mêmes outils, avec une seule "
+               "facture au nom de l’établissement.")
+        pts = [("Jusqu’à 25 personnes", "Intervenantes et intervenants, T.E.S., personnel enseignant, personnel éducateur et direction."),
+               ("3 fois le prix, pas 25", "Une trousse à 7 $ devient 21 $ pour toute l’équipe. Tout Filodie : 387 $ au lieu de 3 225 $."),
+               ("Facture et bon de commande", "Facture PDF au nom de l’établissement, payable par virement Interac ou par chèque.")]
+        btn1, btn2 = "Voir la licence d’équipe", "Demander une facture"
+        lien, mail = "services.html#licence-equipe", "mailto:melodie@filodie.ca?subject=Licence%20d%E2%80%99%C3%A9quipe"
+    else:
+        h2, lead = "For schools, daycares and organizations", ("Your whole team uses the same tools, with a single invoice in "
+               "the organization’s name.")
+        pts = [("Up to 25 people", "Counsellors, SCCs, teachers, educators and management."),
+               ("3 times the price, not 25", "A $7 toolkit becomes $21 for the whole team. All of Filodie: $387 instead of $3,225."),
+               ("Invoice and purchase order", "PDF invoice in the organization’s name, payable by Interac e-Transfer or cheque.")]
+        btn1, btn2 = "See the team licence", "Request an invoice"
+        lien, mail = "services.html#team-licence", "mailto:melodie@filodie.ca?subject=Team%20licence"
+    cols = "".join(f"<div><h3>{a}</h3><p>{b}</p></div>" for a, b in pts)
+    return (f'<section class="band"><div class="wrap"><h2>{h2}</h2><p class="lead">{lead}</p>'
+            f'<div class="grid3 why">{cols}</div>'
+            f'<p class="ctas" style="margin-top:18px"><a class="btn" href="{lien}">{btn1}</a> '
+            f'<a class="btn ghost" href="{mail}">{btn2}</a></p></div></section>')
+
 def home(lang):
     t = L[lang]
     shop = "boutique.html" if lang == "fr" else "shop.html"
@@ -626,6 +652,7 @@ def home(lang):
   </div>
 </section>
 {vedettes(lang)}
+{equipes(lang)}
 {gratuits(lang)}
 {temoignages(lang)}
 <section class="wrap"><h2>{t['col_t']}</h2><div class="grid4">{cols}</div></section>
