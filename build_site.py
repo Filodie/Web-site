@@ -549,6 +549,61 @@ def iv(lang, img):
     return "?v=" + hashlib.md5(open(f, "rb").read()).hexdigest()[:8] if os.path.exists(f) else ""
 
 
+# Coups de cœur de l'accueil : choix de Mélodie (jamais « meilleures ventes » tant qu'il n'y a pas de ventes réelles).
+VEDETTES = [
+    ("detective-dem", "L’enfant enquête, l’adulte note les indices : parler d’émotions sans interrogatoire.",
+     "The child investigates, the adult notes the clues: talking about feelings without an interrogation."),
+    ("trousse-tsa", "10 outils prêts à imprimer : profil sensoriel, communication, surcharge, structure visuelle.",
+     "10 ready-to-print tools: sensory profile, communication, overload, visual structure."),
+    ("lot-etudes-tes", "Les 16 outils pour réussir ses stages et ses travaux en T.E.S. : PPH, notes évolutives, plan d’intervention.",
+     "All 16 tools to succeed in SCC internships and coursework: HDM-DCP, progress notes, intervention plan."),
+    ("lot-mega", "Tout le catalogue en une seule fois : trousses, cahiers visuels, affiches, jeux, cahiers de détective.",
+     "The whole catalogue at once: toolkits, visual workbooks, posters, games, detective notebooks."),
+]
+
+
+def vedettes(lang):
+    """Section « Coups de cœur » : 4 produits payants mis en avant, avec le prix réduit si un code promo est actif."""
+    fr = lang == "fr"
+    items = {i["id"]: i for i in json.load(open(CAT, encoding="utf-8"))}
+    p = json.load(open(PROMO, encoding="utf-8")) if os.path.exists(PROMO) else {}
+    pct = 0
+    if p.get("actif") and p.get("code"):
+        m = re.match(r"(\d+)\s*%", p.get("rabais_fr", "") or "")
+        pct = int(m.group(1)) if m else 0
+
+    def prix(x):
+        t = f"{x:.2f}".replace(".00", "")
+        return (t.replace(".", ",") + " $") if fr else ("$" + t)
+
+    cards = ""
+    for k, acc_fr, acc_en in VEDETTES:
+        i = items.get(k)
+        if not i:
+            continue
+        code = i["payhip"] if fr else (i.get("payhip_en") or i["payhip"])
+        titre = i["titre"] if fr else en(i, "titre")
+        promo = ""
+        if pct:
+            promo = (f'<span class="vprix-promo" data-fin="{p.get("fin", "")}"> → <strong>{prix(i["prix"] * (100 - pct) / 100)}</strong> '
+                     f'{"avec" if fr else "with"} <code>{html.escape(p["code"])}</code></span>')
+        cards += (f'<div class="card col vedette"><img src="{L[lang]["base"]}img/{lang}/{k}.jpg{iv(lang, k)}" alt="" loading="lazy">'
+                  f'<h3>{html.escape(titre)}</h3><p>{html.escape(acc_fr if fr else acc_en)}</p>'
+                  f'<p class="vprix">{prix(i["prix"])}{promo}</p>'
+                  f'<p style="padding-bottom:16px"><a class="btn payhip-buy-button" data-theme="none" data-product="{code}" '
+                  f'href="https://payhip.com/b/{code}">{"Acheter" if fr else "Buy now"}</a></p></div>')
+    h2 = "Les coups de cœur de Mélodie" if fr else "Mélodie’s favourites"
+    sous = ("Par où commencer ? Quatre outils que je recommande en premier, selon votre réalité sur le terrain."
+            if fr else "Where to start? Four tools I recommend first, depending on your day-to-day work.")
+    tout = "Voir toute la boutique" if fr else "See the whole shop"
+    shop = "boutique.html" if fr else "shop.html"
+    js = ('<script>document.querySelectorAll(".vprix-promo").forEach(function(e){var d=new Date(),'
+          'j=d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");'
+          'if(e.dataset.fin&&j>e.dataset.fin)e.remove();});</script>')
+    return (f'<section class="wrap"><h2>{h2}</h2><p class="lead">{sous}</p><div class="grid4">{cards}</div>'
+            f'<p style="margin-top:18px"><a class="btn ghost" href="{shop}">{tout} →</a></p></section>{js}')
+
+
 def home(lang):
     t = L[lang]
     shop = "boutique.html" if lang == "fr" else "shop.html"
@@ -569,6 +624,7 @@ def home(lang):
     <div class="stats">{stats}</div>
   </div>
 </section>
+{vedettes(lang)}
 {gratuits(lang)}
 {temoignages(lang)}
 <section class="wrap"><h2>{t['col_t']}</h2><div class="grid4">{cols}</div></section>
@@ -986,7 +1042,7 @@ nav a[aria-current]{color:var(--terra)}nav .lang{border:1.5px solid var(--ink);b
 .stats div{background:var(--card);border-radius:14px;padding:14px}.stats strong{display:block;font-family:Fraunces,serif;font-size:2rem;color:var(--terra)}
 @media (max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}}
 .grid4{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
-.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}@media(max-width:860px){.grid3{grid-template-columns:1fr}}.temo{margin:0;padding:22px}.temo blockquote{margin:0 0 12px;font-style:italic;line-height:1.6}.temo figcaption{font-size:.92rem;color:#6F9A81}.notes{font-size:1.05rem;line-height:1.7}.notes .etoiles{color:#E8A93B;font-size:1.3rem;letter-spacing:2px}.notes small{color:#6F9A81}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}@media(max-width:860px){.grid3{grid-template-columns:1fr}}.temo{margin:0;padding:22px}.temo blockquote{margin:0 0 12px;font-style:italic;line-height:1.6}.temo figcaption{font-size:.92rem;color:#6F9A81}.vedette{display:flex;flex-direction:column}.card.col p.vprix{margin-top:auto}.card.col p.vprix{font-weight:800;font-size:1.1rem;color:#1F3B4D}.vprix-promo{color:#D9734E}.vprix-promo code{background:#F8F2E9;padding:1px 6px;border-radius:5px;font-size:.85rem}.notes{font-size:1.05rem;line-height:1.7}.notes .etoiles{color:#E8A93B;font-size:1.3rem;letter-spacing:2px}.notes small{color:#6F9A81}
 .abo{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:center}@media(max-width:760px){.abo{grid-template-columns:1fr}}
 .card{background:var(--card);border:1px solid var(--sand);border-radius:16px;overflow:hidden;color:var(--ink);text-decoration:none}
 .card.col img{aspect-ratio:17/13;object-fit:cover;object-position:top}.card.col h3,.card.col p{padding:0 16px}.card.col p{color:var(--gray);font-size:.95rem}
