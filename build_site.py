@@ -718,7 +718,9 @@ def temoignages(lang):
     for x in liste[:6]:
         txt = x.get("texte_fr" if fr else "texte_en") or x.get("texte_fr") or x.get("texte_en")
         role = x.get("role_fr" if fr else "role_en") or ""
-        cartes += (f'<figure class="card temo"><blockquote>« {html.escape(txt)} »</blockquote>'
+        n = int(x.get("etoiles") or 0)
+        etoiles = (f'<p class="etoiles" aria-label="{n}/5">{"★" * n}{"☆" * (5 - n)}</p>' if n else "")
+        cartes += (f'<figure class="card temo">{etoiles}<blockquote>« {html.escape(txt)} »</blockquote>'
                    f'<figcaption><strong>{html.escape(x["prenom"])}</strong>{" · " + html.escape(role) if role else ""}'
                    f'</figcaption></figure>')
     return (f'<section class="wrap"><h2>{"Témoignages" if fr else "Testimonials"}</h2>'
