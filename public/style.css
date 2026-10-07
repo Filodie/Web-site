@@ -23,7 +23,7 @@ em{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--terra)}
 .logo svg{display:block;width:4em;height:.82em;margin:.1em -.3em 0}
 .logo.small{font-size:1.3rem;margin:0 0 6px}
 nav{display:flex;gap:18px;align-items:center}nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:.95rem}
-nav a[aria-current]{color:var(--terra)}nav .lang{border:1.5px solid var(--ink);border-radius:20px;padding:2px 10px}
+nav a[aria-current]{color:var(--terra)}nav .panier{font-weight:700;color:var(--terra)!important;white-space:nowrap}nav .lang{border:1.5px solid var(--ink);border-radius:20px;padding:2px 10px}
 .menu{display:none;background:none;border:0;font-size:1.6rem;color:var(--ink)}
 @media (max-width:820px){.menu{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--cream);flex-direction:column;padding:16px;border-bottom:1px solid var(--sand)}nav.open{display:flex}}
 .hero{background:var(--cream);padding:40px 0 56px;position:relative;overflow:hidden}@media(max-width:640px){.hero{padding:22px 0 34px}.hero .ctas{margin-top:14px}}
@@ -60,7 +60,7 @@ nav a[aria-current]{color:var(--terra)}nav .lang{border:1.5px solid var(--ink);b
 .prod h3{font-size:1.05rem}.sub{margin:0;color:var(--gray);font-size:.9rem}
 .save{margin:6px 0 0;font-size:.82rem;font-weight:800;color:var(--sage)}
 details{font-size:.9rem;margin:6px 0}summary{cursor:pointer;color:var(--terra);font-weight:700}
-.buy{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:10px}.buy strong{font-size:1.1rem}
+.buy{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:10px}.buy strong{font-size:1.1rem}.buy{gap:8px;flex-wrap:wrap}.buy .btn{white-space:nowrap;padding:8px 14px;font-size:.9rem}
 .split{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;padding:40px 20px 70px}
 @media (max-width:760px){.split{grid-template-columns:1fr}}
 .shadow{border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.15)}

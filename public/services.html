@@ -23,7 +23,7 @@ ml('account', '2673065');</script>
   <div class="wrap bar">
     <a class="logo" href="index.html" aria-label="Filodie">filodie<svg viewBox="33 106 236 48" aria-hidden="true"><path d="M40 130C67 110 67 110 95 130S122 150 150 130S177 110 205 130S232 150 260 130" fill="none" stroke="#D9734E" stroke-width="3.2" stroke-linecap="round"/><circle cx="67" cy="115" r="7" fill="#1F3B4D"/><circle cx="123" cy="145" r="7" fill="#D9734E"/><circle cx="178" cy="115" r="7" fill="#6F9A81"/><circle cx="233" cy="145" r="7" fill="#E3B04B"/><circle cx="260" cy="130" r="7" fill="#D98FA0"/></svg></a>
     <button class="menu" aria-expanded="false" aria-controls="nav">☰</button>
-    <nav id="nav"><a href="index.html">Accueil</a><a href="boutique.html">Boutique</a><a href="bottin.html">Bottin gratuit</a><a href="conseils.html">Conseils</a><a href="services.html" aria-current=page>Services</a><a href="a-propos.html">À propos</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a class="lang" href="en/services.html" hreflang="en-CA">EN</a></nav>
+    <nav id="nav"><a href="index.html">Accueil</a><a href="boutique.html">Boutique</a><a href="bottin.html">Bottin gratuit</a><a href="conseils.html">Conseils</a><a href="services.html" aria-current=page>Services</a><a href="a-propos.html">À propos</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a class="panier payhip-open-cart-button" href="https://payhip.com/cart">🛒 Panier</a><a class="lang" href="en/services.html" hreflang="en-CA">EN</a></nav>
   </div>
 </header>
 <main>
@@ -72,6 +72,8 @@ ml('account', '2673065');</script>
 document.querySelector('.menu').addEventListener('click',e=>{const n=document.getElementById('nav');
 const o=n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',o)});
 </script>
+<script>window.PayhipConfig={enableCart:true,cart:{position:"bottom-right",launcherBackground:"#D9734E",checkoutButtonBackground:"#D9734E"}};</script>
+<script src="https://payhip.com/payhip.js"></script>
 
 </body>
 </html>

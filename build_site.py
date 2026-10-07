@@ -396,7 +396,7 @@ L = {
         "search": "Rechercher un outil…", "all": "Tout",
         "types": {"trousse": "Trousses", "edition": "Éditions", "cahier": "Cahiers visuels", "affiches": "Affiches", "jeux": "Jeux", "routines": "Routines", "detective": "Détective", "gratuit": "Gratuit", "livre": "Grand livre",
                   "bottin": "Bottin", "lot": "Lots"},
-        "buy": "Acheter", "soon": "Bientôt disponible", "free": "Gratuit", "get": "Obtenir", "details": "Détails", "cahier_nb": " · Couleur + version noir et blanc à colorier",
+        "buy": "Acheter", "cart": "Ajouter au panier", "soon": "Bientôt disponible", "free": "Gratuit", "get": "Obtenir", "details": "Détails", "cahier_nb": " · Couleur + version noir et blanc à colorier",
         "aff_nb": " · Couleur + noir et blanc · lettre et 11 × 17",
         "jeux_nb": " · Règles, cartes et plateaux · couleur + noir et blanc",
         "rtn_nb": " · Séquences, tableaux et guide parent · couleur + noir et blanc",
@@ -439,7 +439,7 @@ L = {
         "search": "Search for a tool…", "all": "All",
         "types": {"trousse": "Toolkits", "edition": "Editions", "cahier": "Visual workbooks", "affiches": "Posters", "jeux": "Games", "routines": "Routines", "detective": "Detective", "gratuit": "Free", "livre": "Handbook",
                   "bottin": "Directory", "lot": "Bundles"},
-        "buy": "Buy", "soon": "Coming soon", "free": "Free", "get": "Get it", "details": "Details", "cahier_nb": " · Colour + black-and-white colouring version",
+        "buy": "Buy", "cart": "Add to cart", "soon": "Coming soon", "free": "Free", "get": "Get it", "details": "Details", "cahier_nb": " · Colour + black-and-white colouring version",
         "aff_nb": " · Colour + black and white · letter and 11 × 17",
         "jeux_nb": " · Rules, cards and boards · colour + black and white",
         "det_nb": " · Adult guide, answer cards and certificate",
@@ -494,6 +494,26 @@ def promo_html(lang):
             'if((b.dataset.debut&&j<b.dataset.debut)||(b.dataset.fin&&j>b.dataset.fin))b.remove();})();</script>\n')
 
 
+# Payhip : panier activé (on ajoute plusieurs produits, puis on paie une seule fois). Le script est chargé sur toutes les pages
+# pour que le panier et le lien « Panier » du menu fonctionnent partout.
+PAYHIP_SRC = '<script src="https://payhip.com/payhip.js"></script>'
+PAYHIP_JS = ('<script>window.PayhipConfig={enableCart:true,cart:{position:"bottom-right",'
+             'launcherBackground:"#D9734E",checkoutButtonBackground:"#D9734E"}};</script>\n' + PAYHIP_SRC)
+PAYHIP_REINIT = ("if(window.Payhip&&Payhip.Button)try{Payhip.Button.initiateBuyButtons();"
+                 "Payhip.Button.initiateAddToCartButtons();Payhip.Button.initiateOpenCartButtons()}catch(e){}")
+
+
+def bouton_payhip(code, payant, lang, libelle_gratuit=None, cls="btn"):
+    """Produit payant : « Ajouter au panier » (panier Payhip). Gratuit : obtention directe."""
+    fr = lang == "fr"
+    if payant:
+        return (f'<a class="{cls} payhip-add-to-cart-button" data-theme="none" data-product="{code}" '
+                f'href="https://payhip.com/b/{code}">{"Ajouter au panier" if fr else "Add to cart"}</a>')
+    lib = libelle_gratuit or ("Obtenir" if fr else "Get it")
+    return (f'<a class="{cls} payhip-buy-button" data-theme="none" data-product="{code}" '
+            f'href="https://payhip.com/b/{code}">{lib}</a>')
+
+
 def page(lang, name, title, body, desc="", scripts=""):
     t = L[lang]
     b = t["base"]
@@ -501,6 +521,9 @@ def page(lang, name, title, body, desc="", scripts=""):
     other_href = ("en/" if lang == "fr" else "../") + other
     nav = "".join(f'<a href="{h}"{" aria-current=page" if h == name else ""}>{l}</a>' for h, l in t["nav"])
     legal = " · ".join(f'<a href="{h}">{l}</a>' for h, l in t["footer_legal"])
+    scripts = PAYHIP_JS + "\n" + scripts.replace(PAYHIP_SRC + "\n", "").replace(PAYHIP_SRC, "")
+    panier = (f'<a class="panier payhip-open-cart-button" href="https://payhip.com/cart">'
+              f'🛒 {"Panier" if lang == "fr" else "Cart"}</a>')
     return f"""<!doctype html>
 <html lang="{t['lang']}">
 <head>
@@ -525,7 +548,7 @@ ml('account', '2673065');</script>
   <div class="wrap bar">
     <a class="logo" href="index.html" aria-label="Filodie">filodie{BEADS}</a>
     <button class="menu" aria-expanded="false" aria-controls="nav">☰</button>
-    <nav id="nav">{nav}<a class="lang" href="{other_href}" hreflang="{L[t['other']]['lang']}">{t['other_label']}</a></nav>
+    <nav id="nav">{nav}{panier}<a class="lang" href="{other_href}" hreflang="{L[t['other']]['lang']}">{t['other_label']}</a></nav>
   </div>
 </header>
 <main>
@@ -597,8 +620,7 @@ def vedettes(lang):
         cards += (f'<div class="card col vedette"><img src="{L[lang]["base"]}img/{lang}/{k}.jpg{iv(lang, k)}" alt="" loading="lazy">'
                   f'<h3>{html.escape(titre)}</h3><p>{html.escape(acc_fr if fr else acc_en)}</p>'
                   f'<p class="vprix">{prix(i["prix"])}{promo}</p>'
-                  f'<p style="padding-bottom:16px"><a class="btn payhip-buy-button" data-theme="none" data-product="{code}" '
-                  f'href="https://payhip.com/b/{code}">{"Acheter" if fr else "Buy now"}</a>'
+                  f'<p style="padding-bottom:16px">{bouton_payhip(code, True, lang)}'
                   + (f' <a class="btn ghost" href="{TE.FR if fr else TE.EN}">{"Voir le contenu" if fr else "See what’s inside"}</a>'
                      if k == TE.LOT else "") + '</p></div>')
     h2 = "Les coups de cœur de Mélodie" if fr else "Mélodie’s favourites"
@@ -772,7 +794,7 @@ def shop(lang, items):
                   for pl in ([lang] if i.get("pv_" + lang) else ["fr"]) for a in i.get("pv_" + pl, [])], "c": i.get("code", ""), "v": i.get("valeur", 0),
         })
     chips = "".join(f'<button data-t="{k}">{v}</button>' for k, v in t["types"].items())
-    labels = json.dumps({k: t[k] for k in ("buy", "soon", "free", "get", "details", "count", "value", "save", "preview", "close", "pvnote")}, ensure_ascii=False)
+    labels = json.dumps({k: t[k] for k in ("buy", "cart", "soon", "free", "get", "details", "count", "value", "save", "preview", "close", "pvnote")}, ensure_ascii=False)
     body = f"""
 <section class="wrap shop">
   <h1>{t['shop_t']}</h1>
@@ -796,7 +818,7 @@ const list=document.getElementById('list'), sel=document.getElementById('g');
 function esc(s){{return s.replace(/[&<>"]/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]))}}
 function groups(){{const gs=[...new Set(P.filter(p=>!type||p.t===type).map(p=>p.g))];
  sel.innerHTML='<option value="">{t['all']}</option>'+gs.map(g=>'<option>'+esc(g)+'</option>').join('');sel.value=grp}}
-function buybtn(p){{return p.k?'<a class="btn payhip-buy-button" data-theme="none" data-product="'+p.k+'" href="https://payhip.com/b/'+p.k+'">'+(p.p?T.buy:T.get)+'</a>'
+function buybtn(p){{return p.k?'<a class="btn '+(p.p?'payhip-add-to-cart-button':'payhip-buy-button')+'" data-theme="none" data-product="'+p.k+'" href="https://payhip.com/b/'+p.k+'">'+(p.p?T.cart:T.get)+'</a>'
    :'<span class="btn off">'+T.soon+'</span>'}}
 function card(p,i){{
  const price=p.p?fmt.format(p.p):T.free, btn=buybtn(p);
@@ -807,7 +829,7 @@ function card(p,i){{
 function draw(){{const w=q.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');
  const r=P.filter(p=>(!type||p.t===type)&&(!grp||p.g===grp)&&(!w||(p.n+' '+p.s+' '+p.d+' '+p.g+' '+p.c).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').includes(w)));
  document.getElementById('n').textContent=r.length+' '+T.count;list.innerHTML=r.map((p,i)=>card(p,i)).join('');
- if(window.Payhip&&Payhip.Buttons)try{{Payhip.Buttons.init()}}catch(e){{}}}}
+ {PAYHIP_REINIT}}}
 document.querySelectorAll('.chips button').forEach(b=>{{if(b.dataset.t===type){{document.querySelector('.chips .on').classList.remove('on');b.classList.add('on')}}
  b.onclick=()=>{{document.querySelector('.chips .on').classList.remove('on');b.classList.add('on');type=b.dataset.t;grp='';history.replaceState(null,'',type?'#'+type:location.pathname);groups();draw()}}}});
 const dlg=document.getElementById('pv');
@@ -815,7 +837,7 @@ list.addEventListener('click',e=>{{const b=e.target.closest('[data-pv]');if(!b)r
  document.getElementById('pvt').textContent=p.n;document.getElementById('pvn').textContent=T.pvnote;
  document.getElementById('pvi').innerHTML=p.a.map(u=>'<img src="'+u+'" alt="">').join('');
  document.getElementById('pvb').innerHTML='<strong>'+(p.p?fmt.format(p.p):T.free)+'</strong>'+buybtn(p);
- dlg.showModal();if(window.Payhip&&Payhip.Buttons)try{{Payhip.Buttons.init()}}catch(e){{}}}});
+ dlg.showModal();{PAYHIP_REINIT}}});
 dlg.querySelector('.pvx').onclick=()=>dlg.close();dlg.addEventListener('click',e=>{{if(e.target===dlg)dlg.close()}});
 sel.onchange=()=>{{grp=sel.value;draw()}};document.getElementById('q').oninput=e=>{{q=e.target.value;draw()}};
 groups();draw();
@@ -860,11 +882,10 @@ def carte_produit(lang, i):
     p = i.get("prix") or 0
     prix = ((f"{p:.2f}".replace(".00", "").replace(".", ",") + " $") if fr else ("$" + f"{p:.2f}".replace(".00", ""))) \
         if p else ("Gratuit" if fr else "Free")
-    btn = ("Acheter" if fr else "Buy now") if p else ("Télécharger" if fr else "Get it free")
+    btn = "Télécharger" if fr else "Get it free"
     return (f'<div class="card col vedette"><img src="{L[lang]["base"]}img/{lang}/{i["id"]}.jpg{iv(lang, i["id"])}" alt="" loading="lazy">'
             f'<h3>{html.escape(titre)}</h3><p>{html.escape(sous)}</p><p class="vprix">{prix}</p>'
-            f'<p style="padding-bottom:16px"><a class="btn payhip-buy-button" data-theme="none" data-product="{code}" '
-            f'href="https://payhip.com/b/{code}">{btn}</a></p></div>')
+            f'<p style="padding-bottom:16px">{bouton_payhip(code, bool(p), lang, btn)}</p></div>')
 
 
 def article(lang, a, items):
@@ -896,8 +917,8 @@ def trousse_etudiante(lang, items):
         return (t.replace(".", ",") + " $") if fr else ("$" + t)
     n = sum(len(g[2]) for g in TE.GROUPES)
     valeur = sum(items[k]["prix"] for g in TE.GROUPES for k, _, _ in g[2] if k in items)
-    acheter = (f'<a class="btn payhip-buy-button" data-theme="none" data-product="{code(lot)}" href="https://payhip.com/b/{code(lot)}">'
-               f'{"Acheter la trousse" if fr else "Buy the kit"} · {prix(lot["prix"])}</a>')
+    acheter = (f'<a class="btn payhip-add-to-cart-button" data-theme="none" data-product="{code(lot)}" href="https://payhip.com/b/{code(lot)}">'
+               f'{"Ajouter la trousse au panier" if fr else "Add the kit to cart"} · {prix(lot["prix"])}</a>')
     essai = (f' <a class="btn ghost payhip-buy-button" data-theme="none" data-product="{code(ech)}" href="https://payhip.com/b/{code(ech)}">'
              f'{"Essayer 4 fiches gratuites" if fr else "Try 4 free sheets"}</a>') if ech and ech.get("payhip") else ""
     corps = ""
@@ -1154,7 +1175,7 @@ em{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--terra)}
 .logo svg{display:block;width:4em;height:.82em;margin:.1em -.3em 0}
 .logo.small{font-size:1.3rem;margin:0 0 6px}
 nav{display:flex;gap:18px;align-items:center}nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:.95rem}
-nav a[aria-current]{color:var(--terra)}nav .lang{border:1.5px solid var(--ink);border-radius:20px;padding:2px 10px}
+nav a[aria-current]{color:var(--terra)}nav .panier{font-weight:700;color:var(--terra)!important;white-space:nowrap}nav .lang{border:1.5px solid var(--ink);border-radius:20px;padding:2px 10px}
 .menu{display:none;background:none;border:0;font-size:1.6rem;color:var(--ink)}
 @media (max-width:820px){.menu{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--cream);flex-direction:column;padding:16px;border-bottom:1px solid var(--sand)}nav.open{display:flex}}
 .hero{background:var(--cream);padding:40px 0 56px;position:relative;overflow:hidden}@media(max-width:640px){.hero{padding:22px 0 34px}.hero .ctas{margin-top:14px}}
@@ -1191,7 +1212,7 @@ nav a[aria-current]{color:var(--terra)}nav .lang{border:1.5px solid var(--ink);b
 .prod h3{font-size:1.05rem}.sub{margin:0;color:var(--gray);font-size:.9rem}
 .save{margin:6px 0 0;font-size:.82rem;font-weight:800;color:var(--sage)}
 details{font-size:.9rem;margin:6px 0}summary{cursor:pointer;color:var(--terra);font-weight:700}
-.buy{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:10px}.buy strong{font-size:1.1rem}
+.buy{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:10px}.buy strong{font-size:1.1rem}.buy{gap:8px;flex-wrap:wrap}.buy .btn{white-space:nowrap;padding:8px 14px;font-size:.9rem}
 .split{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;padding:40px 20px 70px}
 @media (max-width:760px){.split{grid-template-columns:1fr}}
 .shadow{border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.15)}

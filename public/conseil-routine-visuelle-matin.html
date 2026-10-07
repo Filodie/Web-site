@@ -23,7 +23,7 @@ ml('account', '2673065');</script>
   <div class="wrap bar">
     <a class="logo" href="index.html" aria-label="Filodie">filodie<svg viewBox="33 106 236 48" aria-hidden="true"><path d="M40 130C67 110 67 110 95 130S122 150 150 130S177 110 205 130S232 150 260 130" fill="none" stroke="#D9734E" stroke-width="3.2" stroke-linecap="round"/><circle cx="67" cy="115" r="7" fill="#1F3B4D"/><circle cx="123" cy="145" r="7" fill="#D9734E"/><circle cx="178" cy="115" r="7" fill="#6F9A81"/><circle cx="233" cy="145" r="7" fill="#E3B04B"/><circle cx="260" cy="130" r="7" fill="#D98FA0"/></svg></a>
     <button class="menu" aria-expanded="false" aria-controls="nav">☰</button>
-    <nav id="nav"><a href="index.html">Accueil</a><a href="boutique.html">Boutique</a><a href="bottin.html">Bottin gratuit</a><a href="conseils.html">Conseils</a><a href="services.html">Services</a><a href="a-propos.html">À propos</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a class="lang" href="en/tip-morning-visual-routine.html" hreflang="en-CA">EN</a></nav>
+    <nav id="nav"><a href="index.html">Accueil</a><a href="boutique.html">Boutique</a><a href="bottin.html">Bottin gratuit</a><a href="conseils.html">Conseils</a><a href="services.html">Services</a><a href="a-propos.html">À propos</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a><a class="panier payhip-open-cart-button" href="https://payhip.com/cart">🛒 Panier</a><a class="lang" href="en/tip-morning-visual-routine.html" hreflang="en-CA">EN</a></nav>
   </div>
 </header>
 <main>
@@ -70,7 +70,7 @@ partielles : « Tu as regardé ta routine sans que je te le dise ! »</p>
 
 <div class="astuce"><strong>Repère pour l’adulte</strong><p>Si un matin se passe mal, ce n’est pas un échec de
 la routine. Notez l’étape qui a bloqué : c’est souvent elle qu’il faut découper en plus petites actions.</p></div>
-</article><section class="band"><div class="wrap"><h2>Des outils pour aller plus loin</h2><div class="grid3"><div class="card col vedette"><img src="img/fr/routines-rtn-a.jpg?v=4f91ab03" alt="" loading="lazy"><h3>Routines du matin</h3><p>5 routines pour des matins plus calmes</p><p class="vprix">5 $</p><p style="padding-bottom:16px"><a class="btn payhip-buy-button" data-theme="none" data-product="rbvxE" href="https://payhip.com/b/rbvxE">Acheter</a></p></div><div class="card col vedette"><img src="img/fr/lot-routines.jpg?v=556eac03" alt="" loading="lazy"><h3>Toutes les routines visuelles maison</h3><p>30 routines · 6 paquets</p><p class="vprix">19 $</p><p style="padding-bottom:16px"><a class="btn payhip-buy-button" data-theme="none" data-product="EG732" href="https://payhip.com/b/EG732">Acheter</a></p></div><div class="card col vedette"><img src="img/fr/routines-rtn-b.jpg?v=dca6e160" alt="" loading="lazy"><h3>Routines du soir et du dodo</h3><p>5 routines pour des soirées apaisées</p><p class="vprix">5 $</p><p style="padding-bottom:16px"><a class="btn payhip-buy-button" data-theme="none" data-product="DSBrd" href="https://payhip.com/b/DSBrd">Acheter</a></p></div></div><p style="margin-top:18px"><a class="btn ghost" href="boutique.html">Voir toute la boutique →</a></p></div></section>
+</article><section class="band"><div class="wrap"><h2>Des outils pour aller plus loin</h2><div class="grid3"><div class="card col vedette"><img src="img/fr/routines-rtn-a.jpg?v=4f91ab03" alt="" loading="lazy"><h3>Routines du matin</h3><p>5 routines pour des matins plus calmes</p><p class="vprix">5 $</p><p style="padding-bottom:16px"><a class="btn payhip-add-to-cart-button" data-theme="none" data-product="rbvxE" href="https://payhip.com/b/rbvxE">Ajouter au panier</a></p></div><div class="card col vedette"><img src="img/fr/lot-routines.jpg?v=556eac03" alt="" loading="lazy"><h3>Toutes les routines visuelles maison</h3><p>30 routines · 6 paquets</p><p class="vprix">19 $</p><p style="padding-bottom:16px"><a class="btn payhip-add-to-cart-button" data-theme="none" data-product="EG732" href="https://payhip.com/b/EG732">Ajouter au panier</a></p></div><div class="card col vedette"><img src="img/fr/routines-rtn-b.jpg?v=dca6e160" alt="" loading="lazy"><h3>Routines du soir et du dodo</h3><p>5 routines pour des soirées apaisées</p><p class="vprix">5 $</p><p style="padding-bottom:16px"><a class="btn payhip-add-to-cart-button" data-theme="none" data-product="DSBrd" href="https://payhip.com/b/DSBrd">Ajouter au panier</a></p></div></div><p style="margin-top:18px"><a class="btn ghost" href="boutique.html">Voir toute la boutique →</a></p></div></section>
 </main>
 <footer class="foot">
   <div class="wrap">
@@ -85,6 +85,8 @@ la routine. Notez l’étape qui a bloqué : c’est souvent elle qu’il faut d
 document.querySelector('.menu').addEventListener('click',e=>{const n=document.getElementById('nav');
 const o=n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',o)});
 </script>
+<script>window.PayhipConfig={enableCart:true,cart:{position:"bottom-right",launcherBackground:"#D9734E",checkoutButtonBackground:"#D9734E"}};</script>
 <script src="https://payhip.com/payhip.js"></script>
+
 </body>
 </html>
