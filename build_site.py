@@ -497,6 +497,8 @@ def promo_html(lang):
 # Payhip : panier activé (on ajoute plusieurs produits, puis on paie une seule fois). Le script est chargé sur toutes les pages
 # pour que le panier et le lien « Panier » du menu fonctionnent partout.
 PAYHIP_SRC = '<script src="https://payhip.com/payhip.js"></script>'
+# Lots devenus de vrais produits Payhip (fichiers inclus) : ils passent par le panier au bon prix.
+LOTS_PANIER = {"lot-etudes-tes"}
 PAYHIP_JS = ('<script>window.PayhipConfig={enableCart:true,cart:{position:"bottom-right",'
              'launcherBackground:"#D9734E",checkoutButtonBackground:"#D9734E"}};</script>\n' + PAYHIP_SRC)
 PAYHIP_REINIT = ("if(window.Payhip&&Payhip.Button)try{Payhip.Button.initiateBuyButtons();"
@@ -627,7 +629,7 @@ def vedettes(lang):
         cards += (f'<div class="card col vedette"><img src="{L[lang]["base"]}img/{lang}/{k}.jpg{iv(lang, k)}" alt="" loading="lazy">'
                   f'<h3>{html.escape(titre)}</h3><p>{html.escape(acc_fr if fr else acc_en)}</p>'
                   f'<p class="vprix">{prix(i["prix"])}{promo}</p>'
-                  f'<p style="padding-bottom:16px">{bouton_payhip(code, True, lang, lot=k.startswith("lot-"))}'
+                  f'<p style="padding-bottom:16px">{bouton_payhip(code, True, lang, lot=k.startswith("lot-") and k not in LOTS_PANIER)}'
                   + (f' <a class="btn ghost" href="{TE.FR if fr else TE.EN}">{"Voir le contenu" if fr else "See what’s inside"}</a>'
                      if k == TE.LOT else "") + '</p></div>')
     h2 = "Les coups de cœur de Mélodie" if fr else "Mélodie’s favourites"
@@ -821,13 +823,14 @@ def shop(lang, items):
     js = f"""<script>
 const P={json.dumps(data, ensure_ascii=False)};
 const T={labels};
+const LP={json.dumps(sorted(LOTS_PANIER))};
 const fmt=new Intl.NumberFormat('{t['lang']}',{{style:'currency',currency:'CAD'}});
 let type=(location.hash||'').slice(1), grp='', q='';
 const list=document.getElementById('list'), sel=document.getElementById('g');
 function esc(s){{return s.replace(/[&<>"]/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]))}}
 function groups(){{const gs=[...new Set(P.filter(p=>!type||p.t===type).map(p=>p.g))];
  sel.innerHTML='<option value="">{t['all']}</option>'+gs.map(g=>'<option>'+esc(g)+'</option>').join('');sel.value=grp}}
-function buybtn(p){{if(p.k&&p.id.startsWith('lot-'))return '<span class="acts"><a class="btn" href="https://payhip.com/b/'+p.k+'" target="_blank" rel="noopener">'+T.lot+'</a><small class="lotnote">'+T.lotnote+'</small></span>';
+function buybtn(p){{if(p.k&&p.id.startsWith('lot-')&&!LP.includes(p.id))return '<span class="acts"><a class="btn" href="https://payhip.com/b/'+p.k+'" target="_blank" rel="noopener">'+T.lot+'</a><small class="lotnote">'+T.lotnote+'</small></span>';
  return p.k?'<span class="acts"><a class="btn '+(p.p?'payhip-add-to-cart-button':'payhip-buy-button')+'" data-theme="none" data-product="'+p.k+'" href="https://payhip.com/b/'+p.k+'">'+(p.p?T.cart:T.get)+'</a>'
    +(p.p?'<a class="achat-direct payhip-buy-button" data-theme="none" data-product="'+p.k+'" href="https://payhip.com/b/'+p.k+'">'+T.direct+'</a>':'')+'</span>'
    :'<span class="btn off">'+T.soon+'</span>'}}
@@ -896,7 +899,7 @@ def carte_produit(lang, i):
     btn = "Télécharger" if fr else "Get it free"
     return (f'<div class="card col vedette"><img src="{L[lang]["base"]}img/{lang}/{i["id"]}.jpg{iv(lang, i["id"])}" alt="" loading="lazy">'
             f'<h3>{html.escape(titre)}</h3><p>{html.escape(sous)}</p><p class="vprix">{prix}</p>'
-            f'<p style="padding-bottom:16px">{bouton_payhip(code, bool(p), lang, btn, lot=i["id"].startswith("lot-"))}</p></div>')
+            f'<p style="padding-bottom:16px">{bouton_payhip(code, bool(p), lang, btn, lot=i["id"].startswith("lot-") and i["id"] not in LOTS_PANIER)}</p></div>')
 
 
 def article(lang, a, items):
@@ -928,8 +931,10 @@ def trousse_etudiante(lang, items):
         return (t.replace(".", ",") + " $") if fr else ("$" + t)
     n = sum(len(g[2]) for g in TE.GROUPES)
     valeur = sum(items[k]["prix"] for g in TE.GROUPES for k, _, _ in g[2] if k in items)
-    acheter = (f'<a class="btn" href="https://payhip.com/b/{code(lot)}" target="_blank" rel="noopener">'
-               f'{"Acheter la trousse" if fr else "Buy the kit"} · {prix(lot["prix"])}</a>')
+    acheter = (f'<a class="btn payhip-add-to-cart-button" data-theme="none" data-product="{code(lot)}" href="https://payhip.com/b/{code(lot)}">'
+               f'{"Ajouter la trousse au panier" if fr else "Add the kit to cart"} · {prix(lot["prix"])}</a> '
+               f'<a class="achat-direct payhip-buy-button" data-theme="none" data-product="{code(lot)}" href="https://payhip.com/b/{code(lot)}">'
+               f'{"ou acheter maintenant" if fr else "or buy now"}</a>')
     essai = (f' <a class="btn ghost payhip-buy-button" data-theme="none" data-product="{code(ech)}" href="https://payhip.com/b/{code(ech)}">'
              f'{"Essayer 4 fiches gratuites" if fr else "Try 4 free sheets"}</a>') if ech and ech.get("payhip") else ""
     corps = ""
