@@ -322,6 +322,20 @@
   "payhip_en": "5M8Wh"
  },
  {
+  "id": "trousse-refus_traitement",
+  "type": "trousse",
+  "groupe": "Outils d’intervention",
+  "titre": "Quand la personne refuse un traitement",
+  "sous": "4 outils",
+  "desc": "Quatre fiches pour accompagner une personne qui refuse une médication, des soins ou un service : comprendre ce que le refus exprime, en parler avec elle, situer son rôle dans le cadre légal québécois et documenter le suivi.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Refus_traitement_2026.pdf"
+  ],
+  "payhip": "AcKJX",
+  "payhip_en": "AcKJX"
+ },
+ {
   "id": "trousse-analyser_groupe",
   "type": "trousse",
   "groupe": "Études et stages en T.E.S.",
@@ -6584,9 +6598,9 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses",
-  "sous": "146 trousses et éditions",
+  "sous": "147 trousses et éditions",
   "prix": 75.0,
-  "sous_en": "146 toolkits and editions",
+  "sous_en": "147 toolkits and editions",
   "desc": "La trousse principale, les 16 trousses spécialisées, les 102 trousses de la Collection et les 5 éditions.",
   "desc_en": "The main toolkit, the 16 specialized toolkits, the 102 Collection toolkits and the 5 editions.",
   "fichiers": [],
@@ -6614,6 +6628,7 @@
    "trousse-conflit",
    "trousse-demander_aide",
    "trousse-budget",
+   "trousse-refus_traitement",
    "trousse-analyser_groupe",
    "trousse-modele_pph",
    "trousse-note_evolutive",
@@ -6740,7 +6755,7 @@
   ],
   "payhip": "leD7m",
   "payhip_en": "leD7m",
-  "valeur": 907.0
+  "valeur": 910.0
  },
  {
   "id": "lot-mega",
@@ -6748,8 +6763,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie",
   "sous": "Toute la collection",
-  "desc": "Les 142 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional.",
-  "desc_en": "All 142 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory.",
+  "desc": "Les 143 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional.",
+  "desc_en": "All 143 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -6775,6 +6790,7 @@
    "trousse-conflit",
    "trousse-demander_aide",
    "trousse-budget",
+   "trousse-refus_traitement",
    "trousse-analyser_groupe",
    "trousse-modele_pph",
    "trousse-note_evolutive",
@@ -7110,6 +7126,6 @@
   "prix": 129.0,
   "payhip": "UScCI",
   "payhip_en": "UScCI",
-  "valeur": 1610.0
+  "valeur": 1613.0
  }
 ]
