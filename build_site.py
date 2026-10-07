@@ -498,7 +498,8 @@ def promo_html(lang):
 # pour que le panier et le lien « Panier » du menu fonctionnent partout.
 PAYHIP_SRC = '<script src="https://payhip.com/payhip.js"></script>'
 # Lots devenus de vrais produits Payhip (fichiers inclus) : ils passent par le panier au bon prix.
-LOTS_PANIER = {"lot-etudes-tes"}
+# Tous les lots sont maintenant des produits ordinaires (panier au bon prix) — 2026-10-07
+LOTS_PANIER = {"lot-1-habiletés-et-comportement", "lot-cahiers-tsa", "lot-12-traverser-l-épreuve", "lot-cahiers-tdah", "lot-jeux", "lot-3-professions", "lot-7-scolaire", "lot-8-thèmes-complémentaires", "lot-cahiers-déficience-intellectuelle", "lot-affiches", "lot-toutes-les-trousses", "lot-cahiers-comportement", "lot-6-cahiers-thématiques", "lot-4-professions-et-pratique", "lot-tous-les-cahiers", "lot-10-boîte-à-outils-du-psychoéducateur", "lot-etudes-tes", "lot-11-enseignement-aux-adultes", "lot-5-jeux-et-activités", "lot-mega", "lot-specialisees", "lot-routines", "lot-2-clientèles-et-interventions", "lot-9-équipe-école-et-réseau", "lot-detective", "lot-cahiers-habiletés-sociales"}
 PAYHIP_JS = ('<script>window.PayhipConfig={enableCart:true,cart:{position:"bottom-right",'
              'launcherBackground:"#D9734E",checkoutButtonBackground:"#D9734E"}};</script>\n' + PAYHIP_SRC)
 PAYHIP_REINIT = ("if(window.Payhip&&Payhip.Button)try{Payhip.Button.initiateBuyButtons();"
