@@ -523,7 +523,8 @@ def page(lang, name, title, body, desc="", scripts=""):
     legal = " · ".join(f'<a href="{h}">{l}</a>' for h, l in t["footer_legal"])
     scripts = PAYHIP_JS + "\n" + scripts.replace(PAYHIP_SRC + "\n", "").replace(PAYHIP_SRC, "")
     panier = (f'<a class="panier payhip-open-cart-button" href="https://payhip.com/cart">'
-              f'🛒 {"Panier" if lang == "fr" else "Cart"}</a>')
+              f'🛒 {"Panier" if lang == "fr" else "Cart"}</a>'
+              f'<a class="compte" href="https://payhip.com/Filodie/b-account">{"Mon compte" if lang == "fr" else "My account"}</a>')
     return f"""<!doctype html>
 <html lang="{t['lang']}">
 <head>
@@ -1046,6 +1047,8 @@ CONTENT = {
 """),
     ("fr", "faq.html"): ("Questions fréquentes", """
 <h2>Comment je reçois mes outils ?</h2><p>Dès le paiement, une page de téléchargement s’ouvre et un courriel contenant le lien vous est envoyé. Vous pouvez télécharger vos fichiers plusieurs fois.</p>
+<h2>Puis-je acheter plusieurs produits en une seule commande ?</h2><p>Oui. Cliquez sur « Ajouter au panier » pour chaque produit, puis ouvrez le panier (🛒 en haut de la page ou en bas à droite) et payez une seule fois.</p>
+<h2>Dois-je créer un compte ?</h2><p>Non, c’est vous qui choisissez. <strong>Sans compte</strong> : entrez simplement votre courriel au paiement, vos fichiers vous sont envoyés par courriel. <strong>Avec un compte</strong> (facultatif) : créez-le dans <a href="https://payhip.com/Filodie/b-account">Mon compte</a> avec le même courriel que vos achats pour retrouver tous vos outils au même endroit et les télécharger de nouveau en tout temps.</p>
 <h2>Les PDF sont-ils remplissables ?</h2><p>Oui : la plupart des fiches se remplissent à l’écran (Adobe Acrobat Reader, Aperçu sur Mac, navigateur) et s’impriment en format lettre.</p>
 <h2>Puis-je imprimer plusieurs copies ?</h2><p>Oui, autant de copies que nécessaire pour vos propres interventions. Le partage des fichiers avec des collègues est interdit : une <a href="services.html#licence-equipe">licence d’équipe</a> est offerte pour les écoles, les CPE et les organismes.</p>
 <h2>Pourquoi mon courriel apparaît-il sur les pages ?</h2><p>Chaque PDF est personnalisé au nom de l’acheteuse ou de l’acheteur. Cela protège le travail de création et permet de garder les prix accessibles.</p>
@@ -1055,6 +1058,8 @@ CONTENT = {
 <h2>Mon école peut-elle payer par bon de commande ?</h2><p>Oui, écrivez-nous pour une soumission et une facture au nom de l’établissement.</p>"""),
     ("en", "faq.html"): ("Frequently asked questions", """
 <h2>How do I receive my tools?</h2><p>Right after payment, a download page opens and an email with the link is sent to you. You can download your files several times.</p>
+<h2>Can I buy several products in one order?</h2><p>Yes. Click “Add to cart” for each product, then open the cart (🛒 at the top of the page or bottom right) and pay once.</p>
+<h2>Do I need an account?</h2><p>No, it’s up to you. <strong>Without an account</strong>: just enter your email at checkout and your files are emailed to you. <strong>With an account</strong> (optional): create one in <a href="https://payhip.com/Filodie/b-account">My account</a> using the same email as your purchases to find all your tools in one place and download them again at any time.</p>
 <h2>Are the PDFs fillable?</h2><p>Yes: most sheets can be filled in on screen (Adobe Acrobat Reader, Preview on Mac, browser) and printed on letter paper.</p>
 <h2>Can I print several copies?</h2><p>Yes, as many copies as you need for your own interventions. Sharing the files with colleagues is not allowed: a <a href="services.html#team-licence">team licence</a> is available for schools, daycares and organizations.</p>
 <h2>Why does my email appear on the pages?</h2><p>Each PDF is personalized with the buyer’s details. This protects the creative work and keeps prices affordable.</p>
