@@ -7,6 +7,283 @@ Ressources : Info-Social 811 option 2 (pas le 988)."""
 
 ARTICLES = [
     dict(
+        fr="conseil-halloween-enfant-sensible.html",
+        en="tip-halloween-sensitive-child.html",
+        date="2026-10-06",
+        minutes=5,
+        produits=["gratuit-mois-2610", "cahier-vsoc-06", "cahier-vtsa-33"],
+        titre_fr="Halloween avec un enfant autiste ou sensible : 8 idées pour une soirée plus calme",
+        titre_en="Halloween with an autistic or sensitive child: 8 ideas for a calmer evening",
+        desc_fr="Costumes, bruit, noirceur, bonbons : huit idées concrètes pour préparer un enfant autiste, "
+                "anxieux ou sensible à l’Halloween et vivre une soirée plus douce.",
+        desc_en="Costumes, noise, darkness, candy: eight practical ideas to prepare an autistic, anxious or "
+                "sensitive child for Halloween and enjoy a gentler evening.",
+        corps_fr="""
+<p class="lead">Pour bien des enfants, l’Halloween est une fête attendue toute l’année. Pour d’autres, c’est une
+soirée remplie de surprises : des visages masqués, des cris, des lumières qui clignotent, une routine bousculée
+et beaucoup de sucre. Avec un peu de préparation, la fête peut redevenir un plaisir.</p>
+
+<h2>Pourquoi l’Halloween peut être difficile</h2>
+<p>Tout ce qui fait le charme de l’Halloween est aussi ce qui peut surcharger un enfant : la nouveauté,
+l’imprévisibilité, les stimulations sensorielles et le changement d’horaire. Un enfant autiste, anxieux, qui a
+un TDAH ou simplement très sensible peut vite se sentir dépassé. Ce n’est pas un caprice : son système nerveux
+reçoit plus d’information qu’il ne peut en traiter.</p>
+
+<h2>Avant la soirée</h2>
+<ol>
+<li><strong>Racontez la soirée à l’avance.</strong> Une courte histoire en images ou une routine visuelle
+montre ce qui va se passer, dans l’ordre : se costumer, sortir, sonner, dire « Joyeuse Halloween », revenir.</li>
+<li><strong>Essayez le costume plusieurs fois.</strong> Un costume qui gratte, serre ou cache la vue peut tout
+faire basculer. Le confort passe avant l’effet. Un chandail thématique ou un simple accessoire suffit.</li>
+<li><strong>Montrez des décorations et des costumes.</strong> Regarder des photos ou se promener de jour dans
+le quartier décoré enlève une partie de la surprise.</li>
+<li><strong>Décidez ensemble du parcours.</strong> Combien de maisons ? Quelle rue ? Un nombre précis rend la
+fin prévisible : « On fait 10 maisons, puis on rentre. »</li>
+</ol>
+
+<h2>Pendant la soirée</h2>
+<ol start="5">
+<li><strong>Prévoyez une trousse sensorielle.</strong> Coquilles antibruit, lampe de poche, collation connue,
+objet réconfortant : de petits outils qui aident l’enfant à rester bien.</li>
+<li><strong>Convenez d’un signal « c’est trop ».</strong> Un mot, un geste ou une carte que l’enfant peut
+montrer quand il ou elle a besoin d’une pause ou de rentrer. Respectez-le, même si la tournée n’est pas finie.</li>
+<li><strong>Permettez de participer autrement.</strong> Distribuer les bonbons à la porte, observer de la
+fenêtre ou faire une petite fête à la maison, c’est aussi célébrer l’Halloween.</li>
+</ol>
+
+<h2>Après la soirée</h2>
+<ol start="8">
+<li><strong>Gardez un retour au calme.</strong> Le bain, le pyjama, une histoire : retrouver la routine
+habituelle aide à redescendre. Décidez à l’avance du nombre de bonbons permis ce soir-là pour éviter une
+négociation à la fin d’une soirée déjà intense.</li>
+</ol>
+
+<div class="astuce"><strong>Repère pour l’adulte</strong><p>Le succès ne se mesure pas au nombre de maisons
+visitées. Une soirée courte qui se termine bien vaut mieux qu’une longue tournée qui finit en crise. L’enfant
+gardera surtout le souvenir d’avoir été compris.</p></div>
+""",
+        corps_en="""
+<p class="lead">For many children, Halloween is the most anticipated night of the year. For others, it is an
+evening full of surprises: masked faces, shrieks, flashing lights, a disrupted routine and a lot of sugar. With a
+little preparation, the holiday can become fun again.</p>
+
+<h2>Why Halloween can be hard</h2>
+<p>Everything that makes Halloween exciting can also overwhelm a child: novelty, unpredictability, sensory
+input and a change in schedule. An autistic child, an anxious child, a child with ADHD or simply a very
+sensitive child can quickly feel overloaded. It is not a whim: their nervous system is receiving more
+information than it can process.</p>
+
+<h2>Before the evening</h2>
+<ol>
+<li><strong>Tell the story of the evening ahead of time.</strong> A short picture story or a visual routine
+shows what will happen, in order: put on the costume, go out, ring the bell, say “Happy Halloween”, come home.</li>
+<li><strong>Try the costume on several times.</strong> A costume that itches, squeezes or blocks vision can
+tip everything over. Comfort comes before looks. A themed sweater or a single accessory is enough.</li>
+<li><strong>Show decorations and costumes.</strong> Looking at photos or walking around the decorated
+neighbourhood in daylight takes away part of the surprise.</li>
+<li><strong>Plan the route together.</strong> How many houses? Which street? A precise number makes the end
+predictable: “We’ll do 10 houses, then go home.”</li>
+</ol>
+
+<h2>During the evening</h2>
+<ol start="5">
+<li><strong>Pack a sensory kit.</strong> Ear defenders, a flashlight, a familiar snack, a comfort object:
+small tools that help the child stay regulated.</li>
+<li><strong>Agree on a “too much” signal.</strong> A word, a gesture or a card the child can show when they
+need a break or want to go home. Respect it, even if the round isn’t finished.</li>
+<li><strong>Allow other ways to take part.</strong> Handing out candy at the door, watching from the window or
+having a small party at home is also celebrating Halloween.</li>
+</ol>
+
+<h2>After the evening</h2>
+<ol start="8">
+<li><strong>Keep a wind-down routine.</strong> Bath, pyjamas, a story: returning to the usual routine helps the
+child come back down. Decide ahead of time how many candies are allowed that night to avoid negotiating at the
+end of an already intense evening.</li>
+</ol>
+
+<div class="astuce"><strong>Tip for the adult</strong><p>Success isn’t measured by the number of houses
+visited. A short evening that ends well is better than a long round that ends in a meltdown. What the child
+will remember most is feeling understood.</p></div>
+"""),
+    dict(
+        fr="conseil-transitions-difficiles.html",
+        en="tip-difficult-transitions.html",
+        date="2026-10-06",
+        minutes=6,
+        produits=["routines-rtn-e", "cahier-vtsa-27", "cahier-vsoc-08"],
+        titre_fr="Transitions difficiles : aider l’enfant à passer d’une activité à l’autre",
+        titre_en="Difficult transitions: helping a child move from one activity to the next",
+        desc_fr="Arrêter un jeu, quitter le parc, changer de local : des stratégies simples pour réduire les "
+                "crises lors des transitions, à la maison comme en classe.",
+        desc_en="Stopping a game, leaving the park, changing rooms: simple strategies to reduce meltdowns during "
+                "transitions, at home and in the classroom.",
+        corps_fr="""
+<p class="lead">« Encore cinq minutes ! » Éteindre la tablette, sortir du bain, ranger les blocs ou quitter le
+parc : pour certains enfants, chaque changement d’activité devient une bataille. Les transitions sont l’un des
+moments les plus fréquents de désorganisation, et aussi l’un des plus faciles à prévenir.</p>
+
+<h2>Pourquoi les transitions coûtent autant</h2>
+<p>Passer d’une activité à l’autre demande plusieurs efforts en même temps : arrêter quelque chose
+d’agréable, accepter de ne pas savoir exactement ce qui vient, réorganiser son attention et parfois changer de
+lieu. Pour un enfant autiste, un enfant qui a un TDAH ou un enfant anxieux, ces efforts sont plus grands. La
+crise n’est pas de l’opposition : c’est souvent le signe que la transition est arrivée trop vite ou de façon
+trop floue.</p>
+
+<h2>Annoncer avant d’arrêter</h2>
+<ul>
+<li><strong>Donnez un avertissement concret.</strong> « Dans 5 minutes, on range » est plus clair si on
+l’accompagne d’une minuterie visuelle que l’enfant peut regarder.</li>
+<li><strong>Utilisez un repère de fin.</strong> « Encore deux glissades », « à la fin de la chanson » : une fin
+que l’enfant peut voir ou compter est plus facile à accepter qu’une heure abstraite.</li>
+<li><strong>Montrez ce qui vient après.</strong> Un horaire visuel ou une carte « d’abord… ensuite… »
+répond à la question que l’enfant se pose : qu’est-ce qui m’attend ?</li>
+</ul>
+
+<h2>Rendre le passage plus doux</h2>
+<ul>
+<li><strong>Prévoyez un objet de transition.</strong> Apporter une petite figurine du jeu jusqu’à la table, ou
+tenir l’horaire, donne quelque chose de concret à faire pendant le changement.</li>
+<li><strong>Offrez un choix limité.</strong> « Tu veux marcher comme un pingouin ou comme un lapin jusqu’à la
+salle de bain ? » Le changement n’est pas négociable, mais la façon de le vivre peut l’être.</li>
+<li><strong>Gardez une séquence stable.</strong> Les transitions qui reviennent chaque jour (le départ pour
+l’école, la fin de la récréation) gagnent à toujours se faire de la même façon.</li>
+</ul>
+
+<h2>Quand l’imprévu arrive</h2>
+<p>Certains changements ne peuvent pas être annoncés. Pour s’y préparer, on peut enseigner l’idée de
+l’imprévu à un moment calme : une carte « surprise » dans l’horaire, une courte histoire sociale, ou un
+plan B déjà convenu. L’enfant apprend ainsi qu’un changement de programme n’est pas une catastrophe.</p>
+
+<div class="astuce"><strong>Repère pour l’adulte</strong><p>Observez quelles transitions bloquent le plus et
+à quel moment de la journée. Souvent, ce ne sont pas toutes les transitions qui posent problème, mais celles qui
+arrivent quand l’enfant est déjà fatigué ou qui interrompent une activité très aimée.</p></div>
+""",
+        corps_en="""
+<p class="lead">“Five more minutes!” Turning off the tablet, getting out of the bath, putting away the blocks
+or leaving the park: for some children, every change of activity becomes a battle. Transitions are one of the
+most common moments for a child to fall apart, and also one of the easiest to prevent.</p>
+
+<h2>Why transitions are so hard</h2>
+<p>Moving from one activity to another takes several efforts at once: stopping something enjoyable, accepting
+not knowing exactly what comes next, shifting attention and sometimes changing places. For an autistic child,
+a child with ADHD or an anxious child, these efforts are greater. The meltdown isn’t defiance: it is often a
+sign that the transition came too fast or was too unclear.</p>
+
+<h2>Announce before you stop</h2>
+<ul>
+<li><strong>Give a concrete warning.</strong> “In 5 minutes, we’ll tidy up” is clearer with a visual timer the
+child can look at.</li>
+<li><strong>Use a visible end point.</strong> “Two more slides”, “at the end of the song”: an ending the child
+can see or count is easier to accept than an abstract time.</li>
+<li><strong>Show what comes next.</strong> A visual schedule or a “first… then…” card answers the question
+the child is asking: what’s waiting for me?</li>
+</ul>
+
+<h2>Make the change gentler</h2>
+<ul>
+<li><strong>Offer a transition object.</strong> Carrying a small figure from the game to the table, or holding
+the schedule, gives the child something concrete to do during the change.</li>
+<li><strong>Offer a limited choice.</strong> “Do you want to walk like a penguin or hop like a bunny to the
+bathroom?” The change isn’t negotiable, but how to live it can be.</li>
+<li><strong>Keep a stable sequence.</strong> Daily transitions (leaving for school, the end of recess) work
+better when they always happen the same way.</li>
+</ul>
+
+<h2>When the unexpected happens</h2>
+<p>Some changes can’t be announced. To prepare, you can teach the idea of the unexpected at a calm moment: a
+“surprise” card in the schedule, a short social story, or a plan B agreed on ahead of time. The child learns
+that a change of plan is not a disaster.</p>
+
+<div class="astuce"><strong>Tip for the adult</strong><p>Notice which transitions are hardest and at what time
+of day. Often it isn’t every transition that causes trouble, but the ones that happen when the child is already
+tired or that interrupt a much-loved activity.</p></div>
+"""),
+    dict(
+        fr="conseil-renforcement-positif.html",
+        en="tip-positive-reinforcement.html",
+        date="2026-10-06",
+        minutes=6,
+        produits=["trousse-renforcement_r610", "trousse-gestion_de_classe", "cahier-vtdah-19"],
+        titre_fr="Renforcement positif : bien l’utiliser à la maison et en classe",
+        titre_en="Positive reinforcement: using it well at home and in the classroom",
+        desc_fr="Éloges précis, points, récompenses : utiliser le renforcement positif sans surenchère, avec des "
+                "exemples concrets pour les 6 à 12 ans.",
+        desc_en="Specific praise, point charts, rewards: how to use positive reinforcement without escalating, "
+                "with concrete examples for children ages 6 to 12.",
+        corps_fr="""
+<p class="lead">On remarque vite ce qui ne va pas : le cri, le coup, la consigne ignorée. Ce qui va bien passe
+souvent inaperçu. Le renforcement positif inverse cette tendance : il consiste à remarquer et à souligner les
+comportements qu’on souhaite voir revenir. Bien utilisé, c’est l’un des outils les plus efficaces en
+intervention.</p>
+
+<h2>Ce que c’est, et ce que ce n’est pas</h2>
+<p>Renforcer, c’est faire suivre un comportement de quelque chose d’agréable pour que ce comportement se
+reproduise. Ce n’est pas acheter la paix, ni promettre un cadeau pour arrêter une crise. Le renforcement arrive
+<em>après</em> le comportement souhaité, jamais pour mettre fin à un comportement difficile.</p>
+
+<h2>Commencer par l’éloge précis</h2>
+<p>« Bravo ! » fait plaisir, mais n’apprend pas grand-chose. Un éloge précis décrit ce que l’enfant a fait :
+« Tu as rangé tes crayons sans que je te le demande. » « Tu as attendu ton tour même si c’était long. » L’enfant
+sait exactement quoi refaire. C’est gratuit, rapide et souvent suffisant.</p>
+
+<h2>Utiliser un système de points avec soin</h2>
+<ul>
+<li><strong>Visez un ou deux comportements à la fois,</strong> formulés de façon positive : « je lève la main »
+plutôt que « je ne crie pas ».</li>
+<li><strong>Rendez la réussite possible dès le départ.</strong> Si l’enfant n’obtient jamais de points, le
+système devient une source de découragement.</li>
+<li><strong>Choisissez les renforçateurs avec l’enfant.</strong> Du temps avec l’adulte, un privilège, une
+responsabilité : ce qui motive un enfant n’en motive pas un autre.</li>
+<li><strong>Ne retirez pas les points gagnés.</strong> Ce qui est acquis reste acquis. Retirer des points
+transforme l’outil en punition.</li>
+</ul>
+
+<h2>Éviter la surenchère</h2>
+<p>Un système de récompenses n’a pas à durer toujours. À mesure que le comportement s’installe, espacez les
+récompenses matérielles et misez davantage sur l’éloge, la fierté et les privilèges naturels. L’objectif est que
+l’enfant trouve peu à peu sa motivation en lui-même ou en elle-même.</p>
+
+<div class="astuce"><strong>Repère pour l’adulte</strong><p>Essayez la règle de 4 pour 1 : quatre interactions
+positives pour chaque correction. Ce simple équilibre change souvent le climat de la classe ou de la maison en
+quelques jours.</p></div>
+""",
+        corps_en="""
+<p class="lead">We quickly notice what goes wrong: the shout, the hit, the ignored instruction. What goes well
+often goes unnoticed. Positive reinforcement flips that habit: it means noticing and highlighting the behaviours
+we want to see again. Used well, it is one of the most effective tools in intervention.</p>
+
+<h2>What it is, and what it isn’t</h2>
+<p>To reinforce is to follow a behaviour with something pleasant so that the behaviour happens again. It is not
+buying peace, or promising a gift to stop a meltdown. Reinforcement comes <em>after</em> the desired behaviour,
+never to end a difficult one.</p>
+
+<h2>Start with specific praise</h2>
+<p>“Great job!” feels nice but doesn’t teach much. Specific praise describes what the child did: “You put away
+your pencils without me asking.” “You waited for your turn even though it was long.” The child knows exactly what
+to do again. It is free, quick and often enough.</p>
+
+<h2>Use a point system with care</h2>
+<ul>
+<li><strong>Target one or two behaviours at a time,</strong> phrased positively: “I raise my hand” rather than
+“I don’t shout”.</li>
+<li><strong>Make success possible from the start.</strong> If the child never earns points, the system becomes
+a source of discouragement.</li>
+<li><strong>Choose reinforcers with the child.</strong> Time with the adult, a privilege, a responsibility:
+what motivates one child doesn’t motivate another.</li>
+<li><strong>Don’t take away points already earned.</strong> What is earned stays earned. Removing points turns
+the tool into a punishment.</li>
+</ul>
+
+<h2>Avoid escalation</h2>
+<p>A reward system doesn’t have to last forever. As the behaviour settles in, space out material rewards and
+rely more on praise, pride and natural privileges. The goal is for the child to gradually find their own
+motivation.</p>
+
+<div class="astuce"><strong>Tip for the adult</strong><p>Try the 4-to-1 rule: four positive interactions for
+every correction. This simple balance often changes the mood of a classroom or a home within a few days.</p></div>
+"""),
+    dict(
         fr="conseil-routine-visuelle-matin.html",
         en="tip-morning-visual-routine.html",
         date="2026-10-06",
