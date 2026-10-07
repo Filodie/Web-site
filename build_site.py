@@ -17,6 +17,7 @@ import sys
 import fitz
 
 from conseils import ARTICLES
+import trousse_etudiante as TE
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -464,6 +465,7 @@ PAIRS = {"index.html": "index.html", "boutique.html": "shop.html", "bottin.html"
          "coloriage.html": "colouring.html", "avis.html": "review.html"}
 PAIRS["conseils.html"] = "tips.html"
 PAIRS.update({a["fr"]: a["en"] for a in ARTICLES})
+PAIRS[TE.FR] = TE.EN
 PAIRS_EN = {v: k for k, v in PAIRS.items()}
 
 THREAD = ('<svg class="thread" viewBox="0 0 600 90" preserveAspectRatio="none" aria-hidden="true"><path d="M-10 60 '
@@ -596,7 +598,9 @@ def vedettes(lang):
                   f'<h3>{html.escape(titre)}</h3><p>{html.escape(acc_fr if fr else acc_en)}</p>'
                   f'<p class="vprix">{prix(i["prix"])}{promo}</p>'
                   f'<p style="padding-bottom:16px"><a class="btn payhip-buy-button" data-theme="none" data-product="{code}" '
-                  f'href="https://payhip.com/b/{code}">{"Acheter" if fr else "Buy now"}</a></p></div>')
+                  f'href="https://payhip.com/b/{code}">{"Acheter" if fr else "Buy now"}</a>'
+                  + (f' <a class="btn ghost" href="{TE.FR if fr else TE.EN}">{"Voir le contenu" if fr else "See what’s inside"}</a>'
+                     if k == TE.LOT else "") + '</p></div>')
     h2 = "Les coups de cœur de Mélodie" if fr else "Mélodie’s favourites"
     sous = ("Par où commencer ? Quatre outils que je recommande en premier, selon votre réalité sur le terrain."
             if fr else "Where to start? Four tools I recommend first, depending on your day-to-day work.")
@@ -876,6 +880,39 @@ def article(lang, a, items):
             f'<p style="margin-top:18px"><a class="btn ghost" href="{"boutique.html" if fr else "shop.html"}">'
             f'{"Voir toute la boutique" if fr else "See the whole shop"} →</a></p></div></section>')
     return page(lang, a["fr" if fr else "en"], titre, body, desc=a["desc_fr" if fr else "desc_en"],
+                scripts='<script src="https://payhip.com/payhip.js"></script>')
+
+
+def trousse_etudiante(lang, items):
+    """Page détaillée du lot étudiant : chaque outil inclus, regroupé par thème, avec boutons d’achat."""
+    fr = lang == "fr"
+    lot, ech = items.get(TE.LOT), items.get(TE.ECH)
+
+    def code(i):
+        return i["payhip"] if fr else (i.get("payhip_en") or i["payhip"])
+
+    def prix(x):
+        t = f"{x:.2f}".replace(".00", "")
+        return (t.replace(".", ",") + " $") if fr else ("$" + t)
+    n = sum(len(g[2]) for g in TE.GROUPES)
+    valeur = sum(items[k]["prix"] for g in TE.GROUPES for k, _, _ in g[2] if k in items)
+    acheter = (f'<a class="btn payhip-buy-button" data-theme="none" data-product="{code(lot)}" href="https://payhip.com/b/{code(lot)}">'
+               f'{"Acheter la trousse" if fr else "Buy the kit"} · {prix(lot["prix"])}</a>')
+    essai = (f' <a class="btn ghost payhip-buy-button" data-theme="none" data-product="{code(ech)}" href="https://payhip.com/b/{code(ech)}">'
+             f'{"Essayer 4 fiches gratuites" if fr else "Try 4 free sheets"}</a>') if ech and ech.get("payhip") else ""
+    corps = ""
+    for gfr, gen, outils in TE.GROUPES:
+        li = "".join(f'<li><strong>{html.escape(items[k]["titre"] if fr else en(items[k], "titre"))}</strong> : '
+                     f'{html.escape(dfr if fr else den)}</li>' if fr else
+                     f'<li><strong>{html.escape(en(items[k], "titre"))}</strong>: {html.escape(den)}</li>'
+                     for k, dfr, den in outils if k in items)
+        corps += f'<h2>{gfr if fr else gen}</h2><ul>{li}</ul>'
+    resume = (f'<p class="lead">{TE.LEAD[lang]}</p><div class="astuce"><strong>{n} {"outils" if fr else "tools"} · '
+              f'{prix(lot["prix"])}</strong><p>{"Achetés un par un, ils reviendraient à" if fr else "Bought one by one, they would cost"} '
+              f'{prix(valeur)}.</p></div><p>{acheter}{essai}</p>')
+    body = (f'<article class="wrap prose"><p class="muted"><a href="{"boutique.html" if fr else "shop.html"}">← '
+            f'{"Boutique" if fr else "Shop"}</a></p><h1>{TE.TITRE[lang]}</h1>{resume}{corps}<p style="margin-top:28px">{acheter}{essai}</p></article>')
+    return page(lang, TE.FR if fr else TE.EN, TE.TITRE[lang], body, desc=TE.DESC[lang],
                 scripts='<script src="https://payhip.com/payhip.js"></script>')
 
 
@@ -1252,6 +1289,7 @@ def build():
         open(os.path.join(d, "conseils.html" if lang == "fr" else "tips.html"), "w").write(conseils_index(lang, tous))
         for a in ARTICLES:
             open(os.path.join(d, a[lang]), "w").write(article(lang, a, tous))
+        open(os.path.join(d, TE.FR if lang == "fr" else TE.EN), "w").write(trousse_etudiante(lang, tous))
     open(os.path.join(PUB, "404.html"), "w").write(page("fr", "index.html", "Page introuvable",
         '<section class="wrap prose"><h1>Page introuvable</h1><p class="lead">Cette page n’existe pas ou a été déplacée. '
         '· This page does not exist.</p><p><a class="btn" href="/">Accueil · Home</a></p></section>').replace('href="index.html"', 'href="/index.html"'))
