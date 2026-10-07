@@ -396,7 +396,7 @@ L = {
         "search": "Rechercher un outil…", "all": "Tout",
         "types": {"trousse": "Trousses", "edition": "Éditions", "cahier": "Cahiers visuels", "affiches": "Affiches", "jeux": "Jeux", "routines": "Routines", "detective": "Détective", "gratuit": "Gratuit", "livre": "Grand livre",
                   "bottin": "Bottin", "lot": "Lots"},
-        "buy": "Acheter", "cart": "Ajouter au panier", "soon": "Bientôt disponible", "free": "Gratuit", "get": "Obtenir", "details": "Détails", "cahier_nb": " · Couleur + version noir et blanc à colorier",
+        "buy": "Acheter", "cart": "Ajouter au panier", "direct": "ou acheter maintenant", "soon": "Bientôt disponible", "free": "Gratuit", "get": "Obtenir", "details": "Détails", "cahier_nb": " · Couleur + version noir et blanc à colorier",
         "aff_nb": " · Couleur + noir et blanc · lettre et 11 × 17",
         "jeux_nb": " · Règles, cartes et plateaux · couleur + noir et blanc",
         "rtn_nb": " · Séquences, tableaux et guide parent · couleur + noir et blanc",
@@ -439,7 +439,7 @@ L = {
         "search": "Search for a tool…", "all": "All",
         "types": {"trousse": "Toolkits", "edition": "Editions", "cahier": "Visual workbooks", "affiches": "Posters", "jeux": "Games", "routines": "Routines", "detective": "Detective", "gratuit": "Free", "livre": "Handbook",
                   "bottin": "Directory", "lot": "Bundles"},
-        "buy": "Buy", "cart": "Add to cart", "soon": "Coming soon", "free": "Free", "get": "Get it", "details": "Details", "cahier_nb": " · Colour + black-and-white colouring version",
+        "buy": "Buy", "cart": "Add to cart", "direct": "or buy now", "soon": "Coming soon", "free": "Free", "get": "Get it", "details": "Details", "cahier_nb": " · Colour + black-and-white colouring version",
         "aff_nb": " · Colour + black and white · letter and 11 × 17",
         "jeux_nb": " · Rules, cards and boards · colour + black and white",
         "det_nb": " · Adult guide, answer cards and certificate",
@@ -508,7 +508,9 @@ def bouton_payhip(code, payant, lang, libelle_gratuit=None, cls="btn"):
     fr = lang == "fr"
     if payant:
         return (f'<a class="{cls} payhip-add-to-cart-button" data-theme="none" data-product="{code}" '
-                f'href="https://payhip.com/b/{code}">{"Ajouter au panier" if fr else "Add to cart"}</a>')
+                f'href="https://payhip.com/b/{code}">{"Ajouter au panier" if fr else "Add to cart"}</a> '
+                f'<a class="achat-direct payhip-buy-button" data-theme="none" data-product="{code}" '
+                f'href="https://payhip.com/b/{code}">{"ou acheter maintenant" if fr else "or buy now"}</a>')
     lib = libelle_gratuit or ("Obtenir" if fr else "Get it")
     return (f'<a class="{cls} payhip-buy-button" data-theme="none" data-product="{code}" '
             f'href="https://payhip.com/b/{code}">{lib}</a>')
@@ -795,7 +797,7 @@ def shop(lang, items):
                   for pl in ([lang] if i.get("pv_" + lang) else ["fr"]) for a in i.get("pv_" + pl, [])], "c": i.get("code", ""), "v": i.get("valeur", 0),
         })
     chips = "".join(f'<button data-t="{k}">{v}</button>' for k, v in t["types"].items())
-    labels = json.dumps({k: t[k] for k in ("buy", "cart", "soon", "free", "get", "details", "count", "value", "save", "preview", "close", "pvnote")}, ensure_ascii=False)
+    labels = json.dumps({k: t[k] for k in ("buy", "cart", "direct", "soon", "free", "get", "details", "count", "value", "save", "preview", "close", "pvnote")}, ensure_ascii=False)
     body = f"""
 <section class="wrap shop">
   <h1>{t['shop_t']}</h1>
@@ -819,14 +821,15 @@ const list=document.getElementById('list'), sel=document.getElementById('g');
 function esc(s){{return s.replace(/[&<>"]/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]))}}
 function groups(){{const gs=[...new Set(P.filter(p=>!type||p.t===type).map(p=>p.g))];
  sel.innerHTML='<option value="">{t['all']}</option>'+gs.map(g=>'<option>'+esc(g)+'</option>').join('');sel.value=grp}}
-function buybtn(p){{return p.k?'<a class="btn '+(p.p?'payhip-add-to-cart-button':'payhip-buy-button')+'" data-theme="none" data-product="'+p.k+'" href="https://payhip.com/b/'+p.k+'">'+(p.p?T.cart:T.get)+'</a>'
+function buybtn(p){{return p.k?'<span class="acts"><a class="btn '+(p.p?'payhip-add-to-cart-button':'payhip-buy-button')+'" data-theme="none" data-product="'+p.k+'" href="https://payhip.com/b/'+p.k+'">'+(p.p?T.cart:T.get)+'</a>'
+   +(p.p?'<a class="achat-direct payhip-buy-button" data-theme="none" data-product="'+p.k+'" href="https://payhip.com/b/'+p.k+'">'+T.direct+'</a>':'')+'</span>'
    :'<span class="btn off">'+T.soon+'</span>'}}
 function card(p,i){{
  const price=p.p?fmt.format(p.p):T.free, btn=buybtn(p);
  const im='<img src="'+p.img+'" alt="" width="420" height="544" '+(i<4?'fetchpriority="high"':'loading="lazy"')+' decoding="async">';
  return '<article class="card prod">'+(p.a.length?'<button class="pvb" data-pv="'+P.indexOf(p)+'" aria-label="'+T.preview+' : '+esc(p.n)+'">'+im+'<span class="pvl">'+T.preview+'</span></button>':im)+'<div class="pb"><p class="grp">'+esc(p.g)+(p.c?' · '+p.c:'')+'</p><h3>'+esc(p.n)+'</h3><p class="sub">'+esc(p.s)+'</p>'
   +(p.v>p.p?'<p class="save">'+T.value+' : <s>'+fmt.format(p.v)+'</s> · '+T.save+' '+Math.round(100-100*p.p/p.v)+' %</p>':'')
-  +'<details><summary>'+T.details+'</summary><p>'+esc(p.d)+'</p></details><div class="buy"><strong>'+price+'</strong>'+btn+'</div></div></article>'}}
+  +'<details><summary>'+T.details+'</summary><p>'+esc(p.d)+'</p></details>'+(p.a.length?'<button class="apercu" data-pv="'+P.indexOf(p)+'">👁 '+T.preview+'</button>':'')+'<div class="buy"><strong>'+price+'</strong>'+btn+'</div></div></article>'}}
 function draw(){{const w=q.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');
  const r=P.filter(p=>(!type||p.t===type)&&(!grp||p.g===grp)&&(!w||(p.n+' '+p.s+' '+p.d+' '+p.g+' '+p.c).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').includes(w)));
  document.getElementById('n').textContent=r.length+' '+T.count;list.innerHTML=r.map((p,i)=>card(p,i)).join('');
@@ -919,7 +922,9 @@ def trousse_etudiante(lang, items):
     n = sum(len(g[2]) for g in TE.GROUPES)
     valeur = sum(items[k]["prix"] for g in TE.GROUPES for k, _, _ in g[2] if k in items)
     acheter = (f'<a class="btn payhip-add-to-cart-button" data-theme="none" data-product="{code(lot)}" href="https://payhip.com/b/{code(lot)}">'
-               f'{"Ajouter la trousse au panier" if fr else "Add the kit to cart"} · {prix(lot["prix"])}</a>')
+               f'{"Ajouter la trousse au panier" if fr else "Add the kit to cart"} · {prix(lot["prix"])}</a> '
+               f'<a class="achat-direct payhip-buy-button" data-theme="none" data-product="{code(lot)}" href="https://payhip.com/b/{code(lot)}">'
+               f'{"ou acheter maintenant" if fr else "or buy now"}</a>')
     essai = (f' <a class="btn ghost payhip-buy-button" data-theme="none" data-product="{code(ech)}" href="https://payhip.com/b/{code(ech)}">'
              f'{"Essayer 4 fiches gratuites" if fr else "Try 4 free sheets"}</a>') if ech and ech.get("payhip") else ""
     corps = ""
@@ -1217,7 +1222,7 @@ nav a[aria-current]{color:var(--terra)}nav .panier{font-weight:700;color:var(--t
 .prod h3{font-size:1.05rem}.sub{margin:0;color:var(--gray);font-size:.9rem}
 .save{margin:6px 0 0;font-size:.82rem;font-weight:800;color:var(--sage)}
 details{font-size:.9rem;margin:6px 0}summary{cursor:pointer;color:var(--terra);font-weight:700}
-.buy{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:10px}.buy strong{font-size:1.1rem}.buy{gap:8px;flex-wrap:wrap}.buy .btn{white-space:nowrap;padding:8px 14px;font-size:.9rem}
+.buy{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:10px}.buy strong{font-size:1.1rem}.buy{gap:8px;flex-wrap:wrap}.buy .btn{white-space:nowrap;padding:8px 14px;font-size:.9rem}.acts{display:flex;flex-direction:column;align-items:flex-end;gap:4px}.achat-direct{font-size:.82rem;color:var(--ink)!important;text-decoration:underline;white-space:nowrap}.apercu{background:none;border:1.5px solid var(--terra);color:var(--terra);border-radius:20px;padding:4px 12px;font:inherit;font-size:.85rem;font-weight:700;cursor:pointer;margin:6px 0 2px;align-self:flex-start}.apercu:hover{background:var(--terra);color:#fff}
 .split{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;padding:40px 20px 70px}
 @media (max-width:760px){.split{grid-template-columns:1fr}}
 .shadow{border-radius:10px;box-shadow:0 10px 40px rgba(0,0,0,.15)}
