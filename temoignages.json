@@ -1,1 +1,12 @@
-[]
+[
+ {
+  "prenom": "Mégane",
+  "role_fr": "Grand livre clinique T.E.S. · en formation",
+  "role_en": "SCC Clinical Handbook · in training",
+  "texte_fr": "Superbes outils bien pensés et élaborés par une professionnelle engagée. Chacun des documents est créé à l'aide de ressources fiables!",
+  "texte_en": "Superb, well-thought-out tools developed by a dedicated professional. Every document is built on reliable sources!",
+  "consentement": true,
+  "date": "2026-10-07",
+  "source": "permission donnée à Mélodie le 7 oct. 2026"
+ }
+]
