@@ -207,7 +207,7 @@ SECTION_PERSO = {
 <li>Les PDF restent remplissables à l’écran et imprimables.</li>
 <li>Version française, anglaise ou les deux.</li></ul>
 <h3>Prix</h3>
-<p>Le prix de la <a href="#licence-equipe">licence d’équipe</a> (3 fois le prix individuel, jusqu’à 25 membres du personnel), plus des frais de personnalisation uniques par commande, peu importe le nombre de fichiers. Vous recevez le prix exact avant de payer. Pour plus de 25 personnes ou plusieurs installations, je vous envoie une soumission.</p>
+<p>Le prix de la <a href="#licence-equipe">licence d’équipe</a> (3 fois le prix individuel, jusqu’à 25 membres du personnel), plus des frais de personnalisation de 49 $ par commande, peu importe le nombre de fichiers. Vous recevez le prix exact avant de payer. Pour plus de 25 personnes ou plusieurs installations, je vous envoie une soumission.</p>
 <h3>Faire une demande</h3>
 <p>Remplissez le formulaire : je vous réponds par courriel avec un aperçu et une facture. Aucun appel ni rencontre n’est nécessaire.</p>
 {form}
@@ -221,7 +221,7 @@ SECTION_PERSO = {
 <li>The PDFs stay fillable on screen and printable.</li>
 <li>English, French or both.</li></ul>
 <h3>Price</h3>
-<p>The price of the <a href="#team-licence">team licence</a> (3 times the individual price, up to 25 staff members), plus a one-time customization fee per order, whatever the number of files. You receive the exact price before paying. For more than 25 people or several sites, I will send you a quote.</p>
+<p>The price of the <a href="#team-licence">team licence</a> (3 times the individual price, up to 25 staff members), plus a $49 customization fee per order, whatever the number of files. You receive the exact price before paying. For more than 25 people or several sites, I will send you a quote.</p>
 <h3>Request a custom edition</h3>
 <p>Fill in the form: I will reply by email with a preview and an invoice. No call or meeting is needed.</p>
 {form}
