@@ -49,7 +49,7 @@ const o=n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',
 <script>window.PayhipConfig={enableCart:true,cart:{position:"bottom-right",launcherBackground:"#D9734E",checkoutButtonBackground:"#D9734E"}};</script>
 <script src="https://payhip.com/payhip.js"></script>
 <script>
-(function(){const C={"url": "", "envoi": "Envoi…", "envoyer": "Envoyer", "merci": "Merci ! Votre message est bien reçu.", "erreur": "L’envoi n’a pas fonctionné. Votre logiciel de courriel va s’ouvrir avec le message prérempli.", "gros": "Le logo dépasse 3 Mo : envoyez-le plutôt par courriel après la demande.", "lang": "fr"};const t0=Date.now();
+(function(){const C={"url": "https://script.google.com/macros/s/AKfycbyJG1N5xU2nrcK11xXrUj24iW6AzoTiwM4ckgmtuQXfYXqgKBFMd-jHXFmehv_Cl5G3/exec", "envoi": "Envoi…", "envoyer": "Envoyer", "merci": "Merci ! Votre message est bien reçu.", "erreur": "L’envoi n’a pas fonctionné. Votre logiciel de courriel va s’ouvrir avec le message prérempli.", "gros": "Le logo dépasse 3 Mo : envoyez-le plutôt par courriel après la demande.", "lang": "fr"};const t0=Date.now();
 function mailto(f,d){const lignes=[];for(const[k,v]of d){if(['site_web','formulaire','sujet','logo_b64','logo_type'].includes(k)||!v)continue;lignes.push(k+' : '+v)}
 location.href='mailto:melodie@filodie.ca?subject='+encodeURIComponent(d.get('sujet'))+'&body='+encodeURIComponent(lignes.join('\n'))}
 function lire(file){return new Promise((ok,ko)=>{const r=new FileReader();r.onload=()=>ok(String(r.result).split(',')[1]);r.onerror=ko;r.readAsDataURL(file)})}
