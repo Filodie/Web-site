@@ -56,6 +56,21 @@ ml('account', '2673065');</script>
 <ol><li>Écrivez à <a href="mailto:melodie@filodie.ca?subject=Licence%20d%E2%80%99%C3%A9quipe">melodie@filodie.ca</a> en indiquant les produits voulus, le nom et l’adresse de l’établissement, ainsi que la personne-ressource.</li>
 <li>Vous recevez une facture en PDF, payable par virement Interac ou par chèque.</li>
 <li>Dès la réception du paiement, vous recevez les fichiers par courriel, avec la facture marquée « payée ».</li></ol>
+
+<h2 id="personnalisation">Édition personnalisée à l’image de votre établissement</h2>
+<p>Pour un CIUSSS, un CISSS, un centre de services scolaire, un CPE, un organisme ou une entreprise : les outils Filodie peuvent porter <strong>votre logo et votre nomenclature</strong> (direction, programme, service), pour s’intégrer à vos documents internes.</p>
+<ul><li>Votre logo, le nom de l’établissement et jusqu’à deux lignes de nomenclature en haut des pages et sur les couvertures.</li>
+<li>Une page de garde à votre nom, avec la licence d’établissement.</li>
+<li>La mention « © Filodie » reste en bas de chaque page.</li>
+<li>Les PDF restent remplissables à l’écran et imprimables.</li>
+<li>Version française, anglaise ou les deux.</li></ul>
+<h3>Prix</h3>
+<p>Le prix de la <a href="#licence-equipe">licence d’équipe</a> (3 fois le prix individuel, jusqu’à 25 membres du personnel), plus des frais de personnalisation uniques par commande, peu importe le nombre de fichiers. Vous recevez le prix exact avant de payer. Pour plus de 25 personnes ou plusieurs installations, je vous envoie une soumission.</p>
+<h3>Faire une demande</h3>
+<p>Remplissez le formulaire : je vous réponds par courriel avec un aperçu et une facture. Aucun appel ni rencontre n’est nécessaire.</p>
+<form class="fform" data-filodie-form><label><span>Nom de l’établissement ou de l’entreprise</span><input type="text" name="etablissement" required maxlength="300" autocomplete="organization"></label><label><span>Nomenclature à afficher sur les fichiers <span class="opt">(facultatif)</span></span><textarea name="nomenclature" placeholder="Ex. : Direction des programmes DI-TSA-DP
+Service d’adaptation et de réadaptation" maxlength="5000" style="min-height:80px"></textarea></label><div class="deux"><label><span>Personne-ressource</span><input type="text" name="contact" required maxlength="300" autocomplete="name"></label><label><span>Courriel</span><input type="email" name="courriel" required maxlength="300" autocomplete="email"></label></div><div class="deux"><label><span>Téléphone <span class="opt">(facultatif)</span></span><input type="tel" name="telephone" maxlength="300" autocomplete="tel"></label><label><span>Nombre de membres du personnel visés <span class="opt">(facultatif)</span></span><input type="number" name="personnes" maxlength="300" min="1" max="100000"></label></div><label><span>Outils voulus</span><textarea name="produits" required placeholder="Ex. : Trousse TSA, Trousse gestion de crise, toutes les trousses…" maxlength="5000" style="min-height:80px"></textarea></label><label><span>Votre logo <span class="opt">(facultatif)</span></span><input type="file" name="logo" accept=".png,.jpg,.jpeg,.svg,.pdf,image/png,image/jpeg,image/svg+xml,application/pdf"><span class="opt">PNG, JPG, SVG ou PDF, 3 Mo maximum. Idéalement sur fond transparent. Vous pourrez aussi l’envoyer plus tard par courriel.</span></label><label><span>Précisions <span class="opt">(facultatif)</span></span><textarea name="message" maxlength="5000" style="min-height:80px"></textarea></label><label class="check"><input type="checkbox" name="autorisation" value="oui" required><span>Je confirme que l’établissement est autorisé à utiliser ce logo sur ses documents internes.</span></label><div class="pot" aria-hidden="true"><label>Site web<input type="text" name="site_web" tabindex="-1" autocomplete="off"></label></div><input type="hidden" name="formulaire" value="personnalisation"><input type="hidden" name="sujet" value="Demande d’édition personnalisée Filodie"><button class="btn" type="submit">Envoyer</button><p class="etat" role="status" aria-live="polite"></p></form>
+
 <p><a class="btn" href="mailto:melodie@filodie.ca?subject=Demande%20de%20service%20Filodie">Écrire à Mélodie</a></p>
 </section>
 </main>
@@ -63,7 +78,7 @@ ml('account', '2673065');</script>
   <div class="wrap">
     <p class="logo small">filodie<svg viewBox="33 106 236 48" aria-hidden="true"><path d="M40 130C67 110 67 110 95 130S122 150 150 130S177 110 205 130S232 150 260 130" fill="none" stroke="#D9734E" stroke-width="3.2" stroke-linecap="round"/><circle cx="67" cy="115" r="7" fill="#1F3B4D"/><circle cx="123" cy="145" r="7" fill="#D9734E"/><circle cx="178" cy="115" r="7" fill="#6F9A81"/><circle cx="233" cy="145" r="7" fill="#E3B04B"/><circle cx="260" cy="130" r="7" fill="#D98FA0"/></svg></p>
     <p>Outils cliniques pour T.E.S.</p>
-    <p class="legal"><a href="avis.html">Donner mon avis</a> · <a href="licence.html">Licence d’utilisation</a> · <a href="conditions.html">Conditions de vente</a> · <a href="confidentialite.html">Confidentialité</a></p>
+    <p class="legal"><a href="suggestions.html">Boîte à suggestions</a> · <a href="avis.html">Donner mon avis</a> · <a href="licence.html">Licence d’utilisation</a> · <a href="conditions.html">Conditions de vente</a> · <a href="confidentialite.html">Confidentialité</a></p>
     <p class="note">Les outils Filodie soutiennent l’intervention; ils ne remplacent ni l’évaluation d’une personne professionnelle qualifiée ni le jugement clinique.</p>
     <p class="note">© 2026 Filodie. Tous droits réservés. · Illustrations : Fluent Emoji © Microsoft (MIT).</p>
   </div>
@@ -74,6 +89,24 @@ const o=n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',
 </script>
 <script>window.PayhipConfig={enableCart:true,cart:{position:"bottom-right",launcherBackground:"#D9734E",checkoutButtonBackground:"#D9734E"}};</script>
 <script src="https://payhip.com/payhip.js"></script>
-
+<script>
+(function(){const C={"url": "", "envoi": "Envoi…", "envoyer": "Envoyer", "merci": "Merci ! Votre message est bien reçu.", "erreur": "L’envoi n’a pas fonctionné. Votre logiciel de courriel va s’ouvrir avec le message prérempli.", "gros": "Le logo dépasse 3 Mo : envoyez-le plutôt par courriel après la demande.", "lang": "fr"};const t0=Date.now();
+function mailto(f,d){const lignes=[];for(const[k,v]of d){if(['site_web','formulaire','sujet','logo_b64','logo_type'].includes(k)||!v)continue;lignes.push(k+' : '+v)}
+location.href='mailto:melodie@filodie.ca?subject='+encodeURIComponent(d.get('sujet'))+'&body='+encodeURIComponent(lignes.join('\n'))}
+function lire(file){return new Promise((ok,ko)=>{const r=new FileReader();r.onload=()=>ok(String(r.result).split(',')[1]);r.onerror=ko;r.readAsDataURL(file)})}
+document.querySelectorAll('form[data-filodie-form]').forEach(f=>f.addEventListener('submit',async e=>{e.preventDefault();
+const etat=f.querySelector('.etat'),b=f.querySelector('button');etat.className='etat';etat.textContent='';
+const fd=new FormData(f);if(fd.get('site_web')||Date.now()-t0<3000){etat.className='etat ok';etat.textContent=C.merci;return}
+const d=new URLSearchParams();for(const[k,v]of fd){if(!(v instanceof File))d.append(k,v)}
+d.append('langue',C.lang);d.append('page',location.pathname);
+const file=fd.get('logo');
+if(file&&file.size){if(file.size>3e6){etat.className='etat err';etat.textContent=C.gros;return}
+if(C.url){d.append('logo_nom',file.name);d.append('logo_type',file.type);d.append('logo_b64',await lire(file))}else{d.append('logo','(à joindre au courriel : '+file.name+')')}}
+if(!C.url){mailto(f,d);return}
+b.disabled=true;b.textContent=C.envoi;
+try{await fetch(C.url,{method:'POST',mode:'no-cors',body:d});f.reset();etat.className='etat ok';etat.textContent=C.merci}
+catch(err){etat.className='etat err';etat.textContent=C.erreur;setTimeout(()=>mailto(f,d),1500)}
+finally{b.disabled=false;b.textContent=C.envoyer}}))})();
+</script>
 </body>
 </html>

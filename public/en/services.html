@@ -56,6 +56,21 @@ ml('account', '2673065');</script>
 <ol><li>Email <a href="mailto:melodie@filodie.ca?subject=Team%20licence">melodie@filodie.ca</a> with the products you want, the organization’s name and address, and a contact person.</li>
 <li>You receive a PDF invoice, payable by Interac e-Transfer or cheque.</li>
 <li>As soon as payment is received, you get the files by email, along with the invoice marked “paid”.</li></ol>
+
+<h2 id="custom-edition">Custom edition with your organization’s branding</h2>
+<p>For a health and social services centre, a school service centre, a daycare, a community organization or a company: Filodie tools can carry <strong>your logo and your names</strong> (department, program, service), to fit in with your internal documents.</p>
+<ul><li>Your logo, the organization’s name and up to two lines of department names at the top of the pages and on the covers.</li>
+<li>A title page in your name, with the organization licence.</li>
+<li>The “© Filodie” notice remains at the bottom of every page.</li>
+<li>The PDFs stay fillable on screen and printable.</li>
+<li>English, French or both.</li></ul>
+<h3>Price</h3>
+<p>The price of the <a href="#team-licence">team licence</a> (3 times the individual price, up to 25 staff members), plus a one-time customization fee per order, whatever the number of files. You receive the exact price before paying. For more than 25 people or several sites, I will send you a quote.</p>
+<h3>Request a custom edition</h3>
+<p>Fill in the form: I will reply by email with a preview and an invoice. No call or meeting is needed.</p>
+<form class="fform" data-filodie-form><label><span>Name of the organization or company</span><input type="text" name="etablissement" required maxlength="300" autocomplete="organization"></label><label><span>Names to display on the files <span class="opt">(optional)</span></span><textarea name="nomenclature" placeholder="E.g. Intellectual disability and autism program
+Rehabilitation services" maxlength="5000" style="min-height:80px"></textarea></label><div class="deux"><label><span>Contact person</span><input type="text" name="contact" required maxlength="300" autocomplete="name"></label><label><span>Email</span><input type="email" name="courriel" required maxlength="300" autocomplete="email"></label></div><div class="deux"><label><span>Phone <span class="opt">(optional)</span></span><input type="tel" name="telephone" maxlength="300" autocomplete="tel"></label><label><span>Number of staff members covered <span class="opt">(optional)</span></span><input type="number" name="personnes" maxlength="300" min="1" max="100000"></label></div><label><span>Tools wanted</span><textarea name="produits" required placeholder="E.g. Autism toolkit, Crisis management toolkit, all toolkits…" maxlength="5000" style="min-height:80px"></textarea></label><label><span>Your logo <span class="opt">(optional)</span></span><input type="file" name="logo" accept=".png,.jpg,.jpeg,.svg,.pdf,image/png,image/jpeg,image/svg+xml,application/pdf"><span class="opt">PNG, JPG, SVG or PDF, 3 MB maximum. Ideally on a transparent background. You can also email it later.</span></label><label><span>Details <span class="opt">(optional)</span></span><textarea name="message" maxlength="5000" style="min-height:80px"></textarea></label><label class="check"><input type="checkbox" name="autorisation" value="oui" required><span>I confirm that the organization is authorized to use this logo on its internal documents.</span></label><div class="pot" aria-hidden="true"><label>Site web<input type="text" name="site_web" tabindex="-1" autocomplete="off"></label></div><input type="hidden" name="formulaire" value="personnalisation"><input type="hidden" name="sujet" value="Filodie custom edition request"><button class="btn" type="submit">Send</button><p class="etat" role="status" aria-live="polite"></p></form>
+
 <p><a class="btn" href="mailto:melodie@filodie.ca?subject=Filodie%20service%20request">Email Mélodie</a></p>
 </section>
 </main>
@@ -63,7 +78,7 @@ ml('account', '2673065');</script>
   <div class="wrap">
     <p class="logo small">filodie<svg viewBox="33 106 236 48" aria-hidden="true"><path d="M40 130C67 110 67 110 95 130S122 150 150 130S177 110 205 130S232 150 260 130" fill="none" stroke="#D9734E" stroke-width="3.2" stroke-linecap="round"/><circle cx="67" cy="115" r="7" fill="#1F3B4D"/><circle cx="123" cy="145" r="7" fill="#D9734E"/><circle cx="178" cy="115" r="7" fill="#6F9A81"/><circle cx="233" cy="145" r="7" fill="#E3B04B"/><circle cx="260" cy="130" r="7" fill="#D98FA0"/></svg></p>
     <p>Clinical tools for special care counsellors</p>
-    <p class="legal"><a href="review.html">Share your feedback</a> · <a href="licence.html">Licence</a> · <a href="terms.html">Terms of sale</a> · <a href="privacy.html">Privacy</a></p>
+    <p class="legal"><a href="suggestions.html">Suggestion box</a> · <a href="review.html">Share your feedback</a> · <a href="licence.html">Licence</a> · <a href="terms.html">Terms of sale</a> · <a href="privacy.html">Privacy</a></p>
     <p class="note">Filodie tools support intervention; they do not replace an assessment by a qualified professional or clinical judgment.</p>
     <p class="note">© 2026 Filodie. All rights reserved. · Illustrations : Fluent Emoji © Microsoft (MIT).</p>
   </div>
@@ -74,6 +89,24 @@ const o=n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',
 </script>
 <script>window.PayhipConfig={enableCart:true,cart:{position:"bottom-right",launcherBackground:"#D9734E",checkoutButtonBackground:"#D9734E"}};</script>
 <script src="https://payhip.com/payhip.js"></script>
-
+<script>
+(function(){const C={"url": "", "envoi": "Sending…", "envoyer": "Send", "merci": "Thank you! Your message has been received.", "erreur": "Sending did not work. Your email app will open with the message filled in.", "gros": "The logo is larger than 3 MB: please email it after sending the request.", "lang": "en"};const t0=Date.now();
+function mailto(f,d){const lignes=[];for(const[k,v]of d){if(['site_web','formulaire','sujet','logo_b64','logo_type'].includes(k)||!v)continue;lignes.push(k+' : '+v)}
+location.href='mailto:melodie@filodie.ca?subject='+encodeURIComponent(d.get('sujet'))+'&body='+encodeURIComponent(lignes.join('\n'))}
+function lire(file){return new Promise((ok,ko)=>{const r=new FileReader();r.onload=()=>ok(String(r.result).split(',')[1]);r.onerror=ko;r.readAsDataURL(file)})}
+document.querySelectorAll('form[data-filodie-form]').forEach(f=>f.addEventListener('submit',async e=>{e.preventDefault();
+const etat=f.querySelector('.etat'),b=f.querySelector('button');etat.className='etat';etat.textContent='';
+const fd=new FormData(f);if(fd.get('site_web')||Date.now()-t0<3000){etat.className='etat ok';etat.textContent=C.merci;return}
+const d=new URLSearchParams();for(const[k,v]of fd){if(!(v instanceof File))d.append(k,v)}
+d.append('langue',C.lang);d.append('page',location.pathname);
+const file=fd.get('logo');
+if(file&&file.size){if(file.size>3e6){etat.className='etat err';etat.textContent=C.gros;return}
+if(C.url){d.append('logo_nom',file.name);d.append('logo_type',file.type);d.append('logo_b64',await lire(file))}else{d.append('logo','(à joindre au courriel : '+file.name+')')}}
+if(!C.url){mailto(f,d);return}
+b.disabled=true;b.textContent=C.envoi;
+try{await fetch(C.url,{method:'POST',mode:'no-cors',body:d});f.reset();etat.className='etat ok';etat.textContent=C.merci}
+catch(err){etat.className='etat err';etat.textContent=C.erreur;setTimeout(()=>mailto(f,d),1500)}
+finally{b.disabled=false;b.textContent=C.envoyer}}))})();
+</script>
 </body>
 </html>

@@ -68,3 +68,16 @@ details{font-size:.9rem;margin:6px 0}summary{cursor:pointer;color:var(--terra);f
 .prose h3{font-size:1.1rem;margin-top:1.4em}.tbl{width:100%;border-collapse:collapse;margin:1em 0;font-size:.95rem}.tbl th,.tbl td{padding:8px 10px;text-align:left;border-bottom:1px solid rgba(127,127,127,.25)}.tbl th{font-weight:800}.tbl td:not(:first-child),.tbl th:not(:first-child){text-align:right;white-space:nowrap}
 .foot{background:var(--cream);border-top:1px solid var(--sand);padding:30px 0;font-size:.9rem;color:var(--gray)}
 .foot .legal a{color:var(--ink)}.note{font-size:.8rem}
+
+.fform{display:grid;gap:14px;background:var(--card);border:1px solid var(--sand);border-radius:14px;padding:22px;margin:1.4em 0}
+.fform label{display:grid;gap:5px;font-weight:700;font-size:.95rem}
+.fform .opt{font-weight:400;color:var(--gray);font-size:.85rem}
+.fform input,.fform select,.fform textarea{font:inherit;font-weight:400;padding:10px 12px;border-radius:10px;border:1.5px solid var(--sand);background:var(--bg);color:var(--ink);width:100%;box-sizing:border-box}
+.fform textarea{min-height:130px;resize:vertical}
+.fform input:focus,.fform select:focus,.fform textarea:focus{outline:2px solid var(--terra);outline-offset:1px}
+.fform .deux{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:640px){.fform .deux{grid-template-columns:1fr}}
+.fform .pot{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.fform .check{display:flex;gap:8px;align-items:flex-start;font-weight:400}.fform .check input{width:auto;margin-top:4px}
+.fform button{justify-self:start;cursor:pointer;font:inherit;font-weight:800}
+.fform .etat{margin:0;font-weight:700}.fform .etat.ok{color:var(--sage)}.fform .etat.err{color:var(--terra)}

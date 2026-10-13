@@ -18,6 +18,7 @@ import fitz
 
 from conseils import ARTICLES
 import trousse_etudiante as TE
+import formulaires as FO
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -408,7 +409,7 @@ L = {
                     "CLSC, associations en autisme et en TDAH, déficience intellectuelle, personnes proches aidantes, violence et dépendances. "
                     "Coordonnées vérifiées sur les sites officiels.",
         "bottin_btn": "Recevoir le bottin gratuitement",
-        "footer_legal": [("avis.html", "Donner mon avis"), ("licence.html", "Licence d’utilisation"), ("conditions.html", "Conditions de vente"),
+        "footer_legal": [("suggestions.html", "Boîte à suggestions"), ("avis.html", "Donner mon avis"), ("licence.html", "Licence d’utilisation"), ("conditions.html", "Conditions de vente"),
                          ("confidentialite.html", "Confidentialité")],
         "footer_note": "Les outils Filodie soutiennent l’intervention; ils ne remplacent ni l’évaluation d’une personne "
                        "professionnelle qualifiée ni le jugement clinique.",
@@ -451,7 +452,7 @@ L = {
                     "CLSCs, autism and ADHD associations, intellectual disability, caregivers, violence and addictions. "
                     "Contact details verified on official websites.",
         "bottin_btn": "Get the directory for free",
-        "footer_legal": [("review.html", "Share your feedback"), ("licence.html", "Licence"), ("terms.html", "Terms of sale"), ("privacy.html", "Privacy")],
+        "footer_legal": [("suggestions.html", "Suggestion box"), ("review.html", "Share your feedback"), ("licence.html", "Licence"), ("terms.html", "Terms of sale"), ("privacy.html", "Privacy")],
         "footer_note": "Filodie tools support intervention; they do not replace an assessment by a qualified professional "
                        "or clinical judgment.",
         "rights": "© 2026 Filodie. All rights reserved.",
@@ -464,6 +465,7 @@ PAIRS = {"index.html": "index.html", "boutique.html": "shop.html", "bottin.html"
          "licence.html": "licence.html", "conditions.html": "terms.html", "confidentialite.html": "privacy.html",
          "coloriage.html": "colouring.html", "avis.html": "review.html"}
 PAIRS["conseils.html"] = "tips.html"
+PAIRS["suggestions.html"] = "suggestions.html"
 PAIRS.update({a["fr"]: a["en"] for a in ARTICLES})
 PAIRS[TE.FR] = TE.EN
 PAIRS_EN = {v: k for k, v in PAIRS.items()}
@@ -970,8 +972,8 @@ def conseils_index(lang, items):
     return page(lang, "conseils.html" if fr else "tips.html", h1, body, desc=lead)
 
 
-def textpage(lang, name, title, content):
-    return page(lang, name, title, f'<section class="wrap prose"><h1>{title}</h1>{content}</section>')
+def textpage(lang, name, title, content, scripts=""):
+    return page(lang, name, title, f'<section class="wrap prose"><h1>{title}</h1>{content}</section>', scripts=scripts)
 
 
 CONTENT = {
@@ -1028,6 +1030,7 @@ CONTENT = {
 <ol><li>Écrivez à <a href="mailto:melodie@filodie.ca?subject=Licence%20d%E2%80%99%C3%A9quipe">melodie@filodie.ca</a> en indiquant les produits voulus, le nom et l’adresse de l’établissement, ainsi que la personne-ressource.</li>
 <li>Vous recevez une facture en PDF, payable par virement Interac ou par chèque.</li>
 <li>Dès la réception du paiement, vous recevez les fichiers par courriel, avec la facture marquée « payée ».</li></ol>
+{perso}
 <p><a class="btn" href="mailto:melodie@filodie.ca?subject=Demande%20de%20service%20Filodie">Écrire à Mélodie</a></p>
 """),
     ("en", "services.html"): ("Services", """
@@ -1059,6 +1062,7 @@ CONTENT = {
 <ol><li>Email <a href="mailto:melodie@filodie.ca?subject=Team%20licence">melodie@filodie.ca</a> with the products you want, the organization’s name and address, and a contact person.</li>
 <li>You receive a PDF invoice, payable by Interac e-Transfer or cheque.</li>
 <li>As soon as payment is received, you get the files by email, along with the invoice marked “paid”.</li></ol>
+{perso}
 <p><a class="btn" href="mailto:melodie@filodie.ca?subject=Filodie%20service%20request">Email Mélodie</a></p>
 """),
     ("fr", "faq.html"): ("Questions fréquentes", """
@@ -1104,10 +1108,12 @@ CONTENT = {
     ("fr", "contact.html"): ("Contact", """
 <p class="lead">Une question, une licence d’équipe, une correction à signaler dans une ressource ?</p>
 <p>Écrivez à <a href="mailto:melodie@filodie.ca">melodie@filodie.ca</a>. Réponse en 2 jours ouvrables.</p>
+<p>Une idée d’outil ou d’amélioration ? Déposez-la dans la <a href="suggestions.html">boîte à suggestions</a>. Vous voulez les outils avec le logo de votre établissement ? Voyez l’<a href="services.html#personnalisation">édition personnalisée</a>.</p>
 <p class="muted">Pour une situation urgente, composez le 9-1-1 ou le 811 option 2 (Info-Social). Filodie n’offre pas de service d’intervention.</p>"""),
     ("en", "contact.html"): ("Contact", """
 <p class="lead">A question, a team licence, a resource that needs updating?</p>
 <p>Write to <a href="mailto:melodie@filodie.ca">melodie@filodie.ca</a>. We reply within 2 business days.</p>
+<p>An idea for a tool or an improvement? Drop it in the <a href="suggestions.html">suggestion box</a>. Want the tools with your organization’s logo? See the <a href="services.html#custom-edition">custom edition</a>.</p>
 <p class="muted">In an emergency, call 9-1-1 or 811 option 2 (Info-Social). Filodie does not provide intervention services.</p>"""),
     ("fr", "licence.html"): ("Licence d’utilisation", """
 <h2>Licence individuelle (incluse avec chaque achat)</h2>
@@ -1148,24 +1154,26 @@ CONTENT = {
 <h2>Use</h2><p>Each purchase includes the <a href="licence.html">individual licence</a>. The tools support intervention and do not replace an assessment by a qualified professional or clinical judgment. Resource contact details are verified on the date shown and may change.</p>
 <h2>Governing law</h2><p>These terms are governed by the laws of Québec and Canada.</p>"""),
     ("fr", "confidentialite.html"): ("Politique de confidentialité", """
-<p>Dernière mise à jour : 28 septembre 2026.</p>
+<p>Dernière mise à jour : 13 octobre 2026.</p>
 <h2>Responsable de la protection des renseignements personnels</h2><p>Mélodie, propriétaire de Filodie · melodie@filodie.ca</p>
 <h2>Renseignements recueillis</h2><ul><li>Lors d’un achat : nom, adresse courriel, pays ou province (pour les taxes) et historique d’achat, recueillis par Payhip.</li>
 <li>Si vous vous abonnez à l’infolettre : adresse courriel et prénom, avec votre consentement explicite.</li>
-<li>Si vous nous écrivez : le contenu de votre message.</li></ul>
+<li>Si vous nous écrivez : le contenu de votre message.</li>
+<li>Si vous utilisez la boîte à suggestions ou le formulaire d’édition personnalisée : les renseignements que vous y inscrivez (et le logo transmis), conservés dans un compte Google réservé à Filodie.</li></ul>
 <h2>Pourquoi</h2><p>Pour livrer vos fichiers, émettre vos reçus, répondre à vos questions et, si vous y consentez, vous envoyer l’infolettre. Vos renseignements ne sont jamais vendus.</p>
-<h2>Communication à des tiers</h2><p>Payhip (plateforme de vente), Stripe et PayPal (paiements) et MailerLite (infolettre) traitent certains renseignements pour notre compte. Ces entreprises peuvent conserver des données à l’extérieur du Québec; nous les avons choisies pour leurs mesures de sécurité reconnues.</p>
+<h2>Communication à des tiers</h2><p>Payhip (plateforme de vente), Stripe et PayPal (paiements) MailerLite (infolettre) et Google (formulaires du site) traitent certains renseignements pour notre compte. Ces entreprises peuvent conserver des données à l’extérieur du Québec; nous les avons choisies pour leurs mesures de sécurité reconnues.</p>
 <h2>Témoins (cookies)</h2><p>Le site filodie.ca ne dépose aucun témoin de suivi ni de publicité. Les pages de paiement Payhip utilisent des témoins nécessaires à la transaction.</p>
 <h2>Conservation</h2><p>Les renseignements d’achat sont conservés 6 ans (obligations fiscales), puis détruits. Vous pouvez vous désabonner de l’infolettre en tout temps.</p>
 <h2>Vos droits</h2><p>Vous pouvez demander l’accès à vos renseignements, leur rectification ou leur suppression en écrivant à melodie@filodie.ca. Vous pouvez aussi porter plainte à la Commission d’accès à l’information du Québec.</p>"""),
     ("en", "privacy.html"): ("Privacy policy", """
-<p>Last updated: September 28, 2026.</p>
+<p>Last updated: October 13, 2026.</p>
 <h2>Person in charge of personal information</h2><p>Mélodie, owner of Filodie · melodie@filodie.ca</p>
 <h2>Information collected</h2><ul><li>When you buy: name, email address, country or province (for taxes) and purchase history, collected by Payhip.</li>
 <li>If you subscribe to the newsletter: email address and first name, with your express consent.</li>
-<li>If you write to us: the content of your message.</li></ul>
+<li>If you write to us: the content of your message.</li>
+<li>If you use the suggestion box or the custom edition form: the information you enter (and the logo you send), stored in a Google account reserved for Filodie.</li></ul>
 <h2>Why</h2><p>To deliver your files, issue receipts, answer your questions and, if you consent, send the newsletter. Your information is never sold.</p>
-<h2>Service providers</h2><p>Payhip (sales platform), Stripe and PayPal (payments) and MailerLite (newsletter) process some information on our behalf. These companies may store data outside Québec; they were chosen for their recognized security measures.</p>
+<h2>Service providers</h2><p>Payhip (sales platform), Stripe and PayPal (payments) MailerLite (newsletter) and Google (website forms) process some information on our behalf. These companies may store data outside Québec; they were chosen for their recognized security measures.</p>
 <h2>Cookies</h2><p>The filodie.ca website does not set any tracking or advertising cookies. Payhip checkout pages use cookies required for the transaction.</p>
 <h2>Retention</h2><p>Purchase information is kept for 6 years (tax obligations), then destroyed. You may unsubscribe from the newsletter at any time.</p>
 <h2>Your rights</h2><p>You may request access to, correction or deletion of your information by writing to melodie@filodie.ca. You may also file a complaint with the Commission d’accès à l’information du Québec.</p>"""),
@@ -1310,7 +1318,7 @@ def build():
     for f in ("Fraunces-600.ttf", "Fraunces-800.ttf", "Fraunces-500i.ttf", "NunitoSans-400.ttf", "NunitoSans-700.ttf",
               "NunitoSans-800.ttf"):
         shutil.copy(os.path.join(SRC, "fonts", f), fd)
-    open(os.path.join(PUB, "style.css"), "w").write(CSS)
+    open(os.path.join(PUB, "style.css"), "w").write(CSS + FO.CSS)
     open(os.path.join(PUB, "favicon.svg"), "w").write(FAVICON)
     og = os.path.join(LOGO, "Filodie_couverture_facebook_1640x624.png")   # aperçu des partages Facebook
     if os.path.exists(og):
@@ -1337,7 +1345,16 @@ def build():
         '· This page does not exist.</p><p><a class="btn" href="/">Accueil · Home</a></p></section>').replace('href="index.html"', 'href="/index.html"'))
     for (lang, name), (title, content) in CONTENT.items():
         d = PUB if lang == "fr" else os.path.join(PUB, "en")
-        open(os.path.join(d, name), "w").write(textpage(lang, name, title, content))
+        js = ""
+        if name == "services.html":                   # formulaire d’édition personnalisée (logo d’établissement)
+            content = content.replace("{perso}", FO.SECTION_PERSO[lang].replace("{form}", FO.personnalisation(lang)))
+            js = FO.script(lang)
+        open(os.path.join(d, name), "w").write(textpage(lang, name, title, content, js))
+    for lang in ("fr", "en"):                         # boîte à suggestions
+        d = PUB if lang == "fr" else os.path.join(PUB, "en")
+        t, c = FO.PAGE[lang]
+        open(os.path.join(d, "suggestions.html"), "w").write(
+            textpage(lang, "suggestions.html", t, c.replace("{form}", FO.suggestion(lang)), FO.script(lang)))
     sitemap()
     # Vérification Google Search Console (ne pas supprimer, sinon la propriété n'est plus vérifiée)
     open(os.path.join(PUB, "google3a91a12fa8ae27d7b.html"), "w").write("google-site-verification: google3a91a12fa8ae27d7b.html")
