@@ -686,8 +686,12 @@ def fondatrice(lang):
         txt = ("My name is Mélodie Fréchette. I am the mother of four daughters and a special care counselling student; I hold a "
                "certificate in social work and I am completing a multidisciplinary bachelor’s degree (human developmental "
                "psychology and addictions). I design and create every Filodie tool myself, in Québec.")
-    return (f'<section class="wrap"><h2>{h2}</h2><p class="lead">{txt}</p>'
-            f'<p style="margin-top:18px"><a class="btn ghost" href="{lien}">{btn} →</a></p></section>')
+    alt = "Mélodie Fréchette, fondatrice de Filodie" if fr else "Mélodie Fréchette, founder of Filodie"
+    return (f'<section class="wrap"><div style="display:flex;flex-wrap:wrap;gap:28px;align-items:center">'
+            f'<img src="/img/melodie.jpg" alt="{alt}" width="180" height="180" loading="lazy" '
+            f'style="width:180px;height:180px;border-radius:50%;object-fit:cover;flex:none">'
+            f'<div style="flex:1;min-width:260px"><h2>{h2}</h2><p class="lead">{txt}</p>'
+            f'<p style="margin-top:18px"><a class="btn ghost" href="{lien}">{btn} →</a></p></div></div></section>')
 
 def home(lang):
     t = L[lang]
@@ -995,6 +999,7 @@ def textpage(lang, name, title, content, scripts=""):
 
 CONTENT = {
     ("fr", "a-propos.html"): ("À propos", """
+<img src="/img/melodie.jpg" alt="Mélodie Fréchette, fondatrice de Filodie" width="200" height="200" style="width:200px;height:200px;border-radius:50%;object-fit:cover;display:block;margin:0 0 20px">
 <p class="lead">Filodie, c’est l’idée qu’une bonne intervention tient à un fil : celui qui relie l’observation, la compréhension, le plan, le soutien et la communication.</p>
 <p>Je m’appelle Mélodie Fréchette. Je suis maman de quatre filles, et c’est d’abord à la maison que j’ai appris qu’un enfant avance mieux quand on lui montre le chemin, une étape à la fois.</p>
 <p>Je suis étudiante en Techniques d’éducation spécialisée, je détiens un certificat en travail social et je poursuis un baccalauréat multidisciplinaire, avec un certificat en psychologie du développement humain et un certificat en dépendances. Ce parcours me permet de regarder chaque situation sous plusieurs angles : le développement, la famille, le réseau et l’intervention au quotidien.</p>
@@ -1007,6 +1012,7 @@ CONTENT = {
 <ul><li>Des contenus originaux, révisés et datés.</li><li>Des ressources vérifiées à la source et mises à jour chaque année.</li>
 <li>Des outils respectueux de la dignité et de l’autodétermination des personnes.</li></ul>"""),
     ("en", "about.html"): ("About", """
+<img src="/img/melodie.jpg" alt="Mélodie Fréchette, founder of Filodie" width="200" height="200" style="width:200px;height:200px;border-radius:50%;object-fit:cover;display:block;margin:0 0 20px">
 <p class="lead">Filodie is built on one idea: good intervention holds together like a thread, linking observation, understanding, planning, support and communication.</p>
 <p>My name is Mélodie Fréchette. I am the mother of four daughters, and it was at home that I first learned that children move forward best when you show them the way, one step at a time.</p>
 <p>I am a special care counselling student, I hold a certificate in social work, and I am completing a multidisciplinary bachelor’s degree with a certificate in human developmental psychology and a certificate in addictions. This path lets me look at every situation from several angles: development, family, services and day-to-day intervention.</p>
@@ -1341,6 +1347,11 @@ def build():
     if os.path.exists(og):
         shutil.copy(og, os.path.join(PUB, "og-image.png"))
     images(items)
+    ph = os.path.join(HERE, "photo_melodie.jpg")                          # photo de Mélodie (accueil + À propos)
+    if os.path.exists(ph):
+        from PIL import Image
+        Image.open(ph).convert("RGB").resize((400, 400), Image.LANCZOS).save(os.path.join(PUB, "img", "melodie.jpg"),
+                                                                             quality=85, optimize=True)
     lg = os.path.join(LOGO, "Filodie_logo_couleur_fond_creme.png")      # logo des infolettres (MailerLite)
     if os.path.exists(lg):
         from PIL import Image
