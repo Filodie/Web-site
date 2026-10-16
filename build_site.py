@@ -673,6 +673,22 @@ def equipes(lang):
             f'<p class="ctas" style="margin-top:18px"><a class="btn" href="{lien}">{btn1}</a> '
             f'<a class="btn ghost" href="{mail}">{btn2}</a></p></div></section>')
 
+def fondatrice(lang):
+    """Bloc « Qui est derrière Filodie ? » de l’accueil : courte présentation + lien vers la page À propos (crédibilité)."""
+    fr = lang == "fr"
+    if fr:
+        h2, lien, btn = "Qui est derrière Filodie ?", "a-propos.html", "En savoir plus sur moi"
+        txt = ("Je m’appelle Mélodie Fréchette. Je suis maman de quatre filles, étudiante en Techniques d’éducation spécialisée, "
+               "je détiens un certificat en travail social et je poursuis un baccalauréat multidisciplinaire (psychologie du "
+               "développement humain et dépendances). Je conçois et je crée moi-même chaque outil Filodie, au Québec.")
+    else:
+        h2, lien, btn = "Who is behind Filodie?", "about.html", "Learn more about me"
+        txt = ("My name is Mélodie Fréchette. I am the mother of four daughters and a special care counselling student; I hold a "
+               "certificate in social work and I am completing a multidisciplinary bachelor’s degree (human developmental "
+               "psychology and addictions). I design and create every Filodie tool myself, in Québec.")
+    return (f'<section class="wrap"><h2>{h2}</h2><p class="lead">{txt}</p>'
+            f'<p style="margin-top:18px"><a class="btn ghost" href="{lien}">{btn} →</a></p></section>')
+
 def home(lang):
     t = L[lang]
     shop = "boutique.html" if lang == "fr" else "shop.html"
@@ -695,6 +711,7 @@ def home(lang):
 </section>
 {vedettes(lang)}
 {equipes(lang)}
+{fondatrice(lang)}
 {gratuits(lang)}
 {temoignages(lang)}
 <section class="wrap"><h2>{t['col_t']}</h2><div class="grid4">{cols}</div></section>
@@ -979,7 +996,7 @@ def textpage(lang, name, title, content, scripts=""):
 CONTENT = {
     ("fr", "a-propos.html"): ("À propos", """
 <p class="lead">Filodie, c’est l’idée qu’une bonne intervention tient à un fil : celui qui relie l’observation, la compréhension, le plan, le soutien et la communication.</p>
-<p>Je m’appelle Mélodie. Je suis maman de quatre filles, et c’est d’abord à la maison que j’ai appris qu’un enfant avance mieux quand on lui montre le chemin, une étape à la fois.</p>
+<p>Je m’appelle Mélodie Fréchette. Je suis maman de quatre filles, et c’est d’abord à la maison que j’ai appris qu’un enfant avance mieux quand on lui montre le chemin, une étape à la fois.</p>
 <p>Je suis étudiante en Techniques d’éducation spécialisée, je détiens un certificat en travail social et je poursuis un baccalauréat multidisciplinaire, avec un certificat en psychologie du développement humain et un certificat en dépendances. Ce parcours me permet de regarder chaque situation sous plusieurs angles : le développement, la famille, le réseau et l’intervention au quotidien.</p>
 <p>J’ai créé Filodie pour offrir aux intervenantes et intervenants, au personnel enseignant et aux parents les outils que j’aurais voulu avoir sous la main : clairs, beaux, rigoureux et vraiment utilisables avec les personnes que l’on accompagne.</p>
 <h2>Mon parcours</h2>
@@ -991,7 +1008,7 @@ CONTENT = {
 <li>Des outils respectueux de la dignité et de l’autodétermination des personnes.</li></ul>"""),
     ("en", "about.html"): ("About", """
 <p class="lead">Filodie is built on one idea: good intervention holds together like a thread, linking observation, understanding, planning, support and communication.</p>
-<p>My name is Mélodie. I am the mother of four daughters, and it was at home that I first learned that children move forward best when you show them the way, one step at a time.</p>
+<p>My name is Mélodie Fréchette. I am the mother of four daughters, and it was at home that I first learned that children move forward best when you show them the way, one step at a time.</p>
 <p>I am a special care counselling student, I hold a certificate in social work, and I am completing a multidisciplinary bachelor’s degree with a certificate in human developmental psychology and a certificate in addictions. This path lets me look at every situation from several angles: development, family, services and day-to-day intervention.</p>
 <p>I created Filodie to give counsellors, teachers and parents the tools I wished I had on hand: clear, attractive, rigorous and truly usable with the people we support.</p>
 <h2>My background</h2>
