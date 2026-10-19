@@ -257,18 +257,18 @@ def catalogue():
         fichiers=[], contient=[i["id"] for i in items if not i["type"].startswith("lot") and i["type"] not in ("mega", "gratuit")
                                                                  and i["id"] not in (ECH_ID, DET_ID)])
     # Trousse pour enseignantes et enseignants (19 oct. 2026) : ajoutée après les lots pour ne pas entrer dans
-    # « Toutes les trousses » ni « Tout Filodie » ; en français seulement. Payhip CMcPa.
+    # « Toutes les trousses » ni « Tout Filodie » ; bilingue (9 PDF FR + 9 PDF EN). Payhip CMcPa.
     add(id="trousse-enseignants-tes", type="trousse", groupe="Pour enseignantes et enseignants en T.E.S.",
         titre="Trousse pour enseignantes et enseignants en éducation spécialisée",
-        titre_en="Toolkit for special care counselling teachers (in French)",
-        sous="39 outils classés selon vos cours", sous_en="39 tools organized by course · French only",
+        titre_en="Toolkit for SCC Teachers",
+        sous="39 outils classés selon vos cours", sous_en="39 tools organized by course",
         desc="Pour enseigner en Techniques d’éducation spécialisée : deux ateliers complets de niveau collégial "
              "(observation, plan d’intervention) avec cas, corrigés et grilles, un guide de l’enseignante, puis les "
              "outils Filodie classés par cours (DI-TSA, stages, ESP, violence et exclusion, itinérance, LGBTQ+). "
-             "9 PDF, licence individuelle.",
+             "9 PDF en français et 9 en anglais, licence individuelle.",
         desc_en="For special care counselling teachers: two complete college-level workshops (observation, "
                 "intervention plan) with a case, answer keys and rubrics, a teacher’s guide and the Filodie tools "
-                "organized by course. 9 PDFs, in French only, individual licence.",
+                "organized by course. 9 PDFs in English and 9 in French, individual licence.",
         prix=99.0, payhip="CMcPa", payhip_en="CMcPa", pv_pages=(1, 2),
         fichiers=["Trousse pour enseignants en éducation spécialisée/"
                   "Filodie_Trousse_enseignants_TES_0_Sommaire_et_guide_de_l_enseignante.pdf"])
@@ -637,8 +637,8 @@ def nouveaute(lang):
     else:
         badge, h2 = "New from Filodie!", en(i, "titre")
         txt = ("Teaching special care counselling? 39 tools organized by course, including two complete college-level "
-               "workshops (observation and intervention plan) with a case, answer keys and rubrics, and a teacher’s "
-               "guide. In French only.")
+               "workshops (observation and intervention plan) with a case, answer keys and rubrics, a teacher’s guide "
+               "and tools on homelessness, LGBTQ+ people and the comprehensive program assessment. In English and French.")
         prix = "$99"
     img = f'{L[lang]["base"]}img/{lang if os.path.exists(os.path.join(PUB, "img", lang, i["id"] + ".jpg")) else "fr"}/{i["id"]}.jpg'
     return (f'<section class="wrap"><div class="card" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;'
