@@ -620,6 +620,37 @@ VEDETTES = [
 ]
 
 
+def nouveaute(lang):
+    """Bandeau « Nouveauté Filodie ! » de l’accueil : la trousse pour enseignantes et enseignants (19 oct. 2026)."""
+    fr = lang == "fr"
+    i = {x["id"]: x for x in json.load(open(CAT, encoding="utf-8"))}.get("trousse-enseignants-tes")
+    if not i:
+        return ""
+    code = i["payhip"] if fr else (i.get("payhip_en") or i["payhip"])
+    if fr:
+        badge, h2 = "Nouveauté Filodie !", i["titre"]
+        txt = ("Vous enseignez en Techniques d’éducation spécialisée ? 39 outils classés selon vos cours, dont deux "
+               "ateliers complets de niveau collégial (observation et plan d’intervention) avec un cas, des corrigés "
+               "et des grilles d’évaluation, un guide de l’enseignante et des outils sur l’itinérance, les personnes "
+               "LGBTQ+ et l’épreuve synthèse de programme. Prêts à projeter en classe.")
+        prix = "99 $"
+    else:
+        badge, h2 = "New from Filodie!", en(i, "titre")
+        txt = ("Teaching special care counselling? 39 tools organized by course, including two complete college-level "
+               "workshops (observation and intervention plan) with a case, answer keys and rubrics, and a teacher’s "
+               "guide. In French only.")
+        prix = "$99"
+    img = f'{L[lang]["base"]}img/{lang if os.path.exists(os.path.join(PUB, "img", lang, i["id"] + ".jpg")) else "fr"}/{i["id"]}.jpg'
+    return (f'<section class="wrap"><div class="card" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;'
+            f'padding:24px;border:2px solid #D9734E">'
+            f'<img src="{img}" alt="" loading="lazy" style="width:220px;max-width:100%;border-radius:10px;flex:none">'
+            f'<div style="flex:1;min-width:260px"><p style="margin:0 0 8px"><span style="display:inline-block;'
+            f'background:#D9734E;color:#fff;font-weight:800;border-radius:999px;padding:4px 14px">{badge}</span></p>'
+            f'<h2 style="margin-top:4px">{html.escape(h2)}</h2><p class="lead">{txt}</p>'
+            f'<p class="vprix">{prix}</p>'
+            f'<p>{bouton_payhip(code, True, lang)}</p></div></div></section>')
+
+
 def vedettes(lang):
     """Section « Coups de cœur » : 4 produits payants mis en avant, avec le prix réduit si un code promo est actif."""
     fr = lang == "fr"
@@ -729,6 +760,7 @@ def home(lang):
     <div class="stats">{stats}</div>
   </div>
 </section>
+{nouveaute(lang)}
 {vedettes(lang)}
 {equipes(lang)}
 {fondatrice(lang)}
