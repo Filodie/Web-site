@@ -256,6 +256,22 @@ def catalogue():
                 "and the regional directory.",
         fichiers=[], contient=[i["id"] for i in items if not i["type"].startswith("lot") and i["type"] not in ("mega", "gratuit")
                                                                  and i["id"] not in (ECH_ID, DET_ID)])
+    # Trousse pour enseignantes et enseignants (19 oct. 2026) : ajoutée après les lots pour ne pas entrer dans
+    # « Toutes les trousses » ni « Tout Filodie » ; en français seulement. Payhip CMcPa.
+    add(id="trousse-enseignants-tes", type="trousse", groupe="Pour enseignantes et enseignants en T.E.S.",
+        titre="Trousse pour enseignantes et enseignants en éducation spécialisée",
+        titre_en="Toolkit for special care counselling teachers (in French)",
+        sous="39 outils classés selon vos cours", sous_en="39 tools organized by course · French only",
+        desc="Pour enseigner en Techniques d’éducation spécialisée : deux ateliers complets de niveau collégial "
+             "(observation, plan d’intervention) avec cas, corrigés et grilles, un guide de l’enseignante, puis les "
+             "outils Filodie classés par cours (DI-TSA, stages, ESP, violence et exclusion, itinérance, LGBTQ+). "
+             "9 PDF, licence individuelle.",
+        desc_en="For special care counselling teachers: two complete college-level workshops (observation, "
+                "intervention plan) with a case, answer keys and rubrics, a teacher’s guide and the Filodie tools "
+                "organized by course. 9 PDFs, in French only, individual licence.",
+        prix=99.0, payhip="CMcPa", payhip_en="CMcPa", pv_pages=(1, 2),
+        fichiers=["Trousse pour enseignants en éducation spécialisée/"
+                  "Filodie_Trousse_enseignants_TES_0_Sommaire_et_guide_de_l_enseignante.pdf"])
     # lots de collection : environ 2,50 $ par trousse, arrondi à 5 $, entre 25 $ et 30 $
     # (petites collections de moins de 6 trousses : environ 30 % de rabais sur le prix à l'unité)
     for i in items:
