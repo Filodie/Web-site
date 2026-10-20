@@ -272,6 +272,18 @@ def catalogue():
         prix=99.0, payhip="CMcPa", payhip_en="CMcPa", pv_pages=(1, 2),
         fichiers=["Trousse pour enseignants en éducation spécialisée/"
                   "Filodie_Trousse_enseignants_TES_0_Sommaire_et_guide_de_l_enseignante.pdf"])
+    # Trousse Apprentissage et langage (20 oct. 2026) : 9 trousses existantes en un PDF, bilingue. Payhip 6wsbR.
+    add(id="trousse-apprentissage-langage", type="trousse", groupe="Pour enseignantes et enseignants en T.E.S.",
+        titre="Trousse Apprentissage et langage", titre_en="Learning and Language Toolkit",
+        sous="9 trousses réunies · 113 pages", sous_en="9 toolkits in one · 113 pages",
+        desc="Pour l’orthopédagogie, l’orthophonie et l’enseignement : troubles d’apprentissage, TDA-H, dyspraxie, "
+             "trouble développemental du langage, orthopédagogie, orthophonie, soutien langagier au primaire et au "
+             "secondaire, et un outil contre la procrastination. Un PDF en français et un en anglais.",
+        desc_en="For remedial teachers, speech therapy and teaching: learning disabilities, ADHD, dyspraxia, "
+                "developmental language disorder, remedial education, speech therapy, language support in elementary "
+                "and high school, and a tool against procrastination. One PDF in English and one in French.",
+        prix=39.0, payhip="6wsbR", payhip_en="6wsbR", pv_pages=(1, 2),
+        fichiers=["Trousse Apprentissage et langage/Trousse_Filodie_Apprentissage_et_langage_2026.pdf"])
     # lots de collection : environ 2,50 $ par trousse, arrondi à 5 $, entre 25 $ et 30 $
     # (petites collections de moins de 6 trousses : environ 30 % de rabais sur le prix à l'unité)
     for i in items:
