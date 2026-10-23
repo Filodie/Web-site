@@ -55,7 +55,8 @@ def tr(s):
 
 def en(i, k):
     """Texte anglais d'un produit : champ <k>_en s'il existe (textes calculés), sinon le dictionnaire."""
-    return i.get(k + "_en") or tr(i[k])
+    from filodie_i18n import norm
+    return norm(i.get(k + "_en") or tr(i[k]))
 
 
 # Prix à l'unité (dollars canadiens). Les lots ont leur prix fixé plus bas, dans catalogue().
