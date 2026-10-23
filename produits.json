@@ -896,6 +896,76 @@
   "payhip_en": "134lZ"
  },
  {
+  "id": "trousse-troubles_neurocognitifs",
+  "type": "trousse",
+  "groupe": "Vieillir avec dignité",
+  "titre": "Troubles neurocognitifs : accompagner la personne",
+  "sous": "10 outils",
+  "desc": "Dix outils pour accompagner une personne vivant avec un trouble neurocognitif : distinguer délirium et démence, repérer le stade, miser sur les capacités préservées, comprendre le besoin derrière le comportement, adapter l’environnement, répondre aux questions répétitives, préserver l’identité et les soins de confort.",
+  "fichiers": [
+   "Collection Filodie/13 – Vieillir avec dignité/Trousse_Filodie_Troubles_neurocognitifs_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "vlPZS",
+  "payhip_en": "vlPZS"
+ },
+ {
+  "id": "trousse-maltraitance_aines",
+  "type": "trousse",
+  "groupe": "Vieillir avec dignité",
+  "titre": "Maltraitance envers les personnes aînées",
+  "sous": "10 outils",
+  "desc": "Dix outils pour prévenir, repérer et contrer la maltraitance : les sept types et les deux formes, indices à observer, facteurs de risque, maltraitance financière, âgisme, maltraitance organisationnelle, parler avec la personne, signaler selon la Loi L-6.3, documenter et promouvoir la bientraitance.",
+  "fichiers": [
+   "Collection Filodie/13 – Vieillir avec dignité/Trousse_Filodie_Maltraitance_aines_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "jz8O2",
+  "payhip_en": "jz8O2"
+ },
+ {
+  "id": "trousse-proches_aidants",
+  "type": "trousse",
+  "groupe": "Vieillir avec dignité",
+  "titre": "Personnes proches aidantes",
+  "sous": "10 outils",
+  "desc": "Dix outils pour reconnaître et soutenir les personnes proches aidantes, selon la Loi R-1.1 : se reconnaître dans le rôle, décrire l’aide donnée, repérer le fardeau, le deuil blanc, le répit, l’organisation familiale, la conciliation travail-aidance, les démarches, préparer l’avenir et prendre soin de soi.",
+  "fichiers": [
+   "Collection Filodie/13 – Vieillir avec dignité/Trousse_Filodie_Proches_aidants_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "BG4Tc",
+  "payhip_en": "BG4Tc"
+ },
+ {
+  "id": "trousse-reminiscence",
+  "type": "trousse",
+  "groupe": "Vieillir avec dignité",
+  "titre": "Réminiscence et histoire de vie",
+  "sous": "10 outils",
+  "desc": "Dix outils pour animer la réminiscence, seul à seul ou en groupe : ligne du temps, lieux et objets, métiers et savoir-faire, musique et chansons, recettes, photos, grands événements, transmission aux plus jeunes, animer un groupe et accueillir les souvenirs difficiles. À remplir par la personne intervenante avec la personne aînée.",
+  "fichiers": [
+   "Collection Filodie/13 – Vieillir avec dignité/Trousse_Filodie_Reminiscence_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "o7KZs",
+  "payhip_en": "o7KZs"
+ },
+ {
+  "id": "trousse-hebergement_aines",
+  "type": "trousse",
+  "groupe": "Vieillir avec dignité",
+  "titre": "Entrer en résidence ou en CHSLD",
+  "sous": "10 outils",
+  "desc": "Dix outils pour accompagner l’entrée en RPA, en ressource intermédiaire, en maison des aînés ou en CHSLD : choisir le milieu, préparer le déménagement, objets qui comptent, premiers jours, signes d’adaptation, routines, place de la famille, droits des résidents, plaintes et bilan après trois mois.",
+  "fichiers": [
+   "Collection Filodie/13 – Vieillir avec dignité/Trousse_Filodie_Hebergement_aines_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "283La",
+  "payhip_en": "283La"
+ },
+ {
   "id": "trousse-protection_de_la_jeunesse",
   "type": "trousse",
   "groupe": "Clientèles et interventions",
@@ -6025,6 +6095,29 @@
   "valeur": 42.0
  },
  {
+  "id": "lot-13-vieillir-avec-dignité",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Vieillir avec dignité",
+  "sous": "5 trousses",
+  "desc": "Toutes les trousses du volet « Vieillir avec dignité ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-troubles_neurocognitifs",
+   "trousse-maltraitance_aines",
+   "trousse-proches_aidants",
+   "trousse-reminiscence",
+   "trousse-hebergement_aines"
+  ],
+  "titre_en": "Filodie Collection: Ageing with Dignity",
+  "sous_en": "5 toolkits",
+  "desc_en": "All the toolkits in the “Ageing with Dignity” section.",
+  "prix": 24.0,
+  "payhip": "3Wy5C",
+  "payhip_en": "3Wy5C",
+  "valeur": 35.0
+ },
+ {
   "id": "lot-2-clientèles-et-interventions",
   "type": "lot_collection",
   "groupe": "Lots",
@@ -6612,11 +6705,11 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses",
-  "sous": "148 trousses et éditions",
+  "sous": "153 trousses et éditions",
   "prix": 75.0,
-  "sous_en": "148 toolkits and editions",
-  "desc": "La trousse principale, les 17 trousses spécialisées, les 102 trousses de la Collection et les 5 éditions.",
-  "desc_en": "The main toolkit, the 17 specialized toolkits, the 102 Collection toolkits and the 5 editions.",
+  "sous_en": "153 toolkits and editions",
+  "desc": "La trousse principale, les 17 trousses spécialisées, les 107 trousses de la Collection et les 5 éditions.",
+  "desc_en": "The main toolkit, the 17 specialized toolkits, the 107 Collection toolkits and the 5 editions.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -6682,6 +6775,11 @@
    "trousse-jeu_excessif",
    "trousse-alcool_faire_le_point",
    "trousse-drogues_reduire_les_mefaits",
+   "trousse-troubles_neurocognitifs",
+   "trousse-maltraitance_aines",
+   "trousse-proches_aidants",
+   "trousse-reminiscence",
+   "trousse-hebergement_aines",
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
    "trousse-auteurs_de_violence",
@@ -6770,7 +6868,7 @@
   ],
   "payhip": "PWt1d",
   "payhip_en": "PWt1d",
-  "valeur": 917.0
+  "valeur": 952.0
  },
  {
   "id": "lot-mega",
@@ -6778,8 +6876,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie",
   "sous": "Toute la collection",
-  "desc": "Les 144 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional.",
-  "desc_en": "All 144 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory.",
+  "desc": "Les 149 trousses, les éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional.",
+  "desc_en": "All 149 toolkits, the editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -6845,6 +6943,11 @@
    "trousse-jeu_excessif",
    "trousse-alcool_faire_le_point",
    "trousse-drogues_reduire_les_mefaits",
+   "trousse-troubles_neurocognitifs",
+   "trousse-maltraitance_aines",
+   "trousse-proches_aidants",
+   "trousse-reminiscence",
+   "trousse-hebergement_aines",
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
    "trousse-auteurs_de_violence",
@@ -7142,7 +7245,7 @@
   "prix": 129.0,
   "payhip": "3u5MO",
   "payhip_en": "3u5MO",
-  "valeur": 1620.0
+  "valeur": 1655.0
  },
  {
   "id": "trousse-enseignants-tes",
