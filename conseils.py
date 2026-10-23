@@ -46,7 +46,7 @@ fin prévisible : « On fait 10 maisons, puis on rentre. »</li>
 <li><strong>Prévoyez une trousse sensorielle.</strong> Coquilles antibruit, lampe de poche, collation connue,
 objet réconfortant : de petits outils qui aident l’enfant à rester bien.</li>
 <li><strong>Convenez d’un signal « c’est trop ».</strong> Un mot, un geste ou une carte que l’enfant peut
-montrer quand il ou elle a besoin d’une pause ou de rentrer. Respectez-le, même si la tournée n’est pas finie.</li>
+montrer quand elle ou il a besoin d’une pause ou de rentrer. Respectez-le, même si la tournée n’est pas finie.</li>
 <li><strong>Permettez de participer autrement.</strong> Distribuer les bonbons à la porte, observer de la
 fenêtre ou faire une petite fête à la maison, c’est aussi célébrer l’Halloween.</li>
 </ol>
@@ -157,7 +157,7 @@ plan B déjà convenu. L’enfant apprend ainsi qu’un changement de programme 
 
 <div class="astuce"><strong>Repère pour l’adulte</strong><p>Observez quelles transitions bloquent le plus et
 à quel moment de la journée. Souvent, ce ne sont pas toutes les transitions qui posent problème, mais celles qui
-arrivent quand l’enfant est déjà fatigué ou qui interrompent une activité très aimée.</p></div>
+arrivent quand l’enfant manque déjà d’énergie ou qui interrompent une activité très aimée.</p></div>
 """,
         corps_en="""
 <p class="lead">“Five more minutes!” Turning off the tablet, getting out of the bath, putting away the blocks
@@ -298,15 +298,15 @@ every correction. This simple balance often changes the mood of a classroom or a
         corps_fr="""
 <p class="lead">Les matins sont souvent le moment le plus tendu de la journée : peu de temps, beaucoup d’étapes
 et des consignes répétées dix fois. Une routine visuelle transforme ces consignes orales en repères que l’enfant
-peut consulter seul, à son rythme.</p>
+peut consulter sans aide, à son rythme.</p>
 
 <h2>Pourquoi une routine en images aide autant</h2>
 <p>Une consigne orale disparaît dès qu’elle est dite. Une image, elle, reste là. Pour un enfant qui a de la
 difficulté à retenir une suite d’étapes, à gérer les transitions ou à traiter l’information entendue, cette
-permanence change tout. C’est particulièrement vrai chez les enfants autistes, chez ceux qui ont un TDAH et
+permanence change tout. C’est particulièrement vrai chez les enfants autistes, chez les enfants qui ont un TDAH et
 chez les tout-petits, mais la plupart des enfants en profitent.</p>
 <p>La routine visuelle rend aussi la journée prévisible. Savoir ce qui vient ensuite diminue l’anxiété et les
-négociations. L’adulte n’a plus à répéter : il ou elle peut simplement pointer l’image.</p>
+négociations. L’adulte n’a plus à répéter : elle ou il peut simplement pointer l’image.</p>
 
 <h2>Créer la routine en 5 étapes</h2>
 <ol>
@@ -325,7 +325,7 @@ ou la cocher donne un sentiment d’accomplissement concret.</li>
 <h2>L’introduire avec l’enfant</h2>
 <p>Présentez la routine à un moment calme, pas en pleine course du matin. Faites-la ensemble les premiers
 jours : l’adulte montre l’image, l’enfant fait l’étape, puis on passe à la suivante. Diminuez ensuite
-graduellement votre aide jusqu’à ce que l’enfant consulte la routine seul. Soulignez les réussites, même
+graduellement votre aide jusqu’à ce que l’enfant consulte la routine sans aide. Soulignez les réussites, même
 partielles : « Tu as regardé ta routine sans que je te le dise ! »</p>
 
 <h2>Les erreurs fréquentes</h2>
@@ -401,7 +401,7 @@ de l’enfant prend plusieurs formes. On ne peut pas la faire disparaître d’u
 à l’apprivoiser, un petit geste à la fois.</p>
 
 <h2>1. Accueillir l’émotion avant de rassurer</h2>
-<p>« Il n’y a rien là » part d’une bonne intention, mais l’enfant peut comprendre que ce qu’il ou elle ressent
+<p>« Il n’y a rien là » part d’une bonne intention, mais l’enfant peut comprendre que ce qu’elle ou il ressent
 n’est pas valable. Commencez plutôt par nommer : « Je vois que ça t’inquiète beaucoup. » Une émotion reconnue
 redescend plus facilement.</p>
 
@@ -427,13 +427,13 @@ crise, on utilise ce qui a été pratiqué. Quelques minutes par jour suffisent.
 par petites étapes : d’abord regarder la piscine, puis y tremper les pieds, puis entrer dans l’eau, en
 soulignant chaque réussite.</p>
 
-<h2>7. Laisser l’enfant devenir l’enquêteur ou l’enquêteuse</h2>
-<p>Plutôt que de donner toutes les réponses, posez des questions : « Qu’est-ce qui t’a aidé la dernière
+<h2>7. Laisser l’enfant devenir l’enquêteuse ou l’enquêteur</h2>
+<p>Plutôt que de donner toutes les réponses, posez des questions : « Qu’est-ce qui a aidé la dernière
 fois ? » L’enfant reste la personne experte de sa propre vie, et ses propres stratégies sont souvent celles
 qui fonctionnent le mieux.</p>
 
 <h2>Quand demander de l’aide</h2>
-<p>Consultez un ou une professionnelle si l’anxiété dure plusieurs semaines, empêche l’enfant d’aller à
+<p>Consultez une ou un professionnel si l’anxiété dure plusieurs semaines, empêche l’enfant d’aller à
 l’école ou de dormir, ou prend beaucoup de place dans la vie familiale. Au Québec, <strong>Info-Social 811,
 option 2</strong>, offre une consultation psychosociale 24 heures sur 24, et les jeunes peuvent joindre
 <strong>Tel-jeunes</strong> au 1 800 263-2266.</p>
@@ -519,7 +519,7 @@ le système nerveux de l’enfant à se réguler.</li>
 <h2>Après : revenir sur l’événement</h2>
 <p>Une fois l’enfant calme, parfois seulement plusieurs heures plus tard, revenez sur ce qui s’est passé, sans
 blâme : qu’est-ce qui s’est passé juste avant ? Qu’est-ce que tu ressentais dans ton corps ? Qu’est-ce qui
-t’aurait aidé ? Que pourrions-nous essayer la prochaine fois ? C’est dans ce retour que l’enfant apprend
+aurait pu aider ? Que pourrions-nous essayer la prochaine fois ? C’est dans ce retour que l’enfant apprend
 vraiment. Si un geste a blessé quelqu’un, la réparation (un dessin, une aide, un mot) a plus de sens qu’une
 punition éloignée du geste.</p>
 
@@ -528,7 +528,7 @@ d’un enfant demande beaucoup. Il est normal d’avoir besoin d’une pause ava
 
 <h2>Quand demander de l’aide</h2>
 <p>Si les crises sont fréquentes, intenses ou dangereuses, ou si elles s’accompagnent d’autres difficultés,
-parlez-en à un ou une professionnelle. Au Québec, <strong>Info-Social 811, option 2</strong>, peut vous
+parlez-en à une ou un professionnel. Au Québec, <strong>Info-Social 811, option 2</strong>, peut vous
 orienter, 24 heures sur 24.</p>
 """,
         corps_en="""

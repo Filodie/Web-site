@@ -47,7 +47,10 @@ ID_STABLE = {"lot-10-boîte-à-outils-en-psychoéducation": "lot-10-boîte-à-ou
 
 
 def tr(s):
-    return EN.get(s, s)
+    from filodie_i18n import corrige, norm
+    if not hasattr(tr, "en"):
+        tr.en = {norm(k): v for k, v in EN.items()}
+    return EN.get(s) or tr.en.get(corrige(s)) or tr.en.get(norm(s)) or s
 
 
 def en(i, k):
@@ -249,8 +252,10 @@ def catalogue():
     ned = sum(1 for i in items if i["type"] == "edition")
     add(id="lot-toutes-les-trousses", type="lot_tout", groupe="Lots", titre="Toutes les trousses",
         sous=f"{len(tt)} trousses et éditions", prix=75.00, sous_en=f"{len(tt)} toolkits and editions",
-        desc=f"La trousse principale, les {len(sp) + len(HORS_16)} trousses spécialisées, les {ncol} trousses de la Collection et les {ned} éditions.",
-        desc_en=f"The main toolkit, the {len(sp) + len(HORS_16)} specialized toolkits, the {ncol} Collection toolkits and the {ned} editions.",
+        desc=f"La trousse principale, les {len(sp) + len(HORS_16)} trousses spécialisées, les {ncol} trousses de la Collection, "
+             f"les {len(tt) - 1 - len(sp) - len(HORS_16) - ncol - ned} outils d’intervention, d’études et de stage, et les {ned} éditions.",
+        desc_en=f"The main toolkit, the {len(sp) + len(HORS_16)} specialized toolkits, the {ncol} Collection toolkits, "
+                f"the {len(tt) - 1 - len(sp) - len(HORS_16) - ncol - ned} intervention, study and internship tools, and the {ned} editions.",
         fichiers=[], contient=tt)
     add(id="lot-mega", type="mega", groupe="Lots", titre="Tout Filodie", sous="Toute la collection",
         desc=f"Les {ntr} trousses, les éditions, les {len(tous)} cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique "
@@ -266,7 +271,7 @@ def catalogue():
         titre_en="Toolkit for SCC Teachers",
         sous="39 outils classés selon vos cours", sous_en="39 tools organized by course",
         desc="Pour enseigner en Techniques d’éducation spécialisée : deux ateliers complets de niveau collégial "
-             "(observation, plan d’intervention) avec cas, corrigés et grilles, un guide de l’enseignante, puis les "
+             "(observation, plan d’intervention) avec cas, corrigés et grilles, un guide de l’enseignante et de l’enseignant, puis les "
              "outils Filodie classés par cours (DI-TSA, stages, ESP, violence et exclusion, itinérance, LGBTQ+). "
              "9 PDF en français et 9 en anglais, licence individuelle.",
         desc_en="For special care counselling teachers: two complete college-level workshops (observation, "
@@ -282,7 +287,7 @@ def catalogue():
         desc="Pour l’orthopédagogie, l’orthophonie et l’enseignement : troubles d’apprentissage, TDA-H, dyspraxie, "
              "trouble développemental du langage, orthopédagogie, orthophonie, soutien langagier au primaire et au "
              "secondaire, et un outil contre la procrastination. Un PDF en français et un en anglais.",
-        desc_en="For remedial teachers, speech therapy and teaching: learning disabilities, ADHD, dyspraxia, "
+        desc_en="For remedial education, speech therapy and teaching: learning disabilities, ADHD, dyspraxia, "
                 "developmental language disorder, remedial education, speech therapy, language support in elementary "
                 "and high school, and a tool against procrastination. One PDF in English and one in French.",
         prix=39.0, payhip="6wsbR", payhip_en="6wsbR", pv_pages=(1, 2),
@@ -299,6 +304,12 @@ def catalogue():
     for i in items:
         if i.get("contient"):
             i["valeur"] = round(sum(px[c] for c in i["contient"]), 2)
+    # relecture (oct. 2026) : mêmes corrections françaises que dans les PDF
+    from filodie_i18n import corrige
+    for i in items:
+        for k in ("titre", "sous", "desc"):
+            if isinstance(i.get(k), str):
+                i[k] = corrige(i[k])
     # conserver prix / liens déjà saisis
     if os.path.exists(CAT):
         old = {i["id"]: i for i in json.load(open(CAT, encoding="utf-8"))}
@@ -434,7 +445,7 @@ L = {
         "rtn_nb": " · Séquences, tableaux et guide parent · couleur + noir et blanc",
         "det_nb": " · Guide pour l’adulte, cartes-réponses et certificat", "preview": "Aperçu", "close": "Fermer",
         "pvnote": "Quelques pages du produit. Le filigrane « aperçu » n’apparaît pas dans les fichiers achetés.",
-        "count": "produits", "value": "Valeur à l’unité", "save": "économie",
+        "count": "produits", "value": "Valeur à l’unité", "save": "économie", "vsep": " : ", "pct": " %",
         "bottin_t": "Bottin régional gratuit",
         "bottin_p": "Les ressources des 17 régions du Québec, classées par problématique : signalement à la DPJ, centres de crise, "
                     "CLSC, associations en autisme et en TDAH, déficience intellectuelle, personnes proches aidantes, violence et dépendances. "
@@ -442,7 +453,7 @@ L = {
         "bottin_btn": "Recevoir le bottin gratuitement",
         "footer_legal": [("suggestions.html", "Boîte à suggestions"), ("avis.html", "Donner mon avis"), ("licence.html", "Licence d’utilisation"), ("conditions.html", "Conditions de vente"),
                          ("confidentialite.html", "Confidentialité")],
-        "footer_note": "Les outils Filodie soutiennent l’intervention; ils ne remplacent ni l’évaluation d’une personne "
+        "footer_note": "Les outils Filodie soutiennent l’intervention ; ils ne remplacent ni l’évaluation d’une personne "
                        "professionnelle qualifiée ni le jugement clinique.",
         "rights": "© 2026 Filodie. Tous droits réservés.",
     },
@@ -477,7 +488,7 @@ L = {
         "det_nb": " · Adult guide, answer cards and certificate",
         "rtn_nb": " · Sequences, charts and parent guide · colour + black and white", "preview": "Preview", "close": "Close",
         "pvnote": "A few pages from the product. The “preview” watermark does not appear in the files you buy.",
-        "count": "products", "value": "Value if bought separately", "save": "savings",
+        "count": "products", "value": "Value if bought separately", "save": "savings", "vsep": ": ", "pct": "%",
         "bottin_t": "Free regional directory",
         "bottin_p": "Resources for all 17 regions of Québec, sorted by issue: youth protection (DYP) reporting, crisis centres, "
                     "CLSCs, autism and ADHD associations, intellectual disability, caregivers, violence and addictions. "
@@ -646,7 +657,7 @@ def nouveaute(lang):
         badge, h2 = "Nouveauté Filodie !", i["titre"]
         txt = ("Vous enseignez en Techniques d’éducation spécialisée ? 39 outils classés selon vos cours, dont deux "
                "ateliers complets de niveau collégial (observation et plan d’intervention) avec un cas, des corrigés "
-               "et des grilles d’évaluation, un guide de l’enseignante et des outils sur l’itinérance, les personnes "
+               "et des grilles d’évaluation, un guide de l’enseignante et de l’enseignant, et des outils sur l’itinérance, les personnes "
                "LGBTQ+ et l’épreuve synthèse de programme. Prêts à projeter en classe.")
         prix = "99 $"
     else:
@@ -892,7 +903,7 @@ def shop(lang, items):
                   for pl in ([lang] if i.get("pv_" + lang) else ["fr"]) for a in i.get("pv_" + pl, [])], "c": i.get("code", ""), "v": i.get("valeur", 0),
         })
     chips = "".join(f'<button data-t="{k}">{v}</button>' for k, v in t["types"].items())
-    labels = json.dumps({k: t[k] for k in ("buy", "cart", "direct", "lot", "lotnote", "soon", "free", "get", "details", "count", "value", "save", "preview", "close", "pvnote")}, ensure_ascii=False)
+    labels = json.dumps({k: t[k] for k in ("buy", "cart", "direct", "lot", "lotnote", "soon", "free", "get", "details", "count", "value", "save", "vsep", "pct", "preview", "close", "pvnote")}, ensure_ascii=False)
     body = f"""
 <section class="wrap shop">
   <h1>{t['shop_t']}</h1>
@@ -925,7 +936,7 @@ function card(p,i){{
  const price=p.p?fmt.format(p.p):T.free, btn=buybtn(p);
  const im='<img src="'+p.img+'" alt="" width="420" height="544" '+(i<4?'fetchpriority="high"':'loading="lazy"')+' decoding="async">';
  return '<article class="card prod">'+(p.a.length?'<button class="pvb" data-pv="'+P.indexOf(p)+'" aria-label="'+T.preview+' : '+esc(p.n)+'">'+im+'<span class="pvl">'+T.preview+'</span></button>':im)+'<div class="pb"><p class="grp">'+esc(p.g)+(p.c?' · '+p.c:'')+'</p><h3>'+esc(p.n)+'</h3><p class="sub">'+esc(p.s)+'</p>'
-  +(p.v>p.p?'<p class="save">'+T.value+' : <s>'+fmt.format(p.v)+'</s> · '+T.save+' '+Math.round(100-100*p.p/p.v)+' %</p>':'')
+  +(p.v>p.p?'<p class="save">'+T.value+T.vsep+'<s>'+fmt.format(p.v)+'</s> · '+T.save+' '+Math.round(100-100*p.p/p.v)+T.pct+'</p>':'')
   +'<details><summary>'+T.details+'</summary><p>'+esc(p.d)+'</p></details>'+(p.a.length?'<button class="apercu" data-pv="'+P.indexOf(p)+'">👁 '+T.preview+'</button>':'')+'<div class="buy"><strong>'+price+'</strong>'+btn+'</div></div></article>'}}
 function draw(){{const w=q.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');
  const r=P.filter(p=>(!type||p.t===type)&&(!grp||p.g===grp)&&(!w||(p.n+' '+p.s+' '+p.d+' '+p.g+' '+p.c).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').includes(w)));
