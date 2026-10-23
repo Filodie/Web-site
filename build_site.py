@@ -63,6 +63,7 @@ PRIX = {"trousse": 7.00, "edition": 3.00, "cahier": 3.00, "livre": 19.00, "botti
         "routines": 5.00, "lot_routines": 19.00, "gratuit": 0.00, "detective": 5.00, "lot_detective": 25.00}
 
 
+HORS_16 = ("trousse-deficience_physique", "trousse-cadre_legal")   # trousses spécialisées hors lot des 16
 ECH_ID = "trousse-decouverte_etudiant_tes"          # échantillon étudiant gratuit (hors lots)
 DET_ID = "detective-dde"                            # cahier de détective découverte gratuit (hors lots)
 
@@ -91,8 +92,9 @@ def catalogue():
         desc="Douze outils sobres, précis et reliés entre eux. Chaque fiche indique son étape du fil, renvoie à la suivante "
              "et se termine par un repère clinique. Imprimables ou remplissables à l’écran.",
         fichiers=["Trousse_Filodie_Outils_TES_2026.pdf"])
-    from contenu_dp import DP                             # 17e trousse spécialisée (22 oct. 2026), hors lot des 16
-    for t in AGES + TROUBLES + NOUVEAUX + [DP]:
+    from contenu_dp import DP                             # trousses spécialisées ajoutées le 22 oct. 2026,
+    from contenu_cadre_legal import CL                    # hors lot « Les 16 trousses spécialisées »
+    for t in AGES + TROUBLES + NOUVEAUX + [DP, CL]:
         add(id="trousse-" + t["fichier"].lower(), type="trousse", groupe="Trousses spécialisées", titre=t["nom"],
             sous=f"{len(t['fiches'])} outils", desc=t["desc"],
             fichiers=[f"Trousses spécialisées/Trousse_Filodie_{t['fichier']}_2026.pdf"])
@@ -220,7 +222,7 @@ def catalogue():
             desc_en="Feelings, strengths, worries, anger, friendships, body and needs, family, dreams and online life: the "
                     "adult asks the questions and records the clues, the child remains the expert on their own life.",
             fichiers=[], contient=dt)
-    sp = [i["id"] for i in items if i["groupe"] == "Trousses spécialisées" and i["id"] != "trousse-deficience_physique"]
+    sp = [i["id"] for i in items if i["groupe"] == "Trousses spécialisées" and i["id"] not in HORS_16]
     add(id="lot-specialisees", type="lot_specialisees", groupe="Lots", titre="Les 16 trousses spécialisées",
         sous="Âges et troubles", desc="Petite enfance, secondaire, adultes, aînés, TSA, TDAH, DI, langage, comportement, "
                                       "crise, suicide, dépendances et plus.", fichiers=[], contient=sp)
@@ -247,8 +249,8 @@ def catalogue():
     ned = sum(1 for i in items if i["type"] == "edition")
     add(id="lot-toutes-les-trousses", type="lot_tout", groupe="Lots", titre="Toutes les trousses",
         sous=f"{len(tt)} trousses et éditions", prix=75.00, sous_en=f"{len(tt)} toolkits and editions",
-        desc=f"La trousse principale, les {len(sp) + 1} trousses spécialisées, les {ncol} trousses de la Collection et les {ned} éditions.",
-        desc_en=f"The main toolkit, the {len(sp) + 1} specialized toolkits, the {ncol} Collection toolkits and the {ned} editions.",
+        desc=f"La trousse principale, les {len(sp) + len(HORS_16)} trousses spécialisées, les {ncol} trousses de la Collection et les {ned} éditions.",
+        desc_en=f"The main toolkit, the {len(sp) + len(HORS_16)} specialized toolkits, the {ncol} Collection toolkits and the {ned} editions.",
         fichiers=[], contient=tt)
     add(id="lot-mega", type="mega", groupe="Lots", titre="Tout Filodie", sous="Toute la collection",
         desc=f"Les {ntr} trousses, les éditions, les {len(tous)} cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique "
