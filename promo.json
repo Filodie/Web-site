@@ -1,10 +1,10 @@
 {
  "actif": true,
- "code": "PREMIERS40",
- "rabais_fr": "40 %",
- "rabais_en": "40%",
- "debut": "",
- "fin": "2026-10-19",
- "message_fr": "Offre de lancement : 40 % de rabais sur toute la boutique pour les 10 premières commandes, jusqu’au lundi 19 octobre, avec le code",
- "message_en": "Launch offer: 40% off the whole shop for the first 10 orders, until Monday, October 19, with code"
+ "code": "BOUH15",
+ "rabais_fr": "15 %",
+ "rabais_en": "15%",
+ "debut": "2026-10-26",
+ "fin": "2026-11-01",
+ "message_fr": "Halloween : 15 % de rabais sur toute la boutique jusqu’au 1er novembre, avec le code",
+ "message_en": "Halloween: 15% off the whole shop until November 1, with code"
 }
