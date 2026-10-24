@@ -69,6 +69,14 @@ PRIX = {"trousse": 7.00, "edition": 3.00, "cahier": 3.00, "livre": 19.00, "botti
 
 HORS_16 = ("trousse-deficience_physique", "trousse-cadre_legal")   # trousses spécialisées hors lot des 16
 ECH_ID = "trousse-decouverte_etudiant_tes"          # échantillon étudiant gratuit (hors lots)
+# Date de mise en vente (AAAA-MM-JJ) : la boutique affiche « Nouveau » pendant le mois de la mise en vente (comparaison
+# faite dans le navigateur, donc l’étiquette disparaît seule le 1er du mois suivant). Ajouter chaque nouveau produit ici.
+AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din", "dam", "dcb", "dfa", "dre", "dnu")},
+          "detective-dde": "2026-10-02", "trousse-refus_traitement": "2026-10-07",
+          "trousse-enseignants-tes": "2026-10-19", "trousse-apprentissage-langage": "2026-10-20",
+          **{k: "2026-10-22" for k in ("trousse-deficience_physique", "trousse-cadre_legal", "trousse-troubles_neurocognitifs",
+                                       "trousse-maltraitance_aines", "trousse-proches_aidants", "trousse-reminiscence",
+                                       "trousse-hebergement_aines", "lot-13-vieillir-avec-dignité")}}
 DET_ID = "detective-dde"                            # cahier de détective découverte gratuit (hors lots)
 
 # --------------------------------------------------------------------------- catalogue
@@ -307,7 +315,9 @@ def catalogue():
     lt["contient"] += hors_lots
     mg["contient"] += hors_lots
     ntr = sum(1 for c in mg["contient"] if next(i for i in items if i["id"] == c)["type"] == "trousse")
-    lt["sous"], lt["sous_en"] = f"Édition {EDITION} · {len(lt['contient'])} trousses et éditions", f"{EDITION_EN} edition · {len(lt['contient'])} toolkits and editions"
+    ned = sum(1 for c in mg["contient"] if next(i for i in items if i["id"] == c)["type"] == "edition")
+    lt["sous"] = f"Édition {EDITION} · {ntr} trousses et {ned} éditions"
+    lt["sous_en"] = f"{EDITION_EN} edition · {ntr} toolkits and {ned} editions"
     lt["desc"] = (lt["desc"][:-1] + ", ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage "
                   f"et langage. Édition d’{EDITION} : les trousses créées d’ici la fin du mois s’ajoutent à votre "
                   f"téléchargement ; celles créées à partir du {SUIVANT} sont vendues séparément.")
@@ -317,12 +327,12 @@ def catalogue():
     mg["sous"], mg["sous_en"] = f"Édition {EDITION}", f"{EDITION_EN} edition"
     mg["titre"], mg["titre_en"] = f"Tout Filodie : édition {EDITION}", f"All of Filodie: {EDITION_EN} edition"
     lt["titre"], lt["titre_en"] = f"Toutes les trousses : édition {EDITION}", f"All the toolkits: {EDITION_EN} edition"
-    mg["desc"] = (f"Tout le catalogue payant de Filodie : les {ntr} trousses, les éditions, les {len(tous)} cahiers visuels, "
+    mg["desc"] = (f"Tout le catalogue payant de Filodie : les {ntr} trousses, les {ned} éditions, les {len(tous)} cahiers visuels, "
                   "les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre "
                   f"clinique et le bottin régional. Édition d’{EDITION} : les nouveautés créées d’ici la fin du mois "
                   f"s’ajoutent à votre téléchargement ; celles créées à partir du {SUIVANT} sont vendues séparément. "
                   "Les outils gratuits restent offerts à tout le monde.")
-    mg["desc_en"] = (f"Filodie’s entire paid catalogue: all {ntr} toolkits, the editions, the {len(tous)} visual workbooks, "
+    mg["desc_en"] = (f"Filodie’s entire paid catalogue: all {ntr} toolkits, the {ned} editions, the {len(tous)} visual workbooks, "
                      "the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and "
                      f"the regional directory. {EDITION_EN} edition: new products created before the end of the month are "
                      f"added to your download; those created from {SUIVANT_EN} on are sold separately. The free tools "
@@ -472,6 +482,7 @@ L = {
                 ("Livraison immédiate", "Vos fichiers sont téléchargeables dès le paiement, et le lien vous est aussi envoyé par courriel.")],
         "shop_t": "Boutique", "shop_p": "Chaque achat inclut la version française et la version anglaise. Cahiers à 3 $, trousses à 7 $, et des lots jusqu’à 90 % moins chers. Prix en dollars canadiens, téléchargement immédiat après le paiement.",
         "search": "Rechercher un outil…", "all": "Tout",
+        "nv": "Nouveau", "nv_chip": "Nouveautés du mois",
         "types": {"trousse": "Trousses", "edition": "Éditions", "cahier": "Cahiers visuels", "affiches": "Affiches", "jeux": "Jeux", "routines": "Routines", "detective": "Détective", "gratuit": "Gratuit", "livre": "Grand livre",
                   "bottin": "Bottin", "lot": "Lots"},
         "buy": "Acheter", "cart": "Ajouter au panier", "direct": "ou acheter maintenant", "lot": "Acheter le lot", "lotnote": "Paiement séparé du panier", "soon": "Bientôt disponible", "free": "Gratuit", "get": "Obtenir", "details": "Détails", "cahier_nb": " · Couleur + version noir et blanc à colorier",
@@ -515,6 +526,7 @@ L = {
                 ("Instant delivery", "Your files can be downloaded right after payment, and the link is also emailed to you.")],
         "shop_t": "Shop", "shop_p": "Every purchase includes both the English and French versions. Workbooks at $3, toolkits at $7, and bundles up to 90% off. Prices in Canadian dollars, instant download after payment.",
         "search": "Search for a tool…", "all": "All",
+        "nv": "New", "nv_chip": "New this month",
         "types": {"trousse": "Toolkits", "edition": "Editions", "cahier": "Visual workbooks", "affiches": "Posters", "jeux": "Games", "routines": "Routines", "detective": "Detective", "gratuit": "Free", "livre": "Handbook",
                   "bottin": "Directory", "lot": "Bundles"},
         "buy": "Buy", "cart": "Add to cart", "direct": "or buy now", "lot": "Buy the bundle", "lotnote": "Paid separately from the cart", "soon": "Coming soon", "free": "Free", "get": "Get it", "details": "Details", "cahier_nb": " · Colour + black-and-white colouring version",
@@ -936,9 +948,11 @@ def shop(lang, items):
             "img": f"{t['base']}img/{img_lang}/{img}.jpg{iv(img_lang, img)}",
             "a": [f"{t['base']}img/{pl}/apercu/{a}.jpg{iv(pl, 'apercu/' + a)}"
                   for pl in ([lang] if i.get("pv_" + lang) else ["fr"]) for a in i.get("pv_" + pl, [])], "c": i.get("code", ""), "v": i.get("valeur", 0),
+            "da": AJOUTS.get(i["id"], ""),
         })
-    chips = "".join(f'<button data-t="{k}">{v}</button>' for k, v in t["types"].items())
-    labels = json.dumps({k: t[k] for k in ("buy", "cart", "direct", "lot", "lotnote", "soon", "free", "get", "details", "count", "value", "save", "vsep", "pct", "preview", "close", "pvnote")}, ensure_ascii=False)
+    chips = (f'<button data-t="nv">{t["nv_chip"]}</button>'
+             + "".join(f'<button data-t="{k}">{v}</button>' for k, v in t["types"].items()))
+    labels = json.dumps({k: t[k] for k in ("nv", "buy", "cart", "direct", "lot", "lotnote", "soon", "free", "get", "details", "count", "value", "save", "vsep", "pct", "preview", "close", "pvnote")}, ensure_ascii=False)
     body = f"""
 <section class="wrap shop">
   <h1>{t['shop_t']}</h1>
@@ -959,9 +973,12 @@ const T={labels};
 const LP={json.dumps(sorted(LOTS_PANIER))};
 const fmt=new Intl.NumberFormat('{t['lang']}',{{style:'currency',currency:'CAD'}});
 let type=(location.hash||'').slice(1), grp='', q='';
+const MOIS=new Date().toISOString().slice(0,7);P.forEach(p=>p.nv=!!p.da&&p.da.slice(0,7)===MOIS);
+const okt=p=>!type||(type==='nv'?p.nv:p.t===type);
+if(!P.some(p=>p.nv)){{const b=document.querySelector('.chips [data-t="nv"]');if(b)b.remove();if(type==='nv')type=''}}
 const list=document.getElementById('list'), sel=document.getElementById('g');
 function esc(s){{return s.replace(/[&<>"]/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]))}}
-function groups(){{const gs=[...new Set(P.filter(p=>!type||p.t===type).map(p=>p.g))];
+function groups(){{const gs=[...new Set(P.filter(okt).map(p=>p.g))];
  sel.innerHTML='<option value="">{t['all']}</option>'+gs.map(g=>'<option>'+esc(g)+'</option>').join('');sel.value=grp}}
 function buybtn(p){{if(p.k&&p.id.startsWith('lot-')&&!LP.includes(p.id))return '<span class="acts"><a class="btn" href="https://payhip.com/b/'+p.k+'" target="_blank" rel="noopener">'+T.lot+'</a><small class="lotnote">'+T.lotnote+'</small></span>';
  return p.k?'<span class="acts"><a class="btn '+(p.p?'payhip-add-to-cart-button':'payhip-buy-button')+'" data-theme="none" data-product="'+p.k+'" href="https://payhip.com/b/'+p.k+'">'+(p.p?T.cart:T.get)+'</a>'
@@ -970,11 +987,11 @@ function buybtn(p){{if(p.k&&p.id.startsWith('lot-')&&!LP.includes(p.id))return '
 function card(p,i){{
  const price=p.p?fmt.format(p.p):T.free, btn=buybtn(p);
  const im='<img src="'+p.img+'" alt="" width="420" height="544" '+(i<4?'fetchpriority="high"':'loading="lazy"')+' decoding="async">';
- return '<article class="card prod">'+(p.a.length?'<button class="pvb" data-pv="'+P.indexOf(p)+'" aria-label="'+T.preview+' : '+esc(p.n)+'">'+im+'<span class="pvl">'+T.preview+'</span></button>':im)+'<div class="pb"><p class="grp">'+esc(p.g)+(p.c?' · '+p.c:'')+'</p><h3>'+esc(p.n)+'</h3><p class="sub">'+esc(p.s)+'</p>'
+ return '<article class="card prod">'+(p.a.length?'<button class="pvb" data-pv="'+P.indexOf(p)+'" aria-label="'+T.preview+' : '+esc(p.n)+'">'+im+'<span class="pvl">'+T.preview+'</span></button>':im)+'<div class="pb">'+(p.nv?'<p class="nv">'+T.nv+'</p>':'')+'<p class="grp">'+esc(p.g)+(p.c?' · '+p.c:'')+'</p><h3>'+esc(p.n)+'</h3><p class="sub">'+esc(p.s)+'</p>'
   +(p.v>p.p?'<p class="save">'+T.value+T.vsep+'<s>'+fmt.format(p.v)+'</s> · '+T.save+' '+Math.round(100-100*p.p/p.v)+T.pct+'</p>':'')
   +'<details><summary>'+T.details+'</summary><p>'+esc(p.d)+'</p></details>'+(p.a.length?'<button class="apercu" data-pv="'+P.indexOf(p)+'">👁 '+T.preview+'</button>':'')+'<div class="buy"><strong>'+price+'</strong>'+btn+'</div></div></article>'}}
 function draw(){{const w=q.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');
- const r=P.filter(p=>(!type||p.t===type)&&(!grp||p.g===grp)&&(!w||(p.n+' '+p.s+' '+p.d+' '+p.g+' '+p.c).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').includes(w)));
+ const r=P.filter(p=>okt(p)&&(!grp||p.g===grp)&&(!w||(p.n+' '+p.s+' '+p.d+' '+p.g+' '+p.c).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').includes(w)));
  document.getElementById('n').textContent=r.length+' '+T.count;list.innerHTML=r.map((p,i)=>card(p,i)).join('');
  {PAYHIP_REINIT}}}
 document.querySelectorAll('.chips button').forEach(b=>{{if(b.dataset.t===type){{document.querySelector('.chips .on').classList.remove('on');b.classList.add('on')}}
@@ -1371,6 +1388,7 @@ nav a[aria-current]{color:var(--terra)}nav .panier{font-weight:700;color:var(--t
 .pvi{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin:10px 0}.pvi img{width:100%;border:1px solid var(--sand);border-radius:8px}
 .pb{padding:12px 14px;display:flex;flex-direction:column;flex:1}.grp{margin:0;color:var(--sage);font-weight:800;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em}
 .prod h3{font-size:1.05rem}.sub{margin:0;color:var(--gray);font-size:.9rem}
+.nv{margin:0 0 6px;align-self:flex-start;background:#D9734E;color:#fff;font-weight:800;font-size:.72rem;text-transform:uppercase;letter-spacing:.05em;border-radius:999px;padding:3px 10px}
 .save{margin:6px 0 0;font-size:.82rem;font-weight:800;color:var(--sage)}
 details{font-size:.9rem;margin:6px 0}summary{cursor:pointer;color:var(--terra);font-weight:700}
 .buy{margin-top:auto;display:flex;justify-content:space-between;align-items:center;padding-top:10px}.buy strong{font-size:1.1rem}.buy{gap:8px;flex-wrap:wrap}.temo .etoiles{color:#E8A93B;font-size:1.2rem;letter-spacing:2px;margin:0 0 6px}.buy .btn{white-space:nowrap;padding:8px 14px;font-size:.9rem}.acts{display:flex;flex-direction:column;align-items:flex-end;gap:4px}.lotnote{font-size:.75rem;color:var(--gray)}.achat-direct{font-size:.82rem;color:var(--ink)!important;text-decoration:underline;white-space:nowrap}.apercu{background:none;border:1.5px solid var(--terra);color:var(--terra);border-radius:20px;padding:4px 12px;font:inherit;font-size:.85rem;font-weight:700;cursor:pointer;margin:6px 0 2px;align-self:flex-start}.apercu:hover{background:var(--terra);color:#fff}
