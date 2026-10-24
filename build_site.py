@@ -248,7 +248,8 @@ def catalogue():
         desc="Les cahiers TSA, TDAH, habiletés sociales, DI et comportement, en couleur et à colorier.",
         fichiers=[], contient=tous)
     tt = [i["id"] for i in items if i["type"] in ("trousse", "edition") and i["id"] != ECH_ID]
-    ntr = sum(1 for i in items if i["type"] == "trousse")
+    ned = sum(1 for i in items if i["type"] == "edition")
+    ntr = len(tt) - ned                                  # trousses réellement incluses dans Tout Filodie
     ncol = sum(1 for i in items if i["type"] == "trousse" and i["fichiers"][0].startswith("Collection Filodie/"))
     ned = sum(1 for i in items if i["type"] == "edition")
     add(id="lot-toutes-les-trousses", type="lot_tout", groupe="Lots", titre="Toutes les trousses",
