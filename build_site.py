@@ -67,7 +67,7 @@ PRIX = {"trousse": 7.00, "edition": 3.00, "cahier": 3.00, "livre": 19.00, "botti
         "routines": 5.00, "lot_routines": 19.00, "gratuit": 0.00, "detective": 5.00, "lot_detective": 25.00}
 
 
-HORS_16 = ("trousse-deficience_physique", "trousse-cadre_legal")   # trousses spécialisées hors lot des 16
+HORS_16 = ("trousse-deficience_physique", "trousse-cadre_legal", "trousse-entretien_motivationnel")   # trousses spécialisées hors lot des 16
 ECH_ID = "trousse-decouverte_etudiant_tes"          # échantillon étudiant gratuit (hors lots)
 # Date de mise en vente (AAAA-MM-JJ) : la boutique affiche « Nouveau » pendant le mois de la mise en vente (comparaison
 # faite dans le navigateur, donc l’étiquette disparaît seule le 1er du mois suivant). Ajouter chaque nouveau produit ici.
@@ -76,7 +76,8 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
           "trousse-enseignants-tes": "2026-10-19", "trousse-apprentissage-langage": "2026-10-20",
           **{k: "2026-10-22" for k in ("trousse-deficience_physique", "trousse-cadre_legal", "trousse-troubles_neurocognitifs",
                                        "trousse-maltraitance_aines", "trousse-proches_aidants", "trousse-reminiscence",
-                                       "trousse-hebergement_aines", "lot-13-vieillir-avec-dignité")}}
+                                       "trousse-hebergement_aines", "lot-13-vieillir-avec-dignité")},
+          "trousse-entretien_motivationnel": "2026-10-24"}
 DET_ID = "detective-dde"                            # cahier de détective découverte gratuit (hors lots)
 
 # --------------------------------------------------------------------------- catalogue
@@ -106,7 +107,8 @@ def catalogue():
         fichiers=["Trousse_Filodie_Outils_TES_2026.pdf"])
     from contenu_dp import DP                             # trousses spécialisées ajoutées le 22 oct. 2026,
     from contenu_cadre_legal import CL                    # hors lot « Les 16 trousses spécialisées »
-    for t in AGES + TROUBLES + NOUVEAUX + [DP, CL]:
+    from contenu_entretien_motivationnel import EM        # 24 oct. 2026, hors lot des 16
+    for t in AGES + TROUBLES + NOUVEAUX + [DP, CL, EM]:
         add(id="trousse-" + t["fichier"].lower(), type="trousse", groupe="Trousses spécialisées", titre=t["nom"],
             sous=f"{len(t['fiches'])} outils", desc=t["desc"],
             fichiers=[f"Trousses spécialisées/Trousse_Filodie_{t['fichier']}_2026.pdf"])
