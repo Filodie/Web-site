@@ -266,8 +266,8 @@ def catalogue():
                 "and the regional directory.",
         fichiers=[], contient=[i["id"] for i in items if not i["type"].startswith("lot") and i["type"] not in ("mega", "gratuit")
                                                                  and i["id"] not in (ECH_ID, DET_ID)])
-    # Trousse pour enseignantes et enseignants (19 oct. 2026) : ajoutée après les lots pour ne pas entrer dans
-    # « Toutes les trousses » ni « Tout Filodie » ; bilingue (9 PDF FR + 9 PDF EN). Payhip CMcPa.
+    # Trousse pour enseignantes et enseignants (19 oct. 2026) : ajoutée après les lots, puis jointe aux éditions datées
+    # de « Toutes les trousses » et « Tout Filodie » (voir plus bas) ; bilingue. Payhip CMcPa.
     add(id="trousse-enseignants-tes", type="trousse", groupe="Pour enseignantes et enseignants en T.E.S.",
         titre="Trousse pour enseignantes et enseignants en éducation spécialisée",
         titre_en="Toolkit for SCC Teachers",
@@ -294,6 +294,39 @@ def catalogue():
                 "and high school, and a tool against procrastination. One PDF in English and one in French.",
         prix=39.0, payhip="6wsbR", payhip_en="6wsbR", pv_pages=(1, 2),
         fichiers=["Trousse Apprentissage et langage/Trousse_Filodie_Apprentissage_et_langage_2026.pdf"])
+    # Éditions MENSUELLES (24 oct. 2026, demande de Mélodie) : « Tout Filodie » et « Toutes les trousses » contiennent
+    # tout le catalogue payant, plus les nouveautés créées pendant le mois de l’édition (ajoutées au produit Payhip,
+    # donc reçues par toutes les personnes qui ont acheté CE mois-ci). Le 1er du mois suivant : nouveau produit Payhip
+    # (« édition <mois> »), l’ancien est retiré de la vente ; ses acheteuses et acheteurs gardent leur lien, sans les
+    # nouveautés suivantes, qu’ils achètent à l’unité. Changer EDITION ici à chaque nouvelle édition.
+    EDITION, EDITION_EN = "octobre 2026", "October 2026"
+    SUIVANT, SUIVANT_EN = "1er novembre 2026", "November 1, 2026"
+    hors_lots = ["trousse-enseignants-tes", "trousse-apprentissage-langage"]
+    lt = next(i for i in items if i["id"] == "lot-toutes-les-trousses")
+    mg = next(i for i in items if i["id"] == "lot-mega")
+    lt["contient"] += hors_lots
+    mg["contient"] += hors_lots
+    ntr = sum(1 for c in mg["contient"] if next(i for i in items if i["id"] == c)["type"] == "trousse")
+    lt["sous"], lt["sous_en"] = f"Édition {EDITION} · {len(lt['contient'])} trousses et éditions", f"{EDITION_EN} edition · {len(lt['contient'])} toolkits and editions"
+    lt["desc"] = (lt["desc"][:-1] + ", ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage "
+                  f"et langage. Édition d’{EDITION} : les trousses créées d’ici la fin du mois s’ajoutent à votre "
+                  f"téléchargement ; celles créées à partir du {SUIVANT} sont vendues séparément.")
+    lt["desc_en"] = (lt["desc_en"][:-1] + ", plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. "
+                     f"{EDITION_EN} edition: toolkits created before the end of the month are added to your download; "
+                     f"those created from {SUIVANT_EN} on are sold separately.")
+    mg["sous"], mg["sous_en"] = f"Édition {EDITION}", f"{EDITION_EN} edition"
+    mg["titre"], mg["titre_en"] = f"Tout Filodie : édition {EDITION}", f"All of Filodie: {EDITION_EN} edition"
+    lt["titre"], lt["titre_en"] = f"Toutes les trousses : édition {EDITION}", f"All the toolkits: {EDITION_EN} edition"
+    mg["desc"] = (f"Tout le catalogue payant de Filodie : les {ntr} trousses, les éditions, les {len(tous)} cahiers visuels, "
+                  "les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre "
+                  f"clinique et le bottin régional. Édition d’{EDITION} : les nouveautés créées d’ici la fin du mois "
+                  f"s’ajoutent à votre téléchargement ; celles créées à partir du {SUIVANT} sont vendues séparément. "
+                  "Les outils gratuits restent offerts à tout le monde.")
+    mg["desc_en"] = (f"Filodie’s entire paid catalogue: all {ntr} toolkits, the editions, the {len(tous)} visual workbooks, "
+                     "the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and "
+                     f"the regional directory. {EDITION_EN} edition: new products created before the end of the month are "
+                     f"added to your download; those created from {SUIVANT_EN} on are sold separately. The free tools "
+                     "remain available to everyone.")
     # lots de collection : environ 2,50 $ par trousse, arrondi à 5 $, entre 25 $ et 30 $
     # (petites collections de moins de 6 trousses : environ 30 % de rabais sur le prix à l'unité)
     for i in items:
