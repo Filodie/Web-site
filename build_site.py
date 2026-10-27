@@ -93,6 +93,22 @@ PARENTS_IDS = {"trousse-parents", "trousse-attachement", "trousse-sommeil", "tro
                                                                          "pommes", "halloween", "hiver")}
 DET_ID = "detective-dde"                            # cahier de détective découverte gratuit (hors lots)
 
+# Éditions mensuelles de « Tout Filodie » (lot-mega) et « Toutes les trousses » (lot-toutes-les-trousses).
+EDITIONS_MOIS = {
+    "2026-10": dict(fr="octobre 2026", en="October 2026", de="d’octobre 2026", suiv="1er novembre 2026",
+                    suiv_en="November 1, 2026", codes={"lot-mega": "3u5MO", "lot-toutes-les-trousses": "PWt1d"}),
+    "2026-11": dict(fr="novembre 2026", en="November 2026", de="de novembre 2026", suiv="1er décembre 2026",
+                    suiv_en="December 1, 2026", codes={"lot-mega": "dZ02M", "lot-toutes-les-trousses": "cywQA"}),
+}
+
+
+def edition_du_mois():
+    import datetime
+    mois = os.environ.get("FILODIE_MOIS") or datetime.date.today().strftime("%Y-%m")
+    k = max([m for m in EDITIONS_MOIS if m <= mois] or [min(EDITIONS_MOIS)])
+    return dict(EDITIONS_MOIS[k], mois=k)
+
+
 # --------------------------------------------------------------------------- catalogue
 def catalogue():
     from contenu_ages import AGES
@@ -325,8 +341,10 @@ def catalogue():
     # donc reçues par toutes les personnes qui ont acheté CE mois-ci). Le 1er du mois suivant : nouveau produit Payhip
     # (« édition <mois> »), l’ancien est retiré de la vente ; ses acheteuses et acheteurs gardent leur lien, sans les
     # nouveautés suivantes, qu’ils achètent à l’unité. Changer EDITION ici à chaque nouvelle édition.
-    EDITION, EDITION_EN = "octobre 2026", "October 2026"
-    SUIVANT, SUIVANT_EN = "1er novembre 2026", "November 1, 2026"
+    # L’édition affichée se choisit SEULE selon la date de construction du site (ou FILODIE_MOIS=AAAA-MM pour tester) :
+    # préparer l’édition suivante d’avance dans EDITIONS_MOIS (produits Payhip « Unlisted »), puis publier le 1er du mois.
+    E = edition_du_mois()
+    EDITION, EDITION_EN, SUIVANT, SUIVANT_EN = E["fr"], E["en"], E["suiv"], E["suiv_en"]
     hors_lots = ["trousse-enseignants-tes", "trousse-apprentissage-langage"]
     lt = next(i for i in items if i["id"] == "lot-toutes-les-trousses")
     mg = next(i for i in items if i["id"] == "lot-mega")
@@ -337,7 +355,7 @@ def catalogue():
     lt["sous"] = f"Édition {EDITION} · {ntr} trousses et {ned} éditions"
     lt["sous_en"] = f"{EDITION_EN} edition · {ntr} toolkits and {ned} editions"
     lt["desc"] = (lt["desc"][:-1] + ", ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage "
-                  f"et langage. Édition d’{EDITION} : les trousses créées d’ici la fin du mois s’ajoutent à votre "
+                  f"et langage. Édition {E['de']} : les trousses créées d’ici la fin du mois s’ajoutent à votre "
                   f"téléchargement ; celles créées à partir du {SUIVANT} sont vendues séparément.")
     lt["desc_en"] = (lt["desc_en"][:-1] + ", plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. "
                      f"{EDITION_EN} edition: toolkits created before the end of the month are added to your download; "
@@ -347,7 +365,7 @@ def catalogue():
     lt["titre"], lt["titre_en"] = f"Toutes les trousses : édition {EDITION}", f"All the toolkits: {EDITION_EN} edition"
     mg["desc"] = (f"Tout le catalogue payant de Filodie : les {ntr} trousses, les {ned} éditions, les {len(tous)} cahiers visuels, "
                   "les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre "
-                  f"clinique et le bottin régional. Édition d’{EDITION} : les nouveautés créées d’ici la fin du mois "
+                  f"clinique et le bottin régional. Édition {E['de']} : les nouveautés créées d’ici la fin du mois "
                   f"s’ajoutent à votre téléchargement ; celles créées à partir du {SUIVANT} sont vendues séparément. "
                   "Les outils gratuits restent offerts à tout le monde.")
     mg["desc_en"] = (f"Filodie’s entire paid catalogue: all {ntr} toolkits, the {ned} editions, the {len(tous)} visual workbooks, "
@@ -388,8 +406,12 @@ def catalogue():
         for i in items:
             if not i["payhip"] and codes.get(i["id"]):
                 i["payhip"] = i["payhip_en"] = codes[i["id"]]
+    E = edition_du_mois()                                   # codes Payhip de l’édition du mois
+    for i in items:
+        if i["id"] in E["codes"] and E["codes"][i["id"]]:
+            i["payhip"] = i["payhip_en"] = E["codes"][i["id"]]
     json.dump(items, open(CAT, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    print(len(items), "produits dans produits.json")
+    print(len(items), "produits dans produits.json", "· édition", E["fr"])
 
 
 # --------------------------------------------------------------------------- images
@@ -464,6 +486,8 @@ def images(items):
             i["img"] = i["contient"][0]
             for lang in ("fr", "en"):                 # couverture propre au lot, si elle existe
                 c = os.path.join(HERE, "couvertures_lots", f"{i['id']}_{lang}.jpg")
+                cm = c[:-4] + "_" + edition_du_mois()["mois"] + ".jpg"   # couverture datée de l’édition du mois
+                c = cm if os.path.exists(cm) else c
                 if os.path.exists(c):
                     from PIL import Image as _Im
                     _c = _Im.open(c)
