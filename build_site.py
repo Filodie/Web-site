@@ -70,7 +70,7 @@ PRIX = {"trousse": 7.00, "edition": 3.00, "cahier": 3.00, "livre": 19.00, "botti
 HORS_16 = ("trousse-deficience_physique", "trousse-cadre_legal", "trousse-entretien_motivationnel",
            "trousse-sante_mentale", "trousse-attachement",
            "trousse-reduction_mefaits", "trousse-adolescence",
-           "trousse-securite_travail")   # trousses spécialisées hors lot des 16
+           "trousse-securite_travail", "trousse-systemique_famille")   # trousses spécialisées hors lot des 16
 ECH_ID = "trousse-decouverte_etudiant_tes"          # échantillon étudiant gratuit (hors lots)
 # Date de mise en vente (AAAA-MM-JJ) : la boutique affiche « Nouveau » pendant le mois de la mise en vente (comparaison
 # faite dans le navigateur, donc l’étiquette disparaît seule le 1er du mois suivant). Ajouter chaque nouveau produit ici.
@@ -83,7 +83,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
           "trousse-entretien_motivationnel": "2026-10-24", "trousse-sante_mentale": "2026-10-24",
           "trousse-attachement": "2026-10-27", "trousse-reduction_mefaits": "2026-10-27",
           "lot-sante-mentale-dependances": "2026-10-27", "trousse-adolescence": "2026-10-27",
-          "trousse-securite_travail": "2026-10-27"}
+          "trousse-securite_travail": "2026-10-27", "trousse-systemique_famille": "2026-10-27"}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
                  "lot_cahiers", "lot_routines", "lot_detective", "lot_jeux")
@@ -145,7 +145,8 @@ def catalogue():
     from contenu_reduction_mefaits import RD              # 27 oct. 2026, hors lot des 16
     from contenu_adolescence import AD                    # 27 oct. 2026, hors lot des 16
     from contenu_securite_travail import ST_ as SPI       # 27 oct. 2026, hors lot des 16
-    for t in AGES + TROUBLES + NOUVEAUX + [DP, CL, EM, SM, AT, RD, AD, SPI]:
+    from contenu_systemique import SY                     # 27 oct. 2026, hors lot des 16
+    for t in AGES + TROUBLES + NOUVEAUX + [DP, CL, EM, SM, AT, RD, AD, SPI, SY]:
         add(id="trousse-" + t["fichier"].lower(), type="trousse", groupe="Trousses spécialisées", titre=t["nom"],
             sous=f"{len(t['fiches'])} outils", desc=t["desc"],
             fichiers=[f"Trousses spécialisées/Trousse_Filodie_{t['fichier']}_2026.pdf"])
