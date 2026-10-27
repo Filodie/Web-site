@@ -699,15 +699,15 @@ def iv(lang, img):
 
 
 # Coups de cœur de l'accueil : choix de Mélodie (jamais « meilleures ventes » tant qu'il n'y a pas de ventes réelles).
-VEDETTES = [
-    ("detective-dem", "L’enfant enquête, l’adulte note les indices : parler d’émotions sans interrogatoire.",
-     "The child investigates, the adult notes the clues: talking about feelings without an interrogation."),
-    ("trousse-tsa", "10 outils prêts à imprimer : profil sensoriel, communication, surcharge, structure visuelle.",
-     "10 ready-to-print tools: sensory profile, communication, overload, visual structure."),
-    ("lot-etudes-tes", "Les 16 outils pour réussir ses stages et ses travaux en T.E.S. : PPH, notes évolutives, plan d’intervention.",
-     "All 16 tools to succeed in SCC internships and coursework: HDM-DCP, progress notes, intervention plan."),
-    ("lot-mega", "Tout le catalogue en une seule fois : trousses, cahiers visuels, affiches, jeux, cahiers de détective.",
-     "The whole catalogue at once: toolkits, visual workbooks, posters, games, detective notebooks."),
+VEDETTES = [   # 27 oct. 2026 : les quatre nouveautés d’octobre (choix de Mélodie)
+    ("trousse-attachement", "Tempérament, styles d’attachement, séparations et base de sécurité : comprendre ce que vit l’enfant.",
+     "Temperament, attachment styles, separations and secure base: understand what the child is going through."),
+    ("trousse-sante_mentale", "Signes d’alerte, dépression, anxiété, psychose, plan de rétablissement : voir la personne, pas seulement le trouble.",
+     "Warning signs, depression, anxiety, psychosis, recovery plan: see the person, not just the disorder."),
+    ("trousse-entretien_motivationnel", "Stades de changement, échelles, balance décisionnelle : accompagner le changement sans le forcer.",
+     "Stages of change, rulers, decisional balance: supporting change without forcing it."),
+    ("trousse-reduction_mefaits", "Principes, mots qui respectent, conversation sans jugement : rejoindre la personne là où elle est.",
+     "Principles, respectful language, non-judgmental conversations: meeting people where they are."),
 ]
 
 
@@ -774,8 +774,8 @@ def vedettes(lang):
                   + (f' <a class="btn ghost" href="{TE.FR if fr else TE.EN}">{"Voir le contenu" if fr else "See what’s inside"}</a>'
                      if k == TE.LOT else "") + '</p></div>')
     h2 = "Les coups de cœur de Mélodie" if fr else "Mélodie’s favourites"
-    sous = ("Par où commencer ? Quatre outils que je recommande en premier, selon votre réalité sur le terrain."
-            if fr else "Where to start? Four tools I recommend first, depending on your day-to-day work.")
+    sous = ("Mes nouveautés de l’automne : quatre trousses que j’ai eu envie de créer pour vous, en français et en anglais."
+            if fr else "My new fall releases: four toolkits I wanted to create for you, in English and French.")
     tout = "Voir toute la boutique" if fr else "See the whole shop"
     shop = "boutique.html" if fr else "shop.html"
     js = ('<script>document.querySelectorAll(".vprix-promo").forEach(function(e){var d=new Date(),'
