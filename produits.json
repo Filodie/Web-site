@@ -6412,6 +6412,28 @@
   "valeur": 84.0
  },
  {
+  "id": "lot-sante-mentale-dependances",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Santé mentale et dépendances",
+  "sous": "4 trousses",
+  "desc": "Quatre trousses pour accompagner les adultes qui vivent un trouble de santé mentale ou une dépendance : comprendre les troubles, soutenir le changement, réduire les méfaits et lutter contre la stigmatisation.",
+  "fichiers": [],
+  "contient": [
+   "trousse-sante_mentale",
+   "trousse-entretien_motivationnel",
+   "trousse-reduction_mefaits",
+   "trousse-dependances"
+  ],
+  "titre_en": "Filodie Collection: Mental Health and Addiction",
+  "sous_en": "4 toolkits",
+  "desc_en": "Four toolkits to support adults living with a mental health disorder or an addiction: understand the disorders, support change, reduce harm and fight stigma.",
+  "prix": 20.0,
+  "payhip": "37Vqx",
+  "payhip_en": "37Vqx",
+  "valeur": 28.0
+ },
+ {
   "id": "lot-affiches",
   "type": "lot_affiches",
   "groupe": "Lots",
