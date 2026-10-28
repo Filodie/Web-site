@@ -651,22 +651,28 @@ THREAD = ('<svg class="thread" viewBox="0 0 600 90" preserveAspectRatio="none" a
 PROMO = os.path.join(HERE, "promo.json")
 
 
-def promo_html(lang):
-    """Bannière du code promo (promo.json). Elle se cache seule avant « debut » et après « fin »."""
+def promos():
+    """Codes promo de promo.json : le code principal, plus ceux de « suivantes » (déjà prévus, avec leurs propres dates)."""
     if not os.path.exists(PROMO):
-        return ""
+        return []
     p = json.load(open(PROMO, encoding="utf-8"))
-    if not p.get("actif") or not p.get("code"):
-        return ""
-    msg = html.escape(p.get("message_" + lang) or "")
-    code = html.escape(p["code"])
-    copier, copie = ("Copier", "Copié !") if lang == "fr" else ("Copy", "Copied!")
-    return (f'<div class="promo" id="promo" data-debut="{p.get("debut", "")}" data-fin="{p.get("fin", "")}">'
-            f'<span>{msg}</span> <code>{code}</code> '
-            f'<button type="button" onclick="navigator.clipboard.writeText(\'{code}\');this.textContent=\'{copie}\'">{copier}</button></div>'
-            '<script>(function(){var b=document.getElementById("promo"),d=new Date(),'
-            'j=d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");'
-            'if((b.dataset.debut&&j<b.dataset.debut)||(b.dataset.fin&&j>b.dataset.fin))b.remove();})();</script>\n')
+    return [x for x in [p] + p.get("suivantes", []) if x.get("actif") and x.get("code")]
+
+
+def promo_html(lang):
+    """Bannières des codes promo. Chacune se cache seule avant sa date « debut » et après sa date « fin »."""
+    out = ""
+    for p in promos():
+        msg = html.escape(p.get("message_" + lang) or "")
+        code = html.escape(p["code"])
+        copier, copie = ("Copier", "Copié !") if lang == "fr" else ("Copy", "Copied!")
+        out += (f'<div class="promo" data-debut="{p.get("debut", "")}" data-fin="{p.get("fin", "")}">'
+                f'<span>{msg}</span> <code>{code}</code> '
+                f'<button type="button" onclick="navigator.clipboard.writeText(\'{code}\');this.textContent=\'{copie}\'">{copier}</button></div>'
+                '<script>(function(){var b=document.currentScript.previousElementSibling,d=new Date(),'
+                'j=d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");'
+                'if((b.dataset.debut&&j<b.dataset.debut)||(b.dataset.fin&&j>b.dataset.fin))b.remove();})();</script>\n')
+    return out
 
 
 # Payhip : panier activé (on ajoute plusieurs produits, puis on paie une seule fois). Le script est chargé sur toutes les pages
@@ -812,11 +818,6 @@ def vedettes(lang):
     """Section « Coups de cœur » : 4 produits payants mis en avant, avec le prix réduit si un code promo est actif."""
     fr = lang == "fr"
     items = {i["id"]: i for i in json.load(open(CAT, encoding="utf-8"))}
-    p = json.load(open(PROMO, encoding="utf-8")) if os.path.exists(PROMO) else {}
-    pct = 0
-    if p.get("actif") and p.get("code"):
-        m = re.match(r"(\d+)\s*%", p.get("rabais_fr", "") or "")
-        pct = int(m.group(1)) if m else 0
 
     def prix(x):
         t = f"{x:.2f}".replace(".00", "")
@@ -830,9 +831,12 @@ def vedettes(lang):
         code = i["payhip"] if fr else (i.get("payhip_en") or i["payhip"])
         titre = i["titre"] if fr else en(i, "titre")
         promo = ""
-        if pct:
-            promo = (f'<span class="vprix-promo" data-fin="{p.get("fin", "")}"> → <strong>{prix(i["prix"] * (100 - pct) / 100)}</strong> '
-                     f'{"avec" if fr else "with"} <code>{html.escape(p["code"])}</code></span>')
+        for p in promos():
+            m = re.match(r"(\d+)\s*%", p.get("rabais_fr", "") or "")
+            if m:
+                promo += (f'<span class="vprix-promo" data-debut="{p.get("debut", "")}" data-fin="{p.get("fin", "")}"> → '
+                          f'<strong>{prix(i["prix"] * (100 - int(m.group(1))) / 100)}</strong> '
+                          f'{"avec" if fr else "with"} <code>{html.escape(p["code"])}</code></span>')
         cards += (f'<div class="card col vedette"><img src="{L[lang]["base"]}img/{lang}/{k}.jpg{iv(lang, k)}" alt="" loading="lazy">'
                   f'<h3>{html.escape(titre)}</h3><p>{html.escape(acc_fr if fr else acc_en)}</p>'
                   f'<p class="vprix">{prix(i["prix"])}{promo}</p>'
@@ -846,7 +850,7 @@ def vedettes(lang):
     shop = "boutique.html" if fr else "shop.html"
     js = ('<script>document.querySelectorAll(".vprix-promo").forEach(function(e){var d=new Date(),'
           'j=d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");'
-          'if(e.dataset.fin&&j>e.dataset.fin)e.remove();});</script>')
+          'if((e.dataset.debut&&j<e.dataset.debut)||(e.dataset.fin&&j>e.dataset.fin))e.remove();});</script>')
     return (f'<section class="wrap"><h2>{h2}</h2><p class="lead">{sous}</p><div class="grid4">{cards}</div>'
             f'<p style="margin-top:18px"><a class="btn ghost" href="{shop}">{tout} →</a></p></section>{js}')
 
