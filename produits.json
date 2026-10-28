@@ -6518,6 +6518,34 @@
   "valeur": 28.0
  },
  {
+  "id": "lot-parents",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Pour les parents",
+  "sous": "10 trousses",
+  "desc": "Dix trousses pour accompagner son enfant à la maison, de la petite enfance à l’adolescence : relation parent-enfant, attachement, renforcement positif selon l’âge, sommeil, écrans, estime de soi, deuil et séparation, et adolescence.",
+  "fichiers": [],
+  "contient": [
+   "trousse-parents",
+   "trousse-attachement",
+   "trousse-renforcement_r05",
+   "trousse-renforcement_r610",
+   "trousse-renforcement_r1115",
+   "trousse-sommeil",
+   "trousse-ecrans_et_cyberdependance",
+   "trousse-estime_de_soi",
+   "trousse-deuil_et_separation",
+   "trousse-adolescence"
+  ],
+  "titre_en": "Filodie Collection: For Parents",
+  "sous_en": "10 toolkits",
+  "desc_en": "Ten toolkits to support your child at home, from early childhood to adolescence: the parent-child relationship, attachment, age-appropriate positive reinforcement, sleep, screens, self-esteem, grief and separation, and adolescence.",
+  "prix": 25.0,
+  "payhip": "1NWqS",
+  "payhip_en": "1NWqS",
+  "valeur": 70.0
+ },
+ {
   "id": "lot-affiches",
   "type": "lot_affiches",
   "groupe": "Lots",

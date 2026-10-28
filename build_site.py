@@ -87,11 +87,12 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
           "lot-sante-mentale-dependances": "2026-10-27", "trousse-adolescence": "2026-10-27",
           "trousse-securite_travail": "2026-10-27", "trousse-systemique_famille": "2026-10-27",
           "trousse-animer_groupe": "2026-10-27", "trousse-tcc_quotidien": "2026-10-27",
-          "trousse-pouvoir_agir": "2026-10-27"}
+          "trousse-pouvoir_agir": "2026-10-27",
+          "lot-parents": "2026-10-27"}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
                  "lot_cahiers", "lot_routines", "lot_detective", "lot_jeux")
-PARENTS_IDS = {"trousse-parents", "trousse-attachement", "trousse-adolescence", "trousse-sommeil", "trousse-ecrans_et_cyberdependance", "trousse-deuil_et_separation",
+PARENTS_IDS = {"lot-parents", "trousse-parents", "trousse-attachement", "trousse-adolescence", "trousse-sommeil", "trousse-ecrans_et_cyberdependance", "trousse-deuil_et_separation",
                "trousse-estime_de_soi", "trousse-renforcement_r05", "trousse-renforcement_r610", "trousse-renforcement_r1115",
                "trousse-histoires_sociales", "trousse-pictogrammes", "trousse-motricite_fine", "trousse-parcours_moteur",
                "trousse-jeux_a_imprimer", "trousse-cahier_a_colorier", "trousse-trousse_decouverte", "lot-6-cahiers-thématiques",
@@ -253,6 +254,21 @@ def catalogue():
             titre_en="Filodie Collection: Mental Health and Addiction", sous_en=f"{len(smd)} toolkits",
             desc_en="Four toolkits to support adults living with a mental health disorder or an addiction: understand the "
                     "disorders, support change, reduce harm and fight stigma.")
+    # Collection Parents (27 oct. 2026) : les trousses utiles à la maison, de la petite enfance à l’adolescence
+    par = ["trousse-parents", "trousse-attachement", "trousse-renforcement_r05", "trousse-renforcement_r610",
+           "trousse-renforcement_r1115", "trousse-sommeil", "trousse-ecrans_et_cyberdependance", "trousse-estime_de_soi",
+           "trousse-deuil_et_separation", "trousse-adolescence"]
+    if all(any(i["id"] == k for i in items) for k in par):
+        add(id="lot-parents", type="lot_collection", groupe="Lots",
+            titre="Collection Filodie : Pour les parents", sous=f"{len(par)} trousses",
+            desc="Dix trousses pour accompagner son enfant à la maison, de la petite enfance à l’adolescence : relation "
+                 "parent-enfant, attachement, renforcement positif selon l’âge, sommeil, écrans, estime de soi, deuil et "
+                 "séparation, et adolescence.",
+            fichiers=[], contient=par,
+            titre_en="Filodie Collection: For Parents", sous_en=f"{len(par)} toolkits",
+            desc_en="Ten toolkits to support your child at home, from early childhood to adolescence: the parent-child "
+                    "relationship, attachment, age-appropriate positive reinforcement, sleep, screens, self-esteem, grief "
+                    "and separation, and adolescence.")
     aff = [i["id"] for i in items if i["type"] == "affiches"]
     if aff:
         naff = sum(len(pq.affiches) for pq in load_affiches())
@@ -656,7 +672,7 @@ def promo_html(lang):
 PAYHIP_SRC = '<script src="https://payhip.com/payhip.js"></script>'
 # Lots devenus de vrais produits Payhip (fichiers inclus) : ils passent par le panier au bon prix.
 # Tous les lots sont maintenant des produits ordinaires (panier au bon prix) — 2026-10-07
-LOTS_PANIER = {"lot-13-vieillir-avec-dignité", "lot-sante-mentale-dependances", "lot-1-habiletés-et-comportement", "lot-cahiers-tsa", "lot-12-traverser-l-épreuve", "lot-cahiers-tdah", "lot-jeux", "lot-3-professions", "lot-7-scolaire", "lot-8-thèmes-complémentaires", "lot-cahiers-déficience-intellectuelle", "lot-affiches", "lot-toutes-les-trousses", "lot-cahiers-comportement", "lot-6-cahiers-thématiques", "lot-4-professions-et-pratique", "lot-tous-les-cahiers", "lot-10-boîte-à-outils-du-psychoéducateur", "lot-etudes-tes", "lot-11-enseignement-aux-adultes", "lot-5-jeux-et-activités", "lot-mega", "lot-specialisees", "lot-routines", "lot-2-clientèles-et-interventions", "lot-9-équipe-école-et-réseau", "lot-detective", "lot-cahiers-habiletés-sociales"}
+LOTS_PANIER = {"lot-parents", "lot-13-vieillir-avec-dignité", "lot-sante-mentale-dependances", "lot-1-habiletés-et-comportement", "lot-cahiers-tsa", "lot-12-traverser-l-épreuve", "lot-cahiers-tdah", "lot-jeux", "lot-3-professions", "lot-7-scolaire", "lot-8-thèmes-complémentaires", "lot-cahiers-déficience-intellectuelle", "lot-affiches", "lot-toutes-les-trousses", "lot-cahiers-comportement", "lot-6-cahiers-thématiques", "lot-4-professions-et-pratique", "lot-tous-les-cahiers", "lot-10-boîte-à-outils-du-psychoéducateur", "lot-etudes-tes", "lot-11-enseignement-aux-adultes", "lot-5-jeux-et-activités", "lot-mega", "lot-specialisees", "lot-routines", "lot-2-clientèles-et-interventions", "lot-9-équipe-école-et-réseau", "lot-detective", "lot-cahiers-habiletés-sociales"}
 PAYHIP_JS = ('<script>window.PayhipConfig={enableCart:true,cart:{position:"bottom-right",'
              'launcherBackground:"#D9734E",checkoutButtonBackground:"#D9734E"}};</script>\n' + PAYHIP_SRC)
 PAYHIP_REINIT = ("if(window.Payhip&&Payhip.Button)try{Payhip.Button.initiateBuyButtons();"
