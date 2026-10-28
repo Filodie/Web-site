@@ -1600,6 +1600,30 @@ def build():
     print("Site prêt :", PUB)
 
 
+def url_propre(rel):
+    """Adresse publique sans « .html » (Cloudflare redirige les .html vers ces adresses)."""
+    if rel == "index.html":
+        return "https://filodie.ca/"
+    if rel.endswith("/index.html"):
+        return "https://filodie.ca/" + rel[:-len("index.html")]
+    return "https://filodie.ca/" + rel[:-len(".html")]
+
+
+def propre_html(chemin, canon):
+    """Ajoute la balise canonique et retire « .html » des liens internes relatifs (évite les redirections pour Google)."""
+    h = open(chemin, encoding="utf-8").read()
+
+    def lien(m):
+        cible, ancre = m.group(1), m.group(2) or ""
+        if cible == "index" or cible.endswith("/index"):
+            cible = cible[:-len("index")] or "./"
+        return f'href="{cible}{ancre}"'
+    h = re.sub(r'href="(?!https?:|mailto:|#|/|data:)([^"#?:]+?)\.html(#[^"]*)?"', lien, h)
+    if 'rel="canonical"' not in h:
+        h = h.replace("</head>", f'<link rel="canonical" href="{canon}">\n</head>', 1)
+    open(chemin, "w", encoding="utf-8").write(h)
+
+
 def sitemap():
     """sitemap.xml (pour Google Search Console) : toutes les pages HTML publiques, sauf 404."""
     from datetime import date as _d
@@ -1608,7 +1632,8 @@ def sitemap():
         for f in sorted(fics):
             if f.endswith(".html") and f != "404.html" and not f.startswith("google"):
                 rel = os.path.relpath(os.path.join(rac, f), PUB).replace(os.sep, "/")
-                urls.append("https://filodie.ca/" + ("" if rel == "index.html" else rel.replace("/index.html", "/")))
+                urls.append(url_propre(rel))
+                propre_html(os.path.join(rac, f), url_propre(rel))
     corps = "".join(f"<url><loc>{u}</loc><lastmod>{_d.today().isoformat()}</lastmod></url>" for u in sorted(urls))
     open(os.path.join(PUB, "sitemap.xml"), "w", encoding="utf-8").write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
