@@ -5723,7 +5723,7 @@
   "sous": "4 routines pour des vacances de Noël plus sereines",
   "desc": "Quand la routine change, une visite chez la famille, déballer un cadeau, revenir au calme. Outil gratuit du mois de décembre 2026.",
   "code": "MOIS-2612",
-  "futur": true,
+  "futur": false,
   "fichiers": [
    "Outils gratuits Filodie/Couleur/Filodie_MOIS-2612_Les_fêtes_en_douceur.pdf",
    "Outils gratuits Filodie/Noir et blanc/Filodie_MOIS-2612_Les_fêtes_en_douceur_NB.pdf"
@@ -6922,12 +6922,12 @@
   "id": "lot-toutes-les-trousses",
   "type": "lot_tout",
   "groupe": "Lots",
-  "titre": "Toutes les trousses : édition octobre 2026",
-  "sous": "Édition octobre 2026 · 162 trousses et 5 éditions",
+  "titre": "Toutes les trousses : édition novembre 2026",
+  "sous": "Édition novembre 2026 · 162 trousses et 5 éditions",
   "prix": 75.0,
-  "sous_en": "October 2026 edition · 162 toolkits and 5 editions",
-  "desc": "La trousse principale, les 29 trousses spécialisées, les 107 trousses de la Collection, les 23 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition d’octobre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er novembre 2026 sont vendues séparément.",
-  "desc_en": "The main toolkit, the 29 specialized toolkits, the 107 Collection toolkits, the 23 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. October 2026 edition: toolkits created before the end of the month are added to your download; those created from November 1, 2026 on are sold separately.",
+  "sous_en": "November 2026 edition · 162 toolkits and 5 editions",
+  "desc": "La trousse principale, les 29 trousses spécialisées, les 107 trousses de la Collection, les 23 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
+  "desc_en": "The main toolkit, the 29 specialized toolkits, the 107 Collection toolkits, the 23 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7098,19 +7098,19 @@
    "trousse-enseignants-tes",
    "trousse-apprentissage-langage"
   ],
-  "payhip": "PWt1d",
-  "payhip_en": "PWt1d",
-  "titre_en": "All the toolkits: October 2026 edition",
+  "payhip": "cywQA",
+  "payhip_en": "cywQA",
+  "titre_en": "All the toolkits: November 2026 edition",
   "valeur": 1174.0
  },
  {
   "id": "lot-mega",
   "type": "mega",
   "groupe": "Lots",
-  "titre": "Tout Filodie : édition octobre 2026",
-  "sous": "Édition octobre 2026",
-  "desc": "Tout le catalogue payant de Filodie : les 162 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition d’octobre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er novembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
-  "desc_en": "Filodie’s entire paid catalogue: all 162 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. October 2026 edition: new products created before the end of the month are added to your download; those created from November 1, 2026 on are sold separately. The free tools remain available to everyone.",
+  "titre": "Tout Filodie : édition novembre 2026",
+  "sous": "Édition novembre 2026",
+  "desc": "Tout le catalogue payant de Filodie : les 162 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
+  "desc_en": "Filodie’s entire paid catalogue: all 162 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7490,10 +7490,10 @@
    "trousse-apprentissage-langage"
   ],
   "prix": 149.0,
-  "payhip": "3u5MO",
-  "payhip_en": "3u5MO",
-  "sous_en": "October 2026 edition",
-  "titre_en": "All of Filodie: October 2026 edition",
+  "payhip": "dZ02M",
+  "payhip_en": "dZ02M",
+  "sous_en": "November 2026 edition",
+  "titre_en": "All of Filodie: November 2026 edition",
   "valeur": 1877.0
  },
  {
