@@ -440,7 +440,7 @@ def catalogue():
                 float(max(10, round(n * PRIX["trousse"] * 0.7)))
     for i in items:
         if i["id"] == "lot-14-le-cerveau-expliqué":   # prix choisi le 4 nov. 2026
-            i["prix"] = 39.0
+            i["prix"] = 30.0
     # valeur à l'unité, pour afficher l'économie
     px = {i["id"]: i["prix"] for i in items}
     for i in items:
@@ -833,6 +833,38 @@ def nouveaute(lang):
             f'<p>{bouton_payhip(code, True, lang)}</p></div></div></section>')
 
 
+def outil_pph(lang):
+    """Bloc de l’accueil : l’outil MDH-PPH pour les collègues T.E.S. (demande de Mélodie, 4 nov. 2026), avec le glossaire en français."""
+    fr = lang == "fr"
+    items = {x["id"]: x for x in json.load(open(CAT, encoding="utf-8"))}
+    i = items.get("trousse-modele_pph")
+    if not i:
+        return ""
+    code = i["payhip"] if fr else (i.get("payhip_en") or i["payhip"])
+    if fr:
+        badge, h2, prix = "Essentiel en éducation spécialisée", "Le MDH-PPH, clair et prêt à utiliser", "3 $"
+        txt = ("Neuf fiches pour appliquer le Modèle de développement humain – Processus de production du handicap : facteurs "
+               "identitaires, systèmes organiques, aptitudes, environnement, habitudes de vie, plan d’action et étude de cas. "
+               "Utile en stage, en classe et sur le terrain.")
+        plus = ("<p>Besoin de toute la terminologie ? Le <a href=\"https://payhip.com/b/KPWj4\">Glossaire clinique T.E.S.</a> "
+                "(584 termes, 12 $) a aussi une section sur le MDH-PPH.</p>")
+    else:
+        badge, h2, prix = "A special care counselling essential", "The HDM-DCP, clear and ready to use", "$3"
+        txt = ("Nine sheets for applying the Human Development Model – Disability Creation Process: identity factors, organic "
+               "systems, abilities, environment, life habits, action plan and case study. Useful in internships, in class "
+               "and in the field.")
+        plus = ""
+    img = f'{L[lang]["base"]}img/{lang if os.path.exists(os.path.join(PUB, "img", lang, i["id"] + ".jpg")) else "fr"}/{i["id"]}.jpg'
+    return (f'<section class="wrap"><div class="card" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;'
+            f'padding:24px;border:2px solid #7A9E87">'
+            f'<img src="{img}" alt="" loading="lazy" style="width:220px;max-width:100%;border-radius:10px;flex:none">'
+            f'<div style="flex:1;min-width:260px"><p style="margin:0 0 8px"><span style="display:inline-block;'
+            f'background:#5F8570;color:#fff;font-weight:800;border-radius:999px;padding:4px 14px">{badge}</span></p>'
+            f'<h2 style="margin-top:4px">{h2}</h2><p class="lead">{txt}</p>'
+            f'<p class="vprix">{prix}</p>'
+            f'<p>{bouton_payhip(code, True, lang)}</p>{plus}</div></div></section>')
+
+
 def vedettes(lang):
     """Section « Coups de cœur » : 4 produits payants mis en avant, avec le prix réduit si un code promo est actif."""
     fr = lang == "fr"
@@ -940,6 +972,7 @@ def home(lang):
     <div class="stats">{stats}</div>
   </div>
 </section>
+{outil_pph(lang)}
 {nouveaute(lang)}
 {vedettes(lang)}
 {equipes(lang)}
