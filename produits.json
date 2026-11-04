@@ -1148,6 +1148,118 @@
   "payhip_en": "283La"
  },
  {
+  "id": "trousse-cerveau_developpement",
+  "type": "trousse",
+  "groupe": "Le cerveau expliqué",
+  "titre": "Le cerveau, de la naissance à la vieillesse",
+  "sous": "10 outils",
+  "desc": "Dix outils pour expliquer simplement le cerveau : grandes zones, neurones et plasticité, développement de la petite enfance à la vieillesse, signaux d’alerte, stress, habitudes protectrices et mythes à déconstruire.",
+  "fichiers": [
+   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_developpement_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "EBirS",
+  "payhip_en": "EBirS"
+ },
+ {
+  "id": "trousse-cerveau_tsa",
+  "type": "trousse",
+  "groupe": "Le cerveau expliqué",
+  "titre": "Le cerveau et l’autisme",
+  "sous": "10 outils",
+  "desc": "Dix outils pour comprendre l’autisme par le cerveau : développement, sens, perception, fonctions exécutives, communication sociale, surcharge, camouflage, parcours de vie et explications à donner.",
+  "fichiers": [
+   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_TSA_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "eJGm9",
+  "payhip_en": "eJGm9"
+ },
+ {
+  "id": "trousse-cerveau_tdah",
+  "type": "trousse",
+  "groupe": "Le cerveau expliqué",
+  "titre": "Le cerveau et le TDAH",
+  "sous": "10 outils",
+  "desc": "Dix outils pour comprendre le TDAH par le cerveau : maturation, motivation, inhibition, mémoire de travail, gestion du temps, émotions, médication et explications à donner.",
+  "fichiers": [
+   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_TDAH_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "k0UwN",
+  "payhip_en": "k0UwN"
+ },
+ {
+  "id": "trousse-cerveau_di",
+  "type": "trousse",
+  "groupe": "Le cerveau expliqué",
+  "titre": "Le cerveau et la déficience intellectuelle",
+  "sous": "10 outils",
+  "desc": "Dix outils pour comprendre la déficience intellectuelle par le cerveau : causes, définition, mémoire, langage, raisonnement, régulation, syndromes fréquents, apprentissage et explications à donner.",
+  "fichiers": [
+   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_DI_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "SdRWw",
+  "payhip_en": "SdRWw"
+ },
+ {
+  "id": "trousse-cerveau_tdl",
+  "type": "trousse",
+  "groupe": "Le cerveau expliqué",
+  "titre": "Le cerveau et le trouble développemental du langage",
+  "sous": "10 outils",
+  "desc": "Dix outils pour comprendre le trouble développemental du langage par le cerveau : voies du langage, définition, règles de la langue, mémoire verbale, école, lecture, relations, parcours et explications à donner.",
+  "fichiers": [
+   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_TDL_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "FD8cz",
+  "payhip_en": "FD8cz"
+ },
+ {
+  "id": "trousse-cerveau_trauma",
+  "type": "trousse",
+  "groupe": "Le cerveau expliqué",
+  "titre": "Le cerveau et le trauma",
+  "sous": "10 outils",
+  "desc": "Dix outils pour comprendre le trauma par le cerveau : alarme, survie, déclencheurs, fenêtre de tolérance, mémoire, relations, corégulation, approche sensible, résilience et explications à donner.",
+  "fichiers": [
+   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_trauma_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "u7HVl",
+  "payhip_en": "u7HVl"
+ },
+ {
+  "id": "trousse-cerveau_anxiete",
+  "type": "trousse",
+  "groupe": "Le cerveau expliqué",
+  "titre": "Le cerveau et l’anxiété",
+  "sous": "10 outils",
+  "desc": "Dix outils pour comprendre l’anxiété par le cerveau : alarme, corps, pensées, évitement, apprentissage de la sécurité, rôle de l’entourage, calme, âges et explications à donner.",
+  "fichiers": [
+   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_anxiete_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "MP9Ve",
+  "payhip_en": "MP9Ve"
+ },
+ {
+  "id": "trousse-cerveau_tnc",
+  "type": "trousse",
+  "groupe": "Le cerveau expliqué",
+  "titre": "Le cerveau et les troubles neurocognitifs",
+  "sous": "10 outils",
+  "desc": "Dix outils pour comprendre les troubles neurocognitifs par le cerveau : types, mémoires, délirium, espace, langage, comportements, émotions, prévention et explications à donner aux proches.",
+  "fichiers": [
+   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_TNC_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "dvqKF",
+  "payhip_en": "dvqKF"
+ },
+ {
   "id": "trousse-protection_de_la_jeunesse",
   "type": "trousse",
   "groupe": "Clientèles et interventions",
@@ -6321,6 +6433,32 @@
   "valeur": 35.0
  },
  {
+  "id": "lot-14-le-cerveau-expliqué",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Le cerveau expliqué",
+  "sous": "8 trousses",
+  "desc": "Toutes les trousses du volet « Le cerveau expliqué ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-cerveau_developpement",
+   "trousse-cerveau_tsa",
+   "trousse-cerveau_tdah",
+   "trousse-cerveau_di",
+   "trousse-cerveau_tdl",
+   "trousse-cerveau_trauma",
+   "trousse-cerveau_anxiete",
+   "trousse-cerveau_tnc"
+  ],
+  "titre_en": "Filodie Collection: The Brain Explained",
+  "sous_en": "8 toolkits",
+  "desc_en": "All the toolkits in the “The Brain Explained” section.",
+  "prix": 39.0,
+  "payhip": "Rtnez",
+  "payhip_en": "Rtnez",
+  "valeur": 56.0
+ },
+ {
   "id": "lot-2-clientèles-et-interventions",
   "type": "lot_collection",
   "groupe": "Lots",
@@ -6958,11 +7096,11 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses : édition novembre 2026",
-  "sous": "Édition novembre 2026 · 163 trousses et 5 éditions",
+  "sous": "Édition novembre 2026 · 171 trousses et 5 éditions",
   "prix": 75.0,
-  "sous_en": "November 2026 edition · 163 toolkits and 5 editions",
-  "desc": "La trousse principale, les 30 trousses spécialisées, les 107 trousses de la Collection, les 23 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
-  "desc_en": "The main toolkit, the 30 specialized toolkits, the 107 Collection toolkits, the 23 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
+  "sous_en": "November 2026 edition · 171 toolkits and 5 editions",
+  "desc": "La trousse principale, les 30 trousses spécialisées, les 115 trousses de la Collection, les 23 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
+  "desc_en": "The main toolkit, the 30 specialized toolkits, the 115 Collection toolkits, the 23 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7046,6 +7184,14 @@
    "trousse-proches_aidants",
    "trousse-reminiscence",
    "trousse-hebergement_aines",
+   "trousse-cerveau_developpement",
+   "trousse-cerveau_tsa",
+   "trousse-cerveau_tdah",
+   "trousse-cerveau_di",
+   "trousse-cerveau_tdl",
+   "trousse-cerveau_trauma",
+   "trousse-cerveau_anxiete",
+   "trousse-cerveau_tnc",
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
    "trousse-auteurs_de_violence",
@@ -7137,7 +7283,7 @@
   "payhip": "cywQA",
   "payhip_en": "cywQA",
   "titre_en": "All the toolkits: November 2026 edition",
-  "valeur": 1181.0
+  "valeur": 1237.0
  },
  {
   "id": "lot-mega",
@@ -7145,8 +7291,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie : édition novembre 2026",
   "sous": "Édition novembre 2026",
-  "desc": "Tout le catalogue payant de Filodie : les 163 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
-  "desc_en": "Filodie’s entire paid catalogue: all 163 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
+  "desc": "Tout le catalogue payant de Filodie : les 171 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
+  "desc_en": "Filodie’s entire paid catalogue: all 171 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7230,6 +7376,14 @@
    "trousse-proches_aidants",
    "trousse-reminiscence",
    "trousse-hebergement_aines",
+   "trousse-cerveau_developpement",
+   "trousse-cerveau_tsa",
+   "trousse-cerveau_tdah",
+   "trousse-cerveau_di",
+   "trousse-cerveau_tdl",
+   "trousse-cerveau_trauma",
+   "trousse-cerveau_anxiete",
+   "trousse-cerveau_tnc",
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
    "trousse-auteurs_de_violence",
@@ -7532,7 +7686,7 @@
   "payhip_en": "dZ02M",
   "sous_en": "November 2026 edition",
   "titre_en": "All of Filodie: November 2026 edition",
-  "valeur": 1896.0
+  "valeur": 1952.0
  },
  {
   "id": "trousse-enseignants-tes",

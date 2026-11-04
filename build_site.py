@@ -90,7 +90,10 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
           "trousse-pouvoir_agir": "2026-10-27",
           "trousse-auteurs_infractions_sexuelles": "2026-10-28",
           "lot-parents": "2026-10-27", "livre-glossaire-clinique": "2026-11-04",
-          "trousse-soutenir_deuil": "2026-11-04"}
+          "trousse-soutenir_deuil": "2026-11-04",
+          **{k: "2026-11-04" for k in ("trousse-cerveau_developpement", "trousse-cerveau_tsa", "trousse-cerveau_tdah",
+                                       "trousse-cerveau_di", "trousse-cerveau_tdl", "trousse-cerveau_trauma",
+                                       "trousse-cerveau_anxiete", "trousse-cerveau_tnc", "lot-14-le-cerveau-expliqué")}}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
                  "lot_cahiers", "lot_routines", "lot_detective", "lot_jeux")
@@ -435,6 +438,9 @@ def catalogue():
             n = len(i["contient"])
             i["prix"] = float(min(30, max(25, 5 * round(n * 2.5 / 5)))) if n >= 6 else \
                 float(max(10, round(n * PRIX["trousse"] * 0.7)))
+    for i in items:
+        if i["id"] == "lot-14-le-cerveau-expliqué":   # prix choisi le 4 nov. 2026
+            i["prix"] = 39.0
     # valeur à l'unité, pour afficher l'économie
     px = {i["id"]: i["prix"] for i in items}
     for i in items:
