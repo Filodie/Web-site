@@ -5901,6 +5901,27 @@
   "payhip_en": "vUA0m"
  },
  {
+  "id": "livre-glossaire-clinique",
+  "type": "livre",
+  "groupe": "Grand livre clinique",
+  "titre": "Glossaire clinique T.E.S.",
+  "sous": "584 termes · 18 sections",
+  "prix": 12.0,
+  "payhip": "KPWj4",
+  "payhip_en": "KPWj4",
+  "pv_pages": [
+   5,
+   33
+  ],
+  "desc": "Le vocabulaire de l’éducation spécialisée réuni en un seul document, classé par domaine : MDH-PPH, DI, TSA, DP, TDAH, vieillissement, santé mentale, plan d’intervention, psychologie, droit et plus. Chaque terme a sa définition et son exemple. PDF en français seulement.",
+  "titre_en": "SCC Clinical Glossary (French only)",
+  "sous_en": "584 terms · 18 sections",
+  "desc_en": "The vocabulary of special care counselling gathered in one document, organized by field, with a definition and an example for each term. PDF available in French only.",
+  "fichiers": [
+   "Glossaire Filodie/Filodie_Glossaire_clinique_TES.pdf"
+  ]
+ },
+ {
   "id": "bottin-regional",
   "type": "bottin",
   "groupe": "Bottin régional",
@@ -7485,6 +7506,7 @@
    "detective-dre",
    "detective-dnu",
    "grand-livre",
+   "livre-glossaire-clinique",
    "bottin-regional",
    "trousse-enseignants-tes",
    "trousse-apprentissage-langage"
@@ -7494,7 +7516,7 @@
   "payhip_en": "dZ02M",
   "sous_en": "November 2026 edition",
   "titre_en": "All of Filodie: November 2026 edition",
-  "valeur": 1877.0
+  "valeur": 1889.0
  },
  {
   "id": "trousse-enseignants-tes",

@@ -89,7 +89,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
           "trousse-animer_groupe": "2026-10-27", "trousse-tcc_quotidien": "2026-10-27",
           "trousse-pouvoir_agir": "2026-10-27",
           "trousse-auteurs_infractions_sexuelles": "2026-10-28",
-          "lot-parents": "2026-10-27"}
+          "lot-parents": "2026-10-27", "livre-glossaire-clinique": "2026-11-04"}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
                  "lot_cahiers", "lot_routines", "lot_detective", "lot_jeux")
@@ -100,6 +100,7 @@ PARENTS_IDS = {"lot-parents", "trousse-parents", "trousse-attachement", "trousse
                "lot-tous-les-cahiers"} | {f"trousse-theme_{t}" for t in ("sirenes_sous_la_mer", "animaux_jungle", "flamants_roses",
                                                                          "gobelins", "sorcieres", "trains", "princesses",
                                                                          "pommes", "halloween", "hiver")}
+GLOSSAIRE_EN_VENTE = True                           # PDF en français seulement (mis en vente le 4 nov. 2026)
 DET_ID = "detective-dde"                            # cahier de détective découverte gratuit (hors lots)
 
 # Éditions mensuelles de « Tout Filodie » (lot-mega) et « Toutes les trousses » (lot-toutes-les-trousses).
@@ -223,6 +224,16 @@ def catalogue():
              "« Mon application clinique ». Version couleur et version noir et blanc.",
         fichiers=["Grand livre clinique Filodie/Grand_livre_clinique_TES_Filodie.pdf",
                   "Grand livre clinique Filodie/Grand_livre_clinique_TES_Filodie_NB_impression.pdf"])
+    if GLOSSAIRE_EN_VENTE:
+        add(id="livre-glossaire-clinique", type="livre", groupe="Grand livre clinique", titre="Glossaire clinique T.E.S.",
+            sous="584 termes · 18 sections", prix=12.0, payhip="KPWj4", payhip_en="KPWj4", pv_pages=[5, 33],
+            desc="Le vocabulaire de l’éducation spécialisée réuni en un seul document, classé par domaine : MDH-PPH, DI, TSA, "
+                 "DP, TDAH, vieillissement, santé mentale, plan d’intervention, psychologie, droit et plus. Chaque terme a "
+                 "sa définition et son exemple. PDF en français seulement.",
+            titre_en="SCC Clinical Glossary (French only)", sous_en="584 terms · 18 sections",
+            desc_en="The vocabulary of special care counselling gathered in one document, organized by field, with a "
+                    "definition and an example for each term. PDF available in French only.",
+            fichiers=["Glossaire Filodie/Filodie_Glossaire_clinique_TES.pdf"])
     add(id="bottin-regional", type="bottin", groupe="Bottin régional", titre="Bottin régional : 17 régions du Québec",
         sous="Gratuit", desc="DPJ, centres de crise, CLSC, autisme, TDAH, déficience intellectuelle, proches, violence et "
                               "dépendances, région par région, avec les lignes provinciales classées par problématique.",
@@ -502,8 +513,8 @@ def images(items):
         if os.path.exists(fr):
             vignette(fr, os.path.join(PUB, "img", "fr", i["id"] + ".jpg"))
         en = en_path(rel)
-        if os.path.exists(en):
-            vignette(en, os.path.join(PUB, "img", "en", i["id"] + ".jpg"))
+        if os.path.exists(en) or os.path.exists(fr):   # produit en français seulement : sa couverture française
+            vignette(en if os.path.exists(en) else fr, os.path.join(PUB, "img", "en", i["id"] + ".jpg"))
     for lang in ("fr", "en"):                         # aperçus : 2 pages de chaque outil
         os.makedirs(os.path.join(PUB, "img", lang, "apercu"), exist_ok=True)
     for i in items:
