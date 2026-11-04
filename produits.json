@@ -1260,6 +1260,104 @@
   "payhip_en": "dvqKF"
  },
  {
+  "id": "trousse-fin_de_vie",
+  "type": "trousse",
+  "groupe": "Accompagner le grand âge",
+  "titre": "Accompagner la fin de vie",
+  "sous": "10 outils",
+  "desc": "Dix outils pour accompagner une personne en fin de vie : les mots justes, ce qui compte pour elle, parler de la mort, les choix faits à l’avance, les derniers jours, le confort, la dignité, la famille et l’après.",
+  "fichiers": [
+   "Collection Filodie/15 – Accompagner le grand âge/Trousse_Filodie_Fin_de_vie_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "r7VWf",
+  "payhip_en": "r7VWf"
+ },
+ {
+  "id": "trousse-deuil_aines",
+  "type": "trousse",
+  "groupe": "Accompagner le grand âge",
+  "titre": "Le deuil chez les personnes aînées",
+  "sous": "10 outils",
+  "desc": "Dix outils pour soutenir une personne aînée endeuillée : pertes accumulées, décès du ou de la partenaire, deuils non reconnus, deuil ou dépression, deuil et troubles neurocognitifs, vie quotidienne, rituels et dates difficiles.",
+  "fichiers": [
+   "Collection Filodie/15 – Accompagner le grand âge/Trousse_Filodie_Deuil_aines_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "3LNlQ",
+  "payhip_en": "3LNlQ"
+ },
+ {
+  "id": "trousse-isolement_aines",
+  "type": "trousse",
+  "groupe": "Accompagner le grand âge",
+  "titre": "Briser l’isolement des personnes aînées",
+  "sous": "10 outils",
+  "desc": "Dix outils pour repérer l’isolement et recréer du lien : solitude ou isolement, signes, réseau, obstacles, approche d’une personne qui refuse, petits gestes, activités, outils numériques, autonégligence et plan de lien.",
+  "fichiers": [
+   "Collection Filodie/15 – Accompagner le grand âge/Trousse_Filodie_Isolement_aines_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "4fvmi",
+  "payhip_en": "4fvmi"
+ },
+ {
+  "id": "trousse-chutes_aines",
+  "type": "trousse",
+  "groupe": "Accompagner le grand âge",
+  "titre": "Prévenir les chutes et garder confiance",
+  "sous": "10 outils",
+  "desc": "Dix outils pour prévenir les chutes : facteurs de risque, tour du domicile, médicaments, vue et pieds, bouger pour l’équilibre, peur de tomber, que faire après une chute, se relever, liberté et sécurité en milieu d’hébergement.",
+  "fichiers": [
+   "Collection Filodie/15 – Accompagner le grand âge/Trousse_Filodie_Chutes_aines_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "fWhTO",
+  "payhip_en": "fWhTO"
+ },
+ {
+  "id": "trousse-intimite_aines",
+  "type": "trousse",
+  "groupe": "Accompagner le grand âge",
+  "titre": "Intimité et sexualité des personnes aînées",
+  "sous": "10 outils",
+  "desc": "Dix outils pour accueillir la vie intime des personnes aînées avec respect : préjugés, tendresse, santé, réactions de l’équipe, vie privée, consentement, couple et troubles neurocognitifs, gestes inappropriés, diversité et politique du milieu.",
+  "fichiers": [
+   "Collection Filodie/15 – Accompagner le grand âge/Trousse_Filodie_Intimite_aines_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "vfDqs",
+  "payhip_en": "vfDqs"
+ },
+ {
+  "id": "trousse-conduite_aines",
+  "type": "trousse",
+  "groupe": "Accompagner le grand âge",
+  "titre": "Conduire en vieillissant",
+  "sous": "10 outils",
+  "desc": "Dix outils pour aborder la conduite automobile : ce que le permis représente, règles de la SAAQ, signes à observer, santé, conversation, adaptations, autres transports, refus, deuil du permis et plan de mobilité.",
+  "fichiers": [
+   "Collection Filodie/15 – Accompagner le grand âge/Trousse_Filodie_Conduite_aines_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "FZo3W",
+  "payhip_en": "FZo3W"
+ },
+ {
+  "id": "trousse-stimulation_aines",
+  "type": "trousse",
+  "groupe": "Accompagner le grand âge",
+  "titre": "Stimuler la cognition avec plaisir",
+  "sous": "10 outils",
+  "desc": "Dix outils pour stimuler la cognition avec respect : mythes, ce qui protège, activités significatives, adapter selon le stade, activités sans échec, mémoire au quotidien, musique, mouvement, langage adulte et plan hebdomadaire.",
+  "fichiers": [
+   "Collection Filodie/15 – Accompagner le grand âge/Trousse_Filodie_Stimulation_aines_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "alEmC",
+  "payhip_en": "alEmC"
+ },
+ {
   "id": "trousse-protection_de_la_jeunesse",
   "type": "trousse",
   "groupe": "Clientèles et interventions",
@@ -6459,6 +6557,31 @@
   "valeur": 56.0
  },
  {
+  "id": "lot-15-accompagner-le-grand-âge",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Accompagner le grand âge",
+  "sous": "7 trousses",
+  "desc": "Toutes les trousses du volet « Accompagner le grand âge ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-fin_de_vie",
+   "trousse-deuil_aines",
+   "trousse-isolement_aines",
+   "trousse-chutes_aines",
+   "trousse-intimite_aines",
+   "trousse-conduite_aines",
+   "trousse-stimulation_aines"
+  ],
+  "titre_en": "Filodie Collection: Supporting Later Life",
+  "sous_en": "7 toolkits",
+  "desc_en": "All the toolkits in the “Supporting Later Life” section.",
+  "prix": 25.0,
+  "payhip": "f5Msg",
+  "payhip_en": "f5Msg",
+  "valeur": 49.0
+ },
+ {
   "id": "lot-2-clientèles-et-interventions",
   "type": "lot_collection",
   "groupe": "Lots",
@@ -7096,11 +7219,11 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses : édition novembre 2026",
-  "sous": "Édition novembre 2026 · 171 trousses et 5 éditions",
+  "sous": "Édition novembre 2026 · 178 trousses et 5 éditions",
   "prix": 75.0,
-  "sous_en": "November 2026 edition · 171 toolkits and 5 editions",
-  "desc": "La trousse principale, les 30 trousses spécialisées, les 115 trousses de la Collection, les 23 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
-  "desc_en": "The main toolkit, the 30 specialized toolkits, the 115 Collection toolkits, the 23 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
+  "sous_en": "November 2026 edition · 178 toolkits and 5 editions",
+  "desc": "La trousse principale, les 30 trousses spécialisées, les 122 trousses de la Collection, les 23 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
+  "desc_en": "The main toolkit, the 30 specialized toolkits, the 122 Collection toolkits, the 23 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7192,6 +7315,13 @@
    "trousse-cerveau_trauma",
    "trousse-cerveau_anxiete",
    "trousse-cerveau_tnc",
+   "trousse-fin_de_vie",
+   "trousse-deuil_aines",
+   "trousse-isolement_aines",
+   "trousse-chutes_aines",
+   "trousse-intimite_aines",
+   "trousse-conduite_aines",
+   "trousse-stimulation_aines",
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
    "trousse-auteurs_de_violence",
@@ -7283,7 +7413,7 @@
   "payhip": "cywQA",
   "payhip_en": "cywQA",
   "titre_en": "All the toolkits: November 2026 edition",
-  "valeur": 1237.0
+  "valeur": 1286.0
  },
  {
   "id": "lot-mega",
@@ -7291,8 +7421,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie : édition novembre 2026",
   "sous": "Édition novembre 2026",
-  "desc": "Tout le catalogue payant de Filodie : les 171 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
-  "desc_en": "Filodie’s entire paid catalogue: all 171 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
+  "desc": "Tout le catalogue payant de Filodie : les 178 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
+  "desc_en": "Filodie’s entire paid catalogue: all 178 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7384,6 +7514,13 @@
    "trousse-cerveau_trauma",
    "trousse-cerveau_anxiete",
    "trousse-cerveau_tnc",
+   "trousse-fin_de_vie",
+   "trousse-deuil_aines",
+   "trousse-isolement_aines",
+   "trousse-chutes_aines",
+   "trousse-intimite_aines",
+   "trousse-conduite_aines",
+   "trousse-stimulation_aines",
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
    "trousse-auteurs_de_violence",
@@ -7686,7 +7823,7 @@
   "payhip_en": "dZ02M",
   "sous_en": "November 2026 edition",
   "titre_en": "All of Filodie: November 2026 edition",
-  "valeur": 1952.0
+  "valeur": 2001.0
  },
  {
   "id": "trousse-enseignants-tes",

@@ -93,7 +93,10 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
           "trousse-soutenir_deuil": "2026-11-04",
           **{k: "2026-11-04" for k in ("trousse-cerveau_developpement", "trousse-cerveau_tsa", "trousse-cerveau_tdah",
                                        "trousse-cerveau_di", "trousse-cerveau_tdl", "trousse-cerveau_trauma",
-                                       "trousse-cerveau_anxiete", "trousse-cerveau_tnc", "lot-14-le-cerveau-expliqué")}}
+                                       "trousse-cerveau_anxiete", "trousse-cerveau_tnc", "lot-14-le-cerveau-expliqué",
+                                       "trousse-fin_de_vie", "trousse-deuil_aines", "trousse-isolement_aines",
+                                       "trousse-chutes_aines", "trousse-intimite_aines", "trousse-conduite_aines",
+                                       "trousse-stimulation_aines", "lot-15-accompagner-le-grand-âge")}}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
                  "lot_cahiers", "lot_routines", "lot_detective", "lot_jeux")
