@@ -932,7 +932,8 @@ def vedettes(lang):
                           f'{"avec" if fr else "with"} <code>{html.escape(p["code"])}</code></span>')
         etiq = {"vente": ("Meilleure vente", "Best seller", "#5F8570"), "nouveau": ("Nouveauté", "New", "#D9734E")}[genre]
         cache = ' style="display:none"' if n > 3 else ""
-        cards += (f'<div class="card col vedette"{cache}><img src="{L[lang]["base"]}img/{lang}/{k}.jpg{iv(lang, k)}" alt="" loading="lazy">'
+        vign = k if os.path.exists(os.path.join(PUB, "img", lang, k + ".jpg")) else (i.get("contient") or [k])[0]   # lot sans vignette : sa première trousse
+        cards += (f'<div class="card col vedette"{cache}><img src="{L[lang]["base"]}img/{lang}/{vign}.jpg{iv(lang, vign)}" alt="" loading="lazy">'
                   f'<p style="margin:8px 0 0"><span style="display:inline-block;background:{etiq[2]};color:#fff;font-weight:800;'
                   f'font-size:.8rem;border-radius:999px;padding:3px 12px">{etiq[0] if fr else etiq[1]}</span></p>'
                   f'<h3>{html.escape(titre)}</h3><p>{html.escape(acc_fr if fr else acc_en)}</p>'
