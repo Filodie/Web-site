@@ -6146,6 +6146,27 @@
   ]
  },
  {
+  "id": "album-caillou-nilou",
+  "type": "album",
+  "groupe": "Albums pour enfants",
+  "titre": "Le caillou de Nilou",
+  "sous": "Album sur le deuil · 4 à 8 ans · 28 pages",
+  "pv_pages": [
+   7,
+   11
+  ],
+  "desc": "Quand Papi meurt, Nilou la petite renarde sent un gros caillou gris dans sa poitrine. Une histoire tendre et honnête pour nommer la mort, accueillir le chagrin et continuer d’aimer, avec 2 pages pour l’enfant et un guide pour les adultes : questions page par page, mots à éviter, repères selon l’âge, quand demander de l’aide.",
+  "titre_en": "Nilou’s Stone",
+  "sous_en": "Picture book on grief · Ages 4 to 8 · 28 pages",
+  "desc_en": "When Grandpa dies, Nilou the little fox feels a big grey stone in her chest. A tender, honest story for naming death, welcoming grief and going on loving, with 2 pages for the child and a guide for adults: page-by-page questions, words to avoid, age-based markers and when to ask for help.",
+  "fichiers": [
+   "Albums Filodie/Le_caillou_de_Nilou.pdf"
+  ],
+  "prix": 9.0,
+  "payhip": "HUf98",
+  "payhip_en": "HUf98"
+ },
+ {
   "id": "bottin-regional",
   "type": "bottin",
   "groupe": "Bottin régional",
@@ -7814,6 +7835,7 @@
    "detective-dnu",
    "grand-livre",
    "livre-glossaire-clinique",
+   "album-caillou-nilou",
    "bottin-regional",
    "trousse-enseignants-tes",
    "trousse-apprentissage-langage"
@@ -7823,7 +7845,7 @@
   "payhip_en": "dZ02M",
   "sous_en": "November 2026 edition",
   "titre_en": "All of Filodie: November 2026 edition",
-  "valeur": 2001.0
+  "valeur": 2010.0
  },
  {
   "id": "trousse-enseignants-tes",

@@ -64,7 +64,7 @@ def en(i, k):
 PRIX = {"trousse": 7.00, "edition": 3.00, "cahier": 3.00, "livre": 19.00, "bottin": 0.0,
         "lot_cahiers": 25.00, "lot_collection": 25.00, "lot_specialisees": 39.00, "lot_tout": 75.00, "mega": 129.00,
         "affiches": 5.00, "lot_affiches": 19.00, "jeux": 7.00, "lot_jeux": 29.00,
-        "routines": 5.00, "lot_routines": 19.00, "gratuit": 0.00, "detective": 5.00, "lot_detective": 25.00}
+        "routines": 5.00, "lot_routines": 19.00, "gratuit": 0.00, "detective": 5.00, "lot_detective": 25.00, "album": 9.00}
 
 
 HORS_16 = ("trousse-deficience_physique", "trousse-cadre_legal", "trousse-entretien_motivationnel",
@@ -90,7 +90,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
           "trousse-pouvoir_agir": "2026-10-27",
           "trousse-auteurs_infractions_sexuelles": "2026-10-28",
           "lot-parents": "2026-10-27", "livre-glossaire-clinique": "2026-11-04",
-          "trousse-soutenir_deuil": "2026-11-04",
+          "trousse-soutenir_deuil": "2026-11-04", "album-caillou-nilou": "2026-11-04",
           **{k: "2026-11-04" for k in ("trousse-cerveau_developpement", "trousse-cerveau_tsa", "trousse-cerveau_tdah",
                                        "trousse-cerveau_di", "trousse-cerveau_tdl", "trousse-cerveau_trauma",
                                        "trousse-cerveau_anxiete", "trousse-cerveau_tnc", "lot-14-le-cerveau-expliqué",
@@ -242,6 +242,16 @@ def catalogue():
             desc_en="The vocabulary of special care counselling gathered in one document, organized by field, with a "
                     "definition and an example for each term. PDF available in French only.",
             fichiers=["Glossaire Filodie/Filodie_Glossaire_clinique_TES.pdf"])
+    add(id="album-caillou-nilou", type="album", groupe="Albums pour enfants", titre="Le caillou de Nilou",
+        sous="Album sur le deuil · 4 à 8 ans · 28 pages", pv_pages=[7, 11],
+        desc="Quand Papi meurt, Nilou la petite renarde sent un gros caillou gris dans sa poitrine. Une histoire tendre et "
+             "honnête pour nommer la mort, accueillir le chagrin et continuer d’aimer, avec 2 pages pour l’enfant et un guide "
+             "pour les adultes : questions page par page, mots à éviter, repères selon l’âge, quand demander de l’aide.",
+        titre_en="Nilou’s Stone", sous_en="Picture book on grief · Ages 4 to 8 · 28 pages",
+        desc_en="When Grandpa dies, Nilou the little fox feels a big grey stone in her chest. A tender, honest story for naming "
+                "death, welcoming grief and going on loving, with 2 pages for the child and a guide for adults: page-by-page "
+                "questions, words to avoid, age-based markers and when to ask for help.",
+        fichiers=["Albums Filodie/Le_caillou_de_Nilou.pdf"])
     add(id="bottin-regional", type="bottin", groupe="Bottin régional", titre="Bottin régional : 17 régions du Québec",
         sous="Gratuit", desc="DPJ, centres de crise, CLSC, autisme, TDAH, déficience intellectuelle, proches, violence et "
                               "dépendances, région par région, avec les lignes provinciales classées par problématique.",
@@ -589,7 +599,7 @@ L = {
         "shop_t": "Boutique", "shop_p": "Chaque achat inclut la version française et la version anglaise. Cahiers à 3 $, trousses à 7 $, et des lots jusqu’à 90 % moins chers. Prix en dollars canadiens, téléchargement immédiat après le paiement.",
         "search": "Rechercher un outil…", "all": "Tout",
         "nv": "Nouveau", "nv_chip": "Nouveautés du mois", "pa_chip": "Pour les parents",
-        "types": {"trousse": "Trousses", "edition": "Éditions", "cahier": "Cahiers visuels", "affiches": "Affiches", "jeux": "Jeux", "routines": "Routines", "detective": "Détective", "gratuit": "Gratuit", "livre": "Grand livre",
+        "types": {"trousse": "Trousses", "edition": "Éditions", "cahier": "Cahiers visuels", "affiches": "Affiches", "jeux": "Jeux", "routines": "Routines", "detective": "Détective", "gratuit": "Gratuit", "livre": "Grand livre", "album": "Albums",
                   "bottin": "Bottin", "lot": "Lots"},
         "buy": "Acheter", "cart": "Ajouter au panier", "direct": "ou acheter maintenant", "lot": "Acheter le lot", "lotnote": "Paiement séparé du panier", "soon": "Bientôt disponible", "free": "Gratuit", "get": "Obtenir", "details": "Détails", "cahier_nb": " · Couleur + version noir et blanc à colorier",
         "aff_nb": " · Couleur + noir et blanc · lettre et 11 × 17",
@@ -633,7 +643,7 @@ L = {
         "shop_t": "Shop", "shop_p": "Every purchase includes both the English and French versions. Workbooks at $3, toolkits at $7, and bundles up to 90% off. Prices in Canadian dollars, instant download after payment.",
         "search": "Search for a tool…", "all": "All",
         "nv": "New", "nv_chip": "New this month", "pa_chip": "For parents",
-        "types": {"trousse": "Toolkits", "edition": "Editions", "cahier": "Visual workbooks", "affiches": "Posters", "jeux": "Games", "routines": "Routines", "detective": "Detective", "gratuit": "Free", "livre": "Handbook",
+        "types": {"trousse": "Toolkits", "edition": "Editions", "cahier": "Visual workbooks", "affiches": "Posters", "jeux": "Games", "routines": "Routines", "detective": "Detective", "gratuit": "Free", "livre": "Handbook", "album": "Picture books",
                   "bottin": "Directory", "lot": "Bundles"},
         "buy": "Buy", "cart": "Add to cart", "direct": "or buy now", "lot": "Buy the bundle", "lotnote": "Paid separately from the cart", "soon": "Coming soon", "free": "Free", "get": "Get it", "details": "Details", "cahier_nb": " · Colour + black-and-white colouring version",
         "aff_nb": " · Colour + black and white · letter and 11 × 17",
