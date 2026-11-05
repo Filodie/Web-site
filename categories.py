@@ -91,7 +91,7 @@ AJOUTS_CAT = {
     "sante": _t("sante_mentale", "perinatalite", "prevention_du_suicide", "dependances", "reduction_mefaits", "alcool_faire_le_point",
                 "drogues_reduire_les_mefaits", "jeu_excessif", "troubles_alimentaires", "entretien_motivationnel", "tcc_quotidien",
                 "refus_traitement", "demander_aide", "cerveau_anxiete", "ecrans_et_cyberdependance")
-             + ["lot-sante-mentale-dependances"] + _num("vcomp", 33, 41),
+             + ["lot-sante-mentale-dependances"] + _num("vcomp", 33, 41) + ["album-couverture-eli"],
     "deuil": _t("soutenir_deuil", "perinatalite", "deuil_et_separation", "deuil_aines", "fin_de_vie", "approche_sensible_au_trauma", "cerveau_trauma",
                 "violence_conjugale", "violence_conjugale_victimes", "auteurs_de_violence", "violence_sexuelle",
                 "agression_sexuelle_victimes", "auteurs_infractions_sexuelles", "protection_de_la_jeunesse", "maltraitance_aines")
@@ -99,7 +99,7 @@ AJOUTS_CAT = {
              + _num("vtsa", 16),
     "petite": _t("petite_enfance_0-5_ans", "educatrices_cpe", "direction_garderie", "renforcement_r05", "attachement", "motricite_fine",
                  "parcours_moteur", "cahier_a_colorier", "jeux_a_imprimer")
-              + ["lot-albums", "album-tournesol-romy", "lot-6-cahiers-thématiques"] + _num("vcomp", 37),
+              + ["lot-albums", "album-tournesol-romy", "album-couverture-eli", "lot-6-cahiers-thématiques"] + _num("vcomp", 37),
     "ecole": _t("gestion_de_classe", "routines_et_organisation_scolaire", "soutien_langagier_primaire", "soutien_langagier_secondaire",
                 "pack_rentree_tes_primaire", "peh", "service_de_garde_scolaire", "nouveaux_arrivants", "troubles_apprentissage",
                 "secondaire_12-17_ans", "orthopedagogie")
@@ -120,7 +120,7 @@ AJOUTS_CAT = {
            + ["grand-livre", "livre-glossaire-clinique", "bottin-regional", "lot-3-professions", "lot-4-professions-et-pratique",
               "lot-10-boîte-à-outils-du-psychoéducateur", "lot-14-le-cerveau-expliqué", "lot-5-jeux-et-activités",
               "lot-8-thèmes-complémentaires"] + _num("vcomp", 35, 36),
-    "pa": ["lot-16-après-le-diagnostic", "trousse-fratrie", "album-tournesol-romy", "trousse-devenir_adulte", "trousse-perinatalite"],
+    "pa": ["lot-16-après-le-diagnostic", "trousse-fratrie", "album-tournesol-romy", "trousse-devenir_adulte", "trousse-perinatalite", "album-couverture-eli"],
     "etudes": _t("modele_pph") + ["grand-livre", "livre-glossaire-clinique", "lot-etudes-tes"],
 }
 

@@ -94,7 +94,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
           "lot-parents": "2026-10-27", "livre-glossaire-clinique": "2026-11-04",
           "trousse-soutenir_deuil": "2026-11-04", "album-caillou-nilou": "2026-11-04",
           "album-nuage-teo": "2026-11-04", "album-marmite-lina": "2026-11-04", "album-pont-zelie": "2026-11-04", "album-lanterne-milo": "2026-11-04",
-          "trousse-fratrie": "2026-11-05", "album-tournesol-romy": "2026-11-05", "trousse-devenir_adulte": "2026-11-05", "trousse-perinatalite": "2026-11-05",
+          "trousse-fratrie": "2026-11-05", "album-tournesol-romy": "2026-11-05", "album-couverture-eli": "2026-11-05", "trousse-devenir_adulte": "2026-11-05", "trousse-perinatalite": "2026-11-05",
           **{k: "2026-11-04" for k in ("trousse-cerveau_developpement", "trousse-cerveau_tsa", "trousse-cerveau_tdah",
                                        "trousse-cerveau_di", "trousse-cerveau_tdl", "trousse-cerveau_trauma",
                                        "trousse-cerveau_anxiete", "trousse-cerveau_tnc", "lot-14-le-cerveau-expliqué",
@@ -318,6 +318,18 @@ def catalogue():
                 "their own, with 2 pages for the child and a guide for adults: page-by-page questions, words to choose, "
                 "age-based markers and when to ask for help.",
         fichiers=["Albums Filodie/Le_tournesol_de_Romy.pdf"])
+    add(id="album-couverture-eli", type="album", groupe="Albums pour enfants", titre="Éli et la couverture grise",
+        sous="Album sur la dépression d’un parent · 4 à 8 ans · 25 pages", pv_pages=[6, 14],
+        desc="Depuis l’arrivée de bébé Lou, une grande couverture grise pèse sur les épaules de Maman. Éli a beau tirer, elle ne "
+             "bouge pas. Une histoire tendre pour expliquer la dépression d’un parent à un enfant, sans lui laisser la faute ni "
+             "le travail de guérir, avec 2 pages pour l’enfant et un guide pour les adultes : questions page par page, mots à "
+             "choisir, repères selon l’âge, quand demander de l’aide.",
+        titre_en="Eli and the Grey Blanket", sous_en="Picture book on a parent’s depression · Ages 4 to 8 · 25 pages",
+        desc_en="Ever since baby Lou arrived, a big grey blanket has been weighing on Mommy’s shoulders. Eli pulls and pulls, but it "
+                "won’t move. A tender story for explaining a parent’s depression to a child, without leaving them the blame or the "
+                "job of making it better, with 2 pages for the child and a guide for adults: page-by-page questions, words to "
+                "choose, age-based markers and when to ask for help.",
+        fichiers=["Albums Filodie/Eli_et_la_couverture_grise.pdf"])
     add(id="bottin-regional", type="bottin", groupe="Bottin régional", titre="Bottin régional : 17 régions du Québec",
         sous="Gratuit", desc="DPJ, centres de crise, CLSC, autisme, TDAH, déficience intellectuelle, proches, violence et "
                               "dépendances, région par région, avec les lignes provinciales classées par problématique.",
@@ -407,13 +419,13 @@ def catalogue():
             fichiers=[], contient=dt)
     ab = [i["id"] for i in items if i["type"] == "album"]
     if ab:
-        add(id="lot-albums", type="lot_albums", groupe="Lots", titre="Les 6 albums pour enfants",
-            titre_en="The 6 Picture Books",
+        add(id="lot-albums", type="lot_albums", groupe="Lots", titre="Les 7 albums pour enfants",
+            titre_en="The 7 Picture Books",
             sous=f"{len(ab)} albums · 4 à 8 ans", sous_en=f"{len(ab)} picture books · Ages 4 to 8",
-            desc="Le deuil, l’anxiété, la colère, la séparation des parents, l’arrivée d’un bébé et la fratrie : six histoires tendres "
+            desc="Le deuil, l’anxiété, la colère, la séparation des parents, l’arrivée d’un bébé, la fratrie et la dépression d’un parent : sept histoires tendres "
                  "pour parler avec les 4 à 8 ans de ce qui est difficile, chacune avec 2 pages pour l’enfant et un guide pour "
                  "les adultes.",
-            desc_en="Grief, anxiety, anger, parental separation, a new baby and being a sibling: six tender stories for talking with children "
+            desc_en="Grief, anxiety, anger, parental separation, a new baby, being a sibling and a parent’s depression: seven tender stories for talking with children "
                     "ages 4 to 8 about what is hard, each with 2 pages for the child and a guide for adults.",
             fichiers=[], contient=ab)
     sp = [i["id"] for i in items if i["groupe"] == "Trousses spécialisées" and i["id"] not in HORS_16]

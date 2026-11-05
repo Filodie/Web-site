@@ -6370,6 +6370,27 @@
   "payhip_en": "83nJK"
  },
  {
+  "id": "album-couverture-eli",
+  "type": "album",
+  "groupe": "Albums pour enfants",
+  "titre": "Éli et la couverture grise",
+  "sous": "Album sur la dépression d’un parent · 4 à 8 ans · 25 pages",
+  "pv_pages": [
+   6,
+   14
+  ],
+  "desc": "Depuis l’arrivée de bébé Lou, une grande couverture grise pèse sur les épaules de Maman. Éli a beau tirer, elle ne bouge pas. Une histoire tendre pour expliquer la dépression d’un parent à un enfant, sans lui laisser la faute ni le travail de guérir, avec 2 pages pour l’enfant et un guide pour les adultes : questions page par page, mots à choisir, repères selon l’âge, quand demander de l’aide.",
+  "titre_en": "Eli and the Grey Blanket",
+  "sous_en": "Picture book on a parent’s depression · Ages 4 to 8 · 25 pages",
+  "desc_en": "Ever since baby Lou arrived, a big grey blanket has been weighing on Mommy’s shoulders. Eli pulls and pulls, but it won’t move. A tender story for explaining a parent’s depression to a child, without leaving them the blame or the job of making it better, with 2 pages for the child and a guide for adults: page-by-page questions, words to choose, age-based markers and when to ask for help.",
+  "fichiers": [
+   "Albums Filodie/Eli_et_la_couverture_grise.pdf"
+  ],
+  "prix": 9.0,
+  "payhip": "P3OHm",
+  "payhip_en": "P3OHm"
+ },
+ {
   "id": "bottin-regional",
   "type": "bottin",
   "groupe": "Bottin régional",
@@ -7204,12 +7225,12 @@
   "id": "lot-albums",
   "type": "lot_albums",
   "groupe": "Lots",
-  "titre": "Les 6 albums pour enfants",
-  "titre_en": "The 6 Picture Books",
-  "sous": "6 albums · 4 à 8 ans",
-  "sous_en": "6 picture books · Ages 4 to 8",
-  "desc": "Le deuil, l’anxiété, la colère, la séparation des parents, l’arrivée d’un bébé et la fratrie : six histoires tendres pour parler avec les 4 à 8 ans de ce qui est difficile, chacune avec 2 pages pour l’enfant et un guide pour les adultes.",
-  "desc_en": "Grief, anxiety, anger, parental separation, a new baby and being a sibling: six tender stories for talking with children ages 4 to 8 about what is hard, each with 2 pages for the child and a guide for adults.",
+  "titre": "Les 7 albums pour enfants",
+  "titre_en": "The 7 Picture Books",
+  "sous": "7 albums · 4 à 8 ans",
+  "sous_en": "7 picture books · Ages 4 to 8",
+  "desc": "Le deuil, l’anxiété, la colère, la séparation des parents, l’arrivée d’un bébé, la fratrie et la dépression d’un parent : sept histoires tendres pour parler avec les 4 à 8 ans de ce qui est difficile, chacune avec 2 pages pour l’enfant et un guide pour les adultes.",
+  "desc_en": "Grief, anxiety, anger, parental separation, a new baby, being a sibling and a parent’s depression: seven tender stories for talking with children ages 4 to 8 about what is hard, each with 2 pages for the child and a guide for adults.",
   "fichiers": [],
   "contient": [
    "album-caillou-nilou",
@@ -7217,12 +7238,13 @@
    "album-marmite-lina",
    "album-pont-zelie",
    "album-lanterne-milo",
-   "album-tournesol-romy"
+   "album-tournesol-romy",
+   "album-couverture-eli"
   ],
   "prix": 25.0,
   "payhip": "w8NxM",
   "payhip_en": "w8NxM",
-  "valeur": 54.0
+  "valeur": 63.0
  },
  {
   "id": "lot-specialisees",
@@ -8104,6 +8126,7 @@
    "album-pont-zelie",
    "album-lanterne-milo",
    "album-tournesol-romy",
+   "album-couverture-eli",
    "bottin-regional",
    "trousse-enseignants-tes",
    "trousse-apprentissage-langage"
@@ -8113,7 +8136,7 @@
   "payhip_en": "dZ02M",
   "sous_en": "November 2026 edition",
   "titre_en": "All of Filodie: November 2026 edition",
-  "valeur": 2104.0
+  "valeur": 2113.0
  },
  {
   "id": "trousse-enseignants-tes",
