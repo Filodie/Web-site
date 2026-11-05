@@ -18,6 +18,7 @@ import fitz
 
 from conseils import ARTICLES
 import trousse_etudiante as TE
+import categories as CA
 import formulaires as FO
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -655,7 +656,7 @@ L = {
                 ("Livraison immédiate", "Vos fichiers sont téléchargeables dès le paiement, et le lien vous est aussi envoyé par courriel.")],
         "shop_t": "Boutique", "shop_p": "Chaque achat inclut la version française et la version anglaise. Cahiers à 3 $, trousses à 7 $, et des lots jusqu’à 90 % moins chers. Prix en dollars canadiens, téléchargement immédiat après le paiement.",
         "search": "Rechercher un outil…", "all": "Tout",
-        "nv": "Nouveau", "nv_chip": "Nouveautés du mois", "pa_chip": "Pour les parents",
+        "nv": "Nouveau", "nv_chip": "Nouveautés du mois", "cat_t": "Par sujet", "fmt_t": "Par format", "cat_voir": "Voir les catégories", "all_cat": "Tous les sujets",
         "types": {"trousse": "Trousses", "edition": "Éditions", "cahier": "Cahiers visuels", "affiches": "Affiches", "jeux": "Jeux", "routines": "Routines", "detective": "Détective", "gratuit": "Gratuit", "livre": "Grand livre", "album": "Albums",
                   "bottin": "Bottin", "lot": "Lots"},
         "buy": "Acheter", "cart": "Ajouter au panier", "direct": "ou acheter maintenant", "lot": "Acheter le lot", "lotnote": "Paiement séparé du panier", "soon": "Bientôt disponible", "free": "Gratuit", "get": "Obtenir", "details": "Détails", "cahier_nb": " · Couleur + version noir et blanc à colorier",
@@ -699,7 +700,7 @@ L = {
                 ("Instant delivery", "Your files can be downloaded right after payment, and the link is also emailed to you.")],
         "shop_t": "Shop", "shop_p": "Every purchase includes both the English and French versions. Workbooks at $3, toolkits at $7, and bundles up to 90% off. Prices in Canadian dollars, instant download after payment.",
         "search": "Search for a tool…", "all": "All",
-        "nv": "New", "nv_chip": "New this month", "pa_chip": "For parents",
+        "nv": "New", "nv_chip": "New this month", "cat_t": "By topic", "fmt_t": "By format", "cat_voir": "See the categories", "all_cat": "All topics",
         "types": {"trousse": "Toolkits", "edition": "Editions", "cahier": "Visual workbooks", "affiches": "Posters", "jeux": "Games", "routines": "Routines", "detective": "Detective", "gratuit": "Free", "livre": "Handbook", "album": "Picture books",
                   "bottin": "Directory", "lot": "Bundles"},
         "buy": "Buy", "cart": "Add to cart", "direct": "or buy now", "lot": "Buy the bundle", "lotnote": "Paid separately from the cart", "soon": "Coming soon", "free": "Free", "get": "Get it", "details": "Details", "cahier_nb": " · Colour + black-and-white colouring version",
@@ -793,12 +794,33 @@ def bouton_payhip(code, payant, lang, libelle_gratuit=None, cls="btn", lot=False
             f'href="https://payhip.com/b/{code}">{lib}</a>')
 
 
+CAT_COMPTES = {}                                    # nombre de produits par catégorie, rempli au début de la construction
+
+
+def parents_de(i):
+    return i["type"] in PARENTS_TYPES or i["id"] in PARENTS_IDS
+
+
+def menu_boutique(lang, href, label, courant):
+    """« Boutique » dans le menu du haut : le lien, plus le panneau déroulant des catégories et des formats."""
+    t = L[lang]
+    fr = lang == "fr"
+    sujets = "".join(f'<a href="{href}#{c[0]}">{c[1 if fr else 2]}<span>{CAT_COMPTES.get(c[0], 0)}</span></a>'
+                     for c in CA.CATEGORIES)
+    formats = "".join(f'<a href="{href}#{k}">{v}</a>' for k, v in [("nv", t["nv_chip"])] + list(t["types"].items()))
+    return (f'<div class="navcat"><a href="{href}"{" aria-current=page" if courant else ""}>{label}</a>'
+            f'<button class="caret" type="button" aria-expanded="false" aria-label="{t["cat_voir"]}">▾</button>'
+            f'<div class="mega"><div class="megain"><div class="megasuj"><p>{t["cat_t"]}</p><div>{sujets}</div></div>'
+            f'<div class="megafmt"><p>{t["fmt_t"]}</p><div>{formats}</div></div></div></div></div>')
+
+
 def page(lang, name, title, body, desc="", scripts=""):
     t = L[lang]
     b = t["base"]
     other = (PAIRS if lang == "fr" else PAIRS_EN)[name]
     other_href = ("en/" if lang == "fr" else "../") + other
-    nav = "".join(f'<a href="{h}"{" aria-current=page" if h == name else ""}>{l}</a>' for h, l in t["nav"])
+    nav = "".join(menu_boutique(lang, h, l, h == name) if h == t["nav"][1][0]
+                  else f'<a href="{h}"{" aria-current=page" if h == name else ""}>{l}</a>' for h, l in t["nav"])
     legal = " · ".join(f'<a href="{h}">{l}</a>' for h, l in t["footer_legal"])
     scripts = PAYHIP_JS + "\n" + scripts.replace(PAYHIP_SRC + "\n", "").replace(PAYHIP_SRC, "")
     panier = (f'<a class="panier payhip-open-cart-button" href="https://payhip.com/cart">'
@@ -846,6 +868,14 @@ ml('account', '2673065');</script>
 <script>
 document.querySelector('.menu').addEventListener('click',e=>{{const n=document.getElementById('nav');
 const o=n.classList.toggle('open');e.currentTarget.setAttribute('aria-expanded',o)}});
+(()=>{{const c=document.querySelector('.navcat'),b=c.querySelector('.caret');
+const ouvrir=o=>{{c.classList.toggle('ouvert',o);b.setAttribute('aria-expanded',o)}};
+b.addEventListener('click',()=>ouvrir(!c.classList.contains('ouvert')));
+c.querySelector('.mega').addEventListener('click',e=>{{if(!e.target.closest('a'))return;ouvrir(false);c.classList.add('ferme');
+document.activeElement.blur();document.getElementById('nav').classList.remove('open');document.querySelector('.menu').setAttribute('aria-expanded',false)}});
+c.addEventListener('mouseleave',()=>c.classList.remove('ferme'));
+document.addEventListener('click',e=>{{if(!c.contains(e.target))ouvrir(false)}});
+document.addEventListener('keydown',e=>{{if(e.key==='Escape')ouvrir(false)}})}})();
 </script>
 {scripts}
 </body>
@@ -1195,9 +1225,10 @@ def shop(lang, items):
             "a": [f"{t['base']}img/{pl}/apercu/{a}.jpg{iv(pl, 'apercu/' + a)}"
                   for pl in ([lang] if i.get("pv_" + lang) else ["fr"]) for a in i.get("pv_" + pl, [])], "c": i.get("code", ""), "v": i.get("valeur", 0),
             "da": AJOUTS.get(i["id"], ""),
-            "pa": 1 if (i["type"] in PARENTS_TYPES or i["id"] in PARENTS_IDS) else 0,
+            "ca": CA.categories_de(i, parents_de(i)),
         })
-    chips = (f'<button data-t="nv">{t["nv_chip"]}</button><button data-t="pa">{t["pa_chip"]}</button>'
+    catchips = "".join(f'<button data-c="{c[0]}">{c[1 if lang == "fr" else 2]}</button>' for c in CA.CATEGORIES)
+    chips = (f'<button data-t="nv">{t["nv_chip"]}</button>'
              + "".join(f'<button data-t="{k}">{v}</button>' for k, v in t["types"].items()))
     labels = json.dumps({k: t[k] for k in ("nv", "buy", "cart", "direct", "lot", "lotnote", "soon", "free", "get", "details", "count", "value", "save", "vsep", "pct", "preview", "close", "pvnote")}, ensure_ascii=False)
     body = f"""
@@ -1206,8 +1237,9 @@ def shop(lang, items):
   <p class="lead">{t['shop_p']}</p>
   <div class="filters">
     <input id="q" type="search" placeholder="{t['search']}" aria-label="{t['search']}">
-    <div class="chips"><button data-t="" class="on">{t['all']}</button>{chips}</div>
     <select id="g" aria-label="Groupe"></select>
+    <div class="fbloc"><p>{t['cat_t']}</p><div class="catchips"><button data-c="" class="on">{t['all_cat']}</button>{catchips}</div></div>
+    <div class="fbloc"><p>{t['fmt_t']}</p><div class="chips"><button data-t="" class="on">{t['all']}</button>{chips}</div></div>
   </div>
   <p id="n" class="muted"></p>
   <div id="list" class="products"></div>
@@ -1219,12 +1251,25 @@ const P={json.dumps(data, ensure_ascii=False)};
 const T={labels};
 const LP={json.dumps(sorted(LOTS_PANIER))};
 const fmt=new Intl.NumberFormat('{t['lang']}',{{style:'currency',currency:'CAD'}});
-let type=(location.hash||'').slice(1), grp='', q='';
+const NC={json.dumps({c[0]: c[1 if lang == "fr" else 2] for c in CA.CATEGORIES}, ensure_ascii=False)};
+const VED={json.dumps({c[0]: c[3] for c in CA.CATEGORIES}, ensure_ascii=False)};
+let type='', cat='', grp='', q='';
 const MOIS=new Date().toISOString().slice(0,7);P.forEach(p=>p.nv=!!p.da&&p.da.slice(0,7)===MOIS);
-const okt=p=>!type||(type==='nv'?p.nv:type==='pa'?p.pa:p.t===type);
-if(!P.some(p=>p.nv)){{const b=document.querySelector('.chips [data-t="nv"]');if(b)b.remove();if(type==='nv')type=''}}
+const okc=p=>!cat||p.ca.includes(cat);
+const okf=(p,f)=>!f||(f==='nv'?p.nv:p.t===f);
+const okt=p=>okc(p)&&okf(p,type);
+if(!P.some(p=>p.nv)){{const b=document.querySelector('.chips [data-t="nv"]');if(b)b.remove()}}
+const tb=[...document.querySelectorAll('.chips button')], cb=[...document.querySelectorAll('.catchips button')];
+function lire(){{const h=decodeURIComponent((location.hash||'').slice(1)).split('/');
+ cat=h.find(x=>NC[x])||'';type=h.find(x=>x&&tb.some(b=>b.dataset.t===x))||''}}
+function sync(){{tb.forEach(b=>{{const f=b.dataset.t;b.style.display=!f||P.some(p=>okc(p)&&okf(p,f))?'':'none'}});
+ if(type&&!P.some(okt))type='';
+ tb.forEach(b=>b.classList.toggle('on',b.dataset.t===type));cb.forEach(b=>b.classList.toggle('on',b.dataset.c===cat));
+ [tb,cb].forEach(l=>{{const o=l.find(b=>b.classList.contains('on'));if(o)o.parentNode.scrollLeft+=o.getBoundingClientRect().left-o.parentNode.getBoundingClientRect().left-16}})}}
+function hash(){{const h=[cat,type].filter(Boolean).join('/');history.replaceState(null,'',h?'#'+h:location.pathname)}}
 const list=document.getElementById('list'), sel=document.getElementById('g');
 function esc(s){{return s.replace(/[&<>"]/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}}[c]))}}
+function choisir(){{grp='';sync();hash();groups();draw()}}
 function groups(){{const gs=[...new Set(P.filter(okt).map(p=>p.g))];
  sel.innerHTML='<option value="">{t['all']}</option>'+gs.map(g=>'<option>'+esc(g)+'</option>').join('');sel.value=grp}}
 function buybtn(p){{if(p.k&&p.id.startsWith('lot-')&&!LP.includes(p.id))return '<span class="acts"><a class="btn" href="https://payhip.com/b/'+p.k+'" target="_blank" rel="noopener">'+T.lot+'</a><small class="lotnote">'+T.lotnote+'</small></span>';
@@ -1239,11 +1284,13 @@ function card(p,i){{
   +'<details><summary>'+T.details+'</summary><p>'+esc(p.d)+'</p></details>'+(p.a.length?'<button class="apercu" data-pv="'+P.indexOf(p)+'">👁 '+T.preview+'</button>':'')+'<div class="buy"><strong>'+price+'</strong>'+btn+'</div></div></article>'}}
 function draw(){{const w=q.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');
  const r=P.filter(p=>okt(p)&&(!grp||p.g===grp)&&(!w||(p.n+' '+p.s+' '+p.d+' '+p.g+' '+p.c).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').includes(w)));
- if(type==='pa'){{const rk=p=>p.id==='trousse-parents'?0:(p.id==='edition-edition_famille'||p.t==='routines'||p.id==='lot-routines')?1:p.t==='cahier'?3:2;r.sort((a,b)=>rk(a)-rk(b))}}
- document.getElementById('n').textContent=r.length+' '+T.count;list.innerHTML=r.map((p,i)=>card(p,i)).join('');
+ if(cat==='pa'){{const rk=p=>p.id==='trousse-parents'?0:(p.id==='edition-edition_famille'||p.t==='routines'||p.id==='lot-routines')?1:p.t==='cahier'?3:2;r.sort((a,b)=>rk(a)-rk(b))}}
+ else if(cat){{const rk=p=>p.id===VED[cat]?0:p.t==='trousse'?1:p.t==='lot'?2:p.t==='cahier'?4:3;r.sort((a,b)=>rk(a)-rk(b))}}
+ document.getElementById('n').textContent=r.length+' '+T.count+(cat?' · '+NC[cat]:'');list.innerHTML=r.map((p,i)=>card(p,i)).join('');
  {PAYHIP_REINIT}}}
-document.querySelectorAll('.chips button').forEach(b=>{{if(b.dataset.t===type){{document.querySelector('.chips .on').classList.remove('on');b.classList.add('on')}}
- b.onclick=()=>{{document.querySelector('.chips .on').classList.remove('on');b.classList.add('on');type=b.dataset.t;grp='';history.replaceState(null,'',type?'#'+type:location.pathname);groups();draw()}}}});
+tb.forEach(b=>b.onclick=()=>{{type=b.dataset.t;choisir()}});
+cb.forEach(b=>b.onclick=()=>{{cat=b.dataset.c;choisir()}});
+addEventListener('hashchange',()=>{{lire();choisir();document.querySelector('.filters').scrollIntoView()}});
 const dlg=document.getElementById('pv');
 list.addEventListener('click',e=>{{const b=e.target.closest('[data-pv]');if(!b)return;const p=P[+b.dataset.pv];
  document.getElementById('pvt').textContent=p.n;document.getElementById('pvn').textContent=T.pvnote;
@@ -1252,7 +1299,7 @@ list.addEventListener('click',e=>{{const b=e.target.closest('[data-pv]');if(!b)r
  dlg.showModal();{PAYHIP_REINIT}}});
 dlg.querySelector('.pvx').onclick=()=>dlg.close();dlg.addEventListener('click',e=>{{if(e.target===dlg)dlg.close()}});
 sel.onchange=()=>{{grp=sel.value;draw()}};document.getElementById('q').oninput=e=>{{q=e.target.value;draw()}};
-groups();draw();
+lire();sync();groups();draw();
 </script>"""
     if any(d["k"] for d in data):
         js = '<script src="https://payhip.com/payhip.js"></script>\n' + js
@@ -1603,7 +1650,18 @@ em{font-family:Fraunces,Georgia,serif;font-style:italic;color:var(--terra)}
 nav{display:flex;gap:18px;align-items:center}nav a{color:var(--ink);text-decoration:none;font-weight:700;font-size:.95rem}
 nav a[aria-current]{color:var(--terra)}nav .panier{font-weight:700;color:var(--terra)!important;white-space:nowrap}nav .lang{border:1.5px solid var(--ink);border-radius:20px;padding:2px 10px}
 .menu{display:none;background:none;border:0;font-size:1.6rem;color:var(--ink)}
-@media (max-width:820px){.menu{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--cream);flex-direction:column;padding:16px;border-bottom:1px solid var(--sand)}nav.open{display:flex}}
+.navcat{position:relative;display:flex;align-items:center;gap:2px}.caret{background:none;border:0;padding:2px 4px;font-size:.85rem;color:var(--ink);cursor:pointer}
+.mega{display:none;position:absolute;top:100%;left:-16px;padding-top:12px;z-index:20}.navcat.ouvert .mega{display:block}
+@media (hover:hover) and (min-width:821px){.navcat:not(.ferme):hover .mega{display:block}}
+@media (min-width:821px) and (max-width:1120px){.bar{position:relative}.navcat{position:static}.mega{left:0;right:0;top:calc(100% - 14px);padding-top:20px}.megain{margin:0 auto}}
+.megain{display:flex;gap:26px;background:var(--bg);border:1px solid var(--sand);border-radius:14px;padding:18px 20px;box-shadow:0 12px 30px rgba(31,59,77,.16);width:max-content;max-width:calc(100vw - 32px)}
+.mega p{margin:0 0 8px;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--gray)}
+.megasuj>div{display:grid;grid-template-columns:repeat(2,minmax(0,250px));gap:0 16px}.megafmt{border-left:1px solid var(--sand);padding-left:22px}
+.mega a{display:flex;justify-content:space-between;gap:12px;padding:5px 8px;border-radius:8px;font-size:.9rem;font-weight:700;white-space:nowrap}.mega a:hover,.mega a:focus-visible{background:var(--cream);color:var(--terra)}
+.mega a span{font-weight:400;color:var(--gray)}
+@media (max-width:820px){.menu{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;background:var(--cream);flex-direction:column;align-items:center;padding:16px;border-bottom:1px solid var(--sand);max-height:calc(100vh - 64px);overflow-y:auto}nav.open{display:flex}
+.navcat{flex-wrap:wrap;justify-content:center;width:100%}.caret{font-size:1.1rem;padding:6px 14px}.mega{position:static;padding-top:8px;width:100%}.navcat.ouvert .mega{display:block}
+.megain{flex-direction:column;gap:14px;width:auto;max-width:none;box-shadow:none;padding:14px}.megasuj>div{grid-template-columns:1fr}.megafmt{border-left:0;padding-left:0}.megafmt>div{display:grid;grid-template-columns:1fr 1fr}.mega a{white-space:normal}}
 .hero{background:var(--cream);padding:40px 0 56px;position:relative;overflow:hidden}@media(max-width:640px){.hero{padding:22px 0 34px}.hero .ctas{margin-top:14px}}
 .thread{position:absolute;left:0;right:0;top:0;width:100%;height:90px;color:var(--terra);opacity:.9}
 .kicker{margin-top:60px;color:var(--sage);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem}
@@ -1622,8 +1680,10 @@ nav a[aria-current]{color:var(--terra)}nav .panier{font-weight:700;color:var(--t
 .shop .filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:14px 0}
 .filters input,.filters select{font:inherit;padding:9px 14px;border-radius:24px;border:1.5px solid var(--sand);background:var(--card);color:var(--ink)}
 .filters input{flex:1 1 260px}.chips{display:flex;gap:6px;flex-wrap:wrap}
-.chips button{font:inherit;font-weight:700;font-size:.9rem;padding:7px 14px;border-radius:20px;border:1.5px solid var(--sand);background:var(--card);color:var(--ink);cursor:pointer}
-.chips button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.chips button,.catchips button{font:inherit;font-weight:700;font-size:.9rem;padding:7px 14px;border-radius:20px;border:1.5px solid var(--sand);background:var(--card);color:var(--ink);cursor:pointer}
+.chips button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}.catchips button.on{background:var(--terra);color:#fff;border-color:var(--terra)}
+.catchips{display:flex;gap:6px;flex-wrap:wrap}.fbloc{flex:1 1 100%;min-width:0;max-width:100%}.fbloc p{margin:0 0 6px;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--gray)}.filters{scroll-margin-top:84px}
+@media (max-width:560px){.catchips,.chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.catchips button,.chips button{flex:none}}
 .products{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px;margin-bottom:60px}
 @media (max-width:560px){.products{grid-template-columns:1fr 1fr;gap:10px}.pb{padding:8px 9px}.prod h3{font-size:.95rem}.buy{flex-direction:column;align-items:flex-start;gap:6px}}
 .prod{display:flex;flex-direction:column}.prod img{width:100%;height:auto;aspect-ratio:612/792;object-fit:cover;border-bottom:1px solid var(--sand)}
@@ -1733,6 +1793,10 @@ def build():
         im = Image.open(lg).convert("RGB")
         im.resize((480, int(im.height * 480 / im.width)), Image.LANCZOS).save(os.path.join(PUB, "img", "courriel-logo.png"),
                                                                               optimize=True)
+    CA.verifier(items, parents_de)
+    for i in items:
+        for c in CA.categories_de(i, parents_de(i)):
+            CAT_COMPTES[c] = CAT_COMPTES.get(c, 0) + 1
     for lang, d in (("fr", PUB), ("en", os.path.join(PUB, "en"))):
         open(os.path.join(d, "index.html"), "w").write(home(lang))
         open(os.path.join(d, "boutique.html" if lang == "fr" else "shop.html"), "w").write(shop(lang, items))
