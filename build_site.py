@@ -74,7 +74,7 @@ HORS_16 = ("trousse-deficience_physique", "trousse-cadre_legal", "trousse-entret
            "trousse-reduction_mefaits", "trousse-adolescence",
            "trousse-securite_travail", "trousse-systemique_famille",
            "trousse-animer_groupe", "trousse-tcc_quotidien",
-           "trousse-pouvoir_agir", "trousse-auteurs_infractions_sexuelles", "trousse-soutenir_deuil")   # trousses spécialisées hors lot des 16
+           "trousse-pouvoir_agir", "trousse-auteurs_infractions_sexuelles", "trousse-soutenir_deuil", "trousse-fratrie")   # trousses spécialisées hors lot des 16
 ECH_ID = "trousse-decouverte_etudiant_tes"          # échantillon étudiant gratuit (hors lots)
 # Date de mise en vente (AAAA-MM-JJ) : la boutique affiche « Nouveau » pendant le mois de la mise en vente (comparaison
 # faite dans le navigateur, donc l’étiquette disparaît seule le 1er du mois suivant). Ajouter chaque nouveau produit ici.
@@ -94,6 +94,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
           "lot-parents": "2026-10-27", "livre-glossaire-clinique": "2026-11-04",
           "trousse-soutenir_deuil": "2026-11-04", "album-caillou-nilou": "2026-11-04",
           "album-nuage-teo": "2026-11-04", "album-marmite-lina": "2026-11-04", "album-pont-zelie": "2026-11-04", "album-lanterne-milo": "2026-11-04",
+          "trousse-fratrie": "2026-11-05", "album-tournesol-romy": "2026-11-05",
           **{k: "2026-11-04" for k in ("trousse-cerveau_developpement", "trousse-cerveau_tsa", "trousse-cerveau_tdah",
                                        "trousse-cerveau_di", "trousse-cerveau_tdl", "trousse-cerveau_trauma",
                                        "trousse-cerveau_anxiete", "trousse-cerveau_tnc", "lot-14-le-cerveau-expliqué",
@@ -170,7 +171,8 @@ def catalogue():
     from contenu_pouvoir_agir import PA                   # 27 oct. 2026, hors lot des 16
     from contenu_auteurs_infractions_sexuelles import AI  # 28 oct. 2026, hors lot des 16
     from contenu_soutenir_deuil import SP                 # 4 nov. 2026, hors lot des 16
-    for t in AGES + TROUBLES + NOUVEAUX + [DP, CL, EM, SM, AT, RD, AD, SPI, SY, AG, TC, PA, AI, SP]:
+    from contenu_fratrie import FRATRIE                   # 5 nov. 2026, hors lot des 16
+    for t in AGES + TROUBLES + NOUVEAUX + [DP, CL, EM, SM, AT, RD, AD, SPI, SY, AG, TC, PA, AI, SP, FRATRIE]:
         add(id="trousse-" + t["fichier"].lower(), type="trousse", groupe="Trousses spécialisées", titre=t["nom"],
             sous=f"{len(t['fiches'])} outils", desc=t["desc"],
             fichiers=[f"Trousses spécialisées/Trousse_Filodie_{t['fichier']}_2026.pdf"])
@@ -302,6 +304,18 @@ def catalogue():
                 "2 pages for the child and a guide for adults: page-by-page questions, words to choose, age-based markers and "
                 "when to ask for help.",
         fichiers=["Albums Filodie/La_lanterne_de_Milo.pdf"])
+    add(id="album-tournesol-romy", type="album", groupe="Albums pour enfants", titre="Le tournesol de Romy",
+        sous="Album sur la fratrie · 4 à 8 ans · 25 pages", pv_pages=[6, 12],
+        desc="Le tournesol de Gabin a besoin d’un tuteur. Celui de Romy pousse tout seul, alors personne ne le regarde. Une "
+             "histoire tendre pour les frères et sœurs d’un enfant à besoins particuliers, qui parle de jalousie, de gêne, de "
+             "culpabilité et de leur place à eux, avec 2 pages pour l’enfant et un guide pour les adultes : questions page par "
+             "page, mots à choisir, repères selon l’âge, quand demander de l’aide.",
+        titre_en="Romy’s Sunflower", sous_en="Picture book for siblings · Ages 4 to 8 · 25 pages",
+        desc_en="Gabin’s sunflower needs a stake. Romy’s grows all by itself, so no one looks at it. A tender story for the "
+                "brothers and sisters of a child with special needs, about jealousy, embarrassment, guilt and having a place of "
+                "their own, with 2 pages for the child and a guide for adults: page-by-page questions, words to choose, "
+                "age-based markers and when to ask for help.",
+        fichiers=["Albums Filodie/Le_tournesol_de_Romy.pdf"])
     add(id="bottin-regional", type="bottin", groupe="Bottin régional", titre="Bottin régional : 17 régions du Québec",
         sous="Gratuit", desc="DPJ, centres de crise, CLSC, autisme, TDAH, déficience intellectuelle, proches, violence et "
                               "dépendances, région par région, avec les lignes provinciales classées par problématique.",
@@ -391,13 +405,13 @@ def catalogue():
             fichiers=[], contient=dt)
     ab = [i["id"] for i in items if i["type"] == "album"]
     if ab:
-        add(id="lot-albums", type="lot_albums", groupe="Lots", titre="Les 5 albums pour enfants",
-            titre_en="The 5 Picture Books",
+        add(id="lot-albums", type="lot_albums", groupe="Lots", titre="Les 6 albums pour enfants",
+            titre_en="The 6 Picture Books",
             sous=f"{len(ab)} albums · 4 à 8 ans", sous_en=f"{len(ab)} picture books · Ages 4 to 8",
-            desc="Le deuil, l’anxiété, la colère, la séparation des parents et l’arrivée d’un bébé : cinq histoires tendres "
+            desc="Le deuil, l’anxiété, la colère, la séparation des parents, l’arrivée d’un bébé et la fratrie : six histoires tendres "
                  "pour parler avec les 4 à 8 ans de ce qui est difficile, chacune avec 2 pages pour l’enfant et un guide pour "
                  "les adultes.",
-            desc_en="Grief, anxiety, anger, parental separation and a new baby: five tender stories for talking with children "
+            desc_en="Grief, anxiety, anger, parental separation, a new baby and being a sibling: six tender stories for talking with children "
                     "ages 4 to 8 about what is hard, each with 2 pages for the child and a guide for adults.",
             fichiers=[], contient=ab)
     sp = [i["id"] for i in items if i["groupe"] == "Trousses spécialisées" and i["id"] not in HORS_16]

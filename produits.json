@@ -434,6 +434,20 @@
   "payhip_en": "xkVP6"
  },
  {
+  "id": "trousse-fratrie",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "La fratrie d’un enfant à besoins particuliers",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les parents et les personnes intervenantes qui accompagnent les frères et sœurs d’un enfant ayant un handicap, un diagnostic ou une maladie chronique : émotions, explications selon l’âge, questions gênantes, moment exclusif, équité, responsabilités, sécurité, regards des autres, signaux d’alerte et avenir.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Fratrie_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "M0Qh2",
+  "payhip_en": "M0Qh2"
+ },
+ {
   "id": "trousse-choix_eclaire",
   "type": "trousse",
   "groupe": "Outils d’intervention",
@@ -6307,6 +6321,27 @@
   "payhip_en": "027BS"
  },
  {
+  "id": "album-tournesol-romy",
+  "type": "album",
+  "groupe": "Albums pour enfants",
+  "titre": "Le tournesol de Romy",
+  "sous": "Album sur la fratrie · 4 à 8 ans · 25 pages",
+  "pv_pages": [
+   6,
+   12
+  ],
+  "desc": "Le tournesol de Gabin a besoin d’un tuteur. Celui de Romy pousse tout seul, alors personne ne le regarde. Une histoire tendre pour les frères et sœurs d’un enfant à besoins particuliers, qui parle de jalousie, de gêne, de culpabilité et de leur place à eux, avec 2 pages pour l’enfant et un guide pour les adultes : questions page par page, mots à choisir, repères selon l’âge, quand demander de l’aide.",
+  "titre_en": "Romy’s Sunflower",
+  "sous_en": "Picture book for siblings · Ages 4 to 8 · 25 pages",
+  "desc_en": "Gabin’s sunflower needs a stake. Romy’s grows all by itself, so no one looks at it. A tender story for the brothers and sisters of a child with special needs, about jealousy, embarrassment, guilt and having a place of their own, with 2 pages for the child and a guide for adults: page-by-page questions, words to choose, age-based markers and when to ask for help.",
+  "fichiers": [
+   "Albums Filodie/Le_tournesol_de_Romy.pdf"
+  ],
+  "prix": 9.0,
+  "payhip": "83nJK",
+  "payhip_en": "83nJK"
+ },
+ {
   "id": "bottin-regional",
   "type": "bottin",
   "groupe": "Bottin régional",
@@ -7141,24 +7176,25 @@
   "id": "lot-albums",
   "type": "lot_albums",
   "groupe": "Lots",
-  "titre": "Les 5 albums pour enfants",
-  "titre_en": "The 5 Picture Books",
-  "sous": "5 albums · 4 à 8 ans",
-  "sous_en": "5 picture books · Ages 4 to 8",
-  "desc": "Le deuil, l’anxiété, la colère, la séparation des parents et l’arrivée d’un bébé : cinq histoires tendres pour parler avec les 4 à 8 ans de ce qui est difficile, chacune avec 2 pages pour l’enfant et un guide pour les adultes.",
-  "desc_en": "Grief, anxiety, anger, parental separation and a new baby: five tender stories for talking with children ages 4 to 8 about what is hard, each with 2 pages for the child and a guide for adults.",
+  "titre": "Les 6 albums pour enfants",
+  "titre_en": "The 6 Picture Books",
+  "sous": "6 albums · 4 à 8 ans",
+  "sous_en": "6 picture books · Ages 4 to 8",
+  "desc": "Le deuil, l’anxiété, la colère, la séparation des parents, l’arrivée d’un bébé et la fratrie : six histoires tendres pour parler avec les 4 à 8 ans de ce qui est difficile, chacune avec 2 pages pour l’enfant et un guide pour les adultes.",
+  "desc_en": "Grief, anxiety, anger, parental separation, a new baby and being a sibling: six tender stories for talking with children ages 4 to 8 about what is hard, each with 2 pages for the child and a guide for adults.",
   "fichiers": [],
   "contient": [
    "album-caillou-nilou",
    "album-nuage-teo",
    "album-marmite-lina",
    "album-pont-zelie",
-   "album-lanterne-milo"
+   "album-lanterne-milo",
+   "album-tournesol-romy"
   ],
   "prix": 25.0,
   "payhip": "w8NxM",
   "payhip_en": "w8NxM",
-  "valeur": 45.0
+  "valeur": 54.0
  },
  {
   "id": "lot-specialisees",
@@ -7425,11 +7461,11 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses : édition novembre 2026",
-  "sous": "Édition novembre 2026 · 182 trousses et 5 éditions",
+  "sous": "Édition novembre 2026 · 183 trousses et 5 éditions",
   "prix": 75.0,
-  "sous_en": "November 2026 edition · 182 toolkits and 5 editions",
-  "desc": "La trousse principale, les 30 trousses spécialisées, les 126 trousses de la Collection, les 23 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
-  "desc_en": "The main toolkit, the 30 specialized toolkits, the 126 Collection toolkits, the 23 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
+  "sous_en": "November 2026 edition · 183 toolkits and 5 editions",
+  "desc": "La trousse principale, les 31 trousses spécialisées, les 126 trousses de la Collection, les 23 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
+  "desc_en": "The main toolkit, the 31 specialized toolkits, the 126 Collection toolkits, the 23 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7463,6 +7499,7 @@
    "trousse-pouvoir_agir",
    "trousse-auteurs_infractions_sexuelles",
    "trousse-soutenir_deuil",
+   "trousse-fratrie",
    "trousse-choix_eclaire",
    "trousse-objectif",
    "trousse-procrastination",
@@ -7623,7 +7660,7 @@
   "payhip": "cywQA",
   "payhip_en": "cywQA",
   "titre_en": "All the toolkits: November 2026 edition",
-  "valeur": 1314.0
+  "valeur": 1321.0
  },
  {
   "id": "lot-mega",
@@ -7631,8 +7668,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie : édition novembre 2026",
   "sous": "Édition novembre 2026",
-  "desc": "Tout le catalogue payant de Filodie : les 182 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
-  "desc_en": "Filodie’s entire paid catalogue: all 182 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
+  "desc": "Tout le catalogue payant de Filodie : les 183 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
+  "desc_en": "Filodie’s entire paid catalogue: all 183 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7666,6 +7703,7 @@
    "trousse-pouvoir_agir",
    "trousse-auteurs_infractions_sexuelles",
    "trousse-soutenir_deuil",
+   "trousse-fratrie",
    "trousse-choix_eclaire",
    "trousse-objectif",
    "trousse-procrastination",
@@ -8033,6 +8071,7 @@
    "album-marmite-lina",
    "album-pont-zelie",
    "album-lanterne-milo",
+   "album-tournesol-romy",
    "bottin-regional",
    "trousse-enseignants-tes",
    "trousse-apprentissage-langage"
@@ -8042,7 +8081,7 @@
   "payhip_en": "dZ02M",
   "sous_en": "November 2026 edition",
   "titre_en": "All of Filodie: November 2026 edition",
-  "valeur": 2074.0
+  "valeur": 2090.0
  },
  {
   "id": "trousse-enseignants-tes",

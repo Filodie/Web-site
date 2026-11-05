@@ -57,11 +57,11 @@ _HISTOIRES = _num("vsoc", *range(11, 28))
 _ROUTINES = _ids("routines-rtn-", *"abcdef") + ["lot-routines"]
 
 AJOUTS_CAT = {
-    "tsa": _t("tsa", "diagnostic_tsa", "adultes_autistes", "cerveau_tsa", "formation_tsa", "sexualite_adaptee", "pictogrammes", "histoires_sociales")
+    "tsa": _t("tsa", "fratrie", "diagnostic_tsa", "adultes_autistes", "cerveau_tsa", "formation_tsa", "sexualite_adaptee", "pictogrammes", "histoires_sociales")
            + ["lot-cahiers-tsa", "affiches-aff-e"] + _ROUTINES + _HISTOIRES + _num("vsoc", 4, 6, 7, 8),
     "tdah": _t("tdah", "diagnostic_tdah", "cerveau_tdah", "impulsivite", "routines_et_organisation_scolaire", "procrastination")
             + ["lot-cahiers-tdah", "routines-rtn-d", "affiches-aff-e"] + _num("vsoc", 2, 19),
-    "di": _t("deficience_intellectuelle", "diagnostic_di", "dims", "cerveau_di", "sexualite_adaptee", "integration_socioprofessionnelle",
+    "di": _t("deficience_intellectuelle", "fratrie", "diagnostic_di", "dims", "cerveau_di", "sexualite_adaptee", "integration_socioprofessionnelle",
              "readaptation_foyer", "pictogrammes", "budget")
           + ["lot-cahiers-déficience-intellectuelle"] + _ROUTINES,
     "langage": _t("trouble_du_langage", "diagnostic_tdl", "cerveau_tdl", "soutien_langagier_primaire", "soutien_langagier_secondaire",
@@ -99,7 +99,7 @@ AJOUTS_CAT = {
              + _num("vtsa", 16),
     "petite": _t("petite_enfance_0-5_ans", "educatrices_cpe", "direction_garderie", "renforcement_r05", "attachement", "motricite_fine",
                  "parcours_moteur", "cahier_a_colorier", "jeux_a_imprimer")
-              + ["lot-albums", "lot-6-cahiers-thématiques"] + _num("vcomp", 37),
+              + ["lot-albums", "album-tournesol-romy", "lot-6-cahiers-thématiques"] + _num("vcomp", 37),
     "ecole": _t("gestion_de_classe", "routines_et_organisation_scolaire", "soutien_langagier_primaire", "soutien_langagier_secondaire",
                 "pack_rentree_tes_primaire", "peh", "service_de_garde_scolaire", "nouveaux_arrivants", "troubles_apprentissage",
                 "secondaire_12-17_ans", "orthopedagogie")
@@ -120,7 +120,7 @@ AJOUTS_CAT = {
            + ["grand-livre", "livre-glossaire-clinique", "bottin-regional", "lot-3-professions", "lot-4-professions-et-pratique",
               "lot-10-boîte-à-outils-du-psychoéducateur", "lot-14-le-cerveau-expliqué", "lot-5-jeux-et-activités",
               "lot-8-thèmes-complémentaires"] + _num("vcomp", 35, 36),
-    "pa": ["lot-16-après-le-diagnostic"],
+    "pa": ["lot-16-après-le-diagnostic", "trousse-fratrie", "album-tournesol-romy"],
     "etudes": _t("modele_pph") + ["grand-livre", "livre-glossaire-clinique", "lot-etudes-tes"],
 }
 
