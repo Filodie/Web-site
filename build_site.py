@@ -91,6 +91,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
           "trousse-auteurs_infractions_sexuelles": "2026-10-28",
           "lot-parents": "2026-10-27", "livre-glossaire-clinique": "2026-11-04",
           "trousse-soutenir_deuil": "2026-11-04", "album-caillou-nilou": "2026-11-04",
+          "album-nuage-teo": "2026-11-04", "album-marmite-lina": "2026-11-04", "album-pont-zelie": "2026-11-04", "album-lanterne-milo": "2026-11-04",
           **{k: "2026-11-04" for k in ("trousse-cerveau_developpement", "trousse-cerveau_tsa", "trousse-cerveau_tdah",
                                        "trousse-cerveau_di", "trousse-cerveau_tdl", "trousse-cerveau_trauma",
                                        "trousse-cerveau_anxiete", "trousse-cerveau_tnc", "lot-14-le-cerveau-expliqué",
@@ -252,6 +253,51 @@ def catalogue():
                 "death, welcoming grief and going on loving, with 2 pages for the child and a guide for adults: page-by-page "
                 "questions, words to avoid, age-based markers and when to ask for help.",
         fichiers=["Albums Filodie/Le_caillou_de_Nilou.pdf"])
+    add(id="album-nuage-teo", type="album", groupe="Albums pour enfants", titre="Le nuage de Téo",
+        sous="Album sur l’anxiété · 4 à 8 ans · 25 pages", pv_pages=[6, 13],
+        desc="Quand Téo apprend qu’il commence la natation, un petit nuage gris apparaît au-dessus de sa tête. Une histoire "
+             "rassurante pour comprendre l’anxiété, respirer, répondre au nuage et grimper l’escalier du courage, avec "
+             "2 pages pour l’enfant et un guide pour les adultes : questions page par page, mots à choisir, repères selon "
+             "l’âge, quand demander de l’aide.",
+        titre_en="Téo’s Cloud", sous_en="Picture book on anxiety · Ages 4 to 8 · 25 pages",
+        desc_en="When Téo learns he is starting swimming lessons, a little grey cloud appears above his head. A reassuring "
+                "story for understanding anxiety, breathing, answering the cloud and climbing the courage staircase, with "
+                "2 pages for the child and a guide for adults: page-by-page questions, words to choose, age-based markers "
+                "and when to ask for help.",
+        fichiers=["Albums Filodie/Le_nuage_de_Teo.pdf"])
+    add(id="album-marmite-lina", type="album", groupe="Albums pour enfants", titre="La marmite de Lina",
+        sous="Album sur la colère · 4 à 8 ans · 25 pages", pv_pages=[8, 11],
+        desc="Lina sent le feu monter dans son ventre, et BOUM, le couvercle saute ! Une histoire chaleureuse pour reconnaître "
+             "la colère, baisser le feu, trouver ses mots et réparer après une crise, avec 2 pages pour l’enfant et un guide "
+             "pour les adultes : questions page par page, mots à choisir, repères selon l’âge, quand demander de l’aide.",
+        titre_en="Lina’s Pot", sous_en="Picture book on anger · Ages 4 to 8 · 25 pages",
+        desc_en="Lina feels the heat rising in her tummy, and BOOM, the lid jumps! A warm story for recognizing anger, turning "
+                "down the heat, finding words and making things right after a meltdown, with 2 pages for the child and a guide "
+                "for adults: page-by-page questions, words to choose, age-based markers and when to ask for help.",
+        fichiers=["Albums Filodie/La_marmite_de_Lina.pdf"])
+    add(id="album-pont-zelie", type="album", groupe="Albums pour enfants", titre="Le pont de Zélie",
+        sous="Album sur la séparation des parents · 4 à 8 ans · 25 pages", pv_pages=[7, 9],
+        desc="Les parents de Zélie se séparent. Elle a maintenant deux maisons, une rivière entre les deux et un pont à "
+             "traverser. Une histoire rassurante pour redire que ce n’est pas sa faute et qu’elle peut aimer ses deux parents, "
+             "avec 2 pages pour l’enfant et un guide pour les adultes : questions page par page, mots à choisir, repères selon "
+             "l’âge, quand demander de l’aide.",
+        titre_en="Zélie’s Bridge", sous_en="Picture book on parental separation · Ages 4 to 8 · 25 pages",
+        desc_en="Zélie’s parents are separating. Now she has two homes, a river between them and a bridge to cross. A reassuring "
+                "story that says again it isn’t her fault and that she can love both parents, with 2 pages for the child and a "
+                "guide for adults: page-by-page questions, words to choose, age-based markers and when to ask for help.",
+        fichiers=["Albums Filodie/Le_pont_de_Zelie.pdf"])
+    add(id="album-lanterne-milo", type="album", groupe="Albums pour enfants", titre="La lanterne de Milo",
+        sous="Album sur l’arrivée d’un bébé · 4 à 8 ans · 25 pages", pv_pages=[6, 12],
+        desc="Un bébé s’en vient, et Milo se demande si on va l’aimer moins. Un soir, Papa lui montre qu’allumer une lanterne "
+             "avec une autre ne l’éteint pas. Une histoire lumineuse pour accueillir un bébé et garder sa place, avec 2 pages "
+             "pour l’enfant et un guide pour les adultes : questions page par page, mots à choisir, repères selon l’âge, quand "
+             "demander de l’aide.",
+        titre_en="Milo’s Lantern", sous_en="Picture book on a new baby · Ages 4 to 8 · 25 pages",
+        desc_en="A baby is coming, and Milo wonders if he will be loved less. One evening, Daddy shows him that lighting one "
+                "lantern from another doesn’t put it out. A bright story for welcoming a baby and keeping your place, with "
+                "2 pages for the child and a guide for adults: page-by-page questions, words to choose, age-based markers and "
+                "when to ask for help.",
+        fichiers=["Albums Filodie/La_lanterne_de_Milo.pdf"])
     add(id="bottin-regional", type="bottin", groupe="Bottin régional", titre="Bottin régional : 17 régions du Québec",
         sous="Gratuit", desc="DPJ, centres de crise, CLSC, autisme, TDAH, déficience intellectuelle, proches, violence et "
                               "dépendances, région par région, avec les lignes provinciales classées par problématique.",
