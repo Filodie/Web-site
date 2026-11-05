@@ -869,20 +869,18 @@ def album_nouveaute(lang):
 
 
 def outil_pph(lang):
-    """Bloc de l’accueil : l’outil MDH-PPH pour les collègues T.E.S. (demande de Mélodie, 4 nov. 2026), avec le glossaire en français."""
+    """Bloc de l’accueil pour les collègues T.E.S. (demande de Mélodie, 4 nov. 2026) : le glossaire en français, l’outil MDH-PPH en anglais."""
     fr = lang == "fr"
     items = {x["id"]: x for x in json.load(open(CAT, encoding="utf-8"))}
-    i = items.get("trousse-modele_pph")
+    i = items.get("livre-glossaire-clinique" if fr else "trousse-modele_pph")
     if not i:
         return ""
     code = i["payhip"] if fr else (i.get("payhip_en") or i["payhip"])
     if fr:
-        badge, h2, prix = "Essentiel en éducation spécialisée", "Le MDH-PPH, clair et prêt à utiliser", "3 $"
-        txt = ("Neuf fiches pour appliquer le Modèle de développement humain – Processus de production du handicap : facteurs "
-               "identitaires, systèmes organiques, aptitudes, environnement, habitudes de vie, plan d’action et étude de cas. "
-               "Utile en stage, en classe et sur le terrain.")
-        plus = ("<p>Besoin de toute la terminologie ? Le <a href=\"https://payhip.com/b/KPWj4\">Glossaire clinique T.E.S.</a> "
-                "(584 termes, 12 $) a aussi une section sur le MDH-PPH.</p>")
+        badge, h2, prix = "Essentiel en éducation spécialisée", i["titre"], "12 $"
+        txt = i["desc"]
+        plus = ("<p>Besoin d’un outil pratique ? <a href=\"https://payhip.com/b/ADW9Z\">Utiliser le modèle du PPH</a> "
+                "(9 outils, 3 $) applique le MDH-PPH pas à pas.</p>")
     else:
         badge, h2, prix = "A special care counselling essential", "The HDM-DCP, clear and ready to use", "$3"
         txt = ("Nine sheets for applying the Human Development Model – Disability Creation Process: identity factors, organic "
