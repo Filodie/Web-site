@@ -19,6 +19,7 @@ import fitz
 from conseils import ARTICLES
 import trousse_etudiante as TE
 import categories as CA
+from sujets import SUJETS
 import formulaires as FO
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -658,7 +659,8 @@ L = {
                 ("Livraison immédiate", "Vos fichiers sont téléchargeables dès le paiement, et le lien vous est aussi envoyé par courriel.")],
         "shop_t": "Boutique", "shop_p": "Chaque achat inclut la version française et la version anglaise. Cahiers à 3 $, trousses à 7 $, et des lots jusqu’à 90 % moins chers. Prix en dollars canadiens, téléchargement immédiat après le paiement.",
         "search": "Rechercher un outil…", "all": "Tout",
-        "nv": "Nouveau", "nv_chip": "Nouveautés du mois", "cat_t": "Par sujet", "fmt_t": "Par format", "cat_voir": "Voir les catégories", "all_cat": "Tous les sujets",
+        "nv": "Nouveau", "nv_chip": "Nouveautés du mois", "cat_t": "Par sujet", "fmt_t": "Par format", "cat_voir": "Voir les catégories", "all_cat": "Tous les sujets", "sujet_lien": "En savoir plus sur ce sujet", "sujet_debut": "Par où commencer",
+        "sujet_tout": "Voir les {n} produits dans la boutique", "sujet_liste": "Tout ce que Filodie offre sur ce sujet", "sujet_lire": "À lire aussi", "sujet_autres": "Les autres sujets", "sujet_plus": "et {n} autres",
         "types": {"trousse": "Trousses", "edition": "Éditions", "cahier": "Cahiers visuels", "affiches": "Affiches", "jeux": "Jeux", "routines": "Routines", "detective": "Détective", "gratuit": "Gratuit", "livre": "Grand livre", "album": "Albums",
                   "bottin": "Bottin", "lot": "Lots"},
         "buy": "Acheter", "cart": "Ajouter au panier", "direct": "ou acheter maintenant", "lot": "Acheter le lot", "lotnote": "Paiement séparé du panier", "soon": "Bientôt disponible", "free": "Gratuit", "get": "Obtenir", "details": "Détails", "cahier_nb": " · Couleur + version noir et blanc à colorier",
@@ -702,7 +704,8 @@ L = {
                 ("Instant delivery", "Your files can be downloaded right after payment, and the link is also emailed to you.")],
         "shop_t": "Shop", "shop_p": "Every purchase includes both the English and French versions. Workbooks at $3, toolkits at $7, and bundles up to 90% off. Prices in Canadian dollars, instant download after payment.",
         "search": "Search for a tool…", "all": "All",
-        "nv": "New", "nv_chip": "New this month", "cat_t": "By topic", "fmt_t": "By format", "cat_voir": "See the categories", "all_cat": "All topics",
+        "nv": "New", "nv_chip": "New this month", "cat_t": "By topic", "fmt_t": "By format", "cat_voir": "See the categories", "all_cat": "All topics", "sujet_lien": "Learn more about this topic", "sujet_debut": "Where to start",
+        "sujet_tout": "See all {n} products in the shop", "sujet_liste": "Everything Filodie offers on this topic", "sujet_lire": "Read also", "sujet_autres": "Other topics", "sujet_plus": "and {n} more",
         "types": {"trousse": "Toolkits", "edition": "Editions", "cahier": "Visual workbooks", "affiches": "Posters", "jeux": "Games", "routines": "Routines", "detective": "Detective", "gratuit": "Free", "livre": "Handbook", "album": "Picture books",
                   "bottin": "Directory", "lot": "Bundles"},
         "buy": "Buy", "cart": "Add to cart", "direct": "or buy now", "lot": "Buy the bundle", "lotnote": "Paid separately from the cart", "soon": "Coming soon", "free": "Free", "get": "Get it", "details": "Details", "cahier_nb": " · Colour + black-and-white colouring version",
@@ -733,6 +736,7 @@ PAIRS["conseils.html"] = "tips.html"
 PAIRS["suggestions.html"] = "suggestions.html"
 PAIRS.update({a["fr"]: a["en"] for a in ARTICLES})
 PAIRS[TE.FR] = TE.EN
+PAIRS.update({v["fr"]: v["en"] for v in SUJETS.values()})
 PAIRS_EN = {v: k for k, v in PAIRS.items()}
 
 THREAD = ('<svg class="thread" viewBox="0 0 600 90" preserveAspectRatio="none" aria-hidden="true"><path d="M-10 60 '
@@ -824,6 +828,7 @@ def page(lang, name, title, body, desc="", scripts=""):
     nav = "".join(menu_boutique(lang, h, l, h == name) if h == t["nav"][1][0]
                   else f'<a href="{h}"{" aria-current=page" if h == name else ""}>{l}</a>' for h, l in t["nav"])
     legal = " · ".join(f'<a href="{h}">{l}</a>' for h, l in t["footer_legal"])
+    sujets = " · ".join(f'<a href="{SUJETS[c[0]][lang]}">{c[1 if lang == "fr" else 2]}</a>' for c in CA.CATEGORIES)
     scripts = PAYHIP_JS + "\n" + scripts.replace(PAYHIP_SRC + "\n", "").replace(PAYHIP_SRC, "")
     panier = (f'<a class="panier payhip-open-cart-button" href="https://payhip.com/cart">'
               f'🛒 {"Panier" if lang == "fr" else "Cart"}</a>'
@@ -863,6 +868,7 @@ ml('account', '2673065');</script>
     <p class="logo small">filodie{BEADS}</p>
     <p>{t['tag']}</p>
     <p class="legal">{legal}</p>
+    <p class="legal sujets"><strong>{t["cat_t"]} :</strong> {sujets}</p>
     <p class="note">{t['footer_note']}</p>
     <p class="note">{t['rights']} · Illustrations : Fluent Emoji © Microsoft (MIT).</p>
   </div>
@@ -1245,7 +1251,7 @@ def shop(lang, items):
     <div class="fbloc"><p>{t['cat_t']}</p><div class="catchips"><button data-c="" class="on">{t['all_cat']}</button>{catchips}</div></div>
     <div class="fbloc"><p>{t['fmt_t']}</p><div class="chips"><button data-t="" class="on">{t['all']}</button>{chips}</div></div>
   </div>
-  <p id="n" class="muted"></p>
+  <p class="muted"><span id="n"></span> <a id="ps" hidden>{t['sujet_lien']}</a></p>
   <div id="list" class="products"></div>
 </section>
 <dialog id="pv" class="pv"><div class="pvh"><h3 id="pvt"></h3><button class="pvx" aria-label="{t['close']}">×</button></div>
@@ -1257,6 +1263,7 @@ const LP={json.dumps(sorted(LOTS_PANIER))};
 const fmt=new Intl.NumberFormat('{t['lang']}',{{style:'currency',currency:'CAD'}});
 const NC={json.dumps({c[0]: c[1 if lang == "fr" else 2] for c in CA.CATEGORIES}, ensure_ascii=False)};
 const VED={json.dumps({c[0]: c[3] for c in CA.CATEGORIES}, ensure_ascii=False)};
+const PS={json.dumps({k: v[lang] for k, v in SUJETS.items()}, ensure_ascii=False)};
 let type='', cat='', grp='', q='';
 const MOIS=new Date().toISOString().slice(0,7);P.forEach(p=>p.nv=!!p.da&&p.da.slice(0,7)===MOIS);
 const okc=p=>!cat||p.ca.includes(cat);
@@ -1290,7 +1297,8 @@ function draw(){{const w=q.toLowerCase().normalize('NFD').replace(/[\\u0300-\\u0
  const r=P.filter(p=>okt(p)&&(!grp||p.g===grp)&&(!w||(p.n+' '+p.s+' '+p.d+' '+p.g+' '+p.c).toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').includes(w)));
  if(cat==='pa'){{const rk=p=>p.id==='trousse-parents'?0:(p.id==='edition-edition_famille'||p.t==='routines'||p.id==='lot-routines')?1:p.t==='cahier'?3:2;r.sort((a,b)=>rk(a)-rk(b))}}
  else if(cat){{const rk=p=>p.id===VED[cat]?0:p.t==='trousse'?1:p.t==='lot'?2:p.t==='cahier'?4:3;r.sort((a,b)=>rk(a)-rk(b))}}
- document.getElementById('n').textContent=r.length+' '+T.count+(cat?' · '+NC[cat]:'');list.innerHTML=r.map((p,i)=>card(p,i)).join('');
+ document.getElementById('n').textContent=r.length+' '+T.count+(cat?' · '+NC[cat]:'');
+ const ps=document.getElementById('ps');ps.hidden=!cat;if(cat)ps.href=PS[cat];list.innerHTML=r.map((p,i)=>card(p,i)).join('');
  {PAYHIP_REINIT}}}
 tb.forEach(b=>b.onclick=()=>{{type=b.dataset.t;choisir()}});
 cb.forEach(b=>b.onclick=()=>{{cat=b.dataset.c;choisir()}});
@@ -1416,6 +1424,41 @@ def conseils_index(lang, items):
                    f'<p class="muted" style="padding:0 16px 16px">{a["minutes"]} {"min de lecture" if fr else "min read"}</p></a>')
     body = f'<section class="wrap"><h1>{h1}</h1><p class="lead">{lead}</p><div class="grid3">{cartes}</div></section>'
     return page(lang, "conseils.html" if fr else "tips.html", h1, body, desc=lead)
+
+
+def sujet_page(lang, cid, items):
+    """Vraie page d’un sujet : texte pour Google et les visiteurs, trois produits, la liste complète et le lien vers la boutique."""
+    t = L[lang]
+    fr = lang == "fr"
+    s = SUJETS[cid]
+    tous = {i["id"]: i for i in items}
+    dedans = [i for i in items if cid in CA.categories_de(i, parents_de(i))]
+    rang = {"trousse": 0, "edition": 1, "album": 2, "livre": 2, "bottin": 2}
+    famille = lambda i: "lot" if i["type"].startswith("lot") or i["type"] == "mega" else i["type"]
+    formats = sorted({famille(i) for i in dedans}, key=lambda f: (rang.get(f, 4 if f == "cahier" else 3), f))
+    listes = ""
+    for f in formats:
+        lot = [i for i in dedans if famille(i) == f]
+        lis = "".join(f'<li><a href="https://payhip.com/b/{i["payhip_en"] if not fr else i["payhip"]}">'
+                      f'{html.escape(i["titre"] if fr else en(i, "titre"))}</a></li>' for i in lot[:30])
+        if len(lot) > 30:
+            lis += f'<li class="muted">{t["sujet_plus"].format(n=len(lot) - 30)}</li>'
+        listes += f'<h3>{t["types"].get(f, f)} ({len(lot)})</h3><ul>{lis}</ul>'
+    boutique = t["nav"][1][0]
+    cartes = "".join(carte_produit(lang, tous[k]) for k in s["debut"])
+    p = "".join(f"<p>{html.escape(x)}</p>" for x in s["p_fr" if fr else "p_en"])
+    lire = ""
+    if s["conseil"]:
+        a = next(a for a in ARTICLES if a["fr"] == s["conseil"])
+        lire = (f'<p><strong>{t["sujet_lire"]} :</strong> <a href="{a[lang]}">{html.escape(a["titre_fr" if fr else "titre_en"])}</a></p>')
+    autres = "".join(f'<a href="{SUJETS[c[0]][lang]}">{c[1 if fr else 2]}</a>' for c in CA.CATEGORIES if c[0] != cid)
+    h1 = s["h1_fr" if fr else "h1_en"]
+    body = (f'<section class="wrap prose sujet"><p class="muted"><a href="{boutique}">{t["nav"][1][1]}</a> / {h1}</p><h1>{h1}</h1>{p}'
+            f'<p><a class="btn" href="{boutique}#{cid}">{t["sujet_tout"].format(n=len(dedans))}</a></p>{lire}</section>'
+            f'<section class="band"><div class="wrap"><h2>{t["sujet_debut"]}</h2><div class="grid3">{cartes}</div></div></section>'
+            f'<section class="wrap sujet"><h2>{t["sujet_liste"]}</h2><div class="sliste">{listes}</div>'
+            f'<h2>{t["sujet_autres"]}</h2><p class="sautres">{autres}</p></section>')
+    return page(lang, s[lang], h1, body, desc=s["desc_fr" if fr else "desc_en"], scripts='<script src="https://payhip.com/payhip.js"></script>')
 
 
 def textpage(lang, name, title, content, scripts=""):
@@ -1687,6 +1730,8 @@ nav a[aria-current]{color:var(--terra)}nav .panier{font-weight:700;color:var(--t
 .chips button,.catchips button{font:inherit;font-weight:700;font-size:.9rem;padding:7px 14px;border-radius:20px;border:1.5px solid var(--sand);background:var(--card);color:var(--ink);cursor:pointer}
 .chips button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}.catchips button.on{background:var(--terra);color:#fff;border-color:var(--terra)}
 .catchips{display:flex;gap:6px;flex-wrap:wrap}.fbloc{flex:1 1 100%;min-width:0;max-width:100%}.fbloc p{margin:0 0 6px;font-size:.78rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--gray)}.filters{scroll-margin-top:84px}
+.sujet{padding-bottom:30px}.sliste{columns:2;column-gap:36px}.sliste h3{margin-top:0;font-size:1.05rem;break-after:avoid}.sliste ul{margin:0 0 20px;padding-left:18px}.sliste li{margin:.25em 0;break-inside:avoid}.sliste a{color:var(--ink)}.sautres{display:flex;flex-wrap:wrap;gap:6px}.sautres a{border:1.5px solid var(--sand);border-radius:20px;padding:6px 13px;text-decoration:none;font-weight:700;font-size:.88rem;color:var(--ink);background:var(--card)}.foot .sujets{font-size:.82rem;line-height:1.7}
+@media (max-width:640px){.sliste{columns:1}}
 @media (max-width:560px){.catchips,.chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}.catchips button,.chips button{flex:none}}
 .products{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px;margin-bottom:60px}
 @media (max-width:560px){.products{grid-template-columns:1fr 1fr;gap:10px}.pb{padding:8px 9px}.prod h3{font-size:.95rem}.buy{flex-direction:column;align-items:flex-start;gap:6px}}
@@ -1805,6 +1850,8 @@ def build():
         open(os.path.join(d, "index.html"), "w").write(home(lang))
         open(os.path.join(d, "boutique.html" if lang == "fr" else "shop.html"), "w").write(shop(lang, items))
         open(os.path.join(d, "bottin.html" if lang == "fr" else "directory.html"), "w").write(bottin(lang, items))
+        for cid, s in SUJETS.items():
+            open(os.path.join(d, s[lang]), "w").write(sujet_page(lang, cid, items))
         open(os.path.join(d, "coloriage.html" if lang == "fr" else "colouring.html"), "w").write(coloriage(lang))
         tous = {i["id"]: i for i in items}
         open(os.path.join(d, "conseils.html" if lang == "fr" else "tips.html"), "w").write(conseils_index(lang, tous))
