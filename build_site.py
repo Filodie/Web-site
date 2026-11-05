@@ -98,7 +98,9 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
                                        "trousse-cerveau_anxiete", "trousse-cerveau_tnc", "lot-14-le-cerveau-expliqué",
                                        "trousse-fin_de_vie", "trousse-deuil_aines", "trousse-isolement_aines",
                                        "trousse-chutes_aines", "trousse-intimite_aines", "trousse-conduite_aines",
-                                       "trousse-stimulation_aines", "lot-15-accompagner-le-grand-âge")}}
+                                       "trousse-stimulation_aines", "lot-15-accompagner-le-grand-âge")},
+          **{k: "2026-11-05" for k in ("trousse-diagnostic_tsa", "trousse-diagnostic_tdah", "trousse-diagnostic_di",
+                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
                  "lot_cahiers", "lot_routines", "lot_detective", "lot_albums", "lot_jeux")
@@ -770,7 +772,7 @@ def promo_html(lang):
 PAYHIP_SRC = '<script src="https://payhip.com/payhip.js"></script>'
 # Lots devenus de vrais produits Payhip (fichiers inclus) : ils passent par le panier au bon prix.
 # Tous les lots sont maintenant des produits ordinaires (panier au bon prix) — 2026-10-07
-LOTS_PANIER = {"lot-parents", "lot-13-vieillir-avec-dignité", "lot-sante-mentale-dependances", "lot-1-habiletés-et-comportement", "lot-cahiers-tsa", "lot-12-traverser-l-épreuve", "lot-cahiers-tdah", "lot-jeux", "lot-3-professions", "lot-7-scolaire", "lot-8-thèmes-complémentaires", "lot-cahiers-déficience-intellectuelle", "lot-affiches", "lot-toutes-les-trousses", "lot-cahiers-comportement", "lot-6-cahiers-thématiques", "lot-4-professions-et-pratique", "lot-tous-les-cahiers", "lot-10-boîte-à-outils-du-psychoéducateur", "lot-etudes-tes", "lot-11-enseignement-aux-adultes", "lot-5-jeux-et-activités", "lot-mega", "lot-specialisees", "lot-routines", "lot-2-clientèles-et-interventions", "lot-9-équipe-école-et-réseau", "lot-detective", "lot-cahiers-habiletés-sociales"}
+LOTS_PANIER = {"lot-16-après-le-diagnostic", "lot-parents", "lot-13-vieillir-avec-dignité", "lot-sante-mentale-dependances", "lot-1-habiletés-et-comportement", "lot-cahiers-tsa", "lot-12-traverser-l-épreuve", "lot-cahiers-tdah", "lot-jeux", "lot-3-professions", "lot-7-scolaire", "lot-8-thèmes-complémentaires", "lot-cahiers-déficience-intellectuelle", "lot-affiches", "lot-toutes-les-trousses", "lot-cahiers-comportement", "lot-6-cahiers-thématiques", "lot-4-professions-et-pratique", "lot-tous-les-cahiers", "lot-10-boîte-à-outils-du-psychoéducateur", "lot-etudes-tes", "lot-11-enseignement-aux-adultes", "lot-5-jeux-et-activités", "lot-mega", "lot-specialisees", "lot-routines", "lot-2-clientèles-et-interventions", "lot-9-équipe-école-et-réseau", "lot-detective", "lot-cahiers-habiletés-sociales"}
 PAYHIP_JS = ('<script>window.PayhipConfig={enableCart:true,cart:{position:"bottom-right",'
              'launcherBackground:"#D9734E",checkoutButtonBackground:"#D9734E"}};</script>\n' + PAYHIP_SRC)
 PAYHIP_REINIT = ("if(window.Payhip&&Payhip.Button)try{Payhip.Button.initiateBuyButtons();"
@@ -904,6 +906,8 @@ VEDETTES = [
      "143 knowledge sheets for practice, in colour and in black and white."),
     ("lot-15-accompagner-le-grand-âge", "nouveau", "Sept trousses sur la fin de vie, le deuil, l’isolement, les chutes, l’intimité, la conduite et la stimulation.",
      "Seven toolkits on end of life, grief, isolation, falls, intimacy, driving and stimulation."),
+    ("lot-16-après-le-diagnostic", "nouveau", "Quatre trousses pour les parents après un diagnostic de TSA, de TDAH, de DI ou de TDL.",
+     "Four toolkits for parents after an autism, ADHD, intellectual disability or developmental language disorder diagnosis."),
     ("trousse-apprentissage-langage", "vente", "Des outils pour soutenir les enfants ayant des difficultés d’apprentissage et de langage.",
      "Tools for supporting children with learning and language difficulties."),
     ("album-caillou-nilou", "nouveau", "Un album tendre et honnête pour parler de la mort et du chagrin avec les 4 à 8 ans.",

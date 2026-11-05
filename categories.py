@@ -37,7 +37,7 @@ GROUPES = {
     "Scolaire": ["ecole"], "Équipe-école et réseau": ["ecole"], "Professions": ["pro"], "Professions et pratique": ["pro"],
     "Boîte à outils en psychoéducation": ["pro"], "Pour enseignantes et enseignants en T.E.S.": ["pro", "etudes"],
     "Enseignement aux adultes": ["adultes"], "Outils d’intervention": ["adultes"], "Traverser l’épreuve": ["adultes"],
-    "Albums pour enfants": ["petite"], "Cahiers thématiques": ["petite"],
+    "Albums pour enfants": ["petite"], "Cahiers thématiques": ["petite"], "Après le diagnostic": ["pa"],
 }
 
 
@@ -57,14 +57,14 @@ _HISTOIRES = _num("vsoc", *range(11, 28))
 _ROUTINES = _ids("routines-rtn-", *"abcdef") + ["lot-routines"]
 
 AJOUTS_CAT = {
-    "tsa": _t("tsa", "adultes_autistes", "cerveau_tsa", "formation_tsa", "sexualite_adaptee", "pictogrammes", "histoires_sociales")
+    "tsa": _t("tsa", "diagnostic_tsa", "adultes_autistes", "cerveau_tsa", "formation_tsa", "sexualite_adaptee", "pictogrammes", "histoires_sociales")
            + ["lot-cahiers-tsa", "affiches-aff-e"] + _ROUTINES + _HISTOIRES + _num("vsoc", 4, 6, 7, 8),
-    "tdah": _t("tdah", "cerveau_tdah", "impulsivite", "routines_et_organisation_scolaire", "procrastination")
+    "tdah": _t("tdah", "diagnostic_tdah", "cerveau_tdah", "impulsivite", "routines_et_organisation_scolaire", "procrastination")
             + ["lot-cahiers-tdah", "routines-rtn-d", "affiches-aff-e"] + _num("vsoc", 2, 19),
-    "di": _t("deficience_intellectuelle", "dims", "cerveau_di", "sexualite_adaptee", "integration_socioprofessionnelle",
+    "di": _t("deficience_intellectuelle", "diagnostic_di", "dims", "cerveau_di", "sexualite_adaptee", "integration_socioprofessionnelle",
              "readaptation_foyer", "pictogrammes", "budget")
           + ["lot-cahiers-déficience-intellectuelle"] + _ROUTINES,
-    "langage": _t("trouble_du_langage", "cerveau_tdl", "soutien_langagier_primaire", "soutien_langagier_secondaire",
+    "langage": _t("trouble_du_langage", "diagnostic_tdl", "cerveau_tdl", "soutien_langagier_primaire", "soutien_langagier_secondaire",
                   "troubles_apprentissage", "apprentissage-langage", "orthopedagogie", "orthophonie", "hpi", "dyspraxie_tdc",
                   "francais_1re_annee", "francais_2e_annee", "francais_3e_annee", "francais_4e_annee", "francais_5e_annee",
                   "francais_6e_annee", "mathematiques_5e_annee")
@@ -120,6 +120,7 @@ AJOUTS_CAT = {
            + ["grand-livre", "livre-glossaire-clinique", "bottin-regional", "lot-3-professions", "lot-4-professions-et-pratique",
               "lot-10-boîte-à-outils-du-psychoéducateur", "lot-14-le-cerveau-expliqué", "lot-5-jeux-et-activités",
               "lot-8-thèmes-complémentaires"] + _num("vcomp", 35, 36),
+    "pa": ["lot-16-après-le-diagnostic"],
     "etudes": _t("modele_pph") + ["grand-livre", "livre-glossaire-clinique", "lot-etudes-tes"],
 }
 

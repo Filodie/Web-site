@@ -1358,6 +1358,62 @@
   "payhip_en": "alEmC"
  },
  {
+  "id": "trousse-diagnostic_tsa",
+  "type": "trousse",
+  "groupe": "Après le diagnostic",
+  "titre": "Après le diagnostic de TSA",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les parents d’un enfant autiste qui vient de recevoir son diagnostic : comprendre le rapport, vivre le choc, annoncer à l’enfant et aux proches, parler à l’école, trouver les services et tracer le portrait de son enfant.",
+  "fichiers": [
+   "Collection Filodie/16 – Après le diagnostic/Trousse_Filodie_Diagnostic_TSA_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-diagnostic_tdah",
+  "type": "trousse",
+  "groupe": "Après le diagnostic",
+  "titre": "Après le diagnostic de TDAH",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les parents d’un enfant qui vient de recevoir un diagnostic de TDAH : comprendre le rapport, vivre le choc, annoncer à l’enfant et aux proches, parler à l’école, préparer la discussion sur le traitement et trier l’information.",
+  "fichiers": [
+   "Collection Filodie/16 – Après le diagnostic/Trousse_Filodie_Diagnostic_TDAH_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-diagnostic_di",
+  "type": "trousse",
+  "groupe": "Après le diagnostic",
+  "titre": "Après le diagnostic de déficience intellectuelle",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les parents d’un enfant qui vient de recevoir un diagnostic de déficience intellectuelle : comprendre le rapport, vivre le choc, annoncer à l’enfant et aux proches, parler à l’école, trouver les services et penser à l’avenir.",
+  "fichiers": [
+   "Collection Filodie/16 – Après le diagnostic/Trousse_Filodie_Diagnostic_DI_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
+  "id": "trousse-diagnostic_tdl",
+  "type": "trousse",
+  "groupe": "Après le diagnostic",
+  "titre": "Après le diagnostic de TDL",
+  "sous": "10 outils",
+  "desc": "Dix outils pour les parents d’un enfant qui vient de recevoir un diagnostic de trouble développemental du langage : comprendre le rapport, vivre le choc, annoncer à l’enfant et aux proches, parler à l’école, aider à la maison et trier l’information.",
+  "fichiers": [
+   "Collection Filodie/16 – Après le diagnostic/Trousse_Filodie_Diagnostic_TDL_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "",
+  "payhip_en": ""
+ },
+ {
   "id": "trousse-protection_de_la_jeunesse",
   "type": "trousse",
   "groupe": "Clientèles et interventions",
@@ -6687,6 +6743,28 @@
   "valeur": 49.0
  },
  {
+  "id": "lot-16-après-le-diagnostic",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Après le diagnostic",
+  "sous": "4 trousses",
+  "desc": "Toutes les trousses du volet « Après le diagnostic ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-diagnostic_tsa",
+   "trousse-diagnostic_tdah",
+   "trousse-diagnostic_di",
+   "trousse-diagnostic_tdl"
+  ],
+  "titre_en": "Filodie Collection: After the Diagnosis",
+  "sous_en": "4 toolkits",
+  "desc_en": "All the toolkits in the “After the Diagnosis” section.",
+  "prix": 20.0,
+  "payhip": "",
+  "payhip_en": "",
+  "valeur": 28.0
+ },
+ {
   "id": "lot-2-clientèles-et-interventions",
   "type": "lot_collection",
   "groupe": "Lots",
@@ -7347,11 +7425,11 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses : édition novembre 2026",
-  "sous": "Édition novembre 2026 · 178 trousses et 5 éditions",
+  "sous": "Édition novembre 2026 · 182 trousses et 5 éditions",
   "prix": 75.0,
-  "sous_en": "November 2026 edition · 178 toolkits and 5 editions",
-  "desc": "La trousse principale, les 30 trousses spécialisées, les 122 trousses de la Collection, les 23 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
-  "desc_en": "The main toolkit, the 30 specialized toolkits, the 122 Collection toolkits, the 23 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
+  "sous_en": "November 2026 edition · 182 toolkits and 5 editions",
+  "desc": "La trousse principale, les 30 trousses spécialisées, les 126 trousses de la Collection, les 23 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
+  "desc_en": "The main toolkit, the 30 specialized toolkits, the 126 Collection toolkits, the 23 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7450,6 +7528,10 @@
    "trousse-intimite_aines",
    "trousse-conduite_aines",
    "trousse-stimulation_aines",
+   "trousse-diagnostic_tsa",
+   "trousse-diagnostic_tdah",
+   "trousse-diagnostic_di",
+   "trousse-diagnostic_tdl",
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
    "trousse-auteurs_de_violence",
@@ -7541,7 +7623,7 @@
   "payhip": "cywQA",
   "payhip_en": "cywQA",
   "titre_en": "All the toolkits: November 2026 edition",
-  "valeur": 1286.0
+  "valeur": 1314.0
  },
  {
   "id": "lot-mega",
@@ -7549,8 +7631,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie : édition novembre 2026",
   "sous": "Édition novembre 2026",
-  "desc": "Tout le catalogue payant de Filodie : les 178 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
-  "desc_en": "Filodie’s entire paid catalogue: all 178 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
+  "desc": "Tout le catalogue payant de Filodie : les 182 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
+  "desc_en": "Filodie’s entire paid catalogue: all 182 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7649,6 +7731,10 @@
    "trousse-intimite_aines",
    "trousse-conduite_aines",
    "trousse-stimulation_aines",
+   "trousse-diagnostic_tsa",
+   "trousse-diagnostic_tdah",
+   "trousse-diagnostic_di",
+   "trousse-diagnostic_tdl",
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
    "trousse-auteurs_de_violence",
@@ -7956,7 +8042,7 @@
   "payhip_en": "dZ02M",
   "sous_en": "November 2026 edition",
   "titre_en": "All of Filodie: November 2026 edition",
-  "valeur": 2046.0
+  "valeur": 2074.0
  },
  {
   "id": "trousse-enseignants-tes",
