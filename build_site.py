@@ -846,6 +846,28 @@ def nouveaute(lang):
             f'<p>{bouton_payhip(code, True, lang)}</p></div></div></section>')
 
 
+def album_nouveaute(lang):
+    """Bloc « Nouveauté » de l’accueil : l’album Le caillou de Nilou (demande de Mélodie, 4 nov. 2026)."""
+    fr = lang == "fr"
+    i = {x["id"]: x for x in json.load(open(CAT, encoding="utf-8"))}.get("album-caillou-nilou")
+    if not i:
+        return ""
+    code = i["payhip"] if fr else (i.get("payhip_en") or i["payhip"])
+    badge = "Nouveauté Filodie !" if fr else "New from Filodie!"
+    h2 = i["titre"] if fr else en(i, "titre")
+    txt = i["desc"] if fr else en(i, "desc")
+    prix = "9 $" if fr else "$9"
+    img = f'{L[lang]["base"]}img/{lang}/{i["id"]}.jpg'
+    return (f'<section class="wrap"><div class="card" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;'
+            f'padding:24px;border:2px solid #D9734E">'
+            f'<img src="{img}" alt="" loading="lazy" style="width:300px;max-width:100%;border-radius:10px;flex:none">'
+            f'<div style="flex:1;min-width:260px"><p style="margin:0 0 8px"><span style="display:inline-block;'
+            f'background:#D9734E;color:#fff;font-weight:800;border-radius:999px;padding:4px 14px">{badge}</span></p>'
+            f'<h2 style="margin-top:4px">{html.escape(h2)}</h2><p class="lead">{html.escape(txt)}</p>'
+            f'<p class="vprix">{prix}</p>'
+            f'<p>{bouton_payhip(code, True, lang)}</p></div></div></section>')
+
+
 def outil_pph(lang):
     """Bloc de l’accueil : l’outil MDH-PPH pour les collègues T.E.S. (demande de Mélodie, 4 nov. 2026), avec le glossaire en français."""
     fr = lang == "fr"
@@ -986,6 +1008,7 @@ def home(lang):
   </div>
 </section>
 {outil_pph(lang)}
+{album_nouveaute(lang)}
 {nouveaute(lang)}
 {vedettes(lang)}
 {equipes(lang)}
