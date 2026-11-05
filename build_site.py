@@ -802,16 +802,25 @@ def iv(lang, img):
     return "?v=" + hashlib.md5(open(f, "rb").read()).hexdigest()[:8] if os.path.exists(f) else ""
 
 
-# Coups de cœur de l'accueil : choix de Mélodie (jamais « meilleures ventes » tant qu'il n'y a pas de ventes réelles).
-VEDETTES = [   # 27 oct. 2026 : les quatre nouveautés d’octobre (choix de Mélodie)
-    ("trousse-attachement", "Tempérament, styles d’attachement, séparations et base de sécurité : comprendre ce que vit l’enfant.",
-     "Temperament, attachment styles, separations and secure base: understand what the child is going through."),
-    ("trousse-sante_mentale", "Signes d’alerte, dépression, anxiété, psychose, plan de rétablissement : voir la personne, pas seulement le trouble.",
-     "Warning signs, depression, anxiety, psychosis, recovery plan: see the person, not just the disorder."),
-    ("trousse-entretien_motivationnel", "Stades de changement, échelles, balance décisionnelle : accompagner le changement sans le forcer.",
-     "Stages of change, rulers, decisional balance: supporting change without forcing it."),
-    ("trousse-reduction_mefaits", "Principes, mots qui respectent, conversation sans jugement : rejoindre la personne là où elle est.",
-     "Principles, respectful language, non-judgmental conversations: meeting people where they are."),
+# Coups de cœur de l'accueil : meilleures ventes réelles (Payhip, 6 derniers mois au 4 nov. 2026) et nouveautés, en alternance.
+# (id, "vente" ou "nouveau", accroche FR, accroche EN). La page en montre quatre, et la paire de départ change chaque jour.
+VEDETTES = [
+    ("lot-mega", "vente", "Toute la collection Filodie réunie en un seul achat, pour la pratique, les études et la famille.",
+     "The whole Filodie collection in one purchase, for practice, studies and family."),
+    ("trousse-soutenir_deuil", "nouveau", "Dix outils pour la famille, les amitiés et les collègues d’une personne adulte en deuil.",
+     "Ten tools for the family, friends and colleagues of a grieving adult."),
+    ("lot-etudes-tes", "vente", "Seize outils pour réussir ses cours et ses stages en éducation spécialisée.",
+     "Sixteen tools for succeeding in special care counselling courses and internships."),
+    ("lot-14-le-cerveau-expliqué", "nouveau", "Le cerveau typique, puis sept réalités : TSA, TDAH, DI, TDL, trauma, anxiété et troubles neurocognitifs.",
+     "The typical brain, then seven realities: ASD, ADHD, ID, DLD, trauma, anxiety and neurocognitive disorders."),
+    ("grand-livre", "vente", "143 fiches de connaissances pour la pratique, en couleur et en noir et blanc.",
+     "143 knowledge sheets for practice, in colour and in black and white."),
+    ("lot-15-accompagner-le-grand-âge", "nouveau", "Sept trousses sur la fin de vie, le deuil, l’isolement, les chutes, l’intimité, la conduite et la stimulation.",
+     "Seven toolkits on end of life, grief, isolation, falls, intimacy, driving and stimulation."),
+    ("trousse-apprentissage-langage", "vente", "Des outils pour soutenir les enfants ayant des difficultés d’apprentissage et de langage.",
+     "Tools for supporting children with learning and language difficulties."),
+    ("album-caillou-nilou", "nouveau", "Un album tendre et honnête pour parler de la mort et du chagrin avec les 4 à 8 ans.",
+     "A tender, honest picture book for talking about death and grief with children ages 4 to 8."),
 ]
 
 
@@ -899,7 +908,7 @@ def outil_pph(lang):
 
 
 def vedettes(lang):
-    """Section « Coups de cœur » : 4 produits payants mis en avant, avec le prix réduit si un code promo est actif."""
+    """Section « Coups de cœur » : meilleures ventes et nouveautés en alternance, avec le prix réduit si un code promo est actif."""
     fr = lang == "fr"
     items = {i["id"]: i for i in json.load(open(CAT, encoding="utf-8"))}
 
@@ -908,7 +917,7 @@ def vedettes(lang):
         return (t.replace(".", ",") + " $") if fr else ("$" + t)
 
     cards = ""
-    for k, acc_fr, acc_en in VEDETTES:
+    for n, (k, genre, acc_fr, acc_en) in enumerate(VEDETTES):
         i = items.get(k)
         if not i:
             continue
@@ -921,20 +930,25 @@ def vedettes(lang):
                 promo += (f'<span class="vprix-promo" data-debut="{p.get("debut", "")}" data-fin="{p.get("fin", "")}"> → '
                           f'<strong>{prix(i["prix"] * (100 - int(m.group(1))) / 100)}</strong> '
                           f'{"avec" if fr else "with"} <code>{html.escape(p["code"])}</code></span>')
-        cards += (f'<div class="card col vedette"><img src="{L[lang]["base"]}img/{lang}/{k}.jpg{iv(lang, k)}" alt="" loading="lazy">'
+        etiq = {"vente": ("Meilleure vente", "Best seller", "#5F8570"), "nouveau": ("Nouveauté", "New", "#D9734E")}[genre]
+        cache = ' style="display:none"' if n > 3 else ""
+        cards += (f'<div class="card col vedette"{cache}><img src="{L[lang]["base"]}img/{lang}/{k}.jpg{iv(lang, k)}" alt="" loading="lazy">'
+                  f'<p style="margin:8px 0 0"><span style="display:inline-block;background:{etiq[2]};color:#fff;font-weight:800;'
+                  f'font-size:.8rem;border-radius:999px;padding:3px 12px">{etiq[0] if fr else etiq[1]}</span></p>'
                   f'<h3>{html.escape(titre)}</h3><p>{html.escape(acc_fr if fr else acc_en)}</p>'
                   f'<p class="vprix">{prix(i["prix"])}{promo}</p>'
                   f'<p style="padding-bottom:16px">{bouton_payhip(code, True, lang, lot=k.startswith("lot-") and k not in LOTS_PANIER)}'
                   + (f' <a class="btn ghost" href="{TE.FR if fr else TE.EN}">{"Voir le contenu" if fr else "See what’s inside"}</a>'
                      if k == TE.LOT else "") + '</p></div>')
     h2 = "Les coups de cœur de Mélodie" if fr else "Mélodie’s favourites"
-    sous = ("Mes nouveautés de l’automne : quatre trousses que j’ai eu envie de créer pour vous, en français et en anglais."
-            if fr else "My new fall releases: four toolkits I wanted to create for you, in English and French.")
+    sous = ("Mes meilleures ventes et mes nouveautés, en alternance." if fr else "My best sellers and new releases, in turn.")
     tout = "Voir toute la boutique" if fr else "See the whole shop"
     shop = "boutique.html" if fr else "shop.html"
     js = ('<script>document.querySelectorAll(".vprix-promo").forEach(function(e){var d=new Date(),'
           'j=d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");'
-          'if((e.dataset.debut&&j<e.dataset.debut)||(e.dataset.fin&&j>e.dataset.fin))e.remove();});</script>')
+          'if((e.dataset.debut&&j<e.dataset.debut)||(e.dataset.fin&&j>e.dataset.fin))e.remove();});'
+          'var v=document.querySelectorAll(".vedette"),o=2*(Math.floor(Date.now()/864e5)%(v.length/2));'
+          'v.forEach(function(e,k){e.style.display=((k-o+v.length)%v.length)<4?"":"none";});</script>')
     return (f'<section class="wrap"><h2>{h2}</h2><p class="lead">{sous}</p><div class="grid4">{cards}</div>'
             f'<p style="margin-top:18px"><a class="btn ghost" href="{shop}">{tout} →</a></p></section>{js}')
 
