@@ -7060,6 +7060,29 @@
   "valeur": 45.0
  },
  {
+  "id": "lot-albums",
+  "type": "lot_albums",
+  "groupe": "Lots",
+  "titre": "Les 5 albums pour enfants",
+  "titre_en": "The 5 Picture Books",
+  "sous": "5 albums · 4 à 8 ans",
+  "sous_en": "5 picture books · Ages 4 to 8",
+  "desc": "Le deuil, l’anxiété, la colère, la séparation des parents et l’arrivée d’un bébé : cinq histoires tendres pour parler avec les 4 à 8 ans de ce qui est difficile, chacune avec 2 pages pour l’enfant et un guide pour les adultes.",
+  "desc_en": "Grief, anxiety, anger, parental separation and a new baby: five tender stories for talking with children ages 4 to 8 about what is hard, each with 2 pages for the child and a guide for adults.",
+  "fichiers": [],
+  "contient": [
+   "album-caillou-nilou",
+   "album-nuage-teo",
+   "album-marmite-lina",
+   "album-pont-zelie",
+   "album-lanterne-milo"
+  ],
+  "prix": 25.0,
+  "payhip": "w8NxM",
+  "payhip_en": "w8NxM",
+  "valeur": 45.0
+ },
+ {
   "id": "lot-specialisees",
   "type": "lot_specialisees",
   "groupe": "Lots",

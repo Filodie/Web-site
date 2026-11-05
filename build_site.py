@@ -64,7 +64,7 @@ def en(i, k):
 PRIX = {"trousse": 7.00, "edition": 3.00, "cahier": 3.00, "livre": 19.00, "bottin": 0.0,
         "lot_cahiers": 25.00, "lot_collection": 25.00, "lot_specialisees": 39.00, "lot_tout": 75.00, "mega": 129.00,
         "affiches": 5.00, "lot_affiches": 19.00, "jeux": 7.00, "lot_jeux": 29.00,
-        "routines": 5.00, "lot_routines": 19.00, "gratuit": 0.00, "detective": 5.00, "lot_detective": 25.00, "album": 9.00}
+        "routines": 5.00, "lot_routines": 19.00, "gratuit": 0.00, "detective": 5.00, "lot_detective": 25.00, "album": 9.00, "lot_albums": 25.00}
 
 
 HORS_16 = ("trousse-deficience_physique", "trousse-cadre_legal", "trousse-entretien_motivationnel",
@@ -100,7 +100,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
                                        "trousse-stimulation_aines", "lot-15-accompagner-le-grand-âge")}}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
-                 "lot_cahiers", "lot_routines", "lot_detective", "lot_jeux")
+                 "lot_cahiers", "lot_routines", "lot_detective", "lot_albums", "lot_jeux")
 PARENTS_IDS = {"lot-parents", "trousse-parents", "trousse-attachement", "trousse-adolescence", "trousse-sommeil", "trousse-ecrans_et_cyberdependance", "trousse-deuil_et_separation",
                "trousse-estime_de_soi", "trousse-renforcement_r05", "trousse-renforcement_r610", "trousse-renforcement_r1115",
                "trousse-histoires_sociales", "trousse-pictogrammes", "trousse-motricite_fine", "trousse-parcours_moteur",
@@ -385,6 +385,17 @@ def catalogue():
             desc_en="Feelings, strengths, worries, anger, friendships, body and needs, family, dreams and online life: the "
                     "adult asks the questions and records the clues, the child remains the expert on their own life.",
             fichiers=[], contient=dt)
+    ab = [i["id"] for i in items if i["type"] == "album"]
+    if ab:
+        add(id="lot-albums", type="lot_albums", groupe="Lots", titre="Les 5 albums pour enfants",
+            titre_en="The 5 Picture Books",
+            sous=f"{len(ab)} albums · 4 à 8 ans", sous_en=f"{len(ab)} picture books · Ages 4 to 8",
+            desc="Le deuil, l’anxiété, la colère, la séparation des parents et l’arrivée d’un bébé : cinq histoires tendres "
+                 "pour parler avec les 4 à 8 ans de ce qui est difficile, chacune avec 2 pages pour l’enfant et un guide pour "
+                 "les adultes.",
+            desc_en="Grief, anxiety, anger, parental separation and a new baby: five tender stories for talking with children "
+                    "ages 4 to 8 about what is hard, each with 2 pages for the child and a guide for adults.",
+            fichiers=[], contient=ab)
     sp = [i["id"] for i in items if i["groupe"] == "Trousses spécialisées" and i["id"] not in HORS_16]
     add(id="lot-specialisees", type="lot_specialisees", groupe="Lots", titre="Les 16 trousses spécialisées",
         sous="Âges et troubles", desc="Petite enfance, secondaire, adultes, aînés, TSA, TDAH, DI, langage, comportement, "
