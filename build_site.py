@@ -74,7 +74,7 @@ HORS_16 = ("trousse-deficience_physique", "trousse-cadre_legal", "trousse-entret
            "trousse-reduction_mefaits", "trousse-adolescence",
            "trousse-securite_travail", "trousse-systemique_famille",
            "trousse-animer_groupe", "trousse-tcc_quotidien",
-           "trousse-pouvoir_agir", "trousse-auteurs_infractions_sexuelles", "trousse-soutenir_deuil", "trousse-fratrie")   # trousses spécialisées hors lot des 16
+           "trousse-pouvoir_agir", "trousse-auteurs_infractions_sexuelles", "trousse-soutenir_deuil", "trousse-fratrie", "trousse-devenir_adulte")   # trousses spécialisées hors lot des 16
 ECH_ID = "trousse-decouverte_etudiant_tes"          # échantillon étudiant gratuit (hors lots)
 # Date de mise en vente (AAAA-MM-JJ) : la boutique affiche « Nouveau » pendant le mois de la mise en vente (comparaison
 # faite dans le navigateur, donc l’étiquette disparaît seule le 1er du mois suivant). Ajouter chaque nouveau produit ici.
@@ -94,7 +94,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
           "lot-parents": "2026-10-27", "livre-glossaire-clinique": "2026-11-04",
           "trousse-soutenir_deuil": "2026-11-04", "album-caillou-nilou": "2026-11-04",
           "album-nuage-teo": "2026-11-04", "album-marmite-lina": "2026-11-04", "album-pont-zelie": "2026-11-04", "album-lanterne-milo": "2026-11-04",
-          "trousse-fratrie": "2026-11-05", "album-tournesol-romy": "2026-11-05",
+          "trousse-fratrie": "2026-11-05", "album-tournesol-romy": "2026-11-05", "trousse-devenir_adulte": "2026-11-05",
           **{k: "2026-11-04" for k in ("trousse-cerveau_developpement", "trousse-cerveau_tsa", "trousse-cerveau_tdah",
                                        "trousse-cerveau_di", "trousse-cerveau_tdl", "trousse-cerveau_trauma",
                                        "trousse-cerveau_anxiete", "trousse-cerveau_tnc", "lot-14-le-cerveau-expliqué",
@@ -172,7 +172,8 @@ def catalogue():
     from contenu_auteurs_infractions_sexuelles import AI  # 28 oct. 2026, hors lot des 16
     from contenu_soutenir_deuil import SP                 # 4 nov. 2026, hors lot des 16
     from contenu_fratrie import FRATRIE                   # 5 nov. 2026, hors lot des 16
-    for t in AGES + TROUBLES + NOUVEAUX + [DP, CL, EM, SM, AT, RD, AD, SPI, SY, AG, TC, PA, AI, SP, FRATRIE]:
+    from contenu_devenir_adulte import DEVENIR            # 5 nov. 2026, hors lot des 16
+    for t in AGES + TROUBLES + NOUVEAUX + [DP, CL, EM, SM, AT, RD, AD, SPI, SY, AG, TC, PA, AI, SP, FRATRIE, DEVENIR]:
         add(id="trousse-" + t["fichier"].lower(), type="trousse", groupe="Trousses spécialisées", titre=t["nom"],
             sous=f"{len(t['fiches'])} outils", desc=t["desc"],
             fichiers=[f"Trousses spécialisées/Trousse_Filodie_{t['fichier']}_2026.pdf"])

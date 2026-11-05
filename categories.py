@@ -57,11 +57,11 @@ _HISTOIRES = _num("vsoc", *range(11, 28))
 _ROUTINES = _ids("routines-rtn-", *"abcdef") + ["lot-routines"]
 
 AJOUTS_CAT = {
-    "tsa": _t("tsa", "fratrie", "diagnostic_tsa", "adultes_autistes", "cerveau_tsa", "formation_tsa", "sexualite_adaptee", "pictogrammes", "histoires_sociales")
+    "tsa": _t("tsa", "fratrie", "devenir_adulte", "diagnostic_tsa", "adultes_autistes", "cerveau_tsa", "formation_tsa", "sexualite_adaptee", "pictogrammes", "histoires_sociales")
            + ["lot-cahiers-tsa", "affiches-aff-e"] + _ROUTINES + _HISTOIRES + _num("vsoc", 4, 6, 7, 8),
     "tdah": _t("tdah", "diagnostic_tdah", "cerveau_tdah", "impulsivite", "routines_et_organisation_scolaire", "procrastination")
             + ["lot-cahiers-tdah", "routines-rtn-d", "affiches-aff-e"] + _num("vsoc", 2, 19),
-    "di": _t("deficience_intellectuelle", "fratrie", "diagnostic_di", "dims", "cerveau_di", "sexualite_adaptee", "integration_socioprofessionnelle",
+    "di": _t("deficience_intellectuelle", "fratrie", "devenir_adulte", "diagnostic_di", "dims", "cerveau_di", "sexualite_adaptee", "integration_socioprofessionnelle",
              "readaptation_foyer", "pictogrammes", "budget")
           + ["lot-cahiers-déficience-intellectuelle"] + _ROUTINES,
     "langage": _t("trouble_du_langage", "diagnostic_tdl", "cerveau_tdl", "soutien_langagier_primaire", "soutien_langagier_secondaire",
@@ -106,7 +106,7 @@ AJOUTS_CAT = {
              + ["lot-7-scolaire", "lot-9-équipe-école-et-réseau", "affiches-aff-d", "lot-affiches", "edition-edition_transitions",
                 "edition-edition_intimidation", "gratuit-mois-2708", "gratuit-mois-2706"]
              + _num("vcomp", 5, 38) + _num("vsoc", 16, 21, 22, 26, 29, 31) + _num("vtdah", 5, 11, 15, 21, 27) + _num("vtsa", 29),
-    "ados": _t("secondaire_12-17_ans", "adolescence", "renforcement_r1115", "grossesse_adolescence", "ecrans_et_cyberdependance",
+    "ados": _t("secondaire_12-17_ans", "adolescence", "devenir_adulte", "renforcement_r1115", "grossesse_adolescence", "ecrans_et_cyberdependance",
                "enseignants_secondaire", "soutien_langagier_secondaire", "orientation", "troubles_alimentaires")
             + ["edition-edition_ados", "detective-dnu"] + _num("vtsa", 31) + _num("vsoc", 32),
     "adultes": _t("adultes", "adultes_autistes", "sante_mentale", "integration_socioprofessionnelle", "dependances", "violence_conjugale",
@@ -120,7 +120,7 @@ AJOUTS_CAT = {
            + ["grand-livre", "livre-glossaire-clinique", "bottin-regional", "lot-3-professions", "lot-4-professions-et-pratique",
               "lot-10-boîte-à-outils-du-psychoéducateur", "lot-14-le-cerveau-expliqué", "lot-5-jeux-et-activités",
               "lot-8-thèmes-complémentaires"] + _num("vcomp", 35, 36),
-    "pa": ["lot-16-après-le-diagnostic", "trousse-fratrie", "album-tournesol-romy"],
+    "pa": ["lot-16-après-le-diagnostic", "trousse-fratrie", "album-tournesol-romy", "trousse-devenir_adulte"],
     "etudes": _t("modele_pph") + ["grand-livre", "livre-glossaire-clinique", "lot-etudes-tes"],
 }
 
