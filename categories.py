@@ -114,7 +114,7 @@ AJOUTS_CAT = {
                + ["lot-11-enseignement-aux-adultes"],
     "aines": _t("aines", "chsld_tes_pab", "cerveau_tnc", "proches_aidants")
              + ["lot-13-vieillir-avec-dignité", "lot-15-accompagner-le-grand-âge"],
-    "pro": _t("fondements_theoriques", "cadre_legal", "entretien_motivationnel", "animer_groupe", "systemique_famille", "pouvoir_agir",
+    "pro": _t("techniques_impact", "fondements_theoriques", "cadre_legal", "entretien_motivationnel", "animer_groupe", "systemique_famille", "pouvoir_agir",
               "securite_travail", "autosoins_intervenants", "supervision_stagiaires", "principale", "guide_accompagnement_tes",
               "cahier_videos", "trousse_decouverte", "evaluation_globale_du_jeune", "cerveau_developpement")
            + ["grand-livre", "livre-glossaire-clinique", "bottin-regional", "lot-3-professions", "lot-4-professions-et-pratique",
