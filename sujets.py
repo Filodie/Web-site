@@ -14,6 +14,16 @@ SUJETS = {
         p_en=["Making the world more predictable, understanding sensory differences and supporting communication: these tools were created for parents, school staff and practitioners who support an autistic person.",
               "You will find workbooks to do with the child, social stories, visual routines, observation tools, a ready-to-use training and a toolkit for parents who have just received the diagnosis."],
         debut=["trousse-tsa", "trousse-diagnostic_tsa", "lot-cahiers-tsa"], conseil="conseil-routine-visuelle-matin.html"),
+    "pictos": dict(
+        fr="pictogrammes-imprimer.html", en="printable-pictograms.html",
+        h1_fr="Pictogrammes à imprimer", h1_en="Printable pictograms",
+        desc_fr="Pictogrammes porte-clés et pictogrammes à imprimer pour communiquer avec les élèves non verbaux ou peu verbaux : émotions, besoins, comportements attendus et interdits. Conçus au Québec.",
+        desc_en="Keychain pictograms and printable pictograms for communicating with nonverbal or minimally verbal students: emotions, needs, expected behaviours and “don’ts”. Made in Québec.",
+        p_fr=["Une image claire vaut souvent mieux qu’une longue consigne. Ces pictogrammes s’impriment, se découpent et se plastifient, puis s’enfilent sur un anneau à la ceinture pour être toujours à portée de main, en classe comme en sortie.",
+              "Chaque trousse porte-clés a sa couleur : violet pour les émotions, bleu pour les besoins et demandes, vert pour les comportements attendus et rouge pour ce qu’il ne faut pas faire. Les personnages sont une création originale Filodie, en version fille et garçon."],
+        p_en=["A clear picture is often better than a long instruction. These pictograms are printed, cut out and laminated, then slipped onto a ring on a belt loop so they are always at hand, in class or on an outing.",
+              "Each keychain kit has its own colour: purple for emotions, blue for needs and requests, green for expected behaviours and red for what not to do. The characters are an original Filodie creation, in a girl and a boy version."],
+        debut=["pictos-besoins", "pictos-emotions", "pictos-comportements"], conseil=None),
     "tdah": dict(
         fr="outils-tdah.html", en="adhd-tools.html",
         h1_fr="Outils pour le TDAH", h1_en="ADHD tools",

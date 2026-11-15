@@ -102,7 +102,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
                                        "trousse-chutes_aines", "trousse-intimite_aines", "trousse-conduite_aines",
                                        "trousse-stimulation_aines", "lot-15-accompagner-le-grand-âge")},
           **{k: "2026-11-05" for k in ("trousse-diagnostic_tsa", "trousse-diagnostic_tdah", "trousse-diagnostic_di",
-                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15"}
+                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15", "pictos-besoins": "2026-11-15"}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
                  "lot_cahiers", "lot_routines", "lot_detective", "lot_albums", "lot_jeux")
@@ -211,6 +211,16 @@ def catalogue():
                 "card: don’t hit, don’t run, don’t yell, don’t run away and more. A girl and a boy, 12 blank cards, a "
                 "red-and-green pairing chart and a guide for stopping an action without punishing.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_A_ne_pas_faire.pdf"])
+    add(id="pictos-besoins", type="trousse", groupe="Pictogrammes porte-clés",          # 15 nov. 2026
+        titre="Pictogrammes porte-clés : besoins et demandes", sous="24 demandes · cartes de 6 x 6 cm", pv_pages=[3, 5],
+        desc="24 besoins et demandes en cartes de 6 x 6 cm, du point de vue de l’élève : toilettes, j’ai faim, pause, "
+             "aide, encore, fini, non, trop de bruit et plus. Une fille et un garçon, 12 cartes vierges et un mode "
+             "d’emploi pour enseigner les demandes aux élèves non verbaux ou peu verbaux.",
+        titre_en="Keychain Pictograms: Needs and Requests", sous_en="24 requests · 6 x 6 cm cards",
+        desc_en="24 needs and requests in 6 x 6 cm cards, from the student’s point of view: bathroom, I’m hungry, break, "
+                "help, more, all done, no, too loud and more. A girl and a boy, 12 blank cards and a guide for teaching "
+                "requests to nonverbal or minimally verbal students.",
+        fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Besoins_et_demandes.pdf"])
     from outil_choix_eclaire import CHOIX                 # outils d’intervention vendus à l’unité, hors collection
     from outils_3dollars import OUTILS
     from outils_etudes import OUTILS as ETUDES, GROUPE_SITE, ECHANTILLON

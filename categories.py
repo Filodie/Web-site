@@ -8,6 +8,7 @@ Au moment de construire le site, build_site.py affiche les produits sans catégo
 # id, libellé français, libellé anglais, produit affiché en premier
 CATEGORIES = [
     ("tsa", "TSA (autisme)", "Autism (ASD)", "trousse-tsa"),
+    ("pictos", "Pictogrammes", "Pictograms", "pictos-besoins"),
     ("tdah", "TDAH", "ADHD", "trousse-tdah"),
     ("di", "Déficience intellectuelle", "Intellectual disability", "trousse-deficience_intellectuelle"),
     ("langage", "Langage et apprentissage", "Language and learning", "trousse-trouble_du_langage"),
@@ -31,7 +32,7 @@ CATEGORIES = [
 SANS_CATEGORIE = {"lot-mega", "lot-toutes-les-trousses", "lot-tous-les-cahiers", "lot-specialisees"}
 
 GROUPES = {
-    "Pictogrammes porte-clés": ["tsa", "emotions", "di", "ecole"],
+    "Pictogrammes porte-clés": ["pictos", "tsa", "emotions", "di", "ecole"],
     "Cahiers TSA": ["tsa"], "Cahiers TDAH": ["tdah"], "Cahiers Déficience intellectuelle": ["di"],
     "Cahiers Comportement": ["comportement"], "Cahiers Habiletés sociales": ["sociales"],
     "Études et stages en T.E.S.": ["etudes"], "Accompagner le grand âge": ["aines"], "Vieillir avec dignité": ["aines"],
@@ -58,6 +59,7 @@ _HISTOIRES = _num("vsoc", *range(11, 28))
 _ROUTINES = _ids("routines-rtn-", *"abcdef") + ["lot-routines"]
 
 AJOUTS_CAT = {
+    "pictos": _t("pictogrammes"),
     "tsa": _t("tsa", "fratrie", "devenir_adulte", "diagnostic_tsa", "adultes_autistes", "cerveau_tsa", "formation_tsa", "sexualite_adaptee", "pictogrammes", "histoires_sociales")
            + ["lot-cahiers-tsa", "affiches-aff-e"] + _ROUTINES + _HISTOIRES + _num("vsoc", 4, 6, 7, 8),
     "tdah": _t("tdah", "diagnostic_tdah", "cerveau_tdah", "impulsivite", "routines_et_organisation_scolaire", "procrastination")
