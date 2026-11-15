@@ -642,6 +642,8 @@ def catalogue():
     for i in items:
         if i["id"] == "lot-14-le-cerveau-expliqué":   # prix choisi le 4 nov. 2026
             i["prix"] = 30.0
+        if i["id"] == "lot-pictos-porte-cles":        # prix choisi le 15 nov. 2026 (8 trousses)
+            i["prix"] = 29.0
     # valeur à l'unité, pour afficher l'économie
     px = {i["id"]: i["prix"] for i in items}
     for i in items:
