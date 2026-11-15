@@ -655,6 +655,15 @@ def catalogue():
             i["prix"] = 30.0
         if i["id"] == "lot-pictos-porte-cles":        # prix choisi le 15 nov. 2026 (8 trousses)
             i["prix"] = 29.0
+        if i.get("groupe") == "Pictogrammes porte-clés" or i["id"] == "lot-pictos-porte-cles":   # 15 nov. 2026
+            lot = i["id"] == "lot-pictos-porte-cles"
+            i["desc"] += (" Dans chaque trousse, une" if lot else " Une") + (
+                " page « Ma carte de communication » à mettre en premier sur l’anneau : Je communique avec des images, "
+                "Pour m’aider et Je m’appelle.")
+            if i.get("desc_en"):
+                i["desc_en"] += (" In every kit, a" if lot else " A") + (
+                    " “My communication cards” page to put first on the ring: I communicate with pictures, To help me "
+                    "and My name is.")
     # valeur à l'unité, pour afficher l'économie
     px = {i["id"]: i["prix"] for i in items}
     for i in items:
