@@ -59,7 +59,7 @@ _HISTOIRES = _num("vsoc", *range(11, 28))
 _ROUTINES = _ids("routines-rtn-", *"abcdef") + ["lot-routines"]
 
 AJOUTS_CAT = {
-    "pictos": _t("pictogrammes"),
+    "pictos": _t("pictogrammes") + ["lot-pictos-porte-cles"],
     "tsa": _t("tsa", "fratrie", "devenir_adulte", "diagnostic_tsa", "adultes_autistes", "cerveau_tsa", "formation_tsa", "sexualite_adaptee", "pictogrammes", "histoires_sociales")
            + ["lot-cahiers-tsa", "affiches-aff-e"] + _ROUTINES + _HISTOIRES + _num("vsoc", 4, 6, 7, 8),
     "tdah": _t("tdah", "diagnostic_tdah", "cerveau_tdah", "impulsivite", "routines_et_organisation_scolaire", "procrastination")

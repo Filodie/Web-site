@@ -7263,6 +7263,30 @@
   "valeur": 70.0
  },
  {
+  "id": "lot-pictos-porte-cles",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Pictogrammes porte-clés",
+  "sous": "6 trousses · 6 couleurs",
+  "desc": "Les six trousses de cartes de 6 x 6 cm, une couleur par catégorie : émotions (violet), comportements attendus (vert), à ne pas faire (rouge), besoins et demandes (bleu), routines (orange) et se calmer (turquoise). Une fille et un garçon, en couleur et en noir et blanc, avec un mode d’emploi dans chaque trousse.",
+  "fichiers": [],
+  "contient": [
+   "pictos-emotions",
+   "pictos-comportements",
+   "pictos-interdits",
+   "pictos-besoins",
+   "pictos-routines",
+   "pictos-regulation"
+  ],
+  "titre_en": "Filodie Collection: Keychain Pictograms",
+  "sous_en": "6 toolkits · 6 colours",
+  "desc_en": "All six kits of 6 x 6 cm cards, one colour per category: emotions (purple), expected behaviours (green), don’ts (red), needs and requests (blue), routines (orange) and calming down (turquoise). A girl and a boy, in colour and in black and white, with a guide in every kit.",
+  "prix": 25.0,
+  "payhip": "52rou",
+  "payhip_en": "52rou",
+  "valeur": 42.0
+ },
+ {
   "id": "lot-affiches",
   "type": "lot_affiches",
   "groupe": "Lots",
