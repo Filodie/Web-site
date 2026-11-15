@@ -191,15 +191,15 @@ def catalogue():
                 "the child style also in black and white, 12 blank cards and a guide: assembly, choosing a version, everyday use and use during a crisis.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Emotions.pdf"])
     add(id="pictos-comportements", type="trousse", groupe="Pictogrammes porte-clés",      # 15 nov. 2026
-        titre="Pictogrammes porte-clés : les comportements attendus", sous="24 actions · cartes de 6 x 6 cm", pv_pages=[3, 5],
-        desc="24 comportements attendus en cartes de 6 x 6 cm à imprimer, découper, plastifier et enfiler sur un anneau, "
+        titre="Pictogrammes porte-clés : les comportements attendus", sous="30 actions · cartes de 6 x 6 cm", pv_pages=[3, 5],
+        desc="30 comportements attendus en cartes de 6 x 6 cm à imprimer, découper, plastifier et enfiler sur un anneau, "
              "pour les élèves non verbaux ou peu verbaux, dont les élèves autistes : lever la main, attendre son tour, "
-             "marcher, ranger, se laver les mains et plus. Une fille et un garçon, en couleur et en noir et blanc, des consignes au positif, 12 cartes "
+             "marcher, ranger, se laver les mains, dire s’il te plaît et plus. Une fille et un garçon, en couleur et en noir et blanc, des consignes au positif, 12 cartes "
              "vierges et un mode d’emploi.",
-        titre_en="Keychain Pictograms: Expected Behaviours", sous_en="24 actions · 6 x 6 cm cards",
-        desc_en="24 expected behaviours on 6 x 6 cm cards to print, cut, laminate and slip onto a ring, for nonverbal or "
+        titre_en="Keychain Pictograms: Expected Behaviours", sous_en="30 actions · 6 x 6 cm cards",
+        desc_en="30 expected behaviours on 6 x 6 cm cards to print, cut, laminate and slip onto a ring, for nonverbal or "
                 "minimally verbal students, including autistic students: raise your hand, wait your turn, walk, tidy up, "
-                "wash your hands and more. A girl and a boy, in colour and in black and white, positively worded instructions, 12 blank cards and a guide.",
+                "wash your hands, say please and more. A girl and a boy, in colour and in black and white, positively worded instructions, 12 blank cards and a guide.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Comportements_attendus.pdf"])
     add(id="pictos-interdits", type="trousse", groupe="Pictogrammes porte-clés",          # 15 nov. 2026
         titre="Pictogrammes porte-clés : à ne pas faire", sous="24 interdits · cartes de 6 x 6 cm", pv_pages=[4, 6],
@@ -212,13 +212,13 @@ def catalogue():
                 "red-and-green pairing chart and a guide for stopping an action without punishing.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_A_ne_pas_faire.pdf"])
     add(id="pictos-besoins", type="trousse", groupe="Pictogrammes porte-clés",          # 15 nov. 2026
-        titre="Pictogrammes porte-clés : besoins et demandes", sous="24 demandes · cartes de 6 x 6 cm", pv_pages=[3, 5],
-        desc="24 besoins et demandes en cartes de 6 x 6 cm, du point de vue de l’élève : toilettes, j’ai faim, pause, "
-             "aide, encore, fini, non, trop de bruit et plus. Une fille et un garçon, en couleur et en noir et blanc, 12 cartes vierges et un mode "
+        titre="Pictogrammes porte-clés : besoins et demandes", sous="30 demandes · cartes de 6 x 6 cm", pv_pages=[3, 5],
+        desc="30 besoins et demandes en cartes de 6 x 6 cm, du point de vue de l’élève : toilettes, j’ai faim, pause, "
+             "aide, je veux, attendre, encore, fini, non, trop de bruit et plus. Une fille et un garçon, en couleur et en noir et blanc, 12 cartes vierges et un mode "
              "d’emploi pour enseigner les demandes aux élèves non verbaux ou peu verbaux.",
-        titre_en="Keychain Pictograms: Needs and Requests", sous_en="24 requests · 6 x 6 cm cards",
-        desc_en="24 needs and requests in 6 x 6 cm cards, from the student’s point of view: bathroom, I’m hungry, break, "
-                "help, more, all done, no, too loud and more. A girl and a boy, in colour and in black and white, 12 blank cards and a guide for teaching "
+        titre_en="Keychain Pictograms: Needs and Requests", sous_en="30 requests · 6 x 6 cm cards",
+        desc_en="30 needs and requests in 6 x 6 cm cards, from the student’s point of view: bathroom, I’m hungry, break, "
+                "help, I want, wait, more, all done, no, too loud and more. A girl and a boy, in colour and in black and white, 12 blank cards and a guide for teaching "
                 "requests to nonverbal or minimally verbal students.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Besoins_et_demandes.pdf"])
     add(id="pictos-routines", type="trousse", groupe="Pictogrammes porte-clés",          # 15 nov. 2026
@@ -232,12 +232,12 @@ def catalogue():
                 "and a guide for showing what comes next.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Routines.pdf"])
     add(id="pictos-regulation", type="trousse", groupe="Pictogrammes porte-clés",        # 15 nov. 2026
-        titre="Pictogrammes porte-clés : se calmer", sous="24 stratégies · cartes de 6 x 6 cm", pv_pages=[3, 13],
-        desc="24 stratégies pour se calmer en cartes de 6 x 6 cm : respirer, coin calme, casque antibruit, pousser le mur "
+        titre="Pictogrammes porte-clés : se calmer", sous="30 stratégies · cartes de 6 x 6 cm", pv_pages=[3, 17],
+        desc="30 stratégies pour se calmer en cartes de 6 x 6 cm : respiration carrée, coin calme, casque antibruit, pousser le mur "
              "et plus. Une fille et un garçon, en couleur et en noir et blanc, 12 cartes vierges, un plan à trois niveaux, "
              "un tableau « Je me calme avec… » et un mode d’emploi avec des repères de sécurité.",
-        titre_en="Keychain Pictograms: Calming Down", sous_en="24 strategies · 6 x 6 cm cards",
-        desc_en="24 calming strategies in 6 x 6 cm cards: breathe, calm corner, ear defenders, push the wall and more. "
+        titre_en="Keychain Pictograms: Calming Down", sous_en="30 strategies · 6 x 6 cm cards",
+        desc_en="30 calming strategies in 6 x 6 cm cards: square breathing, calm corner, ear defenders, push the wall and more. "
                 "A girl and a boy, in colour and in black and white, 12 blank cards, a three-level plan, an “I calm down "
                 "with…” board and a guide with safety tips.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Se_calmer.pdf"])
