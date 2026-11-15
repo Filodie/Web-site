@@ -102,7 +102,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
                                        "trousse-chutes_aines", "trousse-intimite_aines", "trousse-conduite_aines",
                                        "trousse-stimulation_aines", "lot-15-accompagner-le-grand-âge")},
           **{k: "2026-11-05" for k in ("trousse-diagnostic_tsa", "trousse-diagnostic_tdah", "trousse-diagnostic_di",
-                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15", "pictos-besoins": "2026-11-15", "pictos-routines": "2026-11-15", "pictos-regulation": "2026-11-15", "lot-pictos-porte-cles": "2026-11-15"}
+                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15", "pictos-besoins": "2026-11-15", "pictos-routines": "2026-11-15", "pictos-regulation": "2026-11-15", "pictos-douleur": "2026-11-15", "lot-pictos-porte-cles": "2026-11-15"}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
                  "lot_cahiers", "lot_routines", "lot_detective", "lot_albums", "lot_jeux")
@@ -241,6 +241,17 @@ def catalogue():
                 "A girl and a boy, in colour and in black and white, 12 blank cards, a three-level plan, an “I calm down "
                 "with…” board and a guide with safety tips.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Se_calmer.pdf"])
+    add(id="pictos-douleur", type="trousse", groupe="Pictogrammes porte-clés",           # 15 nov. 2026
+        titre="Pictogrammes porte-clés : où j’ai mal", sous="24 pictogrammes · cartes de 6 x 6 cm", pv_pages=[3, 14],
+        desc="24 cartes de 6 x 6 cm pour dire où ça fait mal, comment et combien : tête, ventre, dents, oreille, genou, "
+             "mal au cœur, fièvre et plus. Une fille et un garçon, en couleur et en noir et blanc, 12 cartes vierges, un "
+             "schéma du corps « Montre-moi où tu as mal » avec une échelle de douleur, 3 bandes-phrases et un mode "
+             "d’emploi avec des repères de sécurité.",
+        titre_en="Keychain Pictograms: Where It Hurts", sous_en="24 pictograms · 6 x 6 cm cards",
+        desc_en="24 cards, 6 x 6 cm, to show where it hurts, how and how much: head, tummy, teeth, ear, knee, feeling "
+                "sick, fever and more. A girl and a boy, in colour and in black and white, 12 blank cards, a “Show me "
+                "where it hurts” body chart with a pain scale, 3 sentence strips and a guide with safety tips.",
+        fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Ou_j_ai_mal.pdf"])
     from outil_choix_eclaire import CHOIX                 # outils d’intervention vendus à l’unité, hors collection
     from outils_3dollars import OUTILS
     from outils_etudes import OUTILS as ETUDES, GROUPE_SITE, ECHANTILLON
@@ -441,18 +452,19 @@ def catalogue():
             desc_en="Ten toolkits to support your child at home, from early childhood to adolescence: the parent-child "
                     "relationship, attachment, age-appropriate positive reinforcement, sleep, screens, self-esteem, grief "
                     "and separation, and adolescence.")
-    # Collection Pictogrammes porte-clés (15 nov. 2026) : les six couleurs réunies
-    ppc = ["pictos-emotions", "pictos-comportements", "pictos-interdits", "pictos-besoins", "pictos-routines", "pictos-regulation"]
+    # Collection Pictogrammes porte-clés (15 nov. 2026) : les sept couleurs réunies
+    ppc = ["pictos-emotions", "pictos-comportements", "pictos-interdits", "pictos-besoins", "pictos-routines", "pictos-regulation", "pictos-douleur"]
     if all(any(i["id"] == k for i in items) for k in ppc):
         add(id="lot-pictos-porte-cles", type="lot_collection", groupe="Lots",
-            titre="Collection Filodie : Pictogrammes porte-clés", sous=f"{len(ppc)} trousses · 6 couleurs",
-            desc="Les six trousses de cartes de 6 x 6 cm, une couleur par catégorie : émotions (violet), comportements "
-                 "attendus (vert), à ne pas faire (rouge), besoins et demandes (bleu), routines (orange) et se calmer "
-                 "(turquoise). Une fille et un garçon, en couleur et en noir et blanc, avec un mode d’emploi dans chaque trousse et des bandes-phrases pour les besoins et les émotions.",
+            titre="Collection Filodie : Pictogrammes porte-clés", sous=f"{len(ppc)} trousses · 7 couleurs",
+            desc="Les sept trousses de cartes de 6 x 6 cm, une couleur par catégorie : émotions (violet), comportements "
+                 "attendus (vert), à ne pas faire (rouge), besoins et demandes (bleu), routines (orange), se calmer "
+                 "(turquoise) et où j’ai mal (rose). Une fille et un garçon, en couleur et en noir et blanc, avec un mode d’emploi dans chaque trousse et des bandes-phrases pour les besoins et les émotions.",
             fichiers=[], contient=ppc,
-            titre_en="Filodie Collection: Keychain Pictograms", sous_en=f"{len(ppc)} toolkits · 6 colours",
-            desc_en="All six kits of 6 x 6 cm cards, one colour per category: emotions (purple), expected behaviours "
-                    "(green), don’ts (red), needs and requests (blue), routines (orange) and calming down (turquoise). A "
+            titre_en="Filodie Collection: Keychain Pictograms", sous_en=f"{len(ppc)} toolkits · 7 colours",
+            desc_en="All seven kits of 6 x 6 cm cards, one colour per category: emotions (purple), expected behaviours "
+                    "(green), don’ts (red), needs and requests (blue), routines (orange), calming down (turquoise) and "
+                    "where it hurts (pink). A "
                     "girl and a boy, in colour and in black and white, with a guide in every kit and sentence strips for needs and emotions.")
     aff = [i["id"] for i in items if i["type"] == "affiches"]
     if aff:
@@ -1016,8 +1028,8 @@ VEDETTES = [
      "143 knowledge sheets for practice, in colour and in black and white."),
     ("lot-15-accompagner-le-grand-âge", "nouveau", "Sept trousses sur la fin de vie, le deuil, l’isolement, les chutes, l’intimité, la conduite et la stimulation.",
      "Seven toolkits on end of life, grief, isolation, falls, intimacy, driving and stimulation."),
-    ("lot-pictos-porte-cles", "nouveau", "Six trousses de pictogrammes porte-clés, une couleur par catégorie, en couleur et en noir et blanc.",
-     "Six keychain pictogram kits, one colour per category, in colour and in black and white."),
+    ("lot-pictos-porte-cles", "nouveau", "Sept trousses de pictogrammes porte-clés, une couleur par catégorie, en couleur et en noir et blanc.",
+     "Seven keychain pictogram kits, one colour per category, in colour and in black and white."),
     ("lot-16-après-le-diagnostic", "nouveau", "Quatre trousses pour les parents après un diagnostic de TSA, de TDAH, de DI ou de TDL.",
      "Four toolkits for parents after an autism, ADHD, intellectual disability or developmental language disorder diagnosis."),
     ("trousse-apprentissage-langage", "vente", "Des outils pour soutenir les enfants ayant des difficultés d’apprentissage et de langage.",
