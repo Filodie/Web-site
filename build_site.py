@@ -102,7 +102,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
                                        "trousse-chutes_aines", "trousse-intimite_aines", "trousse-conduite_aines",
                                        "trousse-stimulation_aines", "lot-15-accompagner-le-grand-âge")},
           **{k: "2026-11-05" for k in ("trousse-diagnostic_tsa", "trousse-diagnostic_tdah", "trousse-diagnostic_di",
-                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}}
+                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15"}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
                  "lot_cahiers", "lot_routines", "lot_detective", "lot_albums", "lot_jeux")
@@ -179,6 +179,17 @@ def catalogue():
         add(id="trousse-" + t["fichier"].lower(), type="trousse", groupe="Trousses spécialisées", titre=t["nom"],
             sous=f"{len(t['fiches'])} outils", desc=t["desc"],
             fichiers=[f"Trousses spécialisées/Trousse_Filodie_{t['fichier']}_2026.pdf"])
+    add(id="pictos-emotions", type="trousse", groupe="Pictogrammes porte-clés",           # 15 nov. 2026
+        titre="Pictogrammes porte-clés : les émotions", sous="24 émotions · cartes de 6 x 6 cm", pv_pages=[3, 7],
+        desc="24 émotions en cartes de 6 x 6 cm à imprimer, découper, plastifier et enfiler sur un anneau, pour les "
+             "élèves non verbaux ou peu verbaux, dont les élèves autistes. Deux styles (émoticône et enfant), au féminin "
+             "et au masculin, 12 cartes vierges et un mode d’emploi : assemblage, choix de la version, utilisation au "
+             "quotidien et pendant une crise.",
+        titre_en="Keychain Pictograms: Emotions", sous_en="24 emotions · 6 x 6 cm cards",
+        desc_en="24 emotions on 6 x 6 cm cards to print, cut, laminate and slip onto a ring, for nonverbal or minimally "
+                "verbal students, including autistic students. Two styles (emoji and child, with a girl and a boy), "
+                "12 blank cards and a guide: assembly, choosing a version, everyday use and use during a crisis.",
+        fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Emotions.pdf"])
     from outil_choix_eclaire import CHOIX                 # outils d’intervention vendus à l’unité, hors collection
     from outils_3dollars import OUTILS
     from outils_etudes import OUTILS as ETUDES, GROUPE_SITE, ECHANTILLON

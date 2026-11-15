@@ -31,6 +31,7 @@ CATEGORIES = [
 SANS_CATEGORIE = {"lot-mega", "lot-toutes-les-trousses", "lot-tous-les-cahiers", "lot-specialisees"}
 
 GROUPES = {
+    "Pictogrammes porte-clés": ["tsa", "emotions", "di", "ecole"],
     "Cahiers TSA": ["tsa"], "Cahiers TDAH": ["tdah"], "Cahiers Déficience intellectuelle": ["di"],
     "Cahiers Comportement": ["comportement"], "Cahiers Habiletés sociales": ["sociales"],
     "Études et stages en T.E.S.": ["etudes"], "Accompagner le grand âge": ["aines"], "Vieillir avec dignité": ["aines"],
