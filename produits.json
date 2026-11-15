@@ -499,10 +499,10 @@
    3,
    7
   ],
-  "desc": "24 émotions en cartes de 6 x 6 cm à imprimer, découper, plastifier et enfiler sur un anneau, pour les élèves non verbaux ou peu verbaux, dont les élèves autistes. Deux styles (émoticône et enfant), au féminin et au masculin, le style enfant aussi en noir et blanc, 12 cartes vierges et un mode d’emploi : assemblage, choix de la version, utilisation au quotidien et pendant une crise.",
+  "desc": "24 émotions en cartes de 6 x 6 cm à imprimer, découper, plastifier et enfiler sur un anneau, pour les élèves non verbaux ou peu verbaux, dont les élèves autistes. Deux styles (émoticône et enfant), au féminin et au masculin, le style enfant aussi en noir et blanc, 12 cartes vierges, 3 bandes-phrases (Je me sens…, Je me sens… / J’ai besoin…, Avant / Maintenant) et un mode d’emploi : assemblage, choix de la version, utilisation au quotidien et pendant une crise.",
   "titre_en": "Keychain Pictograms: Emotions",
   "sous_en": "24 emotions · 6 x 6 cm cards",
-  "desc_en": "24 emotions on 6 x 6 cm cards to print, cut, laminate and slip onto a ring, for nonverbal or minimally verbal students, including autistic students. Two styles (emoji and child, with a girl and a boy), the child style also in black and white, 12 blank cards and a guide: assembly, choosing a version, everyday use and use during a crisis.",
+  "desc_en": "24 emotions on 6 x 6 cm cards to print, cut, laminate and slip onto a ring, for nonverbal or minimally verbal students, including autistic students. Two styles (emoji and child, with a girl and a boy), the child style also in black and white, 12 blank cards, 3 sentence strips (I feel…, I feel… / I need…, Before / Now) and a guide: assembly, choosing a version, everyday use and use during a crisis.",
   "fichiers": [
    "Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Emotions.pdf"
   ],
@@ -562,10 +562,10 @@
    3,
    5
   ],
-  "desc": "30 besoins et demandes en cartes de 6 x 6 cm, du point de vue de l’élève : toilettes, j’ai faim, pause, aide, je veux, attendre, encore, fini, non, trop de bruit et plus. Une fille et un garçon, en couleur et en noir et blanc, 12 cartes vierges et un mode d’emploi pour enseigner les demandes aux élèves non verbaux ou peu verbaux.",
+  "desc": "30 besoins et demandes en cartes de 6 x 6 cm, du point de vue de l’élève : toilettes, j’ai faim, pause, aide, je veux, attendre, encore, fini, non, trop de bruit et plus. Une fille et un garçon, en couleur et en noir et blanc, 12 cartes vierges, 3 bandes-phrases (Je veux…, J’ai besoin…, Je ne veux pas…) et un mode d’emploi pour enseigner les demandes aux élèves non verbaux ou peu verbaux.",
   "titre_en": "Keychain Pictograms: Needs and Requests",
   "sous_en": "30 requests · 6 x 6 cm cards",
-  "desc_en": "30 needs and requests in 6 x 6 cm cards, from the student’s point of view: bathroom, I’m hungry, break, help, I want, wait, more, all done, no, too loud and more. A girl and a boy, in colour and in black and white, 12 blank cards and a guide for teaching requests to nonverbal or minimally verbal students.",
+  "desc_en": "30 needs and requests in 6 x 6 cm cards, from the student’s point of view: bathroom, I’m hungry, break, help, I want, wait, more, all done, no, too loud and more. A girl and a boy, in colour and in black and white, 12 blank cards, 3 sentence strips (I want…, I need…, I don’t want…) and a guide for teaching requests to nonverbal or minimally verbal students.",
   "fichiers": [
    "Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Besoins_et_demandes.pdf"
   ],
@@ -7268,7 +7268,7 @@
   "groupe": "Lots",
   "titre": "Collection Filodie : Pictogrammes porte-clés",
   "sous": "6 trousses · 6 couleurs",
-  "desc": "Les six trousses de cartes de 6 x 6 cm, une couleur par catégorie : émotions (violet), comportements attendus (vert), à ne pas faire (rouge), besoins et demandes (bleu), routines (orange) et se calmer (turquoise). Une fille et un garçon, en couleur et en noir et blanc, avec un mode d’emploi dans chaque trousse.",
+  "desc": "Les six trousses de cartes de 6 x 6 cm, une couleur par catégorie : émotions (violet), comportements attendus (vert), à ne pas faire (rouge), besoins et demandes (bleu), routines (orange) et se calmer (turquoise). Une fille et un garçon, en couleur et en noir et blanc, avec un mode d’emploi dans chaque trousse et des bandes-phrases pour les besoins et les émotions.",
   "fichiers": [],
   "contient": [
    "pictos-emotions",
@@ -7280,7 +7280,7 @@
   ],
   "titre_en": "Filodie Collection: Keychain Pictograms",
   "sous_en": "6 toolkits · 6 colours",
-  "desc_en": "All six kits of 6 x 6 cm cards, one colour per category: emotions (purple), expected behaviours (green), don’ts (red), needs and requests (blue), routines (orange) and calming down (turquoise). A girl and a boy, in colour and in black and white, with a guide in every kit.",
+  "desc_en": "All six kits of 6 x 6 cm cards, one colour per category: emotions (purple), expected behaviours (green), don’ts (red), needs and requests (blue), routines (orange) and calming down (turquoise). A girl and a boy, in colour and in black and white, with a guide in every kit and sentence strips for needs and emotions.",
   "prix": 25.0,
   "payhip": "52rou",
   "payhip_en": "52rou",
