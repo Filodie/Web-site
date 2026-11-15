@@ -102,7 +102,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
                                        "trousse-chutes_aines", "trousse-intimite_aines", "trousse-conduite_aines",
                                        "trousse-stimulation_aines", "lot-15-accompagner-le-grand-âge")},
           **{k: "2026-11-05" for k in ("trousse-diagnostic_tsa", "trousse-diagnostic_tdah", "trousse-diagnostic_di",
-                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15", "pictos-besoins": "2026-11-15"}
+                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15", "pictos-besoins": "2026-11-15", "pictos-routines": "2026-11-15"}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
                  "lot_cahiers", "lot_routines", "lot_detective", "lot_albums", "lot_jeux")
@@ -183,44 +183,54 @@ def catalogue():
         titre="Pictogrammes porte-clés : les émotions", sous="24 émotions · cartes de 6 x 6 cm", pv_pages=[3, 7],
         desc="24 émotions en cartes de 6 x 6 cm à imprimer, découper, plastifier et enfiler sur un anneau, pour les "
              "élèves non verbaux ou peu verbaux, dont les élèves autistes. Deux styles (émoticône et enfant), au féminin "
-             "et au masculin, 12 cartes vierges et un mode d’emploi : assemblage, choix de la version, utilisation au "
+             "et au masculin, le style enfant aussi en noir et blanc, 12 cartes vierges et un mode d’emploi : assemblage, choix de la version, utilisation au "
              "quotidien et pendant une crise.",
         titre_en="Keychain Pictograms: Emotions", sous_en="24 emotions · 6 x 6 cm cards",
         desc_en="24 emotions on 6 x 6 cm cards to print, cut, laminate and slip onto a ring, for nonverbal or minimally "
                 "verbal students, including autistic students. Two styles (emoji and child, with a girl and a boy), "
-                "12 blank cards and a guide: assembly, choosing a version, everyday use and use during a crisis.",
+                "the child style also in black and white, 12 blank cards and a guide: assembly, choosing a version, everyday use and use during a crisis.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Emotions.pdf"])
     add(id="pictos-comportements", type="trousse", groupe="Pictogrammes porte-clés",      # 15 nov. 2026
         titre="Pictogrammes porte-clés : les comportements attendus", sous="24 actions · cartes de 6 x 6 cm", pv_pages=[3, 5],
         desc="24 comportements attendus en cartes de 6 x 6 cm à imprimer, découper, plastifier et enfiler sur un anneau, "
              "pour les élèves non verbaux ou peu verbaux, dont les élèves autistes : lever la main, attendre son tour, "
-             "marcher, ranger, se laver les mains et plus. Une fille et un garçon, des consignes au positif, 12 cartes "
+             "marcher, ranger, se laver les mains et plus. Une fille et un garçon, en couleur et en noir et blanc, des consignes au positif, 12 cartes "
              "vierges et un mode d’emploi.",
         titre_en="Keychain Pictograms: Expected Behaviours", sous_en="24 actions · 6 x 6 cm cards",
         desc_en="24 expected behaviours on 6 x 6 cm cards to print, cut, laminate and slip onto a ring, for nonverbal or "
                 "minimally verbal students, including autistic students: raise your hand, wait your turn, walk, tidy up, "
-                "wash your hands and more. A girl and a boy, positively worded instructions, 12 blank cards and a guide.",
+                "wash your hands and more. A girl and a boy, in colour and in black and white, positively worded instructions, 12 blank cards and a guide.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Comportements_attendus.pdf"])
     add(id="pictos-interdits", type="trousse", groupe="Pictogrammes porte-clés",          # 15 nov. 2026
         titre="Pictogrammes porte-clés : à ne pas faire", sous="24 interdits · cartes de 6 x 6 cm", pv_pages=[4, 6],
         desc="24 interdits en cartes de 6 x 6 cm, chacun barré d’un X rouge et jumelé à une carte verte des comportements "
              "attendus : ne pas frapper, ne pas courir, ne pas crier, ne pas se sauver et plus. Une fille et un garçon, "
-             "12 cartes vierges, un tableau des paires rouge et verte et un mode d’emploi pour arrêter un geste sans punir.",
+             "en couleur et en noir et blanc (X toujours rouge), 12 cartes vierges, un tableau des paires rouge et verte et un mode d’emploi pour arrêter un geste sans punir.",
         titre_en="Keychain Pictograms: What Not to Do", sous_en="24 “don’t” cards · 6 x 6 cm",
         desc_en="24 “don’t” cards in 6 x 6 cm, each crossed out with a red X and paired with a green expected-behaviour "
-                "card: don’t hit, don’t run, don’t yell, don’t run away and more. A girl and a boy, 12 blank cards, a "
+                "card: don’t hit, don’t run, don’t yell, don’t run away and more. A girl and a boy, in colour and in black and white (the X stays red), 12 blank cards, a "
                 "red-and-green pairing chart and a guide for stopping an action without punishing.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_A_ne_pas_faire.pdf"])
     add(id="pictos-besoins", type="trousse", groupe="Pictogrammes porte-clés",          # 15 nov. 2026
         titre="Pictogrammes porte-clés : besoins et demandes", sous="24 demandes · cartes de 6 x 6 cm", pv_pages=[3, 5],
         desc="24 besoins et demandes en cartes de 6 x 6 cm, du point de vue de l’élève : toilettes, j’ai faim, pause, "
-             "aide, encore, fini, non, trop de bruit et plus. Une fille et un garçon, 12 cartes vierges et un mode "
+             "aide, encore, fini, non, trop de bruit et plus. Une fille et un garçon, en couleur et en noir et blanc, 12 cartes vierges et un mode "
              "d’emploi pour enseigner les demandes aux élèves non verbaux ou peu verbaux.",
         titre_en="Keychain Pictograms: Needs and Requests", sous_en="24 requests · 6 x 6 cm cards",
         desc_en="24 needs and requests in 6 x 6 cm cards, from the student’s point of view: bathroom, I’m hungry, break, "
-                "help, more, all done, no, too loud and more. A girl and a boy, 12 blank cards and a guide for teaching "
+                "help, more, all done, no, too loud and more. A girl and a boy, in colour and in black and white, 12 blank cards and a guide for teaching "
                 "requests to nonverbal or minimally verbal students.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Besoins_et_demandes.pdf"])
+    add(id="pictos-routines", type="trousse", groupe="Pictogrammes porte-clés",          # 15 nov. 2026
+        titre="Pictogrammes porte-clés : routines et moments de la journée", sous="24 moments · cartes de 6 x 6 cm", pv_pages=[3, 5],
+        desc="24 moments de la journée en cartes de 6 x 6 cm, de l’autobus au dodo : rassemblement, lecture, collation, "
+             "récréation, éducation physique, bain et plus. Une fille et un garçon, en couleur et en noir et blanc, "
+             "12 cartes vierges, des bandes « D’abord, ensuite » et un mode d’emploi pour annoncer la suite.",
+        titre_en="Keychain Pictograms: Routines and Daily Moments", sous_en="24 moments · 6 x 6 cm cards",
+        desc_en="24 daily moments in 6 x 6 cm cards, from the bus to bedtime: circle time, reading, snack, recess, gym, "
+                "bath and more. A girl and a boy, in colour and in black and white, 12 blank cards, “First, then” strips "
+                "and a guide for showing what comes next.",
+        fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Routines.pdf"])
     from outil_choix_eclaire import CHOIX                 # outils d’intervention vendus à l’unité, hors collection
     from outils_3dollars import OUTILS
     from outils_etudes import OUTILS as ETUDES, GROUPE_SITE, ECHANTILLON
