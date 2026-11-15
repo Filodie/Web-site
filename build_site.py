@@ -102,7 +102,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
                                        "trousse-chutes_aines", "trousse-intimite_aines", "trousse-conduite_aines",
                                        "trousse-stimulation_aines", "lot-15-accompagner-le-grand-âge")},
           **{k: "2026-11-05" for k in ("trousse-diagnostic_tsa", "trousse-diagnostic_tdah", "trousse-diagnostic_di",
-                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15", "pictos-besoins": "2026-11-15", "pictos-routines": "2026-11-15", "pictos-regulation": "2026-11-15", "pictos-douleur": "2026-11-15", "pictos-ecole-qc": "2026-11-15", "lot-pictos-porte-cles": "2026-11-15"}
+                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15", "pictos-besoins": "2026-11-15", "pictos-routines": "2026-11-15", "pictos-regulation": "2026-11-15", "pictos-douleur": "2026-11-15", "pictos-ecole-qc": "2026-11-15", "pictos-echantillon": "2026-11-15", "lot-pictos-porte-cles": "2026-11-15"}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
                  "lot_cahiers", "lot_routines", "lot_detective", "lot_albums", "lot_jeux")
@@ -115,6 +115,7 @@ PARENTS_IDS = {"lot-parents", "trousse-parents", "trousse-attachement", "trousse
                                                                          "pommes", "halloween", "hiver")}
 GLOSSAIRE_EN_VENTE = True                           # PDF en français seulement (mis en vente le 4 nov. 2026)
 DET_ID = "detective-dde"                            # cahier de détective découverte gratuit (hors lots)
+PPC_ECH_ID = "pictos-echantillon"                  # échantillon gratuit de 6 pictogrammes porte-clés (hors lots, 15 nov. 2026)
 
 # Éditions mensuelles de « Tout Filodie » (lot-mega) et « Toutes les trousses » (lot-toutes-les-trousses).
 EDITIONS_MOIS = {
@@ -263,6 +264,16 @@ def catalogue():
                 "lunch box, PD day, fire drill, supply teacher and more. A girl and a boy, in colour and in black and white, "
                 "12 blank cards, a “Getting dressed to go outside” sequence and a guide for preparing the student for changes.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Vie_scolaire_Quebec.pdf"])
+    add(id=PPC_ECH_ID, type="trousse", groupe="Pictogrammes porte-clés", prix=0.0,       # 15 nov. 2026, gratuit
+        titre="Pictogrammes porte-clés : échantillon gratuit", sous="Gratuit · 6 pictogrammes · cartes de 6 x 6 cm", pv_pages=[4, 5],
+        desc="Six cartes de 6 x 6 cm pour essayer les pictogrammes porte-clés, une de chaque couleur : Triste, Toilettes, "
+             "Attendre son tour, Dîner, Respirer lentement et Mal au ventre. Une fille et un garçon, en couleur et en noir "
+             "et blanc, un mode d’emploi et l’aperçu des huit trousses de la collection.",
+        titre_en="Keychain Pictograms: Free Sample", sous_en="Free · 6 pictograms · 6 x 6 cm cards",
+        desc_en="Six 6 x 6 cm cards to try the keychain pictograms, one in each colour: Sad, Bathroom, Wait your turn, "
+                "Lunch, Breathe slowly and Tummy ache. A girl and a boy, in colour and in black and white, a guide and an "
+                "overview of the eight kits in the collection.",
+        fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Echantillon_gratuit.pdf"])
     from outil_choix_eclaire import CHOIX                 # outils d’intervention vendus à l’unité, hors collection
     from outils_3dollars import OUTILS
     from outils_etudes import OUTILS as ETUDES, GROUPE_SITE, ECHANTILLON
@@ -548,7 +559,7 @@ def catalogue():
         sous=f"{len(tous)} cahiers · 5 séries", prix=75.00, sous_en=f"{len(tous)} workbooks · 5 series",
         desc="Les cahiers TSA, TDAH, habiletés sociales, DI et comportement, en couleur et à colorier.",
         fichiers=[], contient=tous)
-    tt = [i["id"] for i in items if i["type"] in ("trousse", "edition") and i["id"] != ECH_ID]
+    tt = [i["id"] for i in items if i["type"] in ("trousse", "edition") and i["id"] not in (ECH_ID, PPC_ECH_ID)]
     ned = sum(1 for i in items if i["type"] == "edition")
     ntr = len(tt) - ned                                  # trousses réellement incluses dans Tout Filodie
     ncol = sum(1 for i in items if i["type"] == "trousse" and i["fichiers"][0].startswith("Collection Filodie/"))
@@ -566,7 +577,7 @@ def catalogue():
         desc_en=f"All {ntr} toolkits, the editions, the {len(tous)} visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook "
                 "and the regional directory.",
         fichiers=[], contient=[i["id"] for i in items if not i["type"].startswith("lot") and i["type"] not in ("mega", "gratuit")
-                                                                 and i["id"] not in (ECH_ID, DET_ID)])
+                                                                 and i["id"] not in (ECH_ID, DET_ID, PPC_ECH_ID)])
     # Trousse pour enseignantes et enseignants (19 oct. 2026) : ajoutée après les lots, puis jointe aux éditions datées
     # de « Toutes les trousses » et « Tout Filodie » (voir plus bas) ; bilingue. Payhip CMcPa.
     add(id="trousse-enseignants-tes", type="trousse", groupe="Pour enseignantes et enseignants en T.E.S.",
@@ -1305,9 +1316,10 @@ def gratuits(lang):
     tous = [i for i in items.values() if i["type"] == "gratuit"]
     mois = ([i for i in tous if i.get("code", "")[-4:] == now] or [i for i in tous if i.get("code", "")[-4:] == nxt]
             or sorted((i for i in tous if i.get("code", "")[-4:] < now), key=lambda i: i["id"]))
-    ids = [DET_ID, "trousse-trousse_decouverte", ECH_ID] + ([mois[-1]["id"]] if mois else []) + ["bottin-regional"]
+    ids = [PPC_ECH_ID, DET_ID, "trousse-trousse_decouverte", ECH_ID] + ([mois[-1]["id"]] if mois else []) + ["bottin-regional"]
     fr = lang == "fr"
-    etiq = {DET_ID: "Nouveau · cahier de détective" if fr else "New · detective notebook",
+    etiq = {PPC_ECH_ID: "Nouveau · pictogrammes" if fr else "New · pictograms",
+            DET_ID: "Cahier de détective" if fr else "Detective notebook",
             "trousse-trousse_decouverte": "Trousse découverte" if fr else "Starter toolkit",
             ECH_ID: "Pour les étudiantes et étudiants" if fr else "For SCC students",
             "bottin-regional": "Bottin des 17 régions" if fr else "17-region directory"}
@@ -1325,9 +1337,9 @@ def gratuits(lang):
                   f'<p class="kicker" style="padding:0 16px;margin:12px 0 0">{lab}</p><h3>{html.escape(titre)}</h3>'
                   f'<p style="padding-bottom:16px">{btn}</p></div>')
     h2 = "Commencer gratuitement" if fr else "Start for free"
-    sous = ("Cinq outils offerts, en français et en anglais. Cochez la case au paiement pour recevoir l’outil gratuit "
+    sous = ("Six outils offerts, en français et en anglais. Cochez la case au paiement pour recevoir l’outil gratuit "
             "de chaque mois et les nouveautés." if fr else
-            "Five free tools, in French and English. Tick the box at checkout to get each month’s free tool and "
+            "Six free tools, in French and English. Tick the box at checkout to get each month’s free tool and "
             "what’s new.")
     abo_t = "Recevez l’outil gratuit chaque mois" if fr else "Get the free tool every month"
     abo_p = ("Inscrivez-vous à l’infolettre : un outil Filodie gratuit et les nouveautés, une fois par mois. Désabonnement "
