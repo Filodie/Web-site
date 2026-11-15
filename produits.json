@@ -532,6 +532,27 @@
   "payhip_en": "xNElG"
  },
  {
+  "id": "pictos-interdits",
+  "type": "trousse",
+  "groupe": "Pictogrammes porte-clés",
+  "titre": "Pictogrammes porte-clés : à ne pas faire",
+  "sous": "24 interdits · cartes de 6 x 6 cm",
+  "pv_pages": [
+   4,
+   6
+  ],
+  "desc": "24 interdits en cartes de 6 x 6 cm, chacun barré d’un X rouge et jumelé à une carte verte des comportements attendus : ne pas frapper, ne pas courir, ne pas crier, ne pas se sauver et plus. Une fille et un garçon, 12 cartes vierges, un tableau des paires rouge et verte et un mode d’emploi pour arrêter un geste sans punir.",
+  "titre_en": "Keychain Pictograms: What Not to Do",
+  "sous_en": "24 “don’t” cards · 6 x 6 cm",
+  "desc_en": "24 “don’t” cards in 6 x 6 cm, each crossed out with a red X and paired with a green expected-behaviour card: don’t hit, don’t run, don’t yell, don’t run away and more. A girl and a boy, 12 blank cards, a red-and-green pairing chart and a guide for stopping an action without punishing.",
+  "fichiers": [
+   "Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_A_ne_pas_faire.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "c0D5L",
+  "payhip_en": "c0D5L"
+ },
+ {
   "id": "trousse-choix_eclaire",
   "type": "trousse",
   "groupe": "Outils d’intervention",
@@ -7567,11 +7588,11 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses : édition novembre 2026",
-  "sous": "Édition novembre 2026 · 188 trousses et 5 éditions",
+  "sous": "Édition novembre 2026 · 189 trousses et 5 éditions",
   "prix": 75.0,
-  "sous_en": "November 2026 edition · 188 toolkits and 5 editions",
-  "desc": "La trousse principale, les 34 trousses spécialisées, les 126 trousses de la Collection, les 25 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
-  "desc_en": "The main toolkit, the 34 specialized toolkits, the 126 Collection toolkits, the 25 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
+  "sous_en": "November 2026 edition · 189 toolkits and 5 editions",
+  "desc": "La trousse principale, les 34 trousses spécialisées, les 126 trousses de la Collection, les 26 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
+  "desc_en": "The main toolkit, the 34 specialized toolkits, the 126 Collection toolkits, the 26 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7611,6 +7632,7 @@
    "trousse-techniques_impact",
    "pictos-emotions",
    "pictos-comportements",
+   "pictos-interdits",
    "trousse-choix_eclaire",
    "trousse-objectif",
    "trousse-procrastination",
@@ -7771,7 +7793,7 @@
   "payhip": "cywQA",
   "payhip_en": "cywQA",
   "titre_en": "All the toolkits: November 2026 edition",
-  "valeur": 1356.0
+  "valeur": 1363.0
  },
  {
   "id": "lot-mega",
@@ -7779,8 +7801,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie : édition novembre 2026",
   "sous": "Édition novembre 2026",
-  "desc": "Tout le catalogue payant de Filodie : les 188 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
-  "desc_en": "Filodie’s entire paid catalogue: all 188 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
+  "desc": "Tout le catalogue payant de Filodie : les 189 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
+  "desc_en": "Filodie’s entire paid catalogue: all 189 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7820,6 +7842,7 @@
    "trousse-techniques_impact",
    "pictos-emotions",
    "pictos-comportements",
+   "pictos-interdits",
    "trousse-choix_eclaire",
    "trousse-objectif",
    "trousse-procrastination",
@@ -8198,7 +8221,7 @@
   "payhip_en": "dZ02M",
   "sous_en": "November 2026 edition",
   "titre_en": "All of Filodie: November 2026 edition",
-  "valeur": 2134.0
+  "valeur": 2141.0
  },
  {
   "id": "trousse-enseignants-tes",
