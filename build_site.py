@@ -102,7 +102,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
                                        "trousse-chutes_aines", "trousse-intimite_aines", "trousse-conduite_aines",
                                        "trousse-stimulation_aines", "lot-15-accompagner-le-grand-âge")},
           **{k: "2026-11-05" for k in ("trousse-diagnostic_tsa", "trousse-diagnostic_tdah", "trousse-diagnostic_di",
-                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15", "pictos-besoins": "2026-11-15", "pictos-routines": "2026-11-15"}
+                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15", "pictos-besoins": "2026-11-15", "pictos-routines": "2026-11-15", "pictos-regulation": "2026-11-15"}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
                  "lot_cahiers", "lot_routines", "lot_detective", "lot_albums", "lot_jeux")
@@ -231,6 +231,16 @@ def catalogue():
                 "bath and more. A girl and a boy, in colour and in black and white, 12 blank cards, “First, then” strips "
                 "and a guide for showing what comes next.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Routines.pdf"])
+    add(id="pictos-regulation", type="trousse", groupe="Pictogrammes porte-clés",        # 15 nov. 2026
+        titre="Pictogrammes porte-clés : se calmer", sous="24 stratégies · cartes de 6 x 6 cm", pv_pages=[3, 13],
+        desc="24 stratégies pour se calmer en cartes de 6 x 6 cm : respirer, coin calme, casque antibruit, pousser le mur "
+             "et plus. Une fille et un garçon, en couleur et en noir et blanc, 12 cartes vierges, un plan à trois niveaux, "
+             "un tableau « Je me calme avec… » et un mode d’emploi avec des repères de sécurité.",
+        titre_en="Keychain Pictograms: Calming Down", sous_en="24 strategies · 6 x 6 cm cards",
+        desc_en="24 calming strategies in 6 x 6 cm cards: breathe, calm corner, ear defenders, push the wall and more. "
+                "A girl and a boy, in colour and in black and white, 12 blank cards, a three-level plan, an “I calm down "
+                "with…” board and a guide with safety tips.",
+        fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Se_calmer.pdf"])
     from outil_choix_eclaire import CHOIX                 # outils d’intervention vendus à l’unité, hors collection
     from outils_3dollars import OUTILS
     from outils_etudes import OUTILS as ETUDES, GROUPE_SITE, ECHANTILLON
