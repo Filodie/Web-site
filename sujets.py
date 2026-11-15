@@ -17,13 +17,13 @@ SUJETS = {
     "pictos": dict(
         fr="pictogrammes-imprimer.html", en="printable-pictograms.html",
         h1_fr="Pictogrammes à imprimer", h1_en="Printable pictograms",
-        desc_fr="Pictogrammes porte-clés et pictogrammes à imprimer pour communiquer avec les élèves non verbaux ou peu verbaux : émotions, besoins, comportements attendus et interdits. Conçus au Québec.",
-        desc_en="Keychain pictograms and printable pictograms for communicating with nonverbal or minimally verbal students: emotions, needs, expected behaviours and “don’ts”. Made in Québec.",
+        desc_fr="Pictogrammes porte-clés et pictogrammes à imprimer pour communiquer avec les élèves non verbaux ou peu verbaux : émotions, besoins, comportements attendus, interdits, routines et stratégies pour se calmer. Conçus au Québec.",
+        desc_en="Keychain pictograms and printable pictograms for communicating with nonverbal or minimally verbal students: emotions, needs, expected behaviours, “don’ts”, routines and calming strategies. Made in Québec.",
         p_fr=["Une image claire vaut souvent mieux qu’une longue consigne. Ces pictogrammes s’impriment, se découpent et se plastifient, puis s’enfilent sur un anneau à la ceinture pour être toujours à portée de main, en classe comme en sortie.",
-              "Chaque trousse porte-clés a sa couleur : violet pour les émotions, bleu pour les besoins et demandes, vert pour les comportements attendus et rouge pour ce qu’il ne faut pas faire. Les personnages sont une création originale Filodie, en version fille et garçon."],
+              "Chaque trousse porte-clés a sa couleur : violet pour les émotions, bleu pour les besoins et demandes, vert pour les comportements attendus, rouge pour ce qu’il ne faut pas faire, orange pour les routines et moments de la journée, et turquoise pour les stratégies pour se calmer. Les personnages sont une création originale Filodie, en version fille et garçon, en couleur et en noir et blanc. Les six trousses sont aussi offertes ensemble, en lot."],
         p_en=["A clear picture is often better than a long instruction. These pictograms are printed, cut out and laminated, then slipped onto a ring on a belt loop so they are always at hand, in class or on an outing.",
-              "Each keychain kit has its own colour: purple for emotions, blue for needs and requests, green for expected behaviours and red for what not to do. The characters are an original Filodie creation, in a girl and a boy version."],
-        debut=["pictos-besoins", "pictos-emotions", "pictos-comportements"], conseil=None),
+              "Each keychain kit has its own colour: purple for emotions, blue for needs and requests, green for expected behaviours, red for what not to do, orange for routines and daily moments, and turquoise for calming strategies. The characters are an original Filodie creation, in a girl and a boy version, in colour and in black and white. All six kits are also available together as a bundle."],
+        debut=["lot-pictos-porte-cles", "pictos-besoins", "pictos-emotions", "pictos-regulation"], conseil=None),
     "tdah": dict(
         fr="outils-tdah.html", en="adhd-tools.html",
         h1_fr="Outils pour le TDAH", h1_en="ADHD tools",
