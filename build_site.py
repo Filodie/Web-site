@@ -583,7 +583,7 @@ def catalogue():
     add(id="trousse-enseignants-tes", type="trousse", groupe="Pour enseignantes et enseignants en T.E.S.",
         titre="Trousse pour enseignantes et enseignants en éducation spécialisée",
         titre_en="Toolkit for SCC Teachers",
-        sous="39 outils classés selon vos cours", sous_en="39 tools organized by course",
+        sous="40 outils classés selon vos cours", sous_en="40 tools organized by course",
         desc="Pour enseigner en Techniques d’éducation spécialisée : deux ateliers complets de niveau collégial "
              "(observation, plan d’intervention) avec cas, corrigés et grilles, un guide de l’enseignante et de l’enseignant, puis les "
              "outils Filodie classés par cours (DI-TSA, stages, ESP, violence et exclusion, itinérance, LGBTQ+). "
@@ -1091,14 +1091,14 @@ def nouveaute(lang):
     code = i["payhip"] if fr else (i.get("payhip_en") or i["payhip"])
     if fr:
         badge, h2 = "Nouveauté Filodie !", i["titre"]
-        txt = ("Vous enseignez en Techniques d’éducation spécialisée ? 39 outils classés selon vos cours, dont deux "
+        txt = ("Vous enseignez en Techniques d’éducation spécialisée ? 40 outils classés selon vos cours, dont deux "
                "ateliers complets de niveau collégial (observation et plan d’intervention) avec un cas, des corrigés "
                "et des grilles d’évaluation, un guide de l’enseignante et de l’enseignant, et des outils sur l’itinérance, les personnes "
                "LGBTQ+ et l’épreuve synthèse de programme. Prêts à projeter en classe.")
         prix = "99 $"
     else:
         badge, h2 = "New from Filodie!", en(i, "titre")
-        txt = ("Teaching special care counselling? 39 tools organized by course, including two complete college-level "
+        txt = ("Teaching special care counselling? 40 tools organized by course, including two complete college-level "
                "workshops (observation and intervention plan) with a case, answer keys and rubrics, a teacher’s guide "
                "and tools on homelessness, LGBTQ+ people and the comprehensive program assessment. In English and French.")
         prix = "$99"
