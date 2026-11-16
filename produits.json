@@ -679,6 +679,27 @@
   "payhip_en": "RWbvo"
  },
  {
+  "id": "pictos-repas",
+  "type": "trousse",
+  "groupe": "Pictogrammes porte-clés",
+  "titre": "Pictogrammes porte-clés : repas et cuisine",
+  "sous": "24 pictogrammes · cartes de 6 x 6 cm",
+  "pv_pages": [
+   3,
+   31
+  ],
+  "desc": "24 pictogrammes du repas et de la cuisine en cartes de 6 x 6 cm : manger, boire, couper, sentir, toucher, goûter, mettre de côté, petite portion, je n’ai plus faim, cuisiner, mélanger, attention, c’est chaud et plus. 12 cartes vierges, des bandes-phrases « Au repas, je veux… », « D’abord, Ensuite » et « J’aime, Je n’aime pas » et un mode d’emploi pour le repas, la découverte d’un nouvel aliment et la cuisine. Aussi en couleur : une fille avec lunettes, un garçon avec lunettes, un garçon avec appareils auditifs, une fille avec appareils auditifs, une fille avec casque antibruit, un garçon en fauteuil roulant, une fille avec implant cochléaire, un garçon avec orthèse à la jambe et un garçon avec broches. Une page « Ma carte de communication » à mettre en premier sur l’anneau : Je communique avec des images, Pour m’aider et Je m’appelle. Aussi inclus : un PDF format mural avec les mêmes cartes en 9 x 9 cm, 4 par page, pour un tableau ou une routine affichée.",
+  "titre_en": "Keychain Pictograms: Meals and Cooking",
+  "sous_en": "24 pictograms · 6 x 6 cm cards",
+  "desc_en": "24 mealtime and kitchen pictograms on 6 x 6 cm cards: eat, drink, cut, smell, touch, taste, put it aside, small portion, I’m full, cook, mix, careful, it’s hot and more. 12 blank cards, “At mealtime, I want…”, “First, Then” and “I like it, I don’t like it” sentence strips and a guide for meals, trying a new food and cooking. Also in colour: a girl with glasses, a boy with glasses, a boy with hearing aids, a girl with hearing aids, a girl with noise-cancelling headphones, a boy who uses a wheelchair, a girl with a cochlear implant, a boy with a leg brace and a boy with dental braces. A “My communication cards” page to put first on the ring: I communicate with pictures, To help me and My name is. Also included: a wall format PDF with the same cards at 9 x 9 cm, 4 per page, for a chart or a posted routine.",
+  "fichiers": [
+   "Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Repas_et_cuisine.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "X2TbY",
+  "payhip_en": "X2TbY"
+ },
+ {
   "id": "pictos-echantillon",
   "type": "trousse",
   "groupe": "Pictogrammes porte-clés",
@@ -689,10 +710,10 @@
    4,
    5
   ],
-  "desc": "Six cartes de 6 x 6 cm pour essayer les pictogrammes porte-clés, chacune d’une couleur différente : Triste, Toilettes, Attendre son tour, Dîner, Respirer lentement et Mal au ventre. Une fille et un garçon, en couleur et en noir et blanc, un mode d’emploi et l’aperçu des neuf trousses de la collection. Une page « Ma carte de communication » à mettre en premier sur l’anneau : Je communique avec des images, Pour m’aider et Je m’appelle.",
+  "desc": "Six cartes de 6 x 6 cm pour essayer les pictogrammes porte-clés, chacune d’une couleur différente : Triste, Toilettes, Attendre son tour, Dîner, Respirer lentement et Mal au ventre. Une fille et un garçon, en couleur et en noir et blanc, un mode d’emploi et l’aperçu des dix trousses de la collection. Une page « Ma carte de communication » à mettre en premier sur l’anneau : Je communique avec des images, Pour m’aider et Je m’appelle.",
   "titre_en": "Keychain Pictograms: Free Sample",
   "sous_en": "Free · 6 pictograms · 6 x 6 cm cards",
-  "desc_en": "Six 6 x 6 cm cards to try the keychain pictograms, each in a different colour: Sad, Bathroom, Wait your turn, Lunch, Breathe slowly and Tummy ache. A girl and a boy, in colour and in black and white, a guide and an overview of the nine kits in the collection. A “My communication cards” page to put first on the ring: I communicate with pictures, To help me and My name is.",
+  "desc_en": "Six 6 x 6 cm cards to try the keychain pictograms, each in a different colour: Sad, Bathroom, Wait your turn, Lunch, Breathe slowly and Tummy ache. A girl and a boy, in colour and in black and white, a guide and an overview of the ten kits in the collection. A “My communication cards” page to put first on the ring: I communicate with pictures, To help me and My name is.",
   "fichiers": [
    "Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Echantillon_gratuit.pdf"
   ],
@@ -7365,8 +7386,8 @@
   "type": "lot_collection",
   "groupe": "Lots",
   "titre": "Collection Filodie : Pictogrammes porte-clés",
-  "sous": "9 trousses · 9 couleurs",
-  "desc": "Les neuf trousses de cartes de 6 x 6 cm, une couleur par catégorie : émotions (violet), comportements attendus (vert), à ne pas faire (rouge), besoins et demandes (bleu), routines (orange), se calmer (turquoise), où j’ai mal (rose), vie scolaire au Québec (jaune) et récréation et jeu (brun). Une fille et un garçon, en couleur et en noir et blanc, avec un mode d’emploi dans chaque trousse et des bandes-phrases pour les besoins, les émotions et la récréation. Les personnages comprennent aussi une fille avec lunettes, un garçon avec lunettes, un garçon avec appareils auditifs, une fille avec appareils auditifs, une fille avec casque antibruit, un garçon en fauteuil roulant, une fille avec implant cochléaire, un garçon avec orthèse à la jambe et un garçon avec broches. Dans chaque trousse, une page « Ma carte de communication » à mettre en premier sur l’anneau : Je communique avec des images, Pour m’aider et Je m’appelle. Chaque trousse comprend aussi un PDF format mural : les mêmes cartes en 9 x 9 cm, 4 par page, pour un tableau ou une routine affichée.",
+  "sous": "10 trousses · 10 couleurs",
+  "desc": "Les dix trousses de cartes de 6 x 6 cm, une couleur par catégorie : émotions (violet), comportements attendus (vert), à ne pas faire (rouge), besoins et demandes (bleu), routines (orange), se calmer (turquoise), où j’ai mal (rose), vie scolaire au Québec (jaune), récréation et jeu (brun) et repas et cuisine (bleu marine). Une fille et un garçon, en couleur et en noir et blanc, avec un mode d’emploi dans chaque trousse et des bandes-phrases pour les besoins, les émotions, la récréation et le repas. Les personnages comprennent aussi une fille avec lunettes, un garçon avec lunettes, un garçon avec appareils auditifs, une fille avec appareils auditifs, une fille avec casque antibruit, un garçon en fauteuil roulant, une fille avec implant cochléaire, un garçon avec orthèse à la jambe et un garçon avec broches. Dans chaque trousse, une page « Ma carte de communication » à mettre en premier sur l’anneau : Je communique avec des images, Pour m’aider et Je m’appelle. Chaque trousse comprend aussi un PDF format mural : les mêmes cartes en 9 x 9 cm, 4 par page, pour un tableau ou une routine affichée.",
   "fichiers": [],
   "contient": [
    "pictos-emotions",
@@ -7377,15 +7398,16 @@
    "pictos-regulation",
    "pictos-douleur",
    "pictos-ecole-qc",
-   "pictos-recreation"
+   "pictos-recreation",
+   "pictos-repas"
   ],
   "titre_en": "Filodie Collection: Keychain Pictograms",
-  "sous_en": "9 toolkits · 9 colours",
-  "desc_en": "All nine kits of 6 x 6 cm cards, one colour per category: emotions (purple), expected behaviours (green), don’ts (red), needs and requests (blue), routines (orange), calming down (turquoise), where it hurts (pink), school life in Québec (yellow) and recess and play (brown). A girl and a boy, in colour and in black and white, with a guide in every kit and sentence strips for needs, emotions and recess. The characters also include a girl with glasses, a boy with glasses, a boy with hearing aids, a girl with hearing aids, a girl with noise-cancelling headphones, a boy who uses a wheelchair, a girl with a cochlear implant, a boy with a leg brace and a boy with dental braces. In every kit, a “My communication cards” page to put first on the ring: I communicate with pictures, To help me and My name is. Each kit also includes a wall format PDF: the same cards at 9 x 9 cm, 4 per page, for a chart or a posted routine.",
+  "sous_en": "10 toolkits · 10 colours",
+  "desc_en": "All ten kits of 6 x 6 cm cards, one colour per category: emotions (purple), expected behaviours (green), don’ts (red), needs and requests (blue), routines (orange), calming down (turquoise), where it hurts (pink), school life in Québec (yellow), recess and play (brown) and meals and cooking (navy blue). A girl and a boy, in colour and in black and white, with a guide in every kit and sentence strips for needs, emotions, recess and meals. The characters also include a girl with glasses, a boy with glasses, a boy with hearing aids, a girl with hearing aids, a girl with noise-cancelling headphones, a boy who uses a wheelchair, a girl with a cochlear implant, a boy with a leg brace and a boy with dental braces. In every kit, a “My communication cards” page to put first on the ring: I communicate with pictures, To help me and My name is. Each kit also includes a wall format PDF: the same cards at 9 x 9 cm, 4 per page, for a chart or a posted routine.",
   "prix": 29.0,
   "payhip": "52rou",
   "payhip_en": "52rou",
-  "valeur": 63.0
+  "valeur": 70.0
  },
  {
   "id": "lot-affiches",
@@ -7777,11 +7799,11 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses : édition novembre 2026",
-  "sous": "Édition novembre 2026 · 196 trousses et 5 éditions",
+  "sous": "Édition novembre 2026 · 197 trousses et 5 éditions",
   "prix": 75.0,
-  "sous_en": "November 2026 edition · 196 toolkits and 5 editions",
-  "desc": "La trousse principale, les 34 trousses spécialisées, les 126 trousses de la Collection, les 33 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
-  "desc_en": "The main toolkit, the 34 specialized toolkits, the 126 Collection toolkits, the 33 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
+  "sous_en": "November 2026 edition · 197 toolkits and 5 editions",
+  "desc": "La trousse principale, les 34 trousses spécialisées, les 126 trousses de la Collection, les 34 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
+  "desc_en": "The main toolkit, the 34 specialized toolkits, the 126 Collection toolkits, the 34 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7828,6 +7850,7 @@
    "pictos-douleur",
    "pictos-ecole-qc",
    "pictos-recreation",
+   "pictos-repas",
    "trousse-choix_eclaire",
    "trousse-objectif",
    "trousse-procrastination",
@@ -7989,7 +8012,7 @@
   "payhip": "cywQA",
   "payhip_en": "cywQA",
   "titre_en": "All the toolkits: November 2026 edition",
-  "valeur": 1408.0
+  "valeur": 1415.0
  },
  {
   "id": "lot-mega",
@@ -7997,8 +8020,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie : édition novembre 2026",
   "sous": "Édition novembre 2026",
-  "desc": "Tout le catalogue payant de Filodie : les 196 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
-  "desc_en": "Filodie’s entire paid catalogue: all 196 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
+  "desc": "Tout le catalogue payant de Filodie : les 197 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
+  "desc_en": "Filodie’s entire paid catalogue: all 197 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -8045,6 +8068,7 @@
    "pictos-douleur",
    "pictos-ecole-qc",
    "pictos-recreation",
+   "pictos-repas",
    "trousse-choix_eclaire",
    "trousse-objectif",
    "trousse-procrastination",
@@ -8424,7 +8448,7 @@
   "payhip_en": "dZ02M",
   "sous_en": "November 2026 edition",
   "titre_en": "All of Filodie: November 2026 edition",
-  "valeur": 2186.0
+  "valeur": 2193.0
  },
  {
   "id": "trousse-enseignants-tes",
