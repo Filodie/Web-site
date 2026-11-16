@@ -45,10 +45,21 @@ def envoyer_clone(msg):
     print("Envoyé sur GitHub (Filodie/Web-site). filodie.ca sera à jour dans environ une minute.")
 
 
+def controle():
+    """Relecture automatique obligatoire (langue, typographie, onglets des PDF) : bloque l’envoi en cas d’erreur."""
+    script = os.path.join(os.path.dirname(HERE), "controle_publication.py")
+    if not os.path.exists(script):
+        return
+    if subprocess.run([sys.executable, script], cwd=os.path.dirname(HERE)).returncode:
+        print("\nRien n’a été publié. Corriger les problèmes ci-dessus, puis relancer publier.py.")
+        sys.exit(1)
+
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     build = [sys.executable, os.path.join(HERE, "build_site.py")] + (["--catalogue"] if "--catalogue" in sys.argv else [])
     subprocess.run(build, cwd=HERE, check=True)
+    controle()
 
     msg = args[0] if args else f"Mise à jour du site – {datetime.now():%Y-%m-%d %H:%M}"
     git("add", "-A")

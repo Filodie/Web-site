@@ -1185,7 +1185,7 @@ def vedettes(lang):
         for p in promos():
             m = re.match(r"(\d+)\s*%", p.get("rabais_fr", "") or "")
             if m:
-                promo += (f'<span class="vprix-promo" data-debut="{p.get("debut", "")}" data-fin="{p.get("fin", "")}"> → '
+                promo += (f'<span class="vprix-promo" data-debut="{p.get("debut", "")}" data-fin="{p.get("fin", "")}"> {"ou" if fr else "or"} '
                           f'<strong>{prix(i["prix"] * (100 - int(m.group(1))) / 100)}</strong> '
                           f'{"avec" if fr else "with"} <code>{html.escape(p["code"])}</code></span>')
         etiq = {"vente": ("Meilleure vente", "Best seller", "#5F8570"), "nouveau": ("Nouveauté", "New", "#D9734E")}[genre]
@@ -1209,7 +1209,7 @@ def vedettes(lang):
           'var v=document.querySelectorAll(".vedette"),o=2*(Math.floor(Date.now()/864e5)%(v.length/2));'
           'v.forEach(function(e,k){e.style.display=((k-o+v.length)%v.length)<4?"":"none";});</script>')
     return (f'<section class="wrap"><h2>{h2}</h2><p class="lead">{sous}</p><div class="grid4">{cards}</div>'
-            f'<p style="margin-top:18px"><a class="btn ghost" href="{shop}">{tout} →</a></p></section>{js}')
+            f'<p style="margin-top:18px"><a class="btn ghost" href="{shop}">{tout}</a></p></section>{js}')
 
 
 
@@ -1256,7 +1256,7 @@ def fondatrice(lang):
             f'<img src="/img/melodie.jpg" alt="{alt}" width="180" height="180" loading="lazy" '
             f'style="width:180px;height:180px;border-radius:50%;object-fit:cover;flex:none">'
             f'<div style="flex:1;min-width:260px"><h2>{h2}</h2><p class="lead">{txt}</p>'
-            f'<p style="margin-top:18px"><a class="btn ghost" href="{lien}">{btn} →</a></p></div></div></section>')
+            f'<p style="margin-top:18px"><a class="btn ghost" href="{lien}">{btn}</a></p></div></div></section>')
 
 def home(lang):
     t = L[lang]
@@ -1532,7 +1532,7 @@ def article(lang, a, items):
             f'<p class="art-meta">{meta}</p>{a["corps_fr" if fr else "corps_en"]}</article>'
             f'<section class="band"><div class="wrap"><h2>{outils}</h2><div class="grid3">{cartes}</div>'
             f'<p style="margin-top:18px"><a class="btn ghost" href="{"boutique.html" if fr else "shop.html"}">'
-            f'{"Voir toute la boutique" if fr else "See the whole shop"} →</a></p></div></section>')
+            f'{"Voir toute la boutique" if fr else "See the whole shop"}</a></p></div></section>')
     return page(lang, a["fr" if fr else "en"], titre, body, desc=a["desc_fr" if fr else "desc_en"],
                 scripts='<script src="https://payhip.com/payhip.js"></script>')
 
