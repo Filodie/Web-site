@@ -674,6 +674,12 @@ def catalogue():
                 i["desc_en"] += (" In every kit, a" if lot else " A") + (
                     " “My communication cards” page to put first on the ring: I communicate with pictures, To help me "
                     "and My name is.")
+            if i["id"] != PPC_ECH_ID:                         # format mural 9 x 9 cm (16 nov. 2026)
+                i["desc"] += (" Chaque trousse comprend aussi un PDF format mural :" if lot else " Aussi inclus : un PDF format mural avec") + \
+                    " les mêmes cartes en 9 x 9 cm, 4 par page, pour un tableau ou une routine affichée."
+                if i.get("desc_en"):
+                    i["desc_en"] += (" Each kit also includes a wall format PDF:" if lot else " Also included: a wall format PDF with") + \
+                        " the same cards at 9 x 9 cm, 4 per page, for a chart or a posted routine."
     # valeur à l'unité, pour afficher l'économie
     px = {i["id"]: i["prix"] for i in items}
     for i in items:
