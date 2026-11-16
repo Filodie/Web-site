@@ -657,7 +657,11 @@ def catalogue():
             i["prix"] = 29.0
         if i.get("groupe") == "Pictogrammes porte-clés" or i["id"] == "lot-pictos-porte-cles":   # 15 nov. 2026
             lot = i["id"] == "lot-pictos-porte-cles"
-            if i["id"] != PPC_ECH_ID:                         # personnages variés (15 nov. 2026)
+            if i["id"] == "pictos-emotions":                  # pas de fauteuil pour les émotions (demande du 15 nov.)
+                i["desc"] += " Aussi en couleur : une fille avec lunettes, un garçon avec appareils auditifs et une fille avec casque antibruit."
+                if i.get("desc_en"):
+                    i["desc_en"] += " Also in colour: a girl with glasses, a boy with hearing aids and a girl with noise-cancelling headphones."
+            elif i["id"] != PPC_ECH_ID:                       # personnages variés (15 nov. 2026)
                 i["desc"] += (" Les personnages comprennent aussi" if lot else " Aussi en couleur :") + \
                     " une fille avec lunettes, un garçon avec appareils auditifs, une fille avec casque antibruit et un garçon en fauteuil roulant."
                 if i.get("desc_en"):
