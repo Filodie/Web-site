@@ -266,11 +266,11 @@ def catalogue():
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Vie_scolaire_Quebec.pdf"])
     add(id=PPC_ECH_ID, type="trousse", groupe="Pictogrammes porte-clés", prix=0.0,       # 15 nov. 2026, gratuit
         titre="Pictogrammes porte-clés : échantillon gratuit", sous="Gratuit · 6 pictogrammes · cartes de 6 x 6 cm", pv_pages=[4, 5],
-        desc="Six cartes de 6 x 6 cm pour essayer les pictogrammes porte-clés, une de chaque couleur : Triste, Toilettes, "
+        desc="Six cartes de 6 x 6 cm pour essayer les pictogrammes porte-clés, chacune d’une couleur différente : Triste, Toilettes, "
              "Attendre son tour, Dîner, Respirer lentement et Mal au ventre. Une fille et un garçon, en couleur et en noir "
              "et blanc, un mode d’emploi et l’aperçu des huit trousses de la collection.",
         titre_en="Keychain Pictograms: Free Sample", sous_en="Free · 6 pictograms · 6 x 6 cm cards",
-        desc_en="Six 6 x 6 cm cards to try the keychain pictograms, one in each colour: Sad, Bathroom, Wait your turn, "
+        desc_en="Six 6 x 6 cm cards to try the keychain pictograms, each in a different colour: Sad, Bathroom, Wait your turn, "
                 "Lunch, Breathe slowly and Tummy ache. A girl and a boy, in colour and in black and white, a guide and an "
                 "overview of the eight kits in the collection.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Echantillon_gratuit.pdf"])
