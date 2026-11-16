@@ -658,15 +658,15 @@ def catalogue():
         if i.get("groupe") == "Pictogrammes porte-clés" or i["id"] == "lot-pictos-porte-cles":   # 15 nov. 2026
             lot = i["id"] == "lot-pictos-porte-cles"
             if i["id"] == "pictos-emotions":                  # pas de fauteuil pour les émotions (demande du 15 nov.)
-                i["desc"] += " Aussi en couleur : une fille avec lunettes, un garçon avec lunettes, un garçon avec appareils auditifs, une fille avec appareils auditifs et une fille avec casque antibruit."
+                i["desc"] += " Aussi en couleur : une fille avec lunettes, un garçon avec lunettes, un garçon avec appareils auditifs, une fille avec appareils auditifs, une fille avec casque antibruit, une fille avec implant cochléaire et un garçon avec broches."
                 if i.get("desc_en"):
-                    i["desc_en"] += " Also in colour: a girl with glasses, a boy with glasses, a boy with hearing aids, a girl with hearing aids and a girl with noise-cancelling headphones."
+                    i["desc_en"] += " Also in colour: a girl with glasses, a boy with glasses, a boy with hearing aids, a girl with hearing aids, a girl with noise-cancelling headphones, a girl with a cochlear implant and a boy with dental braces."
             elif i["id"] != PPC_ECH_ID:                       # personnages variés (15 nov. 2026)
                 i["desc"] += (" Les personnages comprennent aussi" if lot else " Aussi en couleur :") + \
-                    " une fille avec lunettes, un garçon avec lunettes, un garçon avec appareils auditifs, une fille avec appareils auditifs, une fille avec casque antibruit et un garçon en fauteuil roulant."
+                    " une fille avec lunettes, un garçon avec lunettes, un garçon avec appareils auditifs, une fille avec appareils auditifs, une fille avec casque antibruit, un garçon en fauteuil roulant, une fille avec implant cochléaire, un garçon avec orthèse à la jambe et un garçon avec broches."
                 if i.get("desc_en"):
                     i["desc_en"] += (" The characters also include" if lot else " Also in colour:") + \
-                        " a girl with glasses, a boy with glasses, a boy with hearing aids, a girl with hearing aids, a girl with noise-cancelling headphones and a boy who uses a wheelchair."
+                        " a girl with glasses, a boy with glasses, a boy with hearing aids, a girl with hearing aids, a girl with noise-cancelling headphones, a boy who uses a wheelchair, a girl with a cochlear implant, a boy with a leg brace and a boy with dental braces."
             i["desc"] += (" Dans chaque trousse, une" if lot else " Une") + (
                 " page « Ma carte de communication » à mettre en premier sur l’anneau : Je communique avec des images, "
                 "Pour m’aider et Je m’appelle.")
