@@ -190,8 +190,8 @@ SUJETS = {
         desc_fr="Seize outils pour réussir ses cours et ses stages en éducation spécialisée : plan d’intervention, note évolutive, modèle du PPH, journal de stage.",
         desc_en="Sixteen tools for succeeding in special care counselling courses and internships: intervention plans, progress notes, the DCP model and internship journals.",
         p_fr=["Plan d’intervention, note évolutive, modèle du PPH, éthique : les études en éducation spécialisée demandent beaucoup. Ces outils ont été conçus par une étudiante en éducation spécialisée, pour le vrai rythme des cours et des stages.",
-              "Vous y trouverez seize outils d’études et de stage, un échantillon gratuit, le Grand livre clinique et le Glossaire clinique."],
+              "Vous y trouverez dix-sept outils d’études et de stage, un échantillon gratuit, le Grand livre clinique et le Glossaire clinique."],
         p_en=["Intervention plans, progress notes, the DCP model, ethics: special care counselling studies are demanding. These tools were designed by a special care counselling student, for the real pace of courses and internships.",
-              "You will find sixteen study and internship tools, a free sample, the Clinical Handbook and the Clinical Glossary."],
+              "You will find seventeen study and internship tools, a free sample, the Clinical Handbook and the Clinical Glossary."],
         debut=["lot-etudes-tes", "grand-livre", "livre-glossaire-clinique"], conseil=None),
 }

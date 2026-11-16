@@ -1001,12 +1001,26 @@
   "payhip_en": "aUf4V"
  },
  {
+  "id": "trousse-savoir_etre_stage",
+  "type": "trousse",
+  "groupe": "Études et stages en T.E.S.",
+  "titre": "Mes savoir-être en stage",
+  "sous": "6 outils",
+  "desc": "Six fiches pour s’autoévaluer sur les 11 savoir-être attendus en stage : portrait de départ, gestes concrets avec les personnes et en équipe, gestes dans l’action, objectif de développement, préparation de la rencontre d’évaluation et bilan de fin de stage.",
+  "prix": 3.0,
+  "fichiers": [
+   "Outils d’intervention Filodie/Trousse_Filodie_Savoir_etre_stage_2026.pdf"
+  ],
+  "payhip": "0mjfs",
+  "payhip_en": "0mjfs"
+ },
+ {
   "id": "trousse-decouverte_etudiant_tes",
   "type": "trousse",
   "groupe": "Études et stages en T.E.S.",
   "titre": "Échantillon gratuit : études et stages en T.E.S.",
   "sous": "4 fiches gratuites",
-  "desc": "Quatre fiches gratuites tirées des outils Filodie pour les études et les stages en T.E.S. : préparer son arrivée en stage, distinguer faits et interprétations, se tester pour apprendre et revenir sur une situation marquante. Avec la liste des 16 outils de la trousse étudiante.",
+  "desc": "Quatre fiches gratuites tirées des outils Filodie pour les études et les stages en T.E.S. : préparer son arrivée en stage, distinguer faits et interprétations, se tester pour apprendre et revenir sur une situation marquante. Avec la liste des 17 outils de la trousse étudiante.",
   "prix": 0.0,
   "fichiers": [
    "Outils d’intervention Filodie/Trousse_Filodie_Decouverte_etudiant_TES_2026.pdf"
@@ -7512,9 +7526,9 @@
   "groupe": "Lots",
   "titre": "Trousse de l’étudiante et de l’étudiant en T.E.S.",
   "titre_en": "SCC Student Kit",
-  "sous": "16 outils pour les études et les stages",
+  "sous": "17 outils pour les études et les stages",
   "prix": 20.0,
-  "sous_en": "16 tools for studies and internships",
+  "sous_en": "17 tools for studies and internships",
   "desc": "Tous les outils Filodie pour les études et les stages en T.E.S. : analyse de groupe, PPH, notes évolutives, journal de stage, plan d’intervention, écoute, éthique, familles, équipe, diversité, méthodes d’étude et plus.",
   "desc_en": "All the Filodie tools for SCC studies and internships: group analysis, HDM-DCP, progress notes, internship journal, intervention plan, listening, ethics, families, teamwork, diversity, study methods and more.",
   "fichiers": [],
@@ -7534,11 +7548,12 @@
    "trousse-collaborer_familles",
    "trousse-etudier_efficacement",
    "trousse-diversite",
-   "trousse-debut_stage"
+   "trousse-debut_stage",
+   "trousse-savoir_etre_stage"
   ],
   "payhip": "hb0uU",
   "payhip_en": "hb0uU",
-  "valeur": 48.0
+  "valeur": 51.0
  },
  {
   "id": "lot-tous-les-cahiers",
@@ -7740,11 +7755,11 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses : édition novembre 2026",
-  "sous": "Édition novembre 2026 · 194 trousses et 5 éditions",
+  "sous": "Édition novembre 2026 · 195 trousses et 5 éditions",
   "prix": 75.0,
-  "sous_en": "November 2026 edition · 194 toolkits and 5 editions",
-  "desc": "La trousse principale, les 34 trousses spécialisées, les 126 trousses de la Collection, les 31 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
-  "desc_en": "The main toolkit, the 34 specialized toolkits, the 126 Collection toolkits, the 31 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
+  "sous_en": "November 2026 edition · 195 toolkits and 5 editions",
+  "desc": "La trousse principale, les 34 trousses spécialisées, les 126 trousses de la Collection, les 32 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
+  "desc_en": "The main toolkit, the 34 specialized toolkits, the 126 Collection toolkits, the 32 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7813,6 +7828,7 @@
    "trousse-etudier_efficacement",
    "trousse-diversite",
    "trousse-debut_stage",
+   "trousse-savoir_etre_stage",
    "trousse-habiletes_sociales",
    "trousse-communication_et_cooperation",
    "trousse-emotions_et_empathie",
@@ -7950,7 +7966,7 @@
   "payhip": "cywQA",
   "payhip_en": "cywQA",
   "titre_en": "All the toolkits: November 2026 edition",
-  "valeur": 1398.0
+  "valeur": 1401.0
  },
  {
   "id": "lot-mega",
@@ -7958,8 +7974,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie : édition novembre 2026",
   "sous": "Édition novembre 2026",
-  "desc": "Tout le catalogue payant de Filodie : les 194 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
-  "desc_en": "Filodie’s entire paid catalogue: all 194 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
+  "desc": "Tout le catalogue payant de Filodie : les 195 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
+  "desc_en": "Filodie’s entire paid catalogue: all 195 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -8028,6 +8044,7 @@
    "trousse-etudier_efficacement",
    "trousse-diversite",
    "trousse-debut_stage",
+   "trousse-savoir_etre_stage",
    "trousse-habiletes_sociales",
    "trousse-communication_et_cooperation",
    "trousse-emotions_et_empathie",
@@ -8383,7 +8400,7 @@
   "payhip_en": "dZ02M",
   "sous_en": "November 2026 edition",
   "titre_en": "All of Filodie: November 2026 edition",
-  "valeur": 2176.0
+  "valeur": 2179.0
  },
  {
   "id": "trousse-enseignants-tes",

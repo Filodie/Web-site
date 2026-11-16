@@ -94,7 +94,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
           "lot-parents": "2026-10-27", "livre-glossaire-clinique": "2026-11-04",
           "trousse-soutenir_deuil": "2026-11-04", "album-caillou-nilou": "2026-11-04",
           "album-nuage-teo": "2026-11-04", "album-marmite-lina": "2026-11-04", "album-pont-zelie": "2026-11-04", "album-lanterne-milo": "2026-11-04",
-          "trousse-fratrie": "2026-11-05", "album-tournesol-romy": "2026-11-05", "album-couverture-eli": "2026-11-05", "trousse-devenir_adulte": "2026-11-05", "trousse-perinatalite": "2026-11-05", "trousse-techniques_impact": "2026-11-06",
+          "trousse-fratrie": "2026-11-05", "album-tournesol-romy": "2026-11-05", "album-couverture-eli": "2026-11-05", "trousse-devenir_adulte": "2026-11-05", "trousse-perinatalite": "2026-11-05", "trousse-techniques_impact": "2026-11-06", "trousse-savoir_etre_stage": "2026-11-16",
           **{k: "2026-11-04" for k in ("trousse-cerveau_developpement", "trousse-cerveau_tsa", "trousse-cerveau_tdah",
                                        "trousse-cerveau_di", "trousse-cerveau_tdl", "trousse-cerveau_trauma",
                                        "trousse-cerveau_anxiete", "trousse-cerveau_tnc", "lot-14-le-cerveau-expliqué",

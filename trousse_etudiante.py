@@ -8,14 +8,14 @@ LOT, ECH = "lot-etudes-tes", "trousse-decouverte_etudiant_tes"
 
 TITRE = {"fr": "Ce que contient la trousse de l’étudiante et de l’étudiant en T.E.S.",
          "en": "What’s inside the SCC student kit"}
-DESC = {"fr": "Les 16 outils de la trousse étudiante Filodie pour réussir ses stages et ses travaux en Techniques "
+DESC = {"fr": "Les 17 outils de la trousse étudiante Filodie pour réussir ses stages et ses travaux en Techniques "
               "d’éducation spécialisée, en un coup d’œil.",
-        "en": "The 16 tools in the Filodie student kit for succeeding in special care counselling internships and "
+        "en": "The 17 tools in the Filodie student kit for succeeding in special care counselling internships and "
               "coursework, at a glance."}
-LEAD = {"fr": "Seize outils pensés pour les personnes qui étudient en Techniques d’éducation spécialisée : pour "
+LEAD = {"fr": "Dix-sept outils pensés pour les personnes qui étudient en Techniques d’éducation spécialisée : pour "
               "arriver en stage préparée ou préparé, rédiger des travaux solides et faire le pont vers le premier emploi. "
               "Tout est en PDF à imprimer ou à remplir à l’écran, en français et en anglais.",
-        "en": "Sixteen tools designed for special care counselling students: to arrive at your internship prepared, "
+        "en": "Seventeen tools designed for special care counselling students: to arrive at your internship prepared, "
               "write solid assignments and bridge the gap to your first job. Everything comes as PDFs to print or fill "
               "in on screen, in French and English."}
 
@@ -29,6 +29,10 @@ GROUPES = [
          "mi-stage et final.", "goals, significant situations, emotions and values, feedback, mid-term and final reviews."),
         ("trousse-ethique_stage", "limites de la relation, confidentialité, réseaux sociaux, analyse d’un dilemme.",
          "boundaries in the relationship, confidentiality, social media, working through a dilemma."),
+        ("trousse-savoir_etre_stage", "autoévaluation des 11 savoir-être, gestes concrets, objectif de développement, "
+         "préparation de l’évaluation et bilan de fin de stage.",
+         "self-assessment of the 11 soft skills, concrete actions, a growth goal, preparing for the evaluation and an "
+         "end-of-internship review."),
         ("trousse-activite_educative", "objectif, déroulement minuté, matériel, imprévus, évaluation.",
          "objective, timed plan, materials, the unexpected, evaluation."),
     ]),
