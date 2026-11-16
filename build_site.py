@@ -339,11 +339,11 @@ def catalogue():
                   "Grand livre clinique Filodie/Grand_livre_clinique_TES_Filodie_NB_impression.pdf"])
     if GLOSSAIRE_EN_VENTE:
         add(id="livre-glossaire-clinique", type="livre", groupe="Grand livre clinique", titre="Glossaire clinique T.E.S.",
-            sous="584 termes · 18 sections", prix=12.0, payhip="KPWj4", payhip_en="KPWj4", pv_pages=[5, 33],
+            sous="613 termes · 18 sections", prix=12.0, payhip="KPWj4", payhip_en="KPWj4", pv_pages=[5, 33],
             desc="Le vocabulaire de l’éducation spécialisée réuni en un seul document, classé par domaine : MDH-PPH, DI, TSA, "
                  "DP, TDAH, vieillissement, santé mentale, plan d’intervention, psychologie, droit et plus. Chaque terme a "
                  "sa définition et son exemple. PDF en français seulement.",
-            titre_en="SCC Clinical Glossary (French only)", sous_en="584 terms · 18 sections",
+            titre_en="SCC Clinical Glossary (French only)", sous_en="613 terms · 18 sections",
             desc_en="The vocabulary of special care counselling gathered in one document, organized by field, with a "
                     "definition and an example for each term. PDF available in French only.",
             fichiers=["Glossaire Filodie/Filodie_Glossaire_clinique_TES.pdf"])
