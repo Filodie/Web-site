@@ -102,7 +102,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
                                        "trousse-chutes_aines", "trousse-intimite_aines", "trousse-conduite_aines",
                                        "trousse-stimulation_aines", "lot-15-accompagner-le-grand-âge")},
           **{k: "2026-11-05" for k in ("trousse-diagnostic_tsa", "trousse-diagnostic_tdah", "trousse-diagnostic_di",
-                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15", "pictos-besoins": "2026-11-15", "pictos-routines": "2026-11-15", "pictos-regulation": "2026-11-15", "pictos-douleur": "2026-11-15", "pictos-ecole-qc": "2026-11-15", "pictos-recreation": "2026-11-16", "pictos-repas": "2026-11-16", "pictos-sante": "2026-11-16", "pictos-communaute": "2026-11-16", "pictos-echantillon": "2026-11-15", "lot-pictos-porte-cles": "2026-11-15"}
+                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15", "pictos-besoins": "2026-11-15", "pictos-routines": "2026-11-15", "pictos-regulation": "2026-11-15", "pictos-douleur": "2026-11-15", "pictos-ecole-qc": "2026-11-15", "pictos-recreation": "2026-11-16", "pictos-repas": "2026-11-16", "pictos-sante": "2026-11-16", "pictos-communaute": "2026-11-16", "pictos-tableaux": "2026-11-17", "pictos-echantillon": "2026-11-15", "lot-pictos-porte-cles": "2026-11-15"}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
                  "lot_cahiers", "lot_routines", "lot_detective", "lot_albums", "lot_jeux")
@@ -123,6 +123,8 @@ EDITIONS_MOIS = {
                     suiv_en="November 1, 2026", codes={"lot-mega": "3u5MO", "lot-toutes-les-trousses": "PWt1d"}),
     "2026-11": dict(fr="novembre 2026", en="November 2026", de="de novembre 2026", suiv="1er décembre 2026",
                     suiv_en="December 1, 2026", codes={"lot-mega": "dZ02M", "lot-toutes-les-trousses": "cywQA"}),
+    "2026-12": dict(fr="décembre 2026", en="December 2026", de="de décembre 2026", suiv="1er janvier 2027",
+                    suiv_en="January 1, 2027", codes={"lot-mega": "dW6P8", "lot-toutes-les-trousses": "TZojt"}),   # préparée le 17 nov.
 }
 
 
@@ -312,6 +314,20 @@ def catalogue():
                 "my eyes, stay close to the adult, show my card and more. 12 blank cards, “Today, we are going to…”, “First, "
                 "Then” and “My list, Found it!” sentence strips and a guide for preparing for an outing.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Sorties_communaute.pdf"])
+    add(id="pictos-tableaux", type="trousse", groupe="Pictogrammes porte-clés",        # 17 nov. 2026
+        titre="Tableaux de communication", sous="10 tableaux · format Lettre paysage", pv_pages=[4, 8],
+        desc="10 tableaux de communication à imprimer, avec les mêmes images que les pictogrammes porte-clés : un tableau "
+             "principal « Je communique » de 30 cases (je veux, encore, fini, aide, pause, toilettes, oui, non, j’ai mal, "
+             "six émotions et plus) et 9 tableaux thématiques de 24 cases (émotions, se calmer, où j’ai mal, routines, "
+             "comportements attendus, récréation, repas, santé, sorties). Une fille et un garçon, en couleur et en noir "
+             "et blanc, 2 tableaux vierges et un mode d’emploi pour montrer les images en parlant.",
+        titre_en="Communication Boards", sous_en="10 boards · Letter landscape",
+        desc_en="10 printable communication boards with the same pictures as the keychain pictograms: an “I communicate” "
+                "main board with 30 cells (I want, more, all done, help, break, bathroom, yes, no, it hurts, six emotions "
+                "and more) and 9 theme boards with 24 cells (emotions, calming down, where it hurts, routines, expected "
+                "behaviours, recess, meals, health, outings). A girl and a boy, in colour and in black and white, 2 blank "
+                "boards and a guide to pointing to the pictures while you talk.",
+        fichiers=["Pictogrammes porte-clés Filodie/Tableaux_de_communication_Filodie.pdf"])
     add(id=PPC_ECH_ID, type="trousse", groupe="Pictogrammes porte-clés", prix=0.0,       # 15 nov. 2026, gratuit
         titre="Pictogrammes porte-clés : échantillon gratuit", sous="Gratuit · 6 pictogrammes · cartes de 6 x 6 cm", pv_pages=[4, 5],
         desc="Six cartes de 6 x 6 cm pour essayer les pictogrammes porte-clés, chacune d’une couleur différente : Triste, Toilettes, "
@@ -1267,6 +1283,14 @@ def vedettes(lang):
 
 
 
+PRIX_EQ = {"trousse": 7, "cahier": 3, "collection": 25, "trousses": 75, "tout": 149}   # prix courants (mis à jour dans build)
+
+
+def _eq(v, fr):
+    v = int(v) if float(v).is_integer() else v
+    return f"{v:,} $".replace(",", "\u00a0") if fr else f"${v:,}"
+
+
 def equipes(lang):
     """Bloc « Pour les écoles, CPE et organismes » : met en avant la licence d’équipe (services.html#licence-equipe)."""
     fr = lang == "fr"
@@ -1274,7 +1298,7 @@ def equipes(lang):
         h2, lead = "Pour les écoles, les CPE et les organismes", ("Toute votre équipe utilise les mêmes outils, avec une seule "
                "facture au nom de l’établissement.")
         pts = [("Jusqu’à 25 personnes", "Intervenantes et intervenants, T.E.S., personnel enseignant, personnel éducateur et direction."),
-               ("3 fois le prix, pas 25", "Une trousse à 7 $ devient 21 $ pour toute l’équipe. Tout Filodie : 387 $ au lieu de 3 225 $."),
+               ("3 fois le prix, pas 25", f"Une trousse à 7 $ devient 21 $ pour toute l’équipe. Tout Filodie : {_eq(PRIX_EQ['tout'] * 3, True)} au lieu de {_eq(PRIX_EQ['tout'] * 25, True)}."),
                ("Facture et bon de commande", "Facture PDF au nom de l’établissement, payable par virement Interac ou par chèque.")]
         btn1, btn2 = "Voir la licence d’équipe", "Demander une facture"
         lien, mail = "services.html#licence-equipe", "mailto:melodie@filodie.ca?subject=Licence%20d%E2%80%99%C3%A9quipe"
@@ -1282,7 +1306,7 @@ def equipes(lang):
         h2, lead = "For schools, daycares and organizations", ("Your whole team uses the same tools, with a single invoice in "
                "the organization’s name.")
         pts = [("Up to 25 people", "Counsellors, SCCs, teachers, educators and management."),
-               ("3 times the price, not 25", "A $7 toolkit becomes $21 for the whole team. All of Filodie: $387 instead of $3,225."),
+               ("3 times the price, not 25", f"A $7 toolkit becomes $21 for the whole team. All of Filodie: {_eq(PRIX_EQ['tout'] * 3, False)} instead of {_eq(PRIX_EQ['tout'] * 25, False)}."),
                ("Invoice and purchase order", "PDF invoice in the organization’s name, payable by Interac e-Transfer or cheque.")]
         btn1, btn2 = "See the team licence", "Request an invoice"
         lien, mail = "services.html#team-licence", "mailto:melodie@filodie.ca?subject=Team%20licence"
@@ -1730,13 +1754,15 @@ CONTENT = {
 <tr><td>Une trousse</td><td>7 $</td><td>21 $</td></tr>
 <tr><td>Un cahier visuel</td><td>3 $</td><td>9 $</td></tr>
 <tr><td>Une collection de trousses</td><td>25 $</td><td>75 $</td></tr>
-<tr><td>Toutes les trousses</td><td>75 $</td><td>225 $</td></tr>
-<tr><td>Tout Filodie</td><td>129 $</td><td>387 $</td></tr></tbody></table>
+<tr><td>Toutes les trousses</td><td>{p_trousses}</td><td>{p_trousses3}</td></tr>
+<tr><td>Tout Filodie</td><td>{p_tout}</td><td>{p_tout3}</td></tr></tbody></table>
 <p class="muted">Le prix de référence est le prix courant affiché dans la boutique. Pour plus de 25 personnes ou pour plusieurs établissements (par exemple un centre de services scolaire), écrivez-moi pour une soumission.</p>
 <h3>Comment commander</h3>
 <ol><li>Écrivez à <a href="mailto:melodie@filodie.ca?subject=Licence%20d%E2%80%99%C3%A9quipe">melodie@filodie.ca</a> en indiquant les produits voulus, le nom et l’adresse de l’établissement, ainsi que la personne-ressource.</li>
 <li>Vous recevez une facture en PDF, payable par virement Interac ou par chèque.</li>
 <li>Dès la réception du paiement, vous recevez les fichiers par courriel, avec la facture marquée « payée ».</li></ol>
+<p>Votre service des achats demande un bon de commande ? Remplissez celui-ci à l’écran et joignez-le à votre courriel.</p>
+<p><a class="btn ghost" href="/pdf/Filodie_bon_de_commande.pdf" download>Télécharger le bon de commande (PDF à remplir)</a></p>
 {perso}
 <p><a class="btn" href="mailto:melodie@filodie.ca?subject=Demande%20de%20service%20Filodie">Écrire à Mélodie</a></p>
 """),
@@ -1762,13 +1788,15 @@ CONTENT = {
 <tr><td>One toolkit</td><td>$7</td><td>$21</td></tr>
 <tr><td>One visual workbook</td><td>$3</td><td>$9</td></tr>
 <tr><td>A toolkit collection</td><td>$25</td><td>$75</td></tr>
-<tr><td>All toolkits</td><td>$75</td><td>$225</td></tr>
-<tr><td>All of Filodie</td><td>$129</td><td>$387</td></tr></tbody></table>
+<tr><td>All toolkits</td><td>{p_trousses}</td><td>{p_trousses3}</td></tr>
+<tr><td>All of Filodie</td><td>{p_tout}</td><td>{p_tout3}</td></tr></tbody></table>
 <p class="muted">The reference price is the current price shown in the shop. For more than 25 people or several organizations (for example a school service centre), email me for a quote.</p>
 <h3>How to order</h3>
 <ol><li>Email <a href="mailto:melodie@filodie.ca?subject=Team%20licence">melodie@filodie.ca</a> with the products you want, the organization’s name and address, and a contact person.</li>
 <li>You receive a PDF invoice, payable by Interac e-Transfer or cheque.</li>
 <li>As soon as payment is received, you get the files by email, along with the invoice marked “paid”.</li></ol>
+<p>Does your purchasing department need a purchase order? Fill out this one on screen and attach it to your email.</p>
+<p><a class="btn ghost" href="/pdf/Filodie_purchase_order.pdf" download>Download the purchase order (fillable PDF)</a></p>
 {perso}
 <p><a class="btn" href="mailto:melodie@filodie.ca?subject=Filodie%20service%20request">Email Mélodie</a></p>
 """),
@@ -2059,6 +2087,12 @@ def build():
         im.resize((480, int(im.height * 480 / im.width)), Image.LANCZOS).save(os.path.join(PUB, "img", "courriel-logo.png"),
                                                                               optimize=True)
     CA.verifier(items, parents_de)
+    _ix = {i["id"]: i for i in items}               # prix courants pour la licence d’équipe et le bon de commande
+    for k, iid in (("trousses", "lot-toutes-les-trousses"), ("tout", "lot-mega")):
+        if iid in _ix and _ix[iid].get("prix"):
+            PRIX_EQ[k] = _ix[iid]["prix"]
+    import bon_commande
+    bon_commande.faire(os.path.join(PUB, "pdf"), PRIX_EQ)
     for i in items:
         for c in CA.categories_de(i, parents_de(i)):
             CAT_COMPTES[c] = CAT_COMPTES.get(c, 0) + 1
@@ -2082,6 +2116,9 @@ def build():
         js = ""
         if name == "services.html":                   # formulaire d’édition personnalisée (logo d’établissement)
             content = content.replace("{perso}", FO.SECTION_PERSO[lang].replace("{form}", FO.personnalisation(lang)))
+            for k in ("trousses", "tout"):                # prix de la licence d’équipe tirés de la boutique (17 nov. 2026)
+                content = content.replace("{p_%s}" % k, _eq(PRIX_EQ[k], lang == "fr")).replace(
+                    "{p_%s3}" % k, _eq(PRIX_EQ[k] * 3, lang == "fr"))
             js = FO.script(lang)
         open(os.path.join(d, name), "w").write(textpage(lang, name, title, content, js))
     for lang in ("fr", "en"):                         # boîte à suggestions

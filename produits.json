@@ -742,6 +742,27 @@
   "payhip_en": "kGzcD"
  },
  {
+  "id": "pictos-tableaux",
+  "type": "trousse",
+  "groupe": "Pictogrammes porte-clés",
+  "titre": "Tableaux de communication",
+  "sous": "10 tableaux · format Lettre paysage",
+  "pv_pages": [
+   4,
+   8
+  ],
+  "desc": "10 tableaux de communication à imprimer, avec les mêmes images que les pictogrammes porte-clés : un tableau principal « Je communique » de 30 cases (je veux, encore, fini, aide, pause, toilettes, oui, non, j’ai mal, six émotions et plus) et 9 tableaux thématiques de 24 cases (émotions, se calmer, où j’ai mal, routines, comportements attendus, récréation, repas, santé, sorties). Une fille et un garçon, en couleur et en noir et blanc, 2 tableaux vierges et un mode d’emploi pour montrer les images en parlant. Aussi en couleur : une fille avec lunettes, un garçon avec lunettes, un garçon avec appareils auditifs, une fille avec appareils auditifs, une fille avec casque antibruit, un garçon en fauteuil roulant, une fille avec implant cochléaire, un garçon avec orthèse à la jambe et un garçon avec broches. Une page « Ma carte de communication » à mettre en premier sur l’anneau : Je communique avec des images, Pour m’aider et Je m’appelle. Aussi inclus : un PDF format mural avec les mêmes cartes en 9 x 9 cm, 4 par page, pour un tableau ou une routine affichée.",
+  "titre_en": "Communication Boards",
+  "sous_en": "10 boards · Letter landscape",
+  "desc_en": "10 printable communication boards with the same pictures as the keychain pictograms: an “I communicate” main board with 30 cells (I want, more, all done, help, break, bathroom, yes, no, it hurts, six emotions and more) and 9 theme boards with 24 cells (emotions, calming down, where it hurts, routines, expected behaviours, recess, meals, health, outings). A girl and a boy, in colour and in black and white, 2 blank boards and a guide to pointing to the pictures while you talk. Also in colour: a girl with glasses, a boy with glasses, a boy with hearing aids, a girl with hearing aids, a girl with noise-cancelling headphones, a boy who uses a wheelchair, a girl with a cochlear implant, a boy with a leg brace and a boy with dental braces. A “My communication cards” page to put first on the ring: I communicate with pictures, To help me and My name is. Also included: a wall format PDF with the same cards at 9 x 9 cm, 4 per page, for a chart or a posted routine.",
+  "fichiers": [
+   "Pictogrammes porte-clés Filodie/Tableaux_de_communication_Filodie.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "DPxcm",
+  "payhip_en": "DPxcm"
+ },
+ {
   "id": "pictos-echantillon",
   "type": "trousse",
   "groupe": "Pictogrammes porte-clés",
@@ -7843,11 +7864,11 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses : édition novembre 2026",
-  "sous": "Édition novembre 2026 · 199 trousses et 5 éditions",
+  "sous": "Édition novembre 2026 · 200 trousses et 5 éditions",
   "prix": 75.0,
-  "sous_en": "November 2026 edition · 199 toolkits and 5 editions",
-  "desc": "La trousse principale, les 34 trousses spécialisées, les 126 trousses de la Collection, les 36 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
-  "desc_en": "The main toolkit, the 34 specialized toolkits, the 126 Collection toolkits, the 36 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
+  "sous_en": "November 2026 edition · 200 toolkits and 5 editions",
+  "desc": "La trousse principale, les 34 trousses spécialisées, les 126 trousses de la Collection, les 37 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
+  "desc_en": "The main toolkit, the 34 specialized toolkits, the 126 Collection toolkits, the 37 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7897,6 +7918,7 @@
    "pictos-repas",
    "pictos-sante",
    "pictos-communaute",
+   "pictos-tableaux",
    "trousse-choix_eclaire",
    "trousse-objectif",
    "trousse-procrastination",
@@ -8058,7 +8080,7 @@
   "payhip": "cywQA",
   "payhip_en": "cywQA",
   "titre_en": "All the toolkits: November 2026 edition",
-  "valeur": 1429.0
+  "valeur": 1436.0
  },
  {
   "id": "lot-mega",
@@ -8066,8 +8088,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie : édition novembre 2026",
   "sous": "Édition novembre 2026",
-  "desc": "Tout le catalogue payant de Filodie : les 199 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
-  "desc_en": "Filodie’s entire paid catalogue: all 199 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
+  "desc": "Tout le catalogue payant de Filodie : les 200 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
+  "desc_en": "Filodie’s entire paid catalogue: all 200 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -8117,6 +8139,7 @@
    "pictos-repas",
    "pictos-sante",
    "pictos-communaute",
+   "pictos-tableaux",
    "trousse-choix_eclaire",
    "trousse-objectif",
    "trousse-procrastination",
@@ -8496,7 +8519,7 @@
   "payhip_en": "dZ02M",
   "sous_en": "November 2026 edition",
   "titre_en": "All of Filodie: November 2026 edition",
-  "valeur": 2207.0
+  "valeur": 2214.0
  },
  {
   "id": "trousse-enseignants-tes",

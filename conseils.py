@@ -7,6 +7,163 @@ Ressources : Info-Social 811 option 2 (pas le 988)."""
 
 ARTICLES = [
     dict(
+        fr="conseil-pictogrammes-porte-cles.html",
+        en="tip-keychain-pictograms.html",
+        date="2026-11-17",
+        minutes=6,
+        produits=["lot-pictos-porte-cles", "pictos-echantillon", "pictos-besoins"],
+        titre_fr="Pictogrammes porte-clés : comment les utiliser avec un élève non verbal",
+        titre_en="Keychain pictograms: how to use them with a nonverbal student",
+        desc_fr="Pictogrammes sur un anneau à la ceinture : pour qui, comment commencer avec une seule carte, "
+                "comment les assembler et comment les faire vivre à l’école, à la maison et en sortie.",
+        desc_en="Pictograms on a belt ring: who they are for, how to start with a single card, how to put them "
+                "together and how to use them at school, at home and on outings.",
+        corps_fr="""
+<p class="lead">Un élève qui ne parle pas, ou très peu, a quand même beaucoup à dire : j’ai mal, j’ai besoin d’une
+pause, je veux jouer. Les pictogrammes porte-clés lui donnent des images toujours à portée de main, et donnent à
+l’adulte un moyen simple de montrer ce qui s’en vient.</p>
+
+<h2>Qu’est-ce qu’un pictogramme porte-clés ?</h2>
+<p>Ce sont de petites cartes de 6 x 6 cm, imprimées, plastifiées et percées, qu’on enfile sur un anneau. L’anneau
+s’attache à la ceinture, au sac ou à la boucle d’un pantalon, avec un mousqueton ou un enrouleur de badge. Chaque
+carte montre une seule idée, avec une image claire et un mot écrit.</p>
+<p>L’adulte s’en sert pour donner une consigne sans parler beaucoup (« Attendre son tour », « Ranger »). L’élève
+s’en sert pour exprimer un besoin, une émotion ou un choix, en touchant la carte ou en la tendant.</p>
+
+<h2>Pour qui ?</h2>
+<ul>
+<li>Les élèves non verbaux ou peu verbaux, autistes ou non.</li>
+<li>Les élèves qui parlent, mais perdent leurs mots quand l’émotion monte.</li>
+<li>Les élèves qui comprennent mieux ce qu’ils voient que ce qu’ils entendent, par exemple en déficience
+intellectuelle, en trouble du langage ou en apprentissage du français.</li>
+<li>Les adultes qui accompagnent : T.E.S., personnel enseignant, personnel du service de garde, parents.</li>
+</ul>
+
+<h2>Commencer avec une seule carte</h2>
+<ol>
+<li><strong>Choisissez la carte la plus utile en ce moment.</strong> Souvent Toilettes, Pause ou Aide : un besoin
+qui revient chaque jour.</li>
+<li><strong>Montrez la carte et dites le mot.</strong> Chaque fois que la situation se présente, l’adulte montre la
+carte et nomme le mot, simplement.</li>
+<li><strong>Attendez quelques secondes.</strong> Laissez à l’élève le temps de toucher la carte ou de la tendre.</li>
+<li><strong>Répondez tout de suite.</strong> Quand l’élève utilise la carte, la demande est accordée aussitôt que
+possible. C’est ce qui lui apprend que l’image fonctionne.</li>
+<li><strong>Ajoutez une carte à la fois.</strong> Quand la première est bien utilisée, on en ajoute une autre.</li>
+</ol>
+
+<h2>Une couleur par catégorie</h2>
+<p>La bordure de chaque carte a la couleur de sa catégorie : les émotions en violet, les besoins en bleu, les
+comportements attendus en vert, ce qu’il ne faut pas faire en rouge, les routines en orange, et ainsi de suite.
+L’élève et l’adulte retrouvent la bonne carte en un coup d’œil, même quand l’anneau est bien rempli.</p>
+<p>On n’a pas besoin de tout porter en même temps. Pour une sortie à l’épicerie, on enfile seulement les cartes de
+la sortie, dans l’ordre où elles vont se passer. Pour un rendez-vous chez le dentiste, seulement celles de la
+visite.</p>
+
+<h2>Assembler l’anneau</h2>
+<ol>
+<li>Imprimer à 100 % (taille réelle), sans « Ajuster à la page ».</li>
+<li>Découper, puis plastifier en laissant au moins 3 mm entre les cartes.</li>
+<li>Recouper en gardant un bord de plastique : la carte reste étanche.</li>
+<li>Percer au repère rond, dans le coin, et enfiler sur un anneau de 2,5 cm.</li>
+</ol>
+
+<h2>Est-ce que les images empêchent de parler ?</h2>
+<p>C’est une inquiétude fréquente chez les parents. Les recherches n’indiquent pas que les aides visuelles à la
+communication freinent la parole ; chez plusieurs enfants, la parole progresse même un peu (Millar et al., 2006).
+L’image ne remplace pas le mot : on dit toujours le mot en montrant la carte. Les soutiens visuels font d’ailleurs
+partie des pratiques reconnues auprès des élèves autistes (Hume et al., 2021).</p>
+
+<h2>Faire vivre les cartes partout</h2>
+<ul>
+<li><strong>À l’école :</strong> chaque adulte qui intervient auprès de l’élève utilise les mêmes cartes, avec les
+mêmes mots.</li>
+<li><strong>À la maison :</strong> une copie de l’anneau pour la famille aide l’élève à utiliser ses cartes
+ailleurs qu’en classe.</li>
+<li><strong>Au mur :</strong> les mêmes cartes, agrandies, servent de tableau de communication ou de routine
+affichée.</li>
+</ul>
+
+<div class="astuce"><strong>Astuce pour l’adulte</strong><p>Gardez toujours une carte « Pause » sur l’anneau, même
+au début. Pouvoir demander une pause est souvent la carte qui évite le plus de crises.</p></div>
+
+<p class="muted">Références : Hume, K. et al. (2021). Evidence-based practices for children, youth, and young adults
+with autism: Third generation review. Journal of Autism and Developmental Disorders, 51(11), 4013-4032.
+Millar, D. C., Light, J. C. et Schlosser, R. W. (2006). The impact of augmentative and alternative communication
+intervention on the speech production of individuals with developmental disabilities: A research review. Journal of
+Speech, Language, and Hearing Research, 49(2), 248-264.</p>
+""",
+        corps_en="""
+<p class="lead">A student who does not speak, or speaks very little, still has a lot to say: it hurts, I need a
+break, I want to play. Keychain pictograms give them pictures that are always at hand, and give the adult a simple
+way to show what comes next.</p>
+
+<h2>What is a keychain pictogram?</h2>
+<p>They are small 6 x 6 cm cards, printed, laminated and punched, then slipped onto a ring. The ring clips onto a
+belt, a bag or a belt loop, with a carabiner or a badge reel. Each card shows a single idea, with a clear picture
+and a written word.</p>
+<p>The adult uses them to give an instruction without many words (“Wait your turn”, “Tidy up”). The student uses
+them to express a need, a feeling or a choice, by touching the card or handing it over.</p>
+
+<h2>Who are they for?</h2>
+<ul>
+<li>Nonverbal or minimally verbal students, autistic or not.</li>
+<li>Students who speak but lose their words when emotions run high.</li>
+<li>Students who understand what they see better than what they hear, for example with an intellectual
+disability, a language disorder or while learning English.</li>
+<li>The adults who support them: special care counsellors, teachers, daycare staff, parents.</li>
+</ul>
+
+<h2>Start with a single card</h2>
+<ol>
+<li><strong>Choose the most useful card right now.</strong> Often Bathroom, Break or Help: a need that comes up
+every day.</li>
+<li><strong>Show the card and say the word.</strong> Every time the situation comes up, the adult shows the card
+and simply says the word.</li>
+<li><strong>Wait a few seconds.</strong> Give the student time to touch the card or hand it over.</li>
+<li><strong>Respond right away.</strong> When the student uses the card, grant the request as soon as possible.
+That is how they learn that the picture works.</li>
+<li><strong>Add one card at a time.</strong> Once the first card is used well, add another one.</li>
+</ol>
+
+<h2>One colour per category</h2>
+<p>Each card’s border has the colour of its category: emotions in purple, needs in blue, expected behaviours in
+green, what not to do in red, routines in orange, and so on. The student and the adult find the right card at a
+glance, even when the ring is full.</p>
+<p>There is no need to carry everything at once. For a trip to the grocery store, put only the cards for the
+outing on the ring, in the order they will happen. For a dentist appointment, only the cards for the visit.</p>
+
+<h2>Putting the ring together</h2>
+<ol>
+<li>Print at 100% (actual size), without “Fit to page”.</li>
+<li>Cut out, then laminate, leaving at least 3 mm between cards.</li>
+<li>Trim again, keeping a plastic edge so the card stays waterproof.</li>
+<li>Punch at the round mark in the corner and slip onto a 2.5 cm ring.</li>
+</ol>
+
+<h2>Do pictures stop children from talking?</h2>
+<p>Parents often worry about this. Research does not show that visual communication supports hold back speech; for
+many children, speech even improves a little (Millar et al., 2006). The picture does not replace the word: always
+say the word while showing the card. Visual supports are also among the recognized practices for autistic
+students (Hume et al., 2021).</p>
+
+<h2>Using the cards everywhere</h2>
+<ul>
+<li><strong>At school:</strong> every adult who works with the student uses the same cards, with the same words.</li>
+<li><strong>At home:</strong> a copy of the ring for the family helps the student use their cards outside the
+classroom.</li>
+<li><strong>On the wall:</strong> the same cards, enlarged, become a communication board or a posted routine.</li>
+</ul>
+
+<div class="astuce"><strong>Tip for the adult</strong><p>Always keep a “Break” card on the ring, even at the start.
+Being able to ask for a break is often the card that prevents the most meltdowns.</p></div>
+
+<p class="muted">References: Hume, K. et al. (2021). Evidence-based practices for children, youth, and young adults
+with autism: Third generation review. Journal of Autism and Developmental Disorders, 51(11), 4013-4032.
+Millar, D. C., Light, J. C., &amp; Schlosser, R. W. (2006). The impact of augmentative and alternative communication
+intervention on the speech production of individuals with developmental disabilities: A research review. Journal of
+Speech, Language, and Hearing Research, 49(2), 248-264.</p>
+"""),
+    dict(
         fr="conseil-halloween-enfant-sensible.html",
         en="tip-halloween-sensitive-child.html",
         date="2026-10-06",
