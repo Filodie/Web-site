@@ -19,7 +19,7 @@ import fitz
 from conseils import ARTICLES
 import trousse_etudiante as TE
 import categories as CA
-from sujets import SUJETS
+from sujets import SUJETS, PAGES_PLUS
 import formulaires as FO
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -74,7 +74,7 @@ HORS_16 = ("trousse-deficience_physique", "trousse-cadre_legal", "trousse-entret
            "trousse-reduction_mefaits", "trousse-adolescence",
            "trousse-securite_travail", "trousse-systemique_famille",
            "trousse-animer_groupe", "trousse-tcc_quotidien",
-           "trousse-pouvoir_agir", "trousse-auteurs_infractions_sexuelles", "trousse-soutenir_deuil", "trousse-fratrie", "trousse-devenir_adulte", "trousse-perinatalite", "trousse-techniques_impact")   # trousses spécialisées hors lot des 16
+           "trousse-pouvoir_agir", "trousse-auteurs_infractions_sexuelles", "trousse-soutenir_deuil", "trousse-fratrie", "trousse-devenir_adulte", "trousse-perinatalite", "trousse-techniques_impact", "trousse-temps_des_fetes")   # trousses spécialisées hors lot des 16
 ECH_ID = "trousse-decouverte_etudiant_tes"          # échantillon étudiant gratuit (hors lots)
 # Date de mise en vente (AAAA-MM-JJ) : la boutique affiche « Nouveau » pendant le mois de la mise en vente (comparaison
 # faite dans le navigateur, donc l’étiquette disparaît seule le 1er du mois suivant). Ajouter chaque nouveau produit ici.
@@ -94,7 +94,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
           "lot-parents": "2026-10-27", "livre-glossaire-clinique": "2026-11-04",
           "trousse-soutenir_deuil": "2026-11-04", "album-caillou-nilou": "2026-11-04",
           "album-nuage-teo": "2026-11-04", "album-marmite-lina": "2026-11-04", "album-pont-zelie": "2026-11-04", "album-lanterne-milo": "2026-11-04",
-          "trousse-fratrie": "2026-11-05", "album-tournesol-romy": "2026-11-05", "album-couverture-eli": "2026-11-05", "trousse-devenir_adulte": "2026-11-05", "trousse-perinatalite": "2026-11-05", "trousse-techniques_impact": "2026-11-06", "trousse-savoir_etre_stage": "2026-11-16",
+          "trousse-fratrie": "2026-11-05", "album-tournesol-romy": "2026-11-05", "album-couverture-eli": "2026-11-05", "trousse-devenir_adulte": "2026-11-05", "trousse-perinatalite": "2026-11-05", "trousse-techniques_impact": "2026-11-06", "trousse-savoir_etre_stage": "2026-11-16", "trousse-temps_des_fetes": "2026-11-17",
           **{k: "2026-11-04" for k in ("trousse-cerveau_developpement", "trousse-cerveau_tsa", "trousse-cerveau_tdah",
                                        "trousse-cerveau_di", "trousse-cerveau_tdl", "trousse-cerveau_trauma",
                                        "trousse-cerveau_anxiete", "trousse-cerveau_tnc", "lot-14-le-cerveau-expliqué",
@@ -102,7 +102,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
                                        "trousse-chutes_aines", "trousse-intimite_aines", "trousse-conduite_aines",
                                        "trousse-stimulation_aines", "lot-15-accompagner-le-grand-âge")},
           **{k: "2026-11-05" for k in ("trousse-diagnostic_tsa", "trousse-diagnostic_tdah", "trousse-diagnostic_di",
-                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15", "pictos-besoins": "2026-11-15", "pictos-routines": "2026-11-15", "pictos-regulation": "2026-11-15", "pictos-douleur": "2026-11-15", "pictos-ecole-qc": "2026-11-15", "pictos-recreation": "2026-11-16", "pictos-repas": "2026-11-16", "pictos-sante": "2026-11-16", "pictos-communaute": "2026-11-16", "pictos-tableaux": "2026-11-17", "pictos-echantillon": "2026-11-15", "lot-pictos-porte-cles": "2026-11-15"}
+                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15", "pictos-besoins": "2026-11-15", "pictos-routines": "2026-11-15", "pictos-regulation": "2026-11-15", "pictos-douleur": "2026-11-15", "pictos-ecole-qc": "2026-11-15", "pictos-recreation": "2026-11-16", "pictos-repas": "2026-11-16", "pictos-sante": "2026-11-16", "pictos-communaute": "2026-11-16", "pictos-tableaux": "2026-11-17", "pictos-fetes": "2026-11-17", "pictos-echantillon": "2026-11-15", "lot-pictos-porte-cles": "2026-11-15"}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
                  "lot_cahiers", "lot_routines", "lot_detective", "lot_albums", "lot_jeux")
@@ -178,7 +178,8 @@ def catalogue():
     from contenu_devenir_adulte import DEVENIR            # 5 nov. 2026, hors lot des 16
     from contenu_perinatalite import PERINATALITE         # 5 nov. 2026, hors lot des 16
     from contenu_techniques_impact import IMPACT          # 6 nov. 2026, hors lot des 16
-    for t in AGES + TROUBLES + NOUVEAUX + [DP, CL, EM, SM, AT, RD, AD, SPI, SY, AG, TC, PA, AI, SP, FRATRIE, DEVENIR, PERINATALITE, IMPACT]:
+    from contenu_fetes import FETES                       # 17 nov. 2026, hors lot des 16
+    for t in AGES + TROUBLES + NOUVEAUX + [DP, CL, EM, SM, AT, RD, AD, SPI, SY, AG, TC, PA, AI, SP, FRATRIE, DEVENIR, PERINATALITE, IMPACT, FETES]:
         add(id="trousse-" + t["fichier"].lower(), type="trousse", groupe="Trousses spécialisées", titre=t["nom"],
             sous=f"{len(t['fiches'])} outils", desc=t["desc"],
             fichiers=[f"Trousses spécialisées/Trousse_Filodie_{t['fichier']}_2026.pdf"])
@@ -314,6 +315,20 @@ def catalogue():
                 "my eyes, stay close to the adult, show my card and more. 12 blank cards, “Today, we are going to…”, “First, "
                 "Then” and “My list, Found it!” sentence strips and a guide for preparing for an outing.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Sorties_communaute.pdf"])
+    add(id="pictos-fetes", type="trousse", groupe="Pictogrammes porte-clés",        # 17 nov. 2026
+        titre="Pictogrammes porte-clés : temps des fêtes", sous="24 pictogrammes · cartes de 6 x 6 cm", pv_pages=[3, 31],
+        desc="24 pictogrammes du congé des fêtes en cartes de 6 x 6 cm : compter les dodos, décorer le sapin, faire des "
+             "biscuits, visite chez la famille, beaucoup de monde, saluer de la main, trop de bruit, aller au coin calme, "
+             "déballer, dire merci, feux d’artifice, jouer dans la neige, patiner, dormir ailleurs, retour à l’école et plus. "
+             "12 cartes vierges pour les fêtes de chaque famille, des bandes-phrases « Aujourd’hui, on va… », « D’abord, "
+             "Ensuite » et « Oui, merci, Non, merci » et un mode d’emploi pour traverser le congé.",
+        titre_en="Keychain Pictograms: Holiday Season", sous_en="24 pictograms · 6 x 6 cm cards",
+        desc_en="24 holiday break pictograms on 6 x 6 cm cards: count the sleeps, decorate the tree, bake cookies, visit "
+                "family, lots of people, wave hello, too loud, go to the quiet corner, unwrap, say thank you, fireworks, play "
+                "in the snow, skate, sleep somewhere else, back to school and more. 12 blank cards for each family’s "
+                "celebrations, “Today, we are going to…”, “First, Then” and “Yes, please, No, thank you” sentence strips "
+                "and a guide for getting through the break.",
+        fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Temps_des_fetes.pdf"])
     add(id="pictos-tableaux", type="trousse", groupe="Pictogrammes porte-clés",        # 17 nov. 2026
         titre="Tableaux de communication", sous="10 tableaux · format Lettre paysage", pv_pages=[4, 8],
         desc="10 tableaux de communication à imprimer, avec les mêmes images que les pictogrammes porte-clés : un tableau "
@@ -332,11 +347,11 @@ def catalogue():
         titre="Pictogrammes porte-clés : échantillon gratuit", sous="Gratuit · 6 pictogrammes · cartes de 6 x 6 cm", pv_pages=[4, 5],
         desc="Six cartes de 6 x 6 cm pour essayer les pictogrammes porte-clés, chacune d’une couleur différente : Triste, Toilettes, "
              "Attendre son tour, Dîner, Respirer lentement et Mal au ventre. Une fille et un garçon, en couleur et en noir "
-             "et blanc, un mode d’emploi et l’aperçu des douze trousses de la collection.",
+             "et blanc, un mode d’emploi et l’aperçu des treize trousses de la collection.",
         titre_en="Keychain Pictograms: Free Sample", sous_en="Free · 6 pictograms · 6 x 6 cm cards",
         desc_en="Six 6 x 6 cm cards to try the keychain pictograms, each in a different colour: Sad, Bathroom, Wait your turn, "
                 "Lunch, Breathe slowly and Tummy ache. A girl and a boy, in colour and in black and white, a guide and an "
-                "overview of the twelve kits in the collection.",
+                "overview of the thirteen kits in the collection.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Echantillon_gratuit.pdf"])
     from outil_choix_eclaire import CHOIX                 # outils d’intervention vendus à l’unité, hors collection
     from outils_3dollars import OUTILS
@@ -539,19 +554,19 @@ def catalogue():
                     "relationship, attachment, age-appropriate positive reinforcement, sleep, screens, self-esteem, grief "
                     "and separation, and adolescence.")
     # Collection Pictogrammes porte-clés (15 nov. 2026) : les huit couleurs réunies
-    ppc = ["pictos-emotions", "pictos-comportements", "pictos-interdits", "pictos-besoins", "pictos-routines", "pictos-regulation", "pictos-douleur", "pictos-ecole-qc", "pictos-recreation", "pictos-repas", "pictos-sante", "pictos-communaute"]
+    ppc = ["pictos-emotions", "pictos-comportements", "pictos-interdits", "pictos-besoins", "pictos-routines", "pictos-regulation", "pictos-douleur", "pictos-ecole-qc", "pictos-recreation", "pictos-repas", "pictos-sante", "pictos-communaute", "pictos-fetes"]
     if all(any(i["id"] == k for i in items) for k in ppc):
         add(id="lot-pictos-porte-cles", type="lot_collection", groupe="Lots",
             titre="Collection Filodie : Pictogrammes porte-clés", sous=f"{len(ppc)} trousses · {len(ppc)} couleurs",
-            desc="Les douze trousses de cartes de 6 x 6 cm, une couleur par catégorie : émotions (violet), comportements "
+            desc="Les treize trousses de cartes de 6 x 6 cm, une couleur par catégorie : émotions (violet), comportements "
                  "attendus (vert), à ne pas faire (rouge), besoins et demandes (bleu), routines (orange), se calmer "
-                 "(turquoise), où j’ai mal (rose), vie scolaire au Québec (jaune), récréation et jeu (brun), repas et cuisine (bleu marine), santé et soins (bordeaux) et sorties dans la communauté (vert olive). Une fille et un garçon, en couleur et en noir et blanc, avec un mode d’emploi dans chaque trousse et des bandes-phrases pour les besoins, les émotions, la récréation, le repas, les rendez-vous de santé et les sorties.",
+                 "(turquoise), où j’ai mal (rose), vie scolaire au Québec (jaune), récréation et jeu (brun), repas et cuisine (bleu marine), santé et soins (bordeaux), sorties dans la communauté (vert olive) et temps des fêtes (vert sapin). Une fille et un garçon, en couleur et en noir et blanc, avec un mode d’emploi dans chaque trousse et des bandes-phrases pour les besoins, les émotions, la récréation, le repas, les rendez-vous de santé, les sorties et les fêtes.",
             fichiers=[], contient=ppc,
             titre_en="Filodie Collection: Keychain Pictograms", sous_en=f"{len(ppc)} toolkits · {len(ppc)} colours",
-            desc_en="All twelve kits of 6 x 6 cm cards, one colour per category: emotions (purple), expected behaviours "
+            desc_en="All thirteen kits of 6 x 6 cm cards, one colour per category: emotions (purple), expected behaviours "
                     "(green), don’ts (red), needs and requests (blue), routines (orange), calming down (turquoise), "
-                    "where it hurts (pink), school life in Québec (yellow), recess and play (brown), meals and cooking (navy blue), health and care (burgundy) and community outings (olive green). A girl and a boy, in colour and in black and white, with a guide in every kit "
-                    "and sentence strips for needs, emotions, recess, meals, health visits and outings.")
+                    "where it hurts (pink), school life in Québec (yellow), recess and play (brown), meals and cooking (navy blue), health and care (burgundy), community outings (olive green) and holiday season (forest green). A girl and a boy, in colour and in black and white, with a guide in every kit "
+                    "and sentence strips for needs, emotions, recess, meals, health visits, outings and the holidays.")
     aff = [i["id"] for i in items if i["type"] == "affiches"]
     if aff:
         naff = sum(len(pq.affiches) for pq in load_affiches())
@@ -889,7 +904,7 @@ L = {
         "shop_t": "Boutique", "shop_p": "Chaque achat inclut la version française et la version anglaise. Cahiers à 3 $, trousses à 7 $, et des lots jusqu’à 90 % moins chers. Prix en dollars canadiens, téléchargement immédiat après le paiement.",
         "search": "Rechercher un outil…", "all": "Tout",
         "nv": "Nouveau", "nv_chip": "Nouveautés du mois", "cat_t": "Par sujet", "fmt_t": "Par format", "cat_voir": "Voir les catégories", "all_cat": "Tous les sujets", "sujet_lien": "En savoir plus sur ce sujet", "sujet_debut": "Par où commencer",
-        "sujet_tout": "Voir les {n} produits dans la boutique", "sujet_liste": "Tout ce que Filodie offre sur ce sujet", "sujet_lire": "À lire aussi", "sujet_autres": "Les autres sujets", "sujet_plus": "et {n} autres",
+        "sujet_tout": "Voir les {n} produits dans la boutique", "sujet_liste": "Tout ce que Filodie offre sur ce sujet", "sujet_lire": "À lire aussi", "sujet_autres": "Les autres sujets", "sujet_plus": "et {n} autres", "sujet_voir": "Voir aussi", "sujet_boutique": "Voir la boutique",
         "types": {"trousse": "Trousses", "edition": "Éditions", "cahier": "Cahiers visuels", "affiches": "Affiches", "jeux": "Jeux", "routines": "Routines", "detective": "Détective", "gratuit": "Gratuit", "livre": "Grand livre", "album": "Albums",
                   "bottin": "Bottin", "lot": "Lots"},
         "buy": "Acheter", "cart": "Ajouter au panier", "direct": "ou acheter maintenant", "lot": "Acheter le lot", "lotnote": "Paiement séparé du panier", "soon": "Bientôt disponible", "free": "Gratuit", "get": "Obtenir", "details": "Détails", "cahier_nb": " · Couleur + version noir et blanc à colorier",
@@ -934,7 +949,7 @@ L = {
         "shop_t": "Shop", "shop_p": "Every purchase includes both the English and French versions. Workbooks at $3, toolkits at $7, and bundles up to 90% off. Prices in Canadian dollars, instant download after payment.",
         "search": "Search for a tool…", "all": "All",
         "nv": "New", "nv_chip": "New this month", "cat_t": "By topic", "fmt_t": "By format", "cat_voir": "See the categories", "all_cat": "All topics", "sujet_lien": "Learn more about this topic", "sujet_debut": "Where to start",
-        "sujet_tout": "See all {n} products in the shop", "sujet_liste": "Everything Filodie offers on this topic", "sujet_lire": "Read also", "sujet_autres": "Other topics", "sujet_plus": "and {n} more",
+        "sujet_tout": "See all {n} products in the shop", "sujet_liste": "Everything Filodie offers on this topic", "sujet_lire": "Read also", "sujet_autres": "Other topics", "sujet_plus": "and {n} more", "sujet_voir": "See also", "sujet_boutique": "Visit the shop",
         "types": {"trousse": "Toolkits", "edition": "Editions", "cahier": "Visual workbooks", "affiches": "Posters", "jeux": "Games", "routines": "Routines", "detective": "Detective", "gratuit": "Free", "livre": "Handbook", "album": "Picture books",
                   "bottin": "Directory", "lot": "Bundles"},
         "buy": "Buy", "cart": "Add to cart", "direct": "or buy now", "lot": "Buy the bundle", "lotnote": "Paid separately from the cart", "soon": "Coming soon", "free": "Free", "get": "Get it", "details": "Details", "cahier_nb": " · Colour + black-and-white colouring version",
@@ -966,6 +981,7 @@ PAIRS["suggestions.html"] = "suggestions.html"
 PAIRS.update({a["fr"]: a["en"] for a in ARTICLES})
 PAIRS[TE.FR] = TE.EN
 PAIRS.update({v["fr"]: v["en"] for v in SUJETS.values()})
+PAIRS.update({v["fr"]: v["en"] for v in PAGES_PLUS.values()})
 PAIRS_EN = {v: k for k, v in PAIRS.items()}
 
 THREAD = ('<svg class="thread" viewBox="0 0 600 90" preserveAspectRatio="none" aria-hidden="true"><path d="M-10 60 '
@@ -1670,9 +1686,11 @@ def sujet_page(lang, cid, items):
     """Vraie page d’un sujet : texte pour Google et les visiteurs, trois produits, la liste complète et le lien vers la boutique."""
     t = L[lang]
     fr = lang == "fr"
-    s = SUJETS[cid]
+    plus = cid in PAGES_PLUS
+    s = PAGES_PLUS[cid] if plus else SUJETS[cid]
     tous = {i["id"]: i for i in items}
-    dedans = [i for i in items if cid in CA.categories_de(i, parents_de(i))]
+    dedans = [tous[k] for k in s["ids"]] if plus else [i for i in items if cid in CA.categories_de(i, parents_de(i))]
+    ancre = s["parents"][0] if plus else cid
     rang = {"trousse": 0, "edition": 1, "album": 2, "livre": 2, "bottin": 2}
     famille = lambda i: "lot" if i["type"].startswith("lot") or i["type"] == "mega" else i["type"]
     formats = sorted({famille(i) for i in dedans}, key=lambda f: (rang.get(f, 4 if f == "cahier" else 3), f))
@@ -1691,10 +1709,14 @@ def sujet_page(lang, cid, items):
     if s["conseil"]:
         a = next(a for a in ARTICLES if a["fr"] == s["conseil"])
         lire = (f'<p><strong>{t["sujet_lire"]} :</strong> <a href="{a[lang]}">{html.escape(a["titre_fr" if fr else "titre_en"])}</a></p>')
+    voir = [v for k, v in PAGES_PLUS.items() if cid in v["parents"]]
+    if voir:
+        lire += (f'<p><strong>{t["sujet_voir"]} :</strong> '
+                 + " · ".join(f'<a href="{v[lang]}">{html.escape(v["h1_fr" if fr else "h1_en"])}</a>' for v in voir) + "</p>")
     autres = "".join(f'<a href="{SUJETS[c[0]][lang]}">{c[1 if fr else 2]}</a>' for c in CA.CATEGORIES if c[0] != cid)
     h1 = s["h1_fr" if fr else "h1_en"]
     body = (f'<section class="wrap prose sujet"><p class="muted"><a href="{boutique}">{t["nav"][1][1]}</a> / {h1}</p><h1>{h1}</h1>{p}'
-            f'<p><a class="btn" href="{boutique}#{cid}">{t["sujet_tout"].format(n=len(dedans))}</a></p>{lire}</section>'
+            f'<p><a class="btn" href="{boutique}#{ancre}">{t["sujet_boutique"] if plus else t["sujet_tout"].format(n=len(dedans))}</a></p>{lire}</section>'
             f'<section class="band"><div class="wrap"><h2>{t["sujet_debut"]}</h2><div class="grid3">{cartes}</div></div></section>'
             f'<section class="wrap sujet"><h2>{t["sujet_liste"]}</h2><div class="sliste">{listes}</div>'
             f'<h2>{t["sujet_autres"]}</h2><p class="sautres">{autres}</p></section>')
@@ -2100,7 +2122,7 @@ def build():
         open(os.path.join(d, "index.html"), "w").write(home(lang))
         open(os.path.join(d, "boutique.html" if lang == "fr" else "shop.html"), "w").write(shop(lang, items))
         open(os.path.join(d, "bottin.html" if lang == "fr" else "directory.html"), "w").write(bottin(lang, items))
-        for cid, s in SUJETS.items():
+        for cid, s in list(SUJETS.items()) + list(PAGES_PLUS.items()):
             open(os.path.join(d, s[lang]), "w").write(sujet_page(lang, cid, items))
         open(os.path.join(d, "coloriage.html" if lang == "fr" else "colouring.html"), "w").write(coloriage(lang))
         tous = {i["id"]: i for i in items}

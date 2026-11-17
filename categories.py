@@ -60,9 +60,9 @@ _ROUTINES = _ids("routines-rtn-", *"abcdef") + ["lot-routines"]
 
 AJOUTS_CAT = {
     "pictos": _t("pictogrammes") + ["lot-pictos-porte-cles"],
-    "tsa": _t("tsa", "fratrie", "devenir_adulte", "diagnostic_tsa", "adultes_autistes", "cerveau_tsa", "formation_tsa", "sexualite_adaptee", "pictogrammes", "histoires_sociales")
+    "tsa": _t("tsa", "fratrie", "temps_des_fetes", "devenir_adulte", "diagnostic_tsa", "adultes_autistes", "cerveau_tsa", "formation_tsa", "sexualite_adaptee", "pictogrammes", "histoires_sociales")
            + ["lot-cahiers-tsa", "affiches-aff-e"] + _ROUTINES + _HISTOIRES + _num("vsoc", 4, 6, 7, 8),
-    "tdah": _t("tdah", "diagnostic_tdah", "cerveau_tdah", "impulsivite", "routines_et_organisation_scolaire", "procrastination")
+    "tdah": _t("tdah", "temps_des_fetes", "diagnostic_tdah", "cerveau_tdah", "impulsivite", "routines_et_organisation_scolaire", "procrastination")
             + ["lot-cahiers-tdah", "routines-rtn-d", "affiches-aff-e"] + _num("vsoc", 2, 19),
     "di": _t("deficience_intellectuelle", "fratrie", "devenir_adulte", "diagnostic_di", "dims", "cerveau_di", "sexualite_adaptee", "integration_socioprofessionnelle",
              "readaptation_foyer", "pictogrammes", "budget")
@@ -123,7 +123,7 @@ AJOUTS_CAT = {
            + ["grand-livre", "livre-glossaire-clinique", "bottin-regional", "lot-3-professions", "lot-4-professions-et-pratique",
               "lot-10-boîte-à-outils-du-psychoéducateur", "lot-14-le-cerveau-expliqué", "lot-5-jeux-et-activités",
               "lot-8-thèmes-complémentaires"] + _num("vcomp", 35, 36),
-    "pa": ["lot-16-après-le-diagnostic", "trousse-fratrie", "album-tournesol-romy", "trousse-devenir_adulte", "trousse-perinatalite", "album-couverture-eli"],
+    "pa": ["lot-16-après-le-diagnostic", "trousse-fratrie", "trousse-temps_des_fetes", "album-tournesol-romy", "trousse-devenir_adulte", "trousse-perinatalite", "album-couverture-eli"],
     "etudes": _t("modele_pph") + ["grand-livre", "livre-glossaire-clinique", "lot-etudes-tes"],
 }
 
