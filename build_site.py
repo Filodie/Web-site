@@ -102,7 +102,7 @@ AJOUTS = {**{f"detective-{c}": "2026-10-01" for c in ("dem", "dfo", "dco", "din"
                                        "trousse-chutes_aines", "trousse-intimite_aines", "trousse-conduite_aines",
                                        "trousse-stimulation_aines", "lot-15-accompagner-le-grand-âge")},
           **{k: "2026-11-05" for k in ("trousse-diagnostic_tsa", "trousse-diagnostic_tdah", "trousse-diagnostic_di",
-                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15", "pictos-besoins": "2026-11-15", "pictos-routines": "2026-11-15", "pictos-regulation": "2026-11-15", "pictos-douleur": "2026-11-15", "pictos-ecole-qc": "2026-11-15", "pictos-recreation": "2026-11-16", "pictos-repas": "2026-11-16", "pictos-echantillon": "2026-11-15", "lot-pictos-porte-cles": "2026-11-15"}
+                                       "trousse-diagnostic_tdl", "lot-16-après-le-diagnostic")}, "pictos-emotions": "2026-11-15", "pictos-comportements": "2026-11-15", "pictos-interdits": "2026-11-15", "pictos-besoins": "2026-11-15", "pictos-routines": "2026-11-15", "pictos-regulation": "2026-11-15", "pictos-douleur": "2026-11-15", "pictos-ecole-qc": "2026-11-15", "pictos-recreation": "2026-11-16", "pictos-repas": "2026-11-16", "pictos-sante": "2026-11-16", "pictos-echantillon": "2026-11-15", "lot-pictos-porte-cles": "2026-11-15"}
 # Filtre « Pour les parents » de la boutique : types utilisables à la maison + produits choisis (24 oct. 2026)
 PARENTS_TYPES = ("cahier", "routines", "detective", "jeux", "gratuit", "edition",
                  "lot_cahiers", "lot_routines", "lot_detective", "lot_albums", "lot_jeux")
@@ -288,15 +288,27 @@ def catalogue():
                 "“First, Then” and “I like it, I don’t like it” sentence strips and a guide for meals, trying a new food "
                 "and cooking.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Repas_et_cuisine.pdf"])
+    add(id="pictos-sante", type="trousse", groupe="Pictogrammes porte-clés",        # 16 nov. 2026
+        titre="Pictogrammes porte-clés : santé et soins", sous="24 pictogrammes · cartes de 6 x 6 cm", pv_pages=[3, 31],
+        desc="24 pictogrammes de santé et de soins en cartes de 6 x 6 cm : médecin, dentiste, pharmacie, salle d’attente, "
+             "se peser, écouter mon cœur, ouvrir la bouche, vaccin, prise de sang, prendre un médicament, regarder ailleurs, "
+             "serrer la balle, tenir la main et plus. 12 cartes vierges, des bandes-phrases « Aujourd’hui, je vais chez… », "
+             "« D’abord, Ensuite » et « Une pause, On continue » et un mode d’emploi pour préparer un rendez-vous de santé.",
+        titre_en="Keychain Pictograms: Health and Care", sous_en="24 pictograms · 6 x 6 cm cards",
+        desc_en="24 health and care pictograms on 6 x 6 cm cards: doctor, dentist, pharmacy, waiting room, get weighed, "
+                "listen to my heart, open my mouth, vaccine, blood test, take medicine, look away, squeeze the ball, hold "
+                "hands and more. 12 blank cards, “Today, I’m going to…”, “First, Then” and “A break, Let’s keep going” "
+                "sentence strips and a guide for preparing for a health visit.",
+        fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Sante_et_soins.pdf"])
     add(id=PPC_ECH_ID, type="trousse", groupe="Pictogrammes porte-clés", prix=0.0,       # 15 nov. 2026, gratuit
         titre="Pictogrammes porte-clés : échantillon gratuit", sous="Gratuit · 6 pictogrammes · cartes de 6 x 6 cm", pv_pages=[4, 5],
         desc="Six cartes de 6 x 6 cm pour essayer les pictogrammes porte-clés, chacune d’une couleur différente : Triste, Toilettes, "
              "Attendre son tour, Dîner, Respirer lentement et Mal au ventre. Une fille et un garçon, en couleur et en noir "
-             "et blanc, un mode d’emploi et l’aperçu des dix trousses de la collection.",
+             "et blanc, un mode d’emploi et l’aperçu des onze trousses de la collection.",
         titre_en="Keychain Pictograms: Free Sample", sous_en="Free · 6 pictograms · 6 x 6 cm cards",
         desc_en="Six 6 x 6 cm cards to try the keychain pictograms, each in a different colour: Sad, Bathroom, Wait your turn, "
                 "Lunch, Breathe slowly and Tummy ache. A girl and a boy, in colour and in black and white, a guide and an "
-                "overview of the ten kits in the collection.",
+                "overview of the eleven kits in the collection.",
         fichiers=["Pictogrammes porte-clés Filodie/Pictogrammes_porte-cles_Echantillon_gratuit.pdf"])
     from outil_choix_eclaire import CHOIX                 # outils d’intervention vendus à l’unité, hors collection
     from outils_3dollars import OUTILS
@@ -499,19 +511,19 @@ def catalogue():
                     "relationship, attachment, age-appropriate positive reinforcement, sleep, screens, self-esteem, grief "
                     "and separation, and adolescence.")
     # Collection Pictogrammes porte-clés (15 nov. 2026) : les huit couleurs réunies
-    ppc = ["pictos-emotions", "pictos-comportements", "pictos-interdits", "pictos-besoins", "pictos-routines", "pictos-regulation", "pictos-douleur", "pictos-ecole-qc", "pictos-recreation", "pictos-repas"]
+    ppc = ["pictos-emotions", "pictos-comportements", "pictos-interdits", "pictos-besoins", "pictos-routines", "pictos-regulation", "pictos-douleur", "pictos-ecole-qc", "pictos-recreation", "pictos-repas", "pictos-sante"]
     if all(any(i["id"] == k for i in items) for k in ppc):
         add(id="lot-pictos-porte-cles", type="lot_collection", groupe="Lots",
-            titre="Collection Filodie : Pictogrammes porte-clés", sous=f"{len(ppc)} trousses · 10 couleurs",
-            desc="Les dix trousses de cartes de 6 x 6 cm, une couleur par catégorie : émotions (violet), comportements "
+            titre="Collection Filodie : Pictogrammes porte-clés", sous=f"{len(ppc)} trousses · 11 couleurs",
+            desc="Les onze trousses de cartes de 6 x 6 cm, une couleur par catégorie : émotions (violet), comportements "
                  "attendus (vert), à ne pas faire (rouge), besoins et demandes (bleu), routines (orange), se calmer "
-                 "(turquoise), où j’ai mal (rose), vie scolaire au Québec (jaune), récréation et jeu (brun) et repas et cuisine (bleu marine). Une fille et un garçon, en couleur et en noir et blanc, avec un mode d’emploi dans chaque trousse et des bandes-phrases pour les besoins, les émotions, la récréation et le repas.",
+                 "(turquoise), où j’ai mal (rose), vie scolaire au Québec (jaune), récréation et jeu (brun), repas et cuisine (bleu marine) et santé et soins (bordeaux). Une fille et un garçon, en couleur et en noir et blanc, avec un mode d’emploi dans chaque trousse et des bandes-phrases pour les besoins, les émotions, la récréation, le repas et les rendez-vous de santé.",
             fichiers=[], contient=ppc,
-            titre_en="Filodie Collection: Keychain Pictograms", sous_en=f"{len(ppc)} toolkits · 10 colours",
-            desc_en="All ten kits of 6 x 6 cm cards, one colour per category: emotions (purple), expected behaviours "
+            titre_en="Filodie Collection: Keychain Pictograms", sous_en=f"{len(ppc)} toolkits · 11 colours",
+            desc_en="All eleven kits of 6 x 6 cm cards, one colour per category: emotions (purple), expected behaviours "
                     "(green), don’ts (red), needs and requests (blue), routines (orange), calming down (turquoise), "
-                    "where it hurts (pink), school life in Québec (yellow), recess and play (brown) and meals and cooking (navy blue). A girl and a boy, in colour and in black and white, with a guide in every kit "
-                    "and sentence strips for needs, emotions, recess and meals.")
+                    "where it hurts (pink), school life in Québec (yellow), recess and play (brown), meals and cooking (navy blue) and health and care (burgundy). A girl and a boy, in colour and in black and white, with a guide in every kit "
+                    "and sentence strips for needs, emotions, recess, meals and health visits.")
     aff = [i["id"] for i in items if i["type"] == "affiches"]
     if aff:
         naff = sum(len(pq.affiches) for pq in load_affiches())
