@@ -19,7 +19,7 @@ CATEGORIES = [
     ("sante", "Santé mentale et dépendances", "Mental health and addictions", "trousse-sante_mentale"),
     ("deuil", "Deuil, trauma et violence", "Grief, trauma and violence", "trousse-soutenir_deuil"),
     ("petite", "Petite enfance", "Early childhood", "trousse-petite_enfance_0-5_ans"),
-    ("ecole", "École et classe", "School and classroom", "trousse-enseignants_primaire"),
+    ("ecole", "École et classe", "School and classroom", "trousse-pack_rentree_tes_primaire"),
     ("ados", "Adolescence", "Teens", "trousse-adolescence"),
     ("adultes", "Adultes", "Adults", "trousse-adultes"),
     ("aines", "Personnes aînées", "Older adults", "trousse-aines"),

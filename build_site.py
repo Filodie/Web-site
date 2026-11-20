@@ -149,7 +149,11 @@ def catalogue():
     from outil_du_mois import load as load_gratuit, fichier as fichier_gratuit
     items = []
 
+    from retraits import RETIRES                       # produits retirés de la vente le 20 nov. 2026
+
     def add(**k):
+        if k["id"] in RETIRES or (k["type"].startswith("lot") or k["type"] == "mega") and "contient" in k and not k["contient"]:
+            return                                      # retiré, ou lot qui ne contient plus aucun produit
         k.setdefault("prix", 0.0 if "decouverte" in k["id"] else PRIX[k["type"]])   # trousse découverte : gratuite
         k.setdefault("payhip", "")
         k.setdefault("payhip_en", "")
@@ -618,9 +622,9 @@ def catalogue():
                     "ages 4 to 8 about what is hard, each with 2 pages for the child and a guide for adults.",
             fichiers=[], contient=ab)
     sp = [i["id"] for i in items if i["groupe"] == "Trousses spécialisées" and i["id"] not in HORS_16]
-    add(id="lot-specialisees", type="lot_specialisees", groupe="Lots", titre="Les 16 trousses spécialisées",
+    add(id="lot-specialisees", type="lot_specialisees", groupe="Lots", titre=f"Les {len(sp)} trousses spécialisées", titre_en=f"The {len(sp)} specialized toolkits",
         sous="Âges et troubles", desc="Petite enfance, secondaire, adultes, aînés, TSA, TDAH, DI, langage, comportement, "
-                                      "crise, suicide, dépendances et plus.", fichiers=[], contient=sp)
+                                      "crise, dépendances et plus.", fichiers=[], contient=sp)
     et = [i["id"] for i in items if i["groupe"] == "Études et stages en T.E.S." and i["prix"] > 0]
     if et:
         add(id="lot-etudes-tes", type="lot_tout", groupe="Lots", titre="Trousse de l’étudiante et de l’étudiant en T.E.S.",
@@ -694,7 +698,7 @@ def catalogue():
     # préparer l’édition suivante d’avance dans EDITIONS_MOIS (produits Payhip « Unlisted »), puis publier le 1er du mois.
     E = edition_du_mois()
     EDITION, EDITION_EN, SUIVANT, SUIVANT_EN = E["fr"], E["en"], E["suiv"], E["suiv_en"]
-    hors_lots = ["trousse-enseignants-tes", "trousse-apprentissage-langage"]
+    hors_lots = [h for h in ("trousse-enseignants-tes", "trousse-apprentissage-langage") if any(i["id"] == h for i in items)]
     lt = next(i for i in items if i["id"] == "lot-toutes-les-trousses")
     mg = next(i for i in items if i["id"] == "lot-mega")
     lt["contient"] += hors_lots
@@ -703,11 +707,11 @@ def catalogue():
     ned = sum(1 for c in mg["contient"] if next(i for i in items if i["id"] == c)["type"] == "edition")
     lt["sous"] = f"Édition {EDITION} · {ntr} trousses et {ned} éditions"
     lt["sous_en"] = f"{EDITION_EN} edition · {ntr} toolkits and {ned} editions"
-    lt["desc"] = (lt["desc"][:-1] + ", ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage "
-                  f"et langage. Édition {E['de']} : les trousses créées d’ici la fin du mois s’ajoutent à votre "
+    lt["desc"] = (lt["desc"][:-1] + (", ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage "
+                  "et langage." if hors_lots else ".") + f" Édition {E['de']} : les trousses créées d’ici la fin du mois s’ajoutent à votre "
                   f"téléchargement ; celles créées à partir du {SUIVANT} sont vendues séparément.")
-    lt["desc_en"] = (lt["desc_en"][:-1] + ", plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. "
-                     f"{EDITION_EN} edition: toolkits created before the end of the month are added to your download; "
+    lt["desc_en"] = (lt["desc_en"][:-1] + (", plus the Toolkit for SCC Teachers and the Learning and Language Toolkit."
+                     if hors_lots else ".") + f" {EDITION_EN} edition: toolkits created before the end of the month are added to your download; "
                      f"those created from {SUIVANT_EN} on are sold separately.")
     mg["sous"], mg["sous_en"] = f"Édition {EDITION}", f"{EDITION_EN} edition"
     mg["titre"], mg["titre_en"] = f"Tout Filodie : édition {EDITION}", f"All of Filodie: {EDITION_EN} edition"
@@ -881,18 +885,18 @@ def images(items):
 L = {
     "fr": {
         "lang": "fr-CA", "other": "en", "other_label": "EN", "base": "",
-        "tag": "Outils cliniques pour T.E.S.",
+        "tag": "Outils d’intervention pour T.E.S.",
         "nav": [("index.html", "Accueil"), ("boutique.html", "Boutique"), ("bottin.html", "Bottin gratuit"), ("conseils.html", "Conseils"),
                 ("services.html", "Services"), ("a-propos.html", "À propos"), ("faq.html", "FAQ"), ("contact.html", "Contact")],
-        "hero_k": "Outils cliniques · éducation spécialisée",
+        "hero_k": "Outils d’intervention · éducation spécialisée",
         "hero_1": "Tenir le fil,", "hero_2": "de l’observation à l’intervention.",
-        "hero_p": "Des trousses, des cahiers visuels et un grand livre clinique conçus au Québec pour les T.E.S., "
-                  "le personnel enseignant, le personnel éducateur et les familles. Imprimables, remplissables à l’écran, "
+        "hero_p": "Des trousses, des cahiers visuels et un grand livre conçus au Québec par une T.E.S., pour les T.E.S. "
+                  "et les familles accompagnées. Imprimables, remplissables à l’écran, "
                   "avec les ressources de votre région.",
         "cta1": "Voir la boutique", "cta2": "Télécharger le bottin gratuit",
         "stats": [("95", "trousses thématiques"), ("179", "cahiers visuels"), ("143", "fiches du Grand livre"), ("17", "régions couvertes")],
         "col_t": "La collection",
-        "cols": [("Trousses", "Des outils d’observation, de planification et de suivi, du CPE au CHSLD.", "boutique.html#trousse"),
+        "cols": [("Trousses", "Des outils d’observation, de planification et de suivi pour la pratique des T.E.S.", "boutique.html#trousse"),
                  ("Cahiers visuels", "Imagés et ludiques, pour travailler directement avec l’enfant : TSA, TDAH, habiletés sociales, DI, comportement.", "boutique.html#cahier"),
                  ("Grand livre clinique", "143 fiches de connaissances pour la pratique, en couleur et en noir et blanc.", "boutique.html#livre"),
                  ("Bottin régional", "Les ressources des 17 régions, classées par problématique. Gratuit.", "bottin.html")],
@@ -927,17 +931,17 @@ L = {
     },
     "en": {
         "lang": "en-CA", "other": "fr", "other_label": "FR", "base": "../",
-        "tag": "Clinical tools for special care counsellors",
+        "tag": "Intervention tools for special care counsellors",
         "nav": [("index.html", "Home"), ("shop.html", "Shop"), ("directory.html", "Free directory"), ("tips.html", "Tips"),
                 ("services.html", "Services"), ("about.html", "About"), ("faq.html", "FAQ"), ("contact.html", "Contact")],
-        "hero_k": "Clinical tools · special care counselling",
+        "hero_k": "Intervention tools · special care counselling",
         "hero_1": "Hold the thread,", "hero_2": "from observation to intervention.",
-        "hero_p": "Toolkits, visual workbooks and a clinical handbook made in Québec for special care counsellors, "
-                  "teachers, educators and families. Printable or fillable on screen, with resources for your region.",
+        "hero_p": "Toolkits, visual workbooks and a handbook made in Québec by a special care counsellor, for special "
+                  "care counsellors and the families they support. Printable or fillable on screen, with resources for your region.",
         "cta1": "Visit the shop", "cta2": "Get the free directory",
         "stats": [("95", "themed toolkits"), ("179", "visual workbooks"), ("143", "handbook sheets"), ("17", "regions covered")],
         "col_t": "The collection",
-        "cols": [("Toolkits", "Observation, planning and follow-up tools, from daycare to long-term care.", "shop.html#trousse"),
+        "cols": [("Toolkits", "Observation, planning and follow-up tools for special care counselling practice.", "shop.html#trousse"),
                  ("Visual workbooks", "Colourful and playful, to work directly with the child: autism, ADHD, social skills, ID, behaviour.", "shop.html#cahier"),
                  ("Clinical handbook", "143 knowledge sheets for practice, in colour and in black and white.", "shop.html#livre"),
                  ("Regional directory", "Resources for all 17 regions, sorted by issue. Free.", "directory.html")],
@@ -1337,14 +1341,14 @@ def fondatrice(lang):
     fr = lang == "fr"
     if fr:
         h2, lien, btn = "Qui est derrière Filodie ?", "a-propos.html", "En savoir plus sur moi"
-        txt = ("Je m’appelle Mélodie Fréchette. Je suis maman de quatre filles, étudiante en Techniques d’éducation spécialisée, "
-               "je détiens un certificat en travail social et je poursuis un baccalauréat multidisciplinaire (psychologie du "
-               "développement humain et dépendances). Je conçois et je crée moi-même chaque outil Filodie, au Québec.")
+        txt = ("Je m’appelle Mélodie Fréchette. Je suis maman de quatre filles et technicienne en éducation spécialisée en "
+               "milieu scolaire ; je termine ma formation en éducation spécialisée et je détiens un certificat en travail "
+               "social. Je conçois moi-même chaque outil Filodie, au Québec, pour la pratique des T.E.S.")
     else:
         h2, lien, btn = "Who is behind Filodie?", "about.html", "Learn more about me"
-        txt = ("My name is Mélodie Fréchette. I am the mother of four daughters and a special care counselling student; I hold a "
-               "certificate in social work and I am completing a multidisciplinary bachelor’s degree (human developmental "
-               "psychology and addictions). I design and create every Filodie tool myself, in Québec.")
+        txt = ("My name is Mélodie Fréchette. I am the mother of four daughters and a special care counsellor in a school "
+               "setting; I am completing my special care counselling training and I hold a certificate in social work. "
+               "I design every Filodie tool myself, in Québec, for special care counselling practice.")
     alt = "Mélodie Fréchette, fondatrice de Filodie" if fr else "Mélodie Fréchette, founder of Filodie"
     return (f'<section class="wrap"><div style="display:flex;flex-wrap:wrap;gap:28px;align-items:center">'
             f'<img src="/img/melodie.jpg" alt="{alt}" width="180" height="180" loading="lazy" '
@@ -1703,7 +1707,7 @@ def sujet_page(lang, cid, items):
             lis += f'<li class="muted">{t["sujet_plus"].format(n=len(lot) - 30)}</li>'
         listes += f'<h3>{t["types"].get(f, f)} ({len(lot)})</h3><ul>{lis}</ul>'
     boutique = t["nav"][1][0]
-    cartes = "".join(carte_produit(lang, tous[k]) for k in s["debut"])
+    cartes = "".join(carte_produit(lang, tous[k]) for k in s["debut"] if k in tous)
     p = "".join(f"<p>{html.escape(x)}</p>" for x in s["p_fr" if fr else "p_en"])
     lire = ""
     if s["conseil"]:
@@ -1732,28 +1736,28 @@ CONTENT = {
 <img src="/img/melodie.jpg" alt="Mélodie Fréchette, fondatrice de Filodie" width="200" height="200" style="width:200px;height:200px;border-radius:50%;object-fit:cover;display:block;margin:0 0 20px">
 <p class="lead">Filodie, c’est l’idée qu’une bonne intervention tient à un fil : celui qui relie l’observation, la compréhension, le plan, le soutien et la communication.</p>
 <p>Je m’appelle Mélodie Fréchette. Je suis maman de quatre filles, et c’est d’abord à la maison que j’ai appris qu’un enfant avance mieux quand on lui montre le chemin, une étape à la fois.</p>
-<p>Je suis étudiante en Techniques d’éducation spécialisée, je détiens un certificat en travail social et je poursuis un baccalauréat multidisciplinaire, avec un certificat en psychologie du développement humain et un certificat en dépendances. Ce parcours me permet de regarder chaque situation sous plusieurs angles : le développement, la famille, le réseau et l’intervention au quotidien.</p>
-<p>J’ai créé Filodie pour offrir aux intervenantes et intervenants, au personnel enseignant et aux parents les outils que j’aurais voulu avoir sous la main : clairs, beaux, rigoureux et vraiment utilisables avec les personnes que l’on accompagne.</p>
+<p>Je travaille comme technicienne en éducation spécialisée en milieu scolaire et je termine ma formation en éducation spécialisée. Je détiens aussi un certificat en travail social et je poursuis des études universitaires.</p>
+<p>J’ai créé Filodie pour offrir aux T.E.S. et aux familles accompagnées des outils simples et concrets pour le quotidien : observer, planifier, soutenir et communiquer. Filodie s’en tient au rôle de la T.E.S. Les outils ne remplacent pas le travail des autres professionnelles et professionnels (orthopédagogie, orthophonie, psychoéducation, psychologie, travail social, ergothérapie), avec qui la T.E.S. collabore.</p>
 <h2>Mon parcours</h2>
-<ul><li>Maman de quatre filles</li><li>Étudiante en Techniques d’éducation spécialisée</li><li>Certificat en travail social</li>
-<li>Baccalauréat multidisciplinaire en cours : certificat en psychologie du développement humain et certificat en dépendances</li></ul>
-<p>Chaque outil est conçu au Québec, avec le vocabulaire du réseau et des ressources vérifiées dans les 17 régions. Les versions anglaises s’adressent aux milieux anglophones et bilingues.</p>
+<ul><li>Maman de quatre filles</li><li>Technicienne en éducation spécialisée en milieu scolaire</li><li>Formation en éducation spécialisée en cours</li><li>Certificat en travail social</li></ul>
+<p>Chaque outil est conçu au Québec, avec le vocabulaire du réseau et des ressources dans les 17 régions. Les versions anglaises s’adressent aux milieux anglophones et bilingues.</p>
 <h2>Mes engagements</h2>
-<ul><li>Des contenus originaux, révisés et datés.</li><li>Des ressources vérifiées à la source et mises à jour chaque année.</li>
-<li>Des outils respectueux de la dignité et de l’autodétermination des personnes.</li></ul>"""),
+<ul><li>Des outils qui respectent le rôle de la T.E.S. et le travail des autres professions.</li><li>Des contenus originaux, révisés et datés.</li>
+<li>Des outils respectueux de la dignité et de l’autodétermination des personnes.</li>
+<li>Une erreur ou une information à mettre à jour ? <a href="contact.html">Écrivez-moi</a> : je corrige rapidement.</li></ul>"""),
     ("en", "about.html"): ("About", """
 <img src="/img/melodie.jpg" alt="Mélodie Fréchette, founder of Filodie" width="200" height="200" style="width:200px;height:200px;border-radius:50%;object-fit:cover;display:block;margin:0 0 20px">
 <p class="lead">Filodie is built on one idea: good intervention holds together like a thread, linking observation, understanding, planning, support and communication.</p>
 <p>My name is Mélodie Fréchette. I am the mother of four daughters, and it was at home that I first learned that children move forward best when you show them the way, one step at a time.</p>
-<p>I am a special care counselling student, I hold a certificate in social work, and I am completing a multidisciplinary bachelor’s degree with a certificate in human developmental psychology and a certificate in addictions. This path lets me look at every situation from several angles: development, family, services and day-to-day intervention.</p>
-<p>I created Filodie to give counsellors, teachers and parents the tools I wished I had on hand: clear, attractive, rigorous and truly usable with the people we support.</p>
+<p>I work as a special care counsellor in a school setting and I am completing my training in special care counselling. I also hold a certificate in social work and I am pursuing university studies.</p>
+<p>I created Filodie to give special care counsellors, and the families they support, simple and practical tools for everyday work: observing, planning, supporting and communicating. Filodie stays within the special care counsellor’s role. These tools do not replace the work of other professionals (remedial education, speech-language pathology, psychoeducation, psychology, social work, occupational therapy), with whom special care counsellors collaborate.</p>
 <h2>My background</h2>
-<ul><li>Mother of four daughters</li><li>Special care counselling student</li><li>Certificate in social work</li>
-<li>Multidisciplinary bachelor’s degree in progress: certificates in human developmental psychology and in addictions</li></ul>
-<p>Every tool is designed in Québec, with the vocabulary of the health and education networks and resources verified in all 17 regions. French versions of every tool are also available.</p>
+<ul><li>Mother of four daughters</li><li>Special care counsellor in a school setting</li><li>Special care counselling training in progress</li><li>Certificate in social work</li></ul>
+<p>Every tool is designed in Québec, with the vocabulary of the health and education networks and resources in all 17 regions. French versions of every tool are also available.</p>
 <h2>My commitments</h2>
-<ul><li>Original, reviewed and dated content.</li><li>Resources verified at the source and updated every year.</li>
-<li>Tools that respect the dignity and self-determination of every person.</li></ul>"""),
+<ul><li>Tools that respect the special care counsellor’s role and the work of other professions.</li><li>Original, reviewed and dated content.</li>
+<li>Tools that respect the dignity and self-determination of every person.</li>
+<li>Spotted an error or something out of date? <a href="contact.html">Write to me</a>: I correct it quickly.</li></ul>"""),
     ("fr", "services.html"): ("Services", """
 <p class="lead">Au-delà de la boutique, Filodie crée des outils conçus pour votre équipe ou votre famille, entièrement par courriel.</p>
 <h2>Outils sur mesure</h2>

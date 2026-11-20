@@ -182,20 +182,6 @@
   "payhip_en": "U9rBQ"
  },
  {
-  "id": "trousse-prevention_du_suicide",
-  "type": "trousse",
-  "groupe": "Trousses spécialisées",
-  "titre": "Prévention du suicide",
-  "sous": "10 outils",
-  "desc": "Dix outils pour repérer, demander, protéger et accompagner, y compris auprès des personnes ayant une DI ou un TSA. À utiliser selon votre formation et le protocole de votre milieu.",
-  "fichiers": [
-   "Trousses spécialisées/Trousse_Filodie_Prevention_du_suicide_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "qM4sX",
-  "payhip_en": "qM4sX"
- },
- {
   "id": "trousse-dependances",
   "type": "trousse",
   "groupe": "Trousses spécialisées",
@@ -376,20 +362,6 @@
   "prix": 7.0,
   "payhip": "lVdW7",
   "payhip_en": "lVdW7"
- },
- {
-  "id": "trousse-tcc_quotidien",
-  "type": "trousse",
-  "groupe": "Trousses spécialisées",
-  "titre": "La TCC au quotidien",
-  "sous": "10 outils",
-  "desc": "Dix outils inspirés de la thérapie cognitive et comportementale : relier pensées, émotions et comportements, repérer les pièges de la pensée, tenir un journal de pensées, reprendre des activités, affronter ses peurs par étapes, résoudre un problème, s’apaiser et prévenir la rechute, avec une version simple pour les enfants et la DI.",
-  "fichiers": [
-   "Trousses spécialisées/Trousse_Filodie_TCC_quotidien_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "Z0SeT",
-  "payhip_en": "Z0SeT"
  },
  {
   "id": "trousse-pouvoir_agir",
@@ -1309,90 +1281,6 @@
   "payhip_en": "Tc6yE"
  },
  {
-  "id": "trousse-psychoeducation_evaluation",
-  "type": "trousse",
-  "groupe": "Boîte à outils en psychoéducation",
-  "titre": "Psychoéducation : évaluation approfondie",
-  "sous": "10 outils",
-  "desc": "Dix outils pour conduire une évaluation psychoéducative rigoureuse : entrevue initiale, histoire développementale, observation par intervalles, analyse fonctionnelle, écosystème, facteurs de risque et de protection, triangulation des sources et conclusion professionnelle.",
-  "fichiers": [
-   "Collection Filodie/10 – Boîte à outils en psychoéducation/Trousse_Filodie_Psychoeducation_evaluation_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "DrSmX",
-  "payhip_en": "DrSmX"
- },
- {
-  "id": "trousse-psychoeducation_planification",
-  "type": "trousse",
-  "groupe": "Boîte à outils en psychoéducation",
-  "titre": "Psychoéducation : planification",
-  "sous": "10 outils",
-  "desc": "Dix outils pour passer de l’évaluation au plan : du besoin à l’objectif, vérification SMART, choix des moyens, plan de soutien au comportement, plan de sécurité, ligne de base, généralisation, entente avec la famille, transition et révision du plan.",
-  "fichiers": [
-   "Collection Filodie/10 – Boîte à outils en psychoéducation/Trousse_Filodie_Psychoeducation_planification_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "3UCy9",
-  "payhip_en": "3UCy9"
- },
- {
-  "id": "trousse-psychoeducation_accompagnement",
-  "type": "trousse",
-  "groupe": "Boîte à outils en psychoéducation",
-  "titre": "Psychoéducation : accompagnement",
-  "sous": "10 outils",
-  "desc": "Dix outils pour intervenir au quotidien : balance décisionnelle, importance et confiance, résolution de problèmes en collaboration, séance d’habiletés, système de renforcement, réparation après une crise, pratique parentale, dynamique de groupe, validation des émotions et journal de bord.",
-  "fichiers": [
-   "Collection Filodie/10 – Boîte à outils en psychoéducation/Trousse_Filodie_Psychoeducation_accompagnement_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "DYxlh",
-  "payhip_en": "DYxlh"
- },
- {
-  "id": "trousse-psychoeducation_pratique",
-  "type": "trousse",
-  "groupe": "Boîte à outils en psychoéducation",
-  "titre": "Psychoéducation : mesure et pratique",
-  "sous": "10 outils",
-  "desc": "Dix outils pour la rigueur professionnelle : analyse visuelle des données, alliance de travail, gabarits de rapport d’évaluation et de fin de suivi, consentement et confidentialité, présentation de cas, délibération éthique, supervision, charge de cas et plan de développement professionnel.",
-  "fichiers": [
-   "Collection Filodie/10 – Boîte à outils en psychoéducation/Trousse_Filodie_Psychoeducation_pratique_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "5uxFK",
-  "payhip_en": "5uxFK"
- },
- {
-  "id": "trousse-enseigner_aux_adultes",
-  "type": "trousse",
-  "groupe": "Enseignement aux adultes",
-  "titre": "Enseigner aux adultes",
-  "sous": "10 outils",
-  "desc": "Dix outils pour enseigner ou former des adultes : portrait du groupe, contrat d’apprentissage, planification d’une séance selon le cycle expérientiel, activation des acquis, enseignement explicite, différenciation, rétroaction, évaluation formative, motivation et pratique réflexive.",
-  "fichiers": [
-   "Collection Filodie/11 – Enseignement aux adultes/Trousse_Filodie_Enseigner_aux_adultes_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "sJhHP",
-  "payhip_en": "sJhHP"
- },
- {
-  "id": "trousse-fga_fp_reussite",
-  "type": "trousse",
-  "groupe": "Enseignement aux adultes",
-  "titre": "FGA et FP : accompagner la réussite",
-  "sous": "10 outils",
-  "desc": "Dix outils pour accompagner les adultes en formation générale et professionnelle : accueil et bilan de retour aux études, plan de formation, conciliation études-travail-famille, stratégies d’étude, anxiété d’examen, persévérance, soutien aux difficultés, stages et transition vers l’emploi.",
-  "fichiers": [
-   "Collection Filodie/11 – Enseignement aux adultes/Trousse_Filodie_FGA_FP_reussite_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "Dr7ao",
-  "payhip_en": "Dr7ao"
- },
- {
   "id": "trousse-violence_conjugale_victimes",
   "type": "trousse",
   "groupe": "Traverser l’épreuve",
@@ -1855,20 +1743,6 @@
   "payhip_en": "RYNK9"
  },
  {
-  "id": "trousse-evaluation_globale_du_jeune",
-  "type": "trousse",
-  "groupe": "Clientèles et interventions",
-  "titre": "Évaluation globale des jeunes",
-  "sous": "10 outils",
-  "desc": "Dix outils pour dresser un portrait complet : santé, famille, école, relations, émotions, comportements, consommation, forces, risques et priorités.",
-  "fichiers": [
-   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Evaluation_globale_du_jeune_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "YMQr7",
-  "payhip_en": "YMQr7"
- },
- {
   "id": "trousse-observation_des_comportements",
   "type": "trousse",
   "groupe": "Clientèles et interventions",
@@ -1881,20 +1755,6 @@
   "prix": 7.0,
   "payhip": "fCGJ9",
   "payhip_en": "fCGJ9"
- },
- {
-  "id": "trousse-gestion_de_classe",
-  "type": "trousse",
-  "groupe": "Clientèles et interventions",
-  "titre": "Gestion de classe",
-  "sous": "10 outils",
-  "desc": "Dix outils pour aménager la classe, enseigner les règles et les routines, renforcer collectivement et répondre de façon graduée aux comportements.",
-  "fichiers": [
-   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Gestion_de_classe_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "rhgND",
-  "payhip_en": "rhgND"
  },
  {
   "id": "trousse-renforcement_r05",
@@ -1953,90 +1813,6 @@
   "payhip_en": "mVYbd"
  },
  {
-  "id": "trousse-tts",
-  "type": "trousse",
-  "groupe": "Professions",
-  "titre": "Techniques de travail social (T.T.S.)",
-  "sous": "10 outils",
-  "desc": "Dix outils pour l’accueil psychosocial, l’évaluation des besoins, le réseau de soutien, les démarches, la référence et le suivi.",
-  "fichiers": [
-   "Collection Filodie/3 – Professions/Trousse_Filodie_TTS_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "QZoFa",
-  "payhip_en": "QZoFa"
- },
- {
-  "id": "trousse-service_de_garde_scolaire",
-  "type": "trousse",
-  "groupe": "Professions",
-  "titre": "Personnel éducateur en service de garde scolaire",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les éducatrices et éducateurs en service de garde : accueil, jeux, conflits, transitions, observation et communication avec l’école et les familles.",
-  "fichiers": [
-   "Collection Filodie/3 – Professions/Trousse_Filodie_Service_de_garde_scolaire_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "3XYJ0",
-  "payhip_en": "3XYJ0"
- },
- {
-  "id": "trousse-educatrices_cpe",
-  "type": "trousse",
-  "groupe": "Professions",
-  "titre": "Personnel éducateur en CPE",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les éducatrices et éducateurs en CPE : observation, programme éducatif, jeu, routines, intervention démocratique, dossier éducatif et collaboration avec les familles.",
-  "fichiers": [
-   "Collection Filodie/3 – Professions/Trousse_Filodie_Educatrices_CPE_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "sIY1U",
-  "payhip_en": "sIY1U"
- },
- {
-  "id": "trousse-direction_garderie",
-  "type": "trousse",
-  "groupe": "Professions",
-  "titre": "Direction de garderie et de CPE",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les directions : accueil du personnel, supervision, rencontres d’équipe, gestion des situations difficiles, communication aux familles et qualité éducative.",
-  "fichiers": [
-   "Collection Filodie/3 – Professions/Trousse_Filodie_Direction_garderie_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "wiqDP",
-  "payhip_en": "wiqDP"
- },
- {
-  "id": "trousse-chsld_tes_pab",
-  "type": "trousse",
-  "groupe": "Professions",
-  "titre": "T.E.S. et PAB en CHSLD",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les T.E.S. et les préposées et préposés aux bénéficiaires en CHSLD : histoire de vie, SCPD, soins apaisants, activités, communication et transmission.",
-  "fichiers": [
-   "Collection Filodie/3 – Professions/Trousse_Filodie_CHSLD_TES_PAB_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "0YBuw",
-  "payhip_en": "0YBuw"
- },
- {
-  "id": "trousse-travail_de_rue",
-  "type": "trousse",
-  "groupe": "Professions",
-  "titre": "Travail de rue",
-  "sous": "10 outils",
-  "desc": "Dix outils pour le travail de rue et de milieu : présence, création du lien, réduction des méfaits, crise, référence et journal de terrain.",
-  "fichiers": [
-   "Collection Filodie/3 – Professions/Trousse_Filodie_Travail_de_rue_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "K4M9f",
-  "payhip_en": "K4M9f"
- },
- {
   "id": "trousse-tes_communautaire",
   "type": "trousse",
   "groupe": "Professions",
@@ -2051,104 +1827,6 @@
   "payhip_en": "1AT0q"
  },
  {
-  "id": "trousse-orthopedagogie",
-  "type": "trousse",
-  "groupe": "Professions",
-  "titre": "Outils pour l’orthopédagogie",
-  "sous": "10 outils",
-  "desc": "Dix outils pour soutenir l’intervention orthopédagogique : observation, analyse d’erreurs, stratégies, enseignement explicite, suivi et collaboration.",
-  "fichiers": [
-   "Collection Filodie/3 – Professions/Trousse_Filodie_Orthopedagogie_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "MO4YZ",
-  "payhip_en": "MO4YZ"
- },
- {
-  "id": "trousse-orthophonie",
-  "type": "trousse",
-  "groupe": "Professions",
-  "titre": "Outils pour l’orthophonie",
-  "sous": "10 outils",
-  "desc": "Dix outils pour soutenir le suivi en orthophonie : cahier de liaison, généralisation, jeux de langage, stimulation en milieu de vie et collaboration avec les familles.",
-  "fichiers": [
-   "Collection Filodie/3 – Professions/Trousse_Filodie_Orthophonie_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "E9Nkg",
-  "payhip_en": "E9Nkg"
- },
- {
-  "id": "trousse-travail_social",
-  "type": "trousse",
-  "groupe": "Professions",
-  "titre": "Outils pour le travail social",
-  "sous": "10 outils",
-  "desc": "Dix outils pour soutenir la pratique en travail social : génogramme, écocarte, évaluation du fonctionnement social, plan, médiation, référence et note.",
-  "fichiers": [
-   "Collection Filodie/3 – Professions/Trousse_Filodie_Travail_social_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "aeGqW",
-  "payhip_en": "aeGqW"
- },
- {
-  "id": "trousse-criminologie",
-  "type": "trousse",
-  "groupe": "Professions et pratique",
-  "titre": "Outils pour la criminologie",
-  "sous": "10 outils",
-  "desc": "Dix outils fondés sur le modèle risque-besoins-réceptivité : facteurs criminogènes, analyse du délit, motivation, conditions, plan de réinsertion et prévention de la récidive.",
-  "fichiers": [
-   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Criminologie_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "kM3Ub",
-  "payhip_en": "kM3Ub"
- },
- {
-  "id": "trousse-psychoeducation",
-  "type": "trousse",
-  "groupe": "Professions et pratique",
-  "titre": "Outils pour la psychoéducation",
-  "sous": "10 outils",
-  "desc": "Dix outils pour la pratique psychoéducative : observation participante, évaluation, utilisation du vécu partagé, structure d’ensemble et évaluation post-situationnelle.",
-  "fichiers": [
-   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Psychoeducation_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "sVbSp",
-  "payhip_en": "sVbSp"
- },
- {
-  "id": "trousse-soins_infirmiers",
-  "type": "trousse",
-  "groupe": "Professions et pratique",
-  "titre": "Outils pour les soins infirmiers",
-  "sous": "10 outils",
-  "desc": "Dix outils pour adapter les soins aux personnes ayant une DI, un TSA ou des difficultés de communication : préparation, douleur, consentement, sensorialité et enseignement.",
-  "fichiers": [
-   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Soins_infirmiers_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "9Obp2",
-  "payhip_en": "9Obp2"
- },
- {
-  "id": "trousse-zootherapie",
-  "type": "trousse",
-  "groupe": "Professions et pratique",
-  "titre": "Zoothérapie et intervention assistée par l’animal",
-  "sous": "10 outils",
-  "desc": "Dix outils pour planifier et encadrer une intervention assistée par l’animal : sécurité, consentement, bien-être de l’animal, objectifs, séances et observation.",
-  "fichiers": [
-   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Zootherapie_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "LXGJm",
-  "payhip_en": "LXGJm"
- },
- {
   "id": "trousse-parents",
   "type": "trousse",
   "groupe": "Professions et pratique",
@@ -2161,20 +1839,6 @@
   "prix": 7.0,
   "payhip": "ipaPM",
   "payhip_en": "ipaPM"
- },
- {
-  "id": "trousse-peh",
-  "type": "trousse",
-  "groupe": "Professions et pratique",
-  "titre": "Préposées et préposés aux élèves handicapés (PEH)",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les PEH et le personnel accompagnateur : routine de soins, alimentation, hygiène, déplacements, communication, journal de bord et collaboration avec l’équipe.",
-  "fichiers": [
-   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_PEH_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "f942G",
-  "payhip_en": "f942G"
  },
  {
   "id": "trousse-pratique_privee",
@@ -2513,118 +2177,6 @@
   "payhip_en": "Gqmxy"
  },
  {
-  "id": "trousse-francais_1re_annee",
-  "type": "trousse",
-  "groupe": "Scolaire",
-  "titre": "Français 1re année",
-  "sous": "10 outils",
-  "desc": "Dix fiches pour la 1re année : sons, syllabes, mots fréquents, lecture, phrase, écriture et dictée.",
-  "fichiers": [
-   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Francais_1re_annee_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "jEVA0",
-  "payhip_en": "jEVA0"
- },
- {
-  "id": "trousse-francais_2e_annee",
-  "type": "trousse",
-  "groupe": "Scolaire",
-  "titre": "Français 2e année",
-  "sous": "10 outils",
-  "desc": "Dix fiches pour la 2e année : sons complexes, genre et nombre, déterminants, phrase négative, ordre alphabétique, lecture, écriture et dictée.",
-  "fichiers": [
-   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Francais_2e_annee_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "qSBX1",
-  "payhip_en": "qSBX1"
- },
- {
-  "id": "trousse-francais_3e_annee",
-  "type": "trousse",
-  "groupe": "Scolaire",
-  "titre": "Français 3e année",
-  "sous": "10 outils",
-  "desc": "Dix fiches pour la 3e année : classes de mots, accords dans le groupe du nom, présent et futur, homophones, ponctuation, dictionnaire, lecture et écriture.",
-  "fichiers": [
-   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Francais_3e_annee_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "8K6hy",
-  "payhip_en": "8K6hy"
- },
- {
-  "id": "trousse-francais_4e_annee",
-  "type": "trousse",
-  "groupe": "Scolaire",
-  "titre": "Français 4e année",
-  "sous": "10 outils",
-  "desc": "Dix fiches pour la 4e année : imparfait, passé composé, homophones, groupes de la phrase, pronoms, famille de mots, lecture, écriture et dictée.",
-  "fichiers": [
-   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Francais_4e_annee_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "IQ0ye",
-  "payhip_en": "IQ0ye"
- },
- {
-  "id": "trousse-francais_5e_annee",
-  "type": "trousse",
-  "groupe": "Scolaire",
-  "titre": "Français 5e année",
-  "sous": "10 outils",
-  "desc": "Dix fiches pour la 5e année : accord sujet-verbe, participe passé avec être, conditionnel, types et formes de phrases, lecture, texte d’opinion et dictée.",
-  "fichiers": [
-   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Francais_5e_annee_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "ihCtE",
-  "payhip_en": "ihCtE"
- },
- {
-  "id": "trousse-francais_6e_annee",
-  "type": "trousse",
-  "groupe": "Scolaire",
-  "titre": "Français 6e année",
-  "sous": "10 outils",
-  "desc": "Dix fiches pour la 6e année : subjonctif, passé simple, subordonnée relative, discours rapporté, homophones, coordination, lecture inférentielle, texte d’opinion et dictée.",
-  "fichiers": [
-   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Francais_6e_annee_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "ZAPSK",
-  "payhip_en": "ZAPSK"
- },
- {
-  "id": "trousse-mathematiques_5e_annee",
-  "type": "trousse",
-  "groupe": "Scolaire",
-  "titre": "Mathématiques 5e année",
-  "sous": "10 outils",
-  "desc": "Dix fiches pour la 5e année : grands nombres, fractions, nombres décimaux, opérations, géométrie, mesure, statistique, probabilités et résolution de problèmes.",
-  "fichiers": [
-   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Mathematiques_5e_annee_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "gp8GV",
-  "payhip_en": "gp8GV"
- },
- {
-  "id": "trousse-enseignants_secondaire",
-  "type": "trousse",
-  "groupe": "Scolaire",
-  "titre": "Personnel enseignant du secondaire",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les enseignantes et enseignants du secondaire : planification, gestion de classe, différenciation, évaluation, rétroaction, élèves à besoins particuliers et communication avec les familles.",
-  "fichiers": [
-   "Collection Filodie/7 – Scolaire/Trousse_Filodie_Enseignants_secondaire_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "Nb3vP",
-  "payhip_en": "Nb3vP"
- },
- {
   "id": "trousse-deuil_et_separation",
   "type": "trousse",
   "groupe": "Thèmes complémentaires",
@@ -2749,160 +2301,6 @@
   "prix": 7.0,
   "payhip": "SBQiF",
   "payhip_en": "SBQiF"
- },
- {
-  "id": "trousse-supervision_stagiaires",
-  "type": "trousse",
-  "groupe": "Thèmes complémentaires",
-  "titre": "Supervision de stagiaires",
-  "sous": "10 outils",
-  "desc": "Dix outils pour accueillir et superviser une ou un stagiaire en éducation spécialisée : accueil, objectifs, observation, rétroaction, évaluation formative et bilan.",
-  "fichiers": [
-   "Collection Filodie/8 – Thèmes complémentaires/Trousse_Filodie_Supervision_stagiaires_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "5FVCZ",
-  "payhip_en": "5FVCZ"
- },
- {
-  "id": "trousse-enseignants_primaire",
-  "type": "trousse",
-  "groupe": "Équipe-école et réseau",
-  "titre": "Personnel enseignant du primaire",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les titulaires du primaire : portrait de classe, routines, différenciation, observation, plan d’intervention, communication avec les familles et collaboration avec la ou le T.E.S.",
-  "fichiers": [
-   "Collection Filodie/9 – Équipe-école et réseau/Trousse_Filodie_Enseignants_primaire_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "xtIFl",
-  "payhip_en": "xtIFl"
- },
- {
-  "id": "trousse-adaptation_scolaire",
-  "type": "trousse",
-  "groupe": "Équipe-école et réseau",
-  "titre": "Personnel enseignant en adaptation scolaire",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les classes spécialisées et le soutien en adaptation scolaire : profil de l’élève, objectifs individualisés, horaire, travail en îlots, suivi des comportements et collaboration avec l’équipe.",
-  "fichiers": [
-   "Collection Filodie/9 – Équipe-école et réseau/Trousse_Filodie_Adaptation_scolaire_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "Zvm4S",
-  "payhip_en": "Zvm4S"
- },
- {
-  "id": "trousse-suppleance",
-  "type": "trousse",
-  "groupe": "Équipe-école et réseau",
-  "titre": "Suppléance : la trousse de survie",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les suppléantes et suppléants et pour les titulaires qui préparent leur absence : dossier de suppléance, accueil, règles, activités de secours, élèves à besoins particuliers et rapport de journée.",
-  "fichiers": [
-   "Collection Filodie/9 – Équipe-école et réseau/Trousse_Filodie_Suppleance_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "XGHF7",
-  "payhip_en": "XGHF7"
- },
- {
-  "id": "trousse-psychologie_scolaire",
-  "type": "trousse",
-  "groupe": "Équipe-école et réseau",
-  "titre": "Outils pour la psychologie scolaire",
-  "sous": "10 outils",
-  "desc": "Dix outils de soutien à la pratique des psychologues en milieu scolaire : analyse de la demande, consentement, entrevues, restitution vulgarisée, recommandations, suivi et prévention. Ils ne remplacent aucun test standardisé.",
-  "fichiers": [
-   "Collection Filodie/9 – Équipe-école et réseau/Trousse_Filodie_Psychologie_scolaire_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "dmPV9",
-  "payhip_en": "dmPV9"
- },
- {
-  "id": "trousse-ergotherapie",
-  "type": "trousse",
-  "groupe": "Équipe-école et réseau",
-  "titre": "Outils pour l’ergothérapie",
-  "sous": "10 outils",
-  "desc": "Dix outils de soutien à l’ergothérapie : observation des occupations, profil sensoriel, écriture, poste de travail, autonomie, horaire sensoriel et suivi des recommandations par l’équipe et la famille.",
-  "fichiers": [
-   "Collection Filodie/9 – Équipe-école et réseau/Trousse_Filodie_Ergotherapie_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "nvNwd",
-  "payhip_en": "nvNwd"
- },
- {
-  "id": "trousse-psychoeducation_scolaire",
-  "type": "trousse",
-  "groupe": "Équipe-école et réseau",
-  "titre": "Psychoéducation en milieu scolaire",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les psychoéducatrices et psychoéducateurs à l’école : demande de service, évaluation du fonctionnement, observation dans le vécu partagé, plan, animation de groupe, soutien au personnel enseignant et suivi.",
-  "fichiers": [
-   "Collection Filodie/9 – Équipe-école et réseau/Trousse_Filodie_Psychoeducation_scolaire_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "dx14i",
-  "payhip_en": "dx14i"
- },
- {
-  "id": "trousse-travail_social_scolaire",
-  "type": "trousse",
-  "groupe": "Équipe-école et réseau",
-  "titre": "Travail social en milieu scolaire",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les travailleuses et travailleurs sociaux à l’école : besoins de base, absentéisme, rencontre familiale, signalement, ressources, transitions et concertation avec le réseau.",
-  "fichiers": [
-   "Collection Filodie/9 – Équipe-école et réseau/Trousse_Filodie_Travail_social_scolaire_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "LBjsK",
-  "payhip_en": "LBjsK"
- },
- {
-  "id": "trousse-equipe_ecole",
-  "type": "trousse",
-  "groupe": "Équipe-école et réseau",
-  "titre": "Direction d’école et équipe-école",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les directions et les équipes-écoles : comité d’intervention, analyse de situation, plan d’intervention, services aux élèves HDAA, climat scolaire, gestion de crise et bien-être du personnel.",
-  "fichiers": [
-   "Collection Filodie/9 – Équipe-école et réseau/Trousse_Filodie_Equipe_ecole_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "1ut7B",
-  "payhip_en": "1ut7B"
- },
- {
-  "id": "trousse-orientation",
-  "type": "trousse",
-  "groupe": "Équipe-école et réseau",
-  "titre": "Orientation et choix de carrière",
-  "sous": "10 outils",
-  "desc": "Dix outils pour accompagner les jeunes dans leur choix de parcours : intérêts, forces, valeurs, exploration des métiers, parcours scolaires, stage d’un jour et plan d’action. Pour les conseillères et conseillers d’orientation et toutes les personnes intervenantes.",
-  "fichiers": [
-   "Collection Filodie/9 – Équipe-école et réseau/Trousse_Filodie_Orientation_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "snXN7",
-  "payhip_en": "snXN7"
- },
- {
-  "id": "trousse-education_physique_inclusive",
-  "type": "trousse",
-  "groupe": "Équipe-école et réseau",
-  "titre": "Éducation physique inclusive",
-  "sous": "10 outils",
-  "desc": "Dix outils pour le personnel enseignant en éducation physique et les intervenantes et intervenants en loisir : profil moteur, adaptations, consignes visuelles, gestion du gymnase, esprit sportif et participation de chaque élève.",
-  "fichiers": [
-   "Collection Filodie/9 – Équipe-école et réseau/Trousse_Filodie_Education_physique_inclusive_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "XOMB9",
-  "payhip_en": "XOMB9"
  },
  {
   "id": "trousse-readaptation_foyer",
@@ -5723,22 +5121,6 @@
   "payhip_en": "WyaxI"
  },
  {
-  "id": "cahier-vcomp-33",
-  "type": "cahier",
-  "groupe": "Cahiers Comportement",
-  "titre": "Quand j’ai envie de me faire mal",
-  "sous": "12-17 ans",
-  "desc": "Comprendre et trouver d’autres façons de soulager ma douleur.",
-  "code": "VCOMP-33",
-  "fichiers": [
-   "Cahiers visuels Filodie/5 – Comportement/Couleur/Filodie_VCOMP-33_Quand_j_ai_envie_de_me_faire_mal.pdf",
-   "Cahiers visuels Filodie/5 – Comportement/À colorier (noir et blanc)/Filodie_VCOMP-33_Quand_j_ai_envie_de_me_faire_mal_NB.pdf"
-  ],
-  "prix": 3.0,
-  "payhip": "Odsmo",
-  "payhip_en": "Odsmo"
- },
- {
   "id": "cahier-vcomp-34",
   "type": "cahier",
   "groupe": "Cahiers Comportement",
@@ -6964,8 +6346,8 @@
   "type": "lot_cahiers",
   "groupe": "Lots",
   "titre": "Série complète : cahiers Comportement",
-  "sous": "41 cahiers visuels",
-  "desc": "Les 41 cahiers visuels de la série Comportement, en couleur et à colorier.",
+  "sous": "40 cahiers visuels",
+  "desc": "Les 40 cahiers visuels de la série Comportement, en couleur et à colorier.",
   "fichiers": [],
   "contient": [
    "cahier-vcomp-01",
@@ -7000,7 +6382,6 @@
    "cahier-vcomp-30",
    "cahier-vcomp-31",
    "cahier-vcomp-32",
-   "cahier-vcomp-33",
    "cahier-vcomp-34",
    "cahier-vcomp-35",
    "cahier-vcomp-36",
@@ -7013,7 +6394,7 @@
   "prix": 25.0,
   "payhip": "aQ76T",
   "payhip_en": "aQ76T",
-  "valeur": 123.0
+  "valeur": 120.0
  },
  {
   "id": "lot-1-habiletés-et-comportement",
@@ -7042,48 +6423,6 @@
   "payhip": "Bl7Rk",
   "payhip_en": "Bl7Rk",
   "valeur": 70.0
- },
- {
-  "id": "lot-10-boîte-à-outils-du-psychoéducateur",
-  "type": "lot_collection",
-  "groupe": "Lots",
-  "titre": "Collection Filodie : Boîte à outils en psychoéducation",
-  "sous": "4 trousses",
-  "desc": "Toutes les trousses du volet « Boîte à outils en psychoéducation ».",
-  "fichiers": [],
-  "contient": [
-   "trousse-psychoeducation_evaluation",
-   "trousse-psychoeducation_planification",
-   "trousse-psychoeducation_accompagnement",
-   "trousse-psychoeducation_pratique"
-  ],
-  "titre_en": "Filodie Collection: Psychoeducation Toolbox",
-  "sous_en": "4 toolkits",
-  "desc_en": "All the toolkits in the “Psychoeducation Toolbox” section.",
-  "prix": 20.0,
-  "payhip": "lKEFV",
-  "payhip_en": "lKEFV",
-  "valeur": 28.0
- },
- {
-  "id": "lot-11-enseignement-aux-adultes",
-  "type": "lot_collection",
-  "groupe": "Lots",
-  "titre": "Collection Filodie : Enseignement aux adultes",
-  "sous": "2 trousses",
-  "desc": "Toutes les trousses du volet « Enseignement aux adultes ».",
-  "fichiers": [],
-  "contient": [
-   "trousse-enseigner_aux_adultes",
-   "trousse-fga_fp_reussite"
-  ],
-  "titre_en": "Filodie Collection: Teaching Adults",
-  "sous_en": "2 toolkits",
-  "desc_en": "All the toolkits in the “Teaching Adults” section.",
-  "prix": 10.0,
-  "payhip": "IgZ7K",
-  "payhip_en": "IgZ7K",
-  "valeur": 14.0
  },
  {
   "id": "lot-12-traverser-l-épreuve",
@@ -7210,84 +6549,49 @@
   "type": "lot_collection",
   "groupe": "Lots",
   "titre": "Collection Filodie : Clientèles et interventions",
-  "sous": "10 trousses",
+  "sous": "8 trousses",
   "desc": "Toutes les trousses du volet « Clientèles et interventions ».",
   "fichiers": [],
   "contient": [
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
    "trousse-auteurs_de_violence",
-   "trousse-evaluation_globale_du_jeune",
    "trousse-observation_des_comportements",
-   "trousse-gestion_de_classe",
    "trousse-renforcement_r05",
    "trousse-renforcement_r610",
    "trousse-renforcement_r1115",
    "trousse-adultes_autistes"
   ],
   "titre_en": "Filodie Collection: Client groups and interventions",
-  "sous_en": "10 toolkits",
+  "sous_en": "8 toolkits",
   "desc_en": "All the toolkits in the “Client groups and interventions” section.",
   "prix": 25.0,
   "payhip": "uKpav",
   "payhip_en": "uKpav",
-  "valeur": 70.0
- },
- {
-  "id": "lot-3-professions",
-  "type": "lot_collection",
-  "groupe": "Lots",
-  "titre": "Collection Filodie : Professions",
-  "sous": "10 trousses",
-  "desc": "Toutes les trousses du volet « Professions ».",
-  "fichiers": [],
-  "contient": [
-   "trousse-tts",
-   "trousse-service_de_garde_scolaire",
-   "trousse-educatrices_cpe",
-   "trousse-direction_garderie",
-   "trousse-chsld_tes_pab",
-   "trousse-travail_de_rue",
-   "trousse-tes_communautaire",
-   "trousse-orthopedagogie",
-   "trousse-orthophonie",
-   "trousse-travail_social"
-  ],
-  "titre_en": "Filodie Collection: Professions",
-  "sous_en": "10 toolkits",
-  "desc_en": "All the toolkits in the “Professions” section.",
-  "prix": 25.0,
-  "payhip": "arPAt",
-  "payhip_en": "arPAt",
-  "valeur": 70.0
+  "valeur": 56.0
  },
  {
   "id": "lot-4-professions-et-pratique",
   "type": "lot_collection",
   "groupe": "Lots",
   "titre": "Collection Filodie : Professions et pratique",
-  "sous": "10 trousses",
+  "sous": "5 trousses",
   "desc": "Toutes les trousses du volet « Professions et pratique ».",
   "fichiers": [],
   "contient": [
-   "trousse-criminologie",
-   "trousse-psychoeducation",
-   "trousse-soins_infirmiers",
-   "trousse-zootherapie",
    "trousse-parents",
-   "trousse-peh",
    "trousse-pratique_privee",
    "trousse-formation_tsa",
    "trousse-formation_comportements_defis",
    "trousse-pack_rentree_tes_primaire"
   ],
   "titre_en": "Filodie Collection: Professions and practice",
-  "sous_en": "10 toolkits",
+  "sous_en": "5 toolkits",
   "desc_en": "All the toolkits in the “Professions and practice” section.",
   "prix": 25.0,
   "payhip": "XWajd",
   "payhip_en": "XWajd",
-  "valeur": 70.0
+  "valeur": 35.0
  },
  {
   "id": "lot-5-jeux-et-activités",
@@ -7346,37 +6650,11 @@
   "valeur": 70.0
  },
  {
-  "id": "lot-7-scolaire",
-  "type": "lot_collection",
-  "groupe": "Lots",
-  "titre": "Collection Filodie : Scolaire",
-  "sous": "8 trousses",
-  "desc": "Toutes les trousses du volet « Scolaire ».",
-  "fichiers": [],
-  "contient": [
-   "trousse-francais_1re_annee",
-   "trousse-francais_2e_annee",
-   "trousse-francais_3e_annee",
-   "trousse-francais_4e_annee",
-   "trousse-francais_5e_annee",
-   "trousse-francais_6e_annee",
-   "trousse-mathematiques_5e_annee",
-   "trousse-enseignants_secondaire"
-  ],
-  "titre_en": "Filodie Collection: School",
-  "sous_en": "8 toolkits",
-  "desc_en": "All the toolkits in the “School” section.",
-  "prix": 25.0,
-  "payhip": "9jKtm",
-  "payhip_en": "9jKtm",
-  "valeur": 56.0
- },
- {
   "id": "lot-8-thèmes-complémentaires",
   "type": "lot_collection",
   "groupe": "Lots",
   "titre": "Collection Filodie : Thèmes complémentaires",
-  "sous": "10 trousses",
+  "sous": "9 trousses",
   "desc": "Toutes les trousses du volet « Thèmes complémentaires ».",
   "fichiers": [],
   "contient": [
@@ -7388,46 +6666,15 @@
    "trousse-sommeil",
    "trousse-troubles_alimentaires",
    "trousse-nouveaux_arrivants",
-   "trousse-autosoins_intervenants",
-   "trousse-supervision_stagiaires"
+   "trousse-autosoins_intervenants"
   ],
   "titre_en": "Filodie Collection: Complementary themes",
-  "sous_en": "10 toolkits",
+  "sous_en": "9 toolkits",
   "desc_en": "All the toolkits in the “Complementary themes” section.",
   "prix": 25.0,
   "payhip": "gvUnA",
   "payhip_en": "gvUnA",
-  "valeur": 70.0
- },
- {
-  "id": "lot-9-équipe-école-et-réseau",
-  "type": "lot_collection",
-  "groupe": "Lots",
-  "titre": "Collection Filodie : Équipe-école et réseau",
-  "sous": "12 trousses",
-  "desc": "Toutes les trousses du volet « Équipe-école et réseau ».",
-  "fichiers": [],
-  "contient": [
-   "trousse-enseignants_primaire",
-   "trousse-adaptation_scolaire",
-   "trousse-suppleance",
-   "trousse-psychologie_scolaire",
-   "trousse-ergotherapie",
-   "trousse-psychoeducation_scolaire",
-   "trousse-travail_social_scolaire",
-   "trousse-equipe_ecole",
-   "trousse-orientation",
-   "trousse-education_physique_inclusive",
-   "trousse-readaptation_foyer",
-   "trousse-integration_socioprofessionnelle"
-  ],
-  "titre_en": "Filodie Collection: School Team and Network",
-  "sous_en": "12 toolkits",
-  "desc_en": "All the toolkits in the “School Team and Network” section.",
-  "prix": 30.0,
-  "payhip": "xFczv",
-  "payhip_en": "xFczv",
-  "valeur": 84.0
+  "valeur": 63.0
  },
  {
   "id": "lot-sante-mentale-dependances",
@@ -7638,9 +6885,10 @@
   "id": "lot-specialisees",
   "type": "lot_specialisees",
   "groupe": "Lots",
-  "titre": "Les 16 trousses spécialisées",
+  "titre": "Les 15 trousses spécialisées",
+  "titre_en": "The 15 specialized toolkits",
   "sous": "Âges et troubles",
-  "desc": "Petite enfance, secondaire, adultes, aînés, TSA, TDAH, DI, langage, comportement, crise, suicide, dépendances et plus.",
+  "desc": "Petite enfance, secondaire, adultes, aînés, TSA, TDAH, DI, langage, comportement, crise, dépendances et plus.",
   "fichiers": [],
   "contient": [
    "trousse-petite_enfance_0-5_ans",
@@ -7655,7 +6903,6 @@
    "trousse-dyspraxie_tdc",
    "trousse-deficience_intellectuelle",
    "trousse-gestion_de_crise",
-   "trousse-prevention_du_suicide",
    "trousse-dependances",
    "trousse-violence_sexuelle",
    "trousse-fondements_theoriques"
@@ -7663,7 +6910,7 @@
   "prix": 39.0,
   "payhip": "6aPmo",
   "payhip_en": "6aPmo",
-  "valeur": 112.0
+  "valeur": 105.0
  },
  {
   "id": "lot-etudes-tes",
@@ -7705,9 +6952,9 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Tous les cahiers visuels",
-  "sous": "179 cahiers · 5 séries",
+  "sous": "178 cahiers · 5 séries",
   "prix": 75.0,
-  "sous_en": "179 workbooks · 5 series",
+  "sous_en": "178 workbooks · 5 series",
   "desc": "Les cahiers TSA, TDAH, habiletés sociales, DI et comportement, en couleur et à colorier.",
   "fichiers": [],
   "contient": [
@@ -7881,7 +7128,6 @@
    "cahier-vcomp-30",
    "cahier-vcomp-31",
    "cahier-vcomp-32",
-   "cahier-vcomp-33",
    "cahier-vcomp-34",
    "cahier-vcomp-35",
    "cahier-vcomp-36",
@@ -7893,18 +7139,18 @@
   ],
   "payhip": "AaRpZ",
   "payhip_en": "AaRpZ",
-  "valeur": 537.0
+  "valeur": 534.0
  },
  {
   "id": "lot-toutes-les-trousses",
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses : édition novembre 2026",
-  "sous": "Édition novembre 2026 · 202 trousses et 5 éditions",
+  "sous": "Édition novembre 2026 · 157 trousses et 5 éditions",
   "prix": 75.0,
-  "sous_en": "November 2026 edition · 202 toolkits and 5 editions",
-  "desc": "La trousse principale, les 35 trousses spécialisées, les 126 trousses de la Collection, les 38 outils d’intervention, d’études et de stage, et les 5 éditions, ainsi que la trousse pour enseignantes et enseignants et la trousse Apprentissage et langage. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
-  "desc_en": "The main toolkit, the 35 specialized toolkits, the 126 Collection toolkits, the 38 intervention, study and internship tools, and the 5 editions, plus the Toolkit for SCC Teachers and the Learning and Language Toolkit. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
+  "sous_en": "November 2026 edition · 157 toolkits and 5 editions",
+  "desc": "La trousse principale, les 34 trousses spécialisées, les 85 trousses de la Collection, les 37 outils d’intervention, d’études et de stage, et les 5 éditions. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
+  "desc_en": "The main toolkit, the 34 specialized toolkits, the 85 Collection toolkits, the 37 intervention, study and internship tools, and the 5 editions. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7920,7 +7166,6 @@
    "trousse-dyspraxie_tdc",
    "trousse-deficience_intellectuelle",
    "trousse-gestion_de_crise",
-   "trousse-prevention_du_suicide",
    "trousse-dependances",
    "trousse-violence_sexuelle",
    "trousse-fondements_theoriques",
@@ -7934,7 +7179,6 @@
    "trousse-securite_travail",
    "trousse-systemique_famille",
    "trousse-animer_groupe",
-   "trousse-tcc_quotidien",
    "trousse-pouvoir_agir",
    "trousse-auteurs_infractions_sexuelles",
    "trousse-soutenir_deuil",
@@ -7991,12 +7235,6 @@
    "trousse-dims",
    "trousse-hpi",
    "trousse-syndrome_gilles_de_la_tourette",
-   "trousse-psychoeducation_evaluation",
-   "trousse-psychoeducation_planification",
-   "trousse-psychoeducation_accompagnement",
-   "trousse-psychoeducation_pratique",
-   "trousse-enseigner_aux_adultes",
-   "trousse-fga_fp_reussite",
    "trousse-violence_conjugale_victimes",
    "trousse-agression_sexuelle_victimes",
    "trousse-grossesse_adolescence",
@@ -8030,29 +7268,13 @@
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
    "trousse-auteurs_de_violence",
-   "trousse-evaluation_globale_du_jeune",
    "trousse-observation_des_comportements",
-   "trousse-gestion_de_classe",
    "trousse-renforcement_r05",
    "trousse-renforcement_r610",
    "trousse-renforcement_r1115",
    "trousse-adultes_autistes",
-   "trousse-tts",
-   "trousse-service_de_garde_scolaire",
-   "trousse-educatrices_cpe",
-   "trousse-direction_garderie",
-   "trousse-chsld_tes_pab",
-   "trousse-travail_de_rue",
    "trousse-tes_communautaire",
-   "trousse-orthopedagogie",
-   "trousse-orthophonie",
-   "trousse-travail_social",
-   "trousse-criminologie",
-   "trousse-psychoeducation",
-   "trousse-soins_infirmiers",
-   "trousse-zootherapie",
    "trousse-parents",
-   "trousse-peh",
    "trousse-pratique_privee",
    "trousse-formation_tsa",
    "trousse-formation_comportements_defis",
@@ -8077,14 +7299,6 @@
    "trousse-theme_pommes",
    "trousse-theme_halloween",
    "trousse-theme_hiver",
-   "trousse-francais_1re_annee",
-   "trousse-francais_2e_annee",
-   "trousse-francais_3e_annee",
-   "trousse-francais_4e_annee",
-   "trousse-francais_5e_annee",
-   "trousse-francais_6e_annee",
-   "trousse-mathematiques_5e_annee",
-   "trousse-enseignants_secondaire",
    "trousse-deuil_et_separation",
    "trousse-estime_de_soi",
    "trousse-approche_sensible_au_trauma",
@@ -8094,31 +7308,18 @@
    "trousse-troubles_alimentaires",
    "trousse-nouveaux_arrivants",
    "trousse-autosoins_intervenants",
-   "trousse-supervision_stagiaires",
-   "trousse-enseignants_primaire",
-   "trousse-adaptation_scolaire",
-   "trousse-suppleance",
-   "trousse-psychologie_scolaire",
-   "trousse-ergotherapie",
-   "trousse-psychoeducation_scolaire",
-   "trousse-travail_social_scolaire",
-   "trousse-equipe_ecole",
-   "trousse-orientation",
-   "trousse-education_physique_inclusive",
    "trousse-readaptation_foyer",
    "trousse-integration_socioprofessionnelle",
    "edition-edition_ados",
    "edition-edition_famille",
    "edition-edition_transitions",
    "edition-edition_intimidation",
-   "edition-edition_anxiete",
-   "trousse-enseignants-tes",
-   "trousse-apprentissage-langage"
+   "edition-edition_anxiete"
   ],
   "payhip": "cywQA",
   "payhip_en": "cywQA",
   "titre_en": "All the toolkits: November 2026 edition",
-  "valeur": 1450.0
+  "valeur": 1011.0
  },
  {
   "id": "lot-mega",
@@ -8126,8 +7327,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie : édition novembre 2026",
   "sous": "Édition novembre 2026",
-  "desc": "Tout le catalogue payant de Filodie : les 202 trousses, les 5 éditions, les 179 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
-  "desc_en": "Filodie’s entire paid catalogue: all 202 toolkits, the 5 editions, the 179 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
+  "desc": "Tout le catalogue payant de Filodie : les 157 trousses, les 5 éditions, les 178 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
+  "desc_en": "Filodie’s entire paid catalogue: all 157 toolkits, the 5 editions, the 178 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -8143,7 +7344,6 @@
    "trousse-dyspraxie_tdc",
    "trousse-deficience_intellectuelle",
    "trousse-gestion_de_crise",
-   "trousse-prevention_du_suicide",
    "trousse-dependances",
    "trousse-violence_sexuelle",
    "trousse-fondements_theoriques",
@@ -8157,7 +7357,6 @@
    "trousse-securite_travail",
    "trousse-systemique_famille",
    "trousse-animer_groupe",
-   "trousse-tcc_quotidien",
    "trousse-pouvoir_agir",
    "trousse-auteurs_infractions_sexuelles",
    "trousse-soutenir_deuil",
@@ -8214,12 +7413,6 @@
    "trousse-dims",
    "trousse-hpi",
    "trousse-syndrome_gilles_de_la_tourette",
-   "trousse-psychoeducation_evaluation",
-   "trousse-psychoeducation_planification",
-   "trousse-psychoeducation_accompagnement",
-   "trousse-psychoeducation_pratique",
-   "trousse-enseigner_aux_adultes",
-   "trousse-fga_fp_reussite",
    "trousse-violence_conjugale_victimes",
    "trousse-agression_sexuelle_victimes",
    "trousse-grossesse_adolescence",
@@ -8253,29 +7446,13 @@
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
    "trousse-auteurs_de_violence",
-   "trousse-evaluation_globale_du_jeune",
    "trousse-observation_des_comportements",
-   "trousse-gestion_de_classe",
    "trousse-renforcement_r05",
    "trousse-renforcement_r610",
    "trousse-renforcement_r1115",
    "trousse-adultes_autistes",
-   "trousse-tts",
-   "trousse-service_de_garde_scolaire",
-   "trousse-educatrices_cpe",
-   "trousse-direction_garderie",
-   "trousse-chsld_tes_pab",
-   "trousse-travail_de_rue",
    "trousse-tes_communautaire",
-   "trousse-orthopedagogie",
-   "trousse-orthophonie",
-   "trousse-travail_social",
-   "trousse-criminologie",
-   "trousse-psychoeducation",
-   "trousse-soins_infirmiers",
-   "trousse-zootherapie",
    "trousse-parents",
-   "trousse-peh",
    "trousse-pratique_privee",
    "trousse-formation_tsa",
    "trousse-formation_comportements_defis",
@@ -8300,14 +7477,6 @@
    "trousse-theme_pommes",
    "trousse-theme_halloween",
    "trousse-theme_hiver",
-   "trousse-francais_1re_annee",
-   "trousse-francais_2e_annee",
-   "trousse-francais_3e_annee",
-   "trousse-francais_4e_annee",
-   "trousse-francais_5e_annee",
-   "trousse-francais_6e_annee",
-   "trousse-mathematiques_5e_annee",
-   "trousse-enseignants_secondaire",
    "trousse-deuil_et_separation",
    "trousse-estime_de_soi",
    "trousse-approche_sensible_au_trauma",
@@ -8317,17 +7486,6 @@
    "trousse-troubles_alimentaires",
    "trousse-nouveaux_arrivants",
    "trousse-autosoins_intervenants",
-   "trousse-supervision_stagiaires",
-   "trousse-enseignants_primaire",
-   "trousse-adaptation_scolaire",
-   "trousse-suppleance",
-   "trousse-psychologie_scolaire",
-   "trousse-ergotherapie",
-   "trousse-psychoeducation_scolaire",
-   "trousse-travail_social_scolaire",
-   "trousse-equipe_ecole",
-   "trousse-orientation",
-   "trousse-education_physique_inclusive",
    "trousse-readaptation_foyer",
    "trousse-integration_socioprofessionnelle",
    "edition-edition_ados",
@@ -8505,7 +7663,6 @@
    "cahier-vcomp-30",
    "cahier-vcomp-31",
    "cahier-vcomp-32",
-   "cahier-vcomp-33",
    "cahier-vcomp-34",
    "cahier-vcomp-35",
    "cahier-vcomp-36",
@@ -8550,57 +7707,13 @@
    "album-lanterne-milo",
    "album-tournesol-romy",
    "album-couverture-eli",
-   "bottin-regional",
-   "trousse-enseignants-tes",
-   "trousse-apprentissage-langage"
+   "bottin-regional"
   ],
   "prix": 149.0,
   "payhip": "dZ02M",
   "payhip_en": "dZ02M",
   "sous_en": "November 2026 edition",
   "titre_en": "All of Filodie: November 2026 edition",
-  "valeur": 2228.0
- },
- {
-  "id": "trousse-enseignants-tes",
-  "type": "trousse",
-  "groupe": "Pour enseignantes et enseignants en T.E.S.",
-  "titre": "Trousse pour enseignantes et enseignants en éducation spécialisée",
-  "titre_en": "Toolkit for SCC Teachers",
-  "sous": "40 outils classés selon vos cours",
-  "sous_en": "40 tools organized by course",
-  "desc": "Pour enseigner en Techniques d’éducation spécialisée : deux ateliers complets de niveau collégial (observation, plan d’intervention) avec cas, corrigés et grilles, un guide de l’enseignante et de l’enseignant, puis les outils Filodie classés par cours (DI-TSA, stages, ESP, violence et exclusion, itinérance, LGBTQ+). 9 PDF en français et 9 en anglais, licence individuelle.",
-  "desc_en": "For special care counselling teachers: two complete college-level workshops (observation, intervention plan) with a case, answer keys and rubrics, a teacher’s guide and the Filodie tools organized by course. 9 PDFs in English and 9 in French, individual licence.",
-  "prix": 99.0,
-  "payhip": "CMcPa",
-  "payhip_en": "CMcPa",
-  "pv_pages": [
-   1,
-   2
-  ],
-  "fichiers": [
-   "Trousse pour enseignants en éducation spécialisée/Filodie_Trousse_enseignants_TES_0_Sommaire_et_guide_de_l_enseignante.pdf"
-  ]
- },
- {
-  "id": "trousse-apprentissage-langage",
-  "type": "trousse",
-  "groupe": "Pour enseignantes et enseignants en T.E.S.",
-  "titre": "Trousse Apprentissage et langage",
-  "titre_en": "Learning and Language Toolkit",
-  "sous": "9 trousses réunies · 113 pages",
-  "sous_en": "9 toolkits in one · 113 pages",
-  "desc": "Pour l’orthopédagogie, l’orthophonie et l’enseignement : troubles d’apprentissage, TDA-H, dyspraxie, trouble développemental du langage, orthopédagogie, orthophonie, soutien langagier au primaire et au secondaire, et un outil contre la procrastination. Un PDF en français et un en anglais.",
-  "desc_en": "For remedial education, speech therapy and teaching: learning disabilities, ADHD, dyspraxia, developmental language disorder, remedial education, speech therapy, language support in elementary and high school, and a tool against procrastination. One PDF in English and one in French.",
-  "prix": 39.0,
-  "payhip": "6wsbR",
-  "payhip_en": "6wsbR",
-  "pv_pages": [
-   1,
-   2
-  ],
-  "fichiers": [
-   "Trousse Apprentissage et langage/Trousse_Filodie_Apprentissage_et_langage_2026.pdf"
-  ]
+  "valeur": 1786.0
  }
 ]
