@@ -180,9 +180,9 @@ SUJETS = {
         desc_fr="Trousses pour la pratique des T.E.S., le Grand livre et le Bottin régional gratuit.",
         desc_en="Toolkits for special care counselling practice, the Handbook and the free Regional Directory.",
         p_fr=["Observer, planifier, intervenir, rédiger : ces outils ont été pensés pour le quotidien des T.E.S. au Québec.",
-              "Vous y trouverez le Grand livre clinique, le Glossaire clinique, des trousses par milieu de pratique, des outils sur le cadre légal et l’animation de groupe, ainsi que le Bottin régional gratuit."],
+              "Vous y trouverez le Grand livre, le Glossaire, des trousses par milieu de pratique, des outils sur le cadre légal et l’animation de groupe, ainsi que le Bottin régional gratuit."],
         p_en=["Observing, planning, intervening, writing: these tools were designed for the daily work of special care counsellors in Québec.",
-              "You will find the Clinical Handbook, the Clinical Glossary, toolkits by practice setting, tools on the legal framework and group facilitation, and the free Regional Directory."],
+              "You will find the SCC Handbook, the SCC Glossary, toolkits by practice setting, tools on the legal framework and group facilitation, and the free Regional Directory."],
         debut=["trousse-principale", "grand-livre", "bottin-regional"], conseil=None),
     "etudes": dict(
         fr="outils-etudes-stages-tes.html", en="scc-studies-internship-tools.html",
@@ -190,9 +190,9 @@ SUJETS = {
         desc_fr="Seize outils pour réussir ses cours et ses stages en éducation spécialisée : plan d’intervention, note évolutive, modèle du PPH, journal de stage.",
         desc_en="Sixteen tools for succeeding in special care counselling courses and internships: intervention plans, progress notes, the DCP model and internship journals.",
         p_fr=["Plan d’intervention, note évolutive, modèle du PPH, éthique : les études en éducation spécialisée demandent beaucoup. Ces outils ont été conçus par une étudiante en éducation spécialisée, pour le vrai rythme des cours et des stages.",
-              "Vous y trouverez dix-sept outils d’études et de stage, un échantillon gratuit, le Grand livre clinique et le Glossaire clinique."],
+              "Vous y trouverez dix-sept outils d’études et de stage, un échantillon gratuit, le Grand livre et le Glossaire."],
         p_en=["Intervention plans, progress notes, the DCP model, ethics: special care counselling studies are demanding. These tools were designed by a special care counselling student, for the real pace of courses and internships.",
-              "You will find seventeen study and internship tools, a free sample, the Clinical Handbook and the Clinical Glossary."],
+              "You will find seventeen study and internship tools, a free sample, the SCC Handbook and the SCC Glossary."],
         debut=["lot-etudes-tes", "grand-livre", "livre-glossaire-clinique"], conseil=None),
 }
 

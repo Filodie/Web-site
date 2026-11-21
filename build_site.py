@@ -414,22 +414,22 @@ def catalogue():
         add(id="gratuit-" + pq.code.lower(), type="gratuit", groupe="Outil gratuit du mois", titre=pq.titre,
             sous=pq.sous, desc=pq.desc, code=pq.code, futur=pq.code[-4:] > _nxt,
             fichiers=[f"Outils gratuits Filodie/Couleur/{f}.pdf", f"Outils gratuits Filodie/Noir et blanc/{f}_NB.pdf"])
-    add(id="grand-livre", type="livre", groupe="Grand livre clinique", titre="Grand livre clinique T.E.S.",
+    add(id="grand-livre", type="livre", groupe="Grand livre", titre="Grand livre T.E.S.",
         sous="143 fiches · 9 parties",
         desc="Les connaissances essentielles de la pratique en éducation spécialisée, en fiches visuelles avec une zone "
              "« Mon application clinique ». Version couleur et version noir et blanc.",
-        fichiers=["Grand livre clinique Filodie/Grand_livre_clinique_TES_Filodie.pdf",
-                  "Grand livre clinique Filodie/Grand_livre_clinique_TES_Filodie_NB_impression.pdf"])
+        fichiers=["Grand livre Filodie/Grand_livre_TES_Filodie.pdf",
+                  "Grand livre Filodie/Grand_livre_TES_Filodie_NB_impression.pdf"])
     if GLOSSAIRE_EN_VENTE:
-        add(id="livre-glossaire-clinique", type="livre", groupe="Grand livre clinique", titre="Glossaire clinique T.E.S.",
+        add(id="livre-glossaire-clinique", type="livre", groupe="Grand livre", titre="Glossaire T.E.S.",
             sous="613 termes · 18 sections", prix=12.0, payhip="KPWj4", payhip_en="KPWj4", pv_pages=[5, 33],
             desc="Le vocabulaire de l’éducation spécialisée réuni en un seul document, classé par domaine : MDH-PPH, DI, TSA, "
                  "DP, TDAH, vieillissement, santé mentale, plan d’intervention, psychologie, droit et plus. Chaque terme a "
                  "sa définition et son exemple. PDF en français seulement.",
-            titre_en="SCC Clinical Glossary (French only)", sous_en="613 terms · 18 sections",
+            titre_en="SCC Glossary (French only)", sous_en="613 terms · 18 sections",
             desc_en="The vocabulary of special care counselling gathered in one document, organized by field, with a "
                     "definition and an example for each term. PDF available in French only.",
-            fichiers=["Glossaire Filodie/Filodie_Glossaire_clinique_TES.pdf"])
+            fichiers=["Glossaire Filodie/Filodie_Glossaire_TES.pdf"])
     add(id="album-caillou-nilou", type="album", groupe="Albums pour enfants", titre="Le caillou de Nilou",
         sous="Album sur le deuil · 4 à 8 ans · 28 pages", pv_pages=[7, 11],
         desc="Quand Papi meurt, Nilou la petite renarde sent un gros caillou gris dans sa poitrine. Une histoire tendre et "
@@ -655,9 +655,9 @@ def catalogue():
                 f"the {len(tt) - 1 - len(sp) - len(HORS_16) - ncol - ned} intervention, study and internship tools, and the {ned} editions.",
         fichiers=[], contient=tt)
     add(id="lot-mega", type="mega", groupe="Lots", titre="Tout Filodie", sous="Toute la collection",
-        desc=f"Les {ntr} trousses, les éditions, les {len(tous)} cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique "
+        desc=f"Les {ntr} trousses, les éditions, les {len(tous)} cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre "
              "et le bottin régional.",
-        desc_en=f"All {ntr} toolkits, the editions, the {len(tous)} visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook "
+        desc_en=f"All {ntr} toolkits, the editions, the {len(tous)} visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the SCC Handbook "
                 "and the regional directory.",
         fichiers=[], contient=[i["id"] for i in items if not i["type"].startswith("lot") and i["type"] not in ("mega", "gratuit")
                                                                  and i["id"] not in (ECH_ID, DET_ID, PPC_ECH_ID)])
@@ -722,7 +722,7 @@ def catalogue():
                   f"s’ajoutent à votre téléchargement ; celles créées à partir du {SUIVANT} sont vendues séparément. "
                   "Les outils gratuits restent offerts à tout le monde.")
     mg["desc_en"] = (f"Filodie’s entire paid catalogue: all {ntr} toolkits, the {ned} editions, the {len(tous)} visual workbooks, "
-                     "the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and "
+                     "the wall posters, the games, the visual routines, the detective notebooks, the SCC Handbook and "
                      f"the regional directory. {EDITION_EN} edition: new products created before the end of the month are "
                      f"added to your download; those created from {SUIVANT_EN} on are sold separately. The free tools "
                      "remain available to everyone.")
@@ -898,7 +898,7 @@ L = {
         "col_t": "La collection",
         "cols": [("Trousses", "Des outils d’observation, de planification et de suivi pour la pratique des T.E.S.", "boutique.html#trousse"),
                  ("Cahiers visuels", "Imagés et ludiques, pour travailler directement avec l’enfant : TSA, TDAH, habiletés sociales, DI, comportement.", "boutique.html#cahier"),
-                 ("Grand livre clinique", "143 fiches de connaissances pour la pratique, en couleur et en noir et blanc.", "boutique.html#livre"),
+                 ("Grand livre", "143 fiches de connaissances pour la pratique, en couleur et en noir et blanc.", "boutique.html#livre"),
                  ("Bottin régional", "Les ressources des 17 régions, classées par problématique. Gratuit.", "bottin.html")],
         "why_t": "Pourquoi Filodie ?",
         "why": [("Pensé pour le terrain", "Chaque outil suit le même fil : observer, comprendre, planifier, soutenir, communiquer."),
@@ -943,7 +943,7 @@ L = {
         "col_t": "The collection",
         "cols": [("Toolkits", "Observation, planning and follow-up tools for special care counselling practice.", "shop.html#trousse"),
                  ("Visual workbooks", "Colourful and playful, to work directly with the child: autism, ADHD, social skills, ID, behaviour.", "shop.html#cahier"),
-                 ("Clinical handbook", "143 knowledge sheets for practice, in colour and in black and white.", "shop.html#livre"),
+                 ("SCC handbook", "143 knowledge sheets for practice, in colour and in black and white.", "shop.html#livre"),
                  ("Regional directory", "Resources for all 17 regions, sorted by issue. Free.", "directory.html")],
         "why_t": "Why Filodie?",
         "why": [("Built for the field", "Every tool follows the same thread: observe, understand, plan, support, communicate."),
