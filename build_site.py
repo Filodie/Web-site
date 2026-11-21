@@ -718,7 +718,7 @@ def catalogue():
     lt["titre"], lt["titre_en"] = f"Toutes les trousses : édition {EDITION}", f"All the toolkits: {EDITION_EN} edition"
     mg["desc"] = (f"Tout le catalogue payant de Filodie : les {ntr} trousses, les {ned} éditions, les {len(tous)} cahiers visuels, "
                   "les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre "
-                  f"clinique et le bottin régional. Édition {E['de']} : les nouveautés créées d’ici la fin du mois "
+                  f"et le bottin régional. Édition {E['de']} : les nouveautés créées d’ici la fin du mois "
                   f"s’ajoutent à votre téléchargement ; celles créées à partir du {SUIVANT} sont vendues séparément. "
                   "Les outils gratuits restent offerts à tout le monde.")
     mg["desc_en"] = (f"Filodie’s entire paid catalogue: all {ntr} toolkits, the {ned} editions, the {len(tous)} visual workbooks, "
