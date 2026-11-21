@@ -784,5 +784,98 @@
   "fichiers": [
    "Trousse Apprentissage et langage/Trousse_Filodie_Apprentissage_et_langage_2026.pdf"
   ]
+ },
+ {
+  "id": "trousse-auteurs_infractions_sexuelles",
+  "type": "trousse",
+  "groupe": "Trousses spécialisées",
+  "titre": "Intervenir auprès des personnes auteures d’infractions sexuelles",
+  "sous": "10 outils",
+  "desc": "Dix outils pour intervenir auprès des personnes auteures d’infractions sexuelles, en protégeant d’abord les victimes : posture, facteurs de risque dynamiques, modèles RBR et des vies saines, pensées qui excusent, plan de prévention, encadrement, signalement, adolescence et soin de soi.",
+  "fichiers": [
+   "Trousses spécialisées/Trousse_Filodie_Auteurs_infractions_sexuelles_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "einAS",
+  "payhip_en": "einAS"
+ },
+ {
+  "id": "trousse-auteurs_de_violence",
+  "type": "trousse",
+  "groupe": "Clientèles et interventions",
+  "titre": "Hommes ayant des comportements violents",
+  "sous": "10 outils",
+  "desc": "Dix outils pour accompagner les hommes (et toute personne) ayant des comportements violents : responsabilisation, signaux d’escalade, retrait, communication et prévention de la récidive. La sécurité des victimes d’abord.",
+  "fichiers": [
+   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Auteurs_de_violence_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "RYNK9",
+  "payhip_en": "RYNK9"
+ },
+ {
+  "id": "trousse-pratique_privee",
+  "type": "trousse",
+  "groupe": "Professions et pratique",
+  "titre": "Démarrer une pratique privée",
+  "sous": "10 outils",
+  "desc": "Dix outils pour lancer et gérer une pratique privée : démarches, offre de services, contrat, consentement, dossiers, confidentialité, facturation et suivi.",
+  "fichiers": [
+   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Pratique_privee_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "aQCGu",
+  "payhip_en": "aQCGu"
+ },
+ {
+  "id": "trousse-formation_tsa",
+  "type": "trousse",
+  "groupe": "Professions et pratique",
+  "titre": "Formation clé en main : Mieux comprendre le TSA",
+  "sous": "10 outils",
+  "desc": "Une formation prête à animer pour sensibiliser une équipe au trouble du spectre de l’autisme : contenus clés, étude de cas, jeu de rôle, quiz et attestation.",
+  "fichiers": [
+   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Formation_TSA_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "PkuBQ",
+  "payhip_en": "PkuBQ"
+ },
+ {
+  "id": "trousse-formation_comportements_defis",
+  "type": "trousse",
+  "groupe": "Professions et pratique",
+  "titre": "Formation clé en main : Intervenir auprès des comportements-défis",
+  "sous": "10 outils",
+  "desc": "Une formation prête à animer pour outiller une équipe face aux comportements-défis : fonction, prévention, enseignement du remplacement, cycle de la crise, étude de cas et attestation.",
+  "fichiers": [
+   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Formation_comportements_defis_2026.pdf"
+  ],
+  "prix": 7.0,
+  "payhip": "HhNIu",
+  "payhip_en": "HhNIu"
+ },
+ {
+  "id": "lot-4-professions-et-pratique",
+  "type": "lot_collection",
+  "groupe": "Lots",
+  "titre": "Collection Filodie : Professions et pratique",
+  "sous": "5 trousses",
+  "desc": "Toutes les trousses du volet « Professions et pratique ».",
+  "fichiers": [],
+  "contient": [
+   "trousse-parents",
+   "trousse-pratique_privee",
+   "trousse-formation_tsa",
+   "trousse-formation_comportements_defis",
+   "trousse-pack_rentree_tes_primaire"
+  ],
+  "titre_en": "Filodie Collection: Professions and practice",
+  "sous_en": "5 toolkits",
+  "desc_en": "All the toolkits in the “Professions and practice” section.",
+  "prix": 25.0,
+  "payhip": "XWajd",
+  "payhip_en": "XWajd",
+  "valeur": 35.0
  }
 ]
