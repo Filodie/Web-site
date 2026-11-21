@@ -378,20 +378,6 @@
   "payhip_en": "IXjPC"
  },
  {
-  "id": "trousse-auteurs_infractions_sexuelles",
-  "type": "trousse",
-  "groupe": "Trousses spécialisées",
-  "titre": "Intervenir auprès des personnes auteures d’infractions sexuelles",
-  "sous": "10 outils",
-  "desc": "Dix outils pour intervenir auprès des personnes auteures d’infractions sexuelles, en protégeant d’abord les victimes : posture, facteurs de risque dynamiques, modèles RBR et des vies saines, pensées qui excusent, plan de prévention, encadrement, signalement, adolescence et soin de soi.",
-  "fichiers": [
-   "Trousses spécialisées/Trousse_Filodie_Auteurs_infractions_sexuelles_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "einAS",
-  "payhip_en": "einAS"
- },
- {
   "id": "trousse-soutenir_deuil",
   "type": "trousse",
   "groupe": "Trousses spécialisées",
@@ -1729,20 +1715,6 @@
   "payhip_en": "Rb1eO"
  },
  {
-  "id": "trousse-auteurs_de_violence",
-  "type": "trousse",
-  "groupe": "Clientèles et interventions",
-  "titre": "Hommes ayant des comportements violents",
-  "sous": "10 outils",
-  "desc": "Dix outils pour accompagner les hommes (et toute personne) ayant des comportements violents : responsabilisation, signaux d’escalade, retrait, communication et prévention de la récidive. La sécurité des victimes d’abord.",
-  "fichiers": [
-   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Auteurs_de_violence_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "RYNK9",
-  "payhip_en": "RYNK9"
- },
- {
   "id": "trousse-observation_des_comportements",
   "type": "trousse",
   "groupe": "Clientèles et interventions",
@@ -1839,48 +1811,6 @@
   "prix": 7.0,
   "payhip": "ipaPM",
   "payhip_en": "ipaPM"
- },
- {
-  "id": "trousse-pratique_privee",
-  "type": "trousse",
-  "groupe": "Professions et pratique",
-  "titre": "Démarrer une pratique privée",
-  "sous": "10 outils",
-  "desc": "Dix outils pour lancer et gérer une pratique privée : démarches, offre de services, contrat, consentement, dossiers, confidentialité, facturation et suivi.",
-  "fichiers": [
-   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Pratique_privee_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "aQCGu",
-  "payhip_en": "aQCGu"
- },
- {
-  "id": "trousse-formation_tsa",
-  "type": "trousse",
-  "groupe": "Professions et pratique",
-  "titre": "Formation clé en main : Mieux comprendre le TSA",
-  "sous": "10 outils",
-  "desc": "Une formation prête à animer pour sensibiliser une équipe au trouble du spectre de l’autisme : contenus clés, étude de cas, jeu de rôle, quiz et attestation.",
-  "fichiers": [
-   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Formation_TSA_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "PkuBQ",
-  "payhip_en": "PkuBQ"
- },
- {
-  "id": "trousse-formation_comportements_defis",
-  "type": "trousse",
-  "groupe": "Professions et pratique",
-  "titre": "Formation clé en main : Intervenir auprès des comportements-défis",
-  "sous": "10 outils",
-  "desc": "Une formation prête à animer pour outiller une équipe face aux comportements-défis : fonction, prévention, enseignement du remplacement, cycle de la crise, étude de cas et attestation.",
-  "fichiers": [
-   "Collection Filodie/4 – Professions et pratique/Trousse_Filodie_Formation_comportements_defis_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "HhNIu",
-  "payhip_en": "HhNIu"
  },
  {
   "id": "trousse-pack_rentree_tes_primaire",
@@ -6549,13 +6479,12 @@
   "type": "lot_collection",
   "groupe": "Lots",
   "titre": "Collection Filodie : Clientèles et interventions",
-  "sous": "8 trousses",
+  "sous": "7 trousses",
   "desc": "Toutes les trousses du volet « Clientèles et interventions ».",
   "fichiers": [],
   "contient": [
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
-   "trousse-auteurs_de_violence",
    "trousse-observation_des_comportements",
    "trousse-renforcement_r05",
    "trousse-renforcement_r610",
@@ -6563,35 +6492,12 @@
    "trousse-adultes_autistes"
   ],
   "titre_en": "Filodie Collection: Client groups and interventions",
-  "sous_en": "8 toolkits",
+  "sous_en": "7 toolkits",
   "desc_en": "All the toolkits in the “Client groups and interventions” section.",
   "prix": 25.0,
   "payhip": "uKpav",
   "payhip_en": "uKpav",
-  "valeur": 56.0
- },
- {
-  "id": "lot-4-professions-et-pratique",
-  "type": "lot_collection",
-  "groupe": "Lots",
-  "titre": "Collection Filodie : Professions et pratique",
-  "sous": "5 trousses",
-  "desc": "Toutes les trousses du volet « Professions et pratique ».",
-  "fichiers": [],
-  "contient": [
-   "trousse-parents",
-   "trousse-pratique_privee",
-   "trousse-formation_tsa",
-   "trousse-formation_comportements_defis",
-   "trousse-pack_rentree_tes_primaire"
-  ],
-  "titre_en": "Filodie Collection: Professions and practice",
-  "sous_en": "5 toolkits",
-  "desc_en": "All the toolkits in the “Professions and practice” section.",
-  "prix": 25.0,
-  "payhip": "XWajd",
-  "payhip_en": "XWajd",
-  "valeur": 35.0
+  "valeur": 49.0
  },
  {
   "id": "lot-5-jeux-et-activités",
@@ -7146,11 +7052,11 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses : édition novembre 2026",
-  "sous": "Édition novembre 2026 · 157 trousses et 5 éditions",
+  "sous": "Édition novembre 2026 · 152 trousses et 5 éditions",
   "prix": 75.0,
-  "sous_en": "November 2026 edition · 157 toolkits and 5 editions",
-  "desc": "La trousse principale, les 34 trousses spécialisées, les 85 trousses de la Collection, les 37 outils d’intervention, d’études et de stage, et les 5 éditions. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
-  "desc_en": "The main toolkit, the 34 specialized toolkits, the 85 Collection toolkits, the 37 intervention, study and internship tools, and the 5 editions. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
+  "sous_en": "November 2026 edition · 152 toolkits and 5 editions",
+  "desc": "La trousse principale, les 34 trousses spécialisées, les 81 trousses de la Collection, les 36 outils d’intervention, d’études et de stage, et les 5 éditions. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
+  "desc_en": "The main toolkit, the 34 specialized toolkits, the 81 Collection toolkits, the 36 intervention, study and internship tools, and the 5 editions. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7180,7 +7086,6 @@
    "trousse-systemique_famille",
    "trousse-animer_groupe",
    "trousse-pouvoir_agir",
-   "trousse-auteurs_infractions_sexuelles",
    "trousse-soutenir_deuil",
    "trousse-fratrie",
    "trousse-devenir_adulte",
@@ -7267,7 +7172,6 @@
    "trousse-diagnostic_tdl",
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
-   "trousse-auteurs_de_violence",
    "trousse-observation_des_comportements",
    "trousse-renforcement_r05",
    "trousse-renforcement_r610",
@@ -7275,9 +7179,6 @@
    "trousse-adultes_autistes",
    "trousse-tes_communautaire",
    "trousse-parents",
-   "trousse-pratique_privee",
-   "trousse-formation_tsa",
-   "trousse-formation_comportements_defis",
    "trousse-pack_rentree_tes_primaire",
    "trousse-ateliers_emotions",
    "trousse-jeux_a_imprimer",
@@ -7319,7 +7220,7 @@
   "payhip": "cywQA",
   "payhip_en": "cywQA",
   "titre_en": "All the toolkits: November 2026 edition",
-  "valeur": 1011.0
+  "valeur": 976.0
  },
  {
   "id": "lot-mega",
@@ -7327,8 +7228,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie : édition novembre 2026",
   "sous": "Édition novembre 2026",
-  "desc": "Tout le catalogue payant de Filodie : les 157 trousses, les 5 éditions, les 178 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
-  "desc_en": "Filodie’s entire paid catalogue: all 157 toolkits, the 5 editions, the 178 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
+  "desc": "Tout le catalogue payant de Filodie : les 152 trousses, les 5 éditions, les 178 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre clinique et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
+  "desc_en": "Filodie’s entire paid catalogue: all 152 toolkits, the 5 editions, the 178 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the Clinical Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7358,7 +7259,6 @@
    "trousse-systemique_famille",
    "trousse-animer_groupe",
    "trousse-pouvoir_agir",
-   "trousse-auteurs_infractions_sexuelles",
    "trousse-soutenir_deuil",
    "trousse-fratrie",
    "trousse-devenir_adulte",
@@ -7445,7 +7345,6 @@
    "trousse-diagnostic_tdl",
    "trousse-protection_de_la_jeunesse",
    "trousse-violence_conjugale",
-   "trousse-auteurs_de_violence",
    "trousse-observation_des_comportements",
    "trousse-renforcement_r05",
    "trousse-renforcement_r610",
@@ -7453,9 +7352,6 @@
    "trousse-adultes_autistes",
    "trousse-tes_communautaire",
    "trousse-parents",
-   "trousse-pratique_privee",
-   "trousse-formation_tsa",
-   "trousse-formation_comportements_defis",
    "trousse-pack_rentree_tes_primaire",
    "trousse-ateliers_emotions",
    "trousse-jeux_a_imprimer",
@@ -7714,6 +7610,6 @@
   "payhip_en": "dZ02M",
   "sous_en": "November 2026 edition",
   "titre_en": "All of Filodie: November 2026 edition",
-  "valeur": 1786.0
+  "valeur": 1751.0
  }
 ]

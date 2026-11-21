@@ -55,6 +55,13 @@ RETIRES = {
     # Trousses pour le personnel enseignant du cégep
     "trousse-enseignants-tes",
     "trousse-apprentissage-langage",
+    # Outils limites retirés par prudence (20 nov. 2026)
+    "trousse-pratique_privee",
+    "trousse-formation_tsa",
+    "trousse-formation_comportements_defis",
+    "trousse-auteurs_de_violence",              # Hommes ayant des comportements violents
+    "trousse-auteurs_infractions_sexuelles",
+    "lot-4-professions-et-pratique",           # ne contiendrait plus que 2 trousses
     # Lots dont il ne resterait presque rien
     "lot-9-équipe-école-et-réseau",
     "lot-3-professions",
