@@ -417,7 +417,7 @@ def catalogue():
     add(id="grand-livre", type="livre", groupe="Grand livre", titre="Grand livre T.E.S.",
         sous="143 fiches · 9 parties",
         desc="Les connaissances essentielles de la pratique en éducation spécialisée, en fiches visuelles avec une zone "
-             "« Mon application clinique ». Version couleur et version noir et blanc.",
+             "« Mon application sur le terrain ». Version couleur et version noir et blanc.",
         fichiers=["Grand livre Filodie/Grand_livre_TES_Filodie.pdf",
                   "Grand livre Filodie/Grand_livre_TES_Filodie_NB_impression.pdf"])
     if GLOSSAIRE_EN_VENTE:
@@ -1192,7 +1192,8 @@ def nouveaute(lang):
                "workshops (observation and intervention plan) with a case, answer keys and rubrics, a teacher’s guide "
                "and tools on homelessness, LGBTQ+ people and the comprehensive program assessment. In English and French.")
         prix = "$99"
-    img = f'{L[lang]["base"]}img/{lang if os.path.exists(os.path.join(PUB, "img", lang, i["id"] + ".jpg")) else "fr"}/{i["id"]}.jpg'
+    _il = lang if os.path.exists(os.path.join(PUB, "img", lang, i["id"] + ".jpg")) else "fr"
+    img = f'{L[lang]["base"]}img/{_il}/{i["id"]}.jpg{iv(_il, i["id"])}'
     return (f'<section class="wrap"><div class="card" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;'
             f'padding:24px;border:2px solid #D9734E">'
             f'<img src="{img}" alt="" loading="lazy" style="width:220px;max-width:100%;border-radius:10px;flex:none">'
@@ -1214,7 +1215,7 @@ def album_nouveaute(lang):
     h2 = i["titre"] if fr else en(i, "titre")
     txt = i["desc"] if fr else en(i, "desc")
     prix = "9 $" if fr else "$9"
-    img = f'{L[lang]["base"]}img/{lang}/{i["id"]}.jpg'
+    img = f'{L[lang]["base"]}img/{lang}/{i["id"]}.jpg{iv(lang, i["id"])}'
     return (f'<section class="wrap"><div class="card" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;'
             f'padding:24px;border:2px solid #D9734E">'
             f'<img src="{img}" alt="" loading="lazy" style="width:300px;max-width:100%;border-radius:10px;flex:none">'
@@ -1244,7 +1245,8 @@ def outil_pph(lang):
                "systems, abilities, environment, life habits, action plan and case study. Useful in internships, in class "
                "and in the field.")
         plus = ""
-    img = f'{L[lang]["base"]}img/{lang if os.path.exists(os.path.join(PUB, "img", lang, i["id"] + ".jpg")) else "fr"}/{i["id"]}.jpg'
+    _il = lang if os.path.exists(os.path.join(PUB, "img", lang, i["id"] + ".jpg")) else "fr"
+    img = f'{L[lang]["base"]}img/{_il}/{i["id"]}.jpg{iv(_il, i["id"])}'
     return (f'<section class="wrap"><div class="card" style="display:flex;flex-wrap:wrap;gap:28px;align-items:center;'
             f'padding:24px;border:2px solid #7A9E87">'
             f'<img src="{img}" alt="" loading="lazy" style="width:220px;max-width:100%;border-radius:10px;flex:none">'
@@ -1585,7 +1587,8 @@ def bottin(lang, items):
     k = b["payhip_en"] if lang == "en" else b["payhip"]
     btn = (f'<a class="btn payhip-buy-button" data-theme="none" data-product="{k}" href="https://payhip.com/b/{k}">{t["bottin_btn"]}</a>'
            if k else f'<span class="btn off">{t["soon"]}</span>')
-    img = f'{t["base"]}img/{lang if os.path.exists(os.path.join(PUB, "img", lang, "bottin-regional.jpg")) else "fr"}/bottin-regional.jpg'
+    _il = lang if os.path.exists(os.path.join(PUB, "img", lang, "bottin-regional.jpg")) else "fr"
+    img = f'{t["base"]}img/{_il}/bottin-regional.jpg{iv(_il, "bottin-regional")}'
     img += iv(img.split("/")[-2], "bottin-regional")
     body = f"""
 <section class="wrap split">
