@@ -162,7 +162,7 @@ def catalogue():
     add(id="trousse-principale", type="trousse", groupe="Trousses essentielles", titre="Trousse Filodie : Tenir le fil",
         sous="12 outils de l’observation à l’intervention",
         desc="Douze outils sobres, précis et reliés entre eux. Chaque fiche indique son étape du fil, renvoie à la suivante "
-             "et se termine par un repère d’intervention. Imprimables ou remplissables à l’écran.",
+             "et se termine par un repère d’intervention. Imprimables ou remplissables à l’écran, avec une version Word modifiable.",
         fichiers=["Trousse_Filodie_Outils_TES_2026.pdf"])
     from contenu_dp import DP                             # trousses spécialisées ajoutées le 22 oct. 2026,
     from contenu_cadre_legal import CL                    # hors lot « Les 16 trousses spécialisées »
