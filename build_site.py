@@ -891,7 +891,7 @@ L = {
         "hero_k": "Outils d’intervention · éducation spécialisée",
         "hero_1": "Tenir le fil,", "hero_2": "de l’observation à l’intervention.",
         "hero_p": "Des trousses, des cahiers visuels et un grand livre conçus au Québec par une T.E.S., pour les T.E.S. "
-                  "et les familles accompagnées. Imprimables, remplissables à l’écran, "
+                  "et les familles accompagnées. Imprimables, remplissables à l’écran, modifiables en Word, "
                   "avec les ressources de votre région.",
         "cta1": "Voir la boutique", "cta2": "Télécharger le bottin gratuit",
         "stats": [("95", "trousses thématiques"), ("179", "cahiers visuels"), ("143", "fiches du Grand livre"), ("17", "régions couvertes")],
@@ -903,7 +903,7 @@ L = {
         "why_t": "Pourquoi Filodie ?",
         "why": [("Pensé pour le terrain", "Chaque outil suit le même fil : observer, comprendre, planifier, soutenir, communiquer."),
                 ("Ancré au Québec", "Vocabulaire du réseau (PI, PPH, DPJ, LIP), ressources vérifiées dans chaque région."),
-                ("Prêt à utiliser", "PDF remplissables à l’écran ou imprimables, versions à colorier en noir et blanc."),
+                ("Prêt à utiliser", "PDF remplissables à l’écran ou imprimables, version Word modifiable pour les trousses, versions à colorier en noir et blanc."),
                 ("Livraison immédiate", "Vos fichiers sont téléchargeables dès le paiement, et le lien vous est aussi envoyé par courriel.")],
         "shop_t": "Boutique", "shop_p": "Chaque achat inclut la version française et la version anglaise. Cahiers à 3 $, trousses à 7 $, et des lots jusqu’à 90 % moins chers. Prix en dollars canadiens, téléchargement immédiat après le paiement.",
         "search": "Rechercher un outil…", "all": "Tout",
@@ -937,7 +937,7 @@ L = {
         "hero_k": "Intervention tools · special care counselling",
         "hero_1": "Hold the thread,", "hero_2": "from observation to intervention.",
         "hero_p": "Toolkits, visual workbooks and a handbook made in Québec by a special care counsellor, for special "
-                  "care counsellors and the families they support. Printable or fillable on screen, with resources for your region.",
+                  "care counsellors and the families they support. Printable, fillable on screen or editable in Word, with resources for your region.",
         "cta1": "Visit the shop", "cta2": "Get the free directory",
         "stats": [("95", "themed toolkits"), ("179", "visual workbooks"), ("143", "handbook sheets"), ("17", "regions covered")],
         "col_t": "The collection",
@@ -948,7 +948,7 @@ L = {
         "why_t": "Why Filodie?",
         "why": [("Built for the field", "Every tool follows the same thread: observe, understand, plan, support, communicate."),
                 ("Rooted in Québec", "Network vocabulary (IEP, HDM-DCP, DYP, Education Act) and verified resources in every region."),
-                ("Ready to use", "PDFs fillable on screen or printable, with black-and-white colouring versions."),
+                ("Ready to use", "PDFs fillable on screen or printable, an editable Word version for the toolkits, and black-and-white colouring versions."),
                 ("Instant delivery", "Your files can be downloaded right after payment, and the link is also emailed to you.")],
         "shop_t": "Shop", "shop_p": "Every purchase includes both the English and French versions. Workbooks at $3, toolkits at $7, and bundles up to 90% off. Prices in Canadian dollars, instant download after payment.",
         "search": "Search for a tool…", "all": "All",
@@ -1834,6 +1834,7 @@ CONTENT = {
 <h2>Puis-je acheter plusieurs produits en une seule commande ?</h2><p>Oui. Cliquez sur « Ajouter au panier » pour chaque produit, puis ouvrez le panier (🛒 en haut de la page ou en bas à droite) et payez une seule fois.</p>
 <h2>Dois-je créer un compte ?</h2><p>Non, c’est vous qui choisissez. <strong>Sans compte</strong> : entrez simplement votre courriel au paiement, vos fichiers vous sont envoyés par courriel. <strong>Avec un compte</strong> (facultatif) : créez-le dans <a href="https://payhip.com/Filodie/b-account">Mon compte</a> avec le même courriel que vos achats pour retrouver tous vos outils au même endroit et les télécharger de nouveau en tout temps.</p>
 <h2>Les PDF sont-ils remplissables ?</h2><p>Oui : la plupart des fiches se remplissent à l’écran (Adobe Acrobat Reader, Aperçu sur Mac, navigateur) et s’impriment en format lettre.</p>
+<h2>Puis-je modifier les outils ?</h2><p>Oui : la plupart des trousses incluent aussi une version Word modifiable, livrée à côté du PDF. Changez les mots, les prénoms et les exemples, ajoutez ou retirez des lignes et des cases, pour adapter chaque outil à la personne, à votre milieu et au plan d’intervention de votre équipe.</p>
 <h2>Puis-je imprimer plusieurs copies ?</h2><p>Oui, autant de copies que nécessaire pour vos propres interventions. Le partage des fichiers avec des collègues est interdit : une <a href="services.html#licence-equipe">licence d’équipe</a> est offerte pour les écoles, les CPE et les organismes.</p>
 <h2>Pourquoi mon courriel apparaît-il sur les pages ?</h2><p>Chaque PDF est personnalisé au nom de l’acheteuse ou de l’acheteur. Cela protège le travail de création et permet de garder les prix accessibles.</p>
 <h2>Les ressources de ma région sont-elles incluses ?</h2><p>Chaque trousse contient une page des 17 régions (DPJ, crise, autisme). Le bottin régional complet est gratuit.</p>
@@ -1845,6 +1846,7 @@ CONTENT = {
 <h2>Can I buy several products in one order?</h2><p>Yes. Click “Add to cart” for each product, then open the cart (🛒 at the top of the page or bottom right) and pay once.</p>
 <h2>Do I need an account?</h2><p>No, it’s up to you. <strong>Without an account</strong>: just enter your email at checkout and your files are emailed to you. <strong>With an account</strong> (optional): create one in <a href="https://payhip.com/Filodie/b-account">My account</a> using the same email as your purchases to find all your tools in one place and download them again at any time.</p>
 <h2>Are the PDFs fillable?</h2><p>Yes: most sheets can be filled in on screen (Adobe Acrobat Reader, Preview on Mac, browser) and printed on letter paper.</p>
+<h2>Can I edit the tools?</h2><p>Yes: most toolkits also include an editable Word version, delivered next to the PDF. Change the wording, names and examples, add or remove lines and boxes, to adapt each tool to the person, your setting and your team’s intervention plan.</p>
 <h2>Can I print several copies?</h2><p>Yes, as many copies as you need for your own interventions. Sharing the files with colleagues is not allowed: a <a href="services.html#team-licence">team licence</a> is available for schools, daycares and organizations.</p>
 <h2>Why does my email appear on the pages?</h2><p>Each PDF is personalized with the buyer’s details. This protects the creative work and keeps prices affordable.</p>
 <h2>Are resources for my region included?</h2><p>Every toolkit includes a page covering all 17 regions (youth protection, crisis, autism). The complete regional directory is free.</p>
