@@ -5,7 +5,7 @@
   "groupe": "Trousses essentielles",
   "titre": "Trousse Filodie : Tenir le fil",
   "sous": "12 outils de l’observation à l’intervention",
-  "desc": "Douze outils sobres, précis et reliés entre eux. Chaque fiche indique son étape du fil, renvoie à la suivante et se termine par un repère clinique. Imprimables ou remplissables à l’écran.",
+  "desc": "Douze outils sobres, précis et reliés entre eux. Chaque fiche indique son étape du fil, renvoie à la suivante et se termine par un repère d’intervention. Imprimables ou remplissables à l’écran.",
   "fichiers": [
    "Trousse_Filodie_Outils_TES_2026.pdf"
   ],
@@ -84,46 +84,18 @@
   "payhip_en": "6TQBm"
  },
  {
-  "id": "trousse-troubles_apprentissage",
-  "type": "trousse",
-  "groupe": "Trousses spécialisées",
-  "titre": "Troubles d’apprentissage",
-  "sous": "10 outils",
-  "desc": "Dyslexie, dysorthographie, dyscalculie : observer les erreurs, choisir les bonnes mesures d’aide, entraîner les outils technologiques et protéger l’estime de soi.",
-  "fichiers": [
-   "Trousses spécialisées/Trousse_Filodie_Troubles_apprentissage_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "ZRKOl",
-  "payhip_en": "ZRKOl"
- },
- {
   "id": "trousse-tsa",
   "type": "trousse",
   "groupe": "Trousses spécialisées",
   "titre": "TSA – Trouble du spectre de l’autisme",
   "sous": "10 outils",
-  "desc": "Dix outils : profil sensoriel, communication, surcharge, structure visuelle, scénarios sociaux, intérêts et changements, pensés avec la personne autiste.",
+  "desc": "Dix outils : observations sensorielles, communication, surcharge, structure visuelle, scénarios sociaux, intérêts et changements, pensés avec la personne autiste.",
   "fichiers": [
    "Trousses spécialisées/Trousse_Filodie_TSA_2026.pdf"
   ],
   "prix": 7.0,
   "payhip": "Wraw9",
   "payhip_en": "Wraw9"
- },
- {
-  "id": "trousse-trouble_du_langage",
-  "type": "trousse",
-  "groupe": "Trousses spécialisées",
-  "titre": "Trouble développemental du langage",
-  "sous": "10 outils",
-  "desc": "Dix outils pour soutenir la compréhension et l’expression au quotidien, en complément et en lien avec le suivi en orthophonie.",
-  "fichiers": [
-   "Trousses spécialisées/Trousse_Filodie_Trouble_du_langage_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "FJkLp",
-  "payhip_en": "FJkLp"
  },
  {
   "id": "trousse-troubles_du_comportement",
@@ -138,20 +110,6 @@
   "prix": 7.0,
   "payhip": "lnfUg",
   "payhip_en": "lnfUg"
- },
- {
-  "id": "trousse-dyspraxie_tdc",
-  "type": "trousse",
-  "groupe": "Trousses spécialisées",
-  "titre": "Dyspraxie – TDC",
-  "sous": "10 outils",
-  "desc": "Dix outils pour observer la motricité, mesurer le coût de l’écrit, adapter, organiser et soutenir l’autonomie, en lien avec le suivi en ergothérapie.",
-  "fichiers": [
-   "Trousses spécialisées/Trousse_Filodie_Dyspraxie_TDC_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "6X4l8",
-  "payhip_en": "6X4l8"
  },
  {
   "id": "trousse-deficience_intellectuelle",
@@ -196,20 +154,6 @@
   "payhip_en": "9Kz8V"
  },
  {
-  "id": "trousse-violence_sexuelle",
-  "type": "trousse",
-  "groupe": "Trousses spécialisées",
-  "titre": "Violence sexuelle",
-  "sous": "10 outils",
-  "desc": "Dix outils pour repérer, recevoir un dévoilement, signaler, protéger, prévenir et soutenir, avec une approche sensible au trauma et des fiches accessibles pour les personnes ayant une DI ou un TSA.",
-  "fichiers": [
-   "Trousses spécialisées/Trousse_Filodie_Violence_sexuelle_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "MToIR",
-  "payhip_en": "MToIR"
- },
- {
   "id": "trousse-fondements_theoriques",
   "type": "trousse",
   "groupe": "Trousses spécialisées",
@@ -238,20 +182,6 @@
   "payhip_en": "cYsuK"
  },
  {
-  "id": "trousse-cadre_legal",
-  "type": "trousse",
-  "groupe": "Trousses spécialisées",
-  "titre": "Cadre légal en intervention",
-  "sous": "10 outils",
-  "desc": "Dix outils pour intervenir dans le respect du droit québécois : les grandes lois, le consentement, l’aptitude, les mesures de protection depuis 2022, la confidentialité et ses exceptions, le signalement à la DPJ, la Loi P-38, la maltraitance, la tenue de dossier et les droits des usagers.",
-  "fichiers": [
-   "Trousses spécialisées/Trousse_Filodie_Cadre_legal_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "niBax",
-  "payhip_en": "niBax"
- },
- {
   "id": "trousse-entretien_motivationnel",
   "type": "trousse",
   "groupe": "Trousses spécialisées",
@@ -264,20 +194,6 @@
   "prix": 7.0,
   "payhip": "KW7Mp",
   "payhip_en": "KW7Mp"
- },
- {
-  "id": "trousse-sante_mentale",
-  "type": "trousse",
-  "groupe": "Trousses spécialisées",
-  "titre": "Santé mentale : troubles courants chez l’adulte",
-  "sous": "10 outils",
-  "desc": "Dix outils pour accompagner un adulte qui vit un trouble de santé mentale : repérer les signes d’alerte et d’urgence, mieux comprendre la dépression, l’anxiété, le trouble bipolaire, la psychose et le trouble de la personnalité limite, bâtir un plan de rétablissement et orienter vers les bons services.",
-  "fichiers": [
-   "Trousses spécialisées/Trousse_Filodie_Sante_mentale_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "cH78q",
-  "payhip_en": "cH78q"
  },
  {
   "id": "trousse-attachement",
@@ -418,20 +334,6 @@
   "prix": 7.0,
   "payhip": "qM2Ty",
   "payhip_en": "qM2Ty"
- },
- {
-  "id": "trousse-perinatalite",
-  "type": "trousse",
-  "groupe": "Trousses spécialisées",
-  "titre": "Santé mentale périnatale : prendre soin des parents",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les parents, leurs proches et les personnes intervenantes, de la grossesse à la première année : dépression, anxiété, pensées qui font peur, psychose post-partum, soutien des premières semaines, partenaire, lien avec bébé, infertilité, deuil périnatal et plan de crise.",
-  "fichiers": [
-   "Trousses spécialisées/Trousse_Filodie_Perinatalite_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "rVphD",
-  "payhip_en": "rVphD"
  },
  {
   "id": "trousse-techniques_impact",
@@ -861,20 +763,6 @@
   "payhip_en": "5M8Wh"
  },
  {
-  "id": "trousse-refus_traitement",
-  "type": "trousse",
-  "groupe": "Outils d’intervention",
-  "titre": "Quand la personne refuse un traitement",
-  "sous": "4 outils",
-  "desc": "Quatre fiches pour accompagner une personne qui refuse une médication, des soins ou un service : comprendre ce que le refus exprime, en parler avec elle, situer son rôle dans le cadre légal québécois et documenter le suivi.",
-  "prix": 3.0,
-  "fichiers": [
-   "Outils d’intervention Filodie/Trousse_Filodie_Refus_traitement_2026.pdf"
-  ],
-  "payhip": "AcKJX",
-  "payhip_en": "AcKJX"
- },
- {
   "id": "trousse-analyser_groupe",
   "type": "trousse",
   "groupe": "Études et stages en T.E.S.",
@@ -1197,34 +1085,6 @@
   "payhip_en": "iCuKo"
  },
  {
-  "id": "trousse-soutien_langagier_primaire",
-  "type": "trousse",
-  "groupe": "Habiletés et comportement",
-  "titre": "Soutien langagier au primaire",
-  "sous": "10 outils",
-  "desc": "Dix outils pour soutenir la compréhension des consignes, le vocabulaire, les questions, la phrase, le récit et la conscience phonologique en classe.",
-  "fichiers": [
-   "Collection Filodie/1 – Habiletés et comportement/Trousse_Filodie_Soutien_langagier_primaire_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "Vg75w",
-  "payhip_en": "Vg75w"
- },
- {
-  "id": "trousse-soutien_langagier_secondaire",
-  "type": "trousse",
-  "groupe": "Habiletés et comportement",
-  "titre": "Soutien langagier au secondaire",
-  "sous": "10 outils",
-  "desc": "Dix outils pour le vocabulaire disciplinaire, les consignes d’examen, la lecture de textes informatifs, l’exposé oral et le langage implicite.",
-  "fichiers": [
-   "Collection Filodie/1 – Habiletés et comportement/Trousse_Filodie_Soutien_langagier_secondaire_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "6mRlp",
-  "payhip_en": "6mRlp"
- },
- {
   "id": "trousse-dims",
   "type": "trousse",
   "groupe": "Habiletés et comportement",
@@ -1265,118 +1125,6 @@
   "prix": 7.0,
   "payhip": "Tc6yE",
   "payhip_en": "Tc6yE"
- },
- {
-  "id": "trousse-violence_conjugale_victimes",
-  "type": "trousse",
-  "groupe": "Traverser l’épreuve",
-  "titre": "Violence conjugale : reprendre le pouvoir",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les personnes qui vivent de la violence conjugale et pour celles qui les accompagnent : reconnaître le contrôle, repérer le danger, plan de sécurité, sécurité numérique, préparer un départ, démarches juridiques, après la séparation, estime de soi, enfants et soutien d’une personne proche.",
-  "fichiers": [
-   "Collection Filodie/12 – Traverser l’épreuve/Trousse_Filodie_Violence_conjugale_victimes_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "miUr0",
-  "payhip_en": "miUr0"
- },
- {
-  "id": "trousse-agression_sexuelle_victimes",
-  "type": "trousse",
-  "groupe": "Traverser l’épreuve",
-  "titre": "Agression sexuelle : se reconstruire",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les personnes qui ont vécu une agression sexuelle, récente ou ancienne : mes options après une agression, ce n’est pas ma faute, réactions normales, ancrage, sommeil, confiance, en parler à une personne proche, porter plainte ou non, retour à l’école ou au travail et mon réseau.",
-  "fichiers": [
-   "Collection Filodie/12 – Traverser l’épreuve/Trousse_Filodie_Agression_sexuelle_victimes_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "FS8b6",
-  "payhip_en": "FS8b6"
- },
- {
-  "id": "trousse-grossesse_adolescence",
-  "type": "trousse",
-  "groupe": "Traverser l’épreuve",
-  "titre": "Grossesse à l’adolescence : mes options",
-  "sous": "10 outils",
-  "desc": "Dix outils neutres et bienveillants pour une adolescente enceinte (et son ou sa partenaire) qui se demande quoi faire : premières étapes, mes droits, les trois options, mes valeurs, en parler, préparer une rencontre, prendre soin de moi, contraception et soutien de la personne intervenante.",
-  "fichiers": [
-   "Collection Filodie/12 – Traverser l’épreuve/Trousse_Filodie_Grossesse_adolescence_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "Uk8Wu",
-  "payhip_en": "Uk8Wu"
- },
- {
-  "id": "trousse-jeu_excessif",
-  "type": "trousse",
-  "groupe": "Traverser l’épreuve",
-  "titre": "Jeu excessif : reprendre le contrôle",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les personnes qui jouent trop (loterie, casino, paris sportifs, jeux en ligne, coffres à butin) et leurs proches : faire le point, calendrier de jeu, argent, pensées pièges, déclencheurs, autoexclusion, protéger mes finances, plan contre l’envie, jeunes et jeux vidéo, aider une personne proche.",
-  "fichiers": [
-   "Collection Filodie/12 – Traverser l’épreuve/Trousse_Filodie_Jeu_excessif_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "nwY9P",
-  "payhip_en": "nwY9P"
- },
- {
-  "id": "trousse-alcool_faire_le_point",
-  "type": "trousse",
-  "groupe": "Traverser l’épreuve",
-  "titre": "Alcool : faire le point",
-  "sous": "10 outils",
-  "desc": "Dix outils pour réfléchir à sa consommation d’alcool et la changer : le verre standard, les repères canadiens, mon journal, mes raisons, mon objectif, les situations à risque, refuser un verre, le sevrage, les jeunes et la fête, et le soutien d’une personne proche.",
-  "fichiers": [
-   "Collection Filodie/12 – Traverser l’épreuve/Trousse_Filodie_Alcool_faire_le_point_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "jIOxK",
-  "payhip_en": "jIOxK"
- },
- {
-  "id": "trousse-drogues_reduire_les_mefaits",
-  "type": "trousse",
-  "groupe": "Traverser l’épreuve",
-  "titre": "Drogues : s’informer, réduire les méfaits",
-  "sous": "10 outils",
-  "desc": "Dix outils sur les drogues pour les jeunes, les adultes et les proches : mythes et réalités, cannabis à moindre risque, mélanges dangereux, opioïdes et naloxone, soirées plus sûres, santé mentale, conduite, mon rapport aux substances, demander de l’aide et parler à un ado.",
-  "fichiers": [
-   "Collection Filodie/12 – Traverser l’épreuve/Trousse_Filodie_Drogues_reduire_les_mefaits_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "134lZ",
-  "payhip_en": "134lZ"
- },
- {
-  "id": "trousse-troubles_neurocognitifs",
-  "type": "trousse",
-  "groupe": "Vieillir avec dignité",
-  "titre": "Troubles neurocognitifs : accompagner la personne",
-  "sous": "10 outils",
-  "desc": "Dix outils pour accompagner une personne vivant avec un trouble neurocognitif : distinguer délirium et démence, repérer le stade, miser sur les capacités préservées, comprendre le besoin derrière le comportement, adapter l’environnement, répondre aux questions répétitives, préserver l’identité et les soins de confort.",
-  "fichiers": [
-   "Collection Filodie/13 – Vieillir avec dignité/Trousse_Filodie_Troubles_neurocognitifs_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "vlPZS",
-  "payhip_en": "vlPZS"
- },
- {
-  "id": "trousse-maltraitance_aines",
-  "type": "trousse",
-  "groupe": "Vieillir avec dignité",
-  "titre": "Maltraitance envers les personnes aînées",
-  "sous": "10 outils",
-  "desc": "Dix outils pour prévenir, repérer et contrer la maltraitance : les sept types et les deux formes, indices à observer, facteurs de risque, maltraitance financière, âgisme, maltraitance organisationnelle, parler avec la personne, signaler selon la Loi L-6.3, documenter et promouvoir la bientraitance.",
-  "fichiers": [
-   "Collection Filodie/13 – Vieillir avec dignité/Trousse_Filodie_Maltraitance_aines_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "jz8O2",
-  "payhip_en": "jz8O2"
  },
  {
   "id": "trousse-proches_aidants",
@@ -1421,132 +1169,6 @@
   "payhip_en": "283La"
  },
  {
-  "id": "trousse-cerveau_developpement",
-  "type": "trousse",
-  "groupe": "Le cerveau expliqué",
-  "titre": "Le cerveau, de la naissance à la vieillesse",
-  "sous": "10 outils",
-  "desc": "Dix outils pour expliquer simplement le cerveau : grandes zones, neurones et plasticité, développement de la petite enfance à la vieillesse, signaux d’alerte, stress, habitudes protectrices et mythes à déconstruire.",
-  "fichiers": [
-   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_developpement_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "EBirS",
-  "payhip_en": "EBirS"
- },
- {
-  "id": "trousse-cerveau_tsa",
-  "type": "trousse",
-  "groupe": "Le cerveau expliqué",
-  "titre": "Le cerveau et l’autisme",
-  "sous": "10 outils",
-  "desc": "Dix outils pour comprendre l’autisme par le cerveau : développement, sens, perception, fonctions exécutives, communication sociale, surcharge, camouflage, parcours de vie et explications à donner.",
-  "fichiers": [
-   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_TSA_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "eJGm9",
-  "payhip_en": "eJGm9"
- },
- {
-  "id": "trousse-cerveau_tdah",
-  "type": "trousse",
-  "groupe": "Le cerveau expliqué",
-  "titre": "Le cerveau et le TDAH",
-  "sous": "10 outils",
-  "desc": "Dix outils pour comprendre le TDAH par le cerveau : maturation, motivation, inhibition, mémoire de travail, gestion du temps, émotions, médication et explications à donner.",
-  "fichiers": [
-   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_TDAH_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "k0UwN",
-  "payhip_en": "k0UwN"
- },
- {
-  "id": "trousse-cerveau_di",
-  "type": "trousse",
-  "groupe": "Le cerveau expliqué",
-  "titre": "Le cerveau et la déficience intellectuelle",
-  "sous": "10 outils",
-  "desc": "Dix outils pour comprendre la déficience intellectuelle par le cerveau : causes, définition, mémoire, langage, raisonnement, régulation, syndromes fréquents, apprentissage et explications à donner.",
-  "fichiers": [
-   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_DI_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "SdRWw",
-  "payhip_en": "SdRWw"
- },
- {
-  "id": "trousse-cerveau_tdl",
-  "type": "trousse",
-  "groupe": "Le cerveau expliqué",
-  "titre": "Le cerveau et le trouble développemental du langage",
-  "sous": "10 outils",
-  "desc": "Dix outils pour comprendre le trouble développemental du langage par le cerveau : voies du langage, définition, règles de la langue, mémoire verbale, école, lecture, relations, parcours et explications à donner.",
-  "fichiers": [
-   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_TDL_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "FD8cz",
-  "payhip_en": "FD8cz"
- },
- {
-  "id": "trousse-cerveau_trauma",
-  "type": "trousse",
-  "groupe": "Le cerveau expliqué",
-  "titre": "Le cerveau et le trauma",
-  "sous": "10 outils",
-  "desc": "Dix outils pour comprendre le trauma par le cerveau : alarme, survie, déclencheurs, fenêtre de tolérance, mémoire, relations, corégulation, approche sensible, résilience et explications à donner.",
-  "fichiers": [
-   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_trauma_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "u7HVl",
-  "payhip_en": "u7HVl"
- },
- {
-  "id": "trousse-cerveau_anxiete",
-  "type": "trousse",
-  "groupe": "Le cerveau expliqué",
-  "titre": "Le cerveau et l’anxiété",
-  "sous": "10 outils",
-  "desc": "Dix outils pour comprendre l’anxiété par le cerveau : alarme, corps, pensées, évitement, apprentissage de la sécurité, rôle de l’entourage, calme, âges et explications à donner.",
-  "fichiers": [
-   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_anxiete_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "MP9Ve",
-  "payhip_en": "MP9Ve"
- },
- {
-  "id": "trousse-cerveau_tnc",
-  "type": "trousse",
-  "groupe": "Le cerveau expliqué",
-  "titre": "Le cerveau et les troubles neurocognitifs",
-  "sous": "10 outils",
-  "desc": "Dix outils pour comprendre les troubles neurocognitifs par le cerveau : types, mémoires, délirium, espace, langage, comportements, émotions, prévention et explications à donner aux proches.",
-  "fichiers": [
-   "Collection Filodie/14 – Le cerveau expliqué/Trousse_Filodie_Cerveau_TNC_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "dvqKF",
-  "payhip_en": "dvqKF"
- },
- {
-  "id": "trousse-fin_de_vie",
-  "type": "trousse",
-  "groupe": "Accompagner le grand âge",
-  "titre": "Accompagner la fin de vie",
-  "sous": "10 outils",
-  "desc": "Dix outils pour accompagner une personne en fin de vie : les mots justes, ce qui compte pour elle, parler de la mort, les choix faits à l’avance, les derniers jours, le confort, la dignité, la famille et l’après.",
-  "fichiers": [
-   "Collection Filodie/15 – Accompagner le grand âge/Trousse_Filodie_Fin_de_vie_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "r7VWf",
-  "payhip_en": "r7VWf"
- },
- {
   "id": "trousse-deuil_aines",
   "type": "trousse",
   "groupe": "Accompagner le grand âge",
@@ -1573,146 +1195,6 @@
   "prix": 7.0,
   "payhip": "4fvmi",
   "payhip_en": "4fvmi"
- },
- {
-  "id": "trousse-chutes_aines",
-  "type": "trousse",
-  "groupe": "Accompagner le grand âge",
-  "titre": "Prévenir les chutes et garder confiance",
-  "sous": "10 outils",
-  "desc": "Dix outils pour prévenir les chutes : facteurs de risque, tour du domicile, médicaments, vue et pieds, bouger pour l’équilibre, peur de tomber, que faire après une chute, se relever, liberté et sécurité en milieu d’hébergement.",
-  "fichiers": [
-   "Collection Filodie/15 – Accompagner le grand âge/Trousse_Filodie_Chutes_aines_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "fWhTO",
-  "payhip_en": "fWhTO"
- },
- {
-  "id": "trousse-intimite_aines",
-  "type": "trousse",
-  "groupe": "Accompagner le grand âge",
-  "titre": "Intimité et sexualité des personnes aînées",
-  "sous": "10 outils",
-  "desc": "Dix outils pour accueillir la vie intime des personnes aînées avec respect : préjugés, tendresse, santé, réactions de l’équipe, vie privée, consentement, couple et troubles neurocognitifs, gestes inappropriés, diversité et politique du milieu.",
-  "fichiers": [
-   "Collection Filodie/15 – Accompagner le grand âge/Trousse_Filodie_Intimite_aines_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "vfDqs",
-  "payhip_en": "vfDqs"
- },
- {
-  "id": "trousse-conduite_aines",
-  "type": "trousse",
-  "groupe": "Accompagner le grand âge",
-  "titre": "Conduire en vieillissant",
-  "sous": "10 outils",
-  "desc": "Dix outils pour aborder la conduite automobile : ce que le permis représente, règles de la SAAQ, signes à observer, santé, conversation, adaptations, autres transports, refus, deuil du permis et plan de mobilité.",
-  "fichiers": [
-   "Collection Filodie/15 – Accompagner le grand âge/Trousse_Filodie_Conduite_aines_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "FZo3W",
-  "payhip_en": "FZo3W"
- },
- {
-  "id": "trousse-stimulation_aines",
-  "type": "trousse",
-  "groupe": "Accompagner le grand âge",
-  "titre": "Stimuler la cognition avec plaisir",
-  "sous": "10 outils",
-  "desc": "Dix outils pour stimuler la cognition avec respect : mythes, ce qui protège, activités significatives, adapter selon le stade, activités sans échec, mémoire au quotidien, musique, mouvement, langage adulte et plan hebdomadaire.",
-  "fichiers": [
-   "Collection Filodie/15 – Accompagner le grand âge/Trousse_Filodie_Stimulation_aines_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "alEmC",
-  "payhip_en": "alEmC"
- },
- {
-  "id": "trousse-diagnostic_tsa",
-  "type": "trousse",
-  "groupe": "Après le diagnostic",
-  "titre": "Après le diagnostic de TSA",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les parents d’un enfant autiste qui vient de recevoir son diagnostic : comprendre le rapport, vivre le choc, annoncer à l’enfant et aux proches, parler à l’école, trouver les services et tracer le portrait de son enfant.",
-  "fichiers": [
-   "Collection Filodie/16 – Après le diagnostic/Trousse_Filodie_Diagnostic_TSA_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "Vo2zL",
-  "payhip_en": "Vo2zL"
- },
- {
-  "id": "trousse-diagnostic_tdah",
-  "type": "trousse",
-  "groupe": "Après le diagnostic",
-  "titre": "Après le diagnostic de TDAH",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les parents d’un enfant qui vient de recevoir un diagnostic de TDAH : comprendre le rapport, vivre le choc, annoncer à l’enfant et aux proches, parler à l’école, préparer la discussion sur le traitement et trier l’information.",
-  "fichiers": [
-   "Collection Filodie/16 – Après le diagnostic/Trousse_Filodie_Diagnostic_TDAH_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "CnMSv",
-  "payhip_en": "CnMSv"
- },
- {
-  "id": "trousse-diagnostic_di",
-  "type": "trousse",
-  "groupe": "Après le diagnostic",
-  "titre": "Après le diagnostic de déficience intellectuelle",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les parents d’un enfant qui vient de recevoir un diagnostic de déficience intellectuelle : comprendre le rapport, vivre le choc, annoncer à l’enfant et aux proches, parler à l’école, trouver les services et penser à l’avenir.",
-  "fichiers": [
-   "Collection Filodie/16 – Après le diagnostic/Trousse_Filodie_Diagnostic_DI_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "4IYfz",
-  "payhip_en": "4IYfz"
- },
- {
-  "id": "trousse-diagnostic_tdl",
-  "type": "trousse",
-  "groupe": "Après le diagnostic",
-  "titre": "Après le diagnostic de TDL",
-  "sous": "10 outils",
-  "desc": "Dix outils pour les parents d’un enfant qui vient de recevoir un diagnostic de trouble développemental du langage : comprendre le rapport, vivre le choc, annoncer à l’enfant et aux proches, parler à l’école, aider à la maison et trier l’information.",
-  "fichiers": [
-   "Collection Filodie/16 – Après le diagnostic/Trousse_Filodie_Diagnostic_TDL_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "acvti",
-  "payhip_en": "acvti"
- },
- {
-  "id": "trousse-protection_de_la_jeunesse",
-  "type": "trousse",
-  "groupe": "Clientèles et interventions",
-  "titre": "Protection de la jeunesse (DPJ)",
-  "sous": "10 outils",
-  "desc": "Dix outils pour signaler, observer les contacts parent-enfant, suivre l’enfant en milieu substitut, garder le fil de son histoire et collaborer avec l’équipe de la DPJ.",
-  "fichiers": [
-   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Protection_de_la_jeunesse_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "67ypx",
-  "payhip_en": "67ypx"
- },
- {
-  "id": "trousse-violence_conjugale",
-  "type": "trousse",
-  "groupe": "Clientèles et interventions",
-  "titre": "Violence conjugale",
-  "sous": "10 outils",
-  "desc": "Dix outils pour repérer la violence conjugale, soutenir la personne victime, bâtir un scénario de protection et accompagner les enfants exposés.",
-  "fichiers": [
-   "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Violence_conjugale_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "Rb1eO",
-  "payhip_en": "Rb1eO"
  },
  {
   "id": "trousse-observation_des_comportements",
@@ -1776,7 +1258,7 @@
   "groupe": "Clientèles et interventions",
   "titre": "Adultes autistes",
   "sous": "10 outils",
-  "desc": "Dix outils pour accompagner les adultes autistes : profil sensoriel adulte, énergie sociale, emploi, vie autonome, relations, santé et autodétermination.",
+  "desc": "Dix outils pour accompagner les adultes autistes : préférences sensorielles, énergie sociale, emploi, vie autonome, relations, santé et autodétermination.",
   "fichiers": [
    "Collection Filodie/2 – Clientèles et interventions/Trousse_Filodie_Adultes_autistes_2026.pdf"
   ],
@@ -1867,34 +1349,6 @@
   "prix": 7.0,
   "payhip": "Wqtep",
   "payhip_en": "Wqtep"
- },
- {
-  "id": "trousse-motricite_fine",
-  "type": "trousse",
-  "groupe": "Jeux et activités",
-  "titre": "Motricité fine",
-  "sous": "10 outils",
-  "desc": "Dix fiches pour exercer la motricité fine : tracés, découpage, pince, coloriage, pâte à modeler, laçage et suivi des progrès.",
-  "fichiers": [
-   "Collection Filodie/5 – Jeux et activités/Trousse_Filodie_Motricite_fine_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "zpQ1y",
-  "payhip_en": "zpQ1y"
- },
- {
-  "id": "trousse-parcours_moteur",
-  "type": "trousse",
-  "groupe": "Jeux et activités",
-  "titre": "Parcours moteur",
-  "sous": "10 outils",
-  "desc": "Dix fiches pour créer des parcours moteurs : cartes de stations, défis, pauses actives, planification et suivi des habiletés motrices globales.",
-  "fichiers": [
-   "Collection Filodie/5 – Jeux et activités/Trousse_Filodie_Parcours_moteur_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "a8WO9",
-  "payhip_en": "a8WO9"
  },
  {
   "id": "trousse-guide_accompagnement_tes",
@@ -2149,20 +1603,6 @@
   "payhip_en": "oEMY9"
  },
  {
-  "id": "trousse-sexualite_adaptee",
-  "type": "trousse",
-  "groupe": "Thèmes complémentaires",
-  "titre": "Sexualité et relations saines (DI et TSA)",
-  "sous": "10 outils",
-  "desc": "Dix outils visuels et concrets pour l’éducation à la sexualité adaptée : corps, intimité, puberté, consentement, relations, sécurité en ligne et limites.",
-  "fichiers": [
-   "Collection Filodie/8 – Thèmes complémentaires/Trousse_Filodie_Sexualite_adaptee_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "2gK1G",
-  "payhip_en": "2gK1G"
- },
- {
   "id": "trousse-ecrans_et_cyberdependance",
   "type": "trousse",
   "groupe": "Thèmes complémentaires",
@@ -2189,20 +1629,6 @@
   "prix": 7.0,
   "payhip": "DjUwn",
   "payhip_en": "DjUwn"
- },
- {
-  "id": "trousse-troubles_alimentaires",
-  "type": "trousse",
-  "groupe": "Thèmes complémentaires",
-  "titre": "Troubles alimentaires : repérer et soutenir",
-  "sous": "10 outils",
-  "desc": "Dix outils pour repérer les signes d’un trouble alimentaire, en parler avec respect, soutenir la ou le jeune et collaborer avec l’équipe de santé. La ou le T.E.S. repère et oriente, sans traiter.",
-  "fichiers": [
-   "Collection Filodie/8 – Thèmes complémentaires/Trousse_Filodie_Troubles_alimentaires_2026.pdf"
-  ],
-  "prix": 7.0,
-  "payhip": "TDqAv",
-  "payhip_en": "TDqAv"
  },
  {
   "id": "trousse-nouveaux_arrivants",
@@ -2686,13 +2112,13 @@
   "id": "cahier-vtsa-23",
   "type": "cahier",
   "groupe": "Cahiers TSA",
-  "titre": "Mon profil sensoriel",
+  "titre": "Mes préférences sensorielles",
   "sous": "6-14 ans",
   "desc": "Découvrir ce que mes sens aiment et n’aiment pas.",
   "code": "VTSA-23",
   "fichiers": [
-   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-23_Mon_profil_sensoriel.pdf",
-   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-23_Mon_profil_sensoriel_NB.pdf"
+   "Cahiers visuels Filodie/1 – TSA/Couleur/Filodie_VTSA-23_Mes_préférences_sensorielles.pdf",
+   "Cahiers visuels Filodie/1 – TSA/À colorier (noir et blanc)/Filodie_VTSA-23_Mes_préférences_sensorielles_NB.pdf"
   ],
   "prix": 3.0,
   "payhip": "PXvpD",
@@ -6331,7 +5757,7 @@
   "type": "lot_collection",
   "groupe": "Lots",
   "titre": "Collection Filodie : Habiletés et comportement",
-  "sous": "10 trousses",
+  "sous": "8 trousses",
   "desc": "Toutes les trousses du volet « Habiletés et comportement ».",
   "fichiers": [],
   "contient": [
@@ -6340,151 +5766,48 @@
    "trousse-emotions_et_empathie",
    "trousse-impulsivite",
    "trousse-routines_et_organisation_scolaire",
-   "trousse-soutien_langagier_primaire",
-   "trousse-soutien_langagier_secondaire",
    "trousse-dims",
    "trousse-hpi",
    "trousse-syndrome_gilles_de_la_tourette"
   ],
   "titre_en": "Filodie Collection: Skills and behaviour",
-  "sous_en": "10 toolkits",
+  "sous_en": "8 toolkits",
   "desc_en": "All the toolkits in the “Skills and behaviour” section.",
   "prix": 25.0,
   "payhip": "Bl7Rk",
   "payhip_en": "Bl7Rk",
-  "valeur": 70.0
- },
- {
-  "id": "lot-12-traverser-l-épreuve",
-  "type": "lot_collection",
-  "groupe": "Lots",
-  "titre": "Collection Filodie : Traverser l’épreuve",
-  "sous": "6 trousses",
-  "desc": "Toutes les trousses du volet « Traverser l’épreuve ».",
-  "fichiers": [],
-  "contient": [
-   "trousse-violence_conjugale_victimes",
-   "trousse-agression_sexuelle_victimes",
-   "trousse-grossesse_adolescence",
-   "trousse-jeu_excessif",
-   "trousse-alcool_faire_le_point",
-   "trousse-drogues_reduire_les_mefaits"
-  ],
-  "titre_en": "Filodie Collection: Getting Through Hard Times",
-  "sous_en": "6 toolkits",
-  "desc_en": "All the toolkits in the “Getting Through Hard Times” section.",
-  "prix": 25.0,
-  "payhip": "mngp4",
-  "payhip_en": "mngp4",
-  "valeur": 42.0
+  "valeur": 56.0
  },
  {
   "id": "lot-13-vieillir-avec-dignité",
   "type": "lot_collection",
   "groupe": "Lots",
   "titre": "Collection Filodie : Vieillir avec dignité",
-  "sous": "5 trousses",
+  "sous": "3 trousses",
   "desc": "Toutes les trousses du volet « Vieillir avec dignité ».",
   "fichiers": [],
   "contient": [
-   "trousse-troubles_neurocognitifs",
-   "trousse-maltraitance_aines",
    "trousse-proches_aidants",
    "trousse-reminiscence",
    "trousse-hebergement_aines"
   ],
   "titre_en": "Filodie Collection: Ageing with Dignity",
-  "sous_en": "5 toolkits",
+  "sous_en": "3 toolkits",
   "desc_en": "All the toolkits in the “Ageing with Dignity” section.",
-  "prix": 24.0,
+  "prix": 15.0,
   "payhip": "3Wy5C",
   "payhip_en": "3Wy5C",
-  "valeur": 35.0
- },
- {
-  "id": "lot-14-le-cerveau-expliqué",
-  "type": "lot_collection",
-  "groupe": "Lots",
-  "titre": "Collection Filodie : Le cerveau expliqué",
-  "sous": "8 trousses",
-  "desc": "Toutes les trousses du volet « Le cerveau expliqué ».",
-  "fichiers": [],
-  "contient": [
-   "trousse-cerveau_developpement",
-   "trousse-cerveau_tsa",
-   "trousse-cerveau_tdah",
-   "trousse-cerveau_di",
-   "trousse-cerveau_tdl",
-   "trousse-cerveau_trauma",
-   "trousse-cerveau_anxiete",
-   "trousse-cerveau_tnc"
-  ],
-  "titre_en": "Filodie Collection: The Brain Explained",
-  "sous_en": "8 toolkits",
-  "desc_en": "All the toolkits in the “The Brain Explained” section.",
-  "prix": 30.0,
-  "payhip": "Rtnez",
-  "payhip_en": "Rtnez",
-  "valeur": 56.0
- },
- {
-  "id": "lot-15-accompagner-le-grand-âge",
-  "type": "lot_collection",
-  "groupe": "Lots",
-  "titre": "Collection Filodie : Accompagner le grand âge",
-  "sous": "7 trousses",
-  "desc": "Toutes les trousses du volet « Accompagner le grand âge ».",
-  "fichiers": [],
-  "contient": [
-   "trousse-fin_de_vie",
-   "trousse-deuil_aines",
-   "trousse-isolement_aines",
-   "trousse-chutes_aines",
-   "trousse-intimite_aines",
-   "trousse-conduite_aines",
-   "trousse-stimulation_aines"
-  ],
-  "titre_en": "Filodie Collection: Supporting Later Life",
-  "sous_en": "7 toolkits",
-  "desc_en": "All the toolkits in the “Supporting Later Life” section.",
-  "prix": 25.0,
-  "payhip": "f5Msg",
-  "payhip_en": "f5Msg",
-  "valeur": 49.0
- },
- {
-  "id": "lot-16-après-le-diagnostic",
-  "type": "lot_collection",
-  "groupe": "Lots",
-  "titre": "Collection Filodie : Après le diagnostic",
-  "sous": "4 trousses",
-  "desc": "Toutes les trousses du volet « Après le diagnostic ».",
-  "fichiers": [],
-  "contient": [
-   "trousse-diagnostic_tsa",
-   "trousse-diagnostic_tdah",
-   "trousse-diagnostic_di",
-   "trousse-diagnostic_tdl"
-  ],
-  "titre_en": "Filodie Collection: After the Diagnosis",
-  "sous_en": "4 toolkits",
-  "desc_en": "All the toolkits in the “After the Diagnosis” section.",
-  "prix": 20.0,
-  "payhip": "Dp3go",
-  "payhip_en": "Dp3go",
-  "valeur": 28.0
+  "valeur": 21.0
  },
  {
   "id": "lot-2-clientèles-et-interventions",
   "type": "lot_collection",
   "groupe": "Lots",
   "titre": "Collection Filodie : Clientèles et interventions",
-  "sous": "7 trousses",
+  "sous": "5 trousses",
   "desc": "Toutes les trousses du volet « Clientèles et interventions ».",
   "fichiers": [],
   "contient": [
-   "trousse-protection_de_la_jeunesse",
-   "trousse-violence_conjugale",
    "trousse-observation_des_comportements",
    "trousse-renforcement_r05",
    "trousse-renforcement_r610",
@@ -6492,27 +5815,25 @@
    "trousse-adultes_autistes"
   ],
   "titre_en": "Filodie Collection: Client groups and interventions",
-  "sous_en": "7 toolkits",
+  "sous_en": "5 toolkits",
   "desc_en": "All the toolkits in the “Client groups and interventions” section.",
   "prix": 25.0,
   "payhip": "uKpav",
   "payhip_en": "uKpav",
-  "valeur": 49.0
+  "valeur": 35.0
  },
  {
   "id": "lot-5-jeux-et-activités",
   "type": "lot_collection",
   "groupe": "Lots",
   "titre": "Collection Filodie : Jeux et activités",
-  "sous": "10 trousses",
+  "sous": "8 trousses",
   "desc": "Toutes les trousses du volet « Jeux et activités ».",
   "fichiers": [],
   "contient": [
    "trousse-ateliers_emotions",
    "trousse-jeux_a_imprimer",
    "trousse-pictogrammes",
-   "trousse-motricite_fine",
-   "trousse-parcours_moteur",
    "trousse-guide_accompagnement_tes",
    "trousse-histoires_sociales",
    "trousse-cahier_a_colorier",
@@ -6520,12 +5841,12 @@
    "trousse-trousse_decouverte"
   ],
   "titre_en": "Filodie Collection: Games and activities",
-  "sous_en": "10 toolkits",
+  "sous_en": "8 toolkits",
   "desc_en": "All the toolkits in the “Games and activities” section.",
   "prix": 25.0,
   "payhip": "DCGLI",
   "payhip_en": "DCGLI",
-  "valeur": 63.0
+  "valeur": 49.0
  },
  {
   "id": "lot-6-cahiers-thématiques",
@@ -6560,49 +5881,46 @@
   "type": "lot_collection",
   "groupe": "Lots",
   "titre": "Collection Filodie : Thèmes complémentaires",
-  "sous": "9 trousses",
+  "sous": "7 trousses",
   "desc": "Toutes les trousses du volet « Thèmes complémentaires ».",
   "fichiers": [],
   "contient": [
    "trousse-deuil_et_separation",
    "trousse-estime_de_soi",
    "trousse-approche_sensible_au_trauma",
-   "trousse-sexualite_adaptee",
    "trousse-ecrans_et_cyberdependance",
    "trousse-sommeil",
-   "trousse-troubles_alimentaires",
    "trousse-nouveaux_arrivants",
    "trousse-autosoins_intervenants"
   ],
   "titre_en": "Filodie Collection: Complementary themes",
-  "sous_en": "9 toolkits",
+  "sous_en": "7 toolkits",
   "desc_en": "All the toolkits in the “Complementary themes” section.",
   "prix": 25.0,
   "payhip": "gvUnA",
   "payhip_en": "gvUnA",
-  "valeur": 63.0
+  "valeur": 49.0
  },
  {
   "id": "lot-sante-mentale-dependances",
   "type": "lot_collection",
   "groupe": "Lots",
   "titre": "Collection Filodie : Santé mentale et dépendances",
-  "sous": "4 trousses",
-  "desc": "Quatre trousses pour accompagner les adultes qui vivent un trouble de santé mentale ou une dépendance : comprendre les troubles, soutenir le changement, réduire les méfaits et lutter contre la stigmatisation.",
+  "sous": "3 trousses",
+  "desc": "Trois trousses pour accompagner les adultes qui vivent une dépendance : soutenir le changement, réduire les méfaits et lutter contre la stigmatisation.",
   "fichiers": [],
   "contient": [
-   "trousse-sante_mentale",
    "trousse-entretien_motivationnel",
    "trousse-reduction_mefaits",
    "trousse-dependances"
   ],
   "titre_en": "Filodie Collection: Mental Health and Addiction",
-  "sous_en": "4 toolkits",
-  "desc_en": "Four toolkits to support adults living with a mental health disorder or an addiction: understand the disorders, support change, reduce harm and fight stigma.",
-  "prix": 20.0,
+  "sous_en": "3 toolkits",
+  "desc_en": "Three toolkits to support adults living with an addiction: support change, reduce harm and fight stigma.",
+  "prix": 15.0,
   "payhip": "37Vqx",
   "payhip_en": "37Vqx",
-  "valeur": 28.0
+  "valeur": 21.0
  },
  {
   "id": "lot-parents",
@@ -6791,8 +6109,8 @@
   "id": "lot-specialisees",
   "type": "lot_specialisees",
   "groupe": "Lots",
-  "titre": "Les 15 trousses spécialisées",
-  "titre_en": "The 15 specialized toolkits",
+  "titre": "Les 11 trousses spécialisées",
+  "titre_en": "The 11 specialized toolkits",
   "sous": "Âges et troubles",
   "desc": "Petite enfance, secondaire, adultes, aînés, TSA, TDAH, DI, langage, comportement, crise, dépendances et plus.",
   "fichiers": [],
@@ -6802,21 +6120,17 @@
    "trousse-adultes",
    "trousse-aines",
    "trousse-tdah",
-   "trousse-troubles_apprentissage",
    "trousse-tsa",
-   "trousse-trouble_du_langage",
    "trousse-troubles_du_comportement",
-   "trousse-dyspraxie_tdc",
    "trousse-deficience_intellectuelle",
    "trousse-gestion_de_crise",
    "trousse-dependances",
-   "trousse-violence_sexuelle",
    "trousse-fondements_theoriques"
   ],
   "prix": 39.0,
   "payhip": "6aPmo",
   "payhip_en": "6aPmo",
-  "valeur": 105.0
+  "valeur": 77.0
  },
  {
   "id": "lot-etudes-tes",
@@ -7052,11 +6366,11 @@
   "type": "lot_tout",
   "groupe": "Lots",
   "titre": "Toutes les trousses : édition novembre 2026",
-  "sous": "Édition novembre 2026 · 152 trousses et 5 éditions",
+  "sous": "Édition novembre 2026 · 111 trousses et 5 éditions",
   "prix": 75.0,
-  "sous_en": "November 2026 edition · 152 toolkits and 5 editions",
-  "desc": "La trousse principale, les 34 trousses spécialisées, les 81 trousses de la Collection, les 36 outils d’intervention, d’études et de stage, et les 5 éditions. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
-  "desc_en": "The main toolkit, the 34 specialized toolkits, the 81 Collection toolkits, the 36 intervention, study and internship tools, and the 5 editions. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
+  "sous_en": "November 2026 edition · 111 toolkits and 5 editions",
+  "desc": "La trousse principale, les 30 trousses spécialisées, les 48 trousses de la Collection, les 32 outils d’intervention, d’études et de stage, et les 5 éditions. Édition de novembre 2026 : les trousses créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément.",
+  "desc_en": "The main toolkit, the 30 specialized toolkits, the 48 Collection toolkits, the 32 intervention, study and internship tools, and the 5 editions. November 2026 edition: toolkits created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7065,20 +6379,14 @@
    "trousse-adultes",
    "trousse-aines",
    "trousse-tdah",
-   "trousse-troubles_apprentissage",
    "trousse-tsa",
-   "trousse-trouble_du_langage",
    "trousse-troubles_du_comportement",
-   "trousse-dyspraxie_tdc",
    "trousse-deficience_intellectuelle",
    "trousse-gestion_de_crise",
    "trousse-dependances",
-   "trousse-violence_sexuelle",
    "trousse-fondements_theoriques",
    "trousse-deficience_physique",
-   "trousse-cadre_legal",
    "trousse-entretien_motivationnel",
-   "trousse-sante_mentale",
    "trousse-attachement",
    "trousse-reduction_mefaits",
    "trousse-adolescence",
@@ -7089,7 +6397,6 @@
    "trousse-soutenir_deuil",
    "trousse-fratrie",
    "trousse-devenir_adulte",
-   "trousse-perinatalite",
    "trousse-techniques_impact",
    "trousse-temps_des_fetes",
    "pictos-emotions",
@@ -7112,7 +6419,6 @@
    "trousse-conflit",
    "trousse-demander_aide",
    "trousse-budget",
-   "trousse-refus_traitement",
    "trousse-analyser_groupe",
    "trousse-modele_pph",
    "trousse-note_evolutive",
@@ -7135,43 +6441,14 @@
    "trousse-emotions_et_empathie",
    "trousse-impulsivite",
    "trousse-routines_et_organisation_scolaire",
-   "trousse-soutien_langagier_primaire",
-   "trousse-soutien_langagier_secondaire",
    "trousse-dims",
    "trousse-hpi",
    "trousse-syndrome_gilles_de_la_tourette",
-   "trousse-violence_conjugale_victimes",
-   "trousse-agression_sexuelle_victimes",
-   "trousse-grossesse_adolescence",
-   "trousse-jeu_excessif",
-   "trousse-alcool_faire_le_point",
-   "trousse-drogues_reduire_les_mefaits",
-   "trousse-troubles_neurocognitifs",
-   "trousse-maltraitance_aines",
    "trousse-proches_aidants",
    "trousse-reminiscence",
    "trousse-hebergement_aines",
-   "trousse-cerveau_developpement",
-   "trousse-cerveau_tsa",
-   "trousse-cerveau_tdah",
-   "trousse-cerveau_di",
-   "trousse-cerveau_tdl",
-   "trousse-cerveau_trauma",
-   "trousse-cerveau_anxiete",
-   "trousse-cerveau_tnc",
-   "trousse-fin_de_vie",
    "trousse-deuil_aines",
    "trousse-isolement_aines",
-   "trousse-chutes_aines",
-   "trousse-intimite_aines",
-   "trousse-conduite_aines",
-   "trousse-stimulation_aines",
-   "trousse-diagnostic_tsa",
-   "trousse-diagnostic_tdah",
-   "trousse-diagnostic_di",
-   "trousse-diagnostic_tdl",
-   "trousse-protection_de_la_jeunesse",
-   "trousse-violence_conjugale",
    "trousse-observation_des_comportements",
    "trousse-renforcement_r05",
    "trousse-renforcement_r610",
@@ -7183,8 +6460,6 @@
    "trousse-ateliers_emotions",
    "trousse-jeux_a_imprimer",
    "trousse-pictogrammes",
-   "trousse-motricite_fine",
-   "trousse-parcours_moteur",
    "trousse-guide_accompagnement_tes",
    "trousse-histoires_sociales",
    "trousse-cahier_a_colorier",
@@ -7203,10 +6478,8 @@
    "trousse-deuil_et_separation",
    "trousse-estime_de_soi",
    "trousse-approche_sensible_au_trauma",
-   "trousse-sexualite_adaptee",
    "trousse-ecrans_et_cyberdependance",
    "trousse-sommeil",
-   "trousse-troubles_alimentaires",
    "trousse-nouveaux_arrivants",
    "trousse-autosoins_intervenants",
    "trousse-readaptation_foyer",
@@ -7220,7 +6493,7 @@
   "payhip": "cywQA",
   "payhip_en": "cywQA",
   "titre_en": "All the toolkits: November 2026 edition",
-  "valeur": 976.0
+  "valeur": 693.0
  },
  {
   "id": "lot-mega",
@@ -7228,8 +6501,8 @@
   "groupe": "Lots",
   "titre": "Tout Filodie : édition novembre 2026",
   "sous": "Édition novembre 2026",
-  "desc": "Tout le catalogue payant de Filodie : les 152 trousses, les 5 éditions, les 178 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
-  "desc_en": "Filodie’s entire paid catalogue: all 152 toolkits, the 5 editions, the 178 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the SCC Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
+  "desc": "Tout le catalogue payant de Filodie : les 111 trousses, les 5 éditions, les 178 cahiers visuels, les affiches murales, les jeux, les routines visuelles, les cahiers de détective, le Grand livre et le bottin régional. Édition de novembre 2026 : les nouveautés créées d’ici la fin du mois s’ajoutent à votre téléchargement ; celles créées à partir du 1er décembre 2026 sont vendues séparément. Les outils gratuits restent offerts à tout le monde.",
+  "desc_en": "Filodie’s entire paid catalogue: all 111 toolkits, the 5 editions, the 178 visual workbooks, the wall posters, the games, the visual routines, the detective notebooks, the SCC Handbook and the regional directory. November 2026 edition: new products created before the end of the month are added to your download; those created from December 1, 2026 on are sold separately. The free tools remain available to everyone.",
   "fichiers": [],
   "contient": [
    "trousse-principale",
@@ -7238,20 +6511,14 @@
    "trousse-adultes",
    "trousse-aines",
    "trousse-tdah",
-   "trousse-troubles_apprentissage",
    "trousse-tsa",
-   "trousse-trouble_du_langage",
    "trousse-troubles_du_comportement",
-   "trousse-dyspraxie_tdc",
    "trousse-deficience_intellectuelle",
    "trousse-gestion_de_crise",
    "trousse-dependances",
-   "trousse-violence_sexuelle",
    "trousse-fondements_theoriques",
    "trousse-deficience_physique",
-   "trousse-cadre_legal",
    "trousse-entretien_motivationnel",
-   "trousse-sante_mentale",
    "trousse-attachement",
    "trousse-reduction_mefaits",
    "trousse-adolescence",
@@ -7262,7 +6529,6 @@
    "trousse-soutenir_deuil",
    "trousse-fratrie",
    "trousse-devenir_adulte",
-   "trousse-perinatalite",
    "trousse-techniques_impact",
    "trousse-temps_des_fetes",
    "pictos-emotions",
@@ -7285,7 +6551,6 @@
    "trousse-conflit",
    "trousse-demander_aide",
    "trousse-budget",
-   "trousse-refus_traitement",
    "trousse-analyser_groupe",
    "trousse-modele_pph",
    "trousse-note_evolutive",
@@ -7308,43 +6573,14 @@
    "trousse-emotions_et_empathie",
    "trousse-impulsivite",
    "trousse-routines_et_organisation_scolaire",
-   "trousse-soutien_langagier_primaire",
-   "trousse-soutien_langagier_secondaire",
    "trousse-dims",
    "trousse-hpi",
    "trousse-syndrome_gilles_de_la_tourette",
-   "trousse-violence_conjugale_victimes",
-   "trousse-agression_sexuelle_victimes",
-   "trousse-grossesse_adolescence",
-   "trousse-jeu_excessif",
-   "trousse-alcool_faire_le_point",
-   "trousse-drogues_reduire_les_mefaits",
-   "trousse-troubles_neurocognitifs",
-   "trousse-maltraitance_aines",
    "trousse-proches_aidants",
    "trousse-reminiscence",
    "trousse-hebergement_aines",
-   "trousse-cerveau_developpement",
-   "trousse-cerveau_tsa",
-   "trousse-cerveau_tdah",
-   "trousse-cerveau_di",
-   "trousse-cerveau_tdl",
-   "trousse-cerveau_trauma",
-   "trousse-cerveau_anxiete",
-   "trousse-cerveau_tnc",
-   "trousse-fin_de_vie",
    "trousse-deuil_aines",
    "trousse-isolement_aines",
-   "trousse-chutes_aines",
-   "trousse-intimite_aines",
-   "trousse-conduite_aines",
-   "trousse-stimulation_aines",
-   "trousse-diagnostic_tsa",
-   "trousse-diagnostic_tdah",
-   "trousse-diagnostic_di",
-   "trousse-diagnostic_tdl",
-   "trousse-protection_de_la_jeunesse",
-   "trousse-violence_conjugale",
    "trousse-observation_des_comportements",
    "trousse-renforcement_r05",
    "trousse-renforcement_r610",
@@ -7356,8 +6592,6 @@
    "trousse-ateliers_emotions",
    "trousse-jeux_a_imprimer",
    "trousse-pictogrammes",
-   "trousse-motricite_fine",
-   "trousse-parcours_moteur",
    "trousse-guide_accompagnement_tes",
    "trousse-histoires_sociales",
    "trousse-cahier_a_colorier",
@@ -7376,10 +6610,8 @@
    "trousse-deuil_et_separation",
    "trousse-estime_de_soi",
    "trousse-approche_sensible_au_trauma",
-   "trousse-sexualite_adaptee",
    "trousse-ecrans_et_cyberdependance",
    "trousse-sommeil",
-   "trousse-troubles_alimentaires",
    "trousse-nouveaux_arrivants",
    "trousse-autosoins_intervenants",
    "trousse-readaptation_foyer",
@@ -7610,6 +6842,6 @@
   "payhip_en": "dZ02M",
   "sous_en": "November 2026 edition",
   "titre_en": "All of Filodie: November 2026 edition",
-  "valeur": 1751.0
+  "valeur": 1468.0
  }
 ]

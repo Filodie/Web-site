@@ -65,6 +65,53 @@ RETIRES = {
     # Lots dont il ne resterait presque rien
     "lot-9-équipe-école-et-réseau",
     "lot-3-professions",
+    # 21 nov. 2026 : retrait par prudence de tout ce qui pourrait dépasser le cadre de la T.E.S.
+    # (travail d'une autre profession, évaluation ou dépistage, médical, juridique, thérapie)
+    "trousse-troubles_apprentissage",          # Troubles d’apprentissage
+    "trousse-trouble_du_langage",              # Trouble développemental du langage
+    "trousse-dyspraxie_tdc",                   # Dyspraxie – TDC
+    "trousse-soutien_langagier_primaire",      # Soutien langagier au primaire
+    "trousse-soutien_langagier_secondaire",    # Soutien langagier au secondaire
+    "trousse-motricite_fine",                  # Motricité fine
+    "trousse-parcours_moteur",                 # Parcours moteur
+    "trousse-stimulation_aines",               # Stimuler la cognition avec plaisir
+    "trousse-chutes_aines",                    # Prévenir les chutes et garder confiance
+    "trousse-sante_mentale",                   # Santé mentale : troubles courants chez l’adulte
+    "trousse-perinatalite",                    # Santé mentale périnatale : prendre soin des parents
+    "trousse-troubles_alimentaires",           # Troubles alimentaires : repérer et soutenir
+    "trousse-troubles_neurocognitifs",         # Troubles neurocognitifs : accompagner la personne
+    "trousse-cerveau_developpement",           # Le cerveau, de la naissance à la vieillesse
+    "trousse-cerveau_tsa",                     # Le cerveau et l’autisme
+    "trousse-cerveau_tdah",                    # Le cerveau et le TDAH
+    "trousse-cerveau_di",                      # Le cerveau et la déficience intellectuelle
+    "trousse-cerveau_tdl",                     # Le cerveau et le trouble développemental du langage
+    "trousse-cerveau_trauma",                  # Le cerveau et le trauma
+    "trousse-cerveau_anxiete",                 # Le cerveau et l’anxiété
+    "trousse-cerveau_tnc",                     # Le cerveau et les troubles neurocognitifs
+    "lot-14-le-cerveau-expliqué",              # Collection Filodie : Le cerveau expliqué
+    "trousse-diagnostic_tsa",                  # Après le diagnostic de TSA
+    "trousse-diagnostic_tdah",                 # Après le diagnostic de TDAH
+    "trousse-diagnostic_di",                   # Après le diagnostic de déficience intellectuelle
+    "trousse-diagnostic_tdl",                  # Après le diagnostic de TDL
+    "lot-16-après-le-diagnostic",              # Collection Filodie : Après le diagnostic
+    "trousse-refus_traitement",                # Quand la personne refuse un traitement
+    "trousse-grossesse_adolescence",           # Grossesse à l’adolescence : mes options
+    "trousse-fin_de_vie",                      # Accompagner la fin de vie
+    "trousse-cadre_legal",                     # Cadre légal en intervention
+    "trousse-protection_de_la_jeunesse",       # Protection de la jeunesse (DPJ)
+    "trousse-maltraitance_aines",              # Maltraitance envers les personnes aînées
+    "trousse-conduite_aines",                  # Conduire en vieillissant
+    "trousse-alcool_faire_le_point",           # Alcool : faire le point
+    "trousse-jeu_excessif",                    # Jeu excessif : reprendre le contrôle
+    "trousse-drogues_reduire_les_mefaits",     # Drogues : s’informer, réduire les méfaits
+    "trousse-violence_conjugale",              # Violence conjugale
+    "trousse-violence_conjugale_victimes",     # Violence conjugale : reprendre le pouvoir
+    "trousse-agression_sexuelle_victimes",     # Agression sexuelle : se reconstruire
+    "trousse-violence_sexuelle",               # Violence sexuelle
+    "trousse-sexualite_adaptee",               # Sexualité et relations saines (DI et TSA)
+    "trousse-intimite_aines",                  # Intimité et sexualité des personnes aînées
+    "lot-12-traverser-l-épreuve",              # Collection Filodie : Traverser l’épreuve
+    "lot-15-accompagner-le-grand-âge",         # Collection Filodie : Accompagner le grand âge
 }
 
 

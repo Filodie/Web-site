@@ -162,7 +162,7 @@ def catalogue():
     add(id="trousse-principale", type="trousse", groupe="Trousses essentielles", titre="Trousse Filodie : Tenir le fil",
         sous="12 outils de l’observation à l’intervention",
         desc="Douze outils sobres, précis et reliés entre eux. Chaque fiche indique son étape du fil, renvoie à la suivante "
-             "et se termine par un repère clinique. Imprimables ou remplissables à l’écran.",
+             "et se termine par un repère d’intervention. Imprimables ou remplissables à l’écran.",
         fichiers=["Trousse_Filodie_Outils_TES_2026.pdf"])
     from contenu_dp import DP                             # trousses spécialisées ajoutées le 22 oct. 2026,
     from contenu_cadre_legal import CL                    # hors lot « Les 16 trousses spécialisées »
@@ -533,15 +533,15 @@ def catalogue():
             desc_en=f"All the toolkits in the “{tr(v).split('– ')[-1]}” section.")
     # série thématique (27 oct. 2026) : les trousses récentes en santé mentale et dépendances, vendues ensemble
     smd = ["trousse-sante_mentale", "trousse-entretien_motivationnel", "trousse-reduction_mefaits", "trousse-dependances"]
-    if all(any(i["id"] == k for i in items) for k in smd):
+    smd = [k for k in smd if any(i["id"] == k for i in items)]     # 21 nov. : trousse Santé mentale retirée
+    if len(smd) >= 2:
         add(id="lot-sante-mentale-dependances", type="lot_collection", groupe="Lots",
             titre="Collection Filodie : Santé mentale et dépendances", sous=f"{len(smd)} trousses",
-            desc="Quatre trousses pour accompagner les adultes qui vivent un trouble de santé mentale ou une dépendance : "
-                 "comprendre les troubles, soutenir le changement, réduire les méfaits et lutter contre la stigmatisation.",
+            desc="Trois trousses pour accompagner les adultes qui vivent une dépendance : soutenir le changement, "
+                 "réduire les méfaits et lutter contre la stigmatisation.",
             fichiers=[], contient=smd,
             titre_en="Filodie Collection: Mental Health and Addiction", sous_en=f"{len(smd)} toolkits",
-            desc_en="Four toolkits to support adults living with a mental health disorder or an addiction: understand the "
-                    "disorders, support change, reduce harm and fight stigma.")
+            desc_en="Three toolkits to support adults living with an addiction: support change, reduce harm and fight stigma.")
     # Collection Parents (27 oct. 2026) : les trousses utiles à la maison, de la petite enfance à l’adolescence
     par = ["trousse-parents", "trousse-attachement", "trousse-renforcement_r05", "trousse-renforcement_r610",
            "trousse-renforcement_r1115", "trousse-sommeil", "trousse-ecrans_et_cyberdependance", "trousse-estime_de_soi",
@@ -926,7 +926,7 @@ L = {
         "footer_legal": [("suggestions.html", "Boîte à suggestions"), ("avis.html", "Donner mon avis"), ("licence.html", "Licence d’utilisation"), ("conditions.html", "Conditions de vente"),
                          ("confidentialite.html", "Confidentialité")],
         "footer_note": "Les outils Filodie soutiennent l’intervention ; ils ne remplacent ni l’évaluation d’une personne "
-                       "professionnelle qualifiée ni le jugement clinique.",
+                       "professionnelle qualifiée ni le jugement professionnel.",
         "rights": "© 2026 Filodie. Tous droits réservés.",
     },
     "en": {
@@ -970,7 +970,7 @@ L = {
         "bottin_btn": "Get the directory for free",
         "footer_legal": [("suggestions.html", "Suggestion box"), ("review.html", "Share your feedback"), ("licence.html", "Licence"), ("terms.html", "Terms of sale"), ("privacy.html", "Privacy")],
         "footer_note": "Filodie tools support intervention; they do not replace an assessment by a qualified professional "
-                       "or clinical judgment.",
+                       "or professional judgment.",
         "rights": "© 2026 Filodie. All rights reserved.",
     },
 }
@@ -1696,7 +1696,7 @@ def sujet_page(lang, cid, items):
     plus = cid in PAGES_PLUS
     s = PAGES_PLUS[cid] if plus else SUJETS[cid]
     tous = {i["id"]: i for i in items}
-    dedans = [tous[k] for k in s["ids"]] if plus else [i for i in items if cid in CA.categories_de(i, parents_de(i))]
+    dedans = [tous[k] for k in s["ids"] if k in tous] if plus else [i for i in items if cid in CA.categories_de(i, parents_de(i))]
     ancre = s["parents"][0] if plus else cid
     rang = {"trousse": 0, "edition": 1, "album": 2, "livre": 2, "bottin": 2}
     famille = lambda i: "lot" if i["type"].startswith("lot") or i["type"] == "mega" else i["type"]
@@ -1908,14 +1908,14 @@ CONTENT = {
 <h2>Produits et prix</h2><p>Les produits sont des fichiers numériques (PDF). Les prix sont affichés en dollars canadiens et correspondent au prix total à payer. Filodie n’est pas inscrite aux fichiers de la TPS et de la TVQ (petit fournisseur). Toutefois, Payhip agit comme plateforme de vente et peut percevoir lui-même la taxe de vente applicable selon votre lieu de résidence (par exemple la TPS/TVH au Canada ou la TVA en Europe) ; le cas échéant, elle est affichée clairement avant le paiement.</p>
 <h2>Paiement et livraison</h2><p>Le paiement est traité de façon sécurisée par Payhip, Stripe ou PayPal; Filodie n’a jamais accès à vos données de carte. La livraison est immédiate : une page de téléchargement s’ouvre après le paiement et un courriel de confirmation contenant le lien vous est envoyé.</p>
 <h2>Aucun remboursement</h2><p>Comme un fichier numérique ne peut pas être retourné, les achats ne sont pas remboursables. Si un fichier est défectueux, illisible ou ne correspond pas à sa description, écrivez-nous à melodie@filodie.ca : nous le corrigeons ou le remplaçons sans frais. Ces conditions n’enlèvent aucun des droits prévus par la Loi sur la protection du consommateur.</p>
-<h2>Utilisation</h2><p>L’achat donne droit à la <a href="licence.html">licence individuelle</a>. Les outils soutiennent l’intervention et ne remplacent ni l’évaluation d’une personne professionnelle qualifiée ni le jugement clinique. Les coordonnées des ressources sont vérifiées à la date indiquée et peuvent changer.</p>
+<h2>Utilisation</h2><p>L’achat donne droit à la <a href="licence.html">licence individuelle</a>. Les outils soutiennent l’intervention et ne remplacent ni l’évaluation d’une personne professionnelle qualifiée ni le jugement professionnel. Les coordonnées des ressources sont vérifiées à la date indiquée et peuvent changer.</p>
 <h2>Droit applicable</h2><p>Ces conditions sont régies par les lois du Québec et du Canada.</p>"""),
     ("en", "terms.html"): ("Terms of sale", """
 <p><strong>Business:</strong> Filodie, sole proprietorship registered in Québec (NEQ: 2282614819). Email: melodie@filodie.ca.</p>
 <h2>Products and prices</h2><p>Products are digital files (PDF). Prices are shown in Canadian dollars and are the total amount payable. Filodie is not registered for GST/QST (small supplier). However, Payhip acts as a marketplace facilitator and may itself collect the applicable sales tax based on where you live (for example GST/HST in Canada or VAT in Europe); if so, it is clearly shown before payment.</p>
 <h2>Payment and delivery</h2><p>Payment is processed securely by Payhip, Stripe or PayPal; Filodie never has access to your card details. Delivery is instant: a download page opens after payment and a confirmation email with the link is sent to you.</p>
 <h2>No refunds</h2><p>Because a digital file cannot be returned, purchases are non-refundable. If a file is defective, unreadable or does not match its description, write to us at melodie@filodie.ca: we will fix or replace it at no charge. These terms do not limit any rights under Québec’s Consumer Protection Act.</p>
-<h2>Use</h2><p>Each purchase includes the <a href="licence.html">individual licence</a>. The tools support intervention and do not replace an assessment by a qualified professional or clinical judgment. Resource contact details are verified on the date shown and may change.</p>
+<h2>Use</h2><p>Each purchase includes the <a href="licence.html">individual licence</a>. The tools support intervention and do not replace an assessment by a qualified professional or professional judgment. Resource contact details are verified on the date shown and may change.</p>
 <h2>Governing law</h2><p>These terms are governed by the laws of Québec and Canada.</p>"""),
     ("fr", "confidentialite.html"): ("Politique de confidentialité", """
 <p>Dernière mise à jour : 13 octobre 2026.</p>
