@@ -170,9 +170,9 @@ SUJETS = {
         desc_fr="Routines visuelles, cahiers, albums et trousses pour accompagner son enfant à la maison, et une collection pour les parents après un diagnostic.",
         desc_en="Visual routines, workbooks, picture books and toolkits for supporting your child at home, and a collection for parents after a diagnosis.",
         p_fr=["Pas besoin d’être spécialiste pour utiliser ces outils. Ils sont faits pour la vraie vie à la maison : le matin qui déraille, les devoirs, les grosses émotions, le dodo.",
-              "Vous y trouverez des routines visuelles, des cahiers à faire avec votre enfant, des albums, des outils gratuits chaque mois et la collection Après le diagnostic, pour les parents d’un enfant qui vient de recevoir un diagnostic."],
+              "Vous y trouverez des routines visuelles, des cahiers à faire avec votre enfant, des albums et des outils gratuits chaque mois."],
         p_en=["You do not need to be a specialist to use these tools. They are made for real life at home: mornings that fall apart, homework, big emotions, bedtime.",
-              "You will find visual routines, workbooks to do with your child, picture books, free tools every month and the After the Diagnosis collection, for parents whose child has just received a diagnosis."],
+              "You will find visual routines, workbooks to do with your child, picture books and free tools every month."],
         debut=["trousse-parents", "lot-16-après-le-diagnostic", "lot-routines"], conseil="conseil-renforcement-positif.html"),
     "pro": dict(
         fr="outils-professions-pratique.html", en="professional-practice-tools.html",
