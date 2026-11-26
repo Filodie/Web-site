@@ -18,6 +18,7 @@ import fitz
 
 from conseils import ARTICLES
 import trousse_etudiante as TE
+import ecoles as EC
 import categories as CA
 from sujets import SUJETS, PAGES_PLUS
 import formulaires as FO
@@ -984,6 +985,7 @@ PAIRS["conseils.html"] = "tips.html"
 PAIRS["suggestions.html"] = "suggestions.html"
 PAIRS.update({a["fr"]: a["en"] for a in ARTICLES})
 PAIRS[TE.FR] = TE.EN
+PAIRS[EC.FR] = EC.EN
 PAIRS.update({v["fr"]: v["en"] for v in SUJETS.values()})
 PAIRS.update({v["fr"]: v["en"] for v in PAGES_PLUS.values()})
 PAIRS_EN = {v: k for k, v in PAIRS.items()}
@@ -1322,16 +1324,16 @@ def equipes(lang):
         pts = [("Jusqu’à 25 personnes", "Intervenantes et intervenants, T.E.S., personnel enseignant, personnel éducateur et direction."),
                ("3 fois le prix, pas 25", f"Une trousse à 7 $ devient 21 $ pour toute l’équipe. Tout Filodie : {_eq(PRIX_EQ['tout'] * 3, True)} au lieu de {_eq(PRIX_EQ['tout'] * 25, True)}."),
                ("Facture et bon de commande", "Facture PDF au nom de l’établissement, payable par virement Interac ou par chèque.")]
-        btn1, btn2 = "Voir la licence d’équipe", "Demander une facture"
-        lien, mail = "services.html#licence-equipe", "mailto:melodie@filodie.ca?subject=Licence%20d%E2%80%99%C3%A9quipe"
+        btn1, btn2 = "Voir la page Pour les écoles", "Demander une facture"
+        lien, mail = EC.FR, "mailto:melodie@filodie.ca?subject=Licence%20d%E2%80%99%C3%A9quipe"
     else:
         h2, lead = "For schools, daycares and organizations", ("Your whole team uses the same tools, with a single invoice in "
                "the organization’s name.")
         pts = [("Up to 25 people", "Counsellors, SCCs, teachers, educators and management."),
                ("3 times the price, not 25", f"A $7 toolkit becomes $21 for the whole team. All of Filodie: {_eq(PRIX_EQ['tout'] * 3, False)} instead of {_eq(PRIX_EQ['tout'] * 25, False)}."),
                ("Invoice and purchase order", "PDF invoice in the organization’s name, payable by Interac e-Transfer or cheque.")]
-        btn1, btn2 = "See the team licence", "Request an invoice"
-        lien, mail = "services.html#team-licence", "mailto:melodie@filodie.ca?subject=Team%20licence"
+        btn1, btn2 = "See the For schools page", "Request an invoice"
+        lien, mail = EC.EN, "mailto:melodie@filodie.ca?subject=Team%20licence"
     cols = "".join(f"<div><h3>{a}</h3><p>{b}</p></div>" for a, b in pts)
     return (f'<section class="band"><div class="wrap"><h2>{h2}</h2><p class="lead">{lead}</p>'
             f'<div class="grid3 why">{cols}</div>'
@@ -2139,6 +2141,9 @@ def build():
         for a in ARTICLES:
             open(os.path.join(d, a[lang]), "w").write(article(lang, a, tous))
         open(os.path.join(d, TE.FR if lang == "fr" else TE.EN), "w").write(trousse_etudiante(lang, tous))
+        open(os.path.join(d, EC.FR if lang == "fr" else EC.EN), "w").write(page(                # page Pour les écoles (26 nov.)
+            lang, EC.FR if lang == "fr" else EC.EN, EC.TXT[lang]["titre"], EC.corps(lang, tous, carte_produit, _eq, PRIX_EQ, SUJETS),
+            desc=EC.TXT[lang]["desc"], scripts='<script src="https://payhip.com/payhip.js"></script>'))
     open(os.path.join(PUB, "404.html"), "w").write(page("fr", "index.html", "Page introuvable",
         '<section class="wrap prose"><h1>Page introuvable</h1><p class="lead">Cette page n’existe pas ou a été déplacée. '
         '· This page does not exist.</p><p><a class="btn" href="/">Accueil · Home</a></p></section>').replace('href="index.html"', 'href="/index.html"'))
