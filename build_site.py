@@ -2206,6 +2206,10 @@ def sitemap():
     open(os.path.join(PUB, "sitemap.xml"), "w", encoding="utf-8").write(
         '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
         + corps + "</urlset>\n")
+    # 26 nov. 2026 : robots.txt du site (Cloudflare ajoute ses propres commentaires par-dessus), pour que
+    # Google et Bing trouvent le plan du site sans passer par la Search Console.
+    open(os.path.join(PUB, "robots.txt"), "w", encoding="utf-8").write(
+        "User-agent: *\nAllow: /\n\nSitemap: https://filodie.ca/sitemap.xml\n")
 
 
 if __name__ == "__main__":
